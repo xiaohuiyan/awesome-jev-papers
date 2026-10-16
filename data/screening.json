@@ -1,0 +1,2269 @@
+{
+  "screened_on": "2026-10-16",
+  "candidates": [
+    {
+      "arxiv_id": "2610.22276",
+      "title": "MJev-Spatial: System One Spatial Intelligence via Native Attention Matching",
+      "source_url": "https://arxiv.org/abs/2610.22276v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.22131",
+      "title": "Intern-Decision: Efficient Multimodal Decision Making with Autoregressive Masked Language Modeling",
+      "source_url": "https://arxiv.org/abs/2610.22131v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.22066",
+      "title": "Prism-1: Position- and Rival-Independent Scoring for System One Models",
+      "source_url": "https://arxiv.org/abs/2610.22066v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.21620",
+      "title": "Statistical Characterization of Erratic and Chaotic Processes through Their Extrema I. Thermodynamics",
+      "source_url": "https://arxiv.org/abs/2610.21620v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.21614",
+      "title": "Qwen-Audio-Jev: A Unified Interface for Audio Decisions",
+      "source_url": "https://arxiv.org/abs/2610.21614v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.21412",
+      "title": "JevAgentHarness: Benchmarking, Deploying and Training Decision Models That Share Control with LLMs",
+      "source_url": "https://arxiv.org/abs/2610.21412v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.21411",
+      "title": "Jev-LiteMAS: Separating Decisions from Generation in Multi-Agent Workflows",
+      "source_url": "https://arxiv.org/abs/2610.21411v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.21244",
+      "title": "System1-Arena: Which Decisions Can Be Left to System 1?",
+      "source_url": "https://arxiv.org/abs/2610.21244v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.20927",
+      "title": "Prune the Summary, Not the History: Source-Judged Compaction for Long-Horizon Agents",
+      "source_url": "https://arxiv.org/abs/2610.20927v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.20907",
+      "title": "From Detection to Decision: Calibration and Deferral for Prompt-Injection Detection",
+      "source_url": "https://arxiv.org/abs/2610.20907v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.20778",
+      "title": "Verdict: Encode Once, Decide Many",
+      "source_url": "https://arxiv.org/abs/2610.20778v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.20665",
+      "title": "The World Won't Wait: Evaluating and Teaching Agents Under a Live Clock",
+      "source_url": "https://arxiv.org/abs/2610.20665v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.20634",
+      "title": "Jev-as-a-Judge for RAG Claim Verification: Confidence-Gated Cascading Between a Non-Generative Verifier and a Frontier LLM",
+      "source_url": "https://arxiv.org/abs/2610.20634v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.20491",
+      "title": "Testing Replica Symmetry Breaking in the three-dimensional Edwards-Anderson model by using vanishing fields",
+      "source_url": "https://arxiv.org/abs/2610.20491v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.19971",
+      "title": "Diagnose Before You Refine: Multi-Dimensional Judge Feedback for Query-Efficient Jailbreak Attacks",
+      "source_url": "https://arxiv.org/abs/2610.19971v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.19856",
+      "title": "Lost in the Fallback: How Reliably Do Typed Decision Models Use Fallback Options?",
+      "source_url": "https://arxiv.org/abs/2610.19856v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.19811",
+      "title": "Calibration and Risk-Budgeted Decisions with System One Models",
+      "source_url": "https://arxiv.org/abs/2610.19811v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.19644",
+      "title": "Selective Reasoning for Typed Decision Models: When to Start, Read, and Stop",
+      "source_url": "https://arxiv.org/abs/2610.19644v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.19619",
+      "title": "Are AI Decision Models Biased? A Case Study of Jev",
+      "source_url": "https://arxiv.org/abs/2610.19619v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.19596",
+      "title": "JevCoder: When Does Decision Delegation Pay Off in Code Repair?",
+      "source_url": "https://arxiv.org/abs/2610.19596v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.19536",
+      "title": "Typed Decision Models on Tabular Data",
+      "source_url": "https://arxiv.org/abs/2610.19536v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.19478",
+      "title": "AgriJev: Efficient Agricultural Candidate Scoring with Multi-Scale Adapted Models",
+      "source_url": "https://arxiv.org/abs/2610.19478v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.19118",
+      "title": "DecisionRobust: Benchmarking Robustness for JEV Style Decision Models Across Text and Vision",
+      "source_url": "https://arxiv.org/abs/2610.19118v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.18780",
+      "title": "BLADE: Auditing Information Use for Failure Attribution in LLM Multi-Agent Systems",
+      "source_url": "https://arxiv.org/abs/2610.18780v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.18773",
+      "title": "Jeva: System One Models from First Principles",
+      "source_url": "https://arxiv.org/abs/2610.18773v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.18615",
+      "title": "VideoJev: System One Model for Video Understanding and Interaction",
+      "source_url": "https://arxiv.org/abs/2610.18615v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.18612",
+      "title": "Nudge the Judge: Uncovering Program Decision Hijacking in Real-World Jev Applications",
+      "source_url": "https://arxiv.org/abs/2610.18612v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.18610",
+      "title": "Jev-ToM: Evaluating Theory of Mind in Typed Decision Models",
+      "source_url": "https://arxiv.org/abs/2610.18610v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.18579",
+      "title": "Reading Right, Acting Wrong: Diagnosing Decision Failures of System One Models in Agent Loops",
+      "source_url": "https://arxiv.org/abs/2610.18579v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.18529",
+      "title": "How Reliable Are System-One Decisions in Medicine? A Comparative Study of Jev, Jev-like Models, and LLMs",
+      "source_url": "https://arxiv.org/abs/2610.18529v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.18512",
+      "title": "Haagerup-Izumi modular data from hyperbolic words: S-fold TQFTs, central charge, torsion and the Bethe vacua",
+      "source_url": "https://arxiv.org/abs/2610.18512v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.18497",
+      "title": "Judges Follow the Reference: The Derivation Gap in Verifying Tool-Call Arguments",
+      "source_url": "https://arxiv.org/abs/2610.18497v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.18488",
+      "title": "Recalibrating Many Questions with Few Labels: Minimax Rates and Identification Limits",
+      "source_url": "https://arxiv.org/abs/2610.18488v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.18389",
+      "title": "PRISM: Calibrating Black-Box Judges with Counterfactual Probes",
+      "source_url": "https://arxiv.org/abs/2610.18389v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.18326",
+      "title": "Jev-Guard: Fast Routing and Auditing Agent Actions over Editable Policy Trees",
+      "source_url": "https://arxiv.org/abs/2610.18326v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.18272",
+      "title": "JevGPT: Thinking Fast and Slow in Autonomous Research",
+      "source_url": "https://arxiv.org/abs/2610.18272v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.18233",
+      "title": "Consider, Then Choose: Order-Invariant Decisions in System One Models",
+      "source_url": "https://arxiv.org/abs/2610.18233v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.18122",
+      "title": "Cheap, Consistent, Calibrated, but Biased? Typed Decision Models as Judges",
+      "source_url": "https://arxiv.org/abs/2610.18122v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.17820",
+      "title": "Same Attack, Different Judge: A First Controlled Adversarial Comparison of Jev, LLM Judges, and Purpose-Built Safety Classifiers",
+      "source_url": "https://arxiv.org/abs/2610.17820v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.17205",
+      "title": "Releasing the Inner Jev: A Simple Recipe for Open Decision Models",
+      "source_url": "https://arxiv.org/abs/2610.17205v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.17175",
+      "title": "FunDM: Cheap & Label-Free Decision Models from Frozen Language Models",
+      "source_url": "https://arxiv.org/abs/2610.17175v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.17113",
+      "title": "Calibrated Typed Decisions for Entity, Relation, and Event Extraction",
+      "source_url": "https://arxiv.org/abs/2610.17113v1",
+      "status": "excluded",
+      "reason": "General information extraction; reviewed abstract does not establish a sufficiently close Jev or general typed-decision connection.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.17016",
+      "title": "ProbabilityBench: Model Evaluation and Calibration with Exact Ground-Truth Uncertainty",
+      "source_url": "https://arxiv.org/abs/2610.17016v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.16967",
+      "title": "Proactive Physical AI through Continuous Observation and Timely Intervention",
+      "source_url": "https://arxiv.org/abs/2610.16967v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.16655",
+      "title": "Does a Hosted Decision Model Respect Irrelevant Alternatives? A Pre-Registered Test of Option-Set Dependence in Jev",
+      "source_url": "https://arxiv.org/abs/2610.16655v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.16238",
+      "title": "Embodied Skill Bench: Benchmarking How Well Agents with Embodied Skills Perform on Physical Tasks",
+      "source_url": "https://arxiv.org/abs/2610.16238v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.16191",
+      "title": "Correct Choices, Failed Sequences: Choice2Seq Benchmarks Correctness Retention Across Output Interfaces",
+      "source_url": "https://arxiv.org/abs/2610.16191v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.16072",
+      "title": "From isolated singular wells to exact Bloch bands: the trigonometric Pöschl-Teller lattice",
+      "source_url": "https://arxiv.org/abs/2610.16072v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.15742",
+      "title": "RSAJEV: Training-Free Abstaining Prototype Memory for Eliminating Silent Hallucination in JEV-Based Remote Sensing Classification",
+      "source_url": "https://arxiv.org/abs/2610.15742v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.15710",
+      "title": "Suggested Is Not Superseded: A Pre-Registered Evaluation of a System-One Model as a Memory-Retirement Gate",
+      "source_url": "https://arxiv.org/abs/2610.15710v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.15537",
+      "title": "Poisoned into Action: Context Attacks on Typed Decision Workflows",
+      "source_url": "https://arxiv.org/abs/2610.15537v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.15029",
+      "title": "Toward System One Clinical Intelligence: Parameter-Efficient Fine-Tuning and Counterfactual Explainability of Decision Foundation Models",
+      "source_url": "https://arxiv.org/abs/2610.15029v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.14631",
+      "title": "The Company a Question Keeps: Auditing Open Jev-Style Models for Retrieval",
+      "source_url": "https://arxiv.org/abs/2610.14631v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.14449",
+      "title": "Jevolution: A Framework for Studying Communication and Collective Dynamics in AI Agents",
+      "source_url": "https://arxiv.org/abs/2610.14449v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.14404",
+      "title": "DICE: Tilting the Odds through Interface Attackson System One Model",
+      "source_url": "https://arxiv.org/abs/2610.14404v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.14112",
+      "title": "Does System One Transfer? Calibrated Typed-Decision Models, Label Budgets, and Translation for Indonesian Regional Languages",
+      "source_url": "https://arxiv.org/abs/2610.14112v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.13736",
+      "title": "Adjoint-Based Stochastic Analysis for Fatigue of Aeroelastic and Frictional Systems",
+      "source_url": "https://arxiv.org/abs/2610.13736v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.13092",
+      "title": "When Faster Decisions Do Not Make Better Agents: An Empirical Study of Jev in Agent Workflows",
+      "source_url": "https://arxiv.org/abs/2610.13092v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.12292",
+      "title": "One Word Opens the Gate: The Option-Channel Attack on Typed Decision Models as Agent Guardrails",
+      "source_url": "https://arxiv.org/abs/2610.12292v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.11978",
+      "title": "Specialized Decision Models vs. General-Purpose LLMs: Benchmarking Jev Across Knowledge, Reasoning, and Multilingual Tasks",
+      "source_url": "https://arxiv.org/abs/2610.11978v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.11901",
+      "title": "Can Decision Models Understand Stance? Evaluating Jev Against General-Purpose LLMs",
+      "source_url": "https://arxiv.org/abs/2610.11901v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.11692",
+      "title": "Can Jev be Your Q or Policy in Reinforcement Learning?",
+      "source_url": "https://arxiv.org/abs/2610.11692v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.11462",
+      "title": "Global existence of weak solutions in a Keller-Segel system with local anisotropy and nonlinear diffusion",
+      "source_url": "https://arxiv.org/abs/2610.11462v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.11436",
+      "title": "Adversarial Cues in Decision Models Used as Judges: The Role of Request Presentation",
+      "source_url": "https://arxiv.org/abs/2610.11436v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.11392",
+      "title": "TypedBench: A Benchmark for Calibration, Framing Sensitivity, and Cost in System One Decision Models",
+      "source_url": "https://arxiv.org/abs/2610.11392v2",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.11379",
+      "title": "FastJEV: Understanding Redundancy for Compact JEV Inference",
+      "source_url": "https://arxiv.org/abs/2610.11379v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.11316",
+      "title": "MetaEncoder: Exploring the Limit of Bi-Encoders for Multimodal System One Decision Making with Natural Language Interface",
+      "source_url": "https://arxiv.org/abs/2610.11316v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.11135",
+      "title": "Can a System-One LLM Perform Knowledge Tracing When Few or No Learners Are Logged?",
+      "source_url": "https://arxiv.org/abs/2610.11135v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.10978",
+      "title": "Probabilistic Sensing, Deterministic Authority: Admitting Model-Produced Observations into Sufficiency-Checked Governance Contracts",
+      "source_url": "https://arxiv.org/abs/2610.10978v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.10615",
+      "title": "JevForest: Path Voting for Budgeted Feature Acquisition",
+      "source_url": "https://arxiv.org/abs/2610.10615v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.10321",
+      "title": "Estimating Uncoded Crash Factors with Tabular Foundation and System One Models: Kumo Tabular and Jev",
+      "source_url": "https://arxiv.org/abs/2610.10321v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.09937",
+      "title": "Where Can a Decision Model Diagnose HVAC Faults? Reasoning Demand, Physical Representation, and Robustness Under Shift",
+      "source_url": "https://arxiv.org/abs/2610.09937v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.09683",
+      "title": "System Switch: When Should a Fast Decision Model Stop and Think?",
+      "source_url": "https://arxiv.org/abs/2610.09683v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.09328",
+      "title": "Visual Jev Rewards: Reference-Bound Verification for Multi-Subject Image Generation",
+      "source_url": "https://arxiv.org/abs/2610.09328v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.09188",
+      "title": "From Probabilities to Decisions: Search and Multi-Teacher Distillation with Jev",
+      "source_url": "https://arxiv.org/abs/2610.09188v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.08829",
+      "title": "Emo-Jev: Probabilistic Reasoning for Emotion Classification with Jev",
+      "source_url": "https://arxiv.org/abs/2610.08829v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.08775",
+      "title": "Agent in a Bottle: Can LLM Agents Turn Their Capabilities Into Cheap, Scalable Artifacts?",
+      "source_url": "https://arxiv.org/abs/2610.08775v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.08675",
+      "title": "Same-Number Citation Swaps: Stress-Testing Jev as a Financial Evidence Judge",
+      "source_url": "https://arxiv.org/abs/2610.08675v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.08155",
+      "title": "Token-Efficient Multi-Agent Collaboration via System One-Guided Computational Division of Labor",
+      "source_url": "https://arxiv.org/abs/2610.08155v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.08089",
+      "title": "When Plans Change Answers: Formalizing Cost-Accuracy Optimization for Semantic Queries",
+      "source_url": "https://arxiv.org/abs/2610.08089v2",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.07953",
+      "title": "Benchmarking System One Models in Online Moderation",
+      "source_url": "https://arxiv.org/abs/2610.07953v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.07730",
+      "title": "SanSi: A Looped Typed Decision Model for System 1.5 Thinking",
+      "source_url": "https://arxiv.org/abs/2610.07730v2",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.07586",
+      "title": "Stability of steady transonic shocks with constant states in 3D rectangular nozzles under small external forces",
+      "source_url": "https://arxiv.org/abs/2610.07586v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.07327",
+      "title": "SharedKV-BT: Node-Local Typed Decisions for Behavior-Tree Agents",
+      "source_url": "https://arxiv.org/abs/2610.07327v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.06744",
+      "title": "ufakzeka-karar: An Open Turkish Typed-Decision Model with Order-Invariant Option Scoring",
+      "source_url": "https://arxiv.org/abs/2610.06744v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.06625",
+      "title": "JEV versus LLMs: Accuracy, Cost and Calibration on Seven Political Science Replications",
+      "source_url": "https://arxiv.org/abs/2610.06625v2",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.06425",
+      "title": "SoK: Semantic Decision Engines in Network Control Loops",
+      "source_url": "https://arxiv.org/abs/2610.06425v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.06354",
+      "title": "GraphDecisionBench: Benchmarking System One Models on Graph Tasks",
+      "source_url": "https://arxiv.org/abs/2610.06354v3",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.05107",
+      "title": "SearchJev: A Fast and Calibrated System-1 Model for Search Agents",
+      "source_url": "https://arxiv.org/abs/2610.05107v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.04985",
+      "title": "Hidden Risks of Jev: An Empirical Study of Security, Privacy, and Dual Use",
+      "source_url": "https://arxiv.org/abs/2610.04985v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.04345",
+      "title": "System One Models for Wireless Decision-Making:Applications and Performance Evaluation",
+      "source_url": "https://arxiv.org/abs/2610.04345v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.03935",
+      "title": "General Decision Models: Benchmarking and Insights Beyond Jev",
+      "source_url": "https://arxiv.org/abs/2610.03935v2",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.03387",
+      "title": "Benchmarking candidate coverage and rejection policy transfer in typed decision models",
+      "source_url": "https://arxiv.org/abs/2610.03387v2",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.03324",
+      "title": "To Jev or Not? Evaluating the Accuracy and Efficiency of Structured Decision Models for Hate-Speech Moderation",
+      "source_url": "https://arxiv.org/abs/2610.03324v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.03073",
+      "title": "SecJev: Bringing Security Expertise to System One Decision Models",
+      "source_url": "https://arxiv.org/abs/2610.03073v2",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.02586",
+      "title": "Labels Override Definitions in Jev-Style Typed Decision Models",
+      "source_url": "https://arxiv.org/abs/2610.02586v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.02516",
+      "title": "Student-Guided Teacher Distillation for Efficient LLM Task Routing: Positioning Against Jev-Style System-1 Classifiers",
+      "source_url": "https://arxiv.org/abs/2610.02516v1",
+      "status": "excluded",
+      "reason": "Fixed-taxonomy classifier with comparative positioning; not a runtime-schema decision model or an empirical Jev comparison.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.02486",
+      "title": "From Retrieval to Typed Decisions: Calibrated System One Models from Biomedical Sentence Encoders",
+      "source_url": "https://arxiv.org/abs/2610.02486v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.02293",
+      "title": "HakemBench: A Turkish Benchmark of Typed Decisions",
+      "source_url": "https://arxiv.org/abs/2610.02293v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.02267",
+      "title": "Fast Models, Slow Evidence: A Paired and Self-Audited Evaluation of System-1 Decision Models for LLM Agent Harnesses",
+      "source_url": "https://arxiv.org/abs/2610.02267v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.02076",
+      "title": "LLM-as-Jev: LLMs Are Already Jev-Style Decision Models -- When and How to Fine-Tune Them",
+      "source_url": "https://arxiv.org/abs/2610.02076v3",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.02048",
+      "title": "HydroJEV: A one-second, training-free screen for cyber-attack and fault attribution in water distribution networks",
+      "source_url": "https://arxiv.org/abs/2610.02048v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.02046",
+      "title": "Prune First, Decide Fast: Scalable Semantic Query Processing with JEVDB",
+      "source_url": "https://arxiv.org/abs/2610.02046v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.01834",
+      "title": "Code Owns the Simulation, Jev Owns the Evaluation",
+      "source_url": "https://arxiv.org/abs/2610.01834v2",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.01231",
+      "title": "Judgement in the Age of Jev: From Evaluation Scarcity to Evaluation Abundance",
+      "source_url": "https://arxiv.org/abs/2610.01231v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.01079",
+      "title": "Jev-IDS: System One Models for Network Intrusion Detection",
+      "source_url": "https://arxiv.org/abs/2610.01079v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.01006",
+      "title": "Beyond Answer Confidence: A Controlled Audit of Self-Knowledge in a Black-Box Decision Model",
+      "source_url": "https://arxiv.org/abs/2610.01006v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.00831",
+      "title": "AnyJev Technical Report",
+      "source_url": "https://arxiv.org/abs/2610.00831v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.00437",
+      "title": "JevSpawn: Adaptive Agentic Inference through Compositional Action Spaces",
+      "source_url": "https://arxiv.org/abs/2610.00437v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.00381",
+      "title": "OmniMed-Jev: Calibrating LVLM Confidence for Trustworthy Medical Multimodal Decisions via System One",
+      "source_url": "https://arxiv.org/abs/2610.00381v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.00376",
+      "title": "A First Glance at Jev for Network Traffic Classification: Accuracy, Processing Time, and Cost",
+      "source_url": "https://arxiv.org/abs/2610.00376v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.00346",
+      "title": "Benchmarking System One decision models against trained classifiers and language models for automated decision gates",
+      "source_url": "https://arxiv.org/abs/2610.00346v2",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.00213",
+      "title": "Counting the Uncounted: Population-Level Surveillance of Documented Pregnancy and Fetal Harm in Police Crash Narratives with a System One Model (Jev)",
+      "source_url": "https://arxiv.org/abs/2610.00213v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.40241",
+      "title": "Decision-Oriented Recommendation Reranking: An Empirical Study of Its Promise and Limitations",
+      "source_url": "https://arxiv.org/abs/2609.40241v2",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.39496",
+      "title": "When the Right Answer Is Missing: An Arithmetic-Dependent Rejection Bottleneck in Jev",
+      "source_url": "https://arxiv.org/abs/2609.39496v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.39111",
+      "title": "Bongard: Training Machine Intuition",
+      "source_url": "https://arxiv.org/abs/2609.39111v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.38850",
+      "title": "OpenJev-RLCD: A Working RLCD Implementation",
+      "source_url": "https://arxiv.org/abs/2609.38850v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.38827",
+      "title": "More Choices, Fewer Decisions: Ordinal-Scale Bias in JEV-like Direct-Decision Models",
+      "source_url": "https://arxiv.org/abs/2609.38827v2",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.37647",
+      "title": "Evaluating and Benchmarking the System One Model Jev",
+      "source_url": "https://arxiv.org/abs/2609.37647v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.37470",
+      "title": "Probability Contracts: Accuracy, Coherence, and Decisions Across LLM Interfaces",
+      "source_url": "https://arxiv.org/abs/2609.37470v2",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.36965",
+      "title": "Chinese-Jev: Bringing System One Model to Chinese-Language Tasks",
+      "source_url": "https://arxiv.org/abs/2609.36965v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.36399",
+      "title": "Calibrated to Whom? Persona and Language Effects on Cultural Values in JEV",
+      "source_url": "https://arxiv.org/abs/2609.36399v2",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.36154",
+      "title": "More Features Are Not More Evidence: Limits of Training-Free Human Activity Recognition with Jev",
+      "source_url": "https://arxiv.org/abs/2609.36154v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.36116",
+      "title": "Dyad: Extending Large Language Models with Native Typed Decision-Making",
+      "source_url": "https://arxiv.org/abs/2609.36116v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.36115",
+      "title": "Koa-decision: Fast and Consistent Structured Decision Making with Generative LLMs",
+      "source_url": "https://arxiv.org/abs/2609.36115v2",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.36059",
+      "title": "Mnemon: Raw Records, Fast Judgments, Slow Thoughts",
+      "source_url": "https://arxiv.org/abs/2609.36059v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.35865",
+      "title": "PACT: Pairwise-Anchored Calibrated Tuning for Single-Token Typed Decisions",
+      "source_url": "https://arxiv.org/abs/2609.35865v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.35342",
+      "title": "Jev thinks \"I don't know'', but doesn't say it: Introducing Sys1Cal-v1 Dataset for Probability Calibration",
+      "source_url": "https://arxiv.org/abs/2609.35342v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.35293",
+      "title": "Decide, Don't Generate: Competitive Dimensional ABSA with Jev's Typed Decisions",
+      "source_url": "https://arxiv.org/abs/2609.35293v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.35286",
+      "title": "The Argument and the Letterhead: Source-Position Coherence in AI Evaluation",
+      "source_url": "https://arxiv.org/abs/2609.35286v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.34969",
+      "title": "NavJev: Efficient Vision-Language Navigation via Action-Centric Visual Compression and Discriminative Action-Semantic Memory",
+      "source_url": "https://arxiv.org/abs/2609.34969v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.34963",
+      "title": "JevVibe: Efficient Classification-Guided Secure Code Generation",
+      "source_url": "https://arxiv.org/abs/2609.34963v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.34862",
+      "title": "JEV as a Judge for Agent Trace Security: An Empirical Comparison with Generative LLM Judges",
+      "source_url": "https://arxiv.org/abs/2609.34862v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.34261",
+      "title": "RoboICL: Embodied In-Context Learning with GPT-6 Astra",
+      "source_url": "https://arxiv.org/abs/2609.34261v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.34227",
+      "title": "When Does Selection Replace Extraction? A Pre-Registered Test of Agent Memory with a Typed Decision Model",
+      "source_url": "https://arxiv.org/abs/2609.34227v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.34180",
+      "title": "Decision Readouts for Text-Mediated Video Anomaly Detection: An Exploratory Evaluation of Jev and Qwen",
+      "source_url": "https://arxiv.org/abs/2609.34180v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.34024",
+      "title": "Jev in Medicine: A Benchmark Evaluation",
+      "source_url": "https://arxiv.org/abs/2609.34024v4",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.33971",
+      "title": "Do System One Decisions Add Up? A Study of Probabilistic Coherence",
+      "source_url": "https://arxiv.org/abs/2609.33971v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.33874",
+      "title": "JET: Justification Evaluation in Transformer",
+      "source_url": "https://arxiv.org/abs/2609.33874v2",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.33843",
+      "title": "Laya as a Typed Probabilistic Assessor: An Independent Reproduction and a Preregistered Study of Calibration and Selective Escalation",
+      "source_url": "https://arxiv.org/abs/2609.33843v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.33689",
+      "title": "Type-Safe Decision Frameworks for Agentic 5G Control: A Theory-Driven Testbed Characterization of Where They Can Be Applied",
+      "source_url": "https://arxiv.org/abs/2609.33689v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.33609",
+      "title": "You Only Edit Once: Incentivizing In-Context Capability of LLMs via Local Demonstration Refinement",
+      "source_url": "https://arxiv.org/abs/2609.33609v2",
+      "status": "pending",
+      "reason": "Jev-LDE is a task-specific editing policy; typed probability-interface equivalence is not established in the reviewed passages.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.33538",
+      "title": "Jev Matches 7B Language Models for Speech-Neuroprosthesis Rescoring",
+      "source_url": "https://arxiv.org/abs/2609.33538v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.33401",
+      "title": "Evaluating System One Models for Agent Security Decisions: Reliability, Calibration, and Selective Automation",
+      "source_url": "https://arxiv.org/abs/2609.33401v3",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.33282",
+      "title": "Multi-Dimensional Comparative Scale Construction for Efficient Personalized Subjective Judgment in High-Traffic Applications",
+      "source_url": "https://arxiv.org/abs/2609.33282v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.33209",
+      "title": "Beyond Calibration: Do a Typed-Decision Model's Probabilities Obey the Probability Axioms?",
+      "source_url": "https://arxiv.org/abs/2609.33209v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.32893",
+      "title": "Worlds Next Door. V. A Candidate Solar System Scale Super-Jupiter in the 61 Cygni Binary System",
+      "source_url": "https://arxiv.org/abs/2609.32893v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.32191",
+      "title": "Spiral Harmonic Products",
+      "source_url": "https://arxiv.org/abs/2609.32191v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.32160",
+      "title": "Typed Decision Models: An Early Evidence Audit and Evaluation Checklist",
+      "source_url": "https://arxiv.org/abs/2609.32160v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.31142",
+      "title": "JevAdvBench: A Benchmark and Black-Box Attacks for Reinforcement Learning for Calibrated Decisions Models",
+      "source_url": "https://arxiv.org/abs/2609.31142v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.30922",
+      "title": "JevSoup: System-One Routing for Training-Free LoRA Composition",
+      "source_url": "https://arxiv.org/abs/2609.30922v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.30706",
+      "title": "LAVOIR: Teaching a Single-Pass Decision Encoder When and What to Ask with Amortized Value of Information",
+      "source_url": "https://arxiv.org/abs/2609.30706v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.30243",
+      "title": "JevOut: Natural Context Can Flip Decision Models",
+      "source_url": "https://arxiv.org/abs/2609.30243v2",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.30216",
+      "title": "Jev in the Wild: A Data-Driven Analysis of the Jev Model's Functionality, Applications and Ecosystem",
+      "source_url": "https://arxiv.org/abs/2609.30216v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.30186",
+      "title": "Jev-Mobile: Jev as an Executor for Mobile GUI Agents",
+      "source_url": "https://arxiv.org/abs/2609.30186v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.29769",
+      "title": "Decision Models vs. LLMs as Rubric Judges: Cheaper, Faster, and Wrong in the Same Places",
+      "source_url": "https://arxiv.org/abs/2609.29769v3",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.29429",
+      "title": "Just Ask Jev: Reinforcement Learning for Calibrated Decisions as a Zero-Shot Detector of AI Alignment Failures",
+      "source_url": "https://arxiv.org/abs/2609.29429v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.29283",
+      "title": "From Text Decisions to Pixels: An Study of Jev-Style Visual Choice Model",
+      "source_url": "https://arxiv.org/abs/2609.29283v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.28940",
+      "title": "Calibrated Decision Models for Autonomous Penetration-Testing Harnesses: JEV and Laya as System One Decision Layers for LLM-Driven Pentest Agents",
+      "source_url": "https://arxiv.org/abs/2609.28940v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.28919",
+      "title": "Harness Tokenomics: A Router for the Enterprise Agentic Control Plane",
+      "source_url": "https://arxiv.org/abs/2609.28919v2",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.28613",
+      "title": "Decision Hijacking: Prompt Injection Attacks on Jev's Typed Probabilistic Decisions",
+      "source_url": "https://arxiv.org/abs/2609.28613v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.28587",
+      "title": "NumericJev: Jev-like LLM Numerical Decoding with Multiway Decision Trees",
+      "source_url": "https://arxiv.org/abs/2609.28587v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.27678",
+      "title": "Same Scores, Different Decisions: Evaluating JEV and Language Models for Legal Document Understanding",
+      "source_url": "https://arxiv.org/abs/2609.27678v2",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.27607",
+      "title": "Can Jev Judge Radiology Reports? Evaluating a System One Model for Clinical Factuality",
+      "source_url": "https://arxiv.org/abs/2609.27607v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.27535",
+      "title": "KITE: Scaling Jev Population Experiments with Sparse Flagship Calibration",
+      "source_url": "https://arxiv.org/abs/2609.27535v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.27331",
+      "title": "JEV-Star: Fast, Low-Cost StarCraft II Control with Language-Model Planning",
+      "source_url": "https://arxiv.org/abs/2609.27331v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.26758",
+      "title": "Type-Safe Is Not Error-Free: Typed Decision Models Follow the Option Name, Not the Definition Bound to It",
+      "source_url": "https://arxiv.org/abs/2609.26758v3",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.26550",
+      "title": "JEV-as-a-Judge: Accept When Confident, Escalate When Unsure",
+      "source_url": "https://arxiv.org/abs/2609.26550v5",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.26532",
+      "title": "REFLEX with Jev for Efficient Selective Control in LLM Agents",
+      "source_url": "https://arxiv.org/abs/2609.26532v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.25845",
+      "title": "Visual Jev: Accurate and Efficient Decisions from Shared Visual Context",
+      "source_url": "https://arxiv.org/abs/2609.25845v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.25498",
+      "title": "Universal Fractal Natural Language Decision Map: Real-Time Edge Triage Across Heterogeneous Domains",
+      "source_url": "https://arxiv.org/abs/2609.25498v2",
+      "status": "pending",
+      "reason": "Conceptual Jev comparison found, but proprietary architecture claims and scope fit need further verification.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.24965",
+      "title": "Jev for Scientific Decisions: Evaluating Semantic Choices and Their Consequences",
+      "source_url": "https://arxiv.org/abs/2609.24965v3",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.24395",
+      "title": "JEVQA - Video Quality from Metadata, Bitstream, and Pixel Features with a General-Purpose Decision Model",
+      "source_url": "https://arxiv.org/abs/2609.24395v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.24052",
+      "title": "Calibrated Decisions at Scale: Converting Police Crash Narratives into Probabilistic Crash Variables with a System One Model (Jev)",
+      "source_url": "https://arxiv.org/abs/2609.24052v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.23986",
+      "title": "Jev-Mem: System-One-Controlled Agentic Memory for Efficient AI Agents",
+      "source_url": "https://arxiv.org/abs/2609.23986v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.23959",
+      "title": "Open-Jev Judgments on CallScreenBench: Calibrated One-Pass Scam Screening with a Small Language Model",
+      "source_url": "https://arxiv.org/abs/2609.23959v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.23886",
+      "title": "this-that-model-1.0: A typed decision model that decides in 30 ms, for a millionth of a cent",
+      "source_url": "https://arxiv.org/abs/2609.23886v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.23513",
+      "title": "Critical Touching of Temporal Entanglement Transitions",
+      "source_url": "https://arxiv.org/abs/2609.23513v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.23136",
+      "title": "Intent Interpretation at RIC Timescales: Jev Decision Models versus Large Language Models in 6G Open RAN",
+      "source_url": "https://arxiv.org/abs/2609.23136v2",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.22753",
+      "title": "Replacing Large Language Models with Jev Decision Models for Low-Latency Edge Service Orchestration",
+      "source_url": "https://arxiv.org/abs/2609.22753v2",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.15217",
+      "title": "Accelerating the Solving of Many Tiny General Linear Systems on GPUs: Application to Constitutive Laws",
+      "source_url": "https://arxiv.org/abs/2609.15217v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.11775",
+      "title": "Rapid Learning of Dexterous In-Hand Pen Writing through Real-Time Jacobian Estimation",
+      "source_url": "https://arxiv.org/abs/2609.11775v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.08183",
+      "title": "NeoHorse-1: Towards Recursive Self-Improvement via Agentic Post-Training with Routing Harness",
+      "source_url": "https://arxiv.org/abs/2609.08183v2",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.05322",
+      "title": "Restricting the effects hides a nonphysical symmetry from every causal structure",
+      "source_url": "https://arxiv.org/abs/2609.05322v2",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.02614",
+      "title": "Ruelle--Pollicott Theory for Metastable Systems: A Unified Framework for Tipping Transitions",
+      "source_url": "https://arxiv.org/abs/2609.02614v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.02211",
+      "title": "The relationship between solar and stellar tachoclines, dynamos, and spin-down",
+      "source_url": "https://arxiv.org/abs/2609.02211v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.00943",
+      "title": "Illiquidity at Risk",
+      "source_url": "https://arxiv.org/abs/2609.00943v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2609.00615",
+      "title": "BeamRMX: Radiation-Pattern-Driven Learning for Generalizable Beam Radio Map Prediction and Beam Management",
+      "source_url": "https://arxiv.org/abs/2609.00615v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2608.30860",
+      "title": "Well-conditioned iterative methods for large open quantum systems",
+      "source_url": "https://arxiv.org/abs/2608.30860v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2608.21572",
+      "title": "Betting for Sim-to-Real Performance Certificates",
+      "source_url": "https://arxiv.org/abs/2608.21572v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2608.21537",
+      "title": "Counterfactual, Per-Decision Bias Auditing for Automated Hiring: Localizing and Explaining Disparate Impact in Applicant Tracking Systems",
+      "source_url": "https://arxiv.org/abs/2608.21537v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2608.21434",
+      "title": "Maximal-Rank Squeezing from Rank-One Quenches: An Exact Spectral-Reachability Theorem for Gaussian Bosonic Systems",
+      "source_url": "https://arxiv.org/abs/2608.21434v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2608.20152",
+      "title": "The Generalized Random Access Problem for Linear Codes",
+      "source_url": "https://arxiv.org/abs/2608.20152v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2608.19922",
+      "title": "Auditing Recorded Predictive Lead Service-Line Classifications Against Physical Verification: A Statewide Study of New York",
+      "source_url": "https://arxiv.org/abs/2608.19922v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2608.18174",
+      "title": "Seasonal false alarms in customer churn and decline early-warning systems: adjacent-window labels confound seasonality with decline, and a year-over-year correction",
+      "source_url": "https://arxiv.org/abs/2608.18174v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2608.15484",
+      "title": "Poisson structures for a similarity reduction of the Drinfeld-Sokolov hierarchy of type $A$",
+      "source_url": "https://arxiv.org/abs/2608.15484v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2608.13046",
+      "title": "BoardroomAI: Dependency-Aware Human-Steerable Multi-Agent Deliberation through Evolving Decision Graphs",
+      "source_url": "https://arxiv.org/abs/2608.13046v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2608.12841",
+      "title": "AQuA: Recursively Self-Improving Quantitative Trading Research Agents",
+      "source_url": "https://arxiv.org/abs/2608.12841v3",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2608.11817",
+      "title": "Quantum Inequalities from the Second Law",
+      "source_url": "https://arxiv.org/abs/2608.11817v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2608.11241",
+      "title": "RecSys Factory: Bounding LLM Agent Autonomy to Decision Points in the Industrial Recommender Lifecycle",
+      "source_url": "https://arxiv.org/abs/2608.11241v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2608.06235",
+      "title": "Global vs. Product Observables in Bipartite Quantum Systems: The Sharp Bound",
+      "source_url": "https://arxiv.org/abs/2608.06235v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2608.05324",
+      "title": "Interacting Galilean and Finite-Energy Carroll Fermions",
+      "source_url": "https://arxiv.org/abs/2608.05324v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2608.03514",
+      "title": "Beyond Peak TOPS/W: A System-Level Perspective on Hybrid Digital, Analogue and Neuromorphic Computing",
+      "source_url": "https://arxiv.org/abs/2608.03514v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2608.02624",
+      "title": "Neural network realization of binary refinement iterates via a two-chart atlas selector",
+      "source_url": "https://arxiv.org/abs/2608.02624v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2607.27578",
+      "title": "What makes prompts a graph: necessary and sufficient conditions for prompt graph engineering",
+      "source_url": "https://arxiv.org/abs/2607.27578v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2607.24924",
+      "title": "Efficient computation of real-time correlators using Pauli Propagation",
+      "source_url": "https://arxiv.org/abs/2607.24924v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2607.22995",
+      "title": "Theory of approximate quantum error correction and the error-set model",
+      "source_url": "https://arxiv.org/abs/2607.22995v3",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2607.20449",
+      "title": "The Storyteller in the Model: Narrative Pattern Inheritance, Escalation Dynamics, and Alignment Governance in LLMs",
+      "source_url": "https://arxiv.org/abs/2607.20449v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2607.18865",
+      "title": "Enhanced Neural Quantum State via Annealed Gradient Descent",
+      "source_url": "https://arxiv.org/abs/2607.18865v2",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2607.18701",
+      "title": "Subsonic time-periodic solutions to radially symmetric spiral flows in an annulus",
+      "source_url": "https://arxiv.org/abs/2607.18701v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2607.17167",
+      "title": "Normal form method of center-focus problem in piecewise-smooth systems and algorithm design",
+      "source_url": "https://arxiv.org/abs/2607.17167v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2607.16085",
+      "title": "Controlling Implicit Shortcut Reliance in L2 Spoken English Auto-markers",
+      "source_url": "https://arxiv.org/abs/2607.16085v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2607.11216",
+      "title": "Distributed Semantics for Distributed Quantum Computing",
+      "source_url": "https://arxiv.org/abs/2607.11216v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2607.01234",
+      "title": "Modeling the Performance of the Burevestnik Nuclear-Powered Cruise Missile",
+      "source_url": "https://arxiv.org/abs/2607.01234v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2606.25783",
+      "title": "Non-uniqueness of weak solutions to cross-diffusion systems with advection",
+      "source_url": "https://arxiv.org/abs/2606.25783v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2606.24003",
+      "title": "DissProve: Automated Verification of Asynchronous Distributed Protocols with Affine Communication",
+      "source_url": "https://arxiv.org/abs/2606.24003v2",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2606.23785",
+      "title": "Controlled Chaos in 4D SCFTs",
+      "source_url": "https://arxiv.org/abs/2606.23785v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2606.22807",
+      "title": "Lychee-Reranker: Fast but Not Late Interaction for Compressed Document Reranking",
+      "source_url": "https://arxiv.org/abs/2606.22807v4",
+      "status": "excluded",
+      "reason": "Jev occurs in a model-collection URL, not as a studied model in the abstract.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2606.21996",
+      "title": "Cultural Targets, Structural Frames, Binding Morals: A Cross-Lingual Audit of Online Hate in Multicultural Singapore",
+      "source_url": "https://arxiv.org/abs/2606.21996v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2606.19685",
+      "title": "Following up the Kepler field with PLATO: Transit Timing Performance",
+      "source_url": "https://arxiv.org/abs/2606.19685v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2606.15916",
+      "title": "A generalized Stieltjes system with polynomial source",
+      "source_url": "https://arxiv.org/abs/2606.15916v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2606.05577",
+      "title": "Multi-parameter persistence in dynamical systems for maximizing effects of control inputs",
+      "source_url": "https://arxiv.org/abs/2606.05577v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2606.03488",
+      "title": "Piston control in a two-ion quantum device",
+      "source_url": "https://arxiv.org/abs/2606.03488v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2605.29893",
+      "title": "Redundant or Necessary? A Benchmark for Detecting Redundant Steps in Agent Trajectories",
+      "source_url": "https://arxiv.org/abs/2605.29893v2",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2605.29399",
+      "title": "Expecting Empathy: How Interaction Context Shapes Norms for Empathic Response in Digital Communication",
+      "source_url": "https://arxiv.org/abs/2605.29399v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2605.23644",
+      "title": "Balanced intersection size distributions in finite geometries and vector spaces",
+      "source_url": "https://arxiv.org/abs/2605.23644v2",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2605.20080",
+      "title": "TIC 295741342: A Triply-Eclipsing Triple Star System with a Giant Tertiary",
+      "source_url": "https://arxiv.org/abs/2605.20080v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2605.17657",
+      "title": "General Science Ranking (GSR): An Open-Source, Citation-Normalized Journal and Conference Classification System for Computer Science and Medicine",
+      "source_url": "https://arxiv.org/abs/2605.17657v2",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2605.16726",
+      "title": "A Global-Local Graph Attention Network for Traffic Forecasting",
+      "source_url": "https://arxiv.org/abs/2605.16726v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2605.15478",
+      "title": "Comments on higher-derivative corrections in the AdS/CFT duality",
+      "source_url": "https://arxiv.org/abs/2605.15478v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2605.14202",
+      "title": "LLM-Based Robustness Testing of Microservice Applications: An Empirical Study",
+      "source_url": "https://arxiv.org/abs/2605.14202v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2605.07595",
+      "title": "A Syndrome--Space Approach to Proximity Gaps and Correlated Agreement for Random Linear Codes and Random Reed--Solomon Codes",
+      "source_url": "https://arxiv.org/abs/2605.07595v2",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2605.06933",
+      "title": "MAGIQ: A Post-Quantum Multi-Agentic AI Governance System with Provable Security",
+      "source_url": "https://arxiv.org/abs/2605.06933v2",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2605.04096",
+      "title": "Quantum Dynamics: A Dilation-Based Approach",
+      "source_url": "https://arxiv.org/abs/2605.04096v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2605.01127",
+      "title": "Impact-Driven Quantum Decomposition for Traffic Zone Partitioning: A Hybrid Gate-Model Framework",
+      "source_url": "https://arxiv.org/abs/2605.01127v2",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2604.25162",
+      "title": "Experimental Workflows for Combinatorial Optimization: Towards Quantum Advantage",
+      "source_url": "https://arxiv.org/abs/2604.25162v2",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2604.24886",
+      "title": "Getting large-scale quantum neural networks ready for quantum hardware",
+      "source_url": "https://arxiv.org/abs/2604.24886v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2604.24730",
+      "title": "Analysis of the Gaia DR3 planetary nebula candidates and the possible symbiotic stars among them",
+      "source_url": "https://arxiv.org/abs/2604.24730v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2604.24668",
+      "title": "The Price of Agreement: Measuring LLM Sycophancy in Agentic Financial Applications",
+      "source_url": "https://arxiv.org/abs/2604.24668v3",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2604.15957",
+      "title": "Small Yet Configurable: Unveiling Null Variability in Software",
+      "source_url": "https://arxiv.org/abs/2604.15957v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2604.14523",
+      "title": "Quantifying and Improving the Accuracy of Electromagnetic Transient-Transient Stability Hybrid Simulation",
+      "source_url": "https://arxiv.org/abs/2604.14523v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2604.07629",
+      "title": "Behavior Latticing: Inferring User Motivations from Unstructured Interactions",
+      "source_url": "https://arxiv.org/abs/2604.07629v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2604.06388",
+      "title": "Determining the Host Stars of Planets in Binary Star Systems with Asterodensity Profiling: Investigating the Canonical Radius Gap",
+      "source_url": "https://arxiv.org/abs/2604.06388v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2604.04080",
+      "title": "Intelligent Traffic Monitoring with YOLOv11: A Case Study in Real-Time Vehicle Detection",
+      "source_url": "https://arxiv.org/abs/2604.04080v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2604.00425",
+      "title": "Effective attractive and repulsive interactions behind lift synchronization",
+      "source_url": "https://arxiv.org/abs/2604.00425v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2603.26065",
+      "title": "Eliciting Von Neumann-Morgenstern utility from discrete choices with response error",
+      "source_url": "https://arxiv.org/abs/2603.26065v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2603.16847",
+      "title": "Solving gravitational field equations by Wiener-Hopf matrix factorisation, and beyond",
+      "source_url": "https://arxiv.org/abs/2603.16847v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2603.11002",
+      "title": "Global dynamics and bifurcation analysis of a chemostat model with obligate mutualism and mortality",
+      "source_url": "https://arxiv.org/abs/2603.11002v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2603.08900",
+      "title": "A New Modeling to Feature Selection Based on the Fuzzy Rough Set Theory in Normal and Optimistic States on Hybrid Information Systems",
+      "source_url": "https://arxiv.org/abs/2603.08900v2",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2603.08459",
+      "title": "Data-Driven Priors for Uncertainty-Aware Risk Prediction of Clinical Deterioration using Multimodal Data",
+      "source_url": "https://arxiv.org/abs/2603.08459v2",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2603.07074",
+      "title": "Physics-Guided VLM Priors for All-Cloud Removal",
+      "source_url": "https://arxiv.org/abs/2603.07074v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2603.05477",
+      "title": "A FAST Survey of H I Absorption in Low-power Radio Sources",
+      "source_url": "https://arxiv.org/abs/2603.05477v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2603.02198",
+      "title": "Predicting Gaia astrometry's ability to constrain the populations of circumbinary planets",
+      "source_url": "https://arxiv.org/abs/2603.02198v2",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2603.00816",
+      "title": "Adjoint Reidemeister torsion of 3-manifolds with torus boundary for semisimple algebraic groups",
+      "source_url": "https://arxiv.org/abs/2603.00816v2",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2602.17589",
+      "title": "States that grow linearly in time, exceptional points, and zero norm states in the simple harmonic oscillator",
+      "source_url": "https://arxiv.org/abs/2602.17589v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2602.17065",
+      "title": "Quantum-Channel Matrix Optimization for Holevo Bound Enhancement",
+      "source_url": "https://arxiv.org/abs/2602.17065v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2602.16847",
+      "title": "Electron viscosity and device-dependent variability in four-probe electrical transport in ultra-clean graphene field-effect transistors",
+      "source_url": "https://arxiv.org/abs/2602.16847v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2602.14146",
+      "title": "Early-stage memory effect on the dephasing charger-mediated quantum battery",
+      "source_url": "https://arxiv.org/abs/2602.14146v2",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2602.13713",
+      "title": "On Theoretically-Driven LLM Agents for Multi-Dimensional Discourse Analysis",
+      "source_url": "https://arxiv.org/abs/2602.13713v2",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2602.13698",
+      "title": "Localized-basis formulation of interacting Hamiltonians in flat topological bands: coherent states and coherent-like states for fractional physics",
+      "source_url": "https://arxiv.org/abs/2602.13698v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2602.00244",
+      "title": "A Bayesian Approach to Feedback Control for Hyperbolic Balance Laws",
+      "source_url": "https://arxiv.org/abs/2602.00244v2",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2601.21506",
+      "title": "IROS: A Dual-Process Architecture for Real-Time VLM-Based Indoor Navigation",
+      "source_url": "https://arxiv.org/abs/2601.21506v1",
+      "status": "excluded",
+      "reason": "Generic dual-process navigation; no close typed-decision interface connection established.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2601.17034",
+      "title": "An infinite set of one-range addition theorems without an infinite second series, for Slater orbitals and it derivatives, applicable more than one coordinate system",
+      "source_url": "https://arxiv.org/abs/2601.17034v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2601.15105",
+      "title": "Brjuno-Like Functions for nonlinear expanding maps: Fractional Derivatives and Regularity Dichotomies",
+      "source_url": "https://arxiv.org/abs/2601.15105v2",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2601.13743",
+      "title": "Counterexample Classification for Signal Temporal Logic Specifications",
+      "source_url": "https://arxiv.org/abs/2601.13743v2",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2601.05666",
+      "title": "Advancing credit mobility through stakeholder-informed AI design and adoption",
+      "source_url": "https://arxiv.org/abs/2601.05666v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2601.05277",
+      "title": "Evolving Cognitive Architectures",
+      "source_url": "https://arxiv.org/abs/2601.05277v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2601.01449",
+      "title": "Segmentation and Processing of German Court Decisions from Open Legal Data",
+      "source_url": "https://arxiv.org/abs/2601.01449v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2512.20587",
+      "title": "Quantum Gates from Wolfram Model Multiway Rewriting Systems",
+      "source_url": "https://arxiv.org/abs/2512.20587v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2512.03977",
+      "title": "An Information Theory of Finite Abstractions and their Fundamental Scalability Limits",
+      "source_url": "https://arxiv.org/abs/2512.03977v5",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2511.22679",
+      "title": "Foundations of Quantum Granular Computing with Effect-Based Granules, Algebraic Properties and Reference Architectures",
+      "source_url": "https://arxiv.org/abs/2511.22679v2",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2511.14658",
+      "title": "RIOJA. The dusty outflows and density-complex interstellar medium in the N-enhanced lensed galaxy RXCJ2248-ID at z=6.1",
+      "source_url": "https://arxiv.org/abs/2511.14658v2",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2511.13569",
+      "title": "Coclique level structure for stochastic chemical reaction networks",
+      "source_url": "https://arxiv.org/abs/2511.13569v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2511.11523",
+      "title": "Intrinsic volumes of the quantum state space and mutually unbiased bases",
+      "source_url": "https://arxiv.org/abs/2511.11523v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2511.05878",
+      "title": "FusionLog: Cross-System Log-based Anomaly Detection via Fusion of General and Proprietary Knowledge",
+      "source_url": "https://arxiv.org/abs/2511.05878v3",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2511.05862",
+      "title": "ZeroLog: Zero-Label Generalizable Cross-System Log-based Anomaly Detection",
+      "source_url": "https://arxiv.org/abs/2511.05862v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2510.23380",
+      "title": "Borel Complexity of the set of vectors normal for a fixed recurrence sequence",
+      "source_url": "https://arxiv.org/abs/2510.23380v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2510.21851",
+      "title": "Data-Driven Approach to Capitation Reform in Rwanda",
+      "source_url": "https://arxiv.org/abs/2510.21851v2",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2508.07662",
+      "title": "GLiClass: Generalist Lightweight Model for Sequence Classification Tasks",
+      "source_url": "https://arxiv.org/abs/2508.07662v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2409.18443",
+      "title": "Investigating the Impact of Sovereign Credit Rating Downgrade on the US Equity Market",
+      "source_url": "https://arxiv.org/abs/2409.18443v1",
+      "status": "excluded",
+      "reason": "Title/abstract screening did not establish a close Jev or typed-decision connection; lexical match or broader neighboring topic.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2305.05176",
+      "title": "FrugalGPT: How to Use Large Language Models While Reducing Cost and Improving Performance",
+      "source_url": "https://arxiv.org/abs/2305.05176v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "1706.04599",
+      "title": "On Calibration of Modern Neural Networks",
+      "source_url": "https://arxiv.org/abs/1706.04599v2",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "1705.08500",
+      "title": "Selective Classification for Deep Neural Networks",
+      "source_url": "https://arxiv.org/abs/1705.08500v2",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-16"
+    }
+  ]
+}

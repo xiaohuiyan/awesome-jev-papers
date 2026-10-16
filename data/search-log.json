@@ -1,0 +1,102 @@
+{
+  "searched_on": "2026-10-16",
+  "time_zone": "Asia/Shanghai",
+  "queries": [
+    {
+      "query": "id_list from arXiv Jev search and verified seeds",
+      "url": "https://export.arxiv.org/api/query?id_list=2610.22131%2C2610.21614%2C2610.21412%2C2610.21411%2C2610.21244%2C2610.20927%2C2610.20907%2C2610.20778%2C2610.20665%2C2610.20634%2C2610.19971%2C2610.19619%2C2610.19596%2C2610.19478%2C2610.19118%2C2610.18780%2C2610.18612%2C2610.18610%2C2610.18529%2C2610.18497%2C2610.18488%2C2610.18389%2C2610.18326%2C2610.17820%2C2610.17205%2C2610.17175%2C2610.17016%2C2610.16967%2C2610.16655%2C2610.16238%2C2610.16191%2C2610.15742%2C2610.15710%2C2610.15537%2C2610.14631%2C2610.14449%2C2610.14404%2C2610.14112%2C2610.13092%2C2610.11978%2C2610.11901%2C2610.11692%2C2610.11436%2C2610.11392%2C2610.11379%2C2610.11135%2C2610.10978%2C2610.10615%2C2610.10321%2C2610.09937%2C2610.09328%2C2610.09188%2C2610.08829%2C2610.08775%2C2610.08675%2C2610.08089%2C2610.07953%2C2610.06625%2C2610.06425%2C2610.06354%2C2610.04985%2C2610.04345%2C2610.03935%2C2610.03387%2C2610.03324%2C2610.03073%2C2610.02586%2C2610.02516%2C2610.02267%2C2610.02076%2C2610.02048%2C2610.01834%2C2610.01231%2C2610.01079%2C2610.01006%2C2610.00437%2C2610.00381%2C2610.00376%2C2610.00346%2C2610.00213%2C2609.40241%2C2609.39496%2C2609.38850%2C2609.38827%2C2609.37647%2C2609.37470%2C2609.36965%2C2609.36399%2C2609.36154%2C2609.36115%2C2609.36059%2C2609.35342%2C2609.35293%2C2609.35286%2C2609.34969%2C2609.34963%2C2609.34862%2C2609.34261%2C2609.34227%2C2609.34180%2C2609.34024%2C2609.33971%2C2609.33874%2C2609.33689%2C2609.33609%2C2609.33538%2C2609.33401%2C2609.33209%2C2609.32160%2C2609.31142%2C2609.30922%2C2609.30706%2C2609.30243%2C2609.30216%2C2609.30186%2C2609.29769%2C2609.29429%2C2609.29283%2C2609.28940%2C2609.28919%2C2609.28613%2C2609.28587%2C2609.27678%2C2609.27607%2C2609.27535%2C2609.27331%2C2609.26758%2C2609.26550%2C2609.26532%2C2609.25845%2C2609.24965%2C2609.24395%2C2609.24052%2C2609.23986%2C2609.23959%2C2609.23886%2C2609.23136%2C2609.22753%2C2609.08183%2C2606.22807%2C2605.29893%2C2409.18443%2C2610.18773%2C2610.18233%2C2610.19811%2C2610.05107%2C2610.09683%2C2609.36116%2C2610.00831%2C1706.04599%2C1705.08500%2C2305.05176%2C2508.07662&max_results=200",
+      "count": 153
+    },
+    {
+      "query": "all:\"System One\" AND submittedDate:[202510160000 TO 202610162359]",
+      "url": "https://export.arxiv.org/api/query?search_query=all%3A%22System+One%22+AND+submittedDate%3A%5B202510160000+TO+202610162359%5D&max_results=200&sortBy=submittedDate&sortOrder=descending",
+      "count": 151
+    },
+    {
+      "query": "all:\"typed decision\" AND submittedDate:[202510160000 TO 202610162359]",
+      "url": "https://export.arxiv.org/api/query?search_query=all%3A%22typed+decision%22+AND+submittedDate%3A%5B202510160000+TO+202610162359%5D&max_results=200&sortBy=submittedDate&sortOrder=descending",
+      "count": 49
+    }
+  ],
+  "web_discovery_queries": [
+    {
+      "round": 0,
+      "query": "arxiv \"JEV\" model",
+      "purpose": "Resolve Jev identity"
+    },
+    {
+      "round": 0,
+      "query": "arxiv \"system one\" \"decision\" model",
+      "purpose": "Resolve related terminology"
+    },
+    {
+      "round": 1,
+      "query": "Jev typed decision models arxiv",
+      "purpose": "Find direct Jev studies"
+    },
+    {
+      "round": 1,
+      "query": "System One decision model architecture arxiv",
+      "purpose": "Find architecture and training studies"
+    },
+    {
+      "round": 2,
+      "query": "JevCascade FastJEV NumericJev arxiv",
+      "purpose": "Explore named model leads; broad combined query had low precision"
+    },
+    {
+      "round": 2,
+      "query": "System-1 decision model Kev Dyad arxiv",
+      "purpose": "Explore open-model leads"
+    },
+    {
+      "round": 2,
+      "query": "System One calibration risk budget arxiv",
+      "purpose": "Fill reliability coverage"
+    },
+    {
+      "round": 3,
+      "query": "JevCascade arxiv",
+      "purpose": "Resolve a model name; no independent arXiv ID established"
+    },
+    {
+      "round": 3,
+      "query": "FastJEV arxiv",
+      "purpose": "Resolve inference-efficiency paper"
+    },
+    {
+      "round": 3,
+      "query": "AnyJev arxiv",
+      "purpose": "Resolve training-free decision readout"
+    },
+    {
+      "round": 3,
+      "query": "Kev decision model arxiv",
+      "purpose": "Disambiguate several projects named Kev"
+    }
+  ],
+  "arxiv_site_search": {
+    "url": "https://arxiv.org/search/?query=Jev&searchtype=all&abstracts=show&order=-announced_date_first&size=200",
+    "results": 142
+  },
+  "reference_expansion": [
+    {
+      "source": "https://arxiv.org/html/2609.32160v1",
+      "location": "References and Appendix A",
+      "purpose": "Early Jev corpus and four foundational methods"
+    }
+  ],
+  "unique_candidates": 283,
+  "outcomes": {
+    "included": 172,
+    "excluded": 109,
+    "pending": 2
+  },
+  "limitations": [
+    "Discovery uses arXiv metadata and indexed web results, not an exhaustive full-text search.",
+    "Most papers were screened at abstract level; selected ambiguous relations were checked in full text.",
+    "No citation-count data or independent experimental reproduction was collected.",
+    "Code links are included only when author-linked and reachable; absence of a link means not verified.",
+    "Snapshot ends on 2026-10-16; future revisions and later announcements are not covered."
+  ]
+}
