@@ -96,8 +96,7 @@ def readme(data, lang):
             label = ("作者代码" if zh else "Author code") + (f" {i + 1}" if len(p["code"]) > 1 else "")
             resources.append(f"[{label}]({c['url']})")
         return [f'<a id="paper-{pid.replace(".", "-")}"></a>',
-                f"{heading} [{p['title']}]({p['reviewed_url']})",
-                " · ".join(resources),
+                f"{heading} [{p['title']}]({p['reviewed_url']}) · " + " · ".join(resources),
                 *[f"- **{name}**：{value}" if zh else f"- **{name}**: {value}" for name, value in fields],
                 "---"]
 
