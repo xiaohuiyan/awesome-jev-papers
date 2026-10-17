@@ -36,13 +36,13 @@ def readme(data, lang):
                   f"**更新：{data['updated_on']}** · **{len(papers)} 篇** · Jev 直接相关 **{counts['direct']}** · 同类模型与方法 **{counts['related']}** · 基础背景 **{counts['background']}** · 已核实作者代码链接 **{links} 篇**", "",
                   "主要时间范围：**2025-10-16 至 2026-10-16**，按首次提交日期筛选；每篇标明本次核实的版本。较早的基础工作单列。", "",
                   "Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复制了 Jev 的专有架构或训练方法。简介描述论文研究内容；预印本结论不等于独立复现结果，跨论文指标不可直接组成排行榜。", "",
-                  "**数据与维护：** [结构化数据](data/papers.json) · [BibTeX](references.bib) · [收录规则](docs/METHODOLOGY.md) · [检索记录](docs/SEARCH_LOG.md) · [筛选台账](data/screening.json) · [待核实](docs/PENDING.md) · [贡献指南](CONTRIBUTING.md)", ""]
+                  "**数据与维护：** [结构化数据](data/papers.json) · [BibTeX](references.bib) · [收录规则](docs/METHODOLOGY.md) · [检索记录](docs/SEARCH_LOG.md) · [社交平台检索](docs/SOCIAL_SEARCH_2026-10-17.md) · [筛选台账](data/screening.json) · [待核实](docs/PENDING.md) · [贡献指南](CONTRIBUTING.md)", ""]
     else:
         lines += ["A curated arXiv reading list on **Jev, System One, and typed decision models**: models that return probabilities over supplied options, and the methods, evaluations, and agent applications built around them.", "",
                   f"**Updated: {data['updated_on']}** · **{len(papers)} papers** · **{counts['direct']}** directly related to Jev · **{counts['related']}** related models and methods · **{counts['background']}** foundations · **{links}** papers with verified author-linked code", "",
                   "Main window: **2025-10-16 through 2026-10-16**, by first submission. Each entry pins the version reviewed for this snapshot. Earlier foundations are listed separately.", "",
                   "Jev means TypeSafe's hosted model. Similar interfaces do not establish reproduction of its proprietary architecture or training. Notes describe the research, not independently reproduced results. Preprints and results from different experimental setups should not be read as a shared performance leaderboard.", "",
-                  "**Data and maintenance:** [JSON](data/papers.json) · [BibTeX](references.bib) · [Selection rules](docs/METHODOLOGY.md) · [Search log](docs/SEARCH_LOG.md) · [Screening ledger](data/screening.json) · [Pending](docs/PENDING.md) · [Contributing](CONTRIBUTING.md)", ""]
+                  "**Data and maintenance:** [JSON](data/papers.json) · [BibTeX](references.bib) · [Selection rules](docs/METHODOLOGY.md) · [Search log](docs/SEARCH_LOG.md) · [Social-platform search](docs/SOCIAL_SEARCH_2026-10-17.md) · [Screening ledger](data/screening.json) · [Pending](docs/PENDING.md) · [Contributing](CONTRIBUTING.md)", ""]
     lines += ["## " + ("目录" if zh else "Contents"), "",
               "- [" + ("推荐阅读" if zh else "Recommended reading") + "](#recommended-reading)",
               "- [" + ("分类统计" if zh else "Category index") + "](#category-index)"]

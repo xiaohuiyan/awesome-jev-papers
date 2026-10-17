@@ -1,0 +1,326 @@
+{
+  "schema_version": 1,
+  "searched_on": "2026-10-17",
+  "time_zone": "Asia/Shanghai",
+  "purpose": "Discover recent Jev papers through four social platforms, then verify original research and deduplicate against the catalogue.",
+  "recency": "Initial queries used 30 days; follow-up queries broadened date filters because platform indexing was sparse. Discovery date is not paper submission date.",
+  "rubric": {
+    "topic_weight": 0.6,
+    "substantive_contribution_weight": 0.4,
+    "disqualifiers": [
+      "Unrelated acronym",
+      "Product/tutorial without a verifiable paper",
+      "Name similarity alone",
+      "Unsubstantiated proprietary architecture lineage"
+    ]
+  },
+  "queries": [
+    {
+      "engine": "web",
+      "round": 1,
+      "recency_days": 30,
+      "query": "site:x.com Jev arxiv"
+    },
+    {
+      "engine": "web",
+      "round": 1,
+      "recency_days": 30,
+      "query": "site:weibo.com Jev 论文"
+    },
+    {
+      "engine": "web",
+      "round": 1,
+      "recency_days": 30,
+      "query": "site:xiaohongshu.com Jev 决策 模型"
+    },
+    {
+      "engine": "web",
+      "round": 1,
+      "recency_days": 30,
+      "query": "site:mp.weixin.qq.com Jev 论文"
+    },
+    {
+      "engine": "web_search_prime",
+      "round": 1,
+      "recency": "oneMonth",
+      "query": "site:x.com \"Jev\" \"arxiv.org\""
+    },
+    {
+      "engine": "web_search_prime",
+      "round": 1,
+      "recency": "oneMonth",
+      "query": "site:mp.weixin.qq.com \"Jev\""
+    },
+    {
+      "engine": "web_search_prime",
+      "round": 1,
+      "recency": "oneMonth",
+      "query": "site:xiaohongshu.com/explore \"Jev\""
+    },
+    {
+      "engine": "web_search_prime",
+      "round": 1,
+      "recency": "oneMonth",
+      "query": "site:weibo.com \"Jev\" \"arxiv\""
+    },
+    {
+      "engine": "web",
+      "round": 2,
+      "query": "Jev arxiv Twitter paper October 2026"
+    },
+    {
+      "engine": "web",
+      "round": 2,
+      "query": "Jev 论文 微信公众号 2026 10"
+    },
+    {
+      "engine": "web",
+      "round": 2,
+      "query": "Jev 小红书 论文"
+    },
+    {
+      "engine": "web",
+      "round": 2,
+      "query": "Jev 新浪微博 最新 论文"
+    },
+    {
+      "engine": "web",
+      "round": 2,
+      "query": "\"Jev\" \"paper\" \"x.com\" after:2026-10-10"
+    },
+    {
+      "engine": "web",
+      "round": 2,
+      "query": "\"Jev\" \"论文\" \"公众号\""
+    },
+    {
+      "engine": "web",
+      "round": 2,
+      "query": "\"Jev\" \"小红书\" \"论文\""
+    },
+    {
+      "engine": "web",
+      "round": 2,
+      "query": "Jev 微信 论文 SearchJev October"
+    },
+    {
+      "engine": "web",
+      "round": 2,
+      "query": "\"Jev\" \"arxiv\" \"2026-10-16\""
+    },
+    {
+      "engine": "web",
+      "round": 2,
+      "query": "\"Jev\" \"arxiv\" \"2026-10-17\""
+    },
+    {
+      "engine": "web",
+      "round": 2,
+      "query": "\"Jev\" \"From Samples to Scenarios\""
+    },
+    {
+      "engine": "web",
+      "round": 2,
+      "query": "Jev \"772.65\" arxiv"
+    },
+    {
+      "engine": "web",
+      "round": 2,
+      "query": "Jev \"7,950\" paper"
+    },
+    {
+      "engine": "web",
+      "round": 2,
+      "query": "\"Jev\" \"论文\" site:weibo.com after:2026-10-01"
+    },
+    {
+      "engine": "web",
+      "round": 2,
+      "query": "\"Jev\" \"论文\" site:mp.weixin.qq.com/s after:2026-10-01"
+    },
+    {
+      "engine": "web",
+      "round": 2,
+      "query": "\"Evaluating Decision Models\" \"twitter\""
+    },
+    {
+      "engine": "web",
+      "round": 2,
+      "query": "\"Jev\" \"akshay_pachaar\" \"Judge\""
+    },
+    {
+      "engine": "web",
+      "round": 2,
+      "query": "\"Jev\" \"slash1sol\" \"October 12\""
+    },
+    {
+      "engine": "web",
+      "round": 2,
+      "query": "\"Jev\" \"论文\" \"小红书\" \"10月\""
+    },
+    {
+      "engine": "web",
+      "round": 2,
+      "query": "Jev arxiv",
+      "domains": [
+        "x.com",
+        "twitter.com"
+      ]
+    },
+    {
+      "engine": "web",
+      "round": 2,
+      "query": "Jev 论文",
+      "domains": [
+        "mp.weixin.qq.com"
+      ]
+    },
+    {
+      "engine": "web",
+      "round": 2,
+      "query": "Jev",
+      "domains": [
+        "xiaohongshu.com"
+      ]
+    }
+  ],
+  "platforms": [
+    {
+      "platform": "X / Twitter",
+      "access": "Search results and public secondary indexes; attempted Arize original post returned HTTP 403.",
+      "sources": [
+        "https://jev-x.com/",
+        "https://jevmodel.ai/citations/",
+        "https://x.com/arizeai/status/2107891481789022324"
+      ],
+      "result": "Paper discussions overlapped existing entries; recent claims of support-routing and trading papers could not be mapped to verified new arXiv records."
+    },
+    {
+      "platform": "Sina Weibo",
+      "access": "Public search-index snippets; web reader reports robots restrictions on weibo.com.",
+      "sources": [
+        "https://weibo.com/2/detail/5343782388109072",
+        "https://weibo.com/2/detail/5345122607694263",
+        "https://weibo.com/2/detail/5344879783710295"
+      ],
+      "result": "Product introductions and ecosystem commentary; no new verified paper from these posts."
+    },
+    {
+      "platform": "Xiaohongshu",
+      "access": "Direct public search page displayed a login requirement; external queries did not return verifiable paper posts.",
+      "sources": [
+        "https://www.xiaohongshu.com/search_result?keyword=Jev",
+        "https://github.com/CodeAlex52/awesome-jev-cn"
+      ],
+      "result": "Coverage incomplete. Third-party note titles were not treated as verified original posts or papers."
+    },
+    {
+      "platform": "WeChat",
+      "access": "Sogou public search snippets and a full readable original WeChat roundup; direct domain searches were sparse.",
+      "sources": [
+        "https://weixin.sogou.com/weixin?type=2&query=Jev",
+        "https://mp.weixin.qq.com/s/kK3du8zji4fa_9chnBl7Dw"
+      ],
+      "result": "13 arXiv IDs in the original roundup: 12 already included and one newly included after original-source verification."
+    }
+  ],
+  "leads": [
+    {
+      "platform": "WeChat",
+      "source_url": "https://mp.weixin.qq.com/s/kK3du8zji4fa_9chnBl7Dw",
+      "title": "Jev才火一周，13篇论文光速上线！网友：公式做题就是快",
+      "source_access": "Original article body read; publication date not independently extracted.",
+      "discovered_via": "https://github.com/Promethe-us/awesome-jev/blob/main/README.md",
+      "arxiv_ids": [
+        "2609.22753",
+        "2609.23136",
+        "2609.24052",
+        "2609.24965",
+        "2609.23986",
+        "2609.26532",
+        "2609.26550",
+        "2609.23959",
+        "2609.24395",
+        "2609.25845",
+        "2609.23886",
+        "2609.24574",
+        "2609.26758"
+      ],
+      "added_arxiv_ids": [
+        "2609.24574"
+      ],
+      "already_included_arxiv_ids": [
+        "2609.22753",
+        "2609.23136",
+        "2609.24052",
+        "2609.24965",
+        "2609.23986",
+        "2609.26532",
+        "2609.26550",
+        "2609.23959",
+        "2609.24395",
+        "2609.25845",
+        "2609.23886",
+        "2609.26758"
+      ]
+    },
+    {
+      "platform": "X / Twitter",
+      "source_url": "https://zamantika.com/es/profile/akshay_pachaar",
+      "source_access": "Secondary profile mirror/search index; original post not verified.",
+      "description": "Discussion of JEV-as-a-Judge.",
+      "status": "already_included",
+      "arxiv_ids": [
+        "2609.26550"
+      ]
+    },
+    {
+      "platform": "X / Twitter",
+      "source_url": "https://jev-x.com/",
+      "source_access": "Secondary index read; original post not verified.",
+      "description": "@slash1sol support-routing post displayed as 10/14 claims an October 12 arXiv paper but inspected material supplies no resolvable identifier.",
+      "status": "unresolved",
+      "arxiv_ids": [],
+      "next_step": "Require exact paper title, authors and arXiv/DOI link; do not treat the cost scenario as a research result."
+    },
+    {
+      "platform": "X / Twitter",
+      "source_url": "https://jev-x.com/",
+      "source_access": "Secondary index read; original post not verified.",
+      "description": "@bl888m_eth trading post displayed as 10/16 calls a tutorial a research paper; no verifiable scholarly identifier found.",
+      "status": "unresolved",
+      "arxiv_ids": [],
+      "next_step": "Require a publicly accessible research manuscript and provenance before paper screening."
+    },
+    {
+      "platform": "Sina / WeChat repost lead",
+      "source_url": "https://finance.sina.com.cn/stock/t/2026-09-27/doc-inithqpy3279615.shtml",
+      "source_access": "Public repost/search index; source labelled 机器之心Pro, original WeChat link not established.",
+      "description": "TimePrism / From Samples to Scenarios is compared with Jev by analogy in a media article.",
+      "status": "insufficient_relation",
+      "arxiv_ids": [],
+      "next_step": "Do not infer a Jev model lineage from parallel probabilistic forecasting; no addition under the focused scope."
+    }
+  ],
+  "outcome": {
+    "new_papers": 1,
+    "added_arxiv_ids": [
+      "2609.24574"
+    ],
+    "roundup_already_included": 12,
+    "unresolved_social_leads": 2,
+    "catalogue_papers_after": 174,
+    "direct_after": 118,
+    "related_after": 52,
+    "background_after": 4,
+    "papers_with_verified_code_after": 53
+  },
+  "limitations": [
+    "Not an exhaustive or authenticated search of all four platforms.",
+    "Search results sometimes ignored domain or date constraints; unrelated/off-platform results were not counted as platform evidence.",
+    "Relative timestamps from search snippets were not used as verified publication dates.",
+    "Social claims and popularity are discovery signals, never paper evidence or a shared benchmark ranking.",
+    "Unresolved social leads without an arXiv ID are kept here, separate from the two pending arXiv candidates in data/screening.json.",
+    "The new paper was submitted in September; this review adds a missed paper, not a claim of a newly submitted October paper."
+  ]
+}

@@ -19,16 +19,18 @@ The complete machine-readable record is [search-log.json](../data/search-log.jso
 
 ## Current outcomes (2026-10-17)
 
+The [four-platform social search](SOCIAL_SEARCH_2026-10-17.md) added the missed [computational social science evaluation](https://arxiv.org/abs/2609.24574v2) through a readable WeChat roundup. Twelve other papers in that roundup were duplicates. Platform access limits and unresolved non-arXiv leads are recorded separately; the original broad-search snapshot remains unchanged.
+
 | Outcome | Count |
 | --- | ---: |
-| Unique candidates | 284 |
-| Included | 173 |
-| Direct Jev | 117 |
+| Unique candidates | 285 |
+| Included | 174 |
+| Direct Jev | 118 |
 | Related models / methods | 52 |
 | Earlier foundations | 4 |
 | Excluded | 109 |
 | Pending further evidence | 2 |
-| Papers with verified author-linked GitHub code | 52 |
+| Papers with verified author-linked GitHub code | 53 |
 
 This snapshot contains papers submitted through 15 October 2026 in the retrieved corpus. The date boundary is the review cutoff, not a claim that every paper submitted on 16 October had already been announced or indexed.
 
@@ -48,6 +50,6 @@ The phrase searches produce false positives outside AI, and broad terms such as 
 
 ## 中文摘要
 
-原始检索合并站内检索、官方 API 查询和参考文献扩展。2026-10-17 根据用户提供的链接补充 StartLux-Decision，核实元数据、正文中的 Jev 对比及作者代码；此次单篇补充不代表重新检索或复核整个目录。累计 **284 个去重候选**，正式收录 **173 篇**，排除 **109 篇**，另有 **2 篇待核实**。正式目录分为 **117 篇 Jev 直接相关、52 篇同类模型与方法、4 篇基础背景**；**52 篇**有已核实可访问的作者 GitHub 代码链接。
+原始检索合并站内检索、官方 API 查询和参考文献扩展。2026-10-17 补充 StartLux-Decision，并通过四个平台的公开检索，从公众号盘点中补录一篇计算社会科学标注评测。逐篇核实元数据、正文中的 Jev 对比及作者代码，未重新核实整个目录。累计 **285 个去重候选**，正式收录 **174 篇**，排除 **109 篇**，另有 **2 篇待核实**。正式目录分为 **118 篇 Jev 直接相关、52 篇同类模型与方法、4 篇基础背景**；**53 篇**有已核实可访问的作者 GitHub 代码链接。没有确定 arXiv 编号的社交线索另见[平台检索记录](SOCIAL_SEARCH_2026-10-17.md)，不计入上述候选数。
 
 目录覆盖本次检索中截至 10 月 15 日提交的论文，不代表 10 月 16 日所有投稿均已公开或被索引。摘要中没有明确关系的论文，必要时查询正文；同名模型、通用双系统研究及仅在 URL 中出现 Jev 的结果不会直接收录。

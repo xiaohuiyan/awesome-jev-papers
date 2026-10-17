@@ -5,13 +5,13 @@
 
 围绕 **Jev、System One 和结构化决策模型**整理的 arXiv 论文目录。重点关注直接返回候选概率的模型，以及它们在智能体中的方法、评测和应用。
 
-**更新：2026-10-17** · **173 篇** · Jev 直接相关 **117** · 同类模型与方法 **52** · 基础背景 **4** · 已核实作者代码链接 **52 篇**
+**更新：2026-10-17** · **174 篇** · Jev 直接相关 **118** · 同类模型与方法 **52** · 基础背景 **4** · 已核实作者代码链接 **53 篇**
 
 主要时间范围：**2025-10-16 至 2026-10-16**，按首次提交日期筛选；每篇标明本次核实的版本。较早的基础工作单列。
 
 Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复制了 Jev 的专有架构或训练方法。简介描述论文研究内容；预印本结论不等于独立复现结果，跨论文指标不可直接组成排行榜。
 
-**数据与维护：** [结构化数据](data/papers.json) · [BibTeX](references.bib) · [收录规则](docs/METHODOLOGY.md) · [检索记录](docs/SEARCH_LOG.md) · [筛选台账](data/screening.json) · [待核实](docs/PENDING.md) · [贡献指南](CONTRIBUTING.md)
+**数据与维护：** [结构化数据](data/papers.json) · [BibTeX](references.bib) · [收录规则](docs/METHODOLOGY.md) · [检索记录](docs/SEARCH_LOG.md) · [社交平台检索](docs/SOCIAL_SEARCH_2026-10-17.md) · [筛选台账](data/screening.json) · [待核实](docs/PENDING.md) · [贡献指南](CONTRIBUTING.md)
 
 ## 目录
 
@@ -48,7 +48,7 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 | 主题 | Jev 直接相关 | 同类模型与方法 | 合计 |
 | --- | ---: | ---: | ---: |
 | [模型架构与训练方法](#architecture) | 5 | 25 | 30 |
-| [基准测试与比较评估](#evaluation) | 16 | 2 | 18 |
+| [基准测试与比较评估](#evaluation) | 17 | 2 | 19 |
 | [概率校准、可靠性与选择性决策](#calibration) | 12 | 5 | 17 |
 | [搜索、记忆、工具与智能体决策](#agents) | 25 | 7 | 32 |
 | [安全、鲁棒性与决策偏置](#security) | 27 | 5 | 32 |
@@ -366,7 +366,7 @@ Zehua Cheng, Wei Dai, Jiahao Sun · 2026-09-20 · **v1** · **同类模型与方
 <a id="evaluation"></a>
 ## 基准测试与比较评估
 
-**Jev 直接相关 (16)**
+**Jev 直接相关 (17)**
 
 <a id="paper-2610-21244"></a>
 ### [System1-Arena: Which Decisions Can Be Left to System 1?](https://arxiv.org/abs/2610.21244v1)
@@ -517,6 +517,16 @@ Delip Rao, Chris Callison-Burch · 2026-09-24 · **v3** · **Jev 直接相关**
 
 [arXiv](https://arxiv.org/abs/2609.29769) · [PDF](https://arxiv.org/pdf/2609.29769v3) · 作者代码未核实 · [证据](docs/EVIDENCE.md#evidence-2609-29769)<br>
 标签：`evaluation` · `efficiency` · `benchmark` · `judging` · `abstention`
+
+<a id="paper-2609-24574"></a>
+### [Evaluating Decision Models for Text Annotation in Computational Social Science](https://arxiv.org/abs/2609.24574v2)
+
+Hazem Ibrahim, Yasir Zaki · 2026-09-21 · **v2** · **Jev 直接相关**
+
+在统一零样本协议下，对 18 个计算社会科学任务（7,977 条样本）中的决策模型与 19 个 LLM 基线进行比较。Jev 在 15 个正式评测任务中的 14 个落后于单任务最佳 LLM；按置信度升级至 LLM 可改善成本与质量的权衡，但校准表现因研究构念而异。
+
+[arXiv](https://arxiv.org/abs/2609.24574) · [PDF](https://arxiv.org/pdf/2609.24574v2) · [作者代码](https://github.com/hazemibrahim97/decision-models-css) · [证据](docs/EVIDENCE.md#evidence-2609-24574)<br>
+标签：`evaluation` · `social-science` · `text-annotation` · `calibration` · `cascading`
 
 <a id="paper-2605-29893"></a>
 ### [Redundant or Necessary? A Benchmark for Detecting Redundant Steps in Agent Trajectories](https://arxiv.org/abs/2605.29893v2)

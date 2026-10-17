@@ -570,5 +570,16 @@
     "canonical_url": "https://github.com/StartLuxLabs/StartLux-Decision",
     "description": "Open decision models from 0.8B to 27B: a calibrated probability for every option in one pass, and a short thought only when unsure. Engine for vLLM, llama.cpp and MLX.",
     "private": false
+  },
+  {
+    "arxiv_id": "2609.24574",
+    "url": "https://github.com/hazemibrahim97/decision-models-css",
+    "source_url": "https://arxiv.org/html/2609.24574v2",
+    "source_location": "Closing replication statement before References",
+    "checked_on": "2026-10-17",
+    "status": "verified",
+    "canonical_url": "https://github.com/hazemibrahim97/decision-models-css",
+    "description": "Replication package: evaluating decision models for text annotation in computational social science",
+    "private": false
   }
 ]

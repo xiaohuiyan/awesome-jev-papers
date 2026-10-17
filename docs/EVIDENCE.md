@@ -2243,6 +2243,20 @@ Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence
 
 Metadata: [reviewed v3](https://arxiv.org/abs/2609.24965v3); first submitted 2026-09-21; updated 2026-10-15. Full authors: Boyuan Deng; Shuyi Fan; Hongyang Zhang; Xinhong Xie.
 
+<a id="evidence-2609-24574"></a>
+## 2609.24574 — Evaluating Decision Models for Text Annotation in Computational Social Science
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-10-17
+
+The Introduction explicitly identifies Jev as the commercial decision model evaluated. The study examines annotation accuracy, calibration and selective routing, with v2 extending the open-weight comparison to eleven systems. The matched task protocol does not establish a universal model ranking.
+
+引言明确指出被评测的商业决策模型为 Jev，研究其标注准确率、校准与选择性路由；v2 将开放权重模型比较扩展到 11 个系统。这些结论限于论文的任务和协议，不能推广为通用模型排名。
+
+- **topic**: “comparing the decision-model class (Jev” — [Section 1, Introduction](https://arxiv.org/html/2609.24574v2)
+- **contribution**: “18 computational social science classification tasks (7,977 items)” — [Abstract](https://arxiv.org/abs/2609.24574v2)
+
+Metadata: [reviewed v2](https://arxiv.org/abs/2609.24574v2); first submitted 2026-09-21; updated 2026-09-23. Full authors: Hazem Ibrahim; Yasir Zaki.
+
 <a id="evidence-2609-24395"></a>
 ## 2609.24395 — JEVQA - Video Quality from Metadata, Bitstream, and Pixel Features with a General-Purpose Decision Model
 

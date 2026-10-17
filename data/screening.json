@@ -2272,6 +2272,14 @@
       "status": "included",
       "reason": "User-supplied candidate. Full text directly evaluates hosted Jev (Table 4 and Figure 11); architecture/training contribution and author-linked code verified.",
       "screened_on": "2026-10-17"
+    },
+    {
+      "arxiv_id": "2609.24574",
+      "title": "Evaluating Decision Models for Text Annotation in Computational Social Science",
+      "source_url": "https://arxiv.org/abs/2609.24574v2",
+      "status": "included",
+      "reason": "Discovered through a readable WeChat paper roundup; original v2 identifies hosted Jev and evaluates annotation, calibration and routing. Author code verified.",
+      "screened_on": "2026-10-17"
     }
   ]
 }

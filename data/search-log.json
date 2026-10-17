@@ -86,9 +86,9 @@
       "purpose": "Early Jev corpus and four foundational methods"
     }
   ],
-  "unique_candidates": 284,
+  "unique_candidates": 285,
   "outcomes": {
-    "included": 173,
+    "included": 174,
     "excluded": 109,
     "pending": 2
   },
@@ -108,6 +108,32 @@
       "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.17309v1",
       "full_text_source": "https://arxiv.org/html/2610.17309v1",
       "result": "Included: direct Jev evaluation; architecture and training category."
+    },
+    {
+      "reviewed_on": "2026-10-17",
+      "arxiv_id": "2609.24574",
+      "discovery": "WeChat roundup found via public community index",
+      "discovery_url": "https://mp.weixin.qq.com/s/kK3du8zji4fa_9chnBl7Dw",
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2609.24574v2",
+      "full_text_source": "https://arxiv.org/html/2609.24574v2",
+      "result": "Included: direct Jev; comparative evaluation."
+    }
+  ],
+  "social_searches": [
+    {
+      "searched_on": "2026-10-17",
+      "record": "data/social-search-2026-10-17.json",
+      "report": "docs/SOCIAL_SEARCH_2026-10-17.md",
+      "platforms": [
+        "X / Twitter",
+        "Sina Weibo",
+        "Xiaohongshu",
+        "WeChat"
+      ],
+      "added_arxiv_ids": [
+        "2609.24574"
+      ],
+      "coverage": "Public web indexes and accessible original pages; not a complete authenticated in-platform search."
     }
   ]
 }

@@ -10807,6 +10807,87 @@
       "source_abstract_sha256": "3c4bd5724102faa33a0da01e5fdee7b3e9d0ec4eb2533b02de24e85409147f4d"
     },
     {
+      "arxiv_id": "2609.24574",
+      "title": "Evaluating Decision Models for Text Annotation in Computational Social Science",
+      "authors": [
+        "Hazem Ibrahim",
+        "Yasir Zaki"
+      ],
+      "first_submitted": "2026-09-21",
+      "updated": "2026-09-23",
+      "version": 2,
+      "arxiv_url": "https://arxiv.org/abs/2609.24574",
+      "reviewed_url": "https://arxiv.org/abs/2609.24574v2",
+      "pdf_url": "https://arxiv.org/pdf/2609.24574v2",
+      "arxiv_categories": [
+        "cs.CL",
+        "cs.CY"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "evaluation",
+      "relation_level": "direct",
+      "tags": [
+        "evaluation",
+        "social-science",
+        "text-annotation",
+        "calibration",
+        "cascading"
+      ],
+      "summary": {
+        "en": "Evaluates decision models on 18 computational social science tasks (7,977 items) under a shared zero-shot protocol with 19 LLM baselines. Jev trails the per-task best LLM on 14 of 15 evaluation tasks; confidence-based escalation improves the cost–quality trade-off, but calibration varies by construct.",
+        "zh": "在统一零样本协议下，对 18 个计算社会科学任务（7,977 条样本）中的决策模型与 19 个 LLM 基线进行比较。Jev 在 15 个正式评测任务中的 14 个落后于单任务最佳 LLM；按置信度升级至 LLM 可改善成本与质量的权衡，但校准表现因研究构念而异。"
+      },
+      "relation": {
+        "en": "The Introduction explicitly identifies Jev as the commercial decision model evaluated. The study examines annotation accuracy, calibration and selective routing, with v2 extending the open-weight comparison to eleven systems. The matched task protocol does not establish a universal model ranking.",
+        "zh": "引言明确指出被评测的商业决策模型为 Jev，研究其标注准确率、校准与选择性路由；v2 将开放权重模型比较扩展到 11 个系统。这些结论限于论文的任务和协议，不能推广为通用模型排名。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "comparing the decision-model class (Jev",
+          "source_url": "https://arxiv.org/html/2609.24574v2",
+          "location": "Section 1, Introduction"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "18 computational social science classification tasks (7,977 items)",
+          "source_url": "https://arxiv.org/abs/2609.24574v2",
+          "location": "Abstract"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-10-17",
+      "code": [
+        {
+          "url": "https://github.com/hazemibrahim97/decision-models-css",
+          "source_url": "https://arxiv.org/html/2609.24574v2",
+          "source_location": "Closing replication statement before References",
+          "verified_on": "2026-10-17",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2609.24574v2",
+      "source_abstract_sha256": "0f5170a5e8987b1e9e6f432e25e6decd3e18e1353f489d024310b7afc116cff3",
+      "discovery_sources": [
+        {
+          "platform": "WeChat",
+          "url": "https://mp.weixin.qq.com/s/kK3du8zji4fa_9chnBl7Dw",
+          "reviewed_on": "2026-10-17",
+          "role": "Discovery only; metadata and inclusion evidence verified on arXiv."
+        }
+      ]
+    },
+    {
       "arxiv_id": "2609.24395",
       "title": "JEVQA - Video Quality from Metadata, Bitstream, and Pixel Features with a General-Purpose Decision Model",
       "authors": [

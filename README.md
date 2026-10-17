@@ -5,13 +5,13 @@
 
 A curated arXiv reading list on **Jev, System One, and typed decision models**: models that return probabilities over supplied options, and the methods, evaluations, and agent applications built around them.
 
-**Updated: 2026-10-17** · **173 papers** · **117** directly related to Jev · **52** related models and methods · **4** foundations · **52** papers with verified author-linked code
+**Updated: 2026-10-17** · **174 papers** · **118** directly related to Jev · **52** related models and methods · **4** foundations · **53** papers with verified author-linked code
 
 Main window: **2025-10-16 through 2026-10-16**, by first submission. Each entry pins the version reviewed for this snapshot. Earlier foundations are listed separately.
 
 Jev means TypeSafe's hosted model. Similar interfaces do not establish reproduction of its proprietary architecture or training. Notes describe the research, not independently reproduced results. Preprints and results from different experimental setups should not be read as a shared performance leaderboard.
 
-**Data and maintenance:** [JSON](data/papers.json) · [BibTeX](references.bib) · [Selection rules](docs/METHODOLOGY.md) · [Search log](docs/SEARCH_LOG.md) · [Screening ledger](data/screening.json) · [Pending](docs/PENDING.md) · [Contributing](CONTRIBUTING.md)
+**Data and maintenance:** [JSON](data/papers.json) · [BibTeX](references.bib) · [Selection rules](docs/METHODOLOGY.md) · [Search log](docs/SEARCH_LOG.md) · [Social-platform search](docs/SOCIAL_SEARCH_2026-10-17.md) · [Screening ledger](data/screening.json) · [Pending](docs/PENDING.md) · [Contributing](CONTRIBUTING.md)
 
 ## Contents
 
@@ -48,7 +48,7 @@ Ten starting points arranged as a reading path across evidence reviews, benchmar
 | Topic | Direct Jev | Related methods | Total |
 | --- | ---: | ---: | ---: |
 | [Model architectures and training](#architecture) | 5 | 25 | 30 |
-| [Benchmarks and comparative evaluation](#evaluation) | 16 | 2 | 18 |
+| [Benchmarks and comparative evaluation](#evaluation) | 17 | 2 | 19 |
 | [Calibration, reliability and selective decisions](#calibration) | 12 | 5 | 17 |
 | [Search, memory, tools and agent decisions](#agents) | 25 | 7 | 32 |
 | [Security, robustness and decision bias](#security) | 27 | 5 | 32 |
@@ -366,7 +366,7 @@ Tags: `architecture` · `training`
 <a id="evaluation"></a>
 ## Benchmarks and comparative evaluation
 
-**Direct Jev (16)**
+**Direct Jev (17)**
 
 <a id="paper-2610-21244"></a>
 ### [System1-Arena: Which Decisions Can Be Left to System 1?](https://arxiv.org/abs/2610.21244v1)
@@ -517,6 +517,16 @@ Compares Jev and Decider with LLM rubric judges and examines whether their error
 
 [arXiv](https://arxiv.org/abs/2609.29769) · [PDF](https://arxiv.org/pdf/2609.29769v3) · Author code not verified · [Evidence](docs/EVIDENCE.md#evidence-2609-29769)<br>
 Tags: `evaluation` · `efficiency` · `benchmark` · `judging` · `abstention`
+
+<a id="paper-2609-24574"></a>
+### [Evaluating Decision Models for Text Annotation in Computational Social Science](https://arxiv.org/abs/2609.24574v2)
+
+Hazem Ibrahim, Yasir Zaki · 2026-09-21 · **v2** · **Direct Jev**
+
+Evaluates decision models on 18 computational social science tasks (7,977 items) under a shared zero-shot protocol with 19 LLM baselines. Jev trails the per-task best LLM on 14 of 15 evaluation tasks; confidence-based escalation improves the cost–quality trade-off, but calibration varies by construct.
+
+[arXiv](https://arxiv.org/abs/2609.24574) · [PDF](https://arxiv.org/pdf/2609.24574v2) · [Author code](https://github.com/hazemibrahim97/decision-models-css) · [Evidence](docs/EVIDENCE.md#evidence-2609-24574)<br>
+Tags: `evaluation` · `social-science` · `text-annotation` · `calibration` · `cascading`
 
 <a id="paper-2605-29893"></a>
 ### [Redundant or Necessary? A Benchmark for Detecting Redundant Steps in Agent Trajectories](https://arxiv.org/abs/2605.29893v2)
