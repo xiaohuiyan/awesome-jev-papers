@@ -60,13 +60,14 @@ def readme(data, lang):
               '<a id="recommended-reading"></a>', "## " + ("推荐阅读" if zh else "Recommended reading"), "",
               ("建议路径：**看清证据 → 比较能力 → 理解模型 → 管理风险 → 接入应用**。以下十篇是阅读入口，不是性能排名；点击短标题查看完整条目。" if zh else
                "Suggested path: **assess the evidence → compare capabilities → understand models → manage risk → build applications**. These ten papers are starting points, not a ranking. Follow a short title to its full entry."), "",
-              ("| 顺序 | 论文入口 | 带着这个问题读 |" if zh else "| Step | Paper | Read to answer |"),
-              "| ---: | --- | --- |"]
+              ("| 顺序 | 论文入口 | 发表时间 | 单位 | 带着这个问题读 |" if zh else "| Step | Paper | Published | Affiliations | Read to answer |"),
+              "| ---: | --- | --- | --- | --- |"]
     by_id = {p["arxiv_id"]: p for p in papers}
     for i, pid in enumerate(data["recommended"], 1):
         p = by_id[pid]
         guide = p["reading_guide"]
-        lines.append(f"| {i} | [{guide['label'][lang]}](#paper-{pid.replace('.', '-')}) | {guide['question'][lang]} |")
+        affs = "；".join(p["affiliations"]) if zh else "; ".join(p["affiliations"])
+        lines.append(f"| {i} | [{guide['label'][lang]}](#paper-{pid.replace('.', '-')}) | {p['first_submitted']} | {affs} | {guide['question'][lang]} |")
     lines += ["", '<a id="category-index"></a>', "## " + ("按问题选文" if zh else "Browse by question"), "",
               ("| 你想了解什么？ | 主题 | 直接 / 相关 | 合计 |" if zh else "| Your question | Topic | Direct / related | Total |"),
               "| --- | --- | ---: | ---: |"]
@@ -74,8 +75,8 @@ def readme(data, lang):
         sub = [p for p in papers if p["primary_category"] == key and p["relation_level"] != "background"]
         n = Counter(p["relation_level"] for p in sub)
         lines.append(f"| {CATEGORY_QUESTIONS[key][lang]} | [{cat[lang]}](#{key}) | {n['direct']} / {n['related']} | {len(sub)} |")
-    lines += ["", (f"每篇只计入一个主分类；另有 {counts['background']} 篇基础背景。每类先列 Jev 直接相关，再列同类方法；组内按首次提交日期倒序排列。条目保留发表时间、作者、解决问题与核心贡献四项；完整作者名单、标签与核实记录见[证据台账](docs/EVIDENCE.md)与 [BibTeX](references.bib)。" if zh else
-                   f"Each paper has one primary category; {counts['background']} foundations are listed separately. Categories group direct Jev work before related methods, with newest first submissions first within each group. Entries keep four fields: published date, authors, problem, and contribution. Full author lists, tags, and verification records live in the [evidence ledger](docs/EVIDENCE.md) and [BibTeX](references.bib)."), ""]
+    lines += ["", (f"每篇只计入一个主分类；另有 {counts['background']} 篇基础背景。每类先列 Jev 直接相关，再列同类方法；组内按首次提交日期倒序排列。条目保留发表时间、作者、单位、解决问题与核心贡献；单位取自论文原文（HTML 全文或 PDF 首页），9 篇未署名单位的论文不展示该项。完整作者名单、标签与核实记录见[证据台账](docs/EVIDENCE.md)与 [BibTeX](references.bib)。" if zh else
+                   f"Each paper has one primary category; {counts['background']} foundations are listed separately. Categories group direct Jev work before related methods, with newest first submissions first within each group. Entries keep published date, authors, affiliations, problem, and contribution; affiliations come from the papers themselves (HTML full text or PDF first page), and nine papers that state none omit the field. Full author lists, tags, and verification records live in the [evidence ledger](docs/EVIDENCE.md) and [BibTeX](references.bib)."), ""]
     labels = {"direct": "Jev 直接相关" if zh else "Direct Jev",
               "related": "同类模型与方法" if zh else "Related model / method",
               "background": "基础背景" if zh else "Foundation"}
@@ -87,13 +88,20 @@ def readme(data, lang):
             shown = "；".join(names[:3]) + f" 等（共 {len(names)} 位）" if zh else "; ".join(names[:3]) + f" et al. ({len(names)} authors)"
         else:
             shown = "；".join(names) if zh else "; ".join(names)
-        fields = [("📅 " + ("发表时间" if zh else "Published"), f"{p['first_submitted']}（v{p['version']}）" if zh else f"{p['first_submitted']} (v{p['version']})"),
-                  ("👥 " + ("作者" if zh else "Authors"), shown),
-                  ("🎯 " + ("解决问题" if zh else "Problem"), p["problem"][lang]),
-                  ("💡 " + ("核心贡献" if zh else "Contribution"), p["summary"][lang])]
+        affs = p.get("affiliations", [])
+        fields = [("📅 " + ("发表时间" if zh else "Published"),
+                   f"{p['first_submitted']}（v{p['version']}）" if zh else f"{p['first_submitted']} (v{p['version']})"),
+                  ("👥 " + ("作者" if zh else "Authors"), shown)]
+        if affs:
+            extra = len(affs) - 5
+            aff_text = "；".join(affs[:5]) + (f" 等（共 {len(affs)} 家）" if extra > 0 else "") if zh \
+                else "; ".join(affs[:5]) + (f" +{extra} more" if extra > 0 else "")
+            fields.append(("🏢 " + ("单位" if zh else "Affiliations"), aff_text))
+        fields += [("🎯 " + ("解决问题" if zh else "Problem"), p["problem"][lang]),
+                   ("💡 " + ("核心贡献" if zh else "Contribution"), p["summary"][lang])]
         resources = [f"[PDF]({p['pdf_url']})"]
         for i, c in enumerate(p["code"]):
-            label = ("作者代码" if zh else "Author code") + (f" {i + 1}" if len(p["code"]) > 1 else "")
+            label = ("代码" if zh else "Code") + (f" {i + 1}" if len(p["code"]) > 1 else "")
             resources.append(f"[{label}]({c['url']})")
         return [f'<a id="paper-{pid.replace(".", "-")}"></a>',
                 f"{heading} [{p['title']}]({p['reviewed_url']}) · " + " · ".join(resources),

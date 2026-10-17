@@ -51,6 +51,9 @@ def validate(data):
         require(bool(re.search(r"[\u4e00-\u9fff]", p["summary"]["zh"])), f"{pid}: Chinese summary missing")
         require(bool(re.search(r"[\u4e00-\u9fff]", p["problem"]["zh"])), f"{pid}: Chinese problem statement missing")
         require(p["tags"] and len(p["tags"]) == len(set(p["tags"])), f"{pid}: invalid tags")
+        if p.get("affiliations"):
+            require(all(isinstance(a, str) and a.strip() and "\n" not in a and "|" not in a and len(a) <= 120
+                        for a in p["affiliations"]), f"{pid}: invalid affiliations")
         require({e["criterion"] for e in p["evidence"]} == set(data["relevance_weights"]), f"{pid}: missing criterion evidence")
         require(sum(len(e["quote"].split()) for e in p["evidence"]) <= 25, f"{pid}: excessive quotation")
         for e in p["evidence"]:

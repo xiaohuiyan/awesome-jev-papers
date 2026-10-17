@@ -66,6 +66,7 @@
         "Andrew Chen",
         "Pony Ma"
       ],
+      "affiliations": [],
       "first_submitted": "2026-10-15",
       "updated": "2026-10-15",
       "version": 1,
@@ -147,6 +148,12 @@
         "Qi Zhang",
         "Yu Cheng"
       ],
+      "affiliations": [
+        "Shanghai AI Lab",
+        "Shanghai Jiao Tong University",
+        "Fudan University",
+        "Nanyang Technological University"
+      ],
       "first_submitted": "2026-10-15",
       "updated": "2026-10-15",
       "version": 1,
@@ -227,6 +234,9 @@
         "Jiayi Cai",
         "Bo An"
       ],
+      "affiliations": [
+        "Nanyang Technological University"
+      ],
       "first_submitted": "2026-10-15",
       "updated": "2026-10-15",
       "version": 1,
@@ -297,6 +307,10 @@
         "Xiangang Li",
         "Yu Pu",
         "Wupeng Wang"
+      ],
+      "affiliations": [
+        "Token Foundry",
+        "Alibaba Group"
       ],
       "first_submitted": "2026-10-15",
       "updated": "2026-10-15",
@@ -370,6 +384,11 @@
         "Xiangru Tang",
         "Jiaxuan You",
         "Heng Ji"
+      ],
+      "affiliations": [
+        "University of Illinois Urbana-Champaign",
+        "Princeton University",
+        "Google"
       ],
       "first_submitted": "2026-10-15",
       "updated": "2026-10-15",
@@ -457,6 +476,9 @@
         "Jiong Lou",
         "Jie Li"
       ],
+      "affiliations": [
+        "Shanghai Jiao Tong University"
+      ],
       "first_submitted": "2026-10-15",
       "updated": "2026-10-15",
       "version": 1,
@@ -523,6 +545,9 @@
         "Ruyi An",
         "Zhendong Wang",
         "Mingyuan Zhou"
+      ],
+      "affiliations": [
+        "The University of Texas at Austin"
       ],
       "first_submitted": "2026-10-15",
       "updated": "2026-10-15",
@@ -611,6 +636,9 @@
         "Guanghui Min",
         "Chen Chen"
       ],
+      "affiliations": [
+        "Department of Computer Science, University of Virginia"
+      ],
       "first_submitted": "2026-10-14",
       "updated": "2026-10-14",
       "version": 1,
@@ -688,6 +716,9 @@
         "Vinothini Pandurangan",
         "Indranil Sanyal"
       ],
+      "affiliations": [
+        "eBay Inc"
+      ],
       "first_submitted": "2026-10-14",
       "updated": "2026-10-14",
       "version": 1,
@@ -756,6 +787,9 @@
       "authors": [
         "Avdhesh Singh Chouhan",
         "Jack Perry"
+      ],
+      "affiliations": [
+        "LEC AI"
       ],
       "first_submitted": "2026-10-14",
       "updated": "2026-10-14",
@@ -836,6 +870,9 @@
         "Yehui Tang",
         "Wentao Zhang"
       ],
+      "affiliations": [
+        "Peking University"
+      ],
       "first_submitted": "2026-10-14",
       "updated": "2026-10-14",
       "version": 1,
@@ -903,6 +940,11 @@
         "Jiayang Liu",
         "Chia-Mu Yu",
         "Rui Wen"
+      ],
+      "affiliations": [
+        "Institute of Science Tokyo",
+        "National Yang Ming Chiao Tung University",
+        "Nanyang Technological University"
       ],
       "first_submitted": "2026-10-14",
       "updated": "2026-10-14",
@@ -977,6 +1019,11 @@
         "Haixiao Xiong",
         "Tingwen Liu"
       ],
+      "affiliations": [
+        "System Security Team, Li Auto Inc",
+        "Institute of Information Engineering, Chinese Academy of Sciences",
+        "School of Cyber Security, University of Chinese Academy of Sciences"
+      ],
       "first_submitted": "2026-10-14",
       "updated": "2026-10-14",
       "version": 1,
@@ -1043,6 +1090,11 @@
       "authors": [
         "Soundouss Messoudi",
         "Youness Mansar"
+      ],
+      "affiliations": [
+        "Heudiasyc - UMR CNRS 7253",
+        "Université de Technologie de Compiègne",
+        "Independent Researcher"
       ],
       "first_submitted": "2026-10-14",
       "updated": "2026-10-14",
@@ -1122,6 +1174,9 @@
         "Bin Zheng",
         "Zheng Chen"
       ],
+      "affiliations": [
+        "University of Electronic Science and Technology of China"
+      ],
       "first_submitted": "2026-10-14",
       "updated": "2026-10-14",
       "version": 1,
@@ -1195,6 +1250,9 @@
         "Taisia Kameneva",
         "Adam Eric Greenberg",
         "Alessandro Romano"
+      ],
+      "affiliations": [
+        "Bocconi University"
       ],
       "first_submitted": "2026-10-14",
       "updated": "2026-10-14",
@@ -1274,6 +1332,9 @@
         "Yifan Zhang",
         "Yu Huang"
       ],
+      "affiliations": [
+        "Vanderbilt University"
+      ],
       "first_submitted": "2026-10-14",
       "updated": "2026-10-14",
       "version": 1,
@@ -1341,6 +1402,11 @@
         "Hangting Ye",
         "Hongyuan Zha"
       ],
+      "affiliations": [
+        "University of Wisconsin–Madison",
+        "School of Artificial Intelligence, Jilin University",
+        "School of Data Science, Chinese University of Hong Kong, Shenzhen"
+      ],
       "first_submitted": "2026-10-14",
       "updated": "2026-10-14",
       "version": 1,
@@ -1406,6 +1472,9 @@
       "title": "AgriJev: Efficient Agricultural Candidate Scoring with Multi-Scale Adapted Models",
       "authors": [
         "Xuechen Li"
+      ],
+      "affiliations": [
+        "University of Minnesota Twin Cities"
       ],
       "first_submitted": "2026-10-14",
       "updated": "2026-10-14",
@@ -1478,6 +1547,9 @@
         "Lu Lin",
         "Jinghui Chen"
       ],
+      "affiliations": [
+        "The Pennsylvania State University"
+      ],
       "first_submitted": "2026-10-13",
       "updated": "2026-10-13",
       "version": 1,
@@ -1545,6 +1617,9 @@
         "Yaohao Long",
         "Chuxu Zhang"
       ],
+      "affiliations": [
+        "University of Connecticut"
+      ],
       "first_submitted": "2026-10-13",
       "updated": "2026-10-13",
       "version": 1,
@@ -1609,6 +1684,9 @@
       "authors": [
         "Qi Li",
         "Xinchao Wang"
+      ],
+      "affiliations": [
+        "National University of Singapore"
       ],
       "first_submitted": "2026-10-13",
       "updated": "2026-10-13",
@@ -1709,6 +1787,16 @@
         "Nan Duan",
         "Limin Wang"
       ],
+      "affiliations": [
+        "Nanjing University",
+        "JD.com",
+        "University of Chinese Academy of Sciences",
+        "Tsinghua University",
+        "Xiamen University",
+        "Shanghai Jiao Tong University",
+        "University of Science and Technology of China",
+        "Fudan University"
+      ],
       "first_submitted": "2026-10-13",
       "updated": "2026-10-13",
       "version": 1,
@@ -1788,6 +1876,11 @@
         "Yong Liu",
         "Zhiyi Yin",
         "Xinran Liu"
+      ],
+      "affiliations": [
+        "Beijing University of Posts and Telecommunications",
+        "Zhongguancun Laboratory",
+        "Institute of Computing Technology, Chinese Academy of Sciences"
       ],
       "first_submitted": "2026-10-13",
       "updated": "2026-10-13",
@@ -1872,6 +1965,9 @@
         "Ki Sen Hung",
         "Tsun On Kwok",
         "Haoran Li"
+      ],
+      "affiliations": [
+        "Department of Computer Science and Engineering, The Hong Kong University of Science and Technology"
       ],
       "first_submitted": "2026-10-13",
       "updated": "2026-10-13",
@@ -1960,6 +2056,9 @@
         "Ramayya Krishnan",
         "Rema Padman"
       ],
+      "affiliations": [
+        "Carnegie Mellon University"
+      ],
       "first_submitted": "2026-10-13",
       "updated": "2026-10-13",
       "version": 1,
@@ -2031,6 +2130,10 @@
         "Shiwen Cui",
         "Bing Qin"
       ],
+      "affiliations": [
+        "Harbin Institute of Technology",
+        "Ant Group"
+      ],
       "first_submitted": "2026-10-13",
       "updated": "2026-10-13",
       "version": 1,
@@ -2100,6 +2203,11 @@
         "Yupeng Cao",
         "Victor Gutierrez Basulto"
       ],
+      "affiliations": [
+        "The Fin AI",
+        "Yale University",
+        "Cardiff University"
+      ],
       "first_submitted": "2026-10-13",
       "updated": "2026-10-13",
       "version": 1,
@@ -2166,6 +2274,10 @@
         "Xiaoyu Li",
         "Chiwun Yang"
       ],
+      "affiliations": [
+        "University of New South Wales",
+        "City University of Hong Kong"
+      ],
       "first_submitted": "2026-10-13",
       "updated": "2026-10-13",
       "version": 1,
@@ -2230,6 +2342,10 @@
       "authors": [
         "Kakei Yamamoto",
         "So Kuroki"
+      ],
+      "affiliations": [
+        "Massachusetts Institute of Technology",
+        "Sakana AI"
       ],
       "first_submitted": "2026-10-13",
       "updated": "2026-10-13",
@@ -2309,6 +2425,10 @@
         "Haoran Li",
         "Yangqiu Song"
       ],
+      "affiliations": [
+        "HKUST",
+        "ModeIO"
+      ],
       "first_submitted": "2026-10-13",
       "updated": "2026-10-13",
       "version": 1,
@@ -2385,6 +2505,9 @@
         "Yuhui Wang",
         "Jürgen Schmidhuber"
       ],
+      "affiliations": [
+        "King Abdullah University of Science and Technology (KAUST)"
+      ],
       "first_submitted": "2026-10-13",
       "updated": "2026-10-13",
       "version": 1,
@@ -2455,6 +2578,9 @@
         "Yao Long Teng",
         "Yanchen Deng",
         "Bo An"
+      ],
+      "affiliations": [
+        "Nanyang Technological University"
       ],
       "first_submitted": "2026-10-13",
       "updated": "2026-10-13",
@@ -2534,6 +2660,10 @@
         "Christoph Weisser",
         "Alexander Silbersdorff"
       ],
+      "affiliations": [
+        "University of Göttingen",
+        "Bielefeld University of Applied Sciences and Arts (HSBI)"
+      ],
       "first_submitted": "2026-10-13",
       "updated": "2026-10-13",
       "version": 1,
@@ -2612,6 +2742,10 @@
         "Mingming Zhang",
         "Zheli Liu"
       ],
+      "affiliations": [
+        "Nankai University",
+        "Zhongguancun Laboratory"
+      ],
       "first_submitted": "2026-10-13",
       "updated": "2026-10-13",
       "version": 1,
@@ -2683,6 +2817,11 @@
         "Ngai Wong",
         "Guanhua Chen",
         "Chuan-Wei Kuo"
+      ],
+      "affiliations": [
+        "StartLux",
+        "The University of Hong Kong",
+        "Southern University of Science and Technology"
       ],
       "first_submitted": "2026-10-12",
       "updated": "2026-10-12",
@@ -2773,6 +2912,10 @@
         "Andrew Cheng",
         "David Alvarez-Melis"
       ],
+      "affiliations": [
+        "Harvard University",
+        "Kempner Institute"
+      ],
       "first_submitted": "2026-10-12",
       "updated": "2026-10-12",
       "version": 1,
@@ -2835,6 +2978,9 @@
       "title": "FunDM: Cheap & Label-Free Decision Models from Frozen Language Models",
       "authors": [
         "Ujjawal K. Panchal"
+      ],
+      "affiliations": [
+        "Fundamental AI"
       ],
       "first_submitted": "2026-10-12",
       "updated": "2026-10-12",
@@ -2911,6 +3057,12 @@
         "Yuting Tang",
         "Futoshi Futami",
         "Takashi Ishida"
+      ],
+      "affiliations": [
+        "Florida State University",
+        "The University of Tokyo",
+        "RIKEN AIP",
+        "The University of Osaka"
       ],
       "first_submitted": "2026-10-12",
       "updated": "2026-10-12",
@@ -3006,6 +3158,10 @@
         "Duyu Tang",
         "Bing Qin"
       ],
+      "affiliations": [
+        "Harbin Institute of Technology",
+        "Guanxing Technology"
+      ],
       "first_submitted": "2026-10-12",
       "updated": "2026-10-12",
       "version": 1,
@@ -3073,6 +3229,9 @@
         "Dushyant Rajput",
         "Nirdesh Chauhan",
         "Siddharth Kosaraju"
+      ],
+      "affiliations": [
+        "AltSlate Labs LLP"
       ],
       "first_submitted": "2026-10-12",
       "updated": "2026-10-12",
@@ -3146,6 +3305,13 @@
         "Dongzhan Zhou",
         "Weinan Zhang",
         "Yang Li"
+      ],
+      "affiliations": [
+        "Shanghai Jiao Tong University",
+        "Shanghai Artificial Intelligence Laboratory",
+        "Sun Yat-sen University",
+        "Jilin University",
+        "Beijing University of Aeronautics and Astronautics"
       ],
       "first_submitted": "2026-10-12",
       "updated": "2026-10-12",
@@ -3223,6 +3389,11 @@
         "Zhiying Deng",
         "Qilei Li"
       ],
+      "affiliations": [
+        "Carnegie Mellon University",
+        "Shenzhen University",
+        "Central China Normal University"
+      ],
       "first_submitted": "2026-10-12",
       "updated": "2026-10-12",
       "version": 1,
@@ -3294,6 +3465,11 @@
         "Tao Wu",
         "Yongjie Huang"
       ],
+      "affiliations": [
+        "Anhui University of Science and Technology",
+        "Tianjin University",
+        "Guangxi Normal University"
+      ],
       "first_submitted": "2026-10-11",
       "updated": "2026-10-11",
       "version": 1,
@@ -3362,6 +3538,10 @@
         "Xupeng Chen",
         "Chenqian Le"
       ],
+      "affiliations": [
+        "Dimension Gate",
+        "New York University"
+      ],
       "first_submitted": "2026-10-11",
       "updated": "2026-10-11",
       "version": 1,
@@ -3428,6 +3608,11 @@
         "Chenkai Wu",
         "Xing Chang",
         "Jun Yan"
+      ],
+      "affiliations": [
+        "Monash University",
+        "SUTD",
+        "SHOU"
       ],
       "first_submitted": "2026-10-11",
       "updated": "2026-10-11",
@@ -3502,6 +3687,9 @@
       "authors": [
         "S. M. Mahbub Uddin Ahmed"
       ],
+      "affiliations": [
+        "Department of Computer Science and Engineering, United International University"
+      ],
       "first_submitted": "2026-10-10",
       "updated": "2026-10-10",
       "version": 1,
@@ -3569,6 +3757,9 @@
       "authors": [
         "Jianbo Chen"
       ],
+      "affiliations": [
+        "Tsinghua University"
+      ],
       "first_submitted": "2026-10-10",
       "updated": "2026-10-10",
       "version": 1,
@@ -3635,6 +3826,9 @@
         "Xirui Huang",
         "Nikhil Hooda",
         "Utkarsh Gupta"
+      ],
+      "affiliations": [
+        "University of Waterloo"
       ],
       "first_submitted": "2026-10-10",
       "updated": "2026-10-10",
@@ -3705,6 +3899,10 @@
         "Zhonghao Guo",
         "Qian Wang"
       ],
+      "affiliations": [
+        "University of California, Merced",
+        "Stevens Institute of Technology"
+      ],
       "first_submitted": "2026-10-09",
       "updated": "2026-10-09",
       "version": 1,
@@ -3772,6 +3970,9 @@
         " Rusdah",
         "Wahyu Ramadani Putri Utami",
         "Zulfa Malika Amana"
+      ],
+      "affiliations": [
+        "Universitas Budi Luhur"
       ],
       "first_submitted": "2026-10-09",
       "updated": "2026-10-09",
@@ -3851,6 +4052,10 @@
         "Zhenyu Chen",
         "Chunrong Fang"
       ],
+      "affiliations": [
+        "Nanjing University",
+        "Technical University of Munich"
+      ],
       "first_submitted": "2026-10-09",
       "updated": "2026-10-09",
       "version": 1,
@@ -3916,6 +4121,9 @@
         "Seyedarmin Azizi",
         "Erfan Baghaei Potraghloo",
         "Massoud Pedram"
+      ],
+      "affiliations": [
+        "University of Southern California"
       ],
       "first_submitted": "2026-10-08",
       "updated": "2026-10-08",
@@ -3998,6 +4206,10 @@
         "Ling Luo",
         "Hongfei Lin"
       ],
+      "affiliations": [
+        "Dalian Maritime University",
+        "Dalian University of Technology"
+      ],
       "first_submitted": "2026-10-08",
       "updated": "2026-10-08",
       "version": 1,
@@ -4065,6 +4277,10 @@
         "Yijia Zhang",
         "Liang Yang",
         "Hongfei Lin"
+      ],
+      "affiliations": [
+        "Dalian Maritime University",
+        "Dalian University of Technology"
       ],
       "first_submitted": "2026-10-08",
       "updated": "2026-10-08",
@@ -4134,6 +4350,13 @@
         "Weixun Wang",
         "Hongyao Tang"
       ],
+      "affiliations": [
+        "Shanxi University",
+        "Nanjing University",
+        "The Chinese University of Hong Kong",
+        "Independent Researcher",
+        "Tianjin University"
+      ],
       "first_submitted": "2026-10-08",
       "updated": "2026-10-08",
       "version": 1,
@@ -4198,6 +4421,9 @@
       "title": "Adversarial Cues in Decision Models Used as Judges: The Role of Request Presentation",
       "authors": [
         "Hongliang Liu"
+      ],
+      "affiliations": [
+        "Independent Researcher"
       ],
       "first_submitted": "2026-10-08",
       "updated": "2026-10-08",
@@ -4267,6 +4493,12 @@
         "Andrew B. Duncan",
         "Gaétan Marceau Caron",
         "Sebastian J. Vollmer"
+      ],
+      "affiliations": [
+        "DFKI GmbH",
+        "RPTU Kaiserslautern",
+        "Imperial College London",
+        "Mila - Quebec AI Institute"
       ],
       "first_submitted": "2026-10-08",
       "updated": "2026-10-09",
@@ -4342,6 +4574,9 @@
         "Chongyi Zhuang",
         "Jiayi Ji",
         "Xiaoshuai Sun"
+      ],
+      "affiliations": [
+        "Xiamen University"
       ],
       "first_submitted": "2026-10-08",
       "updated": "2026-10-08",
@@ -4420,6 +4655,9 @@
         "Max Xiangjun Fan",
         "Jun Xiao"
       ],
+      "affiliations": [
+        "Meta AI"
+      ],
       "first_submitted": "2026-10-08",
       "updated": "2026-10-08",
       "version": 1,
@@ -4487,6 +4725,10 @@
         "Unggi Lee",
         "Haeun Park"
       ],
+      "affiliations": [
+        "Korea University Sejong Campus",
+        "Korea University"
+      ],
       "first_submitted": "2026-10-08",
       "updated": "2026-10-08",
       "version": 1,
@@ -4553,6 +4795,7 @@
       "authors": [
         "Gaston Besanson"
       ],
+      "affiliations": [],
       "first_submitted": "2026-10-07",
       "updated": "2026-10-07",
       "version": 1,
@@ -4627,6 +4870,9 @@
       "authors": [
         "Yu Yan"
       ],
+      "affiliations": [
+        "University of Chinese Academy of Sciences"
+      ],
       "first_submitted": "2026-10-07",
       "updated": "2026-10-07",
       "version": 1,
@@ -4691,6 +4937,9 @@
       "authors": [
         "Amir Rafe",
         "Subasish Das"
+      ],
+      "affiliations": [
+        "Texas State University"
       ],
       "first_submitted": "2026-10-07",
       "updated": "2026-10-07",
@@ -4766,6 +5015,9 @@
       "authors": [
         "Wooyoung Jung"
       ],
+      "affiliations": [
+        "University of Arizona"
+      ],
       "first_submitted": "2026-10-07",
       "updated": "2026-10-07",
       "version": 1,
@@ -4830,6 +5082,9 @@
       "title": "System Switch: When Should a Fast Decision Model Stop and Think?",
       "authors": [
         "Gian Luca Bailo"
+      ],
+      "affiliations": [
+        "Independent Researcher"
       ],
       "first_submitted": "2026-10-07",
       "updated": "2026-10-07",
@@ -4907,6 +5162,10 @@
         "Kongming Liang",
         "Zhanyu Ma"
       ],
+      "affiliations": [
+        "School of Artificial Intelligence, Beijing University of Posts and Telecommunications",
+        "Beijing Key Laboratory of Multimodal Data Intelligent Perception"
+      ],
       "first_submitted": "2026-10-07",
       "updated": "2026-10-07",
       "version": 1,
@@ -4977,6 +5236,9 @@
         "Sarah Sharif",
         "Yaser Mike Banad"
       ],
+      "affiliations": [
+        "INQUIRE Lab, School of Electrical and Computer Engineering, University of Oklahoma"
+      ],
       "first_submitted": "2026-10-06",
       "updated": "2026-10-06",
       "version": 1,
@@ -5045,6 +5307,13 @@
         "Alexander Rubinstein",
         "Martin Gubri",
         "Seong Joon Oh"
+      ],
+      "affiliations": [
+        "University of Tübingen",
+        "ELLIS Institute Tübingen",
+        "Max Planck Institute for Intelligent Systems",
+        "École Polytechnique",
+        "KAIST AI"
       ],
       "first_submitted": "2026-10-06",
       "updated": "2026-10-06",
@@ -5116,6 +5385,13 @@
         "Shimeng Dai",
         "Xinyu Qiu"
       ],
+      "affiliations": [
+        "Sofia University",
+        "Indiana University",
+        "University of California, San Diego",
+        "Northeastern University",
+        "Michigan State University"
+      ],
       "first_submitted": "2026-10-06",
       "updated": "2026-10-06",
       "version": 1,
@@ -5184,6 +5460,10 @@
         "Liangjian Wen",
         "Zhao Kang"
       ],
+      "affiliations": [
+        "University of Electronic Science and Technology of China",
+        "Southwestern University of Finance and Economics"
+      ],
       "first_submitted": "2026-10-06",
       "updated": "2026-10-06",
       "version": 1,
@@ -5248,6 +5528,9 @@
       "title": "When Plans Change Answers: Formalizing Cost-Accuracy Optimization for Semantic Queries",
       "authors": [
         "Kyoungmin Kim"
+      ],
+      "affiliations": [
+        "KAIST"
       ],
       "first_submitted": "2026-10-06",
       "updated": "2026-10-08",
@@ -5315,6 +5598,11 @@
       "authors": [
         "Federico Mazzoni",
         "Andrea Failla"
+      ],
+      "affiliations": [
+        "Independent Researcher",
+        "Institute of Information Science and Technologies (ISTI)",
+        "National Research Council (CNR), Italy"
       ],
       "first_submitted": "2026-10-06",
       "updated": "2026-10-06",
@@ -5384,6 +5672,9 @@
         "Young-Jun Lee",
         "Dongyeop Kang"
       ],
+      "affiliations": [
+        "University of Minnesota"
+      ],
       "first_submitted": "2026-10-06",
       "updated": "2026-10-10",
       "version": 2,
@@ -5450,6 +5741,9 @@
         "Naoki Wake",
         "Justin Wagle"
       ],
+      "affiliations": [
+        "Microsoft"
+      ],
       "first_submitted": "2026-10-05",
       "updated": "2026-10-05",
       "version": 1,
@@ -5513,6 +5807,9 @@
       "title": "ufakzeka-karar: An Open Turkish Typed-Decision Model with Order-Invariant Option Scoring",
       "authors": [
         "Sait Furkan Teke"
+      ],
+      "affiliations": [
+        "ufak AI"
       ],
       "first_submitted": "2026-10-05",
       "updated": "2026-10-05",
@@ -5588,6 +5885,9 @@
         "Steven Denney",
         "Matthew DiGiuseppe"
       ],
+      "affiliations": [
+        "Leiden University"
+      ],
       "first_submitted": "2026-10-05",
       "updated": "2026-10-06",
       "version": 2,
@@ -5660,6 +5960,9 @@
         "Rui Lang",
         "Guangsheng Yu"
       ],
+      "affiliations": [
+        "School of Electrical, Mechanical and Biomedical Engineering, University of Technology Sydney"
+      ],
       "first_submitted": "2026-10-05",
       "updated": "2026-10-05",
       "version": 1,
@@ -5726,6 +6029,10 @@
         "Xianliang Yang",
         "Yapu Zhang",
         "Li Zhao"
+      ],
+      "affiliations": [
+        "Microsoft",
+        "Beijing University of Technology"
       ],
       "first_submitted": "2026-10-05",
       "updated": "2026-10-12",
@@ -5806,6 +6113,10 @@
         "Zhaochun Ren",
         "Yougang Lyu",
         "Xiaohui Yan"
+      ],
+      "affiliations": [
+        "Huawei Technologies",
+        "Leiden University"
       ],
       "first_submitted": "2026-10-04",
       "updated": "2026-10-04",
@@ -5899,6 +6210,10 @@
         "Meng Yang",
         "Bo Liu"
       ],
+      "affiliations": [
+        "University of Technology Sydney",
+        "University of Macau"
+      ],
       "first_submitted": "2026-10-04",
       "updated": "2026-10-04",
       "version": 1,
@@ -5973,6 +6288,9 @@
         "S. M. Matin Alemohammad",
         "Hamid Behroozi",
         "Mahdi Nouri"
+      ],
+      "affiliations": [
+        "Sharif University of Technology"
       ],
       "first_submitted": "2026-10-03",
       "updated": "2026-10-03",
@@ -6059,6 +6377,13 @@
         "Siyuan Wang",
         "Zhongyu Wei"
       ],
+      "affiliations": [
+        "Shanghai Innovation Institute",
+        "Fudan University",
+        "Tongji University",
+        "King’s College London",
+        "Chinese University of Hong Kong"
+      ],
       "first_submitted": "2026-10-02",
       "updated": "2026-10-12",
       "version": 2,
@@ -6124,6 +6449,9 @@
       "authors": [
         "Jiawen Lu",
         "Tongtong Wu"
+      ],
+      "affiliations": [
+        "Monash University"
       ],
       "first_submitted": "2026-10-02",
       "updated": "2026-10-06",
@@ -6203,6 +6531,9 @@
         "George Pallis",
         "Marios D. Dikaiakos"
       ],
+      "affiliations": [
+        "University of Cyprus"
+      ],
       "first_submitted": "2026-10-02",
       "updated": "2026-10-02",
       "version": 1,
@@ -6273,6 +6604,10 @@
         "Anlong Chen",
         "Lei Chen"
       ],
+      "affiliations": [
+        "University of Electronic Science and Technology of China",
+        "National Key Laboratory of Security Communication"
+      ],
       "first_submitted": "2026-10-02",
       "updated": "2026-10-14",
       "version": 2,
@@ -6340,6 +6675,9 @@
         "Erfan Baghaei Potraghloo",
         "Massoud Pedram"
       ],
+      "affiliations": [
+        "University of Southern California"
+      ],
       "first_submitted": "2026-10-01",
       "updated": "2026-10-01",
       "version": 1,
@@ -6403,6 +6741,9 @@
       "title": "From Retrieval to Typed Decisions: Calibrated System One Models from Biomedical Sentence Encoders",
       "authors": [
         "Pritam Deka"
+      ],
+      "affiliations": [
+        "Queen’s University Belfast"
       ],
       "first_submitted": "2026-10-01",
       "updated": "2026-10-01",
@@ -6472,6 +6813,9 @@
       "title": "HakemBench: A Turkish Benchmark of Typed Decisions",
       "authors": [
         "Sait Furkan Teke"
+      ],
+      "affiliations": [
+        "ufak AI"
       ],
       "first_submitted": "2026-10-01",
       "updated": "2026-10-01",
@@ -6546,6 +6890,7 @@
       "authors": [
         "Jiawei Li"
       ],
+      "affiliations": [],
       "first_submitted": "2026-10-01",
       "updated": "2026-10-01",
       "version": 1,
@@ -6622,6 +6967,9 @@
       "authors": [
         "Yinheng Li",
         "Justin Wagle"
+      ],
+      "affiliations": [
+        "Microsoft"
       ],
       "first_submitted": "2026-10-01",
       "updated": "2026-10-13",
@@ -6705,6 +7053,13 @@
         "Jun Li",
         "Manhong Huang"
       ],
+      "affiliations": [
+        "Shenyang Jianzhu University",
+        "Guangzhou Institute of Industrial Intelligence",
+        "Shenyang Institute of Automation, Chinese Academy of Sciences",
+        "Shenyang University",
+        "Donghua University"
+      ],
       "first_submitted": "2026-10-01",
       "updated": "2026-10-01",
       "version": 1,
@@ -6773,6 +7128,10 @@
         "Hanxu Yan",
         "Fuheng Zhao",
         "Chunwei Liu"
+      ],
+      "affiliations": [
+        "Purdue Data & AI System Lab (PDAIS)",
+        "University of Utah"
       ],
       "first_submitted": "2026-10-01",
       "updated": "2026-10-01",
@@ -6845,6 +7204,14 @@
         "Jinpeng Li",
         "Tianpei Yang"
       ],
+      "affiliations": [
+        "The Chinese University of Hong Kong",
+        "Tianjin University",
+        "Shanxi University",
+        "Independent Researcher",
+        "CAIR, Hong Kong Institute of Science & Innovation, Chinese Academy of Sciences",
+        "Nanjing University"
+      ],
       "first_submitted": "2026-10-01",
       "updated": "2026-10-10",
       "version": 2,
@@ -6909,6 +7276,9 @@
       "title": "Judgement in the Age of Jev: From Evaluation Scarcity to Evaluation Abundance",
       "authors": [
         "Richard Hill"
+      ],
+      "affiliations": [
+        "University of Huddersfield"
       ],
       "first_submitted": "2026-10-01",
       "updated": "2026-10-01",
@@ -6979,6 +7349,9 @@
         "Silvio E. Quincozes",
         "Amanda Dias"
       ],
+      "affiliations": [
+        "Federal University of Pampa (UNIPAMPA)"
+      ],
       "first_submitted": "2026-10-01",
       "updated": "2026-10-01",
       "version": 1,
@@ -7045,6 +7418,9 @@
         "Sharath M Shankaranarayana",
         "Davor Runje",
         "Jan Jannink"
+      ],
+      "affiliations": [
+        "Synthpop.AI"
       ],
       "first_submitted": "2026-10-01",
       "updated": "2026-10-01",
@@ -7118,6 +7494,9 @@
       "authors": [
         "Alden Do Rosario",
         "Kirollos Atef"
+      ],
+      "affiliations": [
+        "CustomGPT.ai"
       ],
       "first_submitted": "2026-09-30",
       "updated": "2026-09-30",
@@ -7202,6 +7581,11 @@
         "Ninghao Liu",
         "Liang Wu"
       ],
+      "affiliations": [
+        "Nokia",
+        "Tencent Hunyuan",
+        "The Hong Kong Polytechnic University"
+      ],
       "first_submitted": "2026-09-30",
       "updated": "2026-09-30",
       "version": 1,
@@ -7275,6 +7659,11 @@
         "Haoyang Su",
         "Weiran Huang"
       ],
+      "affiliations": [
+        "Fudan University",
+        "Shanghai Jiao Tong University",
+        "Shanghai Innovation Institute"
+      ],
       "first_submitted": "2026-09-30",
       "updated": "2026-09-30",
       "version": 1,
@@ -7339,6 +7728,9 @@
       "authors": [
         "Luyao Tang",
         "Cheng Chen"
+      ],
+      "affiliations": [
+        "Department of Electrical and Computer Engineering, The University of Hong Kong"
       ],
       "first_submitted": "2026-09-30",
       "updated": "2026-09-30",
@@ -7407,6 +7799,10 @@
         "Shenghe Xu",
         "Lifan Mei"
       ],
+      "affiliations": [
+        "Amazon",
+        "Xi’an Jiaotong-Liverpool University"
+      ],
       "first_submitted": "2026-09-30",
       "updated": "2026-09-30",
       "version": 1,
@@ -7473,6 +7869,10 @@
       "authors": [
         "Hanjia Lyu",
         "Yinglong Xia"
+      ],
+      "affiliations": [
+        "Singapore Management University",
+        "Meta AI"
       ],
       "first_submitted": "2026-09-30",
       "updated": "2026-10-12",
@@ -7543,6 +7943,11 @@
         "Ming Li",
         "Yuxiang Lai"
       ],
+      "affiliations": [
+        "University of Southern California",
+        "University of Florida",
+        "Emory University"
+      ],
       "first_submitted": "2026-09-30",
       "updated": "2026-09-30",
       "version": 1,
@@ -7610,6 +8015,9 @@
         "Haidi Jin",
         "Chen Ji"
       ],
+      "affiliations": [
+        "AgentBull Pte Ltd"
+      ],
       "first_submitted": "2026-09-30",
       "updated": "2026-09-30",
       "version": 1,
@@ -7675,6 +8083,7 @@
         "Zhimin Gao",
         "Pichao Wang"
       ],
+      "affiliations": [],
       "first_submitted": "2026-09-30",
       "updated": "2026-09-30",
       "version": 1,
@@ -7752,6 +8161,11 @@
         "Yi Chang",
         "Yuan Wu"
       ],
+      "affiliations": [
+        "School of Artificial Intelligence, Jilin University",
+        "College of Software, Jilin University",
+        "Engineering Research Center of Knowledge-Driven Human-Machine Intelligence, Jilin University"
+      ],
       "first_submitted": "2026-09-30",
       "updated": "2026-10-14",
       "version": 2,
@@ -7816,6 +8230,9 @@
       "authors": [
         "Amir Rafe",
         "Subasish Das"
+      ],
+      "affiliations": [
+        "Texas State University"
       ],
       "first_submitted": "2026-09-29",
       "updated": "2026-10-06",
@@ -7894,6 +8311,11 @@
         "Lorenz Sparrenberg",
         "Rafet Sifa"
       ],
+      "affiliations": [
+        "University of Bonn",
+        "Lamarr Institute for Machine Learning and Artificial Intelligence",
+        "Fraunhofer IAIS"
+      ],
       "first_submitted": "2026-09-29",
       "updated": "2026-09-29",
       "version": 1,
@@ -7967,6 +8389,11 @@
         "Zuxuan Wu",
         "Shuicheng Yan"
       ],
+      "affiliations": [
+        "Fudan University",
+        "National University of Singapore",
+        "University of Chinese Academy of Sciences"
+      ],
       "first_submitted": "2026-09-29",
       "updated": "2026-09-29",
       "version": 1,
@@ -8032,6 +8459,10 @@
         "Bushra Asseri",
         "Abdulaziz Asseri"
       ],
+      "affiliations": [
+        "Alfaisal University",
+        "Proxa.sa"
+      ],
       "first_submitted": "2026-09-28",
       "updated": "2026-10-03",
       "version": 2,
@@ -8096,6 +8527,9 @@
       "title": "More Features Are Not More Evidence: Limits of Training-Free Human Activity Recognition with Jev",
       "authors": [
         "Orhan Konak"
+      ],
+      "affiliations": [
+        "Hasso Plattner Institute, University of Potsdam"
       ],
       "first_submitted": "2026-09-28",
       "updated": "2026-09-28",
@@ -8169,6 +8603,14 @@
         "Fredrik D. Johansson",
         "Zhongqi Yue"
       ],
+      "affiliations": [
+        "Zhejiang University",
+        "SAP",
+        "Central South University",
+        "The Hong Kong University of Science and Technology (Guangzhou)",
+        "Chalmers University of Technology",
+        "Microsoft Research"
+      ],
       "first_submitted": "2026-09-28",
       "updated": "2026-09-28",
       "version": 1,
@@ -8240,6 +8682,10 @@
         "Sitaram Asur",
         "Phil Mui"
       ],
+      "affiliations": [
+        "Salesforce AI",
+        "University of Wisconsin–Madison"
+      ],
       "first_submitted": "2026-09-28",
       "updated": "2026-10-10",
       "version": 2,
@@ -8306,6 +8752,7 @@
       "authors": [
         "Guangren Wang"
       ],
+      "affiliations": [],
       "first_submitted": "2026-09-28",
       "updated": "2026-09-28",
       "version": 1,
@@ -8382,6 +8829,11 @@
       "authors": [
         "Riccardo Porcedda"
       ],
+      "affiliations": [
+        "little-g.ai",
+        "Sant'Anna School of Advanced Studies",
+        "University of Pisa"
+      ],
       "first_submitted": "2026-09-28",
       "updated": "2026-09-28",
       "version": 1,
@@ -8449,6 +8901,9 @@
         "Peidong Wang",
         "Zihan Wang",
         "Shi Feng"
+      ],
+      "affiliations": [
+        "Northeastern University, China"
       ],
       "first_submitted": "2026-09-28",
       "updated": "2026-09-28",
@@ -8523,6 +8978,7 @@
       "authors": [
         "Michele Loi"
       ],
+      "affiliations": [],
       "first_submitted": "2026-09-28",
       "updated": "2026-09-28",
       "version": 1,
@@ -8591,6 +9047,9 @@
         "Haojie Dai",
         "Chengju Liu",
         "Qijun Chen"
+      ],
+      "affiliations": [
+        "Tongji University"
       ],
       "first_submitted": "2026-09-28",
       "updated": "2026-09-28",
@@ -8661,6 +9120,9 @@
         "Sasha Behrouzi",
         "Ahmad-Reza Sadeghi"
       ],
+      "affiliations": [
+        "Technical University of Darmstadt"
+      ],
       "first_submitted": "2026-09-28",
       "updated": "2026-09-28",
       "version": 1,
@@ -8727,6 +9189,9 @@
       "authors": [
         "Zhiqiang Wang",
         "Yichao Gao"
+      ],
+      "affiliations": [
+        "University of Science and Technology of China"
       ],
       "first_submitted": "2026-09-28",
       "updated": "2026-09-28",
@@ -8802,6 +9267,11 @@
         "Yong-Lu Li",
         "Yehui Tang"
       ],
+      "affiliations": [
+        "Samsung Robotics eXperience",
+        "Shanghai Jiao Tong University",
+        "Samsung Research"
+      ],
       "first_submitted": "2026-09-28",
       "updated": "2026-09-28",
       "version": 1,
@@ -8876,6 +9346,9 @@
       "authors": [
         "Rishabh Sharma",
         "Rishika Lall"
+      ],
+      "affiliations": [
+        "Independent Researcher"
       ],
       "first_submitted": "2026-09-28",
       "updated": "2026-09-28",
@@ -8958,6 +9431,9 @@
         "Yan-Syuan Chen",
         "Zhongyao Chu"
       ],
+      "affiliations": [
+        "Independent researchers"
+      ],
       "first_submitted": "2026-09-28",
       "updated": "2026-09-28",
       "version": 1,
@@ -9025,6 +9501,9 @@
         "Yazhou Zhang",
         "Junhao Yu"
       ],
+      "affiliations": [
+        "School of Computer Science and Technology, Tianjin University"
+      ],
       "first_submitted": "2026-09-27",
       "updated": "2026-09-27",
       "version": 1,
@@ -9090,6 +9569,9 @@
       "authors": [
         "Han Chen",
         "Yingrui Li"
+      ],
+      "affiliations": [
+        "Independent Researcher"
       ],
       "first_submitted": "2026-09-27",
       "updated": "2026-10-05",
@@ -9158,6 +9640,9 @@
         "Alfredo Madrid-García",
         "Beatriz Merino-Barbancho"
       ],
+      "affiliations": [
+        "Independent researcher"
+      ],
       "first_submitted": "2026-09-27",
       "updated": "2026-10-10",
       "version": 4,
@@ -9224,6 +9709,9 @@
       "title": "Do System One Decisions Add Up? A Study of Probabilistic Coherence",
       "authors": [
         "Saman Sarker Joy"
+      ],
+      "affiliations": [
+        "Faculty of Computer Science and Information Technology, Universiti Malaya"
       ],
       "first_submitted": "2026-09-27",
       "updated": "2026-09-27",
@@ -9295,6 +9783,9 @@
       "title": "JET: Justification Evaluation in Transformer",
       "authors": [
         "Shenghao Ding"
+      ],
+      "affiliations": [
+        "Yet Another AI"
       ],
       "first_submitted": "2026-09-27",
       "updated": "2026-09-29",
@@ -9370,6 +9861,7 @@
       "authors": [
         "Gowthamkumar Nandakishore"
       ],
+      "affiliations": [],
       "first_submitted": "2026-09-27",
       "updated": "2026-09-27",
       "version": 1,
@@ -9438,6 +9930,9 @@
         "Michail-Alexandros Kourtis",
         "George Xilouris"
       ],
+      "affiliations": [
+        "National Centre for Scientific Research \"Demokritos\" (NCSRD)"
+      ],
       "first_submitted": "2026-09-27",
       "updated": "2026-09-27",
       "version": 1,
@@ -9503,6 +9998,7 @@
       "authors": [
         "Gabriele Cinà"
       ],
+      "affiliations": [],
       "first_submitted": "2026-09-27",
       "updated": "2026-09-27",
       "version": 1,
@@ -9576,6 +10072,10 @@
       "title": "Evaluating System One Models for Agent Security Decisions: Reliability, Calibration, and Selective Automation",
       "authors": [
         "Yixuan Liu"
+      ],
+      "affiliations": [
+        "TraceStone",
+        "Nanyang Technological University"
       ],
       "first_submitted": "2026-09-27",
       "updated": "2026-10-03",
@@ -9667,6 +10167,10 @@
         "Shengming Yuan",
         "Enhong Chen"
       ],
+      "affiliations": [
+        "University of Science and Technology of China",
+        "University of Electronic Science and Technology of China"
+      ],
       "first_submitted": "2026-09-27",
       "updated": "2026-09-27",
       "version": 1,
@@ -9743,6 +10247,9 @@
         "Yihao He",
         "Quanyi Li"
       ],
+      "affiliations": [
+        "Software College, Northeastern University"
+      ],
       "first_submitted": "2026-09-27",
       "updated": "2026-09-27",
       "version": 1,
@@ -9816,6 +10323,9 @@
       "title": "PACT: Pairwise-Anchored Calibrated Tuning for Single-Token Typed Decisions",
       "authors": [
         "Yida Lin"
+      ],
+      "affiliations": [
+        "Victoria University of Wellington"
       ],
       "first_submitted": "2026-09-26",
       "updated": "2026-09-26",
@@ -9893,6 +10403,9 @@
       "authors": [
         "Lijuan Tang",
         "Yuemeng Zheng"
+      ],
+      "affiliations": [
+        "Northeastern University"
       ],
       "first_submitted": "2026-09-26",
       "updated": "2026-09-26",
@@ -9978,6 +10491,14 @@
         "Rui Wang",
         "Leo Yu Zhang"
       ],
+      "affiliations": [
+        "Institute of Information Engineering, Chinese Academy of Sciences",
+        "School of Cyber Security, University of Chinese Academy of Sciences",
+        "Huazhong University of Science and Technology",
+        "Griffith University",
+        "Changsha University of Science and Technology",
+        "City University of Hong Kong"
+      ],
       "first_submitted": "2026-09-25",
       "updated": "2026-09-25",
       "version": 1,
@@ -10051,6 +10572,12 @@
         "Bowen Deng",
         "Zhexuan Bai",
         "Yichen Li"
+      ],
+      "affiliations": [
+        "Beijing University of Posts and Telecommunications",
+        "University of Malaya",
+        "Georgian College",
+        "Huazhong University of Science and Technology"
       ],
       "first_submitted": "2026-09-25",
       "updated": "2026-09-25",
@@ -10126,6 +10653,7 @@
         "Habibe Aleyna Tasdemir",
         "Muhammed Faruk Gozay"
       ],
+      "affiliations": [],
       "first_submitted": "2026-09-25",
       "updated": "2026-09-25",
       "version": 1,
@@ -10204,6 +10732,12 @@
         "Xiyang Hu",
         "Yue Zhao"
       ],
+      "affiliations": [
+        "University of Southern California",
+        "Mohamed bin Zayed University of Artificial Intelligence",
+        "Independent Researcher",
+        "Arizona State University"
+      ],
       "first_submitted": "2026-09-24",
       "updated": "2026-10-08",
       "version": 2,
@@ -10277,6 +10811,10 @@
         "Muen Xue",
         "Zijian Ye"
       ],
+      "affiliations": [
+        "Sun Yat-sen University",
+        "The Chinese University of Hong Kong"
+      ],
       "first_submitted": "2026-09-24",
       "updated": "2026-09-24",
       "version": 1,
@@ -10339,6 +10877,9 @@
       "title": "Jev-Mobile: Jev as an Executor for Mobile GUI Agents",
       "authors": [
         "Linghua Zhang"
+      ],
+      "affiliations": [
+        "Rice University"
       ],
       "first_submitted": "2026-09-24",
       "updated": "2026-09-24",
@@ -10404,6 +10945,9 @@
       "authors": [
         "Delip Rao",
         "Chris Callison-Burch"
+      ],
+      "affiliations": [
+        "University of Pennsylvania"
       ],
       "first_submitted": "2026-09-24",
       "updated": "2026-10-13",
@@ -10479,6 +11023,15 @@
         "Simin Chen",
         "Ying Zhang",
         "Leo Yu Zhang"
+      ],
+      "affiliations": [
+        "Griffith University",
+        "Nanyang Technological University",
+        "UNSW",
+        "Independent Researcher",
+        "Deakin University",
+        "George Mason University",
+        "Wake Forest University"
       ],
       "first_submitted": "2026-09-24",
       "updated": "2026-09-24",
@@ -10557,6 +11110,10 @@
         "Xianliang Yang",
         "Li Zhao"
       ],
+      "affiliations": [
+        "School of Intelligence Science and Technology, Nanjing University",
+        "Microsoft Research Asia"
+      ],
       "first_submitted": "2026-09-24",
       "updated": "2026-09-24",
       "version": 1,
@@ -10621,6 +11178,9 @@
       "title": "Calibrated Decision Models for Autonomous Penetration-Testing Harnesses: JEV and Laya as System One Decision Layers for LLM-Driven Pentest Agents",
       "authors": [
         "Joas Antonio dos Santos Barbosa"
+      ],
+      "affiliations": [
+        "Independent Researcher — AI and Offensive Security"
       ],
       "first_submitted": "2026-09-24",
       "updated": "2026-09-24",
@@ -10690,6 +11250,10 @@
         "Alan Aqrawi",
         "Arian Abbasi"
       ],
+      "affiliations": [
+        "Accenture",
+        "Harvard University, Faculty of Arts and Sciences (FAS)"
+      ],
       "first_submitted": "2026-09-24",
       "updated": "2026-09-26",
       "version": 2,
@@ -10755,6 +11319,9 @@
       "authors": [
         "Tiantong Wu",
         "Wei Yang Bryan Lim"
+      ],
+      "affiliations": [
+        "Nanyang Technological University"
       ],
       "first_submitted": "2026-09-23",
       "updated": "2026-09-23",
@@ -10823,6 +11390,9 @@
         "Weiwei Ye",
         "Hangchen Liu",
         "Renhe Jiang"
+      ],
+      "affiliations": [
+        "The University of Tokyo"
       ],
       "first_submitted": "2026-09-23",
       "updated": "2026-09-23",
@@ -10903,6 +11473,19 @@
         "Preslav Nakov",
         "Songwei He"
       ],
+      "affiliations": [
+        "The University of Tokyo",
+        "MBZUAI",
+        "McGill University",
+        "Hong Kong Baptist University",
+        "Fudan University",
+        "University of Illinois Urbana-Champaign",
+        "UCloud",
+        "Columbia University",
+        "The University of Hong Kong",
+        "University of Illinois Chicago",
+        "Quantell Capital"
+      ],
       "first_submitted": "2026-09-23",
       "updated": "2026-10-10",
       "version": 2,
@@ -10975,6 +11558,11 @@
         "Yue Sun",
         "Tao Tan"
       ],
+      "affiliations": [
+        "Intelligent Medical Computing Laboratory, Faculty of Applied Sciences, Macao Polytechnic University",
+        "Department of Radiology, Netherlands Cancer Institute",
+        "Department of Radiology and Nuclear Medicine, Radboud University Medical Center"
+      ],
       "first_submitted": "2026-09-23",
       "updated": "2026-09-23",
       "version": 1,
@@ -11041,6 +11629,9 @@
       "title": "KITE: Scaling Jev Population Experiments with Sparse Flagship Calibration",
       "authors": [
         "Hengyu Li"
+      ],
+      "affiliations": [
+        "The University of Tokyo"
       ],
       "first_submitted": "2026-09-23",
       "updated": "2026-09-23",
@@ -11118,6 +11709,10 @@
         "Yongcheng Zeng",
         "Jian Zhao"
       ],
+      "affiliations": [
+        "Institute of Automation, Chinese Academy of Sciences",
+        "Beijing Zhongguancun Academy"
+      ],
       "first_submitted": "2026-09-23",
       "updated": "2026-09-23",
       "version": 1,
@@ -11193,6 +11788,11 @@
         "Jiajia Shi",
         "Zijin Yang"
       ],
+      "affiliations": [
+        "National University of Singapore",
+        "Fudan University",
+        "University of Science and Technology of China"
+      ],
       "first_submitted": "2026-09-22",
       "updated": "2026-10-08",
       "version": 3,
@@ -11260,6 +11860,9 @@
         "Ramayya Krishnan",
         "Rema Padman"
       ],
+      "affiliations": [
+        "Carnegie Mellon University"
+      ],
       "first_submitted": "2026-09-22",
       "updated": "2026-10-09",
       "version": 5,
@@ -11326,6 +11929,9 @@
         "Tiantong Wu",
         "Wei Yang Bryan Lim"
       ],
+      "affiliations": [
+        "Nanyang Technological University"
+      ],
       "first_submitted": "2026-09-22",
       "updated": "2026-09-22",
       "version": 1,
@@ -11391,6 +11997,10 @@
       "authors": [
         "Guanxu Yu",
         "Yuhang Yao"
+      ],
+      "affiliations": [
+        "Independent Research",
+        "Carnegie Mellon University"
       ],
       "first_submitted": "2026-09-22",
       "updated": "2026-09-22",
@@ -11468,6 +12078,9 @@
         "Amir Rafe",
         "Subasish Das"
       ],
+      "affiliations": [
+        "Texas State University"
+      ],
       "first_submitted": "2026-09-21",
       "updated": "2026-09-21",
       "version": 1,
@@ -11542,6 +12155,12 @@
         "Shuyi Fan",
         "Hongyang Zhang",
         "Xinhong Xie"
+      ],
+      "affiliations": [
+        "Johns Hopkins University",
+        "Columbia University",
+        "The Hong Kong Polytechnic University",
+        "The Pennsylvania State University"
       ],
       "first_submitted": "2026-09-21",
       "updated": "2026-10-15",
@@ -11627,6 +12246,9 @@
       "authors": [
         "Hazem Ibrahim",
         "Yasir Zaki"
+      ],
+      "affiliations": [
+        "New York University Abu Dhabi"
       ],
       "first_submitted": "2026-09-21",
       "updated": "2026-09-23",
@@ -11722,6 +12344,9 @@
       "authors": [
         "Werner Robitza"
       ],
+      "affiliations": [
+        "AVEQ GmbH"
+      ],
       "first_submitted": "2026-09-21",
       "updated": "2026-09-21",
       "version": 1,
@@ -11786,6 +12411,9 @@
       "authors": [
         "Amir Rafe",
         "Subasish Das"
+      ],
+      "affiliations": [
+        "Texas State University"
       ],
       "first_submitted": "2026-09-21",
       "updated": "2026-09-21",
@@ -11853,6 +12481,9 @@
         "Dongming Jiang",
         "Yi Li",
         "Bingzhe Li"
+      ],
+      "affiliations": [
+        "The University of Texas at Dallas"
       ],
       "first_submitted": "2026-09-21",
       "updated": "2026-09-21",
@@ -11936,6 +12567,9 @@
         "Yuxin Zhang",
         "Neo Tiangratanakul"
       ],
+      "affiliations": [
+        "Scam.ai (Reality Inc.)"
+      ],
       "first_submitted": "2026-09-21",
       "updated": "2026-09-21",
       "version": 1,
@@ -12002,6 +12636,10 @@
         "Zehua Cheng",
         "Wei Dai",
         "Jiahao Sun"
+      ],
+      "affiliations": [
+        "University of Oxford",
+        "FLock.io"
       ],
       "first_submitted": "2026-09-20",
       "updated": "2026-09-20",
@@ -12073,6 +12711,9 @@
         "Rui Lang",
         "Guangsheng Yu"
       ],
+      "affiliations": [
+        "School of Electrical, Mechanical and Biomedical Engineering, University of Technology Sydney"
+      ],
       "first_submitted": "2026-09-19",
       "updated": "2026-10-02",
       "version": 2,
@@ -12141,6 +12782,9 @@
         "Haochen Gong",
         "Rui Lang",
         "Guangsheng Yu"
+      ],
+      "affiliations": [
+        "School of Electrical, Mechanical and Biomedical Engineering, University of Technology Sydney"
       ],
       "first_submitted": "2026-09-19",
       "updated": "2026-09-26",
@@ -12243,6 +12887,9 @@
         "Mengyu Zheng",
         "Yingjie Zong"
       ],
+      "affiliations": [
+        "TokenRhythm"
+      ],
       "first_submitted": "2026-09-08",
       "updated": "2026-10-14",
       "version": 2,
@@ -12322,6 +12969,11 @@
         "Xiongwei Han",
         "Minyang Hu"
       ],
+      "affiliations": [
+        "Huazhong University of Science and Technology",
+        "Huawei Technologies",
+        "Institute of Computing Technology, Chinese Academy of Sciences"
+      ],
       "first_submitted": "2026-05-28",
       "updated": "2026-10-14",
       "version": 2,
@@ -12391,6 +13043,9 @@
         "Alexander Yavorskyi",
         "Mykyta Yaroshenko"
       ],
+      "affiliations": [
+        "Knowledgator Engineering"
+      ],
       "first_submitted": "2025-08-11",
       "updated": "2025-08-11",
       "version": 1,
@@ -12457,6 +13112,9 @@
         "Lingjiao Chen",
         "Matei Zaharia",
         "James Zou"
+      ],
+      "affiliations": [
+        "Stanford University"
       ],
       "first_submitted": "2023-05-09",
       "updated": "2023-05-09",
@@ -12530,6 +13188,9 @@
         "Yu Sun",
         "Kilian Q. Weinberger"
       ],
+      "affiliations": [
+        "Cornell University"
+      ],
       "first_submitted": "2017-06-14",
       "updated": "2017-08-03",
       "version": 2,
@@ -12594,6 +13255,9 @@
       "authors": [
         "Yonatan Geifman",
         "Ran El-Yaniv"
+      ],
+      "affiliations": [
+        "Technion – Israel Institute of Technology"
       ],
       "first_submitted": "2017-05-23",
       "updated": "2017-06-01",
