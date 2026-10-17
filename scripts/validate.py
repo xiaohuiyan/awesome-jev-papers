@@ -43,6 +43,10 @@ def validate(data):
         require(p["pdf_url"] == f"https://arxiv.org/pdf/{pid}v{p['version']}", f"{pid}: wrong PDF URL")
         for lang in ("en", "zh"):
             require(bool(p["summary"].get(lang)) and bool(p["relation"].get(lang)), f"{pid}: missing {lang} annotation")
+            if "reading_guide" in p or pid in data["recommended"]:
+                for field in ("label", "question"):
+                    value = p.get("reading_guide", {}).get(field, {}).get(lang, "")
+                    require(bool(value) and "|" not in value and "\n" not in value, f"{pid}: invalid {lang} reading guide {field}")
         require(bool(re.search(r"[\u4e00-\u9fff]", p["summary"]["zh"])), f"{pid}: Chinese summary missing")
         require(p["tags"] and len(p["tags"]) == len(set(p["tags"])), f"{pid}: invalid tags")
         require({e["criterion"] for e in p["evidence"]} == set(data["relevance_weights"]), f"{pid}: missing criterion evidence")
