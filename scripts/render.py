@@ -18,11 +18,6 @@ CATEGORY_QUESTIONS = {
     "applications": {"zh": "放进真实工作流，质量与速度如何取舍？", "en": "How do quality and speed trade off in real workflows?"},
 }
 
-ZH_TAGS = dict(zip(
-    "abstention adaptive-reasoning agents applications architecture benchmark calibration cascading cognitive-bias efficiency evaluation judging medical memory multimodal networking option-sensitivity probability-consistency reinforcement-learning retrieval robotics robustness scientific-workflows security social-science text-annotation theory-of-mind training".split(),
-    "拒答 自适应推理 智能体 应用 模型架构 基准测试 概率校准 模型级联 认知偏差 效率 评估 判别评审 医疗 记忆 多模态 网络通信 选项敏感性 概率一致性 强化学习 检索 机器人 鲁棒性 科研工作流 安全 社会科学 文本标注 心智理论 训练".split(),
-))
-
 
 def load():
     return json.loads(DATA.read_text(encoding="utf-8"))
@@ -79,37 +74,32 @@ def readme(data, lang):
         sub = [p for p in papers if p["primary_category"] == key and p["relation_level"] != "background"]
         n = Counter(p["relation_level"] for p in sub)
         lines.append(f"| {CATEGORY_QUESTIONS[key][lang]} | [{cat[lang]}](#{key}) | {n['direct']} / {n['related']} | {len(sub)} |")
-    lines += ["", (f"每篇只计入一个主分类，交叉主题通过标签表示；另有 {counts['background']} 篇基础背景。每类先列 Jev 直接相关，再列同类方法；组内按首次提交日期倒序排列。" if zh else
-                   f"Each paper has one primary category and cross-topic tags; {counts['background']} foundations are listed separately. Categories group direct Jev work before related methods, with newest first submissions first within each group."), ""]
+    lines += ["", (f"每篇只计入一个主分类；另有 {counts['background']} 篇基础背景。每类先列 Jev 直接相关，再列同类方法；组内按首次提交日期倒序排列。条目保留发表时间、作者、解决问题与核心贡献四项；完整作者名单、标签与核实记录见[证据台账](docs/EVIDENCE.md)与 [BibTeX](references.bib)。" if zh else
+                   f"Each paper has one primary category; {counts['background']} foundations are listed separately. Categories group direct Jev work before related methods, with newest first submissions first within each group. Entries keep four fields: published date, authors, problem, and contribution. Full author lists, tags, and verification records live in the [evidence ledger](docs/EVIDENCE.md) and [BibTeX](references.bib)."), ""]
     labels = {"direct": "Jev 直接相关" if zh else "Direct Jev",
               "related": "同类模型与方法" if zh else "Related model / method",
               "background": "基础背景" if zh else "Foundation"}
 
     def entry(p, heading="####"):
         pid = p["arxiv_id"]
-        result = [f'<a id="paper-{pid.replace(".", "-")}"></a>',
-                  f"{heading} [{p['title']}]({p['reviewed_url']})", "",
-                  f"`{pid}` · " + ("首次提交 " if zh else "Submitted ") + f"{p['first_submitted']} · **v{p['version']}**", ""]
-        if "reading_guide" in p:
-            result += [f"> **{p['reading_guide']['question'][lang]}**", ""]
-        result += [("**看点：** " if zh else "**In focus:** ") + p["summary"][lang], ""]
-        resources = [f"[arXiv]({p['arxiv_url']})", f"[PDF]({p['pdf_url']})"]
-        if p["code"]:
-            for i, c in enumerate(p["code"]):
-                label = ("作者代码" if zh else "Author code") + (f" {i + 1}" if len(p["code"]) > 1 else "")
-                resources.append(f"[{label}]({c['url']})")
+        names = [n.strip() for n in p["authors"]]  # arXiv metadata can carry stray padding
+        if len(names) > 4:
+            shown = "；".join(names[:3]) + f" 等（共 {len(names)} 位）" if zh else "; ".join(names[:3]) + f" et al. ({len(names)} authors)"
         else:
-            resources.append("作者代码未核实" if zh else "Author code not verified")
-        resources.append(f"[{'证据' if zh else 'Evidence'}](docs/EVIDENCE.md#evidence-{pid.replace('.', '-')})")
-        result += [" · ".join(resources), "",
-                   "<details>", "<summary>" + ("作者、标签与收录依据" if zh else "Authors, tags, and inclusion rationale") + "</summary>", "",
-                   ("- **作者：** " if zh else "- **Authors:** ") + "; ".join(p["authors"]),
-                   ("- **关联：** " if zh else "- **Relation:** ") + labels[p["relation_level"]] + " — " + p["relation"][lang],
-                   ("- **标签：** " if zh else "- **Tags:** ") + " · ".join(f"`{ZH_TAGS[t] if zh else t}`" for t in p["tags"]),
-                   ("- **版本核实：** " if zh else "- **Version checked:** ") + p["verified_on"] + ("；本版本修订于 " if zh else "; version updated ") + p["updated"],
-                   ("- **发表记录：** " if zh else "- **Publication record:** ") + (p["journal_reference"] or ("arXiv 预印本；未核实正式发表记录。" if zh else "arXiv preprint; formal publication not verified.")),
-                   "", "</details>", "", "---", ""]
-        return result
+            shown = "；".join(names) if zh else "; ".join(names)
+        fields = [("📅 " + ("发表时间" if zh else "Published"), f"{p['first_submitted']}（v{p['version']}）" if zh else f"{p['first_submitted']} (v{p['version']})"),
+                  ("👥 " + ("作者" if zh else "Authors"), shown),
+                  ("🎯 " + ("解决问题" if zh else "Problem"), p["problem"][lang]),
+                  ("💡 " + ("核心贡献" if zh else "Contribution"), p["summary"][lang])]
+        resources = [f"[PDF]({p['pdf_url']})"]
+        for i, c in enumerate(p["code"]):
+            label = ("作者代码" if zh else "Author code") + (f" {i + 1}" if len(p["code"]) > 1 else "")
+            resources.append(f"[{label}]({c['url']})")
+        return [f'<a id="paper-{pid.replace(".", "-")}"></a>',
+                f"{heading} [{p['title']}]({p['reviewed_url']})",
+                " · ".join(resources),
+                *[f"- **{name}**：{value}" if zh else f"- **{name}**: {value}" for name, value in fields],
+                "---"]
 
     for key, cat in data["categories"].items():
         lines += [f'<a id="{key}"></a>', f"## {cat[lang]}", "",

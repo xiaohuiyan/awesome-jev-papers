@@ -42,12 +42,14 @@ def validate(data):
         require(p["reviewed_url"] == f"https://arxiv.org/abs/{pid}v{p['version']}", f"{pid}: wrong reviewed URL")
         require(p["pdf_url"] == f"https://arxiv.org/pdf/{pid}v{p['version']}", f"{pid}: wrong PDF URL")
         for lang in ("en", "zh"):
-            require(bool(p["summary"].get(lang)) and bool(p["relation"].get(lang)), f"{pid}: missing {lang} annotation")
+            require(bool(p["summary"].get(lang)) and bool(p["relation"].get(lang)) and bool(p["problem"].get(lang)), f"{pid}: missing {lang} annotation")
+            require("\n" not in p["problem"][lang] and "|" not in p["problem"][lang], f"{pid}: invalid {lang} problem statement")
             if "reading_guide" in p or pid in data["recommended"]:
                 for field in ("label", "question"):
                     value = p.get("reading_guide", {}).get(field, {}).get(lang, "")
                     require(bool(value) and "|" not in value and "\n" not in value, f"{pid}: invalid {lang} reading guide {field}")
         require(bool(re.search(r"[\u4e00-\u9fff]", p["summary"]["zh"])), f"{pid}: Chinese summary missing")
+        require(bool(re.search(r"[\u4e00-\u9fff]", p["problem"]["zh"])), f"{pid}: Chinese problem statement missing")
         require(p["tags"] and len(p["tags"]) == len(set(p["tags"])), f"{pid}: invalid tags")
         require({e["criterion"] for e in p["evidence"]} == set(data["relevance_weights"]), f"{pid}: missing criterion evidence")
         require(sum(len(e["quote"].split()) for e in p["evidence"]) <= 25, f"{pid}: excessive quotation")

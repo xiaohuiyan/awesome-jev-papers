@@ -88,6 +88,10 @@
         "en": "Unifies spatial understanding as multimodal candidate classification using native attention matching.",
         "zh": "通过原生注意力匹配，将多类空间理解任务统一为多模态候选分类。"
       },
+      "problem": {
+        "zh": "分散的空间理解任务，能否统一为多模态候选分类？",
+        "en": "Can diverse spatial understanding tasks be unified as multimodal candidate classification?"
+      },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
         "zh": "紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。"
@@ -167,6 +171,10 @@
         "en": "Introduces multimodal decision models built around masked answer slots, and compares their accuracy with hosted Jev. The answer-slot design offers a concrete way to study decision modeling beyond text-only inputs.",
         "zh": "围绕被遮蔽的答案占位符构建多模态决策模型，并与托管 Jev 比较准确率。它提供了一个具体切入点：当输入不止文本时，如何通过答案槽位来组织模型的选择任务。"
       },
+      "problem": {
+        "zh": "多模态模型怎样学会直接做选择？",
+        "en": "How can a multimodal model be trained to choose?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -241,6 +249,10 @@
         "en": "Studies decision axioms and option scoring that is independent of position and competing candidates.",
         "zh": "研究决策公理，以及不依赖选项位置和竞争候选的评分方式。"
       },
+      "problem": {
+        "zh": "选项评分如何做到不依赖选项位置与竞争候选？",
+        "en": "How can option scoring be made position- and rival-independent?"
+      },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
         "zh": "紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。"
@@ -310,6 +322,10 @@
         "en": "Adds typed choice, binary judgment and score readouts to an audio backbone for audio decision tasks.",
         "zh": "在音频骨干上增加选择、二元判断和评分接口，用于音频决策任务。"
       },
+      "problem": {
+        "zh": "音频任务能否统一用选择、二元判断与评分接口来完成？",
+        "en": "Can audio tasks run through unified choice, verdict, and scoring interfaces?"
+      },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
         "zh": "紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。"
@@ -377,6 +393,10 @@
       "summary": {
         "en": "Benchmarks agent decisions and learns delegation thresholds that depend on the trajectory. It also trains a decision model with Jev labels, linking evaluation, shared control with LLMs, and training in one framework.",
         "zh": "评测智能体决策，并学习随运行轨迹变化的委派阈值，决定何时把控制权交给 LLM；同时使用 Jev 标签训练决策模型。它把“怎样评测、怎样分工、怎样训练”放进同一框架讨论。"
+      },
+      "problem": {
+        "zh": "智能体的下一步，交给快模型还是 LLM？",
+        "en": "Who should make the next decision: a fast model or an LLM?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -458,6 +478,10 @@
         "en": "Uses Jev for expert routing and initial artifact screening while generative models execute tasks and supply feedback.",
         "zh": "使用 Jev 选择专家和初筛产物，由生成模型执行任务并提供修正反馈。"
       },
+      "problem": {
+        "zh": "多智能体工作流中，把决策与生成分开是否更省更稳？",
+        "en": "Does separating decisions from generation make multi-agent workflows cheaper and steadier?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -525,6 +549,10 @@
       "summary": {
         "en": "Compares fast decisions with generative reasoning using tasks with matched probability scoring and closed-loop environments. It examines both the probabilities assigned to choices and how decisions play out when placed inside an ongoing interaction.",
         "zh": "用统一的概率评分任务和闭环环境，对照快速决策与生成式推理。既看模型给选项的概率是否合理，也看这些选择放进持续交互的流程后，会带来怎样的表现。"
+      },
+      "problem": {
+        "zh": "哪些判断可以交给快模型，哪些需要进一步推理？",
+        "en": "Which decisions can be left to a fast model?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -607,6 +635,10 @@
         "en": "Uses Jev to remove unsupported summary entries after context compaction in long-running agents.",
         "zh": "使用 Jev 在上下文压缩后删除缺乏来源支持的摘要条目。"
       },
+      "problem": {
+        "zh": "长程智能体的上下文压缩，如何保住有来源支持的摘要条目？",
+        "en": "How can compaction keep summary entries that sources actually support?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -682,6 +714,10 @@
         "en": "Compares Jev, prompt-injection classifiers and an LLM judge under calibration, distribution shift and deferral policies.",
         "zh": "在校准、分布偏移和转交策略下，比较 Jev、注入检测分类器与 LLM 裁判。"
       },
+      "problem": {
+        "zh": "提示注入检测，该用分类器、决策模型还是 LLM 裁判？",
+        "en": "Who should detect prompt injection: classifiers, decision models, or LLM judges?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -744,6 +780,10 @@
       "summary": {
         "en": "Shares one state encoding across isolated questions and makes option order irrelevant by construction.",
         "zh": "通过共享状态编码回答相互隔离的问题，并在结构上消除选项顺序影响。"
+      },
+      "problem": {
+        "zh": "一次状态编码能否服务多个问题，并从结构上消除选项顺序影响？",
+        "en": "Can one shared encoding answer many questions without option-order bias?"
       },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
@@ -818,6 +858,10 @@
         "en": "Compares Jev and a reasoning model when game environments continue evolving during inference.",
         "zh": "比较 Jev 与推理模型在推理期间环境持续运行的游戏任务中的表现。"
       },
+      "problem": {
+        "zh": "环境在推理期间持续运行时，智能体如何权衡思考与行动？",
+        "en": "How should agents balance thinking and acting while the environment keeps running?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -886,6 +930,10 @@
         "en": "Uses probabilistic judge feedback to guide a query-based jailbreak evaluation framework.",
         "zh": "利用概率裁判反馈引导基于查询的越狱评测框架。"
       },
+      "problem": {
+        "zh": "概率裁判的反馈能否让基于查询的越狱评测更高效？",
+        "en": "Can probabilistic judge feedback make query-based jailbreak evaluation more efficient?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -953,6 +1001,10 @@
         "en": "Tests whether open decision models follow fallback rules consistently under equivalent definitions.",
         "zh": "测试开放决策模型能否在等价定义下稳定遵循回退选项规则。"
       },
+      "problem": {
+        "zh": "开放决策模型能否在等价改写下稳定遵循回退选项规则？",
+        "en": "Do decision models reliably follow fallback-option rules under rewording?"
+      },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
         "zh": "紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。"
@@ -1016,6 +1068,10 @@
       "summary": {
         "en": "Starts from a risk budget and studies how to set decision thresholds and conservative fallbacks. Moderation, safety, and reranking tasks show the practical question: when should a system act on a fast model's confidence, and when should it fall back?",
         "zh": "先确定可接受的风险，再研究决策阈值与保守回退策略。在内容审核、安全和重排任务中，重点关注一个实用问题：系统何时可以根据快模型的置信度直接行动，何时应该回退？"
+      },
+      "problem": {
+        "zh": "给定可接受的风险，多少判断可以自动处理？",
+        "en": "How much automation fits an acceptable error budget?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -1086,6 +1142,10 @@
       "summary": {
         "en": "Combines direct candidate reading with selectively started and interrupted reasoning on a frozen backbone.",
         "zh": "在冻结骨干上结合直接候选读取与按需启动、可中断的推理。"
+      },
+      "problem": {
+        "zh": "冻结骨干上，何时该启动推理、何时该中断？",
+        "en": "When should a frozen backbone start on-demand reasoning, and when should it stop?"
       },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
@@ -1160,6 +1220,10 @@
         "en": "Probes cognitive biases with 41,500 responses and 15,000 additional conjunction responses. Jev often avoids classic answer-level biases, yet irrelevant numbers and option order still affect judgments. In the expanded conjunction test, about 54% of responses violate the probability rule, exposing a gap between plausible choices and consistent probabilities.",
         "zh": "用 41,500 次响应及追加的 15,000 次合取任务响应检查认知偏差。Jev 在答案层面通常避开若干经典偏差，但仍会受到无关数字和选项顺序影响；扩展合取测试中约 54% 的响应违反概率规则，提示“选得像样”与“概率自洽”是两回事。"
       },
+      "problem": {
+        "zh": "答案看起来合理，概率判断就一定正确吗？",
+        "en": "Can apparently sensible choices still hide probability errors?"
+      },
       "relation": {
         "en": "Direct controlled experiments on hosted Jev. Probability sensitivity and adapted-task failures qualify performance on familiar cognitive-reflection questions; this study does not establish a general calibration advantage over zero-shot autoregressive LLMs.",
         "zh": "直接对托管 Jev 开展受控实验。概率敏感性与改写任务上的失败限制了熟悉认知反射题的正面结论；该研究未确立相对于零样本自回归 LLM 的普遍校准优势。"
@@ -1233,6 +1297,10 @@
         "en": "Uses Jev judgments for code recommendations, action guidance and submission timing in code repair.",
         "zh": "在代码修复中用 Jev 判断指导片段推荐、动作选择和提交时机。"
       },
+      "problem": {
+        "zh": "代码修复中，哪些判断值得交给决策模型？",
+        "en": "Which judgments in code repair pay off when delegated to a decision model?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -1297,6 +1365,10 @@
         "en": "Compares typed models on tabular classification, verification and anomaly detection under meaning-preserving rewrites.",
         "zh": "比较结构化决策模型在表格分类、事实核验和异常检测中的表现及改写稳健性。"
       },
+      "problem": {
+        "zh": "类型化决策模型适合表格分类、事实核验与异常检测吗？",
+        "en": "Are typed decision models suited to tabular classification, fact-checking, and anomaly detection?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -1357,6 +1429,10 @@
       "summary": {
         "en": "Adapts candidate-scoring models for agricultural tasks and reports comparisons with hosted Jev.",
         "zh": "为农业任务适配候选评分模型，并报告与托管 Jev 的比较。"
+      },
+      "problem": {
+        "zh": "候选评分模型能否高效适配农业任务？",
+        "en": "Can candidate-scoring models be adapted efficiently for agriculture?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -1425,6 +1501,10 @@
         "en": "Introduces text and vision perturbation benchmarks for the robustness of typed decision interfaces.",
         "zh": "通过文本和视觉扰动基准评估结构化决策接口的鲁棒性。"
       },
+      "problem": {
+        "zh": "结构化决策接口在文本与视觉扰动下有多鲁棒？",
+        "en": "How robust are typed decision interfaces under text and vision perturbations?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -1487,6 +1567,10 @@
         "en": "Uses Jev to audit information handoffs and attribute failures in multi-agent execution traces.",
         "zh": "使用 Jev 审计信息交接，并定位多智能体执行轨迹中的错误来源。"
       },
+      "problem": {
+        "zh": "多智能体系统的失败，该归因到哪一次信息交接？",
+        "en": "Which information handoff caused a multi-agent system to fail?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -1547,6 +1631,10 @@
       "summary": {
         "en": "Treats decisions as a native modeling task, with representations designed for missing answers, reordered options, growing candidate sets, and cache reuse. Read it for the design problems that arise when an interface must score choices reliably and efficiently.",
         "zh": "把“做选择”作为模型的原生任务，围绕正确答案缺席、选项换序、候选项增多和缓存复用设计表示方法。它讨论的是：一个专门给选项打分的接口，需要从底层处理哪些可靠性与效率问题。"
+      },
+      "problem": {
+        "zh": "如果从一开始就为“做选择”设计模型，会怎样？",
+        "en": "What changes when choosing is the model's core task?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -1643,6 +1731,10 @@
         "en": "Recasts video understanding and interaction as structured decision tasks. Its organizing idea is to make those tasks reusable, bringing the decision-model perspective to video inputs and interactions.",
         "zh": "把视频理解和交互重构为结构化决策任务，并强调这些任务的可复用性。可以从“面对这段视频，需要作出哪些明确选择”这一角度理解它的建模思路。"
       },
+      "problem": {
+        "zh": "理解一段视频，能否拆成可复用的选择任务？",
+        "en": "Can video understanding be organized as structured choices?"
+      },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
         "zh": "紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。"
@@ -1719,6 +1811,10 @@
       "summary": {
         "en": "Audits how manipulated judgments can change program execution in real Jev applications.",
         "zh": "审计被操纵的判断如何改变真实 Jev 应用的程序执行。"
+      },
+      "problem": {
+        "zh": "被操纵的判断会如何改变真实 Jev 应用中的程序执行？",
+        "en": "How do manipulated judgments change program execution in real Jev applications?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -1802,6 +1898,10 @@
         "en": "Compares five typed models with seven generative baselines on 11,117 English questions from nine theory-of-mind benchmarks. Jev reaches 73.2% source-balanced accuracy when native controls are included. Confidence selection, attached reasons, and expanded candidate sets have task-dependent effects; this is an evaluation of benchmark questions, not a complete interactive assistant.",
         "zh": "在九个心智理论基准的 11,117 道英文题上，比较五个类型化模型与七个生成式基线。包含原生对照题时，Jev 的来源平衡准确率为 73.2%；按置信度筛选、附加理由和扩展候选项的效果因任务而异。这里评测的是基准题目上的判断能力，并非完整交互助手。"
       },
+      "problem": {
+        "zh": "模型能通过选择题判断“别人心里怎么想”吗？",
+        "en": "Can typed choices capture what someone else believes?"
+      },
       "relation": {
         "en": "Directly evaluates Jev-1.13 and four open typed models. The seven primary generative baselines do not include Claude. The paper evaluates bounded selection, not a complete interactive assistant, and does not establish a long-horizon multi-turn context bottleneck.",
         "zh": "直接评测 Jev-1.13 与四个开放类型化模型；七个主要生成式基线不含 Claude。实验针对有限候选选择，未测试完整交互式助手，也未确立长程多轮上下文瓶颈。"
@@ -1881,6 +1981,10 @@
         "en": "Pairs factual probes with action questions to distinguish state-reading failures from action-selection failures.",
         "zh": "配对事实探针与动作问题，区分状态理解错误和动作选择错误。"
       },
+      "problem": {
+        "zh": "智能体失败时，是没读懂状态，还是选错了动作？",
+        "en": "When agents fail, is it misreading the state or mischoosing the action?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -1950,6 +2054,10 @@
         "en": "Compares Jev, related decision models and LLMs to characterize reliability on medical decision tasks.",
         "zh": "比较 Jev、同类决策模型和 LLM，分析医疗决策任务中的可靠性。"
       },
+      "problem": {
+        "zh": "医疗决策任务中，System One 模型到底可靠在哪里？",
+        "en": "Where exactly are System One decisions reliable in medical tasks?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -2015,6 +2123,10 @@
         "en": "Includes Jev in a tool-argument judging study and tests independently derived reference answers.",
         "zh": "在工具参数裁判研究中纳入 Jev，并测试独立推导参考答案的作用。"
       },
+      "problem": {
+        "zh": "工具调用参数核验中，裁判是否只是照抄参考答案？",
+        "en": "Do judges merely follow reference answers when verifying tool-call arguments?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -2075,6 +2187,10 @@
       "summary": {
         "en": "Derives statistical limits for sharing scarce calibration labels across questions, motivated by Jev-style probabilities.",
         "zh": "以 Jev 式概率输出为动机，推导跨问题共享稀缺校准标签的统计界限。"
+      },
+      "problem": {
+        "zh": "稀缺校准标签在大量问题间共享时，统计极限在哪里？",
+        "en": "What are the statistical limits of sharing scarce calibration labels across questions?"
       },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
@@ -2139,6 +2255,10 @@
       "summary": {
         "en": "Uses counterfactual scoring probes and human labels to correct Jev and LLM judging biases.",
         "zh": "结合反事实评分探针与人工标签，修正 Jev 和 LLM 的裁判偏置。"
+      },
+      "problem": {
+        "zh": "黑盒裁判的偏置，如何用反事实探针加少量标签修正？",
+        "en": "Can counterfactual probes plus sparse labels recalibrate biased black-box judges?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -2211,6 +2331,10 @@
       "summary": {
         "en": "Combines policy-tree routing with policy-conditioned safety classification for agent harnesses.",
         "zh": "将策略树路由与条件化安全分类结合，用于智能体执行框架。"
+      },
+      "problem": {
+        "zh": "智能体动作的路由与审计，能否又快又可编辑地实现？",
+        "en": "Can agent actions be routed and audited quickly over editable policy trees?"
       },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
@@ -2287,6 +2411,10 @@
         "en": "Separates fast source judgments from deliberative research planning in an autonomous research agent.",
         "zh": "在自主研究智能体中分离快速来源判断与审慎的研究规划。"
       },
+      "problem": {
+        "zh": "自主研究智能体如何分工快速来源判断与审慎规划？",
+        "en": "How should a research agent split fast source judgments from slow planning?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -2351,6 +2479,10 @@
       "summary": {
         "en": "Targets option-order dependence with Runoff candidate screening and balanced comparisons. Experiments include Jev and other models, examining whether a more structured selection procedure makes choices less sensitive to their presentation order.",
         "zh": "针对选项顺序依赖，提出 Runoff 候选筛选与均衡比较方法，并在包括 Jev 在内的模型上评测。关注的是：通过更有结构的选择过程，能否减少“选项摆在哪里”对最终判断的影响。"
+      },
+      "problem": {
+        "zh": "只是调换选项顺序，模型就会改主意吗？",
+        "en": "Will the decision survive an option shuffle?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -2427,6 +2559,10 @@
         "en": "Tests decision judges for presentation and preference biases, showing calibration alone does not remove bias.",
         "zh": "测试决策裁判的呈现与偏好偏置，说明概率校准本身不能消除偏置。"
       },
+      "problem": {
+        "zh": "校准良好的决策裁判，仍会带有哪些呈现与偏好偏置？",
+        "en": "Which presentation biases survive even in well-calibrated decision judges?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -2501,6 +2637,10 @@
         "en": "Compares Jev, LLM judges and specialized classifiers under matched adversarial payloads and policies.",
         "zh": "在相同对抗输入和策略下比较 Jev、LLM 裁判与专用分类器。"
       },
+      "problem": {
+        "zh": "同样的对抗输入与政策下，哪类裁判表现最好？",
+        "en": "Which judge holds up best under the same adversarial inputs and policy?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -2570,6 +2710,10 @@
       "summary": {
         "en": "Offers Instant and confidence-triggered AutoThink models from 0.8B to 27B parameters, trained in three stages. RLCD² uses a frozen evaluator and proper scoring rules to reward probability quality while penalizing long reasoning. DecisionPivot checks whether the models notice details that change the correct answer.",
         "zh": "提供 0.8B–27B 的 Instant 与 AutoThink 模型：前者直接决策，后者按置信度触发推理，均采用三阶段训练。RLCD² 用冻结评估模型与适当评分规则奖励概率质量，同时惩罚过长推理；DecisionPivot 则检查模型能否抓住那些会改变正确答案的细节。"
+      },
+      "problem": {
+        "zh": "什么时候立即选择，什么时候值得多想一步？",
+        "en": "When should a decision model stop and think?"
       },
       "relation": {
         "en": "Directly compares hosted Jev on Decision Index and DecisionPivot, including calibration over 7,800 core examples (Table 4 and Figure 11). Section 3 discusses Jev/RLCD and OpenJev-RLCD as context; this does not establish reproduction of proprietary Jev training.",
@@ -2650,6 +2794,10 @@
         "en": "Studies a simple recipe for obtaining open decision models from instruction-tuned language models.",
         "zh": "研究从指令微调语言模型构建开放决策模型的简洁方案。"
       },
+      "problem": {
+        "zh": "开放决策模型能否用简单配方从现成指令微调 LLM 得到？",
+        "en": "Is there a simple recipe for open decision models from instruction-tuned LLMs?"
+      },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
         "zh": "紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。"
@@ -2710,6 +2858,10 @@
       "summary": {
         "en": "Distills frozen-model answer probabilities into compact decision heads without correct-answer training labels.",
         "zh": "无需正确答案标签，将冻结模型的答案概率蒸馏到紧凑决策头。"
+      },
+      "problem": {
+        "zh": "没有正确答案标签，也能蒸馏出决策模型吗？",
+        "en": "Can decision models be distilled without any correctness labels?"
       },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
@@ -2783,6 +2935,10 @@
       "summary": {
         "en": "Uses known ground-truth uncertainty to evaluate probabilities and calibration, including Jev and Decider.",
         "zh": "使用已知真实不确定性评测 Jev、Decider 等模型的概率与校准。"
+      },
+      "problem": {
+        "zh": "真值不确定性已知时，模型的概率与校准有多准？",
+        "en": "With exact ground-truth uncertainty, how calibrated are model probabilities?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -2874,6 +3030,10 @@
         "en": "Uses a Jev-style timing model to trigger proactive responses to continuously observed physical situations.",
         "zh": "使用 Jev 式时机判断模型，针对持续观察的物理情境触发主动响应。"
       },
+      "problem": {
+        "zh": "持续观察的物理场景中，智能体能否选准介入时机？",
+        "en": "Can an agent watching continuously intervene at the right moment?"
+      },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
         "zh": "紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。"
@@ -2936,6 +3096,10 @@
       "summary": {
         "en": "Tests whether irrelevant alternatives change hosted Jev decisions in a preregistered classification study.",
         "zh": "通过预注册分类实验，测试无关备选项是否改变托管 Jev 的决策。"
+      },
+      "problem": {
+        "zh": "加入无关备选项，会改变托管模型的决策吗？",
+        "en": "Do irrelevant alternatives change a hosted model's decisions?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -3005,6 +3169,10 @@
       "summary": {
         "en": "Evaluates Jev as an embodied skill that selects movement directions and gripper actions.",
         "zh": "将 Jev 作为选择运动方向和夹爪动作的具身技能进行评测。"
+      },
+      "problem": {
+        "zh": "具身技能型智能体在物理任务上表现如何？",
+        "en": "How well do agents with embodied skills perform on physical tasks?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -3077,6 +3245,10 @@
         "en": "Compares complete-answer selection with sequential construction to diagnose correctness loss in Jev decisions.",
         "zh": "比较完整答案选择与序列构建，诊断 Jev 决策中的正确性损失。"
       },
+      "problem": {
+        "zh": "选对了完整答案，就一定能拼对最终的输出序列吗？",
+        "en": "Does a correct choice survive translation into a full output sequence?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -3147,6 +3319,10 @@
         "en": "Adds abstaining prototype memory to option-token remote-sensing classification to improve open-set rejection.",
         "zh": "在遥感选项分类中加入可拒答的原型记忆，改善开放集拒绝能力。"
       },
+      "problem": {
+        "zh": "遥感选项分类如何在开放集下避免静默幻觉？",
+        "en": "How can remote-sensing classification avoid silent hallucination on open sets?"
+      },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
         "zh": "紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。"
@@ -3208,6 +3384,10 @@
       "summary": {
         "en": "Tests Jev as a memory-retirement gate, distinguishing proposed changes from evidence that information is superseded.",
         "zh": "测试 Jev 作为记忆淘汰门控，区分变更建议与旧信息已失效的证据。"
+      },
+      "problem": {
+        "zh": "出现了变更建议，就等于旧记忆已被取代、可以淘汰吗？",
+        "en": "Does a suggested update mean the old memory is actually superseded?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -3271,6 +3451,10 @@
       "summary": {
         "en": "Traces poisoned context through Jev choices, automated actions and persisted workflow state.",
         "zh": "追踪被污染上下文如何经 Jev 选择影响自动动作与持久化工作流状态。"
+      },
+      "problem": {
+        "zh": "被污染的上下文如何沿决策流毒化自动动作与持久状态？",
+        "en": "How does poisoned context propagate through decisions into automated actions?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -3343,6 +3527,10 @@
         "en": "Adapts Clef-Flash to symptom-based classification and probes symptom importance with counterfactual removal.",
         "zh": "将 Clef-Flash 适配到症状分类，并通过反事实删除分析症状的重要性。"
       },
+      "problem": {
+        "zh": "决策基础模型如何高效适配临床任务，并解释自己的判断？",
+        "en": "How can a decision foundation model adapt to clinical tasks and explain its judgments?"
+      },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
         "zh": "紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。"
@@ -3403,6 +3591,10 @@
       "summary": {
         "en": "Audits whether additional questions, evidence and candidate eligibility interfere with open Jev-style retrieval decisions.",
         "zh": "审计附加问题、证据与候选资格是否干扰开放 Jev 式模型的检索决策。"
+      },
+      "problem": {
+        "zh": "同场呈现的问题与证据，会干扰模型的检索决策吗？",
+        "en": "Do co-present questions and evidence interfere with a model's retrieval decisions?"
       },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
@@ -3468,6 +3660,10 @@
         "en": "Introduces a spatial predator-prey framework with a Jev-controlled communication case study.",
         "zh": "提出空间捕食者与猎物框架，并展示由 Jev 控制的通信案例。"
       },
+      "problem": {
+        "zh": "大量智能体的通信与集体动态，如何系统研究？",
+        "en": "How can communication and collective dynamics in AI agent populations be studied?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -3531,6 +3727,10 @@
       "summary": {
         "en": "Studies bounded attacks on state extraction, question generation and output interpretation in a Jev pipeline.",
         "zh": "研究 Jev 流水线中状态提取、问题生成和输出解释接口的受限攻击。"
+      },
+      "problem": {
+        "zh": "决策流水线周围的接口，在受限访问下能否被攻击操纵？",
+        "en": "Can the interfaces around a decision pipeline be attacked with limited access?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -3597,6 +3797,10 @@
       "summary": {
         "en": "Evaluates Jev and Laya across Indonesian regional languages, translation conditions and confidence-gated cascades.",
         "zh": "在印尼地方语言、翻译条件和置信度级联下评测 Jev 与 Laya。"
+      },
+      "problem": {
+        "zh": "校准的类型化决策能力能否迁移到印尼地方语言？",
+        "en": "Do calibrated typed decisions transfer to Indonesian regional languages?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -3669,6 +3873,10 @@
         "en": "Tests whether faster Jev decisions improve completed agent tasks, recovery behavior and resource use.",
         "zh": "检验更快的 Jev 决策是否改善智能体任务交付、恢复行为及资源使用。"
       },
+      "problem": {
+        "zh": "更快的决策真的能让智能体更好吗？",
+        "en": "Do faster decisions actually improve agent task delivery and recovery?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -3732,6 +3940,10 @@
       "summary": {
         "en": "Evaluates option-definition attacks against open typed decision guardrails, separating unsafe allowances from unnecessary blocks.",
         "zh": "评测开放决策防护模型的选项定义攻击，区分错误放行与不必要拦截。"
+      },
+      "problem": {
+        "zh": "智能体防护栏会被选项定义攻击绕过吗？",
+        "en": "Can option-definition attacks bypass decision-model guardrails?"
       },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
@@ -3808,6 +4020,10 @@
         "en": "Benchmarks hosted Jev against general-purpose LLMs on knowledge, reasoning and multilingual tasks.",
         "zh": "在知识、推理和多语言任务上对比托管 Jev 与通用 LLM。"
       },
+      "problem": {
+        "zh": "专用决策模型与通用 LLM 的差距到底有多大？",
+        "en": "How large is the gap between Jev and general-purpose LLMs across knowledge, reasoning, and multilingual tasks?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -3871,6 +4087,10 @@
       "summary": {
         "en": "Evaluates Jev against generative models for stance detection.",
         "zh": "在立场检测任务中比较 Jev 与生成式模型。"
+      },
+      "problem": {
+        "zh": "立场检测任务上，决策模型比得上通用 LLM 吗？",
+        "en": "Can Jev match general-purpose LLMs on stance detection?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -3937,6 +4157,10 @@
         "en": "Uses frozen Jev as a reference policy, exploration judge and replay rater inside reinforcement-learning algorithms.",
         "zh": "在强化学习算法中将冻结 Jev 用作参考策略、探索裁判和回放评分器。"
       },
+      "problem": {
+        "zh": "冻结决策模型能在强化学习中扮演哪些角色？",
+        "en": "Which RL roles can a frozen decision model play: reference policy, exploration judge, or replay scorer?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -3998,6 +4222,10 @@
       "summary": {
         "en": "Tests how equivalent request presentations change Jev's vulnerability to misleading answer cues.",
         "zh": "测试等价请求呈现方式如何改变 Jev 对误导性答案线索的敏感性。"
+      },
+      "problem": {
+        "zh": "请求的呈现方式如何影响裁判对误导性答案线索的抵抗力？",
+        "en": "How does request presentation shape a judge's susceptibility to misleading cues?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -4066,6 +4294,10 @@
         "en": "Introduces policy-labelled evaluation suites covering calibration, framing, candidate scale and decision cost.",
         "zh": "提出带策略标签的评测套件，覆盖校准、措辞、候选规模与决策成本。"
       },
+      "problem": {
+        "zh": "决策模型的校准、措辞敏感性与成本如何统一评测？",
+        "en": "How can calibration, framing sensitivity, and cost be benchmarked together?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -4132,6 +4364,10 @@
       "summary": {
         "en": "Studies shared computation and pruning for OmniJev candidate scoring, including cases where sharing increases latency.",
         "zh": "研究 OmniJev 候选评分的计算共享与剪枝，并分析共享反而增加延迟的情形。"
+      },
+      "problem": {
+        "zh": "候选评分的计算能否跨选项共享与剪枝来加速？",
+        "en": "Can candidate scoring share and prune computation across options for compact inference?"
       },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
@@ -4208,6 +4444,10 @@
         "en": "Converts a pretrained decoder into an instruction-following encoder for multimodal decision tasks.",
         "zh": "将预训练解码器转换为遵循指令的编码器，用于多模态决策任务。"
       },
+      "problem": {
+        "zh": "双编码器架构在多模态决策上能推进到什么极限？",
+        "en": "How far can bi-encoders go on multimodal decisions with natural-language interfaces?"
+      },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
         "zh": "紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。"
@@ -4271,6 +4511,10 @@
         "en": "Evaluates hosted Jev for knowledge tracing when a course has few or no logged learners.",
         "zh": "评测托管 Jev 在课程学习者日志稀缺或缺失时的知识追踪能力。"
       },
+      "problem": {
+        "zh": "课程学习者日志稀缺或缺失时，还能做知识追踪吗？",
+        "en": "Can knowledge tracing work with few or no learner logs?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -4332,6 +4576,10 @@
       "summary": {
         "en": "Uses Jev as a probabilistic sensor before a deterministic authority contract, evaluating admission errors and decision changes.",
         "zh": "将 Jev 作为确定性权限契约之前的概率传感器，评估准入错误与决策变化。"
+      },
+      "problem": {
+        "zh": "模型产生的观察结果，如何安全地被确定性治理契约采纳？",
+        "en": "How can model-produced observations be admitted into deterministic governance contracts safely?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -4401,6 +4649,10 @@
         "en": "Uses path voting to choose features under a budget, querying Jev for selected semantic observations.",
         "zh": "通过路径投票在预算内选择特征，并向 Jev 查询选中的语义观测。"
       },
+      "problem": {
+        "zh": "特征获取有预算时，该先获取哪些特征再询问模型？",
+        "en": "Under a feature budget, which features are worth acquiring before asking the model?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -4463,6 +4715,10 @@
       "summary": {
         "en": "Combines tabular predictions, Jev narrative readings and human recalibration to estimate uncoded crash factors.",
         "zh": "结合表格预测、Jev 叙事读取与人工再校准，估计未编码的事故因素。"
+      },
+      "problem": {
+        "zh": "从未编码的事故因素，能否由表格预测加叙事读取估计出来？",
+        "en": "Can tabular prediction plus narrative readouts estimate crash factors that were never coded?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -4533,6 +4789,10 @@
         "en": "Maps Jev's HVAC fault-diagnosis capabilities across physical representations and operating-condition shifts.",
         "zh": "在不同物理表示与工况偏移下评测 Jev 的暖通故障诊断能力。"
       },
+      "problem": {
+        "zh": "决策模型能诊断暖通故障吗？对物理表示与工况偏移有多敏感？",
+        "en": "Can a decision model diagnose HVAC faults, and how sensitive is it to representation and shift?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -4593,6 +4853,10 @@
       "summary": {
         "en": "Studies confidence-gated handoff from open fast decision actors to reasoning models in live Doom environments.",
         "zh": "在实时 Doom 环境中研究开放快速决策模型按置信度转交推理模型的机制。"
+      },
+      "problem": {
+        "zh": "实时环境中，快模型何时该停下来交给推理模型？",
+        "en": "In real time, when should a fast model stop and hand off to reasoning?"
       },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
@@ -4669,6 +4933,10 @@
         "en": "Uses reference-bound Visual Jev judgments as training rewards for multi-subject image generation.",
         "zh": "将绑定参考主体的 Visual Jev 判断作为多主体图像生成的训练奖励。"
       },
+      "problem": {
+        "zh": "多主体图像生成如何获得有依据、可验证的训练奖励？",
+        "en": "How can multi-subject image generation get reference-bound, verifiable training rewards?"
+      },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
         "zh": "紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。"
@@ -4731,6 +4999,10 @@
       "summary": {
         "en": "Studies how to turn Jev probabilities into constrained decisions through search and multi-teacher distillation.",
         "zh": "研究通过搜索与多教师蒸馏，将 Jev 概率转化为受约束的决策。"
+      },
+      "problem": {
+        "zh": "Jev 的原始概率输出如何转化为受约束的最终决策？",
+        "en": "How can raw Jev probabilities become constrained final decisions?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -4797,6 +5069,10 @@
         "en": "Benchmarks agents that build reusable low-cost inference artifacts and compares their workload costs with Jev.",
         "zh": "评测构建可复用低成本推理产物的智能体，并与 Jev 比较工作负载成本。"
       },
+      "problem": {
+        "zh": "LLM 智能体能否把自身能力沉淀成便宜、可复用的产物？",
+        "en": "Can agents turn their capabilities into cheap, reusable artifacts?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -4861,6 +5137,10 @@
       "summary": {
         "en": "Tests whether Jev evidence judgments detect citation swaps when numerical values remain unchanged.",
         "zh": "测试当数值不变而引用被替换时，Jev 能否发现证据支持问题。"
+      },
+      "problem": {
+        "zh": "数值不变、引用调换时，模型能发现证据不再支持结论吗？",
+        "en": "Can Jev catch evidence that no longer supports a claim when citations are swapped?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -4927,6 +5207,10 @@
         "en": "Uses System One decisions to distribute computational work within a token-efficient multi-agent framework.",
         "zh": "使用 System One 决策分配多智能体框架中的计算工作，以减少 token 开销。"
       },
+      "problem": {
+        "zh": "多智能体协作的 token 开销，能否靠快速分工决策降低？",
+        "en": "Can System One decisions divide labor cheaply across agents?"
+      },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
         "zh": "紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。"
@@ -4988,6 +5272,10 @@
       "summary": {
         "en": "Formalizes cost-accuracy tradeoffs for semantic query plans using decision confidence; evaluation is synthetic.",
         "zh": "利用决策置信度形式化语义查询计划的成本与准确率权衡；评估使用合成数据。"
+      },
+      "problem": {
+        "zh": "语义查询计划如何在成本与准确率之间做形式化优化？",
+        "en": "How should semantic query plans trade cost against accuracy?"
       },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
@@ -5052,6 +5340,10 @@
         "en": "Evaluates Jev and Laya for policy-based moderation with retrieved precedents and selective review.",
         "zh": "评测 Jev 与 Laya 在策略审核、先例检索和选择性复核中的表现。"
       },
+      "problem": {
+        "zh": "在线审核流水线中，决策模型表现如何？",
+        "en": "How do decision models fare across policy checks, precedent retrieval, and selective review?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -5115,6 +5407,10 @@
         "en": "Explores repeated latent computation before a typed readout as a middle ground between one pass and generated reasoning.",
         "zh": "探索在结构化读取前重复隐层计算，作为单遍推断与生成推理之间的方案。"
       },
+      "problem": {
+        "zh": "在单遍读取前多做几轮隐层计算，是不是一个有价值的中间方案？",
+        "en": "Is looping hidden computation before readout a useful middle ground?"
+      },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
         "zh": "紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。"
@@ -5176,6 +5472,10 @@
         "en": "Shares state computation while exposing local candidate decisions at behavior-tree nodes.",
         "zh": "在行为树节点提供局部候选决策，同时共享状态计算。"
       },
+      "problem": {
+        "zh": "行为树节点能否本地快速决策，同时共享状态计算？",
+        "en": "Can behavior-tree nodes decide locally while sharing state computation?"
+      },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
         "zh": "紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。"
@@ -5236,6 +5536,10 @@
       "summary": {
         "en": "Presents an open Turkish decision model with option-order-invariant scoring.",
         "zh": "提出采用选项顺序不变评分的开放土耳其语决策模型。"
+      },
+      "problem": {
+        "zh": "土耳其语开放决策模型能否做到选项顺序不变的评分？",
+        "en": "Can an open Turkish decision model score options invariantly to their order?"
       },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
@@ -5309,6 +5613,10 @@
         "en": "Compares Jev with LLMs and published human coding across political-science replications.",
         "zh": "在政治学复现研究中比较 Jev、LLM 与已发表的人工编码结果。"
       },
+      "problem": {
+        "zh": "政治学复现研究中，决策模型能否逼近已发表的人工编码结果？",
+        "en": "Can Jev match human coding in political science replications, and at what cost?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -5375,6 +5683,10 @@
         "en": "Synthesizes requirements for admitting semantic decision engines into deadline-sensitive network control loops.",
         "zh": "总结将语义决策引擎接入有时限网络控制闭环所需的条件。"
       },
+      "problem": {
+        "zh": "语义决策引擎接入有时限的网络控制闭环，需要满足什么条件？",
+        "en": "What does it take to put semantic decision engines inside timed network control loops?"
+      },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
         "zh": "紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。"
@@ -5436,6 +5748,10 @@
       "summary": {
         "en": "Benchmarks graph decisions using matched representations, structural task profiles and heuristic controls.",
         "zh": "通过匹配表示、结构任务配置和启发式对照评测图决策能力。"
+      },
+      "problem": {
+        "zh": "System One 模型能处理图结构任务吗？",
+        "en": "Can System One models handle graph-structured tasks?"
       },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
@@ -5517,6 +5833,10 @@
       "summary": {
         "en": "Splits search decisions between a calibrated, single-pass model and a reasoning-and-generation system. The fast model handles search judgments, while uncertain cases are delegated, making the boundary between quick choices and further reasoning explicit.",
         "zh": "把搜索中的判断交给经过校准的单遍决策模型；遇到拿不准的情况，再转交推理与生成系统。核心是让“快速做选择”和“进一步推理”各有分工，并用不确定性连接两者。"
+      },
+      "problem": {
+        "zh": "搜索过程中的快速判断，何时该交给推理模型？",
+        "en": "How can a search agent know when to delegate?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -5601,6 +5921,10 @@
         "en": "Audits security and privacy weaknesses and the dual-use implications of hosted Jev decisions.",
         "zh": "审计托管 Jev 决策的安全、隐私弱点与双重用途影响。"
       },
+      "problem": {
+        "zh": "托管决策模型存在哪些安全、隐私与双重用途风险？",
+        "en": "What security, privacy, and dual-use risks come with a hosted decision model?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -5674,6 +5998,10 @@
       "summary": {
         "en": "Uses Jev in wireless-control case studies and measures both decision quality and latency as observed by the client. The emphasis is the practical trade-off at the application boundary, rather than speed considered in isolation.",
         "zh": "在无线控制案例中使用 Jev，同时测量决策质量与客户端实际观测到的延迟。阅读时可以重点看应用端的取舍：判断是否足够好，以及一次请求从客户端看来究竟要等多久。"
+      },
+      "problem": {
+        "zh": "把 Jev 接入无线控制，速度与决策质量如何取舍？",
+        "en": "Does a fast decision help once it reaches the client?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -5754,6 +6082,10 @@
         "en": "Introduces JEVal and reasoning-to-readout self-distillation, comparing open decision models with Jev.",
         "zh": "提出 JEVal 和推理到读取的自蒸馏方法，并将开放决策模型与 Jev 比较。"
       },
+      "problem": {
+        "zh": "开放决策模型与 Jev 的差距在哪里，如何缩小？",
+        "en": "How far are open decision models from Jev, and what closes the gap?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -5818,6 +6150,10 @@
       "summary": {
         "en": "Tests missing-answer rejection and transfer of calibrated rejection policies in Jev, Laya and a language-model baseline.",
         "zh": "测试 Jev、Laya 和语言模型基线的缺失答案拒绝能力与校准策略迁移。"
+      },
+      "problem": {
+        "zh": "决策模型的拒答能力与校准策略能否跨设置迁移？",
+        "en": "Do rejection behavior and calibration policies transfer across settings?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -5890,6 +6226,10 @@
         "en": "Evaluates decision models for hate-speech moderation under explicit definitions and question decomposition.",
         "zh": "在明确任务定义和问题分解条件下评测决策模型的仇恨言论审核能力。"
       },
+      "problem": {
+        "zh": "仇恨言论审核交给决策模型，够快也够准吗？",
+        "en": "Are typed decision models accurate and efficient enough for hate-speech moderation?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -5956,6 +6296,10 @@
         "en": "Specializes Kev candidate scorers for security tasks using a shared typed interface and domain-specific training.",
         "zh": "通过统一结构化接口与领域训练，将 Kev 候选评分器适配到安全任务。"
       },
+      "problem": {
+        "zh": "安全专业知识能否注入通用候选评分器？",
+        "en": "Can security expertise be instilled into a general candidate scorer?"
+      },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
         "zh": "紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。"
@@ -6017,6 +6361,10 @@
       "summary": {
         "en": "Isolates label-versus-definition bias in open decision models through controlled prompt-rendering changes.",
         "zh": "通过受控提示呈现改动，定位开放决策模型中的标签与定义偏置。"
+      },
+      "problem": {
+        "zh": "开放决策模型中的标签与定义偏置究竟源于哪里？",
+        "en": "Where do label-versus-definition biases in open decision models come from?"
       },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
@@ -6083,6 +6431,10 @@
         "en": "Converts biomedical sentence encoders into calibrated decision models and introduces biomedical training and evaluation suites.",
         "zh": "将生物医学句子编码器转换为校准决策模型，并提供训练与评测套件。"
       },
+      "problem": {
+        "zh": "生物医学句子编码器能否转化为校准的决策模型？",
+        "en": "Can biomedical sentence encoders be converted into calibrated decision models?"
+      },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
         "zh": "紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。"
@@ -6143,6 +6495,10 @@
       "summary": {
         "en": "Introduces a Turkish typed-decision benchmark and flags evaluation tracks affected by training-data feedback.",
         "zh": "提出土耳其语结构化决策基准，并标记受测试反馈影响的训练相关赛道。"
+      },
+      "problem": {
+        "zh": "土耳其语的类型化决策能力如何系统地评测？",
+        "en": "How can typed decision-making be benchmarked in Turkish?"
       },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
@@ -6216,6 +6572,10 @@
         "en": "Pairs Jev and Laya across agent decisions and audits analysis errors that can distort deployment claims.",
         "zh": "配对比较 Jev 与 Laya 的智能体决策，并审计可能扭曲部署结论的分析错误。"
       },
+      "problem": {
+        "zh": "快速决策模型的比较评测，会被哪些分析错误扭曲？",
+        "en": "Which analysis errors distort head-to-head evaluations of fast decision models?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -6285,6 +6645,10 @@
       "summary": {
         "en": "Keeps the LLM architecture and studies three routes: training-free option-probability readout, budgeted Thinking Jev inference, and KL-anchored fine-tuning. Tests on Qwen3.5-4B and Qwen3-0.6B find targeted fine-tuning gains for smaller models and complex routing, rather than establishing a universal replacement for Jev.",
         "zh": "保持 LLM 架构，探索三条路径：免训练读取选项概率、带预算的 Thinking Jev 推理，以及 KL 锚定微调。在 Qwen3.5-4B 与 Qwen3-0.6B 上，微调对较小模型和复杂路由带来针对性收益；这些结果并不等于证明它能在所有场景替代 Jev。"
+      },
+      "problem": {
+        "zh": "现成的 LLM，能否接上 Jev 风格的决策接口？",
+        "en": "Can an existing LLM serve a Jev-style decision interface?"
       },
       "relation": {
         "en": "A closely related open decision-readout method. The paper explicitly notes that Jev architecture and training remain proprietary; interface similarity does not establish a reproduction of its internals.",
@@ -6365,6 +6729,10 @@
         "en": "Tests Jev as a first-stage screen for cyber-attacks and faults in water distribution networks.",
         "zh": "测试 Jev 作为供水网络网络攻击与故障归因的初级筛查器。"
       },
+      "problem": {
+        "zh": "供水网络的网络攻击与故障归因，能否在一秒内完成初筛？",
+        "en": "Can cyber-attack and fault attribution in water networks be screened in one second?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -6428,6 +6796,10 @@
       "summary": {
         "en": "Uses typed decisions for semantic database operations, with pruning and selective escalation to generative models.",
         "zh": "将结构化决策用于语义数据库操作，结合剪枝与向生成模型的选择性转交。"
+      },
+      "problem": {
+        "zh": "语义数据库操作能否靠剪枝加决策模型实现可扩展的加速？",
+        "en": "Can semantic database queries be sped up by pruning plus typed decisions?"
       },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
@@ -6496,6 +6868,10 @@
         "en": "Separates code-based simulation from Jev evaluation of explicitly described candidate outcomes.",
         "zh": "将代码执行的模拟与 Jev 对显式候选结果的评价分离。"
       },
+      "problem": {
+        "zh": "模拟与评价能否解耦，分别交给代码与决策模型？",
+        "en": "Can simulation stay with code while a decision model evaluates candidate outcomes?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -6558,6 +6934,10 @@
       "summary": {
         "en": "Develops a conceptual account of how cheaper Jev-like evaluation could change organizational judgment and authority.",
         "zh": "从概念层面分析更便宜的 Jev 式评价如何影响组织判断与决策权限。"
+      },
+      "problem": {
+        "zh": "评价变得便宜之后，组织的判断与决策权限会如何变化？",
+        "en": "What changes in organizations when evaluation becomes cheap?"
       },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
@@ -6622,6 +7002,10 @@
         "en": "Studies hosted Jev for network intrusion detection under limited labels.",
         "zh": "研究标签稀缺条件下托管 Jev 的网络入侵检测表现。"
       },
+      "problem": {
+        "zh": "标签稀缺条件下，托管模型能胜任网络入侵检测吗？",
+        "en": "Is a hosted decision model viable for intrusion detection with scarce labels?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -6683,6 +7067,10 @@
       "summary": {
         "en": "Audits whether Jev confidence reflects answer correctness or recognizes missing task-relevant information.",
         "zh": "审计 Jev 置信度能否反映答案正确性及任务关键信息缺失。"
+      },
+      "problem": {
+        "zh": "黑盒模型的置信度能否同时反映答案正确性与关键信息缺失？",
+        "en": "Does a black-box model's confidence track both correctness and missing key information?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -6755,6 +7143,10 @@
       "summary": {
         "en": "Evaluates Jev as a RAG claim verifier and tests confidence-based escalation to a stronger LLM.",
         "zh": "评测 Jev 对 RAG 声明的核验能力，以及基于置信度转交更强 LLM 的策略。"
+      },
+      "problem": {
+        "zh": "RAG 声明核验，能否由非生成式裁判加置信度转交完成？",
+        "en": "Can a non-generative verifier plus confidence-gated escalation check RAG claims?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -6832,6 +7224,10 @@
         "en": "Reads typed decisions from frozen LLMs and corrects label priors and option-order bias without weight updates.",
         "zh": "从冻结 LLM 读取结构化决策，无需更新权重即可修正标签先验与选项顺序偏置。"
       },
+      "problem": {
+        "zh": "冻结 LLM 能否免训练地读出结构化决策，并修正标签与顺序偏置？",
+        "en": "Can a frozen LLM yield structured decisions with bias corrections, without weight updates?"
+      },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
         "zh": "紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。"
@@ -6901,6 +7297,10 @@
         "en": "Connects natural-language tasks to compositional finite action spaces for probabilistic agent exploration.",
         "zh": "将自然语言任务连接到组合式有限动作空间，用于概率化智能体探索。"
       },
+      "problem": {
+        "zh": "自然语言任务如何映射到组合式有限动作空间做概率化探索？",
+        "en": "How can natural-language tasks map onto compositional action spaces for probabilistic exploration?"
+      },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
         "zh": "紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。"
@@ -6964,6 +7364,10 @@
         "en": "Adapts multimodal medical decisions to runtime candidate sets with explicit choice, binary and score distributions.",
         "zh": "将多模态医疗决策适配到运行时候选集合，输出选择、二元判断和评分分布。"
       },
+      "problem": {
+        "zh": "医疗多模态决策能否可信地落到运行时候选集合上？",
+        "en": "Can LVLM confidence be calibrated for runtime medical option sets?"
+      },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
         "zh": "紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。"
@@ -7026,6 +7430,10 @@
       "summary": {
         "en": "Evaluates Jev traffic classification from early packet sizes, directions and timing features.",
         "zh": "根据前期数据包的大小、方向和时间特征评测 Jev 流量分类。"
+      },
+      "problem": {
+        "zh": "只看前几个数据包的大小、方向和时间特征，能否完成流量分类？",
+        "en": "Can early-packet features alone classify network traffic?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -7091,6 +7499,10 @@
         "en": "Evaluates Jev and another decision interface for recommendation reranking over supplied candidate items.",
         "zh": "在给定候选项目的推荐重排任务中评测 Jev 与另一决策接口。"
       },
+      "problem": {
+        "zh": "决策模型适合完成给定候选项目的推荐重排吗？",
+        "en": "Are typed decision models any good at reranking recommended candidates?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -7154,6 +7566,10 @@
         "en": "Studies Jev rejection failures when arithmetic answers are absent and tests separately calibrated thresholds.",
         "zh": "研究算术正确答案缺失时 Jev 的拒绝失败，并测试独立校准的阈值。"
       },
+      "problem": {
+        "zh": "正确答案从选项中缺席时，模型还会拒绝作答吗？",
+        "en": "Does Jev still abstain when the correct answer is missing from the options?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -7216,6 +7632,10 @@
         "en": "Introduces an open System One model trained for machine intuition and direct decisions.",
         "zh": "提出面向机器直觉与直接决策训练的开放 System One 模型。"
       },
+      "problem": {
+        "zh": "机器直觉能否作为 System One 能力被直接训练出来？",
+        "en": "Can machine intuition be trained directly as a System One capability?"
+      },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
         "zh": "紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。"
@@ -7277,6 +7697,10 @@
       "summary": {
         "en": "Implements calibrated-decision reinforcement learning using proper scoring of answer distributions after sampled rationales.",
         "zh": "通过对采样推理后的答案分布使用恰当评分规则，实现校准决策强化学习。"
+      },
+      "problem": {
+        "zh": "校准决策强化学习能否被简洁地开放实现？",
+        "en": "Can RLCD be implemented cleanly as a working open recipe?"
       },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
@@ -7350,6 +7774,10 @@
         "en": "Audits ordinal-scale underuse in Jev and open decision models, separating it from accuracy and option order.",
         "zh": "审计 Jev 与开放模型对有序量表的利用不足，并与准确率和选项顺序效应区分。"
       },
+      "problem": {
+        "zh": "直接决策模型为什么利用不好有序量表的选项？",
+        "en": "Why do direct-decision models underuse ordinal scale options?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -7411,6 +7839,10 @@
       "summary": {
         "en": "Puts Jev, other decision models, trained classifiers, and generative models through matched decision requests. The comparison helps readers judge which approach suits an automated decision gate under a common task setup.",
         "zh": "把 Jev 等决策模型、经过训练的分类器和生成式模型放到匹配的决策请求下比较。阅读重点是：在同一任务设置里，哪类方法适合承担自动化流程中的判断关卡。"
+      },
+      "problem": {
+        "zh": "面对同一道决策题，Jev、分类器和 LLM 该选谁？",
+        "en": "Which model should handle the same decision request?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -7486,6 +7918,10 @@
         "en": "Benchmarks hosted Jev across classification, routing, reasoning, moderation, legal and rubric-scoring datasets.",
         "zh": "在分类、路由、推理、审核、法律和量表评分数据集上评测托管 Jev。"
       },
+      "problem": {
+        "zh": "托管 Jev 在分类、路由、推理、审核等数据集上表现如何？",
+        "en": "How does hosted Jev perform across classification, routing, review, and scoring datasets?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -7553,6 +7989,10 @@
         "en": "Develops a Chinese-language System One model for structured decision tasks.",
         "zh": "开发面向中文结构化决策任务的 System One 模型。"
       },
+      "problem": {
+        "zh": "System One 决策能力能否迁移到中文任务？",
+        "en": "Can System One decision-making be brought to Chinese-language tasks?"
+      },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
         "zh": "紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。"
@@ -7615,6 +8055,10 @@
         "en": "Audits how personas and language change cultural-value responses from hosted Jev.",
         "zh": "审计角色设定与语言如何改变托管 Jev 的文化价值回答。"
       },
+      "problem": {
+        "zh": "角色设定与提问语言如何改变模型的文化价值回答？",
+        "en": "How do persona and language shift a model's cultural-value answers?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -7675,6 +8119,10 @@
       "summary": {
         "en": "Tests Jev activity recognition from accelerometer features and distinguishes feature quantity from useful evidence.",
         "zh": "测试基于加速度特征的 Jev 活动识别，区分特征数量与有效证据。"
+      },
+      "problem": {
+        "zh": "更多传感器特征是否等于决策模型可用的更多证据？",
+        "en": "Do more sensor features give a decision model more usable evidence?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -7741,6 +8189,10 @@
       "summary": {
         "en": "Extends language models with native typed decision capabilities for general-purpose agents.",
         "zh": "为语言模型增加原生结构化决策能力，以支持通用智能体。"
+      },
+      "problem": {
+        "zh": "语言模型能否原生获得结构化决策能力以支持通用智能体？",
+        "en": "Can LLMs natively acquire typed decision-making for general agents?"
       },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
@@ -7812,6 +8264,10 @@
         "en": "Uses constrained single-token generation for atomic decisions and compares it with Jev's dedicated interface.",
         "zh": "通过受约束的单 token 生成实现原子决策，并与 Jev 专用接口比较。"
       },
+      "problem": {
+        "zh": "生成式 LLM 能否又快又一致地输出结构化决策？",
+        "en": "Can generative LLMs emit structured decisions quickly and consistently?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -7875,6 +8331,10 @@
       "summary": {
         "en": "Separates fast memory judgments over raw records from slower deliberative memory processing.",
         "zh": "分离对原始记录的快速记忆判断与较慢的审慎记忆处理。"
+      },
+      "problem": {
+        "zh": "记忆系统能否把快速判断与审慎处理分开进行？",
+        "en": "Can a memory system separate fast judgments over raw records from slower deliberation?"
       },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
@@ -7945,6 +8405,10 @@
         "en": "Studies hidden unknown-answer probability in Jev and introduces Sys1Cal-v1 for probability calibration.",
         "zh": "研究 Jev 隐含的未知答案概率，并提出用于概率校准的 Sys1Cal-v1。"
       },
+      "problem": {
+        "zh": "模型“心里没底”时，它的概率输出能暴露这一点吗？",
+        "en": "Does a model's probability reveal when it actually does not know the answer?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -8008,6 +8472,10 @@
       "summary": {
         "en": "Decomposes aspect-based sentiment tasks into frozen Jev judgments with lightweight supervised calibration.",
         "zh": "将方面级情感任务分解为冻结 Jev 判断，并辅以轻量监督校准。"
+      },
+      "problem": {
+        "zh": "方面级情感分析能否分解为冻结决策模型的快速判断？",
+        "en": "Can aspect-based sentiment analysis be decomposed into frozen typed decisions?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -8077,6 +8545,10 @@
         "en": "Includes a Jev supplement in controlled tests of how attributed sources influence evaluations of fixed texts.",
         "zh": "在控制文本不变的来源归因偏置实验中纳入 Jev 补充评测。"
       },
+      "problem": {
+        "zh": "评估模型会因来源身份不同而改变对同一论证的判断吗？",
+        "en": "Do evaluation models judge arguments differently based on who appears to write them?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -8145,6 +8617,10 @@
         "en": "Combines visual compression and action memory with Jev selection for vision-language navigation.",
         "zh": "结合视觉压缩、动作记忆与 Jev 选择，实现视觉语言导航。"
       },
+      "problem": {
+        "zh": "视觉语言导航能否靠视觉压缩与动作记忆高效选择动作？",
+        "en": "Can vision-language navigation run on compressed visuals and action-centric memory?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -8209,6 +8685,10 @@
         "en": "Evaluates Jev for vulnerability classification and uses classification guidance for secure code generation.",
         "zh": "评测 Jev 的漏洞分类能力，并用分类指导安全代码生成。"
       },
+      "problem": {
+        "zh": "漏洞分类能力能否用来指导更安全的代码生成？",
+        "en": "Can vulnerability classification guide more secure code generation?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -8270,6 +8750,10 @@
       "summary": {
         "en": "Compares Jev with generative judges for retrospective security classification of agent traces.",
         "zh": "比较 Jev 与生成式裁判对智能体轨迹进行回顾性安全分类的能力。"
+      },
+      "problem": {
+        "zh": "智能体轨迹的回顾性安全分类，决策模型能替代生成式裁判吗？",
+        "en": "Can a decision model replace generative judges for retrospective trace security review?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -8342,6 +8826,10 @@
         "en": "Includes optional Jev-gated action reuse in an in-context robot-control framework.",
         "zh": "在上下文机器人控制框架中加入可选的 Jev 门控动作复用。"
       },
+      "problem": {
+        "zh": "机器人能否从上下文示例学会新任务，并按需复用动作？",
+        "en": "Can robots learn tasks in-context and reuse actions when appropriate?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -8413,6 +8901,10 @@
       "summary": {
         "en": "Preregisters a comparison of Jev-selected raw turns and LLM-extracted memory under context budgets.",
         "zh": "预注册比较上下文预算下 Jev 选择的原始轮次与 LLM 提取的记忆。"
+      },
+      "problem": {
+        "zh": "记忆管理中，选择原始轮次能否替代 LLM 提取的记忆摘要？",
+        "en": "Can selecting raw turns replace LLM-extracted memories under a context budget?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -8490,6 +8982,10 @@
         "en": "Compares Jev and Qwen readouts on fixed textual video evidence in a small exploratory anomaly-detection study.",
         "zh": "在小规模探索性异常检测研究中，用固定视频文本证据比较 Jev 与 Qwen 读取方式。"
       },
+      "problem": {
+        "zh": "视频异常检测能否转化为基于固定文本证据的决策读取？",
+        "en": "Can video anomaly detection run as decisions over fixed textual evidence?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -8551,6 +9047,10 @@
       "summary": {
         "en": "Develops a training-free emotion-classification framework using Jev's probabilistic question interface.",
         "zh": "基于 Jev 的概率问题接口构建无需训练的情绪分类框架。"
+      },
+      "problem": {
+        "zh": "情绪分类能否免训练地通过概率问题完成？",
+        "en": "Can emotion classification run training-free over probabilistic questions?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -8614,6 +9114,10 @@
       "summary": {
         "en": "Uses finite-world probability contracts to compare Jev and Kev on posterior accuracy, coherence and decision cost.",
         "zh": "通过有限世界概率契约比较 Jev 与 Kev 的后验准确性、一致性和决策成本。"
+      },
+      "problem": {
+        "zh": "不同接口下模型的概率承诺是否准确、一致？",
+        "en": "Are model probabilities accurate and consistent across different interfaces?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -8679,6 +9183,10 @@
         "en": "Evaluates Jev 1.13 on four medical question-answering and case-based benchmarks.",
         "zh": "在四个医学问答与病例基准上评测 Jev 1.13。"
       },
+      "problem": {
+        "zh": "Jev 在医学问答与病例基准上的表现如何？",
+        "en": "How does Jev perform across medical QA and case benchmarks?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -8737,6 +9245,10 @@
       "summary": {
         "en": "Tests probabilistic coherence across matched questions in hosted Jev and an English Laya checkpoint.",
         "zh": "通过匹配问题测试托管 Jev 与英文 Laya 检查点的概率一致性。"
+      },
+      "problem": {
+        "zh": "决策模型对匹配问题的概率输出是否前后自洽？",
+        "en": "Are a decision model's probabilities coherent across matched questions?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -8807,6 +9319,10 @@
       "summary": {
         "en": "Studies local decision readouts from existing models with Jev as an external accuracy-throughput reference.",
         "zh": "研究现有模型的本地决策读取方式，并以 Jev 作为准确率与吞吐量外部参照。"
+      },
+      "problem": {
+        "zh": "本地决策读取方式能否兼顾准确率与吞吐量？",
+        "en": "Can local decision readouts balance accuracy with throughput?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -8879,6 +9395,10 @@
         "en": "Independently evaluates a Laya checkpoint's calibration and selective escalation under a preregistered protocol.",
         "zh": "在预注册协议下独立评测 Laya 检查点的校准与选择性转交。"
       },
+      "problem": {
+        "zh": "Laya 检查点的校准与选择性转交，独立预注册复现结果如何？",
+        "en": "Does an independent, preregistered test confirm Laya's calibration and escalation behavior?"
+      },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
         "zh": "紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。"
@@ -8941,6 +9461,10 @@
         "en": "Compares Jev, Laya and AnyJev in a 5G testbed and tests reliability under changed questions.",
         "zh": "在 5G 测试床中比较 Jev、Laya 和 AnyJev，并测试问题改变时的可靠性。"
       },
+      "problem": {
+        "zh": "类型化决策框架究竟能用在 5G 控制的哪些环节？",
+        "en": "Where in 5G control can typed decision frameworks actually be applied?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -9002,6 +9526,10 @@
       "summary": {
         "en": "Uses Jev to rescore neural speech-decoder candidates, reporting accuracy, cost and end-to-end latency.",
         "zh": "使用 Jev 重评神经语音解码器候选，报告准确率、成本和端到端延迟。"
+      },
+      "problem": {
+        "zh": "神经语音解码的候选重评，能否用决策模型做到又快又准？",
+        "en": "Can a decision model rescore neural-speech decoder candidates accurately at low cost?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -9074,6 +9602,10 @@
       "summary": {
         "en": "Evaluates Jev and peer models as security decision makers, checking accuracy and calibration alongside allow/block/escalate policies. It connects the quality of a probability estimate to the operational choice a security gate must make.",
         "zh": "把 Jev 及同类模型放到智能体的安全关卡中，同时考察判断准确率、概率校准，以及放行、拦截、转交三类策略。重点是把模型给出的置信度，与系统实际应采取的安全动作联系起来。"
+      },
+      "problem": {
+        "zh": "智能体准备采取行动：放行、拦截，还是转交？",
+        "en": "Should an agent action be allowed, blocked, or escalated?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -9159,6 +9691,10 @@
         "en": "Uses a System One model for personalized subjective scoring with comparative scale construction.",
         "zh": "通过比较量表构建，使用 System One 模型实现个性化主观评分。"
       },
+      "problem": {
+        "zh": "高流量场景下的个性化主观评分，能否用比较量表高效完成？",
+        "en": "Can personalized subjective judgment be scaled via comparative scales in high-traffic settings?"
+      },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
         "zh": "紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。"
@@ -9230,6 +9766,10 @@
       "summary": {
         "en": "Tests whether Jev probabilities obey logical probability constraints across related questions.",
         "zh": "测试 Jev 对相关问题的概率输出是否满足逻辑概率约束。"
+      },
+      "problem": {
+        "zh": "决策模型对相关问题的概率输出满足概率公理吗？",
+        "en": "Do a model's probabilities across related questions obey the probability axioms?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -9303,6 +9843,10 @@
         "en": "Uses contrastive context pairs and evidence certificates to tune calibrated single-token decisions.",
         "zh": "利用对比上下文对与证据证书调优校准的单 token 决策。"
       },
+      "problem": {
+        "zh": "如何在少量调优下让单 token 决策的概率更校准？",
+        "en": "How can single-token decisions be tuned toward calibration with paired contexts?"
+      },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
         "zh": "紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。"
@@ -9374,6 +9918,10 @@
       "summary": {
         "en": "Takes stock before drawing conclusions: it reviews 28 papers posted on 19–24 September 2026 and proposes a 14-item evaluation checklist. Reported latency and cost gains coexist with task-dependent accuracy limits; the evidence does not yet isolate an accuracy benefit from typed readout itself.",
         "zh": "先盘点证据，再讨论能力：审阅 2026 年 9 月 19–24 日发布的 28 篇论文，并提出 14 项评估清单。已有研究报告了时延与成本收益，但准确率仍受任务影响；这些证据尚不能单独证明“类型化读出”本身带来准确率提升。"
+      },
+      "problem": {
+        "zh": "关于 TDM，哪些说法已有证据，哪些还没有？",
+        "en": "What does the early evidence actually establish?"
       },
       "relation": {
         "en": "An early evidence audit of Jev and TDM studies, linked to prior classification, constrained decoding, reranking, calibration and cascades. Its nine-day post-release horizon is not a settled assessment or a disclosure of TypeSafe’s proprietary RLCD recipe.",
@@ -9456,6 +10004,10 @@
         "en": "Introduces a benchmark for black-box adversarial testing of probabilistic decisions in RLCD-style models.",
         "zh": "提出针对 RLCD 式模型概率决策的黑盒对抗评测基准。"
       },
+      "problem": {
+        "zh": "强化学习训练的决策模型面对黑盒对抗攻击有多脆弱？",
+        "en": "How vulnerable are RL-trained decision models to black-box adversarial attacks?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -9521,6 +10073,10 @@
       "summary": {
         "en": "Uses Jev probabilities to select LoRA experts and compose their updates without router training.",
         "zh": "使用 Jev 概率选择 LoRA 专家并组合更新，无需训练路由器。"
+      },
+      "problem": {
+        "zh": "多个 LoRA 专家能否免训练地按输入动态组合？",
+        "en": "Can LoRA experts be composed per input without training a router?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -9591,6 +10147,10 @@
       "summary": {
         "en": "Extends Laya-style decision encoders to estimate the value of asking for missing information.",
         "zh": "扩展 Laya 式决策编码器，使其估计询问缺失信息的价值。"
+      },
+      "problem": {
+        "zh": "决策模型能否学会判断该问什么，以及问的价值有多大？",
+        "en": "Can a decision encoder learn when and what to ask about missing information?"
       },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
@@ -9665,6 +10225,10 @@
         "en": "Tests whether answer-preserving contextual additions redirect Jev and other decision systems.",
         "zh": "测试不改变正确答案的附加上下文是否会诱导 Jev 等系统改变决策。"
       },
+      "problem": {
+        "zh": "不改变正确答案的自然上下文，会翻转决策模型的判断吗？",
+        "en": "Can natural, irrelevant context flip a decision model's answers?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -9734,6 +10298,10 @@
         "en": "Maps Jev's functionality, applications and emerging ecosystem through a data-driven analysis.",
         "zh": "通过数据分析整理 Jev 的功能、应用与新兴生态。"
       },
+      "problem": {
+        "zh": "Jev 实际被用来做什么，其生态发展到了什么程度？",
+        "en": "What is Jev actually used for, and how has its ecosystem grown?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -9793,6 +10361,10 @@
       "summary": {
         "en": "Uses a VLM for occasional planning and Jev for repeated action selection over mobile accessibility trees.",
         "zh": "使用 VLM 进行低频规划，由 Jev 基于移动端无障碍树反复选择动作。"
+      },
+      "problem": {
+        "zh": "移动 GUI 智能体能否靠小模型反复选择动作、VLM 偶尔规划？",
+        "en": "Can a mobile GUI agent act via fast repeated choices with rare VLM planning?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -9857,6 +10429,10 @@
       "summary": {
         "en": "Compares Jev and Decider with LLM rubric judges and examines whether their errors complement cascade fallbacks.",
         "zh": "比较 Jev、Decider 与 LLM 量表裁判，并分析错误是否能被级联后备模型弥补。"
+      },
+      "problem": {
+        "zh": "更便宜更快的量表裁判，是否与 LLM 裁判在同样的地方出错？",
+        "en": "Are cheaper decision-model judges wrong in the same places as LLM judges?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -9929,6 +10505,10 @@
         "en": "Benchmarks Jev as a zero-shot detector across multiple AI alignment-failure categories.",
         "zh": "将 Jev 作为零样本检测器，评测多类 AI 对齐失败。"
       },
+      "problem": {
+        "zh": "能否零样本检测多种 AI 对齐失败，而无需专门训练检测器？",
+        "en": "Can alignment failures be detected zero-shot with a calibrated decision model?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -10000,6 +10580,10 @@
         "en": "Introduces PixelJev for image-conditioned choices over runtime candidates using open multimodal backbones.",
         "zh": "提出基于开放多模态骨干的 PixelJev，对运行时候选进行图像条件选择。"
       },
+      "problem": {
+        "zh": "文本决策的思路能否迁移到图像条件下的候选选择？",
+        "en": "Can text-style decision readouts transfer to image-conditioned choice?"
+      },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
         "zh": "紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。"
@@ -10061,6 +10645,10 @@
       "summary": {
         "en": "Studies Jev and Laya decision layers in penetration-testing agent harnesses and outlines domain adaptation.",
         "zh": "研究渗透测试智能体框架中的 Jev 与 Laya 决策层，并讨论领域适配。"
+      },
+      "problem": {
+        "zh": "渗透测试智能体能否用决策层加速关键判断？",
+        "en": "Can System One decision layers speed up key judgments in pentest agents?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -10125,6 +10713,10 @@
         "en": "Uses Jev prompt classification within an enterprise routing and governance framework; cost estimates need workload context.",
         "zh": "在企业路由与治理框架中用 Jev 分类请求；成本估计需结合工作负载理解。"
       },
+      "problem": {
+        "zh": "企业智能体控制平面的请求路由，如何估计真实成本？",
+        "en": "What does routing requests through Jev really cost in an enterprise control plane?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -10187,6 +10779,10 @@
       "summary": {
         "en": "Measures how prompt injections redirect permitted choices in Jev's typed probabilistic interface.",
         "zh": "测量提示注入如何诱导 Jev 在允许的结构化选项中做出错误选择。"
+      },
+      "problem": {
+        "zh": "提示注入能否操纵类型化模型的概率决策？",
+        "en": "Can prompt injection hijack typed probabilistic decisions?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -10251,6 +10847,10 @@
       "summary": {
         "en": "Builds numerical outputs from structured choices using multiway decision trees without model retraining.",
         "zh": "无需重训模型，通过多路决策树将结构化选择组合成数值输出。"
+      },
+      "problem": {
+        "zh": "结构化选择模型能否不重训就组合出数值输出？",
+        "en": "Can structured choices be composed into numeric outputs without retraining?"
       },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
@@ -10325,6 +10925,10 @@
         "en": "Evaluates Jev and language models on legal inference while varying visible hypotheses and requested answers.",
         "zh": "改变可见假设和请求答案，评测 Jev 与语言模型的法律推断表现。"
       },
+      "problem": {
+        "zh": "法律文档理解中，可见假设与提问方式如何影响决策模型与 LLM？",
+        "en": "How do visible assumptions and question framing affect legal decisions by Jev and LLMs?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -10396,6 +11000,10 @@
         "en": "Tests Jev as a factual-agreement judge for radiology reports against physician-written references.",
         "zh": "以医生撰写的参考报告为依据，测试 Jev 对放射报告事实一致性的判断。"
       },
+      "problem": {
+        "zh": "决策模型能否判断放射报告与医生参考报告的事实一致性？",
+        "en": "Can a decision model judge the factual consistency of radiology reports?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -10456,6 +11064,10 @@
       "summary": {
         "en": "Uses typed behavioral kernels and sparse stronger-model calibration for auditable population simulations.",
         "zh": "结合结构化行为核与稀疏强模型校准，构建可审计的群体模拟。"
+      },
+      "problem": {
+        "zh": "如何经济且可审计地模拟大量智能体的群体行为？",
+        "en": "How can large agent populations be simulated affordably and auditably?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -10528,6 +11140,10 @@
         "en": "Combines fast Jev action selection with persistent LLM planning in StarCraft II control.",
         "zh": "在星际争霸 II 控制中结合快速 Jev 动作选择与持续 LLM 规划。"
       },
+      "problem": {
+        "zh": "游戏实时控制能否把快速动作选择与大模型规划结合起来？",
+        "en": "Can fast action selection combine with LLM planning for real-time game control?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -10599,6 +11215,10 @@
         "en": "Changes name-definition mappings to test whether Jev decisions follow labels instead of supplied meanings.",
         "zh": "改变名称与定义的映射，测试 Jev 是否跟随标签而非给定语义决策。"
       },
+      "problem": {
+        "zh": "类型化决策模型跟随的是选项名称，还是名称绑定到的定义？",
+        "en": "Do typed decision models follow the option name or the definition bound to it?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -10663,6 +11283,10 @@
         "en": "Tests accepting confident Jev judgments and escalating uncertain cases, with held-out validation of thresholds.",
         "zh": "测试接受高置信 Jev 判断并转交不确定案例的策略，对阈值进行留出验证。"
       },
+      "problem": {
+        "zh": "接受高置信判断、转交不确定案例的策略，实际收益如何？",
+        "en": "Does accepting confident judgments and escalating the rest actually pay off?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -10724,6 +11348,10 @@
       "summary": {
         "en": "Uses Jev as a fast decision layer and invokes an LLM when confidence is low or generation is required.",
         "zh": "以 Jev 作为快速决策层，在置信度低或需要生成时调用 LLM。"
+      },
+      "problem": {
+        "zh": "LLM 智能体能否用快速决策层节省控制开销，只在必要时调用 LLM？",
+        "en": "Can a fast decision layer control LLM agents, invoking the LLM only when needed?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -10788,6 +11416,10 @@
       "summary": {
         "en": "Shares visual context across isolated questions and compares existing versus specialized decision readouts.",
         "zh": "在相互隔离的问题间共享视觉上下文，并比较现有与专用决策读取方式。"
+      },
+      "problem": {
+        "zh": "相互关联的问题能否共享同一段视觉上下文，实现高效准确的决策？",
+        "en": "Can related questions share one visual context for accurate, efficient decisions?"
       },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
@@ -10857,6 +11489,10 @@
       "summary": {
         "en": "Uses Jev probability questions to study documented pregnancy-related harm in crash narratives, with human validation.",
         "zh": "使用 Jev 概率问题研究事故叙事中记录的妊娠相关伤害，并进行人工验证。"
+      },
+      "problem": {
+        "zh": "事故叙事中记录的妊娠相关伤害，能否用概率问题做人群级监测？",
+        "en": "Can probabilistic questions over crash narratives surface population-level harm counts?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -10930,6 +11566,10 @@
       "summary": {
         "en": "Separates lightweight semantic choices from deterministic downstream execution. Across twelve configurations, ten scientific cases contain 20 Choices repeated five times. Jev and five other configurations get every semantic choice right; Jev's median successful-request latency is 0.335 s. Separate downstream checks still reveal errors that correct final labels can hide.",
         "zh": "把轻量级语义选择与后续确定性代码执行分开考察。十二种配置在十个科研案例的 20 个选择题上各重复五次；Jev 与另五种配置的语义选择全部正确，Jev 的成功请求延迟中位数为 0.335 秒。但独立检查下游结果时，仍能发现正确最终标签掩盖的错误。"
+      },
+      "problem": {
+        "zh": "语义选择答对了，后续科研流程就一定正确吗？",
+        "en": "Does a correct semantic choice guarantee a correct workflow?"
       },
       "relation": {
         "en": "Hosted Jev chooses source-grounded relations while deterministic code computes downstream quantities. Each configuration has 50 planned requests and 100 semantic answers, not 100 independent tasks. Latency is measured among successful requests in the paper’s setup.",
@@ -11013,6 +11653,10 @@
       "summary": {
         "en": "Tests decision models on 18 computational social science tasks (7,977 items) under a shared zero-shot protocol with 19 LLM baselines. Jev trails the per-task best LLM on 14 of 15 evaluation tasks. Escalating low-confidence cases improves the cost–quality trade-off, but calibration varies with the construct being measured.",
         "zh": "在统一零样本协议下，围绕 18 个计算社会科学任务（7,977 条样本）比较决策模型与 19 个 LLM 基线。Jev 在 15 个正式评测任务中的 14 个落后于单任务最佳 LLM；把低置信度样本转交 LLM 可改善成本与质量的权衡，但置信度是否可靠，取决于所测量的研究构念。"
+      },
+      "problem": {
+        "zh": "文本标注何时可以用快模型，何时需要升级到 LLM？",
+        "en": "When is a fast label sufficient, and when should an LLM take over?"
       },
       "relation": {
         "en": "The Introduction explicitly identifies Jev as the commercial decision model evaluated. The study examines annotation accuracy, calibration and selective routing, with v2 extending the open-weight comparison to eleven systems. The matched task protocol does not establish a universal model ranking.",
@@ -11100,6 +11744,10 @@
         "en": "Uses Jev to estimate video quality from metadata, bitstream and pixel-derived features.",
         "zh": "使用 Jev 根据元数据、码流和像素衍生特征估计视频质量。"
       },
+      "problem": {
+        "zh": "能否不依赖人工评分，用决策模型从多类特征估计视频质量？",
+        "en": "Can a decision model estimate video quality from metadata and derived features instead of human raters?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -11161,6 +11809,10 @@
       "summary": {
         "en": "Converts crash narratives into probabilistic variables using Jev and evaluates human-grounded recalibration.",
         "zh": "使用 Jev 将事故叙事转换为概率变量，并评估基于人工判断的再校准。"
+      },
+      "problem": {
+        "zh": "如何把海量事故叙事可靠地转换成概率化变量？",
+        "en": "How can crash narratives be converted into probabilistic variables at scale?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -11225,6 +11877,10 @@
       "summary": {
         "en": "Introduces a System-One-controlled memory architecture to coordinate efficient agent memory operations.",
         "zh": "提出由 System One 控制的记忆架构，以协调高效的智能体记忆操作。"
+      },
+      "problem": {
+        "zh": "智能体的记忆操作能否交给快速决策层协调，以提升效率？",
+        "en": "Can a System One layer coordinate an agent's memory operations efficiently?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -11303,6 +11959,10 @@
         "en": "Tests an open JevLite implementation for calibrated scam-call screening with a small fine-tuned language model.",
         "zh": "使用小型微调语言模型，测试开放 JevLite 实现的校准诈骗电话筛查能力。"
       },
+      "problem": {
+        "zh": "小型微调模型能否做出校准的诈骗电话筛查判断？",
+        "en": "Can a small fine-tuned model screen scam calls with calibrated confidence?"
+      },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
         "zh": "紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。"
@@ -11366,6 +12026,10 @@
       "summary": {
         "en": "Presents an open compact typed-decision model for bounded questions and option-probability readout.",
         "zh": "提出面向有限问题与选项概率读取的开放紧凑结构化决策模型。"
+      },
+      "problem": {
+        "zh": "能否构建开放、紧凑、能在有限问题上读取选项概率的决策模型？",
+        "en": "Can an open, compact model expose option probabilities over constrained question sets?"
       },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
@@ -11432,6 +12096,10 @@
         "en": "Compares Jev and other decision models with LLMs for RAN intent interpretation in simulation and a real control path.",
         "zh": "在仿真和真实控制路径中比较 Jev 等决策模型与 LLM 的无线接入网意图解释。"
       },
+      "problem": {
+        "zh": "无线接入网控制中的意图解释，决策模型能否达到 RIC 时间尺度的要求？",
+        "en": "Can decision models interpret intent fast enough for RIC-timescale control in 6G Open RAN?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -11496,6 +12164,10 @@
       "summary": {
         "en": "Integrates Jev into edge service orchestration and measures verified requests, admission behavior and execution outcomes.",
         "zh": "将 Jev 接入边缘服务编排，测量经核验请求、准入行为和执行结果。"
+      },
+      "problem": {
+        "zh": "边缘服务编排能否用低延迟决策模型替代 LLM？",
+        "en": "Can a low-latency decision model replace LLMs in edge service orchestration?"
       },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
@@ -11593,6 +12265,10 @@
         "en": "Includes a prefill-only NeoHorse-Jev adaptation that returns structured decisions for agent workflows.",
         "zh": "包含仅预填充的 NeoHorse-Jev 适配模型，为智能体工作流返回结构化决策。"
       },
+      "problem": {
+        "zh": "智能体后训练工作流如何以低成本获得结构化决策输出？",
+        "en": "How can agentic post-training obtain structured decisions at low cost?"
+      },
       "relation": {
         "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
         "zh": "紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。"
@@ -11668,6 +12344,10 @@
         "en": "Includes Jev in a benchmark for detecting redundant steps in agent trajectories.",
         "zh": "在检测智能体轨迹冗余步骤的基准中纳入 Jev。"
       },
+      "problem": {
+        "zh": "智能体轨迹中哪些步骤是冗余的，能否自动识别？",
+        "en": "Which steps in an agent trajectory are redundant, and can they be detected automatically?"
+      },
       "relation": {
         "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
         "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
@@ -11733,6 +12413,10 @@
       "summary": {
         "en": "Presents a generalist lightweight classifier with runtime label descriptions as a precursor to typed decision interfaces.",
         "zh": "提出使用运行时标签描述的通用轻量分类器，为结构化决策接口提供前置背景。"
+      },
+      "problem": {
+        "zh": "能否用一个轻量通用模型处理运行时才给定的任意标签集合？",
+        "en": "Can one lightweight model classify arbitrary label sets supplied at runtime?"
       },
       "relation": {
         "en": "Background for model architectures and training; not a Jev evaluation.",
@@ -11801,6 +12485,10 @@
         "en": "Studies cost-aware language-model cascades, providing context for confidence-based decision escalation.",
         "zh": "研究考虑成本的语言模型级联，为基于置信度的决策转交提供背景。"
       },
+      "problem": {
+        "zh": "使用大模型完成任务时，如何降低成本同时保持效果？",
+        "en": "Can LLM cascades cut cost while preserving or improving quality?"
+      },
       "relation": {
         "en": "Background for search, memory, tools and agent decisions; not a Jev evaluation.",
         "zh": "搜索、记忆、工具与智能体决策的基础背景；不是 Jev 评测。"
@@ -11864,6 +12552,10 @@
         "en": "Studies neural-network confidence calibration and temperature scaling, providing context for interpreting decision probabilities.",
         "zh": "研究神经网络置信度校准与温度缩放，为理解决策概率提供基础。"
       },
+      "problem": {
+        "zh": "现代神经网络的置信度为什么经常不可靠，如何校准？",
+        "en": "Why are modern network confidences miscalibrated, and how can they be fixed?"
+      },
       "relation": {
         "en": "Background for calibration, reliability and selective decisions; not a Jev evaluation.",
         "zh": "概率校准、可靠性与选择性决策的基础背景；不是 Jev 评测。"
@@ -11926,6 +12618,10 @@
       "summary": {
         "en": "Studies selective classification and the tradeoff between prediction coverage and risk.",
         "zh": "研究选择性分类，以及预测覆盖率与风险之间的权衡。"
+      },
+      "problem": {
+        "zh": "深度网络能否在不确定时拒绝预测？覆盖率与风险如何权衡？",
+        "en": "Can a deep network abstain when unsure, balancing coverage against risk?"
       },
       "relation": {
         "en": "Background for calibration, reliability and selective decisions; not a Jev evaluation.",
