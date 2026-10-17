@@ -31,7 +31,7 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 以下 10 篇按阅读路径排列，覆盖综述、基准、模型、校准、安全和应用；不是性能排名。完整分类目录收录其余合格论文。
 
-- [Typed Decision Models: An Early Evidence Audit and Evaluation Checklist](#paper-2609-32160) — 审计首批 Jev 与结构化决策研究，并提出评估检查清单。
+- [Typed Decision Models: An Early Evidence Audit and Evaluation Checklist](#paper-2609-32160) — 审阅 2026 年 9 月 19–24 日发布的 28 篇论文，提出 14 项评估清单。早期证据尚未分离出类型化读出本身的准确率收益；已有时延与成本收益伴随因任务而异的准确率局限。
 - [Benchmarking System One decision models against trained classifiers and language models for automated decision gates](#paper-2610-00346) — 在匹配的决策请求下比较 Jev 等决策模型、训练分类器与生成式模型。
 - [System1-Arena: Which Decisions Can Be Left to System 1?](#paper-2610-21244) — 通过统一概率评分任务和闭环环境，比较快速决策与生成式推理。
 - [Jeva: System One Models from First Principles](#paper-2610-18773) — 设计面向缺失答案、选项置换、候选扩展和缓存复用的原生决策表示。
@@ -238,7 +238,7 @@ Pritam Deka · 2026-10-01 · **v1** · **同类模型与方法**
 
 Yinheng Li, Justin Wagle · 2026-10-01 · **v3** · **同类模型与方法**
 
-在不改变语言模型架构的条件下研究免训练选项读取与 KL 锚定微调。
+保持 LLM 架构，结合免训练的选项概率读出、带预算的 Thinking Jev 推理及 KL 锚定微调。在 Qwen3.5-4B 与 Qwen3-0.6B 上，微调对较小模型与复杂路由带来针对性收益。
 
 [arXiv](https://arxiv.org/abs/2610.02076) · [PDF](https://arxiv.org/pdf/2610.02076v3) · 作者代码未核实 · [证据](docs/EVIDENCE.md#evidence-2610-02076)<br>
 标签：`architecture` · `training` · `option-sensitivity`
@@ -383,10 +383,10 @@ Tianyu Chen, Xinyang Liu, Ruyi An, et al. · 2026-10-15 · **v1** · **Jev 直�
 
 Kawai Chung, Chunkit Chan, Yuxuan Liu, et al. · 2026-10-13 · **v1** · **Jev 直接相关**
 
-在有限选项的心智理论任务中比较 Jev 等决策模型，并分析候选设计。
+在九个心智理论基准的 11,117 道英文题上比较五个类型化模型与七个生成式基线。包含原生对照题时，Jev 的来源平衡准确率为 73.2%；置信度筛选、理由附加与候选扩展的效果因任务而异。
 
 [arXiv](https://arxiv.org/abs/2610.18610) · [PDF](https://arxiv.org/pdf/2610.18610v1) · [作者代码](https://github.com/HKUST-KnowComp/Jev-ToM) · [证据](docs/EVIDENCE.md#evidence-2610-18610)<br>
-标签：`evaluation` · `benchmark`
+标签：`evaluation` · `benchmark` · `theory-of-mind` · `calibration`
 
 <a id="paper-2610-18579"></a>
 ### [Reading Right, Acting Wrong: Diagnosing Decision Failures of System One Models in Agent Loops](https://arxiv.org/abs/2610.18579v1)
@@ -493,7 +493,7 @@ Tobias Deußer, Lorenz Sparrenberg, Rafet Sifa · 2026-09-29 · **v1** · **Jev 
 
 Lijuan Tang, Yuemeng Zheng · 2026-09-26 · **v1** · **Jev 直接相关**
 
-审计首批 Jev 与结构化决策研究，并提出评估检查清单。
+审阅 2026 年 9 月 19–24 日发布的 28 篇论文，提出 14 项评估清单。早期证据尚未分离出类型化读出本身的准确率收益；已有时延与成本收益伴随因任务而异的准确率局限。
 
 [arXiv](https://arxiv.org/abs/2609.32160) · [PDF](https://arxiv.org/pdf/2609.32160v1) · 作者代码未核实 · [证据](docs/EVIDENCE.md#evidence-2609-32160)<br>
 标签：`evaluation` · `benchmark` · `retrieval`
@@ -1094,10 +1094,10 @@ Yixin Tan, Chia-Yi Hsu, Jiayang Liu, et al. · 2026-10-14 · **v1** · **Jev 直
 
 Ilaria Imperatrice, Taisia Kameneva, Adam Eric Greenberg, et al. · 2026-10-14 · **v1** · **Jev 直接相关**
 
-通过受控决策实验审计 Jev 的认知、族群和性别偏置。
+测试 41,500 次响应，并追加 15,000 次合取任务响应。Jev 在答案层面通常避开若干经典偏差，但判断受到无关数字与选项顺序影响；扩展合取测试中约 54% 的响应违反概率规则。
 
 [arXiv](https://arxiv.org/abs/2610.19619) · [PDF](https://arxiv.org/pdf/2610.19619v1) · 作者代码未核实 · [证据](docs/EVIDENCE.md#evidence-2610-19619)<br>
-标签：`security` · `option-sensitivity`
+标签：`security` · `option-sensitivity` · `cognitive-bias` · `probability-consistency`
 
 <a id="paper-2610-19118"></a>
 ### [DecisionRobust: Benchmarking Robustness for JEV Style Decision Models Across Text and Vision](https://arxiv.org/abs/2610.19118v1)
@@ -1671,10 +1671,10 @@ Amir Rafe, Subasish Das · 2026-09-21 · **v1** · **Jev 直接相关**
 
 Boyuan Deng, Shuyi Fan, Hongyang Zhang, et al. · 2026-09-21 · **v3** · **Jev 直接相关**
 
-将算术交给代码，评测 Jev 在科学工作流中的语义选择。
+比较十二种配置：十个科研案例包含 20 个选择题，各重复五次。Jev 与另五种配置的语义选择全部正确，其成功请求延迟中位数为 0.335 秒；独立检查下游结果可揭示正确最终标签掩盖的错误。
 
 [arXiv](https://arxiv.org/abs/2609.24965) · [PDF](https://arxiv.org/pdf/2609.24965v3) · [作者代码](https://github.com/bydeng01/scientific-decision-eval) · [证据](docs/EVIDENCE.md#evidence-2609-24965)<br>
-标签：`applications` · `benchmark`
+标签：`applications` · `benchmark` · `scientific-workflows`
 
 <a id="paper-2609-24395"></a>
 ### [JEVQA - Video Quality from Metadata, Bitstream, and Pixel Features with a General-Purpose Decision Model](https://arxiv.org/abs/2609.24395v1)

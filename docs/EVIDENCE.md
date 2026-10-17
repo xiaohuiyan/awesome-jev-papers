@@ -216,14 +216,14 @@ Metadata: [reviewed v1](https://arxiv.org/abs/2610.19644v1); first submitted 202
 <a id="evidence-2610-19619"></a>
 ## 2610.19619 — Are AI Decision Models Biased? A Case Study of Jev
 
-**direct** · Relevance 1.00 · abstract · Verified 2026-10-16
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-10-17
 
-Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+Direct controlled experiments on hosted Jev. Probability sensitivity and adapted-task failures qualify performance on familiar cognitive-reflection questions; this study does not establish a general calibration advantage over zero-shot autoregressive LLMs.
 
-使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。
+直接对托管 Jev 开展受控实验。概率敏感性与改写任务上的失败限制了熟悉认知反射题的正面结论；该研究未确立相对于零样本自回归 LLM 的普遍校准优势。
 
 - **topic**: “judgment? We evaluate Jev, a model described as a System One” — [Abstract](https://arxiv.org/abs/2610.19619v1)
-- **contribution**: “We evaluate Jev, a model described as a System One decision-maker,” — [Abstract](https://arxiv.org/abs/2610.19619v1)
+- **contribution**: “15,000 additional responses across 30 conjunction tasks” — [Abstract](https://arxiv.org/abs/2610.19619v1)
 
 Metadata: [reviewed v1](https://arxiv.org/abs/2610.19619v1); first submitted 2026-10-14; updated 2026-10-14. Full authors: Ilaria Imperatrice; Taisia Kameneva; Adam Eric Greenberg; Alessandro Romano.
 
@@ -342,14 +342,14 @@ Metadata: [reviewed v1](https://arxiv.org/abs/2610.18612v1); first submitted 202
 <a id="evidence-2610-18610"></a>
 ## 2610.18610 — Jev-ToM: Evaluating Theory of Mind in Typed Decision Models
 
-**direct** · Relevance 1.00 · abstract · Verified 2026-10-16
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-10-17
 
-Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+Directly evaluates Jev-1.13 and four open typed models. The seven primary generative baselines do not include Claude. The paper evaluates bounded selection, not a complete interactive assistant, and does not establish a long-horizon multi-turn context bottleneck.
 
-使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。
+直接评测 Jev-1.13 与四个开放类型化模型；七个主要生成式基线不含 Claude。实验针对有限候选选择，未测试完整交互式助手，也未确立长程多轮上下文瓶颈。
 
 - **topic**: “believes, or intends. Typed decision models offer a potential alternative to” — [Abstract](https://arxiv.org/abs/2610.18610v1)
-- **contribution**: “We present Jev-ToM, comparing five typed decision models and seven generative” — [Abstract](https://arxiv.org/abs/2610.18610v1)
+- **contribution**: “five typed decision models and seven generative baselines” — [Abstract](https://arxiv.org/abs/2610.18610v1)
 
 Metadata: [reviewed v1](https://arxiv.org/abs/2610.18610v1); first submitted 2026-10-13; updated 2026-10-13. Full authors: Kawai Chung; Chunkit Chan; Yuxuan Liu; Yauwai Yim; Xi Yang; Wenbin Hu; Huihao Jing; Chiu Yeung Tang; Changxuan Fan; Ki Sen Hung; Tsun On Kwok; Haoran Li.
 
@@ -1266,14 +1266,14 @@ Metadata: [reviewed v1](https://arxiv.org/abs/2610.02267v1); first submitted 202
 <a id="evidence-2610-02076"></a>
 ## 2610.02076 — LLM-as-Jev: LLMs Are Already Jev-Style Decision Models -- When and How to Fine-Tune Them
 
-**related** · Relevance 0.85 · abstract · Verified 2026-10-16
+**related** · Relevance 0.85 · abstract · Verified 2026-10-17
 
-A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+A closely related open decision-readout method. The paper explicitly notes that Jev architecture and training remain proprietary; interface similarity does not establish a reproduction of its internals.
 
-紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。
+紧密相关的开放决策读出方法。论文明确指出 Jev 的架构与训练仍属专有信息；接口相似不能证明复现了其内部实现。
 
 - **topic**: “Jev-style decision models have gained surging traction by making decision-making” — [Abstract](https://arxiv.org/abs/2610.02076v3)
-- **contribution**: “we investigate the extent to which general-purpose LLMs already possess this” — [Abstract](https://arxiv.org/abs/2610.02076v3)
+- **contribution**: “a fine-tuning objective with KL-divergence anchors” — [Abstract](https://arxiv.org/abs/2610.02076v3)
 
 Metadata: [reviewed v3](https://arxiv.org/abs/2610.02076v3); first submitted 2026-10-01; updated 2026-10-13. Full authors: Yinheng Li; Justin Wagle.
 
@@ -1910,14 +1910,14 @@ Metadata: [reviewed v1](https://arxiv.org/abs/2609.35865v1); first submitted 202
 <a id="evidence-2609-32160"></a>
 ## 2609.32160 — Typed Decision Models: An Early Evidence Audit and Evaluation Checklist
 
-**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-10-16
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-10-17
 
-Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+An early evidence audit of Jev and TDM studies, linked to prior classification, constrained decoding, reranking, calibration and cascades. Its nine-day post-release horizon is not a settled assessment or a disclosure of TypeSafe’s proprietary RLCD recipe.
 
-使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。
+对 Jev 与 TDM 研究开展早期证据审计，并联系分类、约束解码、重排、校准及级联方法。其证据仅覆盖发布后九天，不构成定论，也不是 TypeSafe 专有 RLCD 配方的披露。
 
 - **topic**: “Typed decision models (TDMs) return probability distributions over” — [Abstract](https://arxiv.org/abs/2609.32160v1)
-- **contribution**: “We review 28 papers posted between 19 and 24 September and” — [Abstract](https://arxiv.org/abs/2609.32160v1)
+- **contribution**: “a 14-item evaluation checklist for future TDM work” — [Abstract](https://arxiv.org/abs/2609.32160v1)
 
 Metadata: [reviewed v1](https://arxiv.org/abs/2609.32160v1); first submitted 2026-09-26; updated 2026-09-26. Full authors: Lijuan Tang; Yuemeng Zheng.
 
@@ -2232,14 +2232,14 @@ Metadata: [reviewed v1](https://arxiv.org/abs/2610.00213v1); first submitted 202
 <a id="evidence-2609-24965"></a>
 ## 2609.24965 — Jev for Scientific Decisions: Evaluating Semantic Choices and Their Consequences
 
-**direct** · Relevance 1.00 · abstract · Verified 2026-10-16
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-10-17
 
-Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+Hosted Jev chooses source-grounded relations while deterministic code computes downstream quantities. Each configuration has 50 planned requests and 100 semantic answers, not 100 independent tasks. Latency is measured among successful requests in the paper’s setup.
 
-使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。
+托管 Jev 选择有来源依据的关系，确定性代码计算下游量。每种配置计划执行 50 次请求、产生 100 个语义答案，并非 100 项独立任务。延迟统计限于论文设置中的成功请求。
 
 - **topic**: “comparison. We evaluate Jev as a semantic decision component using a” — [Abstract](https://arxiv.org/abs/2609.24965v3)
-- **contribution**: “We evaluate Jev as a semantic decision component using a harness” — [Abstract](https://arxiv.org/abs/2609.24965v3)
+- **contribution**: “twenty source-grounded Choices across ten scientific cases” — [Abstract](https://arxiv.org/abs/2609.24965v3)
 
 Metadata: [reviewed v3](https://arxiv.org/abs/2609.24965v3); first submitted 2026-09-21; updated 2026-10-15. Full authors: Boyuan Deng; Shuyi Fan; Hongyang Zhang; Xinhong Xie.
 

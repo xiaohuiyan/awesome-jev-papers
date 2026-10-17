@@ -2,6 +2,7 @@
 
 ## 2026-10-17
 
+- Rechecked five user-supplied papers against current arXiv versions; all were already included. Refined bilingual notes on bias, ToM, scientific decisions, LLM-as-Jev and the early evidence audit; documented experiment sizes, latency and scope in [source-check notes](docs/FIVE_PAPER_REVIEW_2026-10-17.md). Paper count remains 174.
 - Searched public X/Twitter, Sina Weibo, Xiaohongshu and WeChat sources; documented platform access limits and unresolved social leads in a separate audit.
 - Added the missed v2 of *Evaluating Decision Models for Text Annotation in Computational Social Science* from a readable WeChat roundup, with original-paper evidence and author code. Catalogue now has 174 papers (118 direct, 52 related, four foundations), with verified code for 53 papers.
 - Added StartLux-Decision (arXiv:2610.17309v1) under model architectures and training, with direct Jev relation established by full-text comparisons.

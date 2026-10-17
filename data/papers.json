@@ -1112,15 +1112,17 @@
       "relation_level": "direct",
       "tags": [
         "security",
-        "option-sensitivity"
+        "option-sensitivity",
+        "cognitive-bias",
+        "probability-consistency"
       ],
       "summary": {
-        "en": "Audits cognitive, ethnic and gender biases in Jev using controlled decision experiments.",
-        "zh": "通过受控决策实验审计 Jev 的认知、族群和性别偏置。"
+        "en": "Tests 41,500 responses plus 15,000 additional conjunction responses. Jev often avoids classic answer-level biases, but irrelevant numbers and option order affect judgments; the expanded conjunction test violates the probability rule in about 54% of responses.",
+        "zh": "测试 41,500 次响应，并追加 15,000 次合取任务响应。Jev 在答案层面通常避开若干经典偏差，但判断受到无关数字与选项顺序影响；扩展合取测试中约 54% 的响应违反概率规则。"
       },
       "relation": {
-        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
-        "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
+        "en": "Direct controlled experiments on hosted Jev. Probability sensitivity and adapted-task failures qualify performance on familiar cognitive-reflection questions; this study does not establish a general calibration advantage over zero-shot autoregressive LLMs.",
+        "zh": "直接对托管 Jev 开展受控实验。概率敏感性与改写任务上的失败限制了熟悉认知反射题的正面结论；该研究未确立相对于零样本自回归 LLM 的普遍校准优势。"
       },
       "evidence": [
         {
@@ -1131,7 +1133,7 @@
         },
         {
           "criterion": "contribution",
-          "quote": "We evaluate Jev, a model described as a System One decision-maker,",
+          "quote": "15,000 additional responses across 30 conjunction tasks",
           "source_url": "https://arxiv.org/abs/2610.19619v1",
           "location": "Abstract"
         }
@@ -1144,8 +1146,8 @@
         "weighted_total": 1.0,
         "citation_count": null
       },
-      "review_level": "abstract",
-      "verified_on": "2026-10-16",
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-10-17",
       "code": [],
       "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.19619v1",
       "source_abstract_sha256": "35d8c2f8272641cdfc7a9ea7a91ba7450de710161a5c2eabf974b97281dc7f38"
@@ -1722,15 +1724,17 @@
       "relation_level": "direct",
       "tags": [
         "evaluation",
-        "benchmark"
+        "benchmark",
+        "theory-of-mind",
+        "calibration"
       ],
       "summary": {
-        "en": "Compares typed decision models, including Jev, on bounded Theory of Mind tasks and candidate design.",
-        "zh": "在有限选项的心智理论任务中比较 Jev 等决策模型，并分析候选设计。"
+        "en": "Compares five typed models with seven generative baselines on 11,117 English questions from nine ToM benchmarks. Jev reaches 73.2% source-balanced accuracy including native controls; confidence selection, reason attachment and candidate expansion have task-dependent effects.",
+        "zh": "在九个心智理论基准的 11,117 道英文题上比较五个类型化模型与七个生成式基线。包含原生对照题时，Jev 的来源平衡准确率为 73.2%；置信度筛选、理由附加与候选扩展的效果因任务而异。"
       },
       "relation": {
-        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
-        "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
+        "en": "Directly evaluates Jev-1.13 and four open typed models. The seven primary generative baselines do not include Claude. The paper evaluates bounded selection, not a complete interactive assistant, and does not establish a long-horizon multi-turn context bottleneck.",
+        "zh": "直接评测 Jev-1.13 与四个开放类型化模型；七个主要生成式基线不含 Claude。实验针对有限候选选择，未测试完整交互式助手，也未确立长程多轮上下文瓶颈。"
       },
       "evidence": [
         {
@@ -1741,7 +1745,7 @@
         },
         {
           "criterion": "contribution",
-          "quote": "We present Jev-ToM, comparing five typed decision models and seven generative",
+          "quote": "five typed decision models and seven generative baselines",
           "source_url": "https://arxiv.org/abs/2610.18610v1",
           "location": "Abstract"
         }
@@ -1754,8 +1758,8 @@
         "weighted_total": 1.0,
         "citation_count": null
       },
-      "review_level": "abstract",
-      "verified_on": "2026-10-16",
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-10-17",
       "code": [
         {
           "url": "https://github.com/HKUST-KnowComp/Jev-ToM",
@@ -6159,12 +6163,12 @@
         "option-sensitivity"
       ],
       "summary": {
-        "en": "Studies training-free option readout and KL-anchored fine-tuning without changing the language-model architecture.",
-        "zh": "在不改变语言模型架构的条件下研究免训练选项读取与 KL 锚定微调。"
+        "en": "Preserves the LLM architecture while combining training-free option-probability readout, budgeted Thinking Jev inference and KL-anchored fine-tuning. On Qwen3.5-4B and Qwen3-0.6B, fine-tuning provides targeted gains for smaller models and complex routing.",
+        "zh": "保持 LLM 架构，结合免训练的选项概率读出、带预算的 Thinking Jev 推理及 KL 锚定微调。在 Qwen3.5-4B 与 Qwen3-0.6B 上，微调对较小模型与复杂路由带来针对性收益。"
       },
       "relation": {
-        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
-        "zh": "紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。"
+        "en": "A closely related open decision-readout method. The paper explicitly notes that Jev architecture and training remain proprietary; interface similarity does not establish a reproduction of its internals.",
+        "zh": "紧密相关的开放决策读出方法。论文明确指出 Jev 的架构与训练仍属专有信息；接口相似不能证明复现了其内部实现。"
       },
       "evidence": [
         {
@@ -6175,7 +6179,7 @@
         },
         {
           "criterion": "contribution",
-          "quote": "we investigate the extent to which general-purpose LLMs already possess this",
+          "quote": "a fine-tuning objective with KL-divergence anchors",
           "source_url": "https://arxiv.org/abs/2610.02076v3",
           "location": "Abstract"
         }
@@ -6189,7 +6193,7 @@
         "citation_count": null
       },
       "review_level": "abstract",
-      "verified_on": "2026-10-16",
+      "verified_on": "2026-10-17",
       "code": [],
       "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.02076v3",
       "source_abstract_sha256": "efd3ecb17c1423a1fe4f2d8a952372bb5b11bd9744f96274af121ac1945b2355"
@@ -9218,12 +9222,12 @@
         "retrieval"
       ],
       "summary": {
-        "en": "Audits the first wave of Jev and typed-decision research and derives an evaluation checklist.",
-        "zh": "审计首批 Jev 与结构化决策研究，并提出评估检查清单。"
+        "en": "Reviews 28 papers posted on 19–24 September 2026 and derives a 14-item evaluation checklist. The early evidence does not isolate an accuracy benefit from typed readout itself; reported latency and cost gains coexist with task-dependent accuracy limits.",
+        "zh": "审阅 2026 年 9 月 19–24 日发布的 28 篇论文，提出 14 项评估清单。早期证据尚未分离出类型化读出本身的准确率收益；已有时延与成本收益伴随因任务而异的准确率局限。"
       },
       "relation": {
-        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
-        "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
+        "en": "An early evidence audit of Jev and TDM studies, linked to prior classification, constrained decoding, reranking, calibration and cascades. Its nine-day post-release horizon is not a settled assessment or a disclosure of TypeSafe’s proprietary RLCD recipe.",
+        "zh": "对 Jev 与 TDM 研究开展早期证据审计，并联系分类、约束解码、重排、校准及级联方法。其证据仅覆盖发布后九天，不构成定论，也不是 TypeSafe 专有 RLCD 配方的披露。"
       },
       "evidence": [
         {
@@ -9234,7 +9238,7 @@
         },
         {
           "criterion": "contribution",
-          "quote": "We review 28 papers posted between 19 and 24 September and",
+          "quote": "a 14-item evaluation checklist for future TDM work",
           "source_url": "https://arxiv.org/abs/2609.32160v1",
           "location": "Abstract"
         }
@@ -9248,7 +9252,7 @@
         "citation_count": null
       },
       "review_level": "abstract + targeted full text",
-      "verified_on": "2026-10-16",
+      "verified_on": "2026-10-17",
       "code": [],
       "metadata_source": "https://export.arxiv.org/api/query?id_list=2609.32160v1",
       "source_abstract_sha256": "a8b0deefdcd7ddf117e2ec8421f313f4239f90e19f3cb3897b4f27c6dd3b9b3a"
@@ -10760,15 +10764,16 @@
       "relation_level": "direct",
       "tags": [
         "applications",
-        "benchmark"
+        "benchmark",
+        "scientific-workflows"
       ],
       "summary": {
-        "en": "Evaluates Jev semantic choices in scientific workflows while delegating arithmetic to code.",
-        "zh": "将算术交给代码，评测 Jev 在科学工作流中的语义选择。"
+        "en": "Compares twelve configurations on 20 Choices across ten scientific cases, repeated five times. Jev and five other configurations are semantically correct throughout; Jev has a 0.335 s median successful-request latency. Separate downstream checks expose errors hidden by correct final labels.",
+        "zh": "比较十二种配置：十个科研案例包含 20 个选择题，各重复五次。Jev 与另五种配置的语义选择全部正确，其成功请求延迟中位数为 0.335 秒；独立检查下游结果可揭示正确最终标签掩盖的错误。"
       },
       "relation": {
-        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
-        "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
+        "en": "Hosted Jev chooses source-grounded relations while deterministic code computes downstream quantities. Each configuration has 50 planned requests and 100 semantic answers, not 100 independent tasks. Latency is measured among successful requests in the paper’s setup.",
+        "zh": "托管 Jev 选择有来源依据的关系，确定性代码计算下游量。每种配置计划执行 50 次请求、产生 100 个语义答案，并非 100 项独立任务。延迟统计限于论文设置中的成功请求。"
       },
       "evidence": [
         {
@@ -10779,7 +10784,7 @@
         },
         {
           "criterion": "contribution",
-          "quote": "We evaluate Jev as a semantic decision component using a harness",
+          "quote": "twenty source-grounded Choices across ten scientific cases",
           "source_url": "https://arxiv.org/abs/2609.24965v3",
           "location": "Abstract"
         }
@@ -10792,8 +10797,8 @@
         "weighted_total": 1.0,
         "citation_count": null
       },
-      "review_level": "abstract",
-      "verified_on": "2026-10-16",
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-10-17",
       "code": [
         {
           "url": "https://github.com/bydeng01/scientific-decision-eval",

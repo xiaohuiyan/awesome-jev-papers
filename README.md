@@ -31,7 +31,7 @@ Jev means TypeSafe's hosted model. Similar interfaces do not establish reproduct
 
 Ten starting points arranged as a reading path across evidence reviews, benchmarks, models, calibration, security, and applications. This is not a performance ranking; all other included papers remain in the catalogue.
 
-- [Typed Decision Models: An Early Evidence Audit and Evaluation Checklist](#paper-2609-32160) — Audits the first wave of Jev and typed-decision research and derives an evaluation checklist.
+- [Typed Decision Models: An Early Evidence Audit and Evaluation Checklist](#paper-2609-32160) — Reviews 28 papers posted on 19–24 September 2026 and derives a 14-item evaluation checklist. The early evidence does not isolate an accuracy benefit from typed readout itself; reported latency and cost gains coexist with task-dependent accuracy limits.
 - [Benchmarking System One decision models against trained classifiers and language models for automated decision gates](#paper-2610-00346) — Compares Jev and other decision models with trained classifiers and generative models under matched decision requests.
 - [System1-Arena: Which Decisions Can Be Left to System 1?](#paper-2610-21244) — Introduces matched probability-scored tasks and closed-loop environments to compare fast decisions with reasoning.
 - [Jeva: System One Models from First Principles](#paper-2610-18773) — Designs decision-native representations for missing answers, option permutations, candidate scaling and cache reuse.
@@ -238,7 +238,7 @@ Tags: `architecture` · `calibration` · `benchmark` · `training` · `retrieval
 
 Yinheng Li, Justin Wagle · 2026-10-01 · **v3** · **Related model / method**
 
-Studies training-free option readout and KL-anchored fine-tuning without changing the language-model architecture.
+Preserves the LLM architecture while combining training-free option-probability readout, budgeted Thinking Jev inference and KL-anchored fine-tuning. On Qwen3.5-4B and Qwen3-0.6B, fine-tuning provides targeted gains for smaller models and complex routing.
 
 [arXiv](https://arxiv.org/abs/2610.02076) · [PDF](https://arxiv.org/pdf/2610.02076v3) · Author code not verified · [Evidence](docs/EVIDENCE.md#evidence-2610-02076)<br>
 Tags: `architecture` · `training` · `option-sensitivity`
@@ -383,10 +383,10 @@ Tags: `evaluation` · `calibration` · `efficiency` · `benchmark`
 
 Kawai Chung, Chunkit Chan, Yuxuan Liu, et al. · 2026-10-13 · **v1** · **Direct Jev**
 
-Compares typed decision models, including Jev, on bounded Theory of Mind tasks and candidate design.
+Compares five typed models with seven generative baselines on 11,117 English questions from nine ToM benchmarks. Jev reaches 73.2% source-balanced accuracy including native controls; confidence selection, reason attachment and candidate expansion have task-dependent effects.
 
 [arXiv](https://arxiv.org/abs/2610.18610) · [PDF](https://arxiv.org/pdf/2610.18610v1) · [Author code](https://github.com/HKUST-KnowComp/Jev-ToM) · [Evidence](docs/EVIDENCE.md#evidence-2610-18610)<br>
-Tags: `evaluation` · `benchmark`
+Tags: `evaluation` · `benchmark` · `theory-of-mind` · `calibration`
 
 <a id="paper-2610-18579"></a>
 ### [Reading Right, Acting Wrong: Diagnosing Decision Failures of System One Models in Agent Loops](https://arxiv.org/abs/2610.18579v1)
@@ -493,7 +493,7 @@ Tags: `evaluation` · `benchmark` · `judging`
 
 Lijuan Tang, Yuemeng Zheng · 2026-09-26 · **v1** · **Direct Jev**
 
-Audits the first wave of Jev and typed-decision research and derives an evaluation checklist.
+Reviews 28 papers posted on 19–24 September 2026 and derives a 14-item evaluation checklist. The early evidence does not isolate an accuracy benefit from typed readout itself; reported latency and cost gains coexist with task-dependent accuracy limits.
 
 [arXiv](https://arxiv.org/abs/2609.32160) · [PDF](https://arxiv.org/pdf/2609.32160v1) · Author code not verified · [Evidence](docs/EVIDENCE.md#evidence-2609-32160)<br>
 Tags: `evaluation` · `benchmark` · `retrieval`
@@ -1094,10 +1094,10 @@ Tags: `security` · `calibration` · `efficiency` · `benchmark` · `judging` ·
 
 Ilaria Imperatrice, Taisia Kameneva, Adam Eric Greenberg, et al. · 2026-10-14 · **v1** · **Direct Jev**
 
-Audits cognitive, ethnic and gender biases in Jev using controlled decision experiments.
+Tests 41,500 responses plus 15,000 additional conjunction responses. Jev often avoids classic answer-level biases, but irrelevant numbers and option order affect judgments; the expanded conjunction test violates the probability rule in about 54% of responses.
 
 [arXiv](https://arxiv.org/abs/2610.19619) · [PDF](https://arxiv.org/pdf/2610.19619v1) · Author code not verified · [Evidence](docs/EVIDENCE.md#evidence-2610-19619)<br>
-Tags: `security` · `option-sensitivity`
+Tags: `security` · `option-sensitivity` · `cognitive-bias` · `probability-consistency`
 
 <a id="paper-2610-19118"></a>
 ### [DecisionRobust: Benchmarking Robustness for JEV Style Decision Models Across Text and Vision](https://arxiv.org/abs/2610.19118v1)
@@ -1671,10 +1671,10 @@ Tags: `applications` · `calibration`
 
 Boyuan Deng, Shuyi Fan, Hongyang Zhang, et al. · 2026-09-21 · **v3** · **Direct Jev**
 
-Evaluates Jev semantic choices in scientific workflows while delegating arithmetic to code.
+Compares twelve configurations on 20 Choices across ten scientific cases, repeated five times. Jev and five other configurations are semantically correct throughout; Jev has a 0.335 s median successful-request latency. Separate downstream checks expose errors hidden by correct final labels.
 
 [arXiv](https://arxiv.org/abs/2609.24965) · [PDF](https://arxiv.org/pdf/2609.24965v3) · [Author code](https://github.com/bydeng01/scientific-decision-eval) · [Evidence](docs/EVIDENCE.md#evidence-2609-24965)<br>
-Tags: `applications` · `benchmark`
+Tags: `applications` · `benchmark` · `scientific-workflows`
 
 <a id="paper-2609-24395"></a>
 ### [JEVQA - Video Quality from Metadata, Bitstream, and Pixel Features with a General-Purpose Decision Model](https://arxiv.org/abs/2609.24395v1)

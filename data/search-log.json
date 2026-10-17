@@ -135,5 +135,45 @@
       ],
       "coverage": "Public web indexes and accessible original pages; not a complete authenticated in-platform search."
     }
+  ],
+  "targeted_rechecks": [
+    {
+      "reviewed_on": "2026-10-17",
+      "trigger": "User-supplied five-paper list and summaries",
+      "papers": [
+        {
+          "arxiv_id": "2610.19619",
+          "version": 1,
+          "source_url": "https://arxiv.org/abs/2610.19619v1",
+          "review_level": "abstract + targeted full text"
+        },
+        {
+          "arxiv_id": "2610.18610",
+          "version": 1,
+          "source_url": "https://arxiv.org/abs/2610.18610v1",
+          "review_level": "abstract + targeted full text"
+        },
+        {
+          "arxiv_id": "2610.02076",
+          "version": 3,
+          "source_url": "https://arxiv.org/abs/2610.02076v3",
+          "review_level": "abstract"
+        },
+        {
+          "arxiv_id": "2609.32160",
+          "version": 1,
+          "source_url": "https://arxiv.org/abs/2609.32160v1",
+          "review_level": "abstract + targeted full text"
+        },
+        {
+          "arxiv_id": "2609.24965",
+          "version": 3,
+          "source_url": "https://arxiv.org/abs/2609.24965v3",
+          "review_level": "abstract + targeted full text"
+        }
+      ],
+      "outcome": "All five already included at latest versions; enriched bilingual summaries and clarified unsupported claims. No new papers or version upgrades.",
+      "report": "docs/FIVE_PAPER_REVIEW_2026-10-17.md"
+    }
   ]
 }
