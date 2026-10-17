@@ -146,7 +146,7 @@ def bibtex(data):
                   "  archivePrefix = {arXiv},",
                   "  primaryClass = {" + p["arxiv_categories"][0] + "},",
                   "  url = {" + p["reviewed_url"] + "},",
-                  "  note = {Version " + str(p["version"]) + "; reviewed " + data["updated_on"] + "}", "}", ""]
+                  "  note = {Version " + str(p["version"]) + "; reviewed " + p["verified_on"] + "}", "}", ""]
     return "\n".join(lines)
 
 

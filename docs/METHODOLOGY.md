@@ -4,7 +4,9 @@
 
 ## Scope
 
-The main corpus covers first submissions from **2025-10-16 through 2026-10-16**, using the latest arXiv version verified on the snapshot date. A paper first submitted before the window is included only as an explicitly marked foundation. A revision inside the window does not reset the first-submission date.
+The main corpus covers first submissions from **2025-10-16 through 2026-10-16**, using the latest arXiv version verified for each paper. A paper first submitted before the window is included only as an explicitly marked foundation. A revision inside the window does not reset the first-submission date.
+
+Later targeted additions retain the original discovery window and record individual verification dates; a catalogue update does not imply re-verification of every entry. 后续单篇补充保留原始检索时间范围，分别记录核实日期；目录更新不代表全库重新核实。
 
 **Jev** refers to the hosted model from TypeSafe. The broader topic is models and interfaces that return decisions or distributions over caller-supplied choices, binary questions or ordered scores. A common name, a System 1 metaphor or a repository URL containing “jev” does not establish technical relevance or shared model lineage.
 

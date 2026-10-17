@@ -5,7 +5,7 @@
 
 围绕 **Jev、System One 和结构化决策模型**整理的 arXiv 论文目录。重点关注直接返回候选概率的模型，以及它们在智能体中的方法、评测和应用。
 
-**更新：2026-10-16** · **172 篇** · Jev 直接相关 **116** · 同类模型与方法 **52** · 基础背景 **4** · 已核实作者代码链接 **51 篇**
+**更新：2026-10-17** · **173 篇** · Jev 直接相关 **117** · 同类模型与方法 **52** · 基础背景 **4** · 已核实作者代码链接 **52 篇**
 
 主要时间范围：**2025-10-16 至 2026-10-16**，按首次提交日期筛选；每篇标明本次核实的版本。较早的基础工作单列。
 
@@ -47,7 +47,7 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 | 主题 | Jev 直接相关 | 同类模型与方法 | 合计 |
 | --- | ---: | ---: | ---: |
-| [模型架构与训练方法](#architecture) | 4 | 25 | 29 |
+| [模型架构与训练方法](#architecture) | 5 | 25 | 30 |
 | [基准测试与比较评估](#evaluation) | 16 | 2 | 18 |
 | [概率校准、可靠性与选择性决策](#calibration) | 12 | 5 | 17 |
 | [搜索、记忆、工具与智能体决策](#agents) | 25 | 7 | 32 |
@@ -59,7 +59,7 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 <a id="architecture"></a>
 ## 模型架构与训练方法
 
-**Jev 直接相关 (4)**
+**Jev 直接相关 (5)**
 
 <a id="paper-2610-22131"></a>
 ### [Intern-Decision: Efficient Multimodal Decision Making with Autoregressive Masked Language Modeling](https://arxiv.org/abs/2610.22131v1)
@@ -80,6 +80,16 @@ Qi Li, Xinchao Wang · 2026-10-13 · **v1** · **Jev 直接相关**
 
 [arXiv](https://arxiv.org/abs/2610.18773) · [PDF](https://arxiv.org/pdf/2610.18773v1) · [作者代码](https://github.com/LiQiiiii/Jeva) · [证据](docs/EVIDENCE.md#evidence-2610-18773)<br>
 标签：`architecture` · `option-sensitivity`
+
+<a id="paper-2610-17309"></a>
+### [StartLux-Decision: AutoThink Decision Models with Reinforcement Learning for Calibrated Deliberative Decisions](https://arxiv.org/abs/2610.17309v1)
+
+Xialie Zhuang, Zunhai Su, Jia Pan, et al. · 2026-10-12 · **v1** · **Jev 直接相关**
+
+提出 0.8B–27B 的 Instant 与按置信度触发推理的 AutoThink 决策模型，采用三阶段训练。RLCD² 利用冻结评估模型与适当评分规则奖励概率质量，并惩罚过长推理；DecisionPivot 检验模型对改变答案的细节的敏感性。
+
+[arXiv](https://arxiv.org/abs/2610.17309) · [PDF](https://arxiv.org/pdf/2610.17309v1) · [作者代码](https://github.com/StartLuxLabs/StartLux-Decision) · [证据](docs/EVIDENCE.md#evidence-2610-17309)<br>
+标签：`architecture` · `reinforcement-learning` · `calibration` · `adaptive-reasoning` · `benchmark` · `efficiency`
 
 <a id="paper-2609-36115"></a>
 ### [Koa-decision: Fast and Consistent Structured Decision Making with Generative LLMs](https://arxiv.org/abs/2609.36115v2)

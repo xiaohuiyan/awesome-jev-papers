@@ -5,7 +5,7 @@
 
 A curated arXiv reading list on **Jev, System One, and typed decision models**: models that return probabilities over supplied options, and the methods, evaluations, and agent applications built around them.
 
-**Updated: 2026-10-16** · **172 papers** · **116** directly related to Jev · **52** related models and methods · **4** foundations · **51** papers with verified author-linked code
+**Updated: 2026-10-17** · **173 papers** · **117** directly related to Jev · **52** related models and methods · **4** foundations · **52** papers with verified author-linked code
 
 Main window: **2025-10-16 through 2026-10-16**, by first submission. Each entry pins the version reviewed for this snapshot. Earlier foundations are listed separately.
 
@@ -47,7 +47,7 @@ Ten starting points arranged as a reading path across evidence reviews, benchmar
 
 | Topic | Direct Jev | Related methods | Total |
 | --- | ---: | ---: | ---: |
-| [Model architectures and training](#architecture) | 4 | 25 | 29 |
+| [Model architectures and training](#architecture) | 5 | 25 | 30 |
 | [Benchmarks and comparative evaluation](#evaluation) | 16 | 2 | 18 |
 | [Calibration, reliability and selective decisions](#calibration) | 12 | 5 | 17 |
 | [Search, memory, tools and agent decisions](#agents) | 25 | 7 | 32 |
@@ -59,7 +59,7 @@ Each paper has one primary category and cross-topic tags. Four foundations are c
 <a id="architecture"></a>
 ## Model architectures and training
 
-**Direct Jev (4)**
+**Direct Jev (5)**
 
 <a id="paper-2610-22131"></a>
 ### [Intern-Decision: Efficient Multimodal Decision Making with Autoregressive Masked Language Modeling](https://arxiv.org/abs/2610.22131v1)
@@ -80,6 +80,16 @@ Designs decision-native representations for missing answers, option permutations
 
 [arXiv](https://arxiv.org/abs/2610.18773) · [PDF](https://arxiv.org/pdf/2610.18773v1) · [Author code](https://github.com/LiQiiiii/Jeva) · [Evidence](docs/EVIDENCE.md#evidence-2610-18773)<br>
 Tags: `architecture` · `option-sensitivity`
+
+<a id="paper-2610-17309"></a>
+### [StartLux-Decision: AutoThink Decision Models with Reinforcement Learning for Calibrated Deliberative Decisions](https://arxiv.org/abs/2610.17309v1)
+
+Xialie Zhuang, Zunhai Su, Jia Pan, et al. · 2026-10-12 · **v1** · **Direct Jev**
+
+Introduces Instant and confidence-triggered AutoThink decision models (0.8B–27B), trained in three stages. RLCD² rewards probability quality using a frozen evaluator and proper scoring rules, with a reasoning-length penalty; DecisionPivot tests sensitivity to answer-changing details.
+
+[arXiv](https://arxiv.org/abs/2610.17309) · [PDF](https://arxiv.org/pdf/2610.17309v1) · [Author code](https://github.com/StartLuxLabs/StartLux-Decision) · [Evidence](docs/EVIDENCE.md#evidence-2610-17309)<br>
+Tags: `architecture` · `reinforcement-learning` · `calibration` · `adaptive-reasoning` · `benchmark` · `efficiency`
 
 <a id="paper-2609-36115"></a>
 ### [Koa-decision: Fast and Consistent Structured Decision Making with Generative LLMs](https://arxiv.org/abs/2609.36115v2)

@@ -493,6 +493,20 @@ Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence
 
 Metadata: [reviewed v1](https://arxiv.org/abs/2610.17820v1); first submitted 2026-10-13; updated 2026-10-13. Full authors: Xiang Li; Aichun Huang; Mingming Zhang; Zheli Liu.
 
+<a id="evidence-2610-17309"></a>
+## 2610.17309 — StartLux-Decision: AutoThink Decision Models with Reinforcement Learning for Calibrated Deliberative Decisions
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-10-17
+
+Directly compares hosted Jev on Decision Index and DecisionPivot, including calibration over 7,800 core examples (Table 4 and Figure 11). Section 3 discusses Jev/RLCD and OpenJev-RLCD as context; this does not establish reproduction of proprietary Jev training.
+
+在 Decision Index 与 DecisionPivot 上直接对比托管版 Jev，包括 7,800 个核心样本上的校准评估（表 4、图 11）。第 3 节讨论 Jev/RLCD 与 OpenJev-RLCD 的研究背景，但这不代表复现了 Jev 的专有训练方法。
+
+- **topic**: “hosted Jev across 7,800 core examples” — [Figure 11 caption, DecisionPivot calibration evaluation](https://arxiv.org/html/2610.17309v1)
+- **contribution**: “uses a frozen model and proper scoring rules” — [Abstract](https://arxiv.org/abs/2610.17309v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2610.17309v1); first submitted 2026-10-12; updated 2026-10-12. Full authors: Xialie Zhuang; Zunhai Su; Jia Pan; Ngai Wong; Guanhua Chen; Chuan-Wei Kuo.
+
 <a id="evidence-2610-17205"></a>
 ## 2610.17205 — Releasing the Inner Jev: A Simple Recipe for Open Decision Models
 

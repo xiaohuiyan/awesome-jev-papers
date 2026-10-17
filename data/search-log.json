@@ -86,9 +86,9 @@
       "purpose": "Early Jev corpus and four foundational methods"
     }
   ],
-  "unique_candidates": 283,
+  "unique_candidates": 284,
   "outcomes": {
-    "included": 172,
+    "included": 173,
     "excluded": 109,
     "pending": 2
   },
@@ -97,6 +97,17 @@
     "Most papers were screened at abstract level; selected ambiguous relations were checked in full text.",
     "No citation-count data or independent experimental reproduction was collected.",
     "Code links are included only when author-linked and reachable; absence of a link means not verified.",
-    "Snapshot ends on 2026-10-16; future revisions and later announcements are not covered."
+    "Broad discovery ends on 2026-10-16. Later targeted additions are logged separately and do not imply a fresh search or re-verification of the entire corpus."
+  ],
+  "updated_on": "2026-10-17",
+  "targeted_additions": [
+    {
+      "reviewed_on": "2026-10-17",
+      "arxiv_id": "2610.17309",
+      "discovery": "User-supplied arXiv link",
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.17309v1",
+      "full_text_source": "https://arxiv.org/html/2610.17309v1",
+      "result": "Included: direct Jev evaluation; architecture and training category."
+    }
   ]
 }

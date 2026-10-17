@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "updated_on": "2026-10-16",
+  "updated_on": "2026-10-17",
   "window": {
     "start": "2025-10-16",
     "end": "2026-10-16",
-    "basis": "first submission; latest verified version as of cutoff"
+    "basis": "first submission; reviewed version and verification date recorded per paper"
   },
   "categories": {
     "architecture": {
@@ -2438,6 +2438,84 @@
       "code": [],
       "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.17820v1",
       "source_abstract_sha256": "ceefb2eccfddfe0f2c66e214ad87ea251d1a87c744f03ea146e83287daa5eed7"
+    },
+    {
+      "arxiv_id": "2610.17309",
+      "title": "StartLux-Decision: AutoThink Decision Models with Reinforcement Learning for Calibrated Deliberative Decisions",
+      "authors": [
+        "Xialie Zhuang",
+        "Zunhai Su",
+        "Jia Pan",
+        "Ngai Wong",
+        "Guanhua Chen",
+        "Chuan-Wei Kuo"
+      ],
+      "first_submitted": "2026-10-12",
+      "updated": "2026-10-12",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.17309",
+      "reviewed_url": "https://arxiv.org/abs/2610.17309v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.17309v1",
+      "arxiv_categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "architecture",
+      "relation_level": "direct",
+      "tags": [
+        "architecture",
+        "reinforcement-learning",
+        "calibration",
+        "adaptive-reasoning",
+        "benchmark",
+        "efficiency"
+      ],
+      "summary": {
+        "en": "Introduces Instant and confidence-triggered AutoThink decision models (0.8B–27B), trained in three stages. RLCD² rewards probability quality using a frozen evaluator and proper scoring rules, with a reasoning-length penalty; DecisionPivot tests sensitivity to answer-changing details.",
+        "zh": "提出 0.8B–27B 的 Instant 与按置信度触发推理的 AutoThink 决策模型，采用三阶段训练。RLCD² 利用冻结评估模型与适当评分规则奖励概率质量，并惩罚过长推理；DecisionPivot 检验模型对改变答案的细节的敏感性。"
+      },
+      "relation": {
+        "en": "Directly compares hosted Jev on Decision Index and DecisionPivot, including calibration over 7,800 core examples (Table 4 and Figure 11). Section 3 discusses Jev/RLCD and OpenJev-RLCD as context; this does not establish reproduction of proprietary Jev training.",
+        "zh": "在 Decision Index 与 DecisionPivot 上直接对比托管版 Jev，包括 7,800 个核心样本上的校准评估（表 4、图 11）。第 3 节讨论 Jev/RLCD 与 OpenJev-RLCD 的研究背景，但这不代表复现了 Jev 的专有训练方法。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "hosted Jev across 7,800 core examples",
+          "source_url": "https://arxiv.org/html/2610.17309v1",
+          "location": "Figure 11 caption, DecisionPivot calibration evaluation"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "uses a frozen model and proper scoring rules",
+          "source_url": "https://arxiv.org/abs/2610.17309v1",
+          "location": "Abstract"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-10-17",
+      "code": [
+        {
+          "url": "https://github.com/StartLuxLabs/StartLux-Decision",
+          "source_url": "https://arxiv.org/html/2610.17309v1",
+          "source_location": "Section 1, Introduction (release statement)",
+          "verified_on": "2026-10-17",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.17309v1",
+      "source_abstract_sha256": "758af90f531251124955daa70c1c39fddccfe41d14b779143947b5bf375aeb8d"
     },
     {
       "arxiv_id": "2610.17205",

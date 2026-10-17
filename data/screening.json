@@ -1,5 +1,5 @@
 {
-  "screened_on": "2026-10-16",
+  "screened_on": "2026-10-17",
   "candidates": [
     {
       "arxiv_id": "2610.22276",
@@ -2264,6 +2264,14 @@
       "status": "included",
       "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
       "screened_on": "2026-10-16"
+    },
+    {
+      "arxiv_id": "2610.17309",
+      "title": "StartLux-Decision: AutoThink Decision Models with Reinforcement Learning for Calibrated Deliberative Decisions",
+      "source_url": "https://arxiv.org/abs/2610.17309v1",
+      "status": "included",
+      "reason": "User-supplied candidate. Full text directly evaluates hosted Jev (Table 4 and Figure 11); architecture/training contribution and author-linked code verified.",
+      "screened_on": "2026-10-17"
     }
   ]
 }

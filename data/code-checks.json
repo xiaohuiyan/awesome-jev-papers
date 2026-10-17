@@ -559,5 +559,16 @@
     "canonical_url": "https://github.com/besanson/gigo-jev-probe",
     "description": "SARC Jev test",
     "private": false
+  },
+  {
+    "arxiv_id": "2610.17309",
+    "url": "https://github.com/StartLuxLabs/StartLux-Decision",
+    "source_url": "https://arxiv.org/html/2610.17309v1",
+    "source_location": "Section 1, Introduction (release statement)",
+    "checked_on": "2026-10-17",
+    "status": "verified",
+    "canonical_url": "https://github.com/StartLuxLabs/StartLux-Decision",
+    "description": "Open decision models from 0.8B to 27B: a calibrated probability for every option in one pass, and a short thought only when unsure. Engine for vLLM, llama.cpp and MLX.",
+    "private": false
   }
 ]
