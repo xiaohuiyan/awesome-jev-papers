@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-27
+
+- Swept arXiv for first submissions from 2026-10-17 through 2026-10-26 with API queries on "Jev", "System One", "typed decision" and "decision model" (57 unique candidates) and added **48 papers**: 31 direct Jev (use, evaluation or substantive review of the hosted model, version-pinned where stated, e.g. jev-1.13.0 and Jev 1.14) and 17 closely related methods. Catalogue: **222 papers** (149 direct, 69 related, four foundations).
+- Verified every added paper against arXiv metadata and abstracts; inspected targeted full text (LaTeXML HTML, PDF fallback for two papers) for relation decisions, author affiliations and author-linked code. Nine exclusions are logged in the screening ledger (unrelated acronyms, general decision theory, fixed-taxonomy classifiers, incidental mentions), plus the September crypto-accounting benchmark surfaced by the jevmodel.ai citation index.
+- Added 22 verified author-linked GitHub repositories (GitHub API confirmed public; one printed code URL, Iris, was unreachable and stays unverified). 75 papers now have verified code. Screening ledger: 343 candidates (222 included, 119 excluded, 2 pending).
+- Extended the main first-submission window to 2026-10-26 and recorded per-paper verification dates of 2026-10-27.
+- Searched WeChat (Sogou index), Zhihu, Sina Weibo and X (Jev-X, jevmodel.ai); social channels produced no additional verifiable arXiv records — documented with platform limitations and unresolved leads in [the 2026-10-27 social-search audit](docs/SOCIAL_SEARCH_2026-10-27.md).
+
 ## 2026-10-17
 
 - Rechecked user-supplied *Cheap, Consistent, Calibrated, but Biased? Typed Decision Models as Judges* (arXiv:2610.18122); arXiv still shows only v1 (2026-10-13) and the paper was already included as a direct-Jev entry under security with verified author code. No data changes needed; paper count remains 174.

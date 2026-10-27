@@ -2280,6 +2280,470 @@
       "status": "included",
       "reason": "Discovered through a readable WeChat paper roundup; original v2 identifies hosted Jev and evaluates annotation, calibration and routing. Author code verified.",
       "screened_on": "2026-10-17"
+    },
+    {
+      "arxiv_id": "2610.24358",
+      "title": "DKnown-Jev: Fine-Tuning and Evaluation of a JEV-Style Model for Tasks Involving Normative Knowledge",
+      "source_url": "https://arxiv.org/abs/2610.24358v1",
+      "status": "included",
+      "reason": "Abstract or inspected full text establishes use or evaluation of hosted Jev; included under applications.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.24649",
+      "title": "Good Judgment, Bad Advice: Decision-Model Controllers Raise Agent Cost Without Improving Success",
+      "source_url": "https://arxiv.org/abs/2610.24649v1",
+      "status": "included",
+      "reason": "Abstract or inspected full text establishes use or evaluation of hosted Jev; included under agents.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.24692",
+      "title": "Native Probability Outputs for Clinical Triage: An Evaluation of Calibration and Decision Accuracy",
+      "source_url": "https://arxiv.org/abs/2610.24692v1",
+      "status": "included",
+      "reason": "Abstract or inspected full text establishes use or evaluation of hosted Jev; included under applications.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.24929",
+      "title": "What Can't Jev Decide? Probing the Limits of One-Pass Decision Models",
+      "source_url": "https://arxiv.org/abs/2610.24929v1",
+      "status": "included",
+      "reason": "Abstract or inspected full text establishes use or evaluation of hosted Jev; included under evaluation.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.25456",
+      "title": "System X: An LLM Decision Model That Replies from Its Own KV Cache",
+      "source_url": "https://arxiv.org/abs/2610.25456v1",
+      "status": "included",
+      "reason": "Concrete contribution to closely related typed-decision models or interfaces; hosted Jev not used or evaluated.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.25474",
+      "title": "P(Yes): 15$\\times$ Improvements via Test-Time Scaling of Decision Models",
+      "source_url": "https://arxiv.org/abs/2610.25474v1",
+      "status": "included",
+      "reason": "Abstract or inspected full text establishes use or evaluation of hosted Jev; included under architecture.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.25553",
+      "title": "Narrow Decision Models: A System-1 Architecture for Calibrated, Typed Decisions",
+      "source_url": "https://arxiv.org/abs/2610.25553v1",
+      "status": "included",
+      "reason": "Concrete contribution to closely related typed-decision models or interfaces; hosted Jev not used or evaluated.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.25768",
+      "title": "Truncated Reasoning Under a Budget: Evaluating System-1 Models as Decision-Makers",
+      "source_url": "https://arxiv.org/abs/2610.25768v2",
+      "status": "included",
+      "reason": "Abstract or inspected full text establishes use or evaluation of hosted Jev; included under evaluation.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.25784",
+      "title": "UniJev: Separating Accuracy from Calibration in Trimodal System One Decision Models",
+      "source_url": "https://arxiv.org/abs/2610.25784v1",
+      "status": "included",
+      "reason": "Abstract or inspected full text establishes use or evaluation of hosted Jev; included under architecture.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.25843",
+      "title": "A Cue's Hidden Price: Auditing Seller Influence on AI Shoppers",
+      "source_url": "https://arxiv.org/abs/2610.25843v1",
+      "status": "included",
+      "reason": "Abstract or inspected full text establishes use or evaluation of hosted Jev; included under security.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.25947",
+      "title": "Claim Laundering: When Agent Decision Models Trust Records Over Reality",
+      "source_url": "https://arxiv.org/abs/2610.25947v1",
+      "status": "included",
+      "reason": "Abstract or inspected full text establishes use or evaluation of hosted Jev; included under security.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.26002",
+      "title": "TimesJev: Thinking Fast on Time Series with System 1 Sufficiency",
+      "source_url": "https://arxiv.org/abs/2610.26002v1",
+      "status": "included",
+      "reason": "Concrete contribution to closely related typed-decision models or interfaces; hosted Jev not used or evaluated.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.26035",
+      "title": "Decision4Rec: A Jev-Inspired Framework of Decision Models on Knowledge and Active Graphs for Multi-Agent Recommender Systems",
+      "source_url": "https://arxiv.org/abs/2610.26035v1",
+      "status": "included",
+      "reason": "Abstract or inspected full text establishes use or evaluation of hosted Jev; included under applications.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.26325",
+      "title": "Typed Decision Models under Prevalence Shift: Decision Training, Calibration, and Implicit Priors",
+      "source_url": "https://arxiv.org/abs/2610.26325v1",
+      "status": "included",
+      "reason": "Abstract or inspected full text establishes use or evaluation of hosted Jev; included under calibration.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.26793",
+      "title": "SOMA: Continuous Monitoring and Intervention for System Two Reasoning with System One Models",
+      "source_url": "https://arxiv.org/abs/2610.26793v1",
+      "status": "included",
+      "reason": "Abstract or inspected full text establishes use or evaluation of hosted Jev; included under agents.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.26797",
+      "title": "Teacher Supervision, Fixed Representations and Calibration: Exact Risk Calculations for Candidate-Scoring Decision Models",
+      "source_url": "https://arxiv.org/abs/2610.26797v1",
+      "status": "included",
+      "reason": "Concrete contribution to closely related typed-decision models or interfaces; hosted Jev not used or evaluated.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.27099",
+      "title": "A general-purpose System One decision model for clinical records",
+      "source_url": "https://arxiv.org/abs/2610.27099v1",
+      "status": "included",
+      "reason": "Abstract or inspected full text establishes use or evaluation of hosted Jev; included under applications.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.27677",
+      "title": "CovNav: Conformal Prediction-Guided Adaptive Inference for Object Goal Navigation",
+      "source_url": "https://arxiv.org/abs/2610.27677v1",
+      "status": "included",
+      "reason": "Concrete contribution to closely related typed-decision models or interfaces; hosted Jev not used or evaluated.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.27746",
+      "title": "S$^2$-MAS: A Society-Scale Multi-Agent Simulation Framework with 500 Million Household Persona Agents",
+      "source_url": "https://arxiv.org/abs/2610.27746v4",
+      "status": "included",
+      "reason": "Abstract or inspected full text establishes use or evaluation of hosted Jev; included under applications.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.28435",
+      "title": "Multimodal Reranking Is a System One Decision",
+      "source_url": "https://arxiv.org/abs/2610.28435v1",
+      "status": "included",
+      "reason": "Concrete contribution to closely related typed-decision models or interfaces; hosted Jev not used or evaluated.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.28522",
+      "title": "DecisionPivot: A Diagnostic Benchmark for Decision Models in LLM Systems",
+      "source_url": "https://arxiv.org/abs/2610.28522v1",
+      "status": "included",
+      "reason": "Abstract or inspected full text establishes use or evaluation of hosted Jev; included under evaluation. Standalone DecisionPivot benchmark paper; distinct from the StartLux-Decision training paper that introduced the same benchmark name.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.28826",
+      "title": "Decision language models as affordable and rapid alternatives to LLM judges of clinical generative AI",
+      "source_url": "https://arxiv.org/abs/2610.28826v1",
+      "status": "included",
+      "reason": "Abstract or inspected full text establishes use or evaluation of hosted Jev; included under applications.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.28957",
+      "title": "Scan or Index? large Evidence Coverage, Answer Quality, and Cost in Long-Document RAG",
+      "source_url": "https://arxiv.org/abs/2610.28957v1",
+      "status": "included",
+      "reason": "Abstract or inspected full text establishes use or evaluation of hosted Jev; included under agents.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.29052",
+      "title": "Our Own Jev: Typed Decisions in One Forward Pass, from an In-House Judge to Open LoRA Models",
+      "source_url": "https://arxiv.org/abs/2610.29052v1",
+      "status": "included",
+      "reason": "Abstract or inspected full text establishes use or evaluation of hosted Jev; included under architecture.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.29217",
+      "title": "When Multiple Choices Are Correct: Asymmetric Probability Allocation in Jev and Other Decision Models",
+      "source_url": "https://arxiv.org/abs/2610.29217v1",
+      "status": "included",
+      "reason": "Abstract or inspected full text establishes use or evaluation of hosted Jev; included under calibration.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.29961",
+      "title": "Commit or Abstain? System One Decision Models, LLMs, and Missing Legal Authority",
+      "source_url": "https://arxiv.org/abs/2610.29961v1",
+      "status": "included",
+      "reason": "Abstract or inspected full text establishes use or evaluation of hosted Jev; included under calibration.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.30045",
+      "title": "Which Differences Matter? Controlled Tests of Rule Transfer, Joint Reliability, and Information Use in Decision Models",
+      "source_url": "https://arxiv.org/abs/2610.30045v1",
+      "status": "included",
+      "reason": "Abstract or inspected full text establishes use or evaluation of hosted Jev; included under evaluation.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.30777",
+      "title": "One Pretrained Decision Model Is Enough for Training-Free Generalist Graph Anomaly Detection",
+      "source_url": "https://arxiv.org/abs/2610.30777v1",
+      "status": "included",
+      "reason": "Concrete contribution to closely related typed-decision models or interfaces; hosted Jev not used or evaluated.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.30947",
+      "title": "RetiJev: Fast and Source-Grounded Ophthalmic Decision Models",
+      "source_url": "https://arxiv.org/abs/2610.30947v1",
+      "status": "included",
+      "reason": "Abstract or inspected full text establishes use or evaluation of hosted Jev; included under applications.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.31422",
+      "title": "How Well Do Decision Models Transfer to Vietnamese? An Empirical Study of Text Classification",
+      "source_url": "https://arxiv.org/abs/2610.31422v1",
+      "status": "included",
+      "reason": "Abstract or inspected full text establishes use or evaluation of hosted Jev; included under evaluation.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.31521",
+      "title": "Jev-DLC: Decision-Level Continual Learning from Typed Feedback",
+      "source_url": "https://arxiv.org/abs/2610.31521v1",
+      "status": "included",
+      "reason": "Abstract or inspected full text establishes use or evaluation of hosted Jev; included under architecture.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.32318",
+      "title": "System One models Are Not Better Rerankers",
+      "source_url": "https://arxiv.org/abs/2610.32318v1",
+      "status": "included",
+      "reason": "Concrete contribution to closely related typed-decision models or interfaces; hosted Jev not used or evaluated.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.32478",
+      "title": "PathJev: Decision-Native Vision-Language Modelling for Histopathology",
+      "source_url": "https://arxiv.org/abs/2610.32478v1",
+      "status": "included",
+      "reason": "Concrete contribution to closely related typed-decision models or interfaces; hosted Jev not used or evaluated.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.32635",
+      "title": "EditJev: System One Routing for Image Editing Models",
+      "source_url": "https://arxiv.org/abs/2610.32635v1",
+      "status": "included",
+      "reason": "Abstract or inspected full text establishes use or evaluation of hosted Jev; included under agents.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.32955",
+      "title": "Measure Before You Train: Typed Decision Models vs. a Classical Baseline vs. a Generative LLM for Routing a Personal Multilingual Inbox",
+      "source_url": "https://arxiv.org/abs/2610.32955v1",
+      "status": "included",
+      "reason": "Concrete contribution to closely related typed-decision models or interfaces; hosted Jev not used or evaluated.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.33258",
+      "title": "Two Uncertainties Are Not One: Disagreement versus Decision-Risk in Cheap Structured Content Moderation",
+      "source_url": "https://arxiv.org/abs/2610.33258v1",
+      "status": "included",
+      "reason": "Concrete contribution to closely related typed-decision models or interfaces; hosted Jev not used or evaluated. Audited commercial System One model is anonymized, so hosted-Jev identity is not established; included as a related method.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.33410",
+      "title": "Benchmarking System One Models for Time-Series Decision Making: A Case Study of Jev",
+      "source_url": "https://arxiv.org/abs/2610.33410v1",
+      "status": "included",
+      "reason": "Abstract or inspected full text establishes use or evaluation of hosted Jev; included under evaluation.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.33702",
+      "title": "Seeing the Options: Typed Decisions over Visual Candidates with Reusable Option Memory",
+      "source_url": "https://arxiv.org/abs/2610.33702v1",
+      "status": "included",
+      "reason": "Concrete contribution to closely related typed-decision models or interfaces; hosted Jev not used or evaluated. Included although the code URL printed in the abstract was not reachable on the check date; code remains unverified.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.33718",
+      "title": "RoboJev: An Open Vision-Language Judge for Robot Success Detection",
+      "source_url": "https://arxiv.org/abs/2610.33718v1",
+      "status": "included",
+      "reason": "Abstract or inspected full text establishes use or evaluation of hosted Jev; included under applications.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.33775",
+      "title": "The Hitchhiker's Guide to System 1 Models: Fast Decision-Making Beyond LLMS",
+      "source_url": "https://arxiv.org/abs/2610.33775v1",
+      "status": "included",
+      "reason": "Abstract or inspected full text establishes use or evaluation of hosted Jev; included under evaluation.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.34124",
+      "title": "Decision-Native Recommendation with Large Language Models",
+      "source_url": "https://arxiv.org/abs/2610.34124v1",
+      "status": "included",
+      "reason": "Concrete contribution to closely related typed-decision models or interfaces; hosted Jev not used or evaluated.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.34329",
+      "title": "SHIFT-JEV: Certified Abstention and Gain-Gated Continual Adaptation for LLM-Based Decision Models under Distribution Shift",
+      "source_url": "https://arxiv.org/abs/2610.34329v1",
+      "status": "included",
+      "reason": "Concrete contribution to closely related typed-decision models or interfaces; hosted Jev not used or evaluated.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.34626",
+      "title": "Entity Matching using Decision Models",
+      "source_url": "https://arxiv.org/abs/2610.34626v1",
+      "status": "included",
+      "reason": "Abstract or inspected full text establishes use or evaluation of hosted Jev; included under applications.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.34816",
+      "title": "Can System-1-Style Decision Models Replace Dedicated Rerankers in RAG? A Systems Evaluation",
+      "source_url": "https://arxiv.org/abs/2610.34816v1",
+      "status": "included",
+      "reason": "Concrete contribution to closely related typed-decision models or interfaces; hosted Jev not used or evaluated.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.34826",
+      "title": "TrustJev: Separating Policy Authority from Untrusted Evidence in LLM-Based Decisions",
+      "source_url": "https://arxiv.org/abs/2610.34826v1",
+      "status": "included",
+      "reason": "Abstract or inspected full text establishes use or evaluation of hosted Jev; included under security.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.34875",
+      "title": "RubriX: A Fast, Fine-Tunable Non-Autoregressive Rubric Judge",
+      "source_url": "https://arxiv.org/abs/2610.34875v1",
+      "status": "included",
+      "reason": "Abstract or inspected full text establishes use or evaluation of hosted Jev; included under evaluation.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.34956",
+      "title": "Decision Model Factory: Building Specialized Sovereign Decision Models",
+      "source_url": "https://arxiv.org/abs/2610.34956v1",
+      "status": "included",
+      "reason": "Concrete contribution to closely related typed-decision models or interfaces; hosted Jev not used or evaluated.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.35010",
+      "title": "JevVLA: Jev-Inspired Energy-Based Adaptation for Vision-Language-Action Policies",
+      "source_url": "https://arxiv.org/abs/2610.35010v1",
+      "status": "included",
+      "reason": "Concrete contribution to closely related typed-decision models or interfaces; hosted Jev not used or evaluated.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.25496",
+      "title": "From Proposal to Execution: Modeling Interaction Semantics in Shared Autonomy",
+      "source_url": "https://arxiv.org/abs/2610.254962610.25496v2",
+      "status": "excluded",
+      "reason": "Semantics-aware decision framework for shared autonomy; general decision theory without the typed decision-model interface.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.25584",
+      "title": "CVTA: Cross-Variable Temporal Attention for Multivariate Irregular Time Series Prediction",
+      "source_url": "https://arxiv.org/abs/2610.255842610.25584v1",
+      "status": "excluded",
+      "reason": "Time-series forecasting architecture; 'decision model' phrase unrelated to typed decisions over options.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.28827",
+      "title": "WorldStream: Streaming Interactive 3D Worlds with Hierarchical Planning and Persistent State",
+      "source_url": "https://arxiv.org/abs/2610.288272610.28827v1",
+      "status": "excluded",
+      "reason": "3D world model whose planner uses a typed decision model as one component; no contribution to decision models themselves.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.30518",
+      "title": "Protegrity-PII Technical Report",
+      "source_url": "https://arxiv.org/abs/2610.305182610.30518v1",
+      "status": "excluded",
+      "reason": "Fixed-taxonomy PII classification model; 'decision model' naming without caller-supplied options or Jev connection.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.30909",
+      "title": "TwinStore: A Synthetic Consumer Platform Using Vision--Language Models",
+      "source_url": "https://arxiv.org/abs/2610.309092610.30909v1",
+      "status": "excluded",
+      "reason": "Synthetic retail platform; decision models appear only as incidental validation agreement.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.31706",
+      "title": "Where the Data End and the Mechanism Begins: Doubly Robust Causal Digital Twins for Treatment Strategies",
+      "source_url": "https://arxiv.org/abs/2610.317062610.31706v1",
+      "status": "excluded",
+      "reason": "Causal digital twins; 'decision model' used in the causal-inference sense, unrelated to typed decisions.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.32181",
+      "title": "Not All Information Is Worth Asking For: Decision-Informed Information Seeking with LLMs",
+      "source_url": "https://arxiv.org/abs/2610.321812610.32181v1",
+      "status": "excluded",
+      "reason": "Value-of-information acquisition for LLMs; decision-theoretic prompting without decision models.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.32559",
+      "title": "UAV-SwarmAgent: Scalable Multi-UAV Reconnaissance and Task Allocation via Code Generation and Vision-Language Reasoning",
+      "source_url": "https://arxiv.org/abs/2610.325592610.32559v1",
+      "status": "excluded",
+      "reason": "Multi-UAV code-generation system; 'decision model' only as an incidental onboard component.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.33726",
+      "title": "Human-Feedback-Guided Multi-Agent Inverse Reinforcement Learning for Interactive Driving Behavior Modeling",
+      "source_url": "https://arxiv.org/abs/2610.337262610.33726v1",
+      "status": "excluded",
+      "reason": "Multi-agent inverse reinforcement learning for driving; unrelated meaning of 'decision model'.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2609.14811",
+      "title": "Crypto Accounting Bench",
+      "source_url": "https://arxiv.org/abs/2609.14811v1",
+      "status": "excluded",
+      "reason": "Crypto accounting benchmark that does not evaluate Jev or typed decision models; surfaced via the jevmodel.ai citations index.",
+      "screened_on": "2026-10-27"
     }
   ]
 }

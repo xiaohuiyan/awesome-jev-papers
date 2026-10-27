@@ -4,7 +4,7 @@
 
 ## Scope
 
-The main corpus covers first submissions from **2025-10-16 through 2026-10-16**, using the latest arXiv version verified for each paper. A paper first submitted before the window is included only as an explicitly marked foundation. A revision inside the window does not reset the first-submission date.
+The main corpus covers first submissions from **2025-10-16 through 2026-10-26**, using the latest arXiv version verified for each paper. A paper first submitted before the window is included only as an explicitly marked foundation. A revision inside the window does not reset the first-submission date.
 
 Later targeted additions retain the original discovery window and record individual verification dates; a catalogue update does not imply re-verification of every entry. 后续单篇补充保留原始检索时间范围，分别记录核实日期；目录更新不代表全库重新核实。
 
@@ -62,7 +62,7 @@ If the available passages leave technical scope or model identity unresolved, re
 
 ## 中文说明
 
-主目录按首次提交日期覆盖近一年，使用截至 2026-10-16 核实的最新版本；早期基础论文单列。直接相关必须有使用、评测或实质综述托管 Jev 的证据。同类方法可以采用相似接口，但不能仅凭名称推断继承关系或复现了专有架构。
+主目录按首次提交日期覆盖近一年，使用截至 2026-10-27 核实的最新版本；早期基础论文单列。直接相关必须有使用、评测或实质综述托管 Jev 的证据。同类方法可以采用相似接口，但不能仅凭名称推断继承关系或复现了专有架构。
 
 每篇仅归入一个主分类，并使用交叉标签。筛选依据是主题相关性与实质贡献，分数不是论文质量或模型性能评分。大多数条目依据摘要筛选，必要时核查正文；不声称逐篇完成完整实验审计。无法确定的候选留在待核实台账中。
 

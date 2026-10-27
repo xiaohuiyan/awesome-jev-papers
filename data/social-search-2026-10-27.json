@@ -1,0 +1,36 @@
+{
+ "schema_version": 1,
+ "searched_on": "2026-10-27",
+ "time_zone": "Asia/Shanghai",
+ "purpose": "Collect recent Jev, decision-model and System One papers from WeChat, Zhihu, Sina Weibo and X, then verify against original arXiv records and deduplicate.",
+ "recency": "Queries targeted 2026-10-17 through 2026-10-27; discovery date is not paper submission date.",
+ "queries": [
+  {"platform": "WeChat", "tool": "Sogou WeChat public index", "query": "Jev", "url": "https://weixin.sogou.com/weixin?type=2&query=Jev"},
+  {"platform": "WeChat", "tool": "Sogou WeChat public index", "query": "Jev 决策模型", "url": "https://weixin.sogou.com/weixin?type=2&query=Jev+决策模型"},
+  {"platform": "X / Twitter", "tool": "Community index", "query": "jev-x.com recent posts", "url": "https://jev-x.com/"},
+  {"platform": "X / Twitter", "tool": "Vendor citation index", "query": "jevmodel.ai/citations source notes", "url": "https://jevmodel.ai/citations/"},
+  {"platform": "Zhihu", "tool": "Direct search", "query": "Jev 决策模型", "url": "https://www.zhihu.com/search?type=content&q=Jev%20%E5%86%B3%E7%AD%96%E6%A8%A1%E5%9E%8B"},
+  {"platform": "Zhihu", "tool": "Bing proxied site search", "query": "site:zhihu.com Jev 决策模型 arxiv"},
+  {"platform": "Sina Weibo", "tool": "Bing proxied site search", "query": "site:weibo.com Jev arxiv 论文"}
+ ],
+ "outcomes": {
+  "new_papers_from_social": 0,
+  "note": "All 48 additions on 2026-10-27 came from the arXiv API sweep of 2026-10-17..26 submissions. Social channels produced no additional verifiable arXiv records."
+ },
+ "cross_checks": [
+  {"source": "jevmodel.ai/citations", "arxiv_ids_seen": ["2609.29769", "2609.26550", "2609.14811", "2609.37647"],
+   "disposition": "Three already included; 2609.14811 recorded as excluded (crypto accounting benchmark, no Jev or decision-model evaluation)."},
+  {"source": "jev-x.com", "lead": "Post attributed to @rohanpaul_ai (10/25) on a University of Texas paper about fast scoring with reusable agent memory",
+   "disposition": "Matches the included Iris paper (arXiv:2610.33702) from the arXiv sweep; no separate record."}
+ ],
+ "unresolved_leads": [
+  {"lead": "WeChat article 《Jev 决策模型遇上电车难题：提示措辞为何会改变生死选择》 (account 屠荒者), comparing Jev and OpenAI Decisions Luna on trolley-problem prompt sensitivity",
+   "disposition": "No arXiv record located; original article body not read. Kept unresolved; do not treat as a paper."}
+ ],
+ "platform_limitations": [
+  "Zhihu direct search returned HTTP 403 and Bing site: filters were ignored, so Zhihu coverage is an access gap, not evidence of absence.",
+  "Weibo public search remained robots-restricted as in the 2026-10-17 round; no verifiable paper leads.",
+  "The Sogou 'Jev' query is dominated by the Journal of Extracellular Vesicles (JEV), an unrelated acronym.",
+  "WeChat results were product news and tutorials (e.g., Jev-class model launches, UI-automation practice), not research papers."
+ ]
+}

@@ -16,6 +16,41 @@
       "query": "all:\"typed decision\" AND submittedDate:[202510160000 TO 202610162359]",
       "url": "https://export.arxiv.org/api/query?search_query=all%3A%22typed+decision%22+AND+submittedDate%3A%5B202510160000+TO+202610162359%5D&max_results=200&sortBy=submittedDate&sortOrder=descending",
       "count": 49
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 3,
+      "window": "submittedDate 202610170000-202610280000",
+      "query": "abs:\"Jev\""
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 3,
+      "window": "submittedDate 202610170000-202610280000",
+      "query": "abs:\"System One\""
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 3,
+      "window": "submittedDate 202610170000-202610280000",
+      "query": "abs:\"typed decision\""
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 3,
+      "window": "submittedDate 202610170000-202610280000",
+      "query": "abs:\"decision model\""
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 3,
+      "window": "submittedDate 202610170000-202610280000",
+      "query": "ti:\"Jev\""
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 3,
+      "query": "id_list batch metadata fetch for 57 unique candidates"
     }
   ],
   "web_discovery_queries": [
@@ -73,6 +108,48 @@
       "round": 3,
       "query": "Kev decision model arxiv",
       "purpose": "Disambiguate several projects named Kev"
+    },
+    {
+      "round": 3,
+      "query": "weixin.sogou.com WeChat article search: Jev",
+      "purpose": "WeChat paper leads",
+      "result": "Biomed JEV journal false positives"
+    },
+    {
+      "round": 3,
+      "query": "weixin.sogou.com WeChat article search: Jev 决策模型",
+      "purpose": "WeChat paper leads",
+      "result": "Product and tutorial posts; no new arXiv IDs"
+    },
+    {
+      "round": 3,
+      "query": "jev-x.com recent-post index",
+      "purpose": "X/Twitter leads",
+      "result": "No verifiable new arXiv records"
+    },
+    {
+      "round": 3,
+      "query": "jevmodel.ai/citations source index",
+      "purpose": "Cross-check paper coverage",
+      "result": "Three known IDs; 2609.14811 excluded as unrelated"
+    },
+    {
+      "round": 3,
+      "query": "bing site:zhihu.com Jev 决策模型 arxiv",
+      "purpose": "Zhihu leads",
+      "result": "site: filter ignored; no zhihu results returned"
+    },
+    {
+      "round": 3,
+      "query": "bing site:weibo.com Jev arxiv 论文",
+      "purpose": "Weibo leads",
+      "result": "site: filter ignored; no weibo results returned"
+    },
+    {
+      "round": 3,
+      "query": "zhihu.com search Jev 决策模型",
+      "purpose": "Zhihu leads",
+      "result": "HTTP 403; access gap"
     }
   ],
   "arxiv_site_search": {
@@ -86,10 +163,10 @@
       "purpose": "Early Jev corpus and four foundational methods"
     }
   ],
-  "unique_candidates": 285,
+  "unique_candidates": 343,
   "outcomes": {
-    "included": 174,
-    "excluded": 109,
+    "included": 222,
+    "excluded": 119,
     "pending": 2
   },
   "limitations": [
@@ -97,9 +174,10 @@
     "Most papers were screened at abstract level; selected ambiguous relations were checked in full text.",
     "No citation-count data or independent experimental reproduction was collected.",
     "Code links are included only when author-linked and reachable; absence of a link means not verified.",
-    "Broad discovery ends on 2026-10-16. Later targeted additions are logged separately and do not imply a fresh search or re-verification of the entire corpus."
+    "Broad discovery ends on 2026-10-16. Later targeted additions are logged separately and do not imply a fresh search or re-verification of the entire corpus.",
+    "2026-10-27 round: Zhihu and Weibo returned no usable public search results (403 or ignored site filters); WeChat coverage relied on the Sogou public index."
   ],
-  "updated_on": "2026-10-17",
+  "updated_on": "2026-10-27",
   "targeted_additions": [
     {
       "reviewed_on": "2026-10-17",
@@ -134,6 +212,19 @@
         "2609.24574"
       ],
       "coverage": "Public web indexes and accessible original pages; not a complete authenticated in-platform search."
+    },
+    {
+      "searched_on": "2026-10-27",
+      "record": "data/social-search-2026-10-27.json",
+      "report": "docs/SOCIAL_SEARCH_2026-10-27.md",
+      "platforms": [
+        "WeChat",
+        "Zhihu",
+        "Sina Weibo",
+        "X / Twitter"
+      ],
+      "added_papers": 0,
+      "note": "Social channels supplied no additional new arXiv records beyond the arXiv API sweep; one unrelated September ID was excluded."
     }
   ],
   "targeted_rechecks": [
