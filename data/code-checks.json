@@ -823,5 +823,27 @@
     "canonical_url": "https://github.com/ZJU4EmbodiedAI/JevVLA",
     "description": null,
     "private": false
+  },
+  {
+    "arxiv_id": "2610.02638",
+    "url": "https://github.com/adventists-ai/duplexjev",
+    "source_url": "https://arxiv.org/abs/2610.02638v1",
+    "source_location": "arXiv comments",
+    "checked_on": "2026-10-27",
+    "status": "verified",
+    "canonical_url": "https://github.com/adventists-ai/duplexjev",
+    "description": "DuplexJev-32B and DuplexJev-4B: speech decision models for full-duplex voice agents. Typed single-token readout from a frozen speech LLM, served with vLLM. Try it: api.adventists.cn/duplexjev",
+    "private": false
+  },
+  {
+    "arxiv_id": "2610.23170",
+    "url": "https://github.com/yanqiangmiffy/chinese-decision",
+    "source_url": "https://arxiv.org/abs/2610.23170v2",
+    "source_location": "arXiv comments",
+    "checked_on": "2026-10-27",
+    "status": "verified",
+    "canonical_url": "https://github.com/yanqiangmiffy/chinese-decision",
+    "description": "A Chinese probabilistic decision model: one forward pass, straight to candidate probabilities",
+    "private": false
   }
 ]

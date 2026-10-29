@@ -3750,6 +3750,82 @@
       "source_abstract_sha256": "cf4f34ccd8b54bd7040b1649ddea58d0822c45e8c9576070fc15756d1e63e985"
     },
     {
+      "arxiv_id": "2610.23170",
+      "title": "Chinese Decision: A Family of Language Models for Single-Pass Probabilistic Decision-Making",
+      "authors": [
+        "Qiang Yan"
+      ],
+      "affiliations": [
+        "Institute of Computing Technology, Chinese Academy of Sciences"
+      ],
+      "first_submitted": "2026-10-16",
+      "updated": "2026-10-23",
+      "version": 2,
+      "arxiv_url": "https://arxiv.org/abs/2610.23170",
+      "reviewed_url": "https://arxiv.org/abs/2610.23170v2",
+      "pdf_url": "https://arxiv.org/pdf/2610.23170v2",
+      "arxiv_categories": [
+        "cs.CL"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "architecture",
+      "relation_level": "direct",
+      "tags": [
+        "architecture",
+        "training",
+        "calibration"
+      ],
+      "summary": {
+        "en": "Adapts Qwen3.5 causal LMs into Chinese decision models that read candidate-letter logits in one pass, and compares them on CJ-Bench with Jev and Chinese-Jev results reported by Chinese-Jev.",
+        "zh": "把 Qwen3.5 因果语言模型改造成单次前向读取候选字母 logits 的中文决策模型，并在 CJ-Bench 上与 Chinese-Jev 报告的 Jev、Chinese-Jev 结果比较。"
+      },
+      "problem": {
+        "en": "Can one Chinese causal LM serve typed decisions across domains?",
+        "zh": "一个中文因果语言模型能否跨领域承担类型化决策？"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "6.49 points above Chinese-Jev General and 7.34 points above Jev",
+          "source_url": "https://arxiv.org/html/2610.23170v2",
+          "location": "Section 5.1, Accuracy and Calibration by Domain (PDF)"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "a single forward pass reads the final-position logits of the candidate letters",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.23170v2"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-10-27",
+      "code": [
+        {
+          "url": "https://github.com/yanqiangmiffy/chinese-decision",
+          "source_url": "https://arxiv.org/abs/2610.23170v2",
+          "source_location": "arXiv comments",
+          "verified_on": "2026-10-27",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.23170v2",
+      "source_abstract_sha256": "518a8e9cdd098df8107242627b4b892f070c002b2fd07331a8a53a52eb168013"
+    },
+    {
       "arxiv_id": "2610.22276",
       "title": "MJev-Spatial: System One Spatial Intelligence via Native Attention Matching",
       "authors": [
@@ -4328,6 +4404,75 @@
           "zh": "哪些判断可以交给快模型，哪些需要进一步推理？"
         }
       }
+    },
+    {
+      "arxiv_id": "2610.21150",
+      "title": "VoxTurn: Answering Several Turn-Taking Questions in One Pass with One Model",
+      "authors": [
+        "Yang Xiao"
+      ],
+      "affiliations": [
+        "The University of Melbourne"
+      ],
+      "first_submitted": "2026-10-15",
+      "updated": "2026-10-15",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.21150",
+      "reviewed_url": "https://arxiv.org/abs/2610.21150v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.21150v1",
+      "arxiv_categories": [
+        "eess.AS",
+        "cs.SD"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "related",
+      "tags": [
+        "applications",
+        "multimodal",
+        "efficiency"
+      ],
+      "summary": {
+        "en": "Casts voice-agent turn-taking decisions as multiple-choice questions for a 0.8B speech LLM and answers several of them in one pass under a block-isolating attention mask.",
+        "zh": "把语音智能体的轮次判断写成多选题交给 0.8B 语音 LLM，并用块隔离注意力掩码在一次前向中回答其中多个问题。"
+      },
+      "problem": {
+        "en": "Can one voice model answer several turn-taking questions in one pass?",
+        "zh": "一个语音模型能否在一次前向中回答多个轮次判断问题？"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "casts these decisions as multiple-choice questions",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.21150v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "in one forward pass with a block-isolating attention mask",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.21150v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-10-27",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.21150v1",
+      "source_abstract_sha256": "0bcc877dec324ef07b72714a679aaabc209f56b7afd2957897a0845b92bf6e11"
     },
     {
       "arxiv_id": "2610.20927",
@@ -10366,6 +10511,92 @@
       "code": [],
       "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.03073v2",
       "source_abstract_sha256": "3475324b78c1bc087406f26aa6fbb024f0e57a395d9fcfba9c244cfa73b6929c"
+    },
+    {
+      "arxiv_id": "2610.02638",
+      "title": "Batched Speech Decisions Without Decoding: Single-Token Supervision Lets a Frozen LLM Hear Beyond the Transcript",
+      "authors": [
+        "Jie Jin",
+        "Ziyin Ma",
+        "Min Yin",
+        "Jinyu Chen",
+        "Haigang Song",
+        "Zhikun Pang",
+        "Xiaowen Zhang"
+      ],
+      "affiliations": [
+        "Adventists.ai",
+        "College of Computer Science and Technology, Zhejiang University",
+        "Future Design Lab, Innovation Center of Yangtze River Delta, Zhejiang University",
+        "University of Virginia"
+      ],
+      "first_submitted": "2026-10-02",
+      "updated": "2026-10-02",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.02638",
+      "reviewed_url": "https://arxiv.org/abs/2610.02638v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02638v1",
+      "arxiv_categories": [
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "related",
+      "tags": [
+        "applications",
+        "multimodal",
+        "efficiency",
+        "training"
+      ],
+      "summary": {
+        "en": "Feeds speech into a frozen LLM through a small connector and reads each closed question as a single-token letter distribution, encoding the shared prefix once for packed question suffixes.",
+        "zh": "通过小型连接器把语音送入冻结 LLM，把每个封闭问题读成单 token 字母分布，并让打包的问题后缀共享一次编码的前缀。"
+      },
+      "problem": {
+        "en": "Can a frozen LLM answer many speech decisions without decoding?",
+        "zh": "冻结的 LLM 能否不经解码、直接从语音回答大量决策问题？"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "reads each question as a single-token distribution over its options",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.02638v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "Nothing is decoded, and an 8-GPU node answers 80 decisions",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.02638v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-10-27",
+      "code": [
+        {
+          "url": "https://github.com/adventists-ai/duplexjev",
+          "source_url": "https://arxiv.org/abs/2610.02638v1",
+          "source_location": "arXiv comments",
+          "verified_on": "2026-10-27",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.02638v1",
+      "source_abstract_sha256": "3cfed103d03dca367b01c9ef390fa5ab7faf7c32ed665e213a80598651eb7ad4"
     },
     {
       "arxiv_id": "2610.02586",

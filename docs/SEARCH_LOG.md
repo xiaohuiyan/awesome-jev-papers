@@ -16,6 +16,7 @@ The complete machine-readable record is [search-log.json](../data/search-log.jso
 ## Targeted additions
 
 - **2026-10-17:** Added the user-supplied [StartLux-Decision](https://arxiv.org/abs/2610.17309v1), first submitted on 2026-10-12. Verified official Atom metadata, the abstract, full-text Jev comparisons (Table 4 and Figure 11), and the author-linked public code repository. Classified as direct Jev / architectures and training. This addition does not represent a new broad search or re-verification of existing entries.
+- **2026-10-27:** Added three papers surfaced by a user-requested survey of shared-state, multi-question inference (Semantic Scholar keyword searches and the related-work section of [Verdict-MQ](https://arxiv.org/html/2610.20778v1)): [Chinese Decision](https://arxiv.org/abs/2610.23170v2) as direct Jev (Section 5.1 compares with reported hosted-Jev results), and [DuplexJev](https://arxiv.org/abs/2610.02638v1) and [VoxTurn](https://arxiv.org/abs/2610.21150v1) as related methods. Three neighbouring candidates from the same survey were excluded; see the screening ledger. Like the 2026-10-17 addition, this is not a new broad search.
 
 ## Current outcomes (2026-10-17)
 

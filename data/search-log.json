@@ -163,10 +163,10 @@
       "purpose": "Early Jev corpus and four foundational methods"
     }
   ],
-  "unique_candidates": 343,
+  "unique_candidates": 349,
   "outcomes": {
-    "included": 222,
-    "excluded": 119,
+    "included": 225,
+    "excluded": 122,
     "pending": 2
   },
   "limitations": [
@@ -195,6 +195,30 @@
       "metadata_source": "https://export.arxiv.org/api/query?id_list=2609.24574v2",
       "full_text_source": "https://arxiv.org/html/2609.24574v2",
       "result": "Included: direct Jev; comparative evaluation."
+    },
+    {
+      "reviewed_on": "2026-10-27",
+      "arxiv_id": "2610.02638",
+      "discovery": "Surfaced in a user-requested survey of shared-state, multi-question inference (Semantic Scholar searches; Verdict-MQ related work)",
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.02638v1",
+      "full_text_source": "https://arxiv.org/pdf/2610.02638v1",
+      "result": "Included: related method; Domain applications and deployment efficiency category."
+    },
+    {
+      "reviewed_on": "2026-10-27",
+      "arxiv_id": "2610.21150",
+      "discovery": "Surfaced in a user-requested survey of shared-state, multi-question inference (Semantic Scholar searches; Verdict-MQ related work)",
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.21150v1",
+      "full_text_source": "https://arxiv.org/pdf/2610.21150v1",
+      "result": "Included: related method; Domain applications and deployment efficiency category."
+    },
+    {
+      "reviewed_on": "2026-10-27",
+      "arxiv_id": "2610.23170",
+      "discovery": "Surfaced in a user-requested survey of shared-state, multi-question inference (Semantic Scholar searches; Verdict-MQ related work)",
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.23170v2",
+      "full_text_source": "https://arxiv.org/pdf/2610.23170v2",
+      "result": "Included: direct Jev; Model architectures and training category."
     }
   ],
   "social_searches": [

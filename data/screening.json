@@ -2668,7 +2668,7 @@
     {
       "arxiv_id": "2610.25496",
       "title": "From Proposal to Execution: Modeling Interaction Semantics in Shared Autonomy",
-      "source_url": "https://arxiv.org/abs/2610.254962610.25496v2",
+      "source_url": "https://arxiv.org/abs/2610.25496v2",
       "status": "excluded",
       "reason": "Semantics-aware decision framework for shared autonomy; general decision theory without the typed decision-model interface.",
       "screened_on": "2026-10-27"
@@ -2676,7 +2676,7 @@
     {
       "arxiv_id": "2610.25584",
       "title": "CVTA: Cross-Variable Temporal Attention for Multivariate Irregular Time Series Prediction",
-      "source_url": "https://arxiv.org/abs/2610.255842610.25584v1",
+      "source_url": "https://arxiv.org/abs/2610.25584v1",
       "status": "excluded",
       "reason": "Time-series forecasting architecture; 'decision model' phrase unrelated to typed decisions over options.",
       "screened_on": "2026-10-27"
@@ -2684,7 +2684,7 @@
     {
       "arxiv_id": "2610.28827",
       "title": "WorldStream: Streaming Interactive 3D Worlds with Hierarchical Planning and Persistent State",
-      "source_url": "https://arxiv.org/abs/2610.288272610.28827v1",
+      "source_url": "https://arxiv.org/abs/2610.28827v1",
       "status": "excluded",
       "reason": "3D world model whose planner uses a typed decision model as one component; no contribution to decision models themselves.",
       "screened_on": "2026-10-27"
@@ -2692,7 +2692,7 @@
     {
       "arxiv_id": "2610.30518",
       "title": "Protegrity-PII Technical Report",
-      "source_url": "https://arxiv.org/abs/2610.305182610.30518v1",
+      "source_url": "https://arxiv.org/abs/2610.30518v1",
       "status": "excluded",
       "reason": "Fixed-taxonomy PII classification model; 'decision model' naming without caller-supplied options or Jev connection.",
       "screened_on": "2026-10-27"
@@ -2700,7 +2700,7 @@
     {
       "arxiv_id": "2610.30909",
       "title": "TwinStore: A Synthetic Consumer Platform Using Vision--Language Models",
-      "source_url": "https://arxiv.org/abs/2610.309092610.30909v1",
+      "source_url": "https://arxiv.org/abs/2610.30909v1",
       "status": "excluded",
       "reason": "Synthetic retail platform; decision models appear only as incidental validation agreement.",
       "screened_on": "2026-10-27"
@@ -2708,7 +2708,7 @@
     {
       "arxiv_id": "2610.31706",
       "title": "Where the Data End and the Mechanism Begins: Doubly Robust Causal Digital Twins for Treatment Strategies",
-      "source_url": "https://arxiv.org/abs/2610.317062610.31706v1",
+      "source_url": "https://arxiv.org/abs/2610.31706v1",
       "status": "excluded",
       "reason": "Causal digital twins; 'decision model' used in the causal-inference sense, unrelated to typed decisions.",
       "screened_on": "2026-10-27"
@@ -2716,7 +2716,7 @@
     {
       "arxiv_id": "2610.32181",
       "title": "Not All Information Is Worth Asking For: Decision-Informed Information Seeking with LLMs",
-      "source_url": "https://arxiv.org/abs/2610.321812610.32181v1",
+      "source_url": "https://arxiv.org/abs/2610.32181v1",
       "status": "excluded",
       "reason": "Value-of-information acquisition for LLMs; decision-theoretic prompting without decision models.",
       "screened_on": "2026-10-27"
@@ -2724,7 +2724,7 @@
     {
       "arxiv_id": "2610.32559",
       "title": "UAV-SwarmAgent: Scalable Multi-UAV Reconnaissance and Task Allocation via Code Generation and Vision-Language Reasoning",
-      "source_url": "https://arxiv.org/abs/2610.325592610.32559v1",
+      "source_url": "https://arxiv.org/abs/2610.32559v1",
       "status": "excluded",
       "reason": "Multi-UAV code-generation system; 'decision model' only as an incidental onboard component.",
       "screened_on": "2026-10-27"
@@ -2732,7 +2732,7 @@
     {
       "arxiv_id": "2610.33726",
       "title": "Human-Feedback-Guided Multi-Agent Inverse Reinforcement Learning for Interactive Driving Behavior Modeling",
-      "source_url": "https://arxiv.org/abs/2610.337262610.33726v1",
+      "source_url": "https://arxiv.org/abs/2610.33726v1",
       "status": "excluded",
       "reason": "Multi-agent inverse reinforcement learning for driving; unrelated meaning of 'decision model'.",
       "screened_on": "2026-10-27"
@@ -2743,6 +2743,54 @@
       "source_url": "https://arxiv.org/abs/2609.14811v1",
       "status": "excluded",
       "reason": "Crypto accounting benchmark that does not evaluate Jev or typed decision models; surfaced via the jevmodel.ai citations index.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.02638",
+      "title": "Batched Speech Decisions Without Decoding: Single-Token Supervision Lets a Frozen LLM Hear Beyond the Transcript",
+      "source_url": "https://arxiv.org/abs/2610.02638v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.21150",
+      "title": "VoxTurn: Answering Several Turn-Taking Questions in One Pass with One Model",
+      "source_url": "https://arxiv.org/abs/2610.21150v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.23170",
+      "title": "Chinese Decision: A Family of Language Models for Single-Pass Probabilistic Decision-Making",
+      "source_url": "https://arxiv.org/abs/2610.23170v2",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2604.10966",
+      "title": "You Only Judge Once: Multi-response Reward Modeling in a Single Forward Pass",
+      "source_url": "https://arxiv.org/abs/2604.10966v2",
+      "status": "excluded",
+      "reason": "Multimodal reward model that scores candidate responses in one pass; reward modeling rather than a typed decision interface or Jev evaluation.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2604.27599",
+      "title": "One Pass, Any Order: Position-Invariant Listwise Reranking for LLM-Based Recommendation",
+      "source_url": "https://arxiv.org/abs/2604.27599v1",
+      "status": "excluded",
+      "reason": "Position-invariant listwise reranking for recommendation; neighboring ranking topic without a typed decision interface or Jev evaluation.",
+      "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2601.08343",
+      "title": "When KV Cache Reuse Fails in Multi-Agent Systems: Cross-Candidate Interaction is Crucial for LLM Judges",
+      "source_url": "https://arxiv.org/abs/2601.08343v1",
+      "status": "excluded",
+      "reason": "KV-cache reuse study for LLM judges in multi-agent pipelines; neighboring inference-efficiency topic without a typed decision interface or Jev evaluation.",
       "screened_on": "2026-10-27"
     }
   ]

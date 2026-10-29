@@ -12,7 +12,7 @@
 
 | 收录论文 | Jev 直接相关 | 同类模型与方法 | 基础背景 | 含已核实代码 |
 | ---: | ---: | ---: | ---: | ---: |
-| **222** | 149 | 69 | 4 | 75 |
+| **225** | 150 | 71 | 4 | 77 |
 
 更新于 **2026-10-27** · 主要收录窗口 **2025-10-16—2026-10-26**（首次提交日期）
 
@@ -50,12 +50,12 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 | 你想了解什么？ | 主题 | 直接 / 相关 | 合计 |
 | --- | --- | ---: | ---: |
-| 怎样训练一个专门做选择的模型？ | [模型架构与训练方法](#architecture) | 9 / 31 | 40 |
+| 怎样训练一个专门做选择的模型？ | [模型架构与训练方法](#architecture) | 10 / 31 | 41 |
 | 快决策在哪些任务上够用？ | [基准测试与比较评估](#evaluation) | 25 / 5 | 30 |
 | 模型说有把握，真的可靠吗？ | [概率校准、可靠性与选择性决策](#calibration) | 15 / 8 | 23 |
 | 何时搜索、调用工具或交给更强的模型？ | [搜索、记忆、工具与智能体决策](#agents) | 29 / 8 | 37 |
 | 换个问法或选项顺序，会不会改变判断？ | [安全、鲁棒性与决策偏置](#security) | 30 / 5 | 35 |
-| 放进真实工作流，质量与速度如何取舍？ | [领域应用与部署效率](#applications) | 41 / 12 | 53 |
+| 放进真实工作流，质量与速度如何取舍？ | [领域应用与部署效率](#applications) | 41 / 14 | 55 |
 
 每篇只计入一个主分类；另有 4 篇基础背景。每类先列 Jev 直接相关，再列同类方法；组内按首次提交日期倒序排列。条目保留发表时间、作者、单位、解决问题与核心贡献；单位取自论文原文（HTML 全文或 PDF 首页），9 篇未署名单位的论文不展示该项。完整作者名单、标签与核实记录见[证据台账](docs/EVIDENCE.md)与 [BibTeX](references.bib)。
 
@@ -66,7 +66,7 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 [返回分类导航](#category-index)
 
-### Jev 直接相关 · 9
+### Jev 直接相关 · 10
 
 <a id="paper-2610-31521"></a>
 #### [Jev-DLC: Decision-Level Continual Learning from Typed Feedback](https://arxiv.org/abs/2610.31521v1) · [PDF](https://arxiv.org/pdf/2610.31521v1)
@@ -99,6 +99,14 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🏢 单位**：Tear Labs；University of Maryland, College Park
 - **🎯 解决问题**：冻结的决策模型能否靠测试时搜索变得更好？
 - **💡 核心贡献**：搜索冻结决策模型评分高于自身提案的完整答案，应用于托管 JEV 与开源模型，大幅提升精确匹配率。
+---
+<a id="paper-2610-23170"></a>
+#### [Chinese Decision: A Family of Language Models for Single-Pass Probabilistic Decision-Making](https://arxiv.org/abs/2610.23170v2) · [PDF](https://arxiv.org/pdf/2610.23170v2) · [代码](https://github.com/yanqiangmiffy/chinese-decision)
+- **📅 发表时间**：2026-10-16（v2）
+- **👥 作者**：Qiang Yan
+- **🏢 单位**：Institute of Computing Technology, Chinese Academy of Sciences
+- **🎯 解决问题**：一个中文因果语言模型能否跨领域承担类型化决策？
+- **💡 核心贡献**：把 Qwen3.5 因果语言模型改造成单次前向读取候选字母 logits 的中文决策模型，并在 CJ-Bench 上与 Chinese-Jev 报告的 Jev、Chinese-Jev 结果比较。
 ---
 <a id="paper-2610-22131"></a>
 #### [Intern-Decision: Efficient Multimodal Decision Making with Autoregressive Masked Language Modeling](https://arxiv.org/abs/2610.22131v1) · [PDF](https://arxiv.org/pdf/2610.22131v1)
@@ -1758,7 +1766,7 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🎯 解决问题**：边缘服务编排能否用低延迟决策模型替代 LLM？
 - **💡 核心贡献**：将 Jev 接入边缘服务编排，测量经核验请求、准入行为和执行结果。
 ---
-### 同类模型与方法 · 12
+### 同类模型与方法 · 14
 
 <a id="paper-2610-34124"></a>
 #### [Decision-Native Recommendation with Large Language Models](https://arxiv.org/abs/2610.34124v1) · [PDF](https://arxiv.org/pdf/2610.34124v1)
@@ -1792,6 +1800,14 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🎯 解决问题**：预训练决策模型能否免训练解读图异常？
 - **💡 核心贡献**：把结构、属性、邻域统计转为决策状态，由冻结模型读出并与统计分数融合。
 ---
+<a id="paper-2610-21150"></a>
+#### [VoxTurn: Answering Several Turn-Taking Questions in One Pass with One Model](https://arxiv.org/abs/2610.21150v1) · [PDF](https://arxiv.org/pdf/2610.21150v1)
+- **📅 发表时间**：2026-10-15（v1）
+- **👥 作者**：Yang Xiao
+- **🏢 单位**：The University of Melbourne
+- **🎯 解决问题**：一个语音模型能否在一次前向中回答多个轮次判断问题？
+- **💡 核心贡献**：把语音智能体的轮次判断写成多选题交给 0.8B 语音 LLM，并用块隔离注意力掩码在一次前向中回答其中多个问题。
+---
 <a id="paper-2610-15029"></a>
 #### [Toward System One Clinical Intelligence: Parameter-Efficient Fine-Tuning and Counterfactual Explainability of Decision Foundation Models](https://arxiv.org/abs/2610.15029v1) · [PDF](https://arxiv.org/pdf/2610.15029v1)
 - **📅 发表时间**：2026-10-10（v1）
@@ -1823,6 +1839,14 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🏢 单位**：School of Electrical, Mechanical and Biomedical Engineering, University of Technology Sydney
 - **🎯 解决问题**：语义决策引擎接入有时限的网络控制闭环，需要满足什么条件？
 - **💡 核心贡献**：总结将语义决策引擎接入有时限网络控制闭环所需的条件。
+---
+<a id="paper-2610-02638"></a>
+#### [Batched Speech Decisions Without Decoding: Single-Token Supervision Lets a Frozen LLM Hear Beyond the Transcript](https://arxiv.org/abs/2610.02638v1) · [PDF](https://arxiv.org/pdf/2610.02638v1) · [代码](https://github.com/adventists-ai/duplexjev)
+- **📅 发表时间**：2026-10-02（v1）
+- **👥 作者**：Jie Jin；Ziyin Ma；Min Yin 等（共 7 位）
+- **🏢 单位**：Adventists.ai；College of Computer Science and Technology, Zhejiang University；Future Design Lab, Innovation Center of Yangtze River Delta, Zhejiang University；University of Virginia
+- **🎯 解决问题**：冻结的 LLM 能否不经解码、直接从语音回答大量决策问题？
+- **💡 核心贡献**：通过小型连接器把语音送入冻结 LLM，把每个封闭问题读成单 token 字母分布，并让打包的问题后缀共享一次编码的前缀。
 ---
 <a id="paper-2610-01231"></a>
 #### [Judgement in the Age of Jev: From Evaluation Scarcity to Evaluation Abundance](https://arxiv.org/abs/2610.01231v1) · [PDF](https://arxiv.org/pdf/2610.01231v1)

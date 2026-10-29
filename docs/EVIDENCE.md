@@ -675,6 +675,20 @@ Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence
 
 Metadata: [reviewed v1](https://arxiv.org/abs/2610.24358v1); first submitted 2026-10-17; updated 2026-10-17. Full authors: Qi Li; Jianjun Xu; Pingtao Wei.
 
+<a id="evidence-2610-23170"></a>
+## 2610.23170 — Chinese Decision: A Family of Language Models for Single-Pass Probabilistic Decision-Making
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-10-27
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。
+
+- **topic**: “6.49 points above Chinese-Jev General and 7.34 points above Jev” — [Section 5.1, Accuracy and Calibration by Domain (PDF)](https://arxiv.org/html/2610.23170v2)
+- **contribution**: “a single forward pass reads the final-position logits of the candidate letters” — [Abstract](https://arxiv.org/abs/2610.23170v2)
+
+Metadata: [reviewed v2](https://arxiv.org/abs/2610.23170v2); first submitted 2026-10-16; updated 2026-10-23. Full authors: Qiang Yan.
+
 <a id="evidence-2610-22276"></a>
 ## 2610.22276 — MJev-Spatial: System One Spatial Intelligence via Native Attention Matching
 
@@ -772,6 +786,20 @@ Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence
 - **contribution**: “We introduce System1-Arena, a benchmark that gives all models the same” — [Abstract](https://arxiv.org/abs/2610.21244v1)
 
 Metadata: [reviewed v1](https://arxiv.org/abs/2610.21244v1); first submitted 2026-10-15; updated 2026-10-15. Full authors: Tianyu Chen; Xinyang Liu; Ruyi An; Zhendong Wang; Mingyuan Zhou.
+
+<a id="evidence-2610-21150"></a>
+## 2610.21150 — VoxTurn: Answering Several Turn-Taking Questions in One Pass with One Model
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-10-27
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “casts these decisions as multiple-choice questions” — [Abstract](https://arxiv.org/abs/2610.21150v1)
+- **contribution**: “in one forward pass with a block-isolating attention mask” — [Abstract](https://arxiv.org/abs/2610.21150v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2610.21150v1); first submitted 2026-10-15; updated 2026-10-15. Full authors: Yang Xiao.
 
 <a id="evidence-2610-20927"></a>
 ## 2610.20927 — Prune the Summary, Not the History: Source-Judged Compaction for Long-Horizon Agents
@@ -1878,6 +1906,20 @@ A closely related decision model or method; no claim of reproducing proprietary 
 - **contribution**: “We introduce SecJev, to our knowledge the first family of Jev-style” — [Abstract](https://arxiv.org/abs/2610.03073v2)
 
 Metadata: [reviewed v2](https://arxiv.org/abs/2610.03073v2); first submitted 2026-10-02; updated 2026-10-14. Full authors: Zheng Chen; Fei Yu; Haohao Huang; Yang Li; Anlong Chen; Lei Chen.
+
+<a id="evidence-2610-02638"></a>
+## 2610.02638 — Batched Speech Decisions Without Decoding: Single-Token Supervision Lets a Frozen LLM Hear Beyond the Transcript
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-10-27
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “reads each question as a single-token distribution over its options” — [Abstract](https://arxiv.org/abs/2610.02638v1)
+- **contribution**: “Nothing is decoded, and an 8-GPU node answers 80 decisions” — [Abstract](https://arxiv.org/abs/2610.02638v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2610.02638v1); first submitted 2026-10-02; updated 2026-10-02. Full authors: Jie Jin; Ziyin Ma; Min Yin; Jinyu Chen; Haigang Song; Zhikun Pang; Xiaowen Zhang.
 
 <a id="evidence-2610-02586"></a>
 ## 2610.02586 — Labels Override Definitions in Jev-Style Typed Decision Models

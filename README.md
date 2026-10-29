@@ -12,7 +12,7 @@ This reading list asks a concrete question: given context and a set of options, 
 
 | Papers | Direct Jev | Related methods | Foundations | With verified code |
 | ---: | ---: | ---: | ---: | ---: |
-| **222** | 149 | 69 | 4 | 75 |
+| **225** | 150 | 71 | 4 | 77 |
 
 Updated **2026-10-27** · Main window **2025-10-16–2026-10-26** (first submission)
 
@@ -50,12 +50,12 @@ Suggested path: **assess the evidence → compare capabilities → understand mo
 
 | Your question | Topic | Direct / related | Total |
 | --- | --- | ---: | ---: |
-| How do we train a model specifically to choose? | [Model architectures and training](#architecture) | 9 / 31 | 40 |
+| How do we train a model specifically to choose? | [Model architectures and training](#architecture) | 10 / 31 | 41 |
 | When are fast decisions good enough? | [Benchmarks and comparative evaluation](#evaluation) | 25 / 5 | 30 |
 | Can we trust the model's confidence? | [Calibration, reliability and selective decisions](#calibration) | 15 / 8 | 23 |
 | When should an agent search, use a tool, or delegate? | [Search, memory, tools and agent decisions](#agents) | 29 / 8 | 37 |
 | Can phrasing, option order, or attacks change the decision? | [Security, robustness and decision bias](#security) | 30 / 5 | 35 |
-| How do quality and speed trade off in real workflows? | [Domain applications and deployment efficiency](#applications) | 41 / 12 | 53 |
+| How do quality and speed trade off in real workflows? | [Domain applications and deployment efficiency](#applications) | 41 / 14 | 55 |
 
 Each paper has one primary category; 4 foundations are listed separately. Categories group direct Jev work before related methods, with newest first submissions first within each group. Entries keep published date, authors, affiliations, problem, and contribution; affiliations come from the papers themselves (HTML full text or PDF first page), and nine papers that state none omit the field. Full author lists, tags, and verification records live in the [evidence ledger](docs/EVIDENCE.md) and [BibTeX](references.bib).
 
@@ -66,7 +66,7 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 9
+### Direct Jev · 10
 
 <a id="paper-2610-31521"></a>
 #### [Jev-DLC: Decision-Level Continual Learning from Typed Feedback](https://arxiv.org/abs/2610.31521v1) · [PDF](https://arxiv.org/pdf/2610.31521v1)
@@ -99,6 +99,14 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🏢 Affiliations**: Tear Labs; University of Maryland, College Park
 - **🎯 Problem**: Can frozen decision models improve by searching at test time?
 - **💡 Contribution**: Searches for complete answers that frozen decision models rate above their own proposal, applied to hosted JEV and open models with large exact-match gains.
+---
+<a id="paper-2610-23170"></a>
+#### [Chinese Decision: A Family of Language Models for Single-Pass Probabilistic Decision-Making](https://arxiv.org/abs/2610.23170v2) · [PDF](https://arxiv.org/pdf/2610.23170v2) · [Code](https://github.com/yanqiangmiffy/chinese-decision)
+- **📅 Published**: 2026-10-16 (v2)
+- **👥 Authors**: Qiang Yan
+- **🏢 Affiliations**: Institute of Computing Technology, Chinese Academy of Sciences
+- **🎯 Problem**: Can one Chinese causal LM serve typed decisions across domains?
+- **💡 Contribution**: Adapts Qwen3.5 causal LMs into Chinese decision models that read candidate-letter logits in one pass, and compares them on CJ-Bench with Jev and Chinese-Jev results reported by Chinese-Jev.
 ---
 <a id="paper-2610-22131"></a>
 #### [Intern-Decision: Efficient Multimodal Decision Making with Autoregressive Masked Language Modeling](https://arxiv.org/abs/2610.22131v1) · [PDF](https://arxiv.org/pdf/2610.22131v1)
@@ -1758,7 +1766,7 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: Can a low-latency decision model replace LLMs in edge service orchestration?
 - **💡 Contribution**: Integrates Jev into edge service orchestration and measures verified requests, admission behavior and execution outcomes.
 ---
-### Related model / method · 12
+### Related model / method · 14
 
 <a id="paper-2610-34124"></a>
 #### [Decision-Native Recommendation with Large Language Models](https://arxiv.org/abs/2610.34124v1) · [PDF](https://arxiv.org/pdf/2610.34124v1)
@@ -1792,6 +1800,14 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: Can a pretrained decision model interpret graph anomalies without task training?
 - **💡 Contribution**: Converts structural, attribute and neighbourhood statistics into decision states read by a frozen model, fused with statistical scores.
 ---
+<a id="paper-2610-21150"></a>
+#### [VoxTurn: Answering Several Turn-Taking Questions in One Pass with One Model](https://arxiv.org/abs/2610.21150v1) · [PDF](https://arxiv.org/pdf/2610.21150v1)
+- **📅 Published**: 2026-10-15 (v1)
+- **👥 Authors**: Yang Xiao
+- **🏢 Affiliations**: The University of Melbourne
+- **🎯 Problem**: Can one voice model answer several turn-taking questions in one pass?
+- **💡 Contribution**: Casts voice-agent turn-taking decisions as multiple-choice questions for a 0.8B speech LLM and answers several of them in one pass under a block-isolating attention mask.
+---
 <a id="paper-2610-15029"></a>
 #### [Toward System One Clinical Intelligence: Parameter-Efficient Fine-Tuning and Counterfactual Explainability of Decision Foundation Models](https://arxiv.org/abs/2610.15029v1) · [PDF](https://arxiv.org/pdf/2610.15029v1)
 - **📅 Published**: 2026-10-10 (v1)
@@ -1823,6 +1839,14 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🏢 Affiliations**: School of Electrical, Mechanical and Biomedical Engineering, University of Technology Sydney
 - **🎯 Problem**: What does it take to put semantic decision engines inside timed network control loops?
 - **💡 Contribution**: Synthesizes requirements for admitting semantic decision engines into deadline-sensitive network control loops.
+---
+<a id="paper-2610-02638"></a>
+#### [Batched Speech Decisions Without Decoding: Single-Token Supervision Lets a Frozen LLM Hear Beyond the Transcript](https://arxiv.org/abs/2610.02638v1) · [PDF](https://arxiv.org/pdf/2610.02638v1) · [Code](https://github.com/adventists-ai/duplexjev)
+- **📅 Published**: 2026-10-02 (v1)
+- **👥 Authors**: Jie Jin; Ziyin Ma; Min Yin et al. (7 authors)
+- **🏢 Affiliations**: Adventists.ai; College of Computer Science and Technology, Zhejiang University; Future Design Lab, Innovation Center of Yangtze River Delta, Zhejiang University; University of Virginia
+- **🎯 Problem**: Can a frozen LLM answer many speech decisions without decoding?
+- **💡 Contribution**: Feeds speech into a frozen LLM through a small connector and reads each closed question as a single-token letter distribution, encoding the shared prefix once for packed question suffixes.
 ---
 <a id="paper-2610-01231"></a>
 #### [Judgement in the Age of Jev: From Evaluation Scarcity to Evaluation Abundance](https://arxiv.org/abs/2610.01231v1) · [PDF](https://arxiv.org/pdf/2610.01231v1)
