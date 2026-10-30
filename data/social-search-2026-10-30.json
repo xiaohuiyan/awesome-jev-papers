@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "searched_on": "2026-10-30",
+  "time_zone": "Asia/Shanghai",
+  "purpose": "Collect recent Jev, decision-model and System One papers from WeChat, Zhihu, Sina Weibo and X, then verify against original arXiv records and deduplicate.",
+  "recency": "Queries targeted 2026-10-27 through 2026-10-30; discovery date is not paper submission date.",
+  "queries": [
+    {
+      "platform": "WeChat",
+      "tool": "Sogou WeChat public index",
+      "query": "Jev 决策模型",
+      "url": "https://weixin.sogou.com/weixin?type=2&query=Jev+%E5%86%B3%E7%AD%96%E6%A8%A1%E5%9E%8B"
+    },
+    {
+      "platform": "Zhihu",
+      "tool": "Web search site filter",
+      "query": "site:zhihu.com Jev 决策模型"
+    },
+    {
+      "platform": "Sina Weibo",
+      "tool": "Web search site filter",
+      "query": "site:weibo.com Jev 决策模型 OR System One 论文"
+    },
+    {
+      "platform": "X / Twitter",
+      "tool": "Web search",
+      "query": "site:x.com Jev TypeSafe decision model paper October 2026"
+    },
+    {
+      "platform": "X / Twitter",
+      "tool": "Web search (lead follow-up)",
+      "query": "Jev OpenAI Decisions Clef Korean US medical licensing exam arxiv decision models"
+    },
+    {
+      "platform": "X / Twitter",
+      "tool": "Community index",
+      "query": "jev-x.com recent posts",
+      "url": "https://jev-x.com/"
+    },
+    {
+      "platform": "X / Twitter",
+      "tool": "Vendor citation index",
+      "query": "jevmodel.ai/citations source notes",
+      "url": "https://jevmodel.ai/citations/"
+    }
+  ],
+  "outcomes": {
+    "new_papers_from_social": 1,
+    "note": "A web search following an X/Twitter medical-comparison lead surfaced MedJev (arXiv 2610.36006, first submitted 2026-10-26), which the four standing arXiv queries had missed because its title uses the hyphenated 'System-One' and the token 'MedJev'. The same day's arXiv API sweep (first submissions 2026-10-27 through 2026-10-30; nine unique fresh candidates after deduplication, several first submitted 10-27/10-28 but indexed only after the 2026-10-29 sweep ran) added 9 papers. Every other arXiv ID surfaced by social channels was already catalogued."
+  },
+  "cross_checks": [
+    {
+      "source": "X post (@ModelScope2022) on a study comparing Jev, OpenAI Decisions, Clef and generative models on Korean and US medical licensing exams",
+      "arxiv_ids_seen": [],
+      "disposition": "Traced to a ResearchGate publication ('Referring uncertain answers by decision-model confidence...'); arXiv title and keyword searches returned no record. Kept as an unresolved lead; not treated as a paper."
+    },
+    {
+      "source": "web search following the medical lead",
+      "arxiv_ids_seen": ["2610.36006", "2609.34024"],
+      "disposition": "MedJev 2610.36006 added this round (related); 'Jev in Medicine' 2609.34024 already included."
+    },
+    {
+      "source": "jevmodel.ai/citations",
+      "arxiv_ids_seen": ["2609.29769", "2609.26550", "2609.14811", "2609.37647"],
+      "disposition": "Unchanged from 2026-10-27: three already included, 2609.14811 already excluded."
+    },
+    {
+      "source": "jev-x.com",
+      "arxiv_ids_seen": [],
+      "disposition": "Posts dated through 10/29 carry no arXiv identifiers; product demos only (MiniCPM-OCR verification model, hunch, Jev Router)."
+    },
+    {
+      "source": "Zhihu articles via site search",
+      "arxiv_ids_seen": [],
+      "disposition": "Explainer and product articles; the '书生·明决' article matches Intern-Decision (2610.22131), already included."
+    }
+  ],
+  "unresolved_leads": [
+    {
+      "lead": "ResearchGate publication 'Referring uncertain answers by decision-model confidence: Jev, OpenAI Decisions and Clef on Korean and US medical licensing examination questions' (surfaced via X).",
+      "disposition": "No arXiv record located by title or keyword search; ResearchGate is not a verifiable arXiv record for this catalogue. Keep unresolved; reconsider if an arXiv record appears."
+    },
+    {
+      "lead": "WeChat article 深夜看技术：Jev类决策模型用于RAG检索思路-DecisionRAG (account 老刘说NLP), carried over from 2026-10-29.",
+      "disposition": "Still no arXiv record located; keep unresolved."
+    },
+    {
+      "lead": "WeChat article Jev 决策模型遇上电车难题 (account 屠荒者), carried over from 2026-10-27.",
+      "disposition": "Still no arXiv record located; keep unresolved."
+    },
+    {
+      "lead": "Zhihu/WeChat product news: '断层领先Jev' new-model-version posts (机器学习算法与自然语言处理), 象信AI leaderboard claim, MedJev-adjacent MiniCPM-OCR verification model, hunch embedding decision layer.",
+      "disposition": "Product and leaderboard news, not research papers; no arXiv identifiers."
+    }
+  ]
+}

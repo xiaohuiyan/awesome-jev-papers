@@ -12,9 +12,9 @@
 
 | 收录论文 | Jev 直接相关 | 同类模型与方法 | 基础背景 | 含已核实代码 |
 | ---: | ---: | ---: | ---: | ---: |
-| **230** | 153 | 73 | 4 | 79 |
+| **240** | 158 | 78 | 4 | 81 |
 
-更新于 **2026-10-29** · 主要收录窗口 **2025-10-16—2026-10-27**（首次提交日期）
+更新于 **2026-10-30** · 主要收录窗口 **2025-10-16—2026-10-28**（首次提交日期）
 
 [十篇入门](#recommended-reading) · [按问题选文](#category-index) · [基础背景](#foundations) · [数据与维护](#reuse-and-updates)
 
@@ -50,12 +50,12 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 | 你想了解什么？ | 主题 | 直接 / 相关 | 合计 |
 | --- | --- | ---: | ---: |
-| 怎样训练一个专门做选择的模型？ | [模型架构与训练方法](#architecture) | 10 / 31 | 41 |
-| 快决策在哪些任务上够用？ | [基准测试与比较评估](#evaluation) | 26 / 5 | 31 |
-| 模型说有把握，真的可靠吗？ | [概率校准、可靠性与选择性决策](#calibration) | 16 / 8 | 24 |
-| 何时搜索、调用工具或交给更强的模型？ | [搜索、记忆、工具与智能体决策](#agents) | 29 / 8 | 37 |
-| 换个问法或选项顺序，会不会改变判断？ | [安全、鲁棒性与决策偏置](#security) | 30 / 5 | 35 |
-| 放进真实工作流，质量与速度如何取舍？ | [领域应用与部署效率](#applications) | 42 / 16 | 58 |
+| 怎样训练一个专门做选择的模型？ | [模型架构与训练方法](#architecture) | 10 / 32 | 42 |
+| 快决策在哪些任务上够用？ | [基准测试与比较评估](#evaluation) | 27 / 6 | 33 |
+| 模型说有把握，真的可靠吗？ | [概率校准、可靠性与选择性决策](#calibration) | 16 / 9 | 25 |
+| 何时搜索、调用工具或交给更强的模型？ | [搜索、记忆、工具与智能体决策](#agents) | 30 / 9 | 39 |
+| 换个问法或选项顺序，会不会改变判断？ | [安全、鲁棒性与决策偏置](#security) | 31 / 6 | 37 |
+| 放进真实工作流，质量与速度如何取舍？ | [领域应用与部署效率](#applications) | 44 / 16 | 60 |
 
 每篇只计入一个主分类；另有 4 篇基础背景。每类先列 Jev 直接相关，再列同类方法；组内按首次提交日期倒序排列。条目保留发表时间、作者、单位、解决问题与核心贡献；单位取自论文原文（HTML 全文或 PDF 首页），9 篇未署名单位的论文不展示该项。完整作者名单、标签与核实记录见[证据台账](docs/EVIDENCE.md)与 [BibTeX](references.bib)。
 
@@ -148,8 +148,16 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🎯 解决问题**：本地决策读取方式能否兼顾准确率与吞吐量？
 - **💡 核心贡献**：研究现有模型的本地决策读取方式，并以 Jev 作为准确率与吞吐量外部参照。
 ---
-### 同类模型与方法 · 31
+### 同类模型与方法 · 32
 
+<a id="paper-2610-38431"></a>
+#### [DecisionUnlearn-Bench: Unlearning Probabilistic Decisions under Changing Schemas](https://arxiv.org/abs/2610.38431v1) · [PDF](https://arxiv.org/pdf/2610.38431v1)
+- **📅 发表时间**：2026-10-28（v1）
+- **👥 作者**：Tiantong Wu；Wei Yang Bryan Lim
+- **🏢 单位**：Nanyang Technological University
+- **🎯 解决问题**：当决策依赖给定候选集时,机器遗忘的目标是什么?
+- **💡 核心贡献**：从删除粒度、选项标签写法与候选集三个维度评测概率决策模型的机器遗忘:在 BANKING77 的 20 个配置上,把语义选项标签换成不透明代码几乎消除重训预言机对被删类别的识别,说明遗忘目标与模式相关,须对照匹配的重训预言机衡量。
+---
 <a id="paper-2610-35010"></a>
 #### [JevVLA: Jev-Inspired Energy-Based Adaptation for Vision-Language-Action Policies](https://arxiv.org/abs/2610.35010v1) · [PDF](https://arxiv.org/pdf/2610.35010v1) · [代码](https://github.com/ZJU4EmbodiedAI/JevVLA)
 - **📅 发表时间**：2026-10-26（v1）
@@ -401,8 +409,16 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 [返回分类导航](#category-index)
 
-### Jev 直接相关 · 26
+### Jev 直接相关 · 27
 
+<a id="paper-2610-38448"></a>
+#### [Benchmarking decision models against generative large language models on medical multiple-choice questions](https://arxiv.org/abs/2610.38448v1) · [PDF](https://arxiv.org/pdf/2610.38448v1)
+- **📅 发表时间**：2026-10-28（v1）
+- **👥 作者**：Oscar Freyer；Daniel Glauert；Moritz Hofmann 等（共 6 位）
+- **🏢 单位**：Else Kröner Fresenius Center for Digital Health, TUD Dresden University of Technology；Independent Researcher；Denkmal.ai；Institute for Medical AI (IMAI), Heidelberg University Hospital
+- **🎯 解决问题**：在医学选择题上,决策模型的准确率、概率质量与重复性如何权衡?
+- **💡 核心贡献**：在 1,273 道四选项 MedQA 题上对比 13 个决策模型与 15 个生成式配置:决策模型准确率 67.71-89.08%(JEV 88.30%),生成式为 78.32-96.86%;概率能区分对错,但置信 >=0.90 时的错误率为 1.71-12.77%,三次运行答案一致率 92.30-100%。
+---
 <a id="paper-2610-36915"></a>
 #### [Do We Need an LLM to Know Why Sources Conflict? Decision Models for Knowledge-Conflict Typing in RAG](https://arxiv.org/abs/2610.36915v1) · [PDF](https://arxiv.org/pdf/2610.36915v1) · [代码](https://github.com/Parv17k/decision-models-conflict-typing)
 - **📅 发表时间**：2026-10-27（v1）
@@ -609,8 +625,16 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🎯 解决问题**：智能体轨迹中哪些步骤是冗余的，能否自动识别？
 - **💡 核心贡献**：在检测智能体轨迹冗余步骤的基准中纳入 Jev。
 ---
-### 同类模型与方法 · 5
+### 同类模型与方法 · 6
 
+<a id="paper-2610-36006"></a>
+#### [MedJev: Evaluating Zero-Shot System-One Decision Making in Medicine](https://arxiv.org/abs/2610.36006v1) · [PDF](https://arxiv.org/pdf/2610.36006v1) · [代码](https://github.com/Simonlee711/MedJev)
+- **📅 发表时间**：2026-10-26（v1）
+- **👥 作者**：Simon A. Lee；Jiahang Sha；Moonseong Jeong 等（共 5 位）
+- **🏢 单位**：University of California, Los Angeles
+- **🎯 解决问题**：开源 System One 模型能否本地支撑医学决策?
+- **💡 核心贡献**：评测基于 OpenJev、可本地运行的 MedJev,覆盖知识、诊断与患者级预测(MIMIC IV、MIMIC IV ED)的十个医学基准:MedQA 72.5%、NEJM 80.1%,接近已发表的 GPT-4 结果且置信校准良好(ECE 0.028-0.063);患者级预测失准(院内死亡 ECE 0.286),由双参数再校准缓解。
+---
 <a id="paper-2610-34816"></a>
 #### [Can System-1-Style Decision Models Replace Dedicated Rerankers in RAG? A Systems Evaluation](https://arxiv.org/abs/2610.34816v1) · [PDF](https://arxiv.org/pdf/2610.34816v1)
 - **📅 发表时间**：2026-10-26（v1）
@@ -787,8 +811,16 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🎯 解决问题**：接受高置信判断、转交不确定案例的策略，实际收益如何？
 - **💡 核心贡献**：测试接受高置信 Jev 判断并转交不确定案例的策略，对阈值进行留出验证。
 ---
-### 同类模型与方法 · 8
+### 同类模型与方法 · 9
 
+<a id="paper-2610-37732"></a>
+#### [ThinkJev: One Thought, Every Budget for Calibrated Typed Decisions](https://arxiv.org/abs/2610.37732v1) · [PDF](https://arxiv.org/pdf/2610.37732v1)
+- **📅 发表时间**：2026-10-27（v1）
+- **👥 作者**：Xiaolu Ding；Kai Yang；Dongdong Liu
+- **🏢 单位**：Fujian Bosssoft Co., Ltd.
+- **🎯 解决问题**：类型化决策何时值得思考,思考多久?
+- **💡 核心贡献**：用一个开源混合思考模型同时构建快慢双系统:System 1 直接读选项字母概率,System 2 在缓存提示上思考后读同一字母,一次采样思考即可给出任意思考预算下的答案;由开发集统计检验保证 System 1 单独作答不超过目标错误率(5% 目标下覆盖 24.5%、实测 3.9%)。服务器接受 TypeSafe Jev 请求格式,但未评测托管 Jev。
+---
 <a id="paper-2610-34329"></a>
 #### [SHIFT-JEV: Certified Abstention and Gain-Gated Continual Adaptation for LLM-Based Decision Models under Distribution Shift](https://arxiv.org/abs/2610.34329v1) · [PDF](https://arxiv.org/pdf/2610.34329v1)
 - **📅 发表时间**：2026-10-25（v1）
@@ -858,8 +890,16 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 [返回分类导航](#category-index)
 
-### Jev 直接相关 · 29
+### Jev 直接相关 · 30
 
+<a id="paper-2610-38439"></a>
+#### [Predict the Reward, Not the World: World Reward Models for ML Agents](https://arxiv.org/abs/2610.38439v1) · [PDF](https://arxiv.org/pdf/2610.38439v1)
+- **📅 发表时间**：2026-10-28（v1）
+- **👥 作者**：Yuxiao Lee；Zherui Yang；Fan Liu；Hao Liu
+- **🏢 单位**：The Hong Kong University of Science and Technology (Guangzhou)
+- **🎯 解决问题**：搜索式机器学习智能体该如何决定执行哪个候选程序?
+- **💡 核心贡献**：论证搜索式机器学习智能体只需执行所能支持的决策而非预测结果:世界奖励模型从真实执行的程序对中学习直接选出更优者。ForeCritic 改造 9B 类型化决策模型,在保留对上以 79.4% 胜过托管 Jev 选择器的 56.0%,并使 AIDE、ML-Master、ForeAgent 平均任务时间缩短 4.4-7.5 倍且分数不降。
+---
 <a id="paper-2610-32635"></a>
 #### [EditJev: System One Routing for Image Editing Models](https://arxiv.org/abs/2610.32635v1) · [PDF](https://arxiv.org/pdf/2610.32635v1)
 - **📅 发表时间**：2026-10-23（v1）
@@ -1092,8 +1132,16 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🎯 解决问题**：智能体的记忆操作能否交给快速决策层协调，以提升效率？
 - **💡 核心贡献**：提出由 System One 控制的记忆架构，以协调高效的智能体记忆操作。
 ---
-### 同类模型与方法 · 8
+### 同类模型与方法 · 9
 
+<a id="paper-2610-37826"></a>
+#### [DeFT-RAG: Incrementally Decomposing Multi-Hop Questions into Self-Contained Sub-Questions with Reusable Answers](https://arxiv.org/abs/2610.37826v1) · [PDF](https://arxiv.org/pdf/2610.37826v1)
+- **📅 发表时间**：2026-10-27（v1）
+- **👥 作者**：Dingyi Kang；Bingzhe Li
+- **🏢 单位**：University of Texas at Dallas
+- **🎯 解决问题**：迭代式多跳 RAG 里,多少工作可以移出大模型?
+- **💡 核心贡献**：把多跳问题分解为自包含子问题,并把其余大模型工作移出模型:规则化 QA 表更新,外加开源 StartLux-Decision-4B 经 LoRA 微调作出的二元决策;在三个基准上以更少输入 token 取得十三个基线中的最佳准确率,共享 QA 缓存可复用 23.1% 的子问题。
+---
 <a id="paper-2610-27677"></a>
 #### [CovNav: Conformal Prediction-Guided Adaptive Inference for Object Goal Navigation](https://arxiv.org/abs/2610.27677v1) · [PDF](https://arxiv.org/pdf/2610.27677v1)
 - **📅 发表时间**：2026-10-20（v1）
@@ -1164,8 +1212,16 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 [返回分类导航](#category-index)
 
-### Jev 直接相关 · 30
+### Jev 直接相关 · 31
 
+<a id="paper-2610-38623"></a>
+#### [Cross-Primitive Consistency in Jev](https://arxiv.org/abs/2610.38623v1) · [PDF](https://arxiv.org/pdf/2610.38623v1) · [代码](https://github.com/67L1/PrimaCons-CRPR)
+- **📅 发表时间**：2026-10-28（v1）
+- **👥 作者**：Xu Liu；Guikun Chen；Kanzhi Wu；Wenguan Wang
+- **🏢 单位**：Zhejiang University；vivo
+- **🎯 解决问题**：同一问题换成不同查询原语,Jev 会给出同样的决策吗?
+- **💡 核心贡献**：PrimaCons 以四个维度评测三种规格的托管 Jev 在二元与多选原语间的一致性(语义相同、格式不同);违背呈系统性且能预测决策失败(ROC-AUC 0.91),提出的残差校准器 CPRC 将不一致率降低 58.57% 并提升准确率。
+---
 <a id="paper-2610-34826"></a>
 #### [TrustJev: Separating Policy Authority from Untrusted Evidence in LLM-Based Decisions](https://arxiv.org/abs/2610.34826v1) · [PDF](https://arxiv.org/pdf/2610.34826v1) · [代码](https://github.com/xu-zhiwei/trustjev)
 - **📅 发表时间**：2026-10-26（v1）
@@ -1404,8 +1460,16 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🎯 解决问题**：类型化决策模型跟随的是选项名称，还是名称绑定到的定义？
 - **💡 核心贡献**：改变名称与定义的映射，测试 Jev 是否跟随标签而非给定语义决策。
 ---
-### 同类模型与方法 · 5
+### 同类模型与方法 · 6
 
+<a id="paper-2610-38620"></a>
+#### [Think Before You Act: Decision Gate for LLM Agents](https://arxiv.org/abs/2610.38620v1) · [PDF](https://arxiv.org/pdf/2610.38620v1)
+- **📅 发表时间**：2026-10-28（v1）
+- **👥 作者**：Iftach Shoham；Yuval David；Offer Akrabi 等（共 8 位）
+- **🏢 单位**：IBM SIL
+- **🎯 解决问题**：智能体的动作执行前,谁来对照策略做独立校验?
+- **💡 核心贡献**：JevAct 在执行前拦截智能体的部分动作:领域策略编译为可执行状态检查与结构化问题,由开源 Jev 型决策模型 Kev 作答;被标记的提议连同针对性反馈退回智能体限时修改,在 tau2-bench 与 BFCL 上提升十一个智能体的可靠性。
+---
 <a id="paper-2610-18326"></a>
 #### [Jev-Guard: Fast Routing and Auditing Agent Actions over Editable Policy Trees](https://arxiv.org/abs/2610.18326v1) · [PDF](https://arxiv.org/pdf/2610.18326v1)
 - **📅 发表时间**：2026-10-13（v1）
@@ -1453,8 +1517,24 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 [返回分类导航](#category-index)
 
-### Jev 直接相关 · 42
+### Jev 直接相关 · 44
 
+<a id="paper-2610-38697"></a>
+#### [SatOps-Decision: Low-Latency Discriminative Decisions for Onboard Satellite Communication Operations](https://arxiv.org/abs/2610.38697v1) · [PDF](https://arxiv.org/pdf/2610.38697v1)
+- **📅 发表时间**：2026-10-28（v1）
+- **👥 作者**：Lifan Mei；Yuxuan Li；Jiaxian Tu；Shenghe Xu
+- **🏢 单位**：Academy of AIAT, Xi'an Jiaotong-Liverpool University；Amazon, Inc.
+- **🎯 解决问题**：决策模型能否在星上完成低延迟的关键决策?
+- **💡 核心贡献**：把 Laya 编码器及其原生决策头改造为星上本地评分器用于卫星通信操作,并构建 1,024 题的可审计基准;本地评分器中位延迟 90.3 毫秒、准确率 85.3%,以官方 Jev 1.14/1.13(87.4/81.9%)为云上参照。
+---
+<a id="paper-2610-38090"></a>
+#### [Predicting What Answer Engines Cite: Open Decision Models, Rerankers and a Distilled 4B Student on Ten Engines under Controlled Retrieval](https://arxiv.org/abs/2610.38090v1) · [PDF](https://arxiv.org/pdf/2610.38090v1)
+- **📅 发表时间**：2026-10-28（v1）
+- **👥 作者**：Elisha Bajemon；Andre-Louis Rochet
+- **🏢 单位**：TW3 Partners (Citead)
+- **🎯 解决问题**：哪个评分器最能预测答案引擎会引用谁?
+- **💡 核心贡献**：在十个答案引擎上,用 GEO-Bench 查询比较预训练重排器、托管 Jev 1.13 与八个开源决策模型对引用份额的预测:Jev 与两个开源 27B 模型免训练领先(0.575-0.578),LoRA 微调的 Qwen3-Reranker-4B 学生模型达到 0.542-0.549,在 229 条查询上与 Jev 无统计差异。
+---
 <a id="paper-2610-36595"></a>
 #### [Learning to Formalize: Bridging Open-Ended Workloads and Fast Decision Models](https://arxiv.org/abs/2610.36595v1) · [PDF](https://arxiv.org/pdf/2610.36595v1)
 - **📅 发表时间**：2026-10-27（v1）

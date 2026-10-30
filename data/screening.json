@@ -2840,6 +2840,86 @@
       "status": "excluded",
       "reason": "LLM group-decision memory study; the decision model is an LLM reading a compressed discussion memory, without a typed decision interface or Jev evaluation.",
       "screened_on": "2026-10-29"
+    },
+    {
+      "arxiv_id": "2610.38697",
+      "title": "SatOps-Decision: Low-Latency Discriminative Decisions for Onboard Satellite Communication Operations",
+      "source_url": "https://arxiv.org/abs/2610.38697v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-30"
+    },
+    {
+      "arxiv_id": "2610.38623",
+      "title": "Cross-Primitive Consistency in Jev",
+      "source_url": "https://arxiv.org/abs/2610.38623v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-30"
+    },
+    {
+      "arxiv_id": "2610.38620",
+      "title": "Think Before You Act: Decision Gate for LLM Agents",
+      "source_url": "https://arxiv.org/abs/2610.38620v1",
+      "status": "included",
+      "reason": "Concrete contribution to closely related typed-decision models or interfaces; hosted Jev not used or evaluated.",
+      "screened_on": "2026-10-30"
+    },
+    {
+      "arxiv_id": "2610.38448",
+      "title": "Benchmarking decision models against generative large language models on medical multiple-choice questions",
+      "source_url": "https://arxiv.org/abs/2610.38448v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-30"
+    },
+    {
+      "arxiv_id": "2610.38439",
+      "title": "Predict the Reward, Not the World: World Reward Models for ML Agents",
+      "source_url": "https://arxiv.org/abs/2610.38439v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-30"
+    },
+    {
+      "arxiv_id": "2610.38431",
+      "title": "DecisionUnlearn-Bench: Unlearning Probabilistic Decisions under Changing Schemas",
+      "source_url": "https://arxiv.org/abs/2610.38431v1",
+      "status": "included",
+      "reason": "Concrete contribution to closely related typed-decision models or interfaces; hosted Jev not used or evaluated.",
+      "screened_on": "2026-10-30"
+    },
+    {
+      "arxiv_id": "2610.38090",
+      "title": "Predicting What Answer Engines Cite: Open Decision Models, Rerankers and a Distilled 4B Student on Ten Engines under Controlled Retrieval",
+      "source_url": "https://arxiv.org/abs/2610.38090v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-30"
+    },
+    {
+      "arxiv_id": "2610.37826",
+      "title": "DeFT-RAG: Incrementally Decomposing Multi-Hop Questions into Self-Contained Sub-Questions with Reusable Answers",
+      "source_url": "https://arxiv.org/abs/2610.37826v1",
+      "status": "included",
+      "reason": "Concrete contribution to closely related typed-decision models or interfaces; hosted Jev not used or evaluated.",
+      "screened_on": "2026-10-30"
+    },
+    {
+      "arxiv_id": "2610.37732",
+      "title": "ThinkJev: One Thought, Every Budget for Calibrated Typed Decisions",
+      "source_url": "https://arxiv.org/abs/2610.37732v1",
+      "status": "included",
+      "reason": "Concrete contribution to closely related typed-decision models or interfaces; hosted Jev not used or evaluated.",
+      "screened_on": "2026-10-30"
+    },
+    {
+      "arxiv_id": "2610.36006",
+      "title": "MedJev: Evaluating Zero-Shot System-One Decision Making in Medicine",
+      "source_url": "https://arxiv.org/abs/2610.36006v1",
+      "status": "included",
+      "reason": "Concrete contribution to closely related typed-decision models or interfaces; hosted Jev not used or evaluated.",
+      "screened_on": "2026-10-30"
     }
   ]
 }

@@ -80,6 +80,58 @@
       "engine": "arxiv-api",
       "round": 4,
       "query": "id_list batch metadata fetch for 6 unique candidates"
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 5,
+      "query": "all:\"Jev\" AND submittedDate:[202610270000 TO 202610302359]",
+      "count": 5
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 5,
+      "query": "all:\"System One\" AND submittedDate:[202610270000 TO 202610302359]",
+      "count": 1
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 5,
+      "query": "all:\"typed decision\" AND submittedDate:[202610270000 TO 202610302359]",
+      "count": 4
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 5,
+      "query": "all:\"decision model\" AND submittedDate:[202610270000 TO 202610302359]",
+      "count": 13
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 5,
+      "query": "id_list batch metadata fetch for 9 unique candidates"
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 5,
+      "query": "ti:\"Referring uncertain answers\"",
+      "count": 0
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 5,
+      "query": "all:\"medical licensing\" AND all:\"decision\"",
+      "count": 10
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 5,
+      "query": "all:\"MedJev\"",
+      "count": 1
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 5,
+      "query": "id_list metadata fetch for 2610.36006"
     }
   ],
   "web_discovery_queries": [
@@ -215,6 +267,48 @@
       "query": "site:x.com Jev TypeSafe decision model paper October 2026 (web search)",
       "purpose": "X/Twitter leads",
       "result": "product and funding news (Jev 1.14, Jev-Mem); no new papers"
+    },
+    {
+      "round": 5,
+      "query": "weixin.sogou.com Jev 决策模型",
+      "purpose": "WeChat leads",
+      "result": "10 product/tutorial articles; no new arXiv identifiers; two carried-over leads unresolved"
+    },
+    {
+      "round": 5,
+      "query": "site:zhihu.com Jev 决策模型 (web search)",
+      "purpose": "Zhihu leads",
+      "result": "10 explainer/product articles; no new arXiv records"
+    },
+    {
+      "round": 5,
+      "query": "site:weibo.com Jev 决策模型 OR System One 论文 (web search)",
+      "purpose": "Weibo leads",
+      "result": "1 explainer article; no new arXiv records"
+    },
+    {
+      "round": 5,
+      "query": "site:x.com Jev TypeSafe decision model paper October 2026 (web search)",
+      "purpose": "X/Twitter leads",
+      "result": "product and funding news; one medical-comparison lead traced to a ResearchGate item without an arXiv record"
+    },
+    {
+      "round": 5,
+      "query": "Jev OpenAI Decisions Clef Korean US medical licensing exam arxiv decision models (web search)",
+      "purpose": "X-adjacent medical lead",
+      "result": "ResearchGate item only; MedJev GitHub lead surfaced and resolved to arXiv 2610.36006 (included)"
+    },
+    {
+      "round": 5,
+      "query": "jev-x.com recent posts",
+      "purpose": "X/Twitter community index",
+      "result": "posts through 10/29 carry no arXiv identifiers"
+    },
+    {
+      "round": 5,
+      "query": "jevmodel.ai/citations source notes",
+      "purpose": "Vendor citation index",
+      "result": "unchanged from 2026-10-27 (same four IDs, all already handled)"
     }
   ],
   "arxiv_site_search": {
@@ -228,9 +322,9 @@
       "purpose": "Early Jev corpus and four foundational methods"
     }
   ],
-  "unique_candidates": 355,
+  "unique_candidates": 365,
   "outcomes": {
-    "included": 230,
+    "included": 240,
     "excluded": 123,
     "pending": 2
   },
@@ -242,7 +336,7 @@
     "Broad discovery ends on 2026-10-16. Later targeted additions are logged separately and do not imply a fresh search or re-verification of the entire corpus.",
     "2026-10-27 round: Zhihu and Weibo returned no usable public search results (403 or ignored site filters); WeChat coverage relied on the Sogou public index."
   ],
-  "updated_on": "2026-10-29",
+  "updated_on": "2026-10-30",
   "targeted_additions": [
     {
       "reviewed_on": "2026-10-17",
@@ -327,6 +421,19 @@
       ],
       "added_papers": 0,
       "note": "Social channels supplied no additional verifiable arXiv records beyond the same day's arXiv API sweep; all surfaced IDs were already catalogued."
+    },
+    {
+      "searched_on": "2026-10-30",
+      "record": "data/social-search-2026-10-30.json",
+      "report": "docs/SOCIAL_SEARCH_2026-10-30.md",
+      "platforms": [
+        "WeChat",
+        "Zhihu",
+        "Sina Weibo",
+        "X / Twitter"
+      ],
+      "added_papers": 1,
+      "note": "The web search following an X/Twitter medical-comparison lead surfaced MedJev (arXiv 2610.36006), which the standing arXiv queries had missed; all other social IDs were already catalogued."
     }
   ],
   "targeted_rechecks": [

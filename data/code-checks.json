@@ -867,5 +867,27 @@
     "canonical_url": "https://github.com/superagent-ai/dfip",
     "description": "Decision-focused inference on Modal: native clients and reproducible System One model research",
     "private": false
+  },
+  {
+    "arxiv_id": "2610.38623",
+    "url": "https://github.com/67L1/PrimaCons-CRPR",
+    "source_url": "https://arxiv.org/abs/2610.38623v1",
+    "source_location": "Abstract",
+    "checked_on": "2026-10-30",
+    "status": "verified",
+    "canonical_url": "https://github.com/67L1/PrimaCons-CRPR",
+    "description": "PrimaCons: cross-primitive consistency benchmark for Jev and the CPRC residual calibrator",
+    "private": false
+  },
+  {
+    "arxiv_id": "2610.36006",
+    "url": "https://github.com/Simonlee711/MedJev",
+    "source_url": "https://arxiv.org/abs/2610.36006v1",
+    "source_location": "Abstract",
+    "checked_on": "2026-10-30",
+    "status": "verified",
+    "canonical_url": "https://github.com/Simonlee711/MedJev",
+    "description": "[arXiv 2026] MedJev: Evaluating Zero-Shot System-One Decision Making in Medicine",
+    "private": false
   }
 ]
