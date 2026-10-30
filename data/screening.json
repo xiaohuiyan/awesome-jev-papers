@@ -2792,6 +2792,54 @@
       "status": "excluded",
       "reason": "KV-cache reuse study for LLM judges in multi-agent pipelines; neighboring inference-efficiency topic without a typed decision interface or Jev evaluation.",
       "screened_on": "2026-10-27"
+    },
+    {
+      "arxiv_id": "2610.37229",
+      "title": "Decision Models as Judges for Hallucination Detection",
+      "source_url": "https://arxiv.org/abs/2610.37229v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-29"
+    },
+    {
+      "arxiv_id": "2610.36937",
+      "title": "JevRec: Linguistic Encoding with Jev-like Decision Modeling for LLM-based Generative Recommendation",
+      "source_url": "https://arxiv.org/abs/2610.36937v1",
+      "status": "included",
+      "reason": "Concrete contribution to closely related typed-decision models or interfaces; hosted Jev not used or evaluated.",
+      "screened_on": "2026-10-29"
+    },
+    {
+      "arxiv_id": "2610.36915",
+      "title": "Do We Need an LLM to Know Why Sources Conflict? Decision Models for Knowledge-Conflict Typing in RAG",
+      "source_url": "https://arxiv.org/abs/2610.36915v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-29"
+    },
+    {
+      "arxiv_id": "2610.36804",
+      "title": "DFIP: Decision-Focused Inference Path for System One Models",
+      "source_url": "https://arxiv.org/abs/2610.36804v1",
+      "status": "included",
+      "reason": "Concrete contribution to closely related typed-decision models or interfaces; hosted Jev not used or evaluated.",
+      "screened_on": "2026-10-29"
+    },
+    {
+      "arxiv_id": "2610.36595",
+      "title": "Learning to Formalize: Bridging Open-Ended Workloads and Fast Decision Models",
+      "source_url": "https://arxiv.org/abs/2610.36595v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-29"
+    },
+    {
+      "arxiv_id": "2610.37624",
+      "title": "Rare, Relevant, and Still Wrong: How Memory Fails LLM Group Decisions",
+      "source_url": "https://arxiv.org/abs/2610.37624v1",
+      "status": "excluded",
+      "reason": "LLM group-decision memory study; the decision model is an LLM reading a compressed discussion memory, without a typed decision interface or Jev evaluation.",
+      "screened_on": "2026-10-29"
     }
   ]
 }

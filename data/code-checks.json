@@ -845,5 +845,27 @@
     "canonical_url": "https://github.com/yanqiangmiffy/chinese-decision",
     "description": "A Chinese probabilistic decision model: one forward pass, straight to candidate probabilities",
     "private": false
+  },
+  {
+    "arxiv_id": "2610.36915",
+    "url": "https://github.com/Parv17k/decision-models-conflict-typing",
+    "source_url": "https://arxiv.org/abs/2610.36915v1",
+    "source_location": "arXiv comments",
+    "checked_on": "2026-10-29",
+    "status": "verified",
+    "canonical_url": "https://github.com/Parv17k/decision-models-conflict-typing",
+    "description": "Typed decision models as knowledge-conflict classifiers for retrieval-augmented generation (CONFLICTS benchmark)",
+    "private": false
+  },
+  {
+    "arxiv_id": "2610.36804",
+    "url": "https://github.com/superagent-ai/dfip",
+    "source_url": "https://arxiv.org/abs/2610.36804v1",
+    "source_location": "arXiv comments",
+    "checked_on": "2026-10-29",
+    "status": "verified",
+    "canonical_url": "https://github.com/superagent-ai/dfip",
+    "description": "Decision-focused inference on Modal: native clients and reproducible System One model research",
+    "private": false
   }
 ]

@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "updated_on": "2026-10-27",
+  "updated_on": "2026-10-29",
   "window": {
     "start": "2025-10-16",
-    "end": "2026-10-26",
+    "end": "2026-10-27",
     "basis": "first submission; reviewed version and verification date recorded per paper"
   },
   "categories": {
@@ -49,6 +49,385 @@
     "2610.04345"
   ],
   "papers": [
+    {
+      "arxiv_id": "2610.37229",
+      "title": "Decision Models as Judges for Hallucination Detection",
+      "authors": [
+        "Haozheng Liu",
+        "Zhaoqian Xue",
+        "Zhongyin Wang",
+        "Junting Mu",
+        "Zihui Ma",
+        "Shuya Feng",
+        "Lingyao Li"
+      ],
+      "affiliations": [
+        "New York University",
+        "University of Arizona",
+        "University of Illinois Urbana-Champaign",
+        "University of California, Irvine",
+        "Emory University",
+        "University of Alabama at Birmingham"
+      ],
+      "first_submitted": "2026-10-27",
+      "updated": "2026-10-27",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.37229",
+      "reviewed_url": "https://arxiv.org/abs/2610.37229v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37229v1",
+      "arxiv_categories": [
+        "cs.CL"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "calibration",
+      "relation_level": "direct",
+      "tags": [
+        "calibration",
+        "judging",
+        "cascading"
+      ],
+      "summary": {
+        "en": "Benchmarks five decision models (jev, d1, clef, pplx, gpt-6-luna) against the generative judge gpt-6-sol on binary hallucination detection across five types, finding overconfident probabilities and a confidence cascade that matches the judge at 1-3% of its cost.",
+        "zh": "在五类幻觉的二分类检测上，把 jev、d1、clef、pplx、gpt-6-luna 五个决策模型与生成式裁判 gpt-6-sol 对比，发现其概率过度自信，置信级联能以约 1-3% 成本追平裁判。"
+      },
+      "problem": {
+        "en": "Can a decision model judge hallucinations reliably and cheaply?",
+        "zh": "决策模型能否便宜又可靠地裁判模型输出中的幻觉？"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "They are jev, d1, clef, pplx, and gpt-6-luna",
+          "location": "Section 3.2, Evaluation Setup and Metrics (Model selection)",
+          "source_url": "https://arxiv.org/html/2610.37229v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "a confidence cascade of decision models improves on the best single model",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.37229v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-10-29",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.37229v1",
+      "source_abstract_sha256": "f94dfa69a49635e2a6fb6b071b02e811eda7486931d3652b60aec21713b60909"
+    },
+    {
+      "arxiv_id": "2610.36937",
+      "title": "JevRec: Linguistic Encoding with Jev-like Decision Modeling for LLM-based Generative Recommendation",
+      "authors": [
+        "Qiyong Zhong",
+        "Jiajie Su",
+        "Ming Yang",
+        "Li Zhang"
+      ],
+      "affiliations": [
+        "Zhejiang University"
+      ],
+      "first_submitted": "2026-10-27",
+      "updated": "2026-10-27",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.36937",
+      "reviewed_url": "https://arxiv.org/abs/2610.36937v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.36937v1",
+      "arxiv_categories": [
+        "cs.CL"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "related",
+      "tags": [
+        "applications",
+        "training",
+        "efficiency"
+      ],
+      "summary": {
+        "en": "Represents recommendation items as variable-length words from shared codebooks and adds a Jev-like decision head that scores SID lengths while a separate head generates content, outperforming TIGER-style baselines on three public datasets at lower training and inference time.",
+        "zh": "用共享码本把推荐物品表示为变长单词，并以类 Jev 决策头专门预测 SID 长度分布、另一头按长度生成内容，在三个公开数据集上以更低训练与推理时间超过 TIGER 等基线。"
+      },
+      "problem": {
+        "en": "How should generative recommendation assign identifier lengths?",
+        "zh": "生成式推荐该如何给物品分配长短不一的标识？"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "predicts a length distribution with a dedicated head",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.36937v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "encode items as variable-length words",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.36937v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-10-29",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.36937v1",
+      "source_abstract_sha256": "9fb081fabfbe378f5d81008b350a24203ce2dff90218a2c5d4198b9953e2fa21"
+    },
+    {
+      "arxiv_id": "2610.36915",
+      "title": "Do We Need an LLM to Know Why Sources Conflict? Decision Models for Knowledge-Conflict Typing in RAG",
+      "authors": [
+        "Parv Khatri",
+        "Harshul Jain",
+        "Mehak Kapoor",
+        "Tanya Sah"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "first_submitted": "2026-10-27",
+      "updated": "2026-10-27",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.36915",
+      "reviewed_url": "https://arxiv.org/abs/2610.36915v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.36915v1",
+      "arxiv_categories": [
+        "cs.CL",
+        "cs.IR"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "evaluation",
+      "relation_level": "direct",
+      "tags": [
+        "evaluation",
+        "retrieval",
+        "cascading"
+      ],
+      "summary": {
+        "en": "Censuses all 11 decision models served by the Vercel AI Gateway (Jev included, pinned versions) on CONFLICTS knowledge-conflict typing with the original prompt, then builds confidence-gated cascades to Gemini 3.8 Flash that cut cost to 25-37%.",
+        "zh": "用 CONFLICTS 原始提示对 Vercel AI Gateway 当日在列的全部 11 个决策模型（含固定版本的 Jev）做知识冲突类型判断普查，并构建通往 Gemini 3.8 Flash 的置信级联，把成本压到其 25-37%。"
+      },
+      "problem": {
+        "en": "Can decision models type RAG source conflicts cheaply and accurately?",
+        "zh": "决策模型能否又快又准地判定 RAG 来源冲突的类型？"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "typesafe-ai/jev is a floating alias of a pinned version we already run",
+          "location": "Section 5, Experimental Setup (Decision models)",
+          "source_url": "https://arxiv.org/html/2610.36915v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "evaluate all 11 decision models served by one commercial inference gateway",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.36915v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-10-29",
+      "code": [
+        {
+          "url": "https://github.com/Parv17k/decision-models-conflict-typing",
+          "source_url": "https://arxiv.org/abs/2610.36915v1",
+          "source_location": "arXiv comments",
+          "verified_on": "2026-10-29",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.36915v1",
+      "source_abstract_sha256": "917543c09dd62bf637c920488cd146c546b431feb82dd7a2a6d228914e54358d"
+    },
+    {
+      "arxiv_id": "2610.36804",
+      "title": "DFIP: Decision-Focused Inference Path for System One Models",
+      "authors": [
+        "Ismail Pelaseyed",
+        "Alan Zabihi"
+      ],
+      "affiliations": [
+        "Superagent Technologies Inc."
+      ],
+      "first_submitted": "2026-10-27",
+      "updated": "2026-10-27",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.36804",
+      "reviewed_url": "https://arxiv.org/abs/2610.36804v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.36804v1",
+      "arxiv_categories": [
+        "cs.PF"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "related",
+      "tags": [
+        "efficiency",
+        "applications"
+      ],
+      "summary": {
+        "en": "Measures CUDA-graph replay, candidate-token projection and length-aware batching across PPLX-Decider, Liquid d1-3B, Clef-Flash and GLiNER2.5-Decide serving stacks, reporting workload-specific speedups, preserved choices under resident requests, and failures under diverse arrivals.",
+        "zh": "在 PPLX-Decider、Liquid d1-3B、Clef-Flash、GLiNER2.5-Decide 四个 System One 服务栈上实测 CUDA 图重放、候选 token 投影与长度感知批处理，给出按负载划分的加速、常驻请求下的选择保真审计以及多样到达时的失效。"
+      },
+      "problem": {
+        "en": "Where does serving time go for System One models?",
+        "zh": "System One 模型的服务时间都花在了哪里？"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "System One (decision) models return small structured answers",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.36804v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "an empirical systems study of established inference techniques",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.36804v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-10-29",
+      "code": [
+        {
+          "url": "https://github.com/superagent-ai/dfip",
+          "source_url": "https://arxiv.org/abs/2610.36804v1",
+          "source_location": "arXiv comments",
+          "verified_on": "2026-10-29",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.36804v1",
+      "source_abstract_sha256": "2d3c2ee7763a0df1883cfc0d6f9fddc73e952bd4e397054f9c09749ee7487dbb"
+    },
+    {
+      "arxiv_id": "2610.36595",
+      "title": "Learning to Formalize: Bridging Open-Ended Workloads and Fast Decision Models",
+      "authors": [
+        "Chengxuan Pei",
+        "Ziyao Wang",
+        "Teng Mei",
+        "Zhe Li"
+      ],
+      "affiliations": [
+        "CUHK-Shenzhen",
+        "University of Tokyo",
+        "Kunlunxin Corporation"
+      ],
+      "first_submitted": "2026-10-27",
+      "updated": "2026-10-27",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.36595",
+      "reviewed_url": "https://arxiv.org/abs/2610.36595v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.36595v1",
+      "arxiv_categories": [
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "direct",
+      "tags": [
+        "applications",
+        "robotics",
+        "efficiency"
+      ],
+      "summary": {
+        "en": "Trains a small candidate formalizer that turns open-ended embodied tasks into validated option lists for a frozen decision model, benchmarking the pipeline against the official TypeSafe Jev-1.13.0 API on CALVIN-D episodes with 2.09 s end-to-end latency.",
+        "zh": "训练一个小型候选形式化器，把开放式具身任务转成经校验的选项列表交给冻结决策模型，在 CALVIN-D 任务上与官方 TypeSafe Jev-1.13.0 API 对比，端到端延迟 2.09 秒。"
+      },
+      "problem": {
+        "en": "How can open-ended workloads without candidate lists use decision models?",
+        "zh": "没有候选列表的开放式任务如何用上决策模型？"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "with official TypeSafe Jev-1.13.0 on 200 CALVIN-D test episodes",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.36595v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "a small candidate formalizer trained on offline teacher-generated lists",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.36595v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-10-29",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.36595v1",
+      "source_abstract_sha256": "5b6f1c2c117c01476f3c97db878d05cc74b8a5e71b94fc5ef12ecaa338716748"
+    },
     {
       "arxiv_id": "2610.35010",
       "title": "JevVLA: Jev-Inspired Energy-Based Adaptation for Vision-Language-Action Policies",
@@ -2233,7 +2612,7 @@
         "citation_count": null
       },
       "review_level": "abstract + targeted full text",
-      "verified_on": "2026-10-27",
+      "verified_on": "2026-10-29",
       "code": [
         {
           "url": "https://github.com/Ryenhails/rerank-as-decision",
@@ -2244,7 +2623,7 @@
         }
       ],
       "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.28435v1",
-      "source_abstract_sha256": "b571529bcd5303a5cfc23535038f5b621b7dd8aa3eccf09d9ccff1957135a5fb"
+      "source_abstract_sha256": "cbcf653fe20234cd5c8c40c3ec3696602a0dbab58196f01796a2b4253c5be881"
     },
     {
       "arxiv_id": "2610.27746",

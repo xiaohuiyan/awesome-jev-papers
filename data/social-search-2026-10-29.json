@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "searched_on": "2026-10-29",
+  "time_zone": "Asia/Shanghai",
+  "purpose": "Collect recent Jev, decision-model and System One papers from WeChat, Zhihu, Sina Weibo and X, then verify against original arXiv records and deduplicate.",
+  "recency": "Queries targeted 2026-10-27 through 2026-10-29; discovery date is not paper submission date.",
+  "queries": [
+    {
+      "platform": "WeChat",
+      "tool": "Sogou WeChat public index",
+      "query": "Jev 决策模型",
+      "url": "https://weixin.sogou.com/weixin?type=2&query=Jev+%E5%86%B3%E7%AD%96%E6%A8%A1%E5%9E%8B"
+    },
+    {
+      "platform": "Web (Chinese)",
+      "tool": "Web search",
+      "query": "Jev 决策模型 arxiv 2610 新论文"
+    },
+    {
+      "platform": "X / Twitter",
+      "tool": "Web search",
+      "query": "site:x.com Jev TypeSafe decision model paper October 2026"
+    },
+    {
+      "platform": "X / Twitter",
+      "tool": "Web search",
+      "query": "\"LLM-as-Jev\" arxiv \"decision models\""
+    },
+    {
+      "platform": "X / Twitter",
+      "tool": "Community index",
+      "query": "jev-x.com recent posts",
+      "url": "https://jev-x.com/"
+    },
+    {
+      "platform": "X / Twitter",
+      "tool": "Vendor citation index",
+      "query": "jevmodel.ai/citations source notes",
+      "url": "https://jevmodel.ai/citations/"
+    },
+    {
+      "platform": "Zhihu",
+      "tool": "Web search site filter",
+      "query": "site:zhihu.com Jev 决策模型"
+    },
+    {
+      "platform": "Sina Weibo",
+      "tool": "Web search site filter",
+      "query": "site:weibo.com Jev 决策模型 OR System One 论文"
+    }
+  ],
+  "outcomes": {
+    "new_papers_from_social": 0,
+    "note": "The same day's arXiv API sweep (first submissions 2026-10-27 through 2026-10-29) added 5 papers and excluded 1 candidate. Social channels produced no additional verifiable arXiv records; every ID they surfaced was already catalogued."
+  },
+  "cross_checks": [
+    {
+      "source": "web search (Chinese) via mlsanity.com",
+      "arxiv_ids_seen": ["2610.02586"],
+      "disposition": "Already included (related)."
+    },
+    {
+      "source": "web search (Chinese) via jevdirectory.org",
+      "arxiv_ids_seen": ["2610.02076"],
+      "disposition": "Already included."
+    },
+    {
+      "source": "web search following ResearchGate/alphaXiv links",
+      "arxiv_ids_seen": ["2610.25456", "2610.21412"],
+      "disposition": "Both already included."
+    },
+    {
+      "source": "jevmodel.ai/citations",
+      "arxiv_ids_seen": ["2609.14811", "2609.26550", "2609.29769", "2609.37647"],
+      "disposition": "Unchanged from 2026-10-27: three already included, 2609.14811 already excluded."
+    },
+    {
+      "source": "jev-x.com",
+      "arxiv_ids_seen": [],
+      "disposition": "Posts dated through 10/28 carry no arXiv identifiers; no new records."
+    }
+  ],
+  "unresolved_leads": [
+    {
+      "lead": "WeChat article 深夜看技术：Jev类决策模型用于RAG检索思路-DecisionRAG (account 老刘说NLP), describing a DecisionRAG retrieval design using one-forward-pass option probabilities.",
+      "disposition": "No arXiv record located; article body not read. Keep unresolved; do not treat as a research paper without a verifiable record."
+    },
+    {
+      "lead": "WeChat article Jev 决策模型遇上电车难题 (account 屠荒者), carried over from 2026-10-27.",
+      "disposition": "Still no arXiv record located; keep unresolved."
+    },
+    {
+      "lead": "X thread From Reasoning to Decisions (TheTuringPost) on Jev training with classification, calibration and selective prediction.",
+      "disposition": "Newsletter-style discussion; no new arXiv identifier surfaced."
+    },
+    {
+      "lead": "X posts on Jev 1.14 release, Jev-Mem (mem0ai) and TypeSafe funding.",
+      "disposition": "Product and funding news, not research papers."
+    }
+  ]
+}

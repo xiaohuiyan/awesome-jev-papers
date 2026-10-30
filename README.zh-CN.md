@@ -12,9 +12,9 @@
 
 | 收录论文 | Jev 直接相关 | 同类模型与方法 | 基础背景 | 含已核实代码 |
 | ---: | ---: | ---: | ---: | ---: |
-| **225** | 150 | 71 | 4 | 77 |
+| **230** | 153 | 73 | 4 | 79 |
 
-更新于 **2026-10-27** · 主要收录窗口 **2025-10-16—2026-10-26**（首次提交日期）
+更新于 **2026-10-29** · 主要收录窗口 **2025-10-16—2026-10-27**（首次提交日期）
 
 [十篇入门](#recommended-reading) · [按问题选文](#category-index) · [基础背景](#foundations) · [数据与维护](#reuse-and-updates)
 
@@ -51,11 +51,11 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 | 你想了解什么？ | 主题 | 直接 / 相关 | 合计 |
 | --- | --- | ---: | ---: |
 | 怎样训练一个专门做选择的模型？ | [模型架构与训练方法](#architecture) | 10 / 31 | 41 |
-| 快决策在哪些任务上够用？ | [基准测试与比较评估](#evaluation) | 25 / 5 | 30 |
-| 模型说有把握，真的可靠吗？ | [概率校准、可靠性与选择性决策](#calibration) | 15 / 8 | 23 |
+| 快决策在哪些任务上够用？ | [基准测试与比较评估](#evaluation) | 26 / 5 | 31 |
+| 模型说有把握，真的可靠吗？ | [概率校准、可靠性与选择性决策](#calibration) | 16 / 8 | 24 |
 | 何时搜索、调用工具或交给更强的模型？ | [搜索、记忆、工具与智能体决策](#agents) | 29 / 8 | 37 |
 | 换个问法或选项顺序，会不会改变判断？ | [安全、鲁棒性与决策偏置](#security) | 30 / 5 | 35 |
-| 放进真实工作流，质量与速度如何取舍？ | [领域应用与部署效率](#applications) | 41 / 14 | 55 |
+| 放进真实工作流，质量与速度如何取舍？ | [领域应用与部署效率](#applications) | 42 / 16 | 58 |
 
 每篇只计入一个主分类；另有 4 篇基础背景。每类先列 Jev 直接相关，再列同类方法；组内按首次提交日期倒序排列。条目保留发表时间、作者、单位、解决问题与核心贡献；单位取自论文原文（HTML 全文或 PDF 首页），9 篇未署名单位的论文不展示该项。完整作者名单、标签与核实记录见[证据台账](docs/EVIDENCE.md)与 [BibTeX](references.bib)。
 
@@ -401,8 +401,16 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 [返回分类导航](#category-index)
 
-### Jev 直接相关 · 25
+### Jev 直接相关 · 26
 
+<a id="paper-2610-36915"></a>
+#### [Do We Need an LLM to Know Why Sources Conflict? Decision Models for Knowledge-Conflict Typing in RAG](https://arxiv.org/abs/2610.36915v1) · [PDF](https://arxiv.org/pdf/2610.36915v1) · [代码](https://github.com/Parv17k/decision-models-conflict-typing)
+- **📅 发表时间**：2026-10-27（v1）
+- **👥 作者**：Parv Khatri；Harshul Jain；Mehak Kapoor；Tanya Sah
+- **🏢 单位**：Independent Researcher
+- **🎯 解决问题**：决策模型能否又快又准地判定 RAG 来源冲突的类型？
+- **💡 核心贡献**：用 CONFLICTS 原始提示对 Vercel AI Gateway 当日在列的全部 11 个决策模型（含固定版本的 Jev）做知识冲突类型判断普查，并构建通往 Gemini 3.8 Flash 的置信级联，把成本压到其 25-37%。
+---
 <a id="paper-2610-34875"></a>
 #### [RubriX: A Fast, Fine-Tunable Non-Autoregressive Rubric Judge](https://arxiv.org/abs/2610.34875v1) · [PDF](https://arxiv.org/pdf/2610.34875v1)
 - **📅 发表时间**：2026-10-26（v1）
@@ -649,8 +657,16 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 [返回分类导航](#category-index)
 
-### Jev 直接相关 · 15
+### Jev 直接相关 · 16
 
+<a id="paper-2610-37229"></a>
+#### [Decision Models as Judges for Hallucination Detection](https://arxiv.org/abs/2610.37229v1) · [PDF](https://arxiv.org/pdf/2610.37229v1)
+- **📅 发表时间**：2026-10-27（v1）
+- **👥 作者**：Haozheng Liu；Zhaoqian Xue；Zhongyin Wang 等（共 7 位）
+- **🏢 单位**：New York University；University of Arizona；University of Illinois Urbana-Champaign；University of California, Irvine；Emory University 等（共 6 家）
+- **🎯 解决问题**：决策模型能否便宜又可靠地裁判模型输出中的幻觉？
+- **💡 核心贡献**：在五类幻觉的二分类检测上，把 jev、d1、clef、pplx、gpt-6-luna 五个决策模型与生成式裁判 gpt-6-sol 对比，发现其概率过度自信，置信级联能以约 1-3% 成本追平裁判。
+---
 <a id="paper-2610-29961"></a>
 #### [Commit or Abstain? System One Decision Models, LLMs, and Missing Legal Authority](https://arxiv.org/abs/2610.29961v1) · [PDF](https://arxiv.org/pdf/2610.29961v1) · [代码](https://github.com/mmikaildemir/commit-or-abstain)
 - **📅 发表时间**：2026-10-21（v1）
@@ -1437,8 +1453,16 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 [返回分类导航](#category-index)
 
-### Jev 直接相关 · 41
+### Jev 直接相关 · 42
 
+<a id="paper-2610-36595"></a>
+#### [Learning to Formalize: Bridging Open-Ended Workloads and Fast Decision Models](https://arxiv.org/abs/2610.36595v1) · [PDF](https://arxiv.org/pdf/2610.36595v1)
+- **📅 发表时间**：2026-10-27（v1）
+- **👥 作者**：Chengxuan Pei；Ziyao Wang；Teng Mei；Zhe Li
+- **🏢 单位**：CUHK-Shenzhen；University of Tokyo；Kunlunxin Corporation
+- **🎯 解决问题**：没有候选列表的开放式任务如何用上决策模型？
+- **💡 核心贡献**：训练一个小型候选形式化器，把开放式具身任务转成经校验的选项列表交给冻结决策模型，在 CALVIN-D 任务上与官方 TypeSafe Jev-1.13.0 API 对比，端到端延迟 2.09 秒。
+---
 <a id="paper-2610-34626"></a>
 #### [Entity Matching using Decision Models](https://arxiv.org/abs/2610.34626v1) · [PDF](https://arxiv.org/pdf/2610.34626v1) · [代码](https://github.com/wbsg-uni-mannheim/decision-models-4-entity-matching)
 - **📅 发表时间**：2026-10-25（v1）
@@ -1766,8 +1790,24 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🎯 解决问题**：边缘服务编排能否用低延迟决策模型替代 LLM？
 - **💡 核心贡献**：将 Jev 接入边缘服务编排，测量经核验请求、准入行为和执行结果。
 ---
-### 同类模型与方法 · 14
+### 同类模型与方法 · 16
 
+<a id="paper-2610-36937"></a>
+#### [JevRec: Linguistic Encoding with Jev-like Decision Modeling for LLM-based Generative Recommendation](https://arxiv.org/abs/2610.36937v1) · [PDF](https://arxiv.org/pdf/2610.36937v1)
+- **📅 发表时间**：2026-10-27（v1）
+- **👥 作者**：Qiyong Zhong；Jiajie Su；Ming Yang；Li Zhang
+- **🏢 单位**：Zhejiang University
+- **🎯 解决问题**：生成式推荐该如何给物品分配长短不一的标识？
+- **💡 核心贡献**：用共享码本把推荐物品表示为变长单词，并以类 Jev 决策头专门预测 SID 长度分布、另一头按长度生成内容，在三个公开数据集上以更低训练与推理时间超过 TIGER 等基线。
+---
+<a id="paper-2610-36804"></a>
+#### [DFIP: Decision-Focused Inference Path for System One Models](https://arxiv.org/abs/2610.36804v1) · [PDF](https://arxiv.org/pdf/2610.36804v1) · [代码](https://github.com/superagent-ai/dfip)
+- **📅 发表时间**：2026-10-27（v1）
+- **👥 作者**：Ismail Pelaseyed；Alan Zabihi
+- **🏢 单位**：Superagent Technologies Inc.
+- **🎯 解决问题**：System One 模型的服务时间都花在了哪里？
+- **💡 核心贡献**：在 PPLX-Decider、Liquid d1-3B、Clef-Flash、GLiNER2.5-Decide 四个 System One 服务栈上实测 CUDA 图重放、候选 token 投影与长度感知批处理，给出按负载划分的加速、常驻请求下的选择保真审计以及多样到达时的失效。
+---
 <a id="paper-2610-34124"></a>
 #### [Decision-Native Recommendation with Large Language Models](https://arxiv.org/abs/2610.34124v1) · [PDF](https://arxiv.org/pdf/2610.34124v1)
 - **📅 发表时间**：2026-10-25（v1）

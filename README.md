@@ -12,9 +12,9 @@ This reading list asks a concrete question: given context and a set of options, 
 
 | Papers | Direct Jev | Related methods | Foundations | With verified code |
 | ---: | ---: | ---: | ---: | ---: |
-| **225** | 150 | 71 | 4 | 77 |
+| **230** | 153 | 73 | 4 | 79 |
 
-Updated **2026-10-27** · Main window **2025-10-16–2026-10-26** (first submission)
+Updated **2026-10-29** · Main window **2025-10-16–2026-10-27** (first submission)
 
 [Start with ten papers](#recommended-reading) · [Browse by question](#category-index) · [Foundations](#foundations) · [Data and maintenance](#reuse-and-updates)
 
@@ -51,11 +51,11 @@ Suggested path: **assess the evidence → compare capabilities → understand mo
 | Your question | Topic | Direct / related | Total |
 | --- | --- | ---: | ---: |
 | How do we train a model specifically to choose? | [Model architectures and training](#architecture) | 10 / 31 | 41 |
-| When are fast decisions good enough? | [Benchmarks and comparative evaluation](#evaluation) | 25 / 5 | 30 |
-| Can we trust the model's confidence? | [Calibration, reliability and selective decisions](#calibration) | 15 / 8 | 23 |
+| When are fast decisions good enough? | [Benchmarks and comparative evaluation](#evaluation) | 26 / 5 | 31 |
+| Can we trust the model's confidence? | [Calibration, reliability and selective decisions](#calibration) | 16 / 8 | 24 |
 | When should an agent search, use a tool, or delegate? | [Search, memory, tools and agent decisions](#agents) | 29 / 8 | 37 |
 | Can phrasing, option order, or attacks change the decision? | [Security, robustness and decision bias](#security) | 30 / 5 | 35 |
-| How do quality and speed trade off in real workflows? | [Domain applications and deployment efficiency](#applications) | 41 / 14 | 55 |
+| How do quality and speed trade off in real workflows? | [Domain applications and deployment efficiency](#applications) | 42 / 16 | 58 |
 
 Each paper has one primary category; 4 foundations are listed separately. Categories group direct Jev work before related methods, with newest first submissions first within each group. Entries keep published date, authors, affiliations, problem, and contribution; affiliations come from the papers themselves (HTML full text or PDF first page), and nine papers that state none omit the field. Full author lists, tags, and verification records live in the [evidence ledger](docs/EVIDENCE.md) and [BibTeX](references.bib).
 
@@ -401,8 +401,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 25
+### Direct Jev · 26
 
+<a id="paper-2610-36915"></a>
+#### [Do We Need an LLM to Know Why Sources Conflict? Decision Models for Knowledge-Conflict Typing in RAG](https://arxiv.org/abs/2610.36915v1) · [PDF](https://arxiv.org/pdf/2610.36915v1) · [Code](https://github.com/Parv17k/decision-models-conflict-typing)
+- **📅 Published**: 2026-10-27 (v1)
+- **👥 Authors**: Parv Khatri; Harshul Jain; Mehak Kapoor; Tanya Sah
+- **🏢 Affiliations**: Independent Researcher
+- **🎯 Problem**: Can decision models type RAG source conflicts cheaply and accurately?
+- **💡 Contribution**: Censuses all 11 decision models served by the Vercel AI Gateway (Jev included, pinned versions) on CONFLICTS knowledge-conflict typing with the original prompt, then builds confidence-gated cascades to Gemini 3.8 Flash that cut cost to 25-37%.
+---
 <a id="paper-2610-34875"></a>
 #### [RubriX: A Fast, Fine-Tunable Non-Autoregressive Rubric Judge](https://arxiv.org/abs/2610.34875v1) · [PDF](https://arxiv.org/pdf/2610.34875v1)
 - **📅 Published**: 2026-10-26 (v1)
@@ -649,8 +657,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 15
+### Direct Jev · 16
 
+<a id="paper-2610-37229"></a>
+#### [Decision Models as Judges for Hallucination Detection](https://arxiv.org/abs/2610.37229v1) · [PDF](https://arxiv.org/pdf/2610.37229v1)
+- **📅 Published**: 2026-10-27 (v1)
+- **👥 Authors**: Haozheng Liu; Zhaoqian Xue; Zhongyin Wang et al. (7 authors)
+- **🏢 Affiliations**: New York University; University of Arizona; University of Illinois Urbana-Champaign; University of California, Irvine; Emory University +1 more
+- **🎯 Problem**: Can a decision model judge hallucinations reliably and cheaply?
+- **💡 Contribution**: Benchmarks five decision models (jev, d1, clef, pplx, gpt-6-luna) against the generative judge gpt-6-sol on binary hallucination detection across five types, finding overconfident probabilities and a confidence cascade that matches the judge at 1-3% of its cost.
+---
 <a id="paper-2610-29961"></a>
 #### [Commit or Abstain? System One Decision Models, LLMs, and Missing Legal Authority](https://arxiv.org/abs/2610.29961v1) · [PDF](https://arxiv.org/pdf/2610.29961v1) · [Code](https://github.com/mmikaildemir/commit-or-abstain)
 - **📅 Published**: 2026-10-21 (v1)
@@ -1437,8 +1453,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 41
+### Direct Jev · 42
 
+<a id="paper-2610-36595"></a>
+#### [Learning to Formalize: Bridging Open-Ended Workloads and Fast Decision Models](https://arxiv.org/abs/2610.36595v1) · [PDF](https://arxiv.org/pdf/2610.36595v1)
+- **📅 Published**: 2026-10-27 (v1)
+- **👥 Authors**: Chengxuan Pei; Ziyao Wang; Teng Mei; Zhe Li
+- **🏢 Affiliations**: CUHK-Shenzhen; University of Tokyo; Kunlunxin Corporation
+- **🎯 Problem**: How can open-ended workloads without candidate lists use decision models?
+- **💡 Contribution**: Trains a small candidate formalizer that turns open-ended embodied tasks into validated option lists for a frozen decision model, benchmarking the pipeline against the official TypeSafe Jev-1.13.0 API on CALVIN-D episodes with 2.09 s end-to-end latency.
+---
 <a id="paper-2610-34626"></a>
 #### [Entity Matching using Decision Models](https://arxiv.org/abs/2610.34626v1) · [PDF](https://arxiv.org/pdf/2610.34626v1) · [Code](https://github.com/wbsg-uni-mannheim/decision-models-4-entity-matching)
 - **📅 Published**: 2026-10-25 (v1)
@@ -1766,8 +1790,24 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: Can a low-latency decision model replace LLMs in edge service orchestration?
 - **💡 Contribution**: Integrates Jev into edge service orchestration and measures verified requests, admission behavior and execution outcomes.
 ---
-### Related model / method · 14
+### Related model / method · 16
 
+<a id="paper-2610-36937"></a>
+#### [JevRec: Linguistic Encoding with Jev-like Decision Modeling for LLM-based Generative Recommendation](https://arxiv.org/abs/2610.36937v1) · [PDF](https://arxiv.org/pdf/2610.36937v1)
+- **📅 Published**: 2026-10-27 (v1)
+- **👥 Authors**: Qiyong Zhong; Jiajie Su; Ming Yang; Li Zhang
+- **🏢 Affiliations**: Zhejiang University
+- **🎯 Problem**: How should generative recommendation assign identifier lengths?
+- **💡 Contribution**: Represents recommendation items as variable-length words from shared codebooks and adds a Jev-like decision head that scores SID lengths while a separate head generates content, outperforming TIGER-style baselines on three public datasets at lower training and inference time.
+---
+<a id="paper-2610-36804"></a>
+#### [DFIP: Decision-Focused Inference Path for System One Models](https://arxiv.org/abs/2610.36804v1) · [PDF](https://arxiv.org/pdf/2610.36804v1) · [Code](https://github.com/superagent-ai/dfip)
+- **📅 Published**: 2026-10-27 (v1)
+- **👥 Authors**: Ismail Pelaseyed; Alan Zabihi
+- **🏢 Affiliations**: Superagent Technologies Inc.
+- **🎯 Problem**: Where does serving time go for System One models?
+- **💡 Contribution**: Measures CUDA-graph replay, candidate-token projection and length-aware batching across PPLX-Decider, Liquid d1-3B, Clef-Flash and GLiNER2.5-Decide serving stacks, reporting workload-specific speedups, preserved choices under resident requests, and failures under diverse arrivals.
+---
 <a id="paper-2610-34124"></a>
 #### [Decision-Native Recommendation with Large Language Models](https://arxiv.org/abs/2610.34124v1) · [PDF](https://arxiv.org/pdf/2610.34124v1)
 - **📅 Published**: 2026-10-25 (v1)
