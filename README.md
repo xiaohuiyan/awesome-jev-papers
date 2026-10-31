@@ -12,9 +12,9 @@ This reading list asks a concrete question: given context and a set of options, 
 
 | Papers | Direct Jev | Related methods | Foundations | With verified code |
 | ---: | ---: | ---: | ---: | ---: |
-| **240** | 158 | 78 | 4 | 81 |
+| **246** | 164 | 78 | 4 | 84 |
 
-Updated **2026-10-30** · Main window **2025-10-16–2026-10-28** (first submission)
+Updated **2026-10-31** · Main window **2025-10-16–2026-10-29** (first submission)
 
 [Start with ten papers](#recommended-reading) · [Browse by question](#category-index) · [Foundations](#foundations) · [Data and maintenance](#reuse-and-updates)
 
@@ -50,14 +50,14 @@ Suggested path: **assess the evidence → compare capabilities → understand mo
 
 | Your question | Topic | Direct / related | Total |
 | --- | --- | ---: | ---: |
-| How do we train a model specifically to choose? | [Model architectures and training](#architecture) | 10 / 32 | 42 |
-| When are fast decisions good enough? | [Benchmarks and comparative evaluation](#evaluation) | 27 / 6 | 33 |
+| How do we train a model specifically to choose? | [Model architectures and training](#architecture) | 11 / 32 | 43 |
+| When are fast decisions good enough? | [Benchmarks and comparative evaluation](#evaluation) | 28 / 6 | 34 |
 | Can we trust the model's confidence? | [Calibration, reliability and selective decisions](#calibration) | 16 / 9 | 25 |
 | When should an agent search, use a tool, or delegate? | [Search, memory, tools and agent decisions](#agents) | 30 / 9 | 39 |
-| Can phrasing, option order, or attacks change the decision? | [Security, robustness and decision bias](#security) | 31 / 6 | 37 |
-| How do quality and speed trade off in real workflows? | [Domain applications and deployment efficiency](#applications) | 44 / 16 | 60 |
+| Can phrasing, option order, or attacks change the decision? | [Security, robustness and decision bias](#security) | 34 / 6 | 40 |
+| How do quality and speed trade off in real workflows? | [Domain applications and deployment efficiency](#applications) | 45 / 16 | 61 |
 
-Each paper has one primary category; 4 foundations are listed separately. Categories group direct Jev work before related methods, with newest first submissions first within each group. Entries keep published date, authors, affiliations, problem, and contribution; affiliations come from the papers themselves (HTML full text or PDF first page), and nine papers that state none omit the field. Full author lists, tags, and verification records live in the [evidence ledger](docs/EVIDENCE.md) and [BibTeX](references.bib).
+Each paper has one primary category; 4 foundations are listed separately. Categories group direct Jev work before related methods, with newest first submissions first within each group. Entries keep published date, authors, affiliations, problem, and contribution; affiliations come from the papers themselves (HTML full text or PDF first page), and 13 papers that state none omit the field. Full author lists, tags, and verification records live in the [evidence ledger](docs/EVIDENCE.md) and [BibTeX](references.bib).
 
 <a id="architecture"></a>
 ## Model architectures and training
@@ -66,8 +66,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 10
+### Direct Jev · 11
 
+<a id="paper-2610-38915"></a>
+#### [Lev-3B: A Data Recipe for Compact Probabilistic Log Decision Models](https://arxiv.org/abs/2610.38915v1) · [PDF](https://arxiv.org/pdf/2610.38915v1)
+- **📅 Published**: 2026-10-28 (v1)
+- **👥 Authors**: Leo Betthauser; Yingqi Liu; Uday Shah et al. (8 authors)
+- **🏢 Affiliations**: Cisco
+- **🎯 Problem**: What data recipe trains a compact decision model for log analysis?
+- **💡 Contribution**: Trains Lev-3B, an open 3B-parameter decision model built on Granite-4.1-3B-Base with a shared pointer readout, with a two-stage curriculum - bounded natural-language decisions before any log data, then the target tasks mixed with general log data across 35 auxiliary tasks: the recipe transfers substantially better than training on log data alone, general log data improves excluded sources, and at a fraction of serving cost Lev-3B outperforms prompted frontier models; hosted Jev (version-pinned 1.13.0) is evaluated zero-shot and 5-shot as a baseline throughout.
+---
 <a id="paper-2610-31521"></a>
 #### [Jev-DLC: Decision-Level Continual Learning from Typed Feedback](https://arxiv.org/abs/2610.31521v1) · [PDF](https://arxiv.org/pdf/2610.31521v1)
 - **📅 Published**: 2026-10-22 (v1)
@@ -409,8 +417,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 27
+### Direct Jev · 28
 
+<a id="paper-2610-40318"></a>
+#### [Decision and System One models in rheumatology: accuracy and calibration on specialty-training examination questions and diagnostic case vignettes](https://arxiv.org/abs/2610.40318v1) · [PDF](https://arxiv.org/pdf/2610.40318v1)
+- **📅 Published**: 2026-10-29 (v1)
+- **👥 Authors**: Alfredo Madrid-García; Diego Benavent; Fabian Lechner et al. (6 authors)
+- **🏢 Affiliations**: Independent researcher, Madrid, Spain; Rheumatology Department, Hospital Universitari de Bellvitge; Institute for Digital Medicine, Marburg University; Division of Rheumatology and Systemic Inflammatory Disorders, University Medical Center Hamburg-Eppendorf
+- **🎯 Problem**: Are fast, confident decisions reliable on both specialist exams and diagnostic vignettes?
+- **💡 Contribution**: Compares four System One models (Jev 1.13, Clef, Microsoft-Decision-1, Laya) and GPT-6 Luna against GPT-6 Sol on 172 Spanish/English rheumatology exam questions (expanded RheumaMIR) and 70 diagnostic vignettes (RheumBench): Jev reaches 93.0%/91.9% on the exam below GPT-6 Sol's 99.4%, falls to 50.0% on vignettes with overconfidence (mean probability 0.659, index +0.159), and its answers with probability >=0.90 are 98.5% correct on the exam but 84.6% on vignettes.
+---
 <a id="paper-2610-38448"></a>
 #### [Benchmarking decision models against generative large language models on medical multiple-choice questions](https://arxiv.org/abs/2610.38448v1) · [PDF](https://arxiv.org/pdf/2610.38448v1)
 - **📅 Published**: 2026-10-28 (v1)
@@ -1212,8 +1228,32 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 31
+### Direct Jev · 34
 
+<a id="paper-2610-40588"></a>
+#### [Pre-Crime for Agents, at the Last Second: Probing When a Recruited Agent Gives In](https://arxiv.org/abs/2610.40588v1) · [PDF](https://arxiv.org/pdf/2610.40588v1) · [Code](https://github.com/leonidas1712/precrime-agents)
+- **📅 Published**: 2026-10-29 (v1)
+- **👥 Authors**: Leonidas Raghav
+- **🏢 Affiliations**: Independent Researcher
+- **🎯 Problem**: Can an overseer see a recruited agent giving in before anything is written?
+- **💡 Contribution**: Asks whether an overseer can foresee a recruited agent breaking its operator's rule before anything is written: linear probes read at each model call catch 82% of leaking calls at a 5% benign flag rate on Qwen3-32B (AUROC 0.91 on gpt-oss-20b reasoning), while the zero-shot Jev text monitor (typesafe/jev-1.14 via OpenRouter) catches 26%; the warning is short-range, and halting on any alarm would stop most benign episodes.
+---
+<a id="paper-2610-39747"></a>
+#### [When the Top Answer Decides: Gender Bias in Decision Models](https://arxiv.org/abs/2610.39747v1) · [PDF](https://arxiv.org/pdf/2610.39747v1) · [Code](https://github.com/yhavinga/decision-model-gender-bias)
+- **📅 Published**: 2026-10-29 (v1)
+- **👥 Authors**: Yeb Havinga
+- **🏢 Affiliations**: Independent Researcher
+- **🎯 Problem**: Do decision models lean toward one gender when the top answer decides for people?
+- **💡 Contribution**: Tests TypeSafe's closed Jev (1.14/1.13) and five open decision models (pplx-decider, clef-flash, granite-switch, Kev 4B, d1 3B) on gender-swapped yes/no decisions, BBQ, StereoSet and the Fulgu-Capraro studies: five of six give women significantly more favourable answers (+0.05 to +0.10 in log-odds), a gender swap changes 1-3.5% of top answers (Jev's partly through call-to-call variation), and the makers' recommended confidence gate removes many biased commitments but raises the stereotyped share of those it keeps in ambiguous BBQ gender questions.
+---
+<a id="paper-2610-38895"></a>
+#### [FlipJev: Fast Black-Box Red Teaming Finds Universal Adversarial Suffixes for Typed Decision Models](https://arxiv.org/abs/2610.38895v1) · [PDF](https://arxiv.org/pdf/2610.38895v1) · [Code](https://github.com/SaFo-Lab/FlipJev)
+- **📅 Published**: 2026-10-28 (v1)
+- **👥 Authors**: Xiaogeng Liu; Xinyan Wang; Chaowei Xiao
+- **🏢 Affiliations**: Johns Hopkins University; University of Wisconsin–Madison
+- **🎯 Problem**: How easily can an attacker flip a typed decision's confident answers?
+- **💡 Contribution**: Red-teams hosted Jev with a fast black-box query-based attack that exploits the model's own speed and calls no attacker language model: across 12 datasets no common prompt-injection strategy changes a correct answer in 10,240 paired tests, but short suffixes found within minutes flip confident answers and transfer widely - one suffix per dataset flips 43% of unseen documents, and a suffix generated from one task flips 90-100% of samples in other tasks.
+---
 <a id="paper-2610-38623"></a>
 #### [Cross-Primitive Consistency in Jev](https://arxiv.org/abs/2610.38623v1) · [PDF](https://arxiv.org/pdf/2610.38623v1) · [Code](https://github.com/67L1/PrimaCons-CRPR)
 - **📅 Published**: 2026-10-28 (v1)
@@ -1517,8 +1557,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 44
+### Direct Jev · 45
 
+<a id="paper-2610-40327"></a>
+#### [Radiology Guideline-derived Decision Graph for Efficient Clinical Decision Support](https://arxiv.org/abs/2610.40327v1) · [PDF](https://arxiv.org/pdf/2610.40327v1)
+- **📅 Published**: 2026-10-29 (v1)
+- **👥 Authors**: Xuewen Zhou; Zhen Chen
+- **🏢 Affiliations**: The Hong Kong Polytechnic University
+- **🎯 Problem**: Can guideline logic be compiled so a fast model only answers local questions?
+- **💡 Contribution**: Compiles radiology guidelines into an executable decision graph, where an LLM extracts local decision subgraphs during compilation and hosted Jev (v1.13.0) answers localized clinical questions at inference while deterministic traversal resolves Boolean logic: across 347 renal-cyst, adnexal-mass and thyroid-nodule cases, System One accuracy rises from 57.3% to 90.8%, above retrieval-augmented GPT-4o (80.1%) and graph-guided GPT-4o with chain-of-thought (82.7%), at substantially lower latency and cost without task-specific training.
+---
 <a id="paper-2610-38697"></a>
 #### [SatOps-Decision: Low-Latency Discriminative Decisions for Onboard Satellite Communication Operations](https://arxiv.org/abs/2610.38697v1) · [PDF](https://arxiv.org/pdf/2610.38697v1)
 - **📅 Published**: 2026-10-28 (v1)

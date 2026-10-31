@@ -12,9 +12,9 @@
 
 | 收录论文 | Jev 直接相关 | 同类模型与方法 | 基础背景 | 含已核实代码 |
 | ---: | ---: | ---: | ---: | ---: |
-| **240** | 158 | 78 | 4 | 81 |
+| **246** | 164 | 78 | 4 | 84 |
 
-更新于 **2026-10-30** · 主要收录窗口 **2025-10-16—2026-10-28**（首次提交日期）
+更新于 **2026-10-31** · 主要收录窗口 **2025-10-16—2026-10-29**（首次提交日期）
 
 [十篇入门](#recommended-reading) · [按问题选文](#category-index) · [基础背景](#foundations) · [数据与维护](#reuse-and-updates)
 
@@ -50,14 +50,14 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 | 你想了解什么？ | 主题 | 直接 / 相关 | 合计 |
 | --- | --- | ---: | ---: |
-| 怎样训练一个专门做选择的模型？ | [模型架构与训练方法](#architecture) | 10 / 32 | 42 |
-| 快决策在哪些任务上够用？ | [基准测试与比较评估](#evaluation) | 27 / 6 | 33 |
+| 怎样训练一个专门做选择的模型？ | [模型架构与训练方法](#architecture) | 11 / 32 | 43 |
+| 快决策在哪些任务上够用？ | [基准测试与比较评估](#evaluation) | 28 / 6 | 34 |
 | 模型说有把握，真的可靠吗？ | [概率校准、可靠性与选择性决策](#calibration) | 16 / 9 | 25 |
 | 何时搜索、调用工具或交给更强的模型？ | [搜索、记忆、工具与智能体决策](#agents) | 30 / 9 | 39 |
-| 换个问法或选项顺序，会不会改变判断？ | [安全、鲁棒性与决策偏置](#security) | 31 / 6 | 37 |
-| 放进真实工作流，质量与速度如何取舍？ | [领域应用与部署效率](#applications) | 44 / 16 | 60 |
+| 换个问法或选项顺序，会不会改变判断？ | [安全、鲁棒性与决策偏置](#security) | 34 / 6 | 40 |
+| 放进真实工作流，质量与速度如何取舍？ | [领域应用与部署效率](#applications) | 45 / 16 | 61 |
 
-每篇只计入一个主分类；另有 4 篇基础背景。每类先列 Jev 直接相关，再列同类方法；组内按首次提交日期倒序排列。条目保留发表时间、作者、单位、解决问题与核心贡献；单位取自论文原文（HTML 全文或 PDF 首页），9 篇未署名单位的论文不展示该项。完整作者名单、标签与核实记录见[证据台账](docs/EVIDENCE.md)与 [BibTeX](references.bib)。
+每篇只计入一个主分类；另有 4 篇基础背景。每类先列 Jev 直接相关，再列同类方法；组内按首次提交日期倒序排列。条目保留发表时间、作者、单位、解决问题与核心贡献；单位取自论文原文（HTML 全文或 PDF 首页），13 篇未署名单位的论文不展示该项。完整作者名单、标签与核实记录见[证据台账](docs/EVIDENCE.md)与 [BibTeX](references.bib)。
 
 <a id="architecture"></a>
 ## 模型架构与训练方法
@@ -66,8 +66,16 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 [返回分类导航](#category-index)
 
-### Jev 直接相关 · 10
+### Jev 直接相关 · 11
 
+<a id="paper-2610-38915"></a>
+#### [Lev-3B: A Data Recipe for Compact Probabilistic Log Decision Models](https://arxiv.org/abs/2610.38915v1) · [PDF](https://arxiv.org/pdf/2610.38915v1)
+- **📅 发表时间**：2026-10-28（v1）
+- **👥 作者**：Leo Betthauser；Yingqi Liu；Uday Shah 等（共 8 位）
+- **🏢 单位**：Cisco
+- **🎯 解决问题**：什么数据配方能训出面向日志分析的紧凑决策模型?
+- **💡 核心贡献**：在 Granite-4.1-3B-Base 上以共享指针读出训练开源 3B 参数决策模型 Lev-3B,采用两阶段课程——先学不涉日志的自然语言有界决策,再把目标任务与 35 个辅助任务的通用日志数据混合:该配方比纯日志训练迁移得好得多,通用日志数据提升未见过来源的表现,以远低于其推理成本胜过提示式前沿模型;全程以版本固定的托管 Jev(1.13.0)零样本与 5 样本为基线。
+---
 <a id="paper-2610-31521"></a>
 #### [Jev-DLC: Decision-Level Continual Learning from Typed Feedback](https://arxiv.org/abs/2610.31521v1) · [PDF](https://arxiv.org/pdf/2610.31521v1)
 - **📅 发表时间**：2026-10-22（v1）
@@ -409,8 +417,16 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 [返回分类导航](#category-index)
 
-### Jev 直接相关 · 27
+### Jev 直接相关 · 28
 
+<a id="paper-2610-40318"></a>
+#### [Decision and System One models in rheumatology: accuracy and calibration on specialty-training examination questions and diagnostic case vignettes](https://arxiv.org/abs/2610.40318v1) · [PDF](https://arxiv.org/pdf/2610.40318v1)
+- **📅 发表时间**：2026-10-29（v1）
+- **👥 作者**：Alfredo Madrid-García；Diego Benavent；Fabian Lechner 等（共 6 位）
+- **🏢 单位**：Independent researcher, Madrid, Spain；Rheumatology Department, Hospital Universitari de Bellvitge；Institute for Digital Medicine, Marburg University；Division of Rheumatology and Systemic Inflammatory Disorders, University Medical Center Hamburg-Eppendorf
+- **🎯 解决问题**：又快又有把握的决策,在专科考试与诊断病例上都可靠吗?
+- **💡 核心贡献**：在 172 道西/英双语风湿专科考题(RheumaMIR 扩展版)与 70 个诊断病例(RheumBench)上,对比 Jev 1.13、Clef、Microsoft-Decision-1、Laya 四个 System One 模型及 GPT-6 Luna 与 GPT-6 Sol:Jev 考题准确率 93.0%/91.9%,低于 GPT-6 Sol 的 99.4%;病例上降至 50.0% 且过度自信(平均概率 0.659,指数 +0.159),置信 >=0.90 的答案在考题上 98.5% 正确、在病例上仅 84.6%。
+---
 <a id="paper-2610-38448"></a>
 #### [Benchmarking decision models against generative large language models on medical multiple-choice questions](https://arxiv.org/abs/2610.38448v1) · [PDF](https://arxiv.org/pdf/2610.38448v1)
 - **📅 发表时间**：2026-10-28（v1）
@@ -1212,8 +1228,32 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 [返回分类导航](#category-index)
 
-### Jev 直接相关 · 31
+### Jev 直接相关 · 34
 
+<a id="paper-2610-40588"></a>
+#### [Pre-Crime for Agents, at the Last Second: Probing When a Recruited Agent Gives In](https://arxiv.org/abs/2610.40588v1) · [PDF](https://arxiv.org/pdf/2610.40588v1) · [代码](https://github.com/leonidas1712/precrime-agents)
+- **📅 发表时间**：2026-10-29（v1）
+- **👥 作者**：Leonidas Raghav
+- **🏢 单位**：Independent Researcher
+- **🎯 解决问题**：监督者能否在智能体就范之前、而非事后过滤中察觉?
+- **💡 核心贡献**：研究监督者能否在被策反的智能体写下违规内容之前察觉:在 Qwen3-32B 上,逐次调用读取激活的线性探针以 5% 误报率捕获 82% 的泄露调用(gpt-oss-20b 推理上 AUROC 0.91),零样本 Jev 文本监视器(经 OpenRouter 调用 typesafe/jev-1.14)仅捕获 26%;预警窗口很短,见警即停会中断大多数正常回合。
+---
+<a id="paper-2610-39747"></a>
+#### [When the Top Answer Decides: Gender Bias in Decision Models](https://arxiv.org/abs/2610.39747v1) · [PDF](https://arxiv.org/pdf/2610.39747v1) · [代码](https://github.com/yhavinga/decision-model-gender-bias)
+- **📅 发表时间**：2026-10-29（v1）
+- **👥 作者**：Yeb Havinga
+- **🏢 单位**：Independent Researcher
+- **🎯 解决问题**：当程序按最高概率答案行事时,决策模型会偏向某一性别吗?
+- **💡 核心贡献**：在性别互换的二元决策、BBQ、StereoSet 与 Fulgu-Capraro 研究上,测试 TypeSafe 闭源 Jev(1.14/1.13)与五个开源决策模型:六个模型中五个显著更偏向女性(对数几率 +0.05~+0.10),性别互换改变 1~3.5% 的最高概率答案(Jev 部分源于调用间波动);厂商推荐的置信门限虽移除多数带偏见的承诺,却提高了 BBQ 歧义性别题中保留下来的刻板印象占比。
+---
+<a id="paper-2610-38895"></a>
+#### [FlipJev: Fast Black-Box Red Teaming Finds Universal Adversarial Suffixes for Typed Decision Models](https://arxiv.org/abs/2610.38895v1) · [PDF](https://arxiv.org/pdf/2610.38895v1) · [代码](https://github.com/SaFo-Lab/FlipJev)
+- **📅 发表时间**：2026-10-28（v1）
+- **👥 作者**：Xiaogeng Liu；Xinyan Wang；Chaowei Xiao
+- **🏢 单位**：Johns Hopkins University；University of Wisconsin–Madison
+- **🎯 解决问题**：攻击者能多容易地翻转类型化决策的自信答案?
+- **💡 核心贡献**：以不依赖攻击模型、利用模型自身速度的高速黑盒查询攻击对托管 Jev 做红队测试:在 12 个数据集上,常见提示注入策略在 10,240 组配对测试中无一改变正确答案,但数分钟内搜得的短后缀能翻转自信答案且迁移性强——每个数据集一个后缀即可翻转 43% 的未见文档,来自单一任务的后缀可翻转其他任务 90%~100% 的样本。
+---
 <a id="paper-2610-38623"></a>
 #### [Cross-Primitive Consistency in Jev](https://arxiv.org/abs/2610.38623v1) · [PDF](https://arxiv.org/pdf/2610.38623v1) · [代码](https://github.com/67L1/PrimaCons-CRPR)
 - **📅 发表时间**：2026-10-28（v1）
@@ -1517,8 +1557,16 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 [返回分类导航](#category-index)
 
-### Jev 直接相关 · 44
+### Jev 直接相关 · 45
 
+<a id="paper-2610-40327"></a>
+#### [Radiology Guideline-derived Decision Graph for Efficient Clinical Decision Support](https://arxiv.org/abs/2610.40327v1) · [PDF](https://arxiv.org/pdf/2610.40327v1)
+- **📅 发表时间**：2026-10-29（v1）
+- **👥 作者**：Xuewen Zhou；Zhen Chen
+- **🏢 单位**：The Hong Kong Polytechnic University
+- **🎯 解决问题**：能否把指南逻辑编译成图,让快模型只回答局部问题?
+- **💡 核心贡献**：将放射指南编译为可执行决策图:编译期由大模型抽取局部决策子图,推理期由托管 Jev(v1.13.0)回答局部临床问题、确定性遍历解析布尔逻辑。在 347 例肾囊肿、附件肿块与甲状腺结节病例上,System One 准确率从 57.3% 提升到 90.8%,超过检索增强 GPT-4o(80.1%)与图引导思维链 GPT-4o(82.7%),延迟与成本显著更低,且无需任务专项训练。
+---
 <a id="paper-2610-38697"></a>
 #### [SatOps-Decision: Low-Latency Discriminative Decisions for Onboard Satellite Communication Operations](https://arxiv.org/abs/2610.38697v1) · [PDF](https://arxiv.org/pdf/2610.38697v1)
 - **📅 发表时间**：2026-10-28（v1）

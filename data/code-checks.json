@@ -889,5 +889,38 @@
     "canonical_url": "https://github.com/Simonlee711/MedJev",
     "description": "[arXiv 2026] MedJev: Evaluating Zero-Shot System-One Decision Making in Medicine",
     "private": false
+  },
+  {
+    "arxiv_id": "2610.39747",
+    "url": "https://github.com/yhavinga/decision-model-gender-bias",
+    "source_url": "https://arxiv.org/abs/2610.39747v1",
+    "source_location": "arXiv comment; Section 4",
+    "checked_on": "2026-10-31",
+    "status": "verified",
+    "canonical_url": "https://github.com/yhavinga/decision-model-gender-bias",
+    "description": "Code and results for \"When the Top Answer Decides: Gender Bias in Decision Models\" (arXiv:2610.39747)",
+    "private": false
+  },
+  {
+    "arxiv_id": "2610.40588",
+    "url": "https://github.com/leonidas1712/precrime-agents",
+    "source_url": "https://arxiv.org/abs/2610.40588v1",
+    "source_location": "arXiv comment (Code:)",
+    "checked_on": "2026-10-31",
+    "status": "verified",
+    "canonical_url": "https://github.com/leonidas1712/precrime-agents",
+    "description": "Pre-Crime for Agents, at the Last Second: probing when a recruited agent gives in (paper code, prompts, transcripts, results)",
+    "private": false
+  },
+  {
+    "arxiv_id": "2610.38895",
+    "url": "https://github.com/SaFo-Lab/FlipJev",
+    "source_url": "https://arxiv.org/abs/2610.38895v1",
+    "source_location": "arXiv comment (Code:)",
+    "checked_on": "2026-10-31",
+    "status": "verified",
+    "canonical_url": "https://github.com/SaFo-Lab/FlipJev",
+    "description": "The official implementation of \"FlipJev: Fast Black-Box Red Teaming Finds Universal Adversarial Suffixes for Typed Decision Models\"",
+    "private": false
   }
 ]

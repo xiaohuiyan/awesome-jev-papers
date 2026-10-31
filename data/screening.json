@@ -2920,6 +2920,62 @@
       "status": "included",
       "reason": "Concrete contribution to closely related typed-decision models or interfaces; hosted Jev not used or evaluated.",
       "screened_on": "2026-10-30"
+    },
+    {
+      "arxiv_id": "2610.40588",
+      "title": "Pre-Crime for Agents, at the Last Second: Probing When a Recruited Agent Gives In",
+      "source_url": "https://arxiv.org/abs/2610.40588v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-31"
+    },
+    {
+      "arxiv_id": "2610.40318",
+      "title": "Decision and System One models in rheumatology: accuracy and calibration on specialty-training examination questions and diagnostic case vignettes",
+      "source_url": "https://arxiv.org/abs/2610.40318v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-31"
+    },
+    {
+      "arxiv_id": "2610.39747",
+      "title": "When the Top Answer Decides: Gender Bias in Decision Models",
+      "source_url": "https://arxiv.org/abs/2610.39747v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-31"
+    },
+    {
+      "arxiv_id": "2610.40327",
+      "title": "Radiology Guideline-derived Decision Graph for Efficient Clinical Decision Support",
+      "source_url": "https://arxiv.org/abs/2610.40327v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-31"
+    },
+    {
+      "arxiv_id": "2610.38895",
+      "title": "FlipJev: Fast Black-Box Red Teaming Finds Universal Adversarial Suffixes for Typed Decision Models",
+      "source_url": "https://arxiv.org/abs/2610.38895v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-31"
+    },
+    {
+      "arxiv_id": "2610.38915",
+      "title": "Lev-3B: A Data Recipe for Compact Probabilistic Log Decision Models",
+      "source_url": "https://arxiv.org/abs/2610.38915v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-10-31"
+    },
+    {
+      "arxiv_id": "2610.40535",
+      "title": "Efficient Scalable Oversight via Rewinding",
+      "source_url": "https://arxiv.org/abs/2610.40535v1",
+      "status": "excluded",
+      "reason": "Matched a standing 'System One' query but the record contains no Jev or typed-decision-model content; rewindable interactive proofs for scalable oversight.",
+      "screened_on": "2026-10-31"
     }
   ]
 }

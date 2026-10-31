@@ -1,0 +1,93 @@
+{
+ "schema_version": 1,
+ "searched_on": "2026-10-31",
+ "time_zone": "Asia/Shanghai",
+ "purpose": "Collect recent Jev, decision-model and System One papers from WeChat, Zhihu, Sina Weibo and X, then verify against original arXiv records and deduplicate.",
+ "recency": "Queries targeted 2026-10-29 through 2026-10-31; discovery date is not paper submission date.",
+ "queries": [
+  {
+   "platform": "WeChat",
+   "tool": "Sogou WeChat public index",
+   "query": "Jev 决策模型",
+   "url": "https://weixin.sogou.com/weixin?type=2&query=Jev+%E5%86%B3%E7%AD%96%E6%A8%A1%E5%9E%8B"
+  },
+  {
+   "platform": "Zhihu",
+   "tool": "Web search site filter",
+   "query": "site:zhihu.com Jev 决策模型 OR \"System One\" 论文 2026"
+  },
+  {
+   "platform": "Sina Weibo",
+   "tool": "Web search site filter",
+   "query": "site:weibo.com Jev 决策模型 OR TypeSafe System One"
+  },
+  {
+   "platform": "X / Twitter",
+   "tool": "Web search",
+   "query": "Jev TypeSafe decision model arxiv paper October 2026"
+  },
+  {
+   "platform": "X / Twitter",
+   "tool": "Web search (lead follow-up)",
+   "query": "\"Four Decision Models Shipped in Three Weeks\" Jev Microsoft AWS"
+  },
+  {
+   "platform": "X / Twitter",
+   "tool": "Community index",
+   "query": "jev-x.com recent posts",
+   "url": "https://jev-x.com/"
+  },
+  {
+   "platform": "X / Twitter",
+   "tool": "Vendor citation index",
+   "query": "jevmodel.ai/citations source notes",
+   "url": "https://jevmodel.ai/citations/"
+  },
+  {
+   "platform": "arXiv (Zhihu lead follow-up)",
+   "tool": "arXiv Atom API",
+   "query": "all:\"Jev\" AND all:\"ecosystem\"",
+   "url": "https://export.arxiv.org/api/query?search_query=all:%22Jev%22+AND+all:%22ecosystem%22"
+  }
+ ],
+ "outcomes": {
+  "new_papers_from_social": 0,
+  "note": "No new papers from social channels this round. The Zhihu lead '真实场景下的 Jev：功能、应用与生态的数据驱动分析' resolved to the already-catalogued Jev in the Wild (arXiv 2609.30216, included 2026-10-16). The day's six additions all came from the widened arXiv API sweep (first submissions 2026-10-27 through 2026-10-31, including two 10-28 submissions indexed only after the 2026-10-30 sweep ran)."
+ },
+ "cross_checks": [
+  {
+   "lead": "Zhihu column article '真实场景下的 Jev：功能、应用与生态的数据驱动分析' (2026-09-30), described as the first large-scale data-driven analysis of Jev's public application ecosystem.",
+   "disposition": "arXiv API query all:\"Jev\" AND all:\"ecosystem\" resolved it to Jev in the Wild (arXiv 2609.30216v1, first submitted 2026-09-24), already included as direct Jev under comparative evaluation since 2026-10-16. No action."
+  },
+  {
+   "lead": "Web-search summary mentioning 'Four Decision Models Shipped in Three Weeks. Choose Wisely.' (October 2026).",
+   "disposition": "A Medium / Towards AI commentary post comparing shipped decision models; product commentary, not a research paper. No arXiv record; not catalogue material."
+  },
+  {
+   "lead": "X/Twitter web-search results surfacing Jev-ToM (2610.18610), LLM-as-Jev (2610.02076), the early evidence audit (2609.32160) and Jev for Scientific Decisions.",
+   "disposition": "All four already catalogued."
+  },
+  {
+   "lead": "jevmodel.ai/citations page (header 'Last updated: 2026-10-31').",
+   "disposition": "Same four arXiv IDs as the 2026-10-27/10-30 checks (2609.29769, 2609.26550, 2609.37647, 2609.14811); all already handled (three included, one excluded)."
+  }
+ ],
+ "unresolved_leads": [
+  {
+   "lead": "ResearchGate publication 'Referring uncertain answers by decision-model confidence: Jev, OpenAI Decisions and Clef on Korean and US medical licensing examination questions' (surfaced via X on 2026-10-30).",
+   "disposition": "Still no arXiv record located; keep unresolved."
+  },
+  {
+   "lead": "WeChat article 深夜看技术：Jev类决策模型用于RAG检索思路-DecisionRAG (account 老刘说NLP), carried over from 2026-10-29.",
+   "disposition": "Still no arXiv record located; keep unresolved."
+  },
+  {
+   "lead": "WeChat article Jev 决策模型遇上电车难题 (account 屠荒者), carried over from 2026-10-27.",
+   "disposition": "Still no arXiv record located; keep unresolved."
+  },
+  {
+   "lead": "Product and leaderboard news: '断层领先Jev' new-model-version posts (Zhihu/WeChat, AutoThink comparison), MiniCPM-OCR Jev verification model (X via jev-x.com), Switch harness framework (X), hunch embedding decision layer (X).",
+   "disposition": "Product, leaderboard and tooling news without arXiv records; not research papers. Keep watching for accompanying papers."
+  }
+ ]
+}

@@ -3,6 +3,90 @@
 
 Short excerpts support relevance decisions, not paper quality or reproducibility. Scores measure topic fit and substantive contribution only. Abstract-level review is the default; targeted full-text checks are marked. 引文用于核实相关性，不是论文质量或模型性能评分。
 
+<a id="evidence-2610-40588"></a>
+## 2610.40588 — Pre-Crime for Agents, at the Last Second: Probing When a Recruited Agent Gives In
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-10-31
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。
+
+- **topic**: “Our main monitor is Jev (Almeida, 2026), a commercial model from TypeSafe” — [Section 3, Zero-shot text monitor](https://arxiv.org/html/2610.40588v1)
+- **contribution**: “We show that a linear probe on the agent's activations can” — [Abstract](https://arxiv.org/abs/2610.40588v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2610.40588v1); first submitted 2026-10-29; updated 2026-10-29. Full authors: Leonidas Raghav.
+
+<a id="evidence-2610-40327"></a>
+## 2610.40327 — Radiology Guideline-derived Decision Graph for Efficient Clinical Decision Support
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-10-31
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。
+
+- **topic**: “For online evaluation, we use the System One model Jev (v1.13.0)” — [Section 3.1, Experiments](https://arxiv.org/html/2610.40327v1)
+- **contribution**: “improves System One accuracy from 57.3% to 90.8%” — [Abstract](https://arxiv.org/abs/2610.40327v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2610.40327v1); first submitted 2026-10-29; updated 2026-10-29. Full authors: Xuewen Zhou; Zhen Chen.
+
+<a id="evidence-2610-40318"></a>
+## 2610.40318 — Decision and System One models in rheumatology: accuracy and calibration on specialty-training examination questions and diagnostic case vignettes
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-10-31
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。
+
+- **topic**: “Four System One models (Jev 1.13, Clef, Microsoft-Decision-1, Laya)” — [Abstract](https://arxiv.org/abs/2610.40318v1)
+- **contribution**: “The primary outcome was accuracy; secondary outcomes included calibration” — [Abstract](https://arxiv.org/abs/2610.40318v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2610.40318v1); first submitted 2026-10-29; updated 2026-10-29. Full authors: Alfredo Madrid-García; Diego Benavent; Fabian Lechner; Phillip Kremer; Johannes Knitza; Beatriz Merino-Barbancho.
+
+<a id="evidence-2610-39747"></a>
+## 2610.39747 — When the Top Answer Decides: Gender Bias in Decision Models
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-10-31
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。
+
+- **topic**: “We test TypeSafe's closed Jev and five open decision models” — [Abstract](https://arxiv.org/abs/2610.39747v1)
+- **contribution**: “Five of the six give women significantly more favourable answers” — [Abstract](https://arxiv.org/abs/2610.39747v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2610.39747v1); first submitted 2026-10-29; updated 2026-10-29. Full authors: Yeb Havinga.
+
+<a id="evidence-2610-38915"></a>
+## 2610.38915 — Lev-3B: A Data Recipe for Compact Probabilistic Log Decision Models
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-10-31
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。
+
+- **topic**: “Jev, a version-pinned hosted endpoint (1.13.0), evaluated zero-shot and 5-shot” — [Section 5.1, Systems (baselines)](https://arxiv.org/html/2610.38915v1)
+- **contribution**: “transfers substantially better than training on log data alone” — [Abstract](https://arxiv.org/abs/2610.38915v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2610.38915v1); first submitted 2026-10-28; updated 2026-10-28. Full authors: Leo Betthauser; Yingqi Liu; Uday Shah; Jishang Wei; Sainyam Galhotra; Liang Gou; Vedant Dharnidharka; Hao Yang.
+
+<a id="evidence-2610-38895"></a>
+## 2610.38895 — FlipJev: Fast Black-Box Red Teaming Finds Universal Adversarial Suffixes for Typed Decision Models
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-10-31
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。
+
+- **topic**: “We fill both gaps on Jev, the representative typed decision model” — [Abstract](https://arxiv.org/abs/2610.38895v1)
+- **contribution**: “finds short suffixes that flip confident answers within minutes” — [Abstract](https://arxiv.org/abs/2610.38895v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2610.38895v1); first submitted 2026-10-28; updated 2026-10-28. Full authors: Xiaogeng Liu; Xinyan Wang; Chaowei Xiao.
+
 <a id="evidence-2610-38697"></a>
 ## 2610.38697 — SatOps-Decision: Low-Latency Discriminative Decisions for Onboard Satellite Communication Operations
 

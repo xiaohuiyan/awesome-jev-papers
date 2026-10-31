@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "updated_on": "2026-10-30",
+  "updated_on": "2026-10-31",
   "window": {
     "start": "2025-10-16",
-    "end": "2026-10-28",
+    "end": "2026-10-29",
     "basis": "first submission; reviewed version and verification date recorded per paper"
   },
   "categories": {
@@ -49,6 +49,462 @@
     "2610.04345"
   ],
   "papers": [
+    {
+      "arxiv_id": "2610.40588",
+      "title": "Pre-Crime for Agents, at the Last Second: Probing When a Recruited Agent Gives In",
+      "authors": [
+        "Leonidas Raghav"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "first_submitted": "2026-10-29",
+      "updated": "2026-10-29",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.40588",
+      "reviewed_url": "https://arxiv.org/abs/2610.40588v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40588v1",
+      "arxiv_categories": [
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "security",
+      "relation_level": "direct",
+      "tags": [
+        "security",
+        "agents",
+        "monitoring"
+      ],
+      "summary": {
+        "en": "Asks whether an overseer can foresee a recruited agent breaking its operator's rule before anything is written: linear probes read at each model call catch 82% of leaking calls at a 5% benign flag rate on Qwen3-32B (AUROC 0.91 on gpt-oss-20b reasoning), while the zero-shot Jev text monitor (typesafe/jev-1.14 via OpenRouter) catches 26%; the warning is short-range, and halting on any alarm would stop most benign episodes.",
+        "zh": "研究监督者能否在被策反的智能体写下违规内容之前察觉:在 Qwen3-32B 上,逐次调用读取激活的线性探针以 5% 误报率捕获 82% 的泄露调用(gpt-oss-20b 推理上 AUROC 0.91),零样本 Jev 文本监视器(经 OpenRouter 调用 typesafe/jev-1.14)仅捕获 26%;预警窗口很短,见警即停会中断大多数正常回合。"
+      },
+      "problem": {
+        "en": "Can an overseer see a recruited agent giving in before anything is written?",
+        "zh": "监督者能否在智能体就范之前、而非事后过滤中察觉?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "Our main monitor is Jev (Almeida, 2026), a commercial model from TypeSafe",
+          "location": "Section 3, Zero-shot text monitor",
+          "source_url": "https://arxiv.org/html/2610.40588v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "We show that a linear probe on the agent's activations can",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.40588v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-10-31",
+      "code": [
+        {
+          "url": "https://github.com/leonidas1712/precrime-agents",
+          "source_url": "https://arxiv.org/abs/2610.40588v1",
+          "source_location": "arXiv comment (Code:)",
+          "verified_on": "2026-10-31",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.40588v1",
+      "source_abstract_sha256": "7035e322d8ad2edb74cb613826e43ac3f54764fd28c16c8b0b711f8b39237722"
+    },
+    {
+      "arxiv_id": "2610.40327",
+      "title": "Radiology Guideline-derived Decision Graph for Efficient Clinical Decision Support",
+      "authors": [
+        "Xuewen Zhou",
+        "Zhen Chen"
+      ],
+      "affiliations": [
+        "The Hong Kong Polytechnic University"
+      ],
+      "first_submitted": "2026-10-29",
+      "updated": "2026-10-29",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.40327",
+      "reviewed_url": "https://arxiv.org/abs/2610.40327v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40327v1",
+      "arxiv_categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "direct",
+      "tags": [
+        "applications",
+        "medical",
+        "efficiency"
+      ],
+      "summary": {
+        "en": "Compiles radiology guidelines into an executable decision graph, where an LLM extracts local decision subgraphs during compilation and hosted Jev (v1.13.0) answers localized clinical questions at inference while deterministic traversal resolves Boolean logic: across 347 renal-cyst, adnexal-mass and thyroid-nodule cases, System One accuracy rises from 57.3% to 90.8%, above retrieval-augmented GPT-4o (80.1%) and graph-guided GPT-4o with chain-of-thought (82.7%), at substantially lower latency and cost without task-specific training.",
+        "zh": "将放射指南编译为可执行决策图:编译期由大模型抽取局部决策子图,推理期由托管 Jev(v1.13.0)回答局部临床问题、确定性遍历解析布尔逻辑。在 347 例肾囊肿、附件肿块与甲状腺结节病例上,System One 准确率从 57.3% 提升到 90.8%,超过检索增强 GPT-4o(80.1%)与图引导思维链 GPT-4o(82.7%),延迟与成本显著更低,且无需任务专项训练。"
+      },
+      "problem": {
+        "en": "Can guideline logic be compiled so a fast model only answers local questions?",
+        "zh": "能否把指南逻辑编译成图,让快模型只回答局部问题?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "For online evaluation, we use the System One model Jev (v1.13.0)",
+          "location": "Section 3.1, Experiments",
+          "source_url": "https://arxiv.org/html/2610.40327v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "improves System One accuracy from 57.3% to 90.8%",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.40327v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-10-31",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.40327v1",
+      "source_abstract_sha256": "aefe688118060dbccfd98d24629ac71db6580ac7d92592b728b228d484ad02e6"
+    },
+    {
+      "arxiv_id": "2610.40318",
+      "title": "Decision and System One models in rheumatology: accuracy and calibration on specialty-training examination questions and diagnostic case vignettes",
+      "authors": [
+        "Alfredo Madrid-García",
+        "Diego Benavent",
+        "Fabian Lechner",
+        "Phillip Kremer",
+        "Johannes Knitza",
+        "Beatriz Merino-Barbancho"
+      ],
+      "affiliations": [
+        "Independent researcher, Madrid, Spain",
+        "Rheumatology Department, Hospital Universitari de Bellvitge",
+        "Institute for Digital Medicine, Marburg University",
+        "Division of Rheumatology and Systemic Inflammatory Disorders, University Medical Center Hamburg-Eppendorf"
+      ],
+      "first_submitted": "2026-10-29",
+      "updated": "2026-10-29",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.40318",
+      "reviewed_url": "https://arxiv.org/abs/2610.40318v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40318v1",
+      "arxiv_categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "evaluation",
+      "relation_level": "direct",
+      "tags": [
+        "evaluation",
+        "medical",
+        "calibration"
+      ],
+      "summary": {
+        "en": "Compares four System One models (Jev 1.13, Clef, Microsoft-Decision-1, Laya) and GPT-6 Luna against GPT-6 Sol on 172 Spanish/English rheumatology exam questions (expanded RheumaMIR) and 70 diagnostic vignettes (RheumBench): Jev reaches 93.0%/91.9% on the exam below GPT-6 Sol's 99.4%, falls to 50.0% on vignettes with overconfidence (mean probability 0.659, index +0.159), and its answers with probability >=0.90 are 98.5% correct on the exam but 84.6% on vignettes.",
+        "zh": "在 172 道西/英双语风湿专科考题(RheumaMIR 扩展版)与 70 个诊断病例(RheumBench)上,对比 Jev 1.13、Clef、Microsoft-Decision-1、Laya 四个 System One 模型及 GPT-6 Luna 与 GPT-6 Sol:Jev 考题准确率 93.0%/91.9%,低于 GPT-6 Sol 的 99.4%;病例上降至 50.0% 且过度自信(平均概率 0.659,指数 +0.159),置信 >=0.90 的答案在考题上 98.5% 正确、在病例上仅 84.6%。"
+      },
+      "problem": {
+        "en": "Are fast, confident decisions reliable on both specialist exams and diagnostic vignettes?",
+        "zh": "又快又有把握的决策,在专科考试与诊断病例上都可靠吗?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "Four System One models (Jev 1.13, Clef, Microsoft-Decision-1, Laya)",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.40318v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "The primary outcome was accuracy; secondary outcomes included calibration",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.40318v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-10-31",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.40318v1",
+      "source_abstract_sha256": "3ba3e4c2362b7f4c2baf65ef249f3a253f6186eda2f974d100df154f2e8438fe"
+    },
+    {
+      "arxiv_id": "2610.39747",
+      "title": "When the Top Answer Decides: Gender Bias in Decision Models",
+      "authors": [
+        "Yeb Havinga"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "first_submitted": "2026-10-29",
+      "updated": "2026-10-29",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.39747",
+      "reviewed_url": "https://arxiv.org/abs/2610.39747v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.39747v1",
+      "arxiv_categories": [
+        "cs.CL",
+        "cs.CY"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "security",
+      "relation_level": "direct",
+      "tags": [
+        "security",
+        "bias",
+        "fairness"
+      ],
+      "summary": {
+        "en": "Tests TypeSafe's closed Jev (1.14/1.13) and five open decision models (pplx-decider, clef-flash, granite-switch, Kev 4B, d1 3B) on gender-swapped yes/no decisions, BBQ, StereoSet and the Fulgu-Capraro studies: five of six give women significantly more favourable answers (+0.05 to +0.10 in log-odds), a gender swap changes 1-3.5% of top answers (Jev's partly through call-to-call variation), and the makers' recommended confidence gate removes many biased commitments but raises the stereotyped share of those it keeps in ambiguous BBQ gender questions.",
+        "zh": "在性别互换的二元决策、BBQ、StereoSet 与 Fulgu-Capraro 研究上,测试 TypeSafe 闭源 Jev(1.14/1.13)与五个开源决策模型:六个模型中五个显著更偏向女性(对数几率 +0.05~+0.10),性别互换改变 1~3.5% 的最高概率答案(Jev 部分源于调用间波动);厂商推荐的置信门限虽移除多数带偏见的承诺,却提高了 BBQ 歧义性别题中保留下来的刻板印象占比。"
+      },
+      "problem": {
+        "en": "Do decision models lean toward one gender when the top answer decides for people?",
+        "zh": "当程序按最高概率答案行事时,决策模型会偏向某一性别吗?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "We test TypeSafe's closed Jev and five open decision models",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.39747v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "Five of the six give women significantly more favourable answers",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.39747v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-10-31",
+      "code": [
+        {
+          "url": "https://github.com/yhavinga/decision-model-gender-bias",
+          "source_url": "https://arxiv.org/abs/2610.39747v1",
+          "source_location": "arXiv comment; Section 4",
+          "verified_on": "2026-10-31",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.39747v1",
+      "source_abstract_sha256": "b045fcbd21e8211bfd30be68b0992069305da4780bf35e0399f1e26412aeec48"
+    },
+    {
+      "arxiv_id": "2610.38915",
+      "title": "Lev-3B: A Data Recipe for Compact Probabilistic Log Decision Models",
+      "authors": [
+        "Leo Betthauser",
+        "Yingqi Liu",
+        "Uday Shah",
+        "Jishang Wei",
+        "Sainyam Galhotra",
+        "Liang Gou",
+        "Vedant Dharnidharka",
+        "Hao Yang"
+      ],
+      "affiliations": [
+        "Cisco"
+      ],
+      "first_submitted": "2026-10-28",
+      "updated": "2026-10-28",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.38915",
+      "reviewed_url": "https://arxiv.org/abs/2610.38915v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.38915v1",
+      "arxiv_categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "architecture",
+      "relation_level": "direct",
+      "tags": [
+        "training",
+        "log-analysis",
+        "efficiency"
+      ],
+      "summary": {
+        "en": "Trains Lev-3B, an open 3B-parameter decision model built on Granite-4.1-3B-Base with a shared pointer readout, with a two-stage curriculum - bounded natural-language decisions before any log data, then the target tasks mixed with general log data across 35 auxiliary tasks: the recipe transfers substantially better than training on log data alone, general log data improves excluded sources, and at a fraction of serving cost Lev-3B outperforms prompted frontier models; hosted Jev (version-pinned 1.13.0) is evaluated zero-shot and 5-shot as a baseline throughout.",
+        "zh": "在 Granite-4.1-3B-Base 上以共享指针读出训练开源 3B 参数决策模型 Lev-3B,采用两阶段课程——先学不涉日志的自然语言有界决策,再把目标任务与 35 个辅助任务的通用日志数据混合:该配方比纯日志训练迁移得好得多,通用日志数据提升未见过来源的表现,以远低于其推理成本胜过提示式前沿模型;全程以版本固定的托管 Jev(1.13.0)零样本与 5 样本为基线。"
+      },
+      "problem": {
+        "en": "What data recipe trains a compact decision model for log analysis?",
+        "zh": "什么数据配方能训出面向日志分析的紧凑决策模型?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "Jev, a version-pinned hosted endpoint (1.13.0), evaluated zero-shot and 5-shot",
+          "location": "Section 5.1, Systems (baselines)",
+          "source_url": "https://arxiv.org/html/2610.38915v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "transfers substantially better than training on log data alone",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.38915v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-10-31",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.38915v1",
+      "source_abstract_sha256": "fdf31ea0bd405922b16d15bc1af0b919b6be2fa87d2541c7ab29ba74285fd402"
+    },
+    {
+      "arxiv_id": "2610.38895",
+      "title": "FlipJev: Fast Black-Box Red Teaming Finds Universal Adversarial Suffixes for Typed Decision Models",
+      "authors": [
+        "Xiaogeng Liu",
+        "Xinyan Wang",
+        "Chaowei Xiao"
+      ],
+      "affiliations": [
+        "Johns Hopkins University",
+        "University of Wisconsin–Madison"
+      ],
+      "first_submitted": "2026-10-28",
+      "updated": "2026-10-28",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.38895",
+      "reviewed_url": "https://arxiv.org/abs/2610.38895v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.38895v1",
+      "arxiv_categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "security",
+      "relation_level": "direct",
+      "tags": [
+        "security",
+        "adversarial",
+        "red-teaming"
+      ],
+      "summary": {
+        "en": "Red-teams hosted Jev with a fast black-box query-based attack that exploits the model's own speed and calls no attacker language model: across 12 datasets no common prompt-injection strategy changes a correct answer in 10,240 paired tests, but short suffixes found within minutes flip confident answers and transfer widely - one suffix per dataset flips 43% of unseen documents, and a suffix generated from one task flips 90-100% of samples in other tasks.",
+        "zh": "以不依赖攻击模型、利用模型自身速度的高速黑盒查询攻击对托管 Jev 做红队测试:在 12 个数据集上,常见提示注入策略在 10,240 组配对测试中无一改变正确答案,但数分钟内搜得的短后缀能翻转自信答案且迁移性强——每个数据集一个后缀即可翻转 43% 的未见文档,来自单一任务的后缀可翻转其他任务 90%~100% 的样本。"
+      },
+      "problem": {
+        "en": "How easily can an attacker flip a typed decision's confident answers?",
+        "zh": "攻击者能多容易地翻转类型化决策的自信答案?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "We fill both gaps on Jev, the representative typed decision model",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.38895v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "finds short suffixes that flip confident answers within minutes",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.38895v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-10-31",
+      "code": [
+        {
+          "url": "https://github.com/SaFo-Lab/FlipJev",
+          "source_url": "https://arxiv.org/abs/2610.38895v1",
+          "source_location": "arXiv comment (Code:)",
+          "verified_on": "2026-10-31",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.38895v1",
+      "source_abstract_sha256": "8cad750cb1e373c97123f5f651d06f6b65db8147393ba6ca12f6d6ff2798735f"
+    },
     {
       "arxiv_id": "2610.38697",
       "title": "SatOps-Decision: Low-Latency Discriminative Decisions for Onboard Satellite Communication Operations",

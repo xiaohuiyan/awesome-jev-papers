@@ -75,8 +75,9 @@ def readme(data, lang):
         sub = [p for p in papers if p["primary_category"] == key and p["relation_level"] != "background"]
         n = Counter(p["relation_level"] for p in sub)
         lines.append(f"| {CATEGORY_QUESTIONS[key][lang]} | [{cat[lang]}](#{key}) | {n['direct']} / {n['related']} | {len(sub)} |")
-    lines += ["", (f"每篇只计入一个主分类；另有 {counts['background']} 篇基础背景。每类先列 Jev 直接相关，再列同类方法；组内按首次提交日期倒序排列。条目保留发表时间、作者、单位、解决问题与核心贡献；单位取自论文原文（HTML 全文或 PDF 首页），9 篇未署名单位的论文不展示该项。完整作者名单、标签与核实记录见[证据台账](docs/EVIDENCE.md)与 [BibTeX](references.bib)。" if zh else
-                   f"Each paper has one primary category; {counts['background']} foundations are listed separately. Categories group direct Jev work before related methods, with newest first submissions first within each group. Entries keep published date, authors, affiliations, problem, and contribution; affiliations come from the papers themselves (HTML full text or PDF first page), and nine papers that state none omit the field. Full author lists, tags, and verification records live in the [evidence ledger](docs/EVIDENCE.md) and [BibTeX](references.bib)."), ""]
+    no_affil = sum(not p.get("affiliations") for p in papers)
+    lines += ["", (f"每篇只计入一个主分类；另有 {counts['background']} 篇基础背景。每类先列 Jev 直接相关，再列同类方法；组内按首次提交日期倒序排列。条目保留发表时间、作者、单位、解决问题与核心贡献；单位取自论文原文（HTML 全文或 PDF 首页），{no_affil} 篇未署名单位的论文不展示该项。完整作者名单、标签与核实记录见[证据台账](docs/EVIDENCE.md)与 [BibTeX](references.bib)。" if zh else
+                   f"Each paper has one primary category; {counts['background']} foundations are listed separately. Categories group direct Jev work before related methods, with newest first submissions first within each group. Entries keep published date, authors, affiliations, problem, and contribution; affiliations come from the papers themselves (HTML full text or PDF first page), and {no_affil} papers that state none omit the field. Full author lists, tags, and verification records live in the [evidence ledger](docs/EVIDENCE.md) and [BibTeX](references.bib)."), ""]
     labels = {"direct": "Jev 直接相关" if zh else "Direct Jev",
               "related": "同类模型与方法" if zh else "Related model / method",
               "background": "基础背景" if zh else "Foundation"}
