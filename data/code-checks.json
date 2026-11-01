@@ -922,5 +922,38 @@
     "canonical_url": "https://github.com/SaFo-Lab/FlipJev",
     "description": "The official implementation of \"FlipJev: Fast Black-Box Red Teaming Finds Universal Adversarial Suffixes for Typed Decision Models\"",
     "private": false
+  },
+  {
+    "arxiv_id": "2610.36311",
+    "url": "https://github.com/pcbrom/typed-deciders-audit",
+    "source_url": "https://arxiv.org/abs/2610.36311v1",
+    "source_location": "arXiv comment (Code, derived data, preregistration notes and frozen answers:)",
+    "checked_on": "2026-11-01",
+    "status": "verified",
+    "canonical_url": "https://github.com/pcbrom/typed-deciders-audit",
+    "description": "Reference audit of typed decision models: frozen answers, code, preregistration notes and Lean proof",
+    "private": false
+  },
+  {
+    "arxiv_id": "2610.35826",
+    "url": "https://github.com/nick7nlp/Jev-Selection-Bias",
+    "source_url": "https://arxiv.org/abs/2610.35826v3",
+    "source_location": "author-block project link in arXiv HTML (nick7nlp/Jev-Selection-Bias)",
+    "checked_on": "2026-11-01",
+    "status": "verified",
+    "canonical_url": "https://github.com/nick7nlp/Jev-Selection-Bias",
+    "description": "Evaluation code and data for \"Understanding Jev-Style System One Models: Does Structure Reduce Selection Bias?\"",
+    "private": false
+  },
+  {
+    "arxiv_id": "2610.35654",
+    "url": "https://github.com/Mei-TN/Jev-reranking",
+    "source_url": "https://arxiv.org/abs/2610.35654v2",
+    "source_location": "arXiv comment and abstract (Project page:)",
+    "checked_on": "2026-11-01",
+    "status": "verified",
+    "canonical_url": "https://github.com/Mei-TN/Jev-reranking",
+    "description": "Project page for \"Improving JEV Entailment Reranking with Span Readouts and Selective Adaptation\"",
+    "private": false
   }
 ]

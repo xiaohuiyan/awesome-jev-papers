@@ -1,6 +1,6 @@
 # Search snapshot / 检索记录
 
-**Broad-search snapshot:** 2026-10-16, Asia/Shanghai. **Window:** 2025-10-16–2026-10-16, plus four marked foundations. **Latest targeted addition:** 2026-10-31.
+**Broad-search snapshot:** 2026-10-16, Asia/Shanghai. **Window:** 2025-10-16–2026-10-16, plus four marked foundations. **Latest targeted addition:** 2026-11-01.
 
 The complete machine-readable record is [search-log.json](../data/search-log.json); decisions for all candidates are in [screening.json](../data/screening.json).
 

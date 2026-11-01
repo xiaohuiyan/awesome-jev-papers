@@ -2976,6 +2976,70 @@
       "status": "excluded",
       "reason": "Matched a standing 'System One' query but the record contains no Jev or typed-decision-model content; rewindable interactive proofs for scalable oversight.",
       "screened_on": "2026-10-31"
+    },
+    {
+      "arxiv_id": "2610.36311",
+      "title": "Confidence Is Not a Promise: A Reference Audit of Typed Decision Models",
+      "source_url": "https://arxiv.org/abs/2610.36311v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-01"
+    },
+    {
+      "arxiv_id": "2610.35868",
+      "title": "Retriever-Free Retrieval: Navigating Documents with Decision Models",
+      "source_url": "https://arxiv.org/abs/2610.35868v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-01"
+    },
+    {
+      "arxiv_id": "2610.35826",
+      "title": "Understanding Jev-Style System One Models: Does Structure Reduce Selection Bias?",
+      "source_url": "https://arxiv.org/abs/2610.35826v3",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-01"
+    },
+    {
+      "arxiv_id": "2610.35721",
+      "title": "Can JEV Support Clinical Trial Criteria Assessment?",
+      "source_url": "https://arxiv.org/abs/2610.35721v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-01"
+    },
+    {
+      "arxiv_id": "2610.35654",
+      "title": "Improving JEV Entailment Reranking with Span Readouts and Selective Adaptation",
+      "source_url": "https://arxiv.org/abs/2610.35654v2",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-01"
+    },
+    {
+      "arxiv_id": "2610.36013",
+      "title": "OmniBrain-0: A Unified Agentic Model for Embodied Intelligence",
+      "source_url": "https://arxiv.org/abs/2610.36013v1",
+      "status": "excluded",
+      "reason": "Matched the standing 'decision model' query but the record contains no Jev or typed-decision-model content; Xiaomi unified embodied-intelligence agent using the phrase generically for its high-level decision module.",
+      "screened_on": "2026-11-01"
+    },
+    {
+      "arxiv_id": "2606.12372",
+      "title": "UniIntervene: Agentic Intervention for Efficient Real-World Reinforcement Learning",
+      "source_url": "https://arxiv.org/abs/2606.12372v1",
+      "status": "excluded",
+      "reason": "Robotics human-in-the-loop RL intervention paper surfaced via a Zhihu explainer; abstract and full text contain no Jev, System One, or typed-decision-model content (the framing is journalistic).",
+      "screened_on": "2026-11-01"
+    },
+    {
+      "arxiv_id": "2510.01237",
+      "title": "Confidence-Aware Routing for Large Language Model Reliability Enhancement: A Multi-Signal Approach to Pre-Generation Hallucination Mitigation",
+      "source_url": "https://arxiv.org/abs/2510.01237v1",
+      "status": "excluded",
+      "reason": "LLM confidence-routing preprint predating Jev by a year, surfaced via a Zhihu priority-claim explainer; no typed-decision-model content.",
+      "screened_on": "2026-11-01"
     }
   ]
 }

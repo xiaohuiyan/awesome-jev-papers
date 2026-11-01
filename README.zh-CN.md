@@ -12,9 +12,9 @@
 
 | 收录论文 | Jev 直接相关 | 同类模型与方法 | 基础背景 | 含已核实代码 |
 | ---: | ---: | ---: | ---: | ---: |
-| **246** | 164 | 78 | 4 | 84 |
+| **251** | 168 | 79 | 4 | 87 |
 
-更新于 **2026-10-31** · 主要收录窗口 **2025-10-16—2026-10-29**（首次提交日期）
+更新于 **2026-11-01** · 主要收录窗口 **2025-10-16—2026-10-29**（首次提交日期）
 
 [十篇入门](#recommended-reading) · [按问题选文](#category-index) · [基础背景](#foundations) · [数据与维护](#reuse-and-updates)
 
@@ -50,12 +50,12 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 | 你想了解什么？ | 主题 | 直接 / 相关 | 合计 |
 | --- | --- | ---: | ---: |
-| 怎样训练一个专门做选择的模型？ | [模型架构与训练方法](#architecture) | 11 / 32 | 43 |
-| 快决策在哪些任务上够用？ | [基准测试与比较评估](#evaluation) | 28 / 6 | 34 |
-| 模型说有把握，真的可靠吗？ | [概率校准、可靠性与选择性决策](#calibration) | 16 / 9 | 25 |
+| 怎样训练一个专门做选择的模型？ | [模型架构与训练方法](#architecture) | 11 / 33 | 44 |
+| 快决策在哪些任务上够用？ | [基准测试与比较评估](#evaluation) | 29 / 6 | 35 |
+| 模型说有把握，真的可靠吗？ | [概率校准、可靠性与选择性决策](#calibration) | 17 / 9 | 26 |
 | 何时搜索、调用工具或交给更强的模型？ | [搜索、记忆、工具与智能体决策](#agents) | 30 / 9 | 39 |
 | 换个问法或选项顺序，会不会改变判断？ | [安全、鲁棒性与决策偏置](#security) | 34 / 6 | 40 |
-| 放进真实工作流，质量与速度如何取舍？ | [领域应用与部署效率](#applications) | 45 / 16 | 61 |
+| 放进真实工作流，质量与速度如何取舍？ | [领域应用与部署效率](#applications) | 47 / 16 | 63 |
 
 每篇只计入一个主分类；另有 4 篇基础背景。每类先列 Jev 直接相关，再列同类方法；组内按首次提交日期倒序排列。条目保留发表时间、作者、单位、解决问题与核心贡献；单位取自论文原文（HTML 全文或 PDF 首页），13 篇未署名单位的论文不展示该项。完整作者名单、标签与核实记录见[证据台账](docs/EVIDENCE.md)与 [BibTeX](references.bib)。
 
@@ -156,7 +156,7 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🎯 解决问题**：本地决策读取方式能否兼顾准确率与吞吐量？
 - **💡 核心贡献**：研究现有模型的本地决策读取方式，并以 Jev 作为准确率与吞吐量外部参照。
 ---
-### 同类模型与方法 · 32
+### 同类模型与方法 · 33
 
 <a id="paper-2610-38431"></a>
 #### [DecisionUnlearn-Bench: Unlearning Probabilistic Decisions under Changing Schemas](https://arxiv.org/abs/2610.38431v1) · [PDF](https://arxiv.org/pdf/2610.38431v1)
@@ -165,6 +165,14 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🏢 单位**：Nanyang Technological University
 - **🎯 解决问题**：当决策依赖给定候选集时,机器遗忘的目标是什么?
 - **💡 核心贡献**：从删除粒度、选项标签写法与候选集三个维度评测概率决策模型的机器遗忘:在 BANKING77 的 20 个配置上,把语义选项标签换成不透明代码几乎消除重训预言机对被删类别的识别,说明遗忘目标与模式相关,须对照匹配的重训预言机衡量。
+---
+<a id="paper-2610-35654"></a>
+#### [Improving JEV Entailment Reranking with Span Readouts and Selective Adaptation](https://arxiv.org/abs/2610.35654v2) · [PDF](https://arxiv.org/pdf/2610.35654v2) · [代码](https://github.com/Mei-TN/Jev-reranking)
+- **📅 发表时间**：2026-10-26（v2）
+- **👥 作者**：Haocheng Mei；Yuchuan Tian；Ye Yuan 等（共 8 位）
+- **🏢 单位**：Peking University；SUIBE；University of Macau；Tsinghua University；TokenRhythm Technologies
+- **🎯 解决问题**：哪些读出与适配方案能让 JEV 式模型成为更好的蕴含重排器?
+- **💡 核心贡献**：追问在直接选择上有效的读出与适配方案能否迁移到跨请求的 NLI 重排:在 NeoHorse-1-4B(Qwen3.5-4B 后训练的纯文本 JEV 式复现,含注意力与门控 DeltaNet 层)上,均值跨度池化用选项内上下文状态的平均替代选项末指针且不增头部参数,选择性适配保留注意力与门控 DeltaNet 投影的低秩更新、移除前馈适配器——在 MC11(七个来源、十一种重排配置)上,选择性适配把准确率从 50.28% 提到 52.49%,加均值跨度池化达 53.39%,四个折-种子组合全为正,可训练参数削减过半。
 ---
 <a id="paper-2610-35010"></a>
 #### [JevVLA: Jev-Inspired Energy-Based Adaptation for Vision-Language-Action Policies](https://arxiv.org/abs/2610.35010v1) · [PDF](https://arxiv.org/pdf/2610.35010v1) · [代码](https://github.com/ZJU4EmbodiedAI/JevVLA)
@@ -417,7 +425,7 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 [返回分类导航](#category-index)
 
-### Jev 直接相关 · 28
+### Jev 直接相关 · 29
 
 <a id="paper-2610-40318"></a>
 #### [Decision and System One models in rheumatology: accuracy and calibration on specialty-training examination questions and diagnostic case vignettes](https://arxiv.org/abs/2610.40318v1) · [PDF](https://arxiv.org/pdf/2610.40318v1)
@@ -442,6 +450,14 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🏢 单位**：Independent Researcher
 - **🎯 解决问题**：决策模型能否又快又准地判定 RAG 来源冲突的类型？
 - **💡 核心贡献**：用 CONFLICTS 原始提示对 Vercel AI Gateway 当日在列的全部 11 个决策模型（含固定版本的 Jev）做知识冲突类型判断普查，并构建通往 Gemini 3.8 Flash 的置信级联，把成本压到其 25-37%。
+---
+<a id="paper-2610-35826"></a>
+#### [Understanding Jev-Style System One Models: Does Structure Reduce Selection Bias?](https://arxiv.org/abs/2610.35826v3) · [PDF](https://arxiv.org/pdf/2610.35826v3) · [代码](https://github.com/nick7nlp/Jev-Selection-Bias)
+- **📅 发表时间**：2026-10-26（v3）
+- **👥 作者**：Mingyang Song；Mao Zheng；Zhiyuan Ma；Xinpeng Zhou
+- **🏢 单位**：Foundation Model Department, Tencent, China
+- **🎯 解决问题**：Jev 式系统一结构能否减少等价呈现下的选择偏差?
+- **💡 核心贡献**：固定题目内容、只打乱选项顺序,检验 Jev 式决策结构能否减少选择偏差:在两版托管 Jev(1.13 与 1.14)、十二个 Jev 复现模型与六个生成式大模型、1700 道题上,Jev 的准确率波动不足两个百分点,但八次呈现间累计失败集合扩张 27.3%~28.5%,首次失败一直延续到最后一次;重排比固定顺序重复损失明显更多初始正确答案(高复现性的复现模型同样如此),Jev 在保住正确选择上并不普遍优于大模型基线,投票保护也有限——全票一致的答案仍常出错。
 ---
 <a id="paper-2610-34875"></a>
 #### [RubriX: A Fast, Fine-Tunable Non-Autoregressive Rubric Judge](https://arxiv.org/abs/2610.34875v1) · [PDF](https://arxiv.org/pdf/2610.34875v1)
@@ -697,7 +713,7 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 [返回分类导航](#category-index)
 
-### Jev 直接相关 · 16
+### Jev 直接相关 · 17
 
 <a id="paper-2610-37229"></a>
 #### [Decision Models as Judges for Hallucination Detection](https://arxiv.org/abs/2610.37229v1) · [PDF](https://arxiv.org/pdf/2610.37229v1)
@@ -706,6 +722,14 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🏢 单位**：New York University；University of Arizona；University of Illinois Urbana-Champaign；University of California, Irvine；Emory University 等（共 6 家）
 - **🎯 解决问题**：决策模型能否便宜又可靠地裁判模型输出中的幻觉？
 - **💡 核心贡献**：在五类幻觉的二分类检测上，把 jev、d1、clef、pplx、gpt-6-luna 五个决策模型与生成式裁判 gpt-6-sol 对比，发现其概率过度自信，置信级联能以约 1-3% 成本追平裁判。
+---
+<a id="paper-2610-36311"></a>
+#### [Confidence Is Not a Promise: A Reference Audit of Typed Decision Models](https://arxiv.org/abs/2610.36311v1) · [PDF](https://arxiv.org/pdf/2610.36311v1) · [代码](https://github.com/pcbrom/typed-deciders-audit)
+- **📅 发表时间**：2026-10-26（v1）
+- **👥 作者**：Pedro Carvalho Brom
+- **🏢 单位**：Department of Mathematics, Federal Institute of Brasília, Brasília, Brazil
+- **🎯 解决问题**：决策模型输出的概率到底担保了什么?阈值何时能兑现精度承诺?
+- **💡 核心贡献**：审计决策模型概率究竟担保了什么:在 190 次可交换评测中对比开源 Laya(五个检查点)与经 API 调用的 Jev 1.13——按点估计选阈值会在 147 次中违背精度承诺,Learn-then-Test 全部守住;Beta 下界规则在 128 次中平均裁定更多条目且无需该保证;英语校准的 Jev 仅在 51 个语言区域中的 8 个保住 95% 承诺;普通打字噪声即可打破干净文本上校准的承诺;微调 Laya 在另外四个领域需 250~8000 条标注才能不劣于 Jev,LIAR2 上始终做不到;置信度能区分对错答案(AUROC 0.80~0.96)却挑不出忠实的解释。
 ---
 <a id="paper-2610-29961"></a>
 #### [Commit or Abstain? System One Decision Models, LLMs, and Missing Legal Authority](https://arxiv.org/abs/2610.29961v1) · [PDF](https://arxiv.org/pdf/2610.29961v1) · [代码](https://github.com/mmikaildemir/commit-or-abstain)
@@ -1557,7 +1581,7 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 [返回分类导航](#category-index)
 
-### Jev 直接相关 · 45
+### Jev 直接相关 · 47
 
 <a id="paper-2610-40327"></a>
 #### [Radiology Guideline-derived Decision Graph for Efficient Clinical Decision Support](https://arxiv.org/abs/2610.40327v1) · [PDF](https://arxiv.org/pdf/2610.40327v1)
@@ -1590,6 +1614,22 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🏢 单位**：CUHK-Shenzhen；University of Tokyo；Kunlunxin Corporation
 - **🎯 解决问题**：没有候选列表的开放式任务如何用上决策模型？
 - **💡 核心贡献**：训练一个小型候选形式化器，把开放式具身任务转成经校验的选项列表交给冻结决策模型，在 CALVIN-D 任务上与官方 TypeSafe Jev-1.13.0 API 对比，端到端延迟 2.09 秒。
+---
+<a id="paper-2610-35868"></a>
+#### [Retriever-Free Retrieval: Navigating Documents with Decision Models](https://arxiv.org/abs/2610.35868v1) · [PDF](https://arxiv.org/pdf/2610.35868v1)
+- **📅 发表时间**：2026-10-26（v1）
+- **👥 作者**：Chao Wan；Paul Jünger；Beixi Du 等（共 6 位）
+- **🏢 单位**：Department of Computer Science, Cornell University；ASAPP
+- **🎯 解决问题**：预训练决策模型能否直接沿文档结构导航,取代检索器?
+- **💡 核心贡献**：取消第一阶段检索器:DecisionRAG 让预训练决策模型在单次前向中并行评估候选分支,像人逛图书馆一样沿语料固有层级从宽泛主题逐级下探到段落。使用预训练托管 Jev 1.13(typesafe/jev-1.13)、无需任务专项训练或常规检索器,即在 MultiDoc2Dial 上以 13.8 R@1、Natural Questions 上以 17.4 Hit@1 胜过带 8B 重排器的稠密检索;在四个基准(最大 268 万段维基百科)上单查询检索仅需 0.7~1.8 秒。
+---
+<a id="paper-2610-35721"></a>
+#### [Can JEV Support Clinical Trial Criteria Assessment?](https://arxiv.org/abs/2610.35721v1) · [PDF](https://arxiv.org/pdf/2610.35721v1)
+- **📅 发表时间**：2026-10-26（v1）
+- **👥 作者**：Mengxian He；Ziyue Gao；Chun Li 等（共 7 位）
+- **🏢 单位**：The Chinese University of Hong Kong；Capital Medical University
+- **🎯 解决问题**：JEV 能否从病历可靠评估临床试验的入排标准?
+- **💡 核心贡献**：在严格的零数据留存政策下,以固定版本 jev-1.14.0(经 TypeSafe text Choice API)的 JEV 对比受 schema 约束的 Qwen Flash,回溯评估来自 TrialGPT 与 MIMIC-III/IV 衍生问答的 2048 组患者—条件对:批处理宏观 F1 在 TrialGAT(0.652 对 0.660)与 MIMIC-IV(0.807 对 0.814)上相当,但 MIMIC-III 上 JEV 明显领先(0.768 对 0.534),主要来自对信息不足条件更高的召回(56.3% 对 9.9%);JEV 中位延迟 1.18~1.40 秒(对比 2.80~8.90 秒),每条件成本低 53%~74%;其解读错误也提醒在用于入组决策前仍须对照病历核验输出。
 ---
 <a id="paper-2610-34626"></a>
 #### [Entity Matching using Decision Models](https://arxiv.org/abs/2610.34626v1) · [PDF](https://arxiv.org/pdf/2610.34626v1) · [代码](https://github.com/wbsg-uni-mannheim/decision-models-4-entity-matching)

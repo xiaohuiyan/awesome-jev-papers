@@ -12,9 +12,9 @@ This reading list asks a concrete question: given context and a set of options, 
 
 | Papers | Direct Jev | Related methods | Foundations | With verified code |
 | ---: | ---: | ---: | ---: | ---: |
-| **246** | 164 | 78 | 4 | 84 |
+| **251** | 168 | 79 | 4 | 87 |
 
-Updated **2026-10-31** · Main window **2025-10-16–2026-10-29** (first submission)
+Updated **2026-11-01** · Main window **2025-10-16–2026-10-29** (first submission)
 
 [Start with ten papers](#recommended-reading) · [Browse by question](#category-index) · [Foundations](#foundations) · [Data and maintenance](#reuse-and-updates)
 
@@ -50,12 +50,12 @@ Suggested path: **assess the evidence → compare capabilities → understand mo
 
 | Your question | Topic | Direct / related | Total |
 | --- | --- | ---: | ---: |
-| How do we train a model specifically to choose? | [Model architectures and training](#architecture) | 11 / 32 | 43 |
-| When are fast decisions good enough? | [Benchmarks and comparative evaluation](#evaluation) | 28 / 6 | 34 |
-| Can we trust the model's confidence? | [Calibration, reliability and selective decisions](#calibration) | 16 / 9 | 25 |
+| How do we train a model specifically to choose? | [Model architectures and training](#architecture) | 11 / 33 | 44 |
+| When are fast decisions good enough? | [Benchmarks and comparative evaluation](#evaluation) | 29 / 6 | 35 |
+| Can we trust the model's confidence? | [Calibration, reliability and selective decisions](#calibration) | 17 / 9 | 26 |
 | When should an agent search, use a tool, or delegate? | [Search, memory, tools and agent decisions](#agents) | 30 / 9 | 39 |
 | Can phrasing, option order, or attacks change the decision? | [Security, robustness and decision bias](#security) | 34 / 6 | 40 |
-| How do quality and speed trade off in real workflows? | [Domain applications and deployment efficiency](#applications) | 45 / 16 | 61 |
+| How do quality and speed trade off in real workflows? | [Domain applications and deployment efficiency](#applications) | 47 / 16 | 63 |
 
 Each paper has one primary category; 4 foundations are listed separately. Categories group direct Jev work before related methods, with newest first submissions first within each group. Entries keep published date, authors, affiliations, problem, and contribution; affiliations come from the papers themselves (HTML full text or PDF first page), and 13 papers that state none omit the field. Full author lists, tags, and verification records live in the [evidence ledger](docs/EVIDENCE.md) and [BibTeX](references.bib).
 
@@ -156,7 +156,7 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: Can local decision readouts balance accuracy with throughput?
 - **💡 Contribution**: Studies local decision readouts from existing models with Jev as an external accuracy-throughput reference.
 ---
-### Related model / method · 32
+### Related model / method · 33
 
 <a id="paper-2610-38431"></a>
 #### [DecisionUnlearn-Bench: Unlearning Probabilistic Decisions under Changing Schemas](https://arxiv.org/abs/2610.38431v1) · [PDF](https://arxiv.org/pdf/2610.38431v1)
@@ -165,6 +165,14 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🏢 Affiliations**: Nanyang Technological University
 - **🎯 Problem**: What does unlearning mean when decisions depend on the supplied candidate set?
 - **💡 Contribution**: Benchmarks machine unlearning of probabilistic decision models across deletion granularities, label renderings and candidate sets: on 20 BANKING77 configurations, replacing semantic option labels with opaque codes nearly eliminates a retrained oracle's recognition of deleted classes, so the unlearning target is schema-specific and must be measured against a matching retraining oracle.
+---
+<a id="paper-2610-35654"></a>
+#### [Improving JEV Entailment Reranking with Span Readouts and Selective Adaptation](https://arxiv.org/abs/2610.35654v2) · [PDF](https://arxiv.org/pdf/2610.35654v2) · [Code](https://github.com/Mei-TN/Jev-reranking)
+- **📅 Published**: 2026-10-26 (v2)
+- **👥 Authors**: Haocheng Mei; Yuchuan Tian; Ye Yuan et al. (8 authors)
+- **🏢 Affiliations**: Peking University; SUIBE; University of Macau; Tsinghua University; TokenRhythm Technologies
+- **🎯 Problem**: Which readout and adaptation choices make JEV-style models better entailment rerankers?
+- **💡 Contribution**: Asks whether readout and adaptation choices proven for direct selection transfer to cross-request NLI reranking in JEV-style decision models: on NeoHorse-1-4B (a post-trained, text-only repackaging of Qwen3.5-4B with attention and gated DeltaNet layers), mean-span pooling replaces the option-ending pointer with the average of contextualized states inside each NLI option without adding head parameters, and selective adaptation keeps low-rank updates in attention and gated DeltaNet projections while removing feed-forward adapters - on MC11 (eleven reranking configurations from seven sources) selective adaptation improves accuracy from 50.28% to 52.49% and adding mean-span pooling reaches 53.39%, both positive in all four fold-seed settings at over half the trainable parameters cut.
 ---
 <a id="paper-2610-35010"></a>
 #### [JevVLA: Jev-Inspired Energy-Based Adaptation for Vision-Language-Action Policies](https://arxiv.org/abs/2610.35010v1) · [PDF](https://arxiv.org/pdf/2610.35010v1) · [Code](https://github.com/ZJU4EmbodiedAI/JevVLA)
@@ -417,7 +425,7 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 28
+### Direct Jev · 29
 
 <a id="paper-2610-40318"></a>
 #### [Decision and System One models in rheumatology: accuracy and calibration on specialty-training examination questions and diagnostic case vignettes](https://arxiv.org/abs/2610.40318v1) · [PDF](https://arxiv.org/pdf/2610.40318v1)
@@ -442,6 +450,14 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🏢 Affiliations**: Independent Researcher
 - **🎯 Problem**: Can decision models type RAG source conflicts cheaply and accurately?
 - **💡 Contribution**: Censuses all 11 decision models served by the Vercel AI Gateway (Jev included, pinned versions) on CONFLICTS knowledge-conflict typing with the original prompt, then builds confidence-gated cascades to Gemini 3.8 Flash that cut cost to 25-37%.
+---
+<a id="paper-2610-35826"></a>
+#### [Understanding Jev-Style System One Models: Does Structure Reduce Selection Bias?](https://arxiv.org/abs/2610.35826v3) · [PDF](https://arxiv.org/pdf/2610.35826v3) · [Code](https://github.com/nick7nlp/Jev-Selection-Bias)
+- **📅 Published**: 2026-10-26 (v3)
+- **👥 Authors**: Mingyang Song; Mao Zheng; Zhiyuan Ma; Xinpeng Zhou
+- **🏢 Affiliations**: Foundation Model Department, Tencent, China
+- **🎯 Problem**: Does Jev-style System One structure reduce selection bias across equivalent presentations?
+- **💡 Contribution**: Shuffles option order while fixing question content to ask whether Jev-style decision structure reduces selection bias: across two hosted Jev versions (1.13 and 1.14), twelve Jev reproductions, and six generative LLMs on 1,700 questions, Jev's accuracy varies by less than two points yet its cumulative failure set expands 27.3-28.5% over eight presentations, with first failures continuing into the final one; reordering loses substantially more initial successes than fixed-order repetition (a gap that also appears in highly repeatable reproductions), Jev shows no general advantage over the LLM baselines in preserving correct choices, and voting offers limited protection - even unanimous answers are frequently wrong.
 ---
 <a id="paper-2610-34875"></a>
 #### [RubriX: A Fast, Fine-Tunable Non-Autoregressive Rubric Judge](https://arxiv.org/abs/2610.34875v1) · [PDF](https://arxiv.org/pdf/2610.34875v1)
@@ -697,7 +713,7 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 16
+### Direct Jev · 17
 
 <a id="paper-2610-37229"></a>
 #### [Decision Models as Judges for Hallucination Detection](https://arxiv.org/abs/2610.37229v1) · [PDF](https://arxiv.org/pdf/2610.37229v1)
@@ -706,6 +722,14 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🏢 Affiliations**: New York University; University of Arizona; University of Illinois Urbana-Champaign; University of California, Irvine; Emory University +1 more
 - **🎯 Problem**: Can a decision model judge hallucinations reliably and cheaply?
 - **💡 Contribution**: Benchmarks five decision models (jev, d1, clef, pplx, gpt-6-luna) against the generative judge gpt-6-sol on binary hallucination detection across five types, finding overconfident probabilities and a confidence cascade that matches the judge at 1-3% of its cost.
+---
+<a id="paper-2610-36311"></a>
+#### [Confidence Is Not a Promise: A Reference Audit of Typed Decision Models](https://arxiv.org/abs/2610.36311v1) · [PDF](https://arxiv.org/pdf/2610.36311v1) · [Code](https://github.com/pcbrom/typed-deciders-audit)
+- **📅 Published**: 2026-10-26 (v1)
+- **👥 Authors**: Pedro Carvalho Brom
+- **🏢 Affiliations**: Department of Mathematics, Federal Institute of Brasília, Brasília, Brazil
+- **🎯 Problem**: What does a decision model's probability actually license, and when does a threshold keep its accuracy promise?
+- **💡 Contribution**: Audits what a decision model's probability actually licenses, comparing open-weight Laya (five checkpoints) with Jev 1.13 through its API: across 190 exchangeable evaluations a threshold chosen by point estimate breaks its accuracy promise in 147 while Learn-then-Test keeps it in all, and a Beta lower-bound rule decides more items on average in 128 without that guarantee; calibrated in English, Jev keeps a 95% promise in only 8 of 51 locales; ordinary typing noise breaks a promise calibrated on clean text; a fine-tuned Laya needs 250-8,000 labels to be non-inferior to Jev in four further domains and never gets there on LIAR2; confidence separates right from wrong answers (AUROC 0.80-0.96) but does not select faithful explanations.
 ---
 <a id="paper-2610-29961"></a>
 #### [Commit or Abstain? System One Decision Models, LLMs, and Missing Legal Authority](https://arxiv.org/abs/2610.29961v1) · [PDF](https://arxiv.org/pdf/2610.29961v1) · [Code](https://github.com/mmikaildemir/commit-or-abstain)
@@ -1557,7 +1581,7 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 45
+### Direct Jev · 47
 
 <a id="paper-2610-40327"></a>
 #### [Radiology Guideline-derived Decision Graph for Efficient Clinical Decision Support](https://arxiv.org/abs/2610.40327v1) · [PDF](https://arxiv.org/pdf/2610.40327v1)
@@ -1590,6 +1614,22 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🏢 Affiliations**: CUHK-Shenzhen; University of Tokyo; Kunlunxin Corporation
 - **🎯 Problem**: How can open-ended workloads without candidate lists use decision models?
 - **💡 Contribution**: Trains a small candidate formalizer that turns open-ended embodied tasks into validated option lists for a frozen decision model, benchmarking the pipeline against the official TypeSafe Jev-1.13.0 API on CALVIN-D episodes with 2.09 s end-to-end latency.
+---
+<a id="paper-2610-35868"></a>
+#### [Retriever-Free Retrieval: Navigating Documents with Decision Models](https://arxiv.org/abs/2610.35868v1) · [PDF](https://arxiv.org/pdf/2610.35868v1)
+- **📅 Published**: 2026-10-26 (v1)
+- **👥 Authors**: Chao Wan; Paul Jünger; Beixi Du et al. (6 authors)
+- **🏢 Affiliations**: Department of Computer Science, Cornell University; ASAPP
+- **🎯 Problem**: Can a pretrained decision model replace the retriever by navigating document structure directly?
+- **💡 Contribution**: Drops the first-stage retriever: DecisionRAG has a pretrained decision model jointly evaluate candidate branches in a single forward pass and navigate the corpus's inherent structure from broad topics down to passages, like a person browsing a library. Using the pretrained hosted Jev 1.13 (typesafe/jev-1.13) without task-specific training or a conventional retriever, it outperforms dense retrieval with an 8B reranker by 13.8 R@1 points on MultiDoc2Dial and 17.4 Hit@1 points on Natural Questions, and across four benchmarks (up to 2.68 million Wikipedia paragraphs) retrieval takes 0.7-1.8 seconds per query.
+---
+<a id="paper-2610-35721"></a>
+#### [Can JEV Support Clinical Trial Criteria Assessment?](https://arxiv.org/abs/2610.35721v1) · [PDF](https://arxiv.org/pdf/2610.35721v1)
+- **📅 Published**: 2026-10-26 (v1)
+- **👥 Authors**: Mengxian He; Ziyue Gao; Chun Li et al. (7 authors)
+- **🏢 Affiliations**: The Chinese University of Hong Kong; Capital Medical University
+- **🎯 Problem**: Can JEV assess clinical trial eligibility criteria reliably from patient records?
+- **💡 Contribution**: Retrospectively compares JEV (fixed jev-1.14.0 via TypeSafe's text Choice API) with schema-constrained Qwen Flash on clinical-trial prescreening across 2,048 patient-condition pairs from TrialGPT and MIMIC-III/IV-derived question sets, all under strict zero-data-retention policies: batch-mode macro-F1 is similar on TrialGAT (0.652 vs 0.660) and MIMIC-IV (0.807 vs 0.814), while JEV clearly leads on MIMIC-III (0.768 vs 0.534), largely through recall for conditions with insufficient information (56.3% vs 9.9%); JEV's median latency is 1.18-1.40 s (vs 2.80-8.90 s) with 53-74% lower estimated cost per condition, though its reading errors mean outputs must still be verified against records before eligibility decisions.
 ---
 <a id="paper-2610-34626"></a>
 #### [Entity Matching using Decision Models](https://arxiv.org/abs/2610.34626v1) · [PDF](https://arxiv.org/pdf/2610.34626v1) · [Code](https://github.com/wbsg-uni-mannheim/decision-models-4-entity-matching)

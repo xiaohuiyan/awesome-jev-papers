@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_on": "2026-10-31",
+  "updated_on": "2026-11-01",
   "window": {
     "start": "2025-10-16",
     "end": "2026-10-29",
@@ -1547,6 +1547,83 @@
       "source_abstract_sha256": "5b6f1c2c117c01476f3c97db878d05cc74b8a5e71b94fc5ef12ecaa338716748"
     },
     {
+      "arxiv_id": "2610.36311",
+      "title": "Confidence Is Not a Promise: A Reference Audit of Typed Decision Models",
+      "authors": [
+        "Pedro Carvalho Brom"
+      ],
+      "affiliations": [
+        "Department of Mathematics, Federal Institute of Brasília, Brasília, Brazil"
+      ],
+      "first_submitted": "2026-10-26",
+      "updated": "2026-10-26",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.36311",
+      "reviewed_url": "https://arxiv.org/abs/2610.36311v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.36311v1",
+      "arxiv_categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "calibration",
+      "relation_level": "direct",
+      "tags": [
+        "calibration",
+        "guarantees",
+        "evaluation"
+      ],
+      "summary": {
+        "en": "Audits what a decision model's probability actually licenses, comparing open-weight Laya (five checkpoints) with Jev 1.13 through its API: across 190 exchangeable evaluations a threshold chosen by point estimate breaks its accuracy promise in 147 while Learn-then-Test keeps it in all, and a Beta lower-bound rule decides more items on average in 128 without that guarantee; calibrated in English, Jev keeps a 95% promise in only 8 of 51 locales; ordinary typing noise breaks a promise calibrated on clean text; a fine-tuned Laya needs 250-8,000 labels to be non-inferior to Jev in four further domains and never gets there on LIAR2; confidence separates right from wrong answers (AUROC 0.80-0.96) but does not select faithful explanations.",
+        "zh": "审计决策模型概率究竟担保了什么:在 190 次可交换评测中对比开源 Laya(五个检查点)与经 API 调用的 Jev 1.13——按点估计选阈值会在 147 次中违背精度承诺,Learn-then-Test 全部守住;Beta 下界规则在 128 次中平均裁定更多条目且无需该保证;英语校准的 Jev 仅在 51 个语言区域中的 8 个保住 95% 承诺;普通打字噪声即可打破干净文本上校准的承诺;微调 Laya 在另外四个领域需 250~8000 条标注才能不劣于 Jev,LIAR2 上始终做不到;置信度能区分对错答案(AUROC 0.80~0.96)却挑不出忠实的解释。"
+      },
+      "problem": {
+        "en": "What does a decision model's probability actually license, and when does a threshold keep its accuracy promise?",
+        "zh": "决策模型输出的概率到底担保了什么?阈值何时能兑现精度承诺?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "with Jev 1.13, available only through an API",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.36311v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "a threshold chosen by point estimate breaks the promise in 147",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.36311v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-01",
+      "code": [
+        {
+          "url": "https://github.com/pcbrom/typed-deciders-audit",
+          "source_url": "https://arxiv.org/abs/2610.36311v1",
+          "source_location": "arXiv comment (Code, derived data, preregistration notes and frozen answers:)",
+          "verified_on": "2026-11-01",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.36311v1",
+      "source_abstract_sha256": "c779b4f9b2489835cc0a0de3cc27a76f73fb3606de768bad2c2fe97aef16ce14"
+    },
+    {
       "arxiv_id": "2610.36006",
       "title": "MedJev: Evaluating Zero-Shot System-One Decision Making in Medicine",
       "authors": [
@@ -1627,6 +1704,323 @@
       ],
       "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.36006v1",
       "source_abstract_sha256": "c0ffac47833ed6f2564178583a8fc079198fdcba339755f7c5bf754a4a848a27"
+    },
+    {
+      "arxiv_id": "2610.35868",
+      "title": "Retriever-Free Retrieval: Navigating Documents with Decision Models",
+      "authors": [
+        "Chao Wan",
+        "Paul Jünger",
+        "Beixi Du",
+        "Bodong Liu",
+        "Navaneetha Krishnan",
+        "Kilian Q. Weinberger"
+      ],
+      "affiliations": [
+        "Department of Computer Science, Cornell University",
+        "ASAPP"
+      ],
+      "first_submitted": "2026-10-26",
+      "updated": "2026-10-26",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.35868",
+      "reviewed_url": "https://arxiv.org/abs/2610.35868v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.35868v1",
+      "arxiv_categories": [
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "direct",
+      "tags": [
+        "applications",
+        "retrieval",
+        "efficiency"
+      ],
+      "summary": {
+        "en": "Drops the first-stage retriever: DecisionRAG has a pretrained decision model jointly evaluate candidate branches in a single forward pass and navigate the corpus's inherent structure from broad topics down to passages, like a person browsing a library. Using the pretrained hosted Jev 1.13 (typesafe/jev-1.13) without task-specific training or a conventional retriever, it outperforms dense retrieval with an 8B reranker by 13.8 R@1 points on MultiDoc2Dial and 17.4 Hit@1 points on Natural Questions, and across four benchmarks (up to 2.68 million Wikipedia paragraphs) retrieval takes 0.7-1.8 seconds per query.",
+        "zh": "取消第一阶段检索器:DecisionRAG 让预训练决策模型在单次前向中并行评估候选分支,像人逛图书馆一样沿语料固有层级从宽泛主题逐级下探到段落。使用预训练托管 Jev 1.13(typesafe/jev-1.13)、无需任务专项训练或常规检索器,即在 MultiDoc2Dial 上以 13.8 R@1、Natural Questions 上以 17.4 Hit@1 胜过带 8B 重排器的稠密检索;在四个基准(最大 268 万段维基百科)上单查询检索仅需 0.7~1.8 秒。"
+      },
+      "problem": {
+        "en": "Can a pretrained decision model replace the retriever by navigating document structure directly?",
+        "zh": "预训练决策模型能否直接沿文档结构导航,取代检索器?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "(TypeSafe’s Jev 1.13, typesafe/jev-1.13)",
+          "location": "Section 4, Experimental setup",
+          "source_url": "https://arxiv.org/html/2610.35868v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "outperforms dense retrieval with an 8B reranker by 13.8 R@1 points",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.35868v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-01",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.35868v1",
+      "source_abstract_sha256": "fe551d833adee7a022dfbb3a286c59fbd1d703beb46eb56be90357d7ce962423"
+    },
+    {
+      "arxiv_id": "2610.35826",
+      "title": "Understanding Jev-Style System One Models: Does Structure Reduce Selection Bias?",
+      "authors": [
+        "Mingyang Song",
+        "Mao Zheng",
+        "Zhiyuan Ma",
+        "Xinpeng Zhou"
+      ],
+      "affiliations": [
+        "Foundation Model Department, Tencent, China"
+      ],
+      "first_submitted": "2026-10-26",
+      "updated": "2026-10-29",
+      "version": 3,
+      "arxiv_url": "https://arxiv.org/abs/2610.35826",
+      "reviewed_url": "https://arxiv.org/abs/2610.35826v3",
+      "pdf_url": "https://arxiv.org/pdf/2610.35826v3",
+      "arxiv_categories": [
+        "cs.CL"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "evaluation",
+      "relation_level": "direct",
+      "tags": [
+        "evaluation",
+        "bias",
+        "reproducibility"
+      ],
+      "summary": {
+        "en": "Shuffles option order while fixing question content to ask whether Jev-style decision structure reduces selection bias: across two hosted Jev versions (1.13 and 1.14), twelve Jev reproductions, and six generative LLMs on 1,700 questions, Jev's accuracy varies by less than two points yet its cumulative failure set expands 27.3-28.5% over eight presentations, with first failures continuing into the final one; reordering loses substantially more initial successes than fixed-order repetition (a gap that also appears in highly repeatable reproductions), Jev shows no general advantage over the LLM baselines in preserving correct choices, and voting offers limited protection - even unanimous answers are frequently wrong.",
+        "zh": "固定题目内容、只打乱选项顺序,检验 Jev 式决策结构能否减少选择偏差:在两版托管 Jev(1.13 与 1.14)、十二个 Jev 复现模型与六个生成式大模型、1700 道题上,Jev 的准确率波动不足两个百分点,但八次呈现间累计失败集合扩张 27.3%~28.5%,首次失败一直延续到最后一次;重排比固定顺序重复损失明显更多初始正确答案(高复现性的复现模型同样如此),Jev 在保住正确选择上并不普遍优于大模型基线,投票保护也有限——全票一致的答案仍常出错。"
+      },
+      "problem": {
+        "en": "Does Jev-style System One structure reduce selection bias across equivalent presentations?",
+        "zh": "Jev 式系统一结构能否减少等价呈现下的选择偏差?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "The Jev--LLM comparison includes Jev 1.13 and Jev 1.14",
+          "location": "Section 2.2, Models",
+          "source_url": "https://arxiv.org/html/2610.35826v3"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "its cumulative failure set expands by 27.3-28.5% relative to the original order",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.35826v3"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-01",
+      "code": [
+        {
+          "url": "https://github.com/nick7nlp/Jev-Selection-Bias",
+          "source_url": "https://arxiv.org/abs/2610.35826v3",
+          "source_location": "author-block project link in arXiv HTML (nick7nlp/Jev-Selection-Bias)",
+          "verified_on": "2026-11-01",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.35826v3",
+      "source_abstract_sha256": "e903852be529450a5ede8e9bdc0bb1e8d1921e8fd425f0cdebd5be922f6c1847"
+    },
+    {
+      "arxiv_id": "2610.35721",
+      "title": "Can JEV Support Clinical Trial Criteria Assessment?",
+      "authors": [
+        "Mengxian He",
+        "Ziyue Gao",
+        "Chun Li",
+        "Shunyi Zhang",
+        "Hao Wei",
+        "Minqing Zhang",
+        "Wu Yuan"
+      ],
+      "affiliations": [
+        "The Chinese University of Hong Kong",
+        "Capital Medical University"
+      ],
+      "first_submitted": "2026-10-26",
+      "updated": "2026-10-26",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.35721",
+      "reviewed_url": "https://arxiv.org/abs/2610.35721v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.35721v1",
+      "arxiv_categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "direct",
+      "tags": [
+        "applications",
+        "medical",
+        "clinical"
+      ],
+      "summary": {
+        "en": "Retrospectively compares JEV (fixed jev-1.14.0 via TypeSafe's text Choice API) with schema-constrained Qwen Flash on clinical-trial prescreening across 2,048 patient-condition pairs from TrialGPT and MIMIC-III/IV-derived question sets, all under strict zero-data-retention policies: batch-mode macro-F1 is similar on TrialGAT (0.652 vs 0.660) and MIMIC-IV (0.807 vs 0.814), while JEV clearly leads on MIMIC-III (0.768 vs 0.534), largely through recall for conditions with insufficient information (56.3% vs 9.9%); JEV's median latency is 1.18-1.40 s (vs 2.80-8.90 s) with 53-74% lower estimated cost per condition, though its reading errors mean outputs must still be verified against records before eligibility decisions.",
+        "zh": "在严格的零数据留存政策下,以固定版本 jev-1.14.0(经 TypeSafe text Choice API)的 JEV 对比受 schema 约束的 Qwen Flash,回溯评估来自 TrialGPT 与 MIMIC-III/IV 衍生问答的 2048 组患者—条件对:批处理宏观 F1 在 TrialGAT(0.652 对 0.660)与 MIMIC-IV(0.807 对 0.814)上相当,但 MIMIC-III 上 JEV 明显领先(0.768 对 0.534),主要来自对信息不足条件更高的召回(56.3% 对 9.9%);JEV 中位延迟 1.18~1.40 秒(对比 2.80~8.90 秒),每条件成本低 53%~74%;其解读错误也提醒在用于入组决策前仍须对照病历核验输出。"
+      },
+      "problem": {
+        "en": "Can JEV assess clinical trial eligibility criteria reliably from patient records?",
+        "zh": "JEV 能否从病历可靠评估临床试验的入排标准?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "We evaluated the fixed model version jev-1.14.0",
+          "location": "Section 2.2, JEV: native decisions and option probabilities",
+          "source_url": "https://arxiv.org/html/2610.35721v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "JEV substantially outperformed Qwen on MIMIC-III (0.768 vs. 0.534",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.35721v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-01",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.35721v1",
+      "source_abstract_sha256": "054773aca6814f1d409e2e13c1b8442373c917b181e202ca3a36c67c92651d7d"
+    },
+    {
+      "arxiv_id": "2610.35654",
+      "title": "Improving JEV Entailment Reranking with Span Readouts and Selective Adaptation",
+      "authors": [
+        "Haocheng Mei",
+        "Yuchuan Tian",
+        "Ye Yuan",
+        "Enhua Wu",
+        "Chao Xu",
+        "Allen Chen",
+        "Kai Han",
+        "Yunhe Wang"
+      ],
+      "affiliations": [
+        "Peking University",
+        "SUIBE",
+        "University of Macau",
+        "Tsinghua University",
+        "TokenRhythm Technologies"
+      ],
+      "first_submitted": "2026-10-26",
+      "updated": "2026-10-28",
+      "version": 2,
+      "arxiv_url": "https://arxiv.org/abs/2610.35654",
+      "reviewed_url": "https://arxiv.org/abs/2610.35654v2",
+      "pdf_url": "https://arxiv.org/pdf/2610.35654v2",
+      "arxiv_categories": [
+        "cs.CL"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "architecture",
+      "relation_level": "related",
+      "tags": [
+        "training",
+        "reranking",
+        "efficiency"
+      ],
+      "summary": {
+        "en": "Asks whether readout and adaptation choices proven for direct selection transfer to cross-request NLI reranking in JEV-style decision models: on NeoHorse-1-4B (a post-trained, text-only repackaging of Qwen3.5-4B with attention and gated DeltaNet layers), mean-span pooling replaces the option-ending pointer with the average of contextualized states inside each NLI option without adding head parameters, and selective adaptation keeps low-rank updates in attention and gated DeltaNet projections while removing feed-forward adapters - on MC11 (eleven reranking configurations from seven sources) selective adaptation improves accuracy from 50.28% to 52.49% and adding mean-span pooling reaches 53.39%, both positive in all four fold-seed settings at over half the trainable parameters cut.",
+        "zh": "追问在直接选择上有效的读出与适配方案能否迁移到跨请求的 NLI 重排:在 NeoHorse-1-4B(Qwen3.5-4B 后训练的纯文本 JEV 式复现,含注意力与门控 DeltaNet 层)上,均值跨度池化用选项内上下文状态的平均替代选项末指针且不增头部参数,选择性适配保留注意力与门控 DeltaNet 投影的低秩更新、移除前馈适配器——在 MC11(七个来源、十一种重排配置)上,选择性适配把准确率从 50.28% 提到 52.49%,加均值跨度池化达 53.39%,四个折-种子组合全为正,可训练参数削减过半。"
+      },
+      "problem": {
+        "en": "Which readout and adaptation choices make JEV-style models better entailment rerankers?",
+        "zh": "哪些读出与适配方案能让 JEV 式模型成为更好的蕴含重排器?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "JEV models turn a natural-language state into a structured decision",
+          "location": "Section 1, Introduction",
+          "source_url": "https://arxiv.org/html/2610.35654v2"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "improves NeoHorse-1-4B accuracy over the all-module baseline",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.35654v2"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-01",
+      "code": [
+        {
+          "url": "https://github.com/Mei-TN/Jev-reranking",
+          "source_url": "https://arxiv.org/abs/2610.35654v2",
+          "source_location": "arXiv comment and abstract (Project page:)",
+          "verified_on": "2026-11-01",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.35654v2",
+      "source_abstract_sha256": "12b50c8927f264cf2eb5eedf8229f88ad722099023b13b66bc660bb0181ac701"
     },
     {
       "arxiv_id": "2610.35010",

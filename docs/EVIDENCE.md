@@ -283,6 +283,20 @@ Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence
 
 Metadata: [reviewed v1](https://arxiv.org/abs/2610.36595v1); first submitted 2026-10-27; updated 2026-10-27. Full authors: Chengxuan Pei; Ziyao Wang; Teng Mei; Zhe Li.
 
+<a id="evidence-2610-36311"></a>
+## 2610.36311 — Confidence Is Not a Promise: A Reference Audit of Typed Decision Models
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-01
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。
+
+- **topic**: “with Jev 1.13, available only through an API” — [Abstract](https://arxiv.org/abs/2610.36311v1)
+- **contribution**: “a threshold chosen by point estimate breaks the promise in 147” — [Abstract](https://arxiv.org/abs/2610.36311v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2610.36311v1); first submitted 2026-10-26; updated 2026-10-26. Full authors: Pedro Carvalho Brom.
+
 <a id="evidence-2610-36006"></a>
 ## 2610.36006 — MedJev: Evaluating Zero-Shot System-One Decision Making in Medicine
 
@@ -296,6 +310,62 @@ A closely related decision model or method; no claim of reproducing proprietary 
 - **contribution**: “an open System One model that runs locally on a laptop” — [Abstract](https://arxiv.org/abs/2610.36006v1)
 
 Metadata: [reviewed v1](https://arxiv.org/abs/2610.36006v1); first submitted 2026-10-26; updated 2026-10-26. Full authors: Simon A. Lee; Jiahang Sha; Moonseong Jeong; Yunbei Pan; Jeffrey N. Chiang.
+
+<a id="evidence-2610-35868"></a>
+## 2610.35868 — Retriever-Free Retrieval: Navigating Documents with Decision Models
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-01
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。
+
+- **topic**: “(TypeSafe’s Jev 1.13, typesafe/jev-1.13)” — [Section 4, Experimental setup](https://arxiv.org/html/2610.35868v1)
+- **contribution**: “outperforms dense retrieval with an 8B reranker by 13.8 R@1 points” — [Abstract](https://arxiv.org/abs/2610.35868v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2610.35868v1); first submitted 2026-10-26; updated 2026-10-26. Full authors: Chao Wan; Paul Jünger; Beixi Du; Bodong Liu; Navaneetha Krishnan; Kilian Q. Weinberger.
+
+<a id="evidence-2610-35826"></a>
+## 2610.35826 — Understanding Jev-Style System One Models: Does Structure Reduce Selection Bias?
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-01
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。
+
+- **topic**: “The Jev--LLM comparison includes Jev 1.13 and Jev 1.14” — [Section 2.2, Models](https://arxiv.org/html/2610.35826v3)
+- **contribution**: “its cumulative failure set expands by 27.3-28.5% relative to the original order” — [Abstract](https://arxiv.org/abs/2610.35826v3)
+
+Metadata: [reviewed v3](https://arxiv.org/abs/2610.35826v3); first submitted 2026-10-26; updated 2026-10-29. Full authors: Mingyang Song; Mao Zheng; Zhiyuan Ma; Xinpeng Zhou.
+
+<a id="evidence-2610-35721"></a>
+## 2610.35721 — Can JEV Support Clinical Trial Criteria Assessment?
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-01
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。
+
+- **topic**: “We evaluated the fixed model version jev-1.14.0” — [Section 2.2, JEV: native decisions and option probabilities](https://arxiv.org/html/2610.35721v1)
+- **contribution**: “JEV substantially outperformed Qwen on MIMIC-III (0.768 vs. 0.534” — [Abstract](https://arxiv.org/abs/2610.35721v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2610.35721v1); first submitted 2026-10-26; updated 2026-10-26. Full authors: Mengxian He; Ziyue Gao; Chun Li; Shunyi Zhang; Hao Wei; Minqing Zhang; Wu Yuan.
+
+<a id="evidence-2610-35654"></a>
+## 2610.35654 — Improving JEV Entailment Reranking with Span Readouts and Selective Adaptation
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-01
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “JEV models turn a natural-language state into a structured decision” — [Section 1, Introduction](https://arxiv.org/html/2610.35654v2)
+- **contribution**: “improves NeoHorse-1-4B accuracy over the all-module baseline” — [Abstract](https://arxiv.org/abs/2610.35654v2)
+
+Metadata: [reviewed v2](https://arxiv.org/abs/2610.35654v2); first submitted 2026-10-26; updated 2026-10-28. Full authors: Haocheng Mei; Yuchuan Tian; Ye Yuan; Enhua Wu; Chao Xu; Allen Chen; Kai Han; Yunhe Wang.
 
 <a id="evidence-2610-35010"></a>
 ## 2610.35010 — JevVLA: Jev-Inspired Energy-Based Adaptation for Vision-Language-Action Policies

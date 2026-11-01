@@ -203,6 +203,101 @@
       "round": 6,
       "query": "ti:\"Jev\" AND cat:cs.SI",
       "count": 0
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 7,
+      "query": "all:\"Jev\" AND submittedDate:[202610300000 TO 202611012359]",
+      "count": 0
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 7,
+      "query": "all:\"System One\" AND submittedDate:[202610300000 TO 202611012359]",
+      "count": 0
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 7,
+      "query": "all:\"typed decision\" AND submittedDate:[202610300000 TO 202611012359]",
+      "count": 0
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 7,
+      "query": "all:\"decision model\" AND submittedDate:[202610300000 TO 202611012359]",
+      "count": 0
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 7,
+      "query": "all:MedJev AND submittedDate:[202610300000 TO 202611012359] (variant)",
+      "count": 0
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 7,
+      "query": "all:\"System-One\" AND submittedDate:[202610300000 TO 202611012359] (variant)",
+      "count": 0
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 7,
+      "query": "all:\"System 1\" AND submittedDate:[202610300000 TO 202611012359] (variant)",
+      "count": 0
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 7,
+      "query": "all:\"decision models\" AND submittedDate:[202610300000 TO 202611012359] (variant)",
+      "count": 0
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 7,
+      "query": "all:\"decision model\" AND submittedDate:\"202610300000 TO 202611012359\" sanity probe (all:\"language model\" also 0: weekend submissions 10-30/10-31 not yet indexed at run time; re-cover in next sweep)",
+      "count": 0
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 7,
+      "query": "all:\"Jev\" AND submittedDate:[202610260000 TO 202610292359] (widened re-run after social lead 2610.35868 proved late-indexed 10-26 submissions still falling through)",
+      "count": 15
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 7,
+      "query": "all:\"System One\" AND submittedDate:[202610260000 TO 202610292359] (widened re-run)",
+      "count": 6
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 7,
+      "query": "all:\"typed decision\" AND submittedDate:[202610260000 TO 202610292359] (widened re-run)",
+      "count": 6
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 7,
+      "query": "all:\"decision model\" AND submittedDate:[202610260000 TO 202610292359] (widened re-run)",
+      "count": 26
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 7,
+      "query": "all:MedJev AND submittedDate:[202610260000 TO 202610292359] (variant, widened re-run)",
+      "count": 1
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 7,
+      "query": "all:\"System-One\" AND submittedDate:[202610260000 TO 202610292359] (variant, widened re-run)",
+      "count": 6
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 7,
+      "query": "id_list batch metadata fetch for 6 unique fresh candidates + 2 social leads"
     }
   ],
   "web_discovery_queries": [
@@ -422,6 +517,72 @@
       "query": "jevmodel.ai/citations source notes",
       "purpose": "Vendor citation index",
       "result": "page header updated 2026-10-31 but same four arXiv IDs as before, all already handled"
+    },
+    {
+      "round": 7,
+      "query": "site:zhihu.com Jev 决策模型 OR \"System One\" 论文 arXiv (web search)",
+      "purpose": "Zhihu leads",
+      "result": "10 articles read; all surfaced IDs already catalogued except StartLux 2610.17309 (included), 2606.12372 and 2510.01237 (both screened excluded this round)"
+    },
+    {
+      "round": 7,
+      "query": "site:weibo.com Jev 决策模型 TypeSafe (web search)",
+      "purpose": "Weibo leads",
+      "result": "10 articles read; explainer and product posts; no new arXiv records"
+    },
+    {
+      "round": 7,
+      "query": "Jev TypeSafe decision model arxiv paper October 31 OR November 2026 (web search)",
+      "purpose": "X/Twitter-adjacent leads",
+      "result": "surfaced IDs 2610.00376, 2610.18610, 2609.28940, 2609.26550, 2609.24965 all already catalogued"
+    },
+    {
+      "round": 7,
+      "query": "微信公众号 Jev 决策模型 arXiv 新论文 (web search)",
+      "purpose": "WeChat leads",
+      "result": "articles from late September/October; Jev-Mem 2609.23986, AnyJev 2610.00831, JEV-as-a-Judge 2609.26550 already catalogued"
+    },
+    {
+      "round": 7,
+      "query": "\"Referring uncertain answers by decision-model confidence\" Jev arXiv (web search)",
+      "purpose": "carried-over ResearchGate lead",
+      "result": "ResearchGate preprint 2026-10-14 still has no arXiv record; lead carried over again"
+    },
+    {
+      "round": 7,
+      "query": "DecisionRAG Jev 决策模型 RAG 论文 (web search)",
+      "purpose": "carried-over WeChat lead (老刘说NLP)",
+      "result": "RESOLVED to arXiv 2610.35868 (Retriever-Free Retrieval), included this round via the widened API sweep"
+    },
+    {
+      "round": 7,
+      "query": "Jev 决策模型 电车难题 论文 arXiv (web search)",
+      "purpose": "carried-over WeChat lead (屠荒者)",
+      "result": "no arXiv record located; lead carried over again"
+    },
+    {
+      "round": 7,
+      "query": "JevAct IBM decision gates agents τ2-bench (web search + jev-x.com index)",
+      "purpose": "X/Twitter lead (IBM JevAct)",
+      "result": "RESOLVED to arXiv 2610.38620 (Think Before You Act: Decision Gate for LLM Agents, IBM SIL; JevAct intercepts agent actions with Kev checks on tau2-bench), already included on 2026-10-30"
+    },
+    {
+      "round": 7,
+      "query": "Cornell ASAPP retriever-free RAG Jev document tree Natural Questions (web search)",
+      "purpose": "X/Twitter lead (@akshay_pachaar)",
+      "result": "resolved to arXiv 2610.35868; triggered the widened re-sweep that surfaced all five additions"
+    },
+    {
+      "round": 7,
+      "query": "jev-x.com recent posts through 11/01",
+      "purpose": "X/Twitter community index",
+      "result": "JevAct and Cornell/ASAPP leads above; MiniCPM-OCR Jev still a GitHub/HuggingFace-only product"
+    },
+    {
+      "round": 7,
+      "query": "jevmodel.ai/citations vendor index (header 2026-10-31)",
+      "purpose": "Vendor citation index",
+      "result": "same four arXiv IDs as 2026-10-27/30 (2609.29769, 2609.26550, 2609.14811 excluded earlier, 2609.37647); nothing new"
     }
   ],
   "arxiv_site_search": {
@@ -435,10 +596,10 @@
       "purpose": "Early Jev corpus and four foundational methods"
     }
   ],
-  "unique_candidates": 372,
+  "unique_candidates": 380,
   "outcomes": {
-    "included": 246,
-    "excluded": 124,
+    "included": 251,
+    "excluded": 127,
     "pending": 2
   },
   "limitations": [
@@ -449,7 +610,7 @@
     "Broad discovery ends on 2026-10-16. Later targeted additions are logged separately and do not imply a fresh search or re-verification of the entire corpus.",
     "2026-10-27 round: Zhihu and Weibo returned no usable public search results (403 or ignored site filters); WeChat coverage relied on the Sogou public index."
   ],
-  "updated_on": "2026-10-31",
+  "updated_on": "2026-11-01",
   "targeted_additions": [
     {
       "reviewed_on": "2026-10-17",
@@ -560,6 +721,19 @@
       ],
       "added_papers": 0,
       "note": "No new papers from social channels this round: every surfaced arXiv ID was already catalogued; the Zhihu ecosystem-analysis lead resolved to the already-included Jev in the Wild (2609.30216). The day's six additions all came from the widened arXiv API sweep."
+    },
+    {
+      "searched_on": "2026-11-01",
+      "record": "data/social-search-2026-11-01.json",
+      "report": "docs/SOCIAL_SEARCH_2026-11-01.md",
+      "platforms": [
+        "WeChat",
+        "Zhihu",
+        "Sina Weibo",
+        "X / Twitter"
+      ],
+      "added_papers": 0,
+      "note": "The social round surfaced the first identifier of arXiv 2610.35868 (Jev-X post of a Cornell/ASAPP retriever-free RAG paper using Jev 1.13), which proved round 6's widened sweep still missed late-indexed 10-26 submissions and triggered this round's widened re-sweep; all five additions were formally sourced from the arXiv API. The carried-over DecisionRAG WeChat lead resolved to the same paper."
     }
   ],
   "targeted_rechecks": [
