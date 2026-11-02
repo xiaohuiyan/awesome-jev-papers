@@ -12,9 +12,9 @@ This reading list asks a concrete question: given context and a set of options, 
 
 | Papers | Direct Jev | Related methods | Foundations | With verified code |
 | ---: | ---: | ---: | ---: | ---: |
-| **251** | 168 | 79 | 4 | 87 |
+| **257** | 173 | 80 | 4 | 90 |
 
-Updated **2026-11-01** · Main window **2025-10-16–2026-10-29** (first submission)
+Updated **2026-11-02** · Main window **2025-10-16–2026-10-30** (first submission)
 
 [Start with ten papers](#recommended-reading) · [Browse by question](#category-index) · [Foundations](#foundations) · [Data and maintenance](#reuse-and-updates)
 
@@ -50,12 +50,12 @@ Suggested path: **assess the evidence → compare capabilities → understand mo
 
 | Your question | Topic | Direct / related | Total |
 | --- | --- | ---: | ---: |
-| How do we train a model specifically to choose? | [Model architectures and training](#architecture) | 11 / 33 | 44 |
-| When are fast decisions good enough? | [Benchmarks and comparative evaluation](#evaluation) | 29 / 6 | 35 |
+| How do we train a model specifically to choose? | [Model architectures and training](#architecture) | 13 / 33 | 46 |
+| When are fast decisions good enough? | [Benchmarks and comparative evaluation](#evaluation) | 30 / 6 | 36 |
 | Can we trust the model's confidence? | [Calibration, reliability and selective decisions](#calibration) | 17 / 9 | 26 |
-| When should an agent search, use a tool, or delegate? | [Search, memory, tools and agent decisions](#agents) | 30 / 9 | 39 |
+| When should an agent search, use a tool, or delegate? | [Search, memory, tools and agent decisions](#agents) | 31 / 9 | 40 |
 | Can phrasing, option order, or attacks change the decision? | [Security, robustness and decision bias](#security) | 34 / 6 | 40 |
-| How do quality and speed trade off in real workflows? | [Domain applications and deployment efficiency](#applications) | 47 / 16 | 63 |
+| How do quality and speed trade off in real workflows? | [Domain applications and deployment efficiency](#applications) | 48 / 17 | 65 |
 
 Each paper has one primary category; 4 foundations are listed separately. Categories group direct Jev work before related methods, with newest first submissions first within each group. Entries keep published date, authors, affiliations, problem, and contribution; affiliations come from the papers themselves (HTML full text or PDF first page), and 13 papers that state none omit the field. Full author lists, tags, and verification records live in the [evidence ledger](docs/EVIDENCE.md) and [BibTeX](references.bib).
 
@@ -66,8 +66,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 11
+### Direct Jev · 13
 
+<a id="paper-2610-41079"></a>
+#### [EDU-Jev Training System-One Decision Models for Education](https://arxiv.org/abs/2610.41079v1) · [PDF](https://arxiv.org/pdf/2610.41079v1)
+- **📅 Published**: 2026-10-29 (v1)
+- **👥 Authors**: Jiazheng Li; Yulan He
+- **🏢 Affiliations**: King's College London
+- **🎯 Problem**: Can small single-pass decision models beat commercial decision APIs at rubric-based educational assessment?
+- **💡 Contribution**: Trains EDU-Jev, single-pass System One decision models at 0.8B, 2B and 4B for educational assessment (rubric scores, marking criteria, the first wrong step in a solution): a pointer head scores a marker per option so predictions stay within the allowed choices, one supervised stage fits soft cross-entropy to rater label distributions, and weight averaging finishes the recipe; across twelve education benchmarks the 4B model reaches 67.6% average accuracy, 9.4 points above the strongest of five commercial decision APIs (hosted Jev 1.14, Microsoft Decision-1 and Cloudflare Clef among them, queried through a zero-retention routing service) and 18.7 above the best open 4B decision model, matches the strongest API on four cross-domain education sets while trailing it on general decisions and reasoning, and the 2B model handles about 150 decisions per second on one H100.
+---
 <a id="paper-2610-38915"></a>
 #### [Lev-3B: A Data Recipe for Compact Probabilistic Log Decision Models](https://arxiv.org/abs/2610.38915v1) · [PDF](https://arxiv.org/pdf/2610.38915v1)
 - **📅 Published**: 2026-10-28 (v1)
@@ -123,6 +131,14 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🏢 Affiliations**: Shanghai AI Lab; Shanghai Jiao Tong University; Fudan University; Nanyang Technological University
 - **🎯 Problem**: How can a multimodal model be trained to choose?
 - **💡 Contribution**: Introduces multimodal decision models built around masked answer slots, and compares their accuracy with hosted Jev. The answer-slot design offers a concrete way to study decision modeling beyond text-only inputs.
+---
+<a id="paper-2610-20951"></a>
+#### [LEV: Thinking Fast and Deep with Looped Decision Models](https://arxiv.org/abs/2610.20951v1) · [PDF](https://arxiv.org/pdf/2610.20951v1) · [Code](https://github.com/OpenLAIR/lev)
+- **📅 Published**: 2026-10-14 (v1)
+- **👥 Authors**: Dingjie Song; Zhiling Yan; Yuxuan Zhang; Lichao Sun
+- **🏢 Affiliations**: Lehigh University; University of British Columbia; Vector Institute
+- **🎯 Problem**: Can a decision model spend more computation on hard questions by looping its layers instead of generating text?
+- **💡 Contribution**: Lets a decision model think deeper without generating tokens: LEV builds on a language model pretrained as a loop, re-reads the options after every loop step and trains all steps jointly, so one checkpoint answers at any depth; on three looped backbones accuracy rises with depth on the same weights, mostly on hard questions - a 2.6B LEV climbs from 63.2% at depth one to 76.2% at depth four on JevBench - while on-demand depth chosen per question by a small stopper (threshold fitted on unlabelled requests) saves 15-24% of computation for under one accuracy point, level with or slightly above a fixed mix of depths; on a locked test set the 1.4B and 3B models beat dense models and cascades of the same sub-50 ms latency by 5.4-8.8 points, with the released Kev-0.8B/4B and the closed Jev 1.13.0 (measured through the production API) reported as references.
 ---
 <a id="paper-2610-18773"></a>
 #### [Jeva: System One Models from First Principles](https://arxiv.org/abs/2610.18773v1) · [PDF](https://arxiv.org/pdf/2610.18773v1) · [Code](https://github.com/LiQiiiii/Jeva)
@@ -425,7 +441,7 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 29
+### Direct Jev · 30
 
 <a id="paper-2610-40318"></a>
 #### [Decision and System One models in rheumatology: accuracy and calibration on specialty-training examination questions and diagnostic case vignettes](https://arxiv.org/abs/2610.40318v1) · [PDF](https://arxiv.org/pdf/2610.40318v1)
@@ -489,6 +505,14 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🏢 Affiliations**: University of Information Technology, Ho Chi Minh City; Vietnam National University Ho Chi Minh City
 - **🎯 Problem**: Do decision models transfer to Vietnamese text classification?
 - **💡 Contribution**: Evaluates four decision models across 13 Vietnamese settings, probing label-language sensitivity and linguistic perturbations.
+---
+<a id="paper-2610-31315"></a>
+#### [The Value of System 1 Models in Medicine](https://arxiv.org/abs/2610.31315v2) · [PDF](https://arxiv.org/pdf/2610.31315v2)
+- **📅 Published**: 2026-10-22 (v2)
+- **👥 Authors**: Xiufeng Yang; Konstantinos Vrettos; Zeineb Ben Chaaben et al. (20 authors)
+- **🏢 Affiliations**: Technical University of Munich; University of Crete; University Hospital of Heraklion; Charité – Universitätsmedizin Berlin; Karolinska Institutet +2 more
+- **🎯 Problem**: When can System 1 models make clinical decisions quickly and with usable confidence, and when do they fail?
+- **💡 Contribution**: Evaluates four System 1 models zero-shot - hosted Jev 1.14 and GPT-6 Luna Decisions plus open-weight Clef (27B) and Clef-flash (9.5B), all through the OpenRouter decision interface - on 86 public tasks from 14 clinical domains in 20 languages spanning examination questions and medical imaging (2.4 million answers over 179,111 cases): the best model per task reaches mean AUROC 0.94 for medical knowledge, 0.93 for text understanding, 0.83 for clinical judgement from text, 0.89 for image perception, 0.84 for 2D findings and 0.69 for volumetric findings, imaging 0.09 below text; Jev 1.14 answered every question (GPT-6 Luna Decisions refused 1.3%) and was the best model on 45 of 78 primary tasks, the best model matched or beat the best published result on 13 of 26 text and 8 of 35 imaging tasks yet triage nurses still won (accuracy 0.85 vs 0.56), local open-weight decisions took 0.34-0.44 s and 24-81 J, accuracy fell up to 39 points from English to Yoruba (20.1 for Jev), and same-family generative models were 11-76x slower for 3-5 points more balanced accuracy.
 ---
 <a id="paper-2610-30045"></a>
 #### [Which Differences Matter? Controlled Tests of Rule Transfer, Joint Reliability, and Information Use in Decision Models](https://arxiv.org/abs/2610.30045v1) · [PDF](https://arxiv.org/pdf/2610.30045v1)
@@ -930,8 +954,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 30
+### Direct Jev · 31
 
+<a id="paper-2610-41132"></a>
+#### [When Disclosure Is Compulsory: Evaluating Ride-Hailing Rebalancing Policies with Self-Interested LLM Driver Agents](https://arxiv.org/abs/2610.41132v1) · [PDF](https://arxiv.org/pdf/2610.41132v1)
+- **📅 Published**: 2026-10-30 (v1)
+- **👥 Authors**: Xinyu Wang; Andres Fielbaum
+- **🏢 Affiliations**: School of Civil Engineering, The University of Sydney
+- **🎯 Problem**: How do ride-hailing rebalancing policies fare once rules are disclosed and self-interested drivers let Jev decide for them?
+- **💡 Contribution**: Simulates what happens when the EU Platform Work Directive forces ride-hailing platforms to disclose their rebalancing rules and drivers let a model decide for them: every driver is an LLM agent maximizing its own net income, with hosted Jev 1.13.0 (option of highest probability) as the main agent across 500 Manhattan drivers and 52,461 requests and Claude Haiku 5.5 as the reasoning control, both answering the rule-comprehension quiz perfectly; once rules are disclosed, declined relocation offers fall from about four in five to one in four, the reactive policy loses 3.7% of its profit while the anticipatory policy's is unchanged (the two end 6.1% apart), and self-interested drivers turn the anticipatory policy into a win-win-win, lifting driver income, platform profit and service rate by 10-12% each; the small-model Jev runs cost USD 2.43 for 20,396 calls.
+---
 <a id="paper-2610-38439"></a>
 #### [Predict the Reward, Not the World: World Reward Models for ML Agents](https://arxiv.org/abs/2610.38439v1) · [PDF](https://arxiv.org/pdf/2610.38439v1)
 - **📅 Published**: 2026-10-28 (v1)
@@ -1581,8 +1613,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 47
+### Direct Jev · 48
 
+<a id="paper-2610-41199"></a>
+#### [Beyond CLIP: Calibrated (Few-Shot) Defect Detection With System One Decision Models](https://arxiv.org/abs/2610.41199v1) · [PDF](https://arxiv.org/pdf/2610.41199v1) · [Code](https://github.com/fmegahed/decision-models-for-industrial-image-qc)
+- **📅 Published**: 2026-10-30 (v1)
+- **👥 Authors**: Fadel M. Megahed; Ying-Ju Chen
+- **🏢 Affiliations**: Farmer School of Business, Miami University; College of Arts and Sciences, University of Dayton
+- **🎯 Problem**: Can System One decision models detect manufacturing defects reliably from just two reference images per class?
+- **💡 Contribution**: Asks whether structured decision models can replace CLIP for industrial defect detection when only two reference images per class exist: with API-based TypeSafe Jev 1.13.0 and the open-weight Cloudflare Clef-Flash (run locally on SGLang) across five manufacturing case studies (metallic surfaces, 3D-printing extrusion profiles, stochastic textures, automotive assemblies, microstructures), both beat CLIP at k=2 (test accuracy 0.75-1.00 for Jev and 0.71-0.99 for Clef-Flash versus 0.67-0.84), an agentic loop that rewrites the guiding text descriptions significantly improves accuracy in 6 of 8 model-application pairs, and a calibration step lowers the Brier score in 13 of 15 configurations; ships replication code, the "decisions" package and a no-code web app.
+---
 <a id="paper-2610-40327"></a>
 #### [Radiology Guideline-derived Decision Graph for Efficient Clinical Decision Support](https://arxiv.org/abs/2610.40327v1) · [PDF](https://arxiv.org/pdf/2610.40327v1)
 - **📅 Published**: 2026-10-29 (v1)
@@ -1958,8 +1998,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: Can a low-latency decision model replace LLMs in edge service orchestration?
 - **💡 Contribution**: Integrates Jev into edge service orchestration and measures verified requests, admission behavior and execution outcomes.
 ---
-### Related model / method · 16
+### Related model / method · 17
 
+<a id="paper-2610-40752"></a>
+#### [PathoJev: Efficient Pathology Decisions from Shared Visual Context](https://arxiv.org/abs/2610.40752v1) · [PDF](https://arxiv.org/pdf/2610.40752v1) · [Code](https://github.com/ChyaZhang/PathoJev)
+- **📅 Published**: 2026-10-29 (v1)
+- **👥 Authors**: Chengyang Zhang; Wenchuan Zhang; Bo Li et al. (11 authors)
+- **🏢 Affiliations**: College of Computer Science, Sichuan University; Department of Pathology and Institute of Clinical Pathology, West China Hospital, Sichuan University; Department of Computer Science, School of Computing, National University of Singapore; School of Intelligent Systems Engineering, Sun Yat-sen University
+- **🎯 Problem**: How can one slide encoding answer many pathology questions with direct probabilities instead of generated text?
+- **💡 Contribution**: Brings the System One paradigm to pathology: PathoJev encodes a whole slide once into a shared visual prefix, then scores independent question suffixes in batches with a typed head that returns answer probabilities directly, reusing the hybrid backbone's recurrent states so that per-question cost grows less with slide-context length; starting from the open JEV-9B and trained on whole-slide plus region-of-interest supervision, the 9B and 27B models reach mean accuracies of 77.2% and 78.1% on three whole-slide benchmarks (5.4 and 6.3 points above SlideChat), stay competitive on five ROI benchmarks, run 9.1x faster than SlideChat on WSI-Bench, and shared context speeds eight-question workloads 6.9x/5.9x over separate prefix encoding (11.2x/8.9x at 64 questions); hosted Jev is cited only as the paradigm's origin and is not evaluated.
+---
 <a id="paper-2610-36937"></a>
 #### [JevRec: Linguistic Encoding with Jev-like Decision Modeling for LLM-based Generative Recommendation](https://arxiv.org/abs/2610.36937v1) · [PDF](https://arxiv.org/pdf/2610.36937v1)
 - **📅 Published**: 2026-10-27 (v1)

@@ -298,6 +298,71 @@
       "engine": "arxiv-api",
       "round": 7,
       "query": "id_list batch metadata fetch for 6 unique fresh candidates + 2 social leads"
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 8,
+      "query": "all:\"language model\" AND submittedDate:[202610290000 TO 202611022359] sanity probe (50 records; published dates 10-29 and 10-30 present, 10-31 through 11-02 not yet announced at run time, Monday 02:45 UTC)",
+      "count": 50
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 8,
+      "query": "all:\"Jev\" AND submittedDate:[202610290000 TO 202611022359]",
+      "count": 5
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 8,
+      "query": "all:\"System One\" AND submittedDate:[202610290000 TO 202611022359]",
+      "count": 6
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 8,
+      "query": "all:\"typed decision\" AND submittedDate:[202610290000 TO 202611022359]",
+      "count": 0
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 8,
+      "query": "all:\"decision model\" AND submittedDate:[202610290000 TO 202611022359]",
+      "count": 4
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 8,
+      "query": "all:MedJev AND submittedDate:[202610290000 TO 202611022359] (variant)",
+      "count": 0
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 8,
+      "query": "all:\"System-One\" AND submittedDate:[202610290000 TO 202611022359] (variant)",
+      "count": 6
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 8,
+      "query": "all:\"System 1\" AND submittedDate:[202610290000 TO 202611022359] (variant)",
+      "count": 2
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 8,
+      "query": "all:\"decision models\" AND submittedDate:[202610290000 TO 202611022359] (variant)",
+      "count": 4
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 8,
+      "query": "id_list metadata fetch for social leads 2610.20951 (LEV) and 2610.31315 (System 1 models in medicine)"
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 8,
+      "query": "ti:\"Referring uncertain answers\" / all:\"decision-model confidence\" AND all:Korean / au:Ahn_Sangzin AND all:Jev (carried-over ResearchGate lead; confirms no arXiv record)",
+      "count": 0
     }
   ],
   "web_discovery_queries": [
@@ -583,6 +648,66 @@
       "query": "jevmodel.ai/citations vendor index (header 2026-10-31)",
       "purpose": "Vendor citation index",
       "result": "same four arXiv IDs as 2026-10-27/30 (2609.29769, 2609.26550, 2609.14811 excluded earlier, 2609.37647); nothing new"
+    },
+    {
+      "round": 8,
+      "query": "site:zhihu.com Jev 决策模型 OR \"System One\" 论文 arXiv (web search)",
+      "purpose": "Zhihu leads",
+      "result": "10 articles read; surfaced IDs 2610.17309 (included), 2510.01237 and 2606.12372 (both excluded on 2026-11-01); no new arXiv records"
+    },
+    {
+      "round": 8,
+      "query": "site:weibo.com Jev 决策模型 TypeSafe (web search)",
+      "purpose": "Weibo leads",
+      "result": "10 posts read; explainer and product posts only; no arXiv records"
+    },
+    {
+      "round": 8,
+      "query": "Jev TypeSafe decision model arxiv paper \"November 2026\" OR \"November 1\" OR \"November 2\" (web search)",
+      "purpose": "X/Twitter-adjacent leads",
+      "result": "surfaced 2610.27746 and 2610.03935, both already catalogued; blog commentary otherwise"
+    },
+    {
+      "round": 8,
+      "query": "微信公众号 Jev 决策模型 arXiv 新论文 11月 (web search)",
+      "purpose": "WeChat leads",
+      "result": "surfaced a 2026-11-02 新浪财经 syndication of a WeChat explainer, 'Lev: 让决策模型学会「难题多想」' (recurrence instead of chain-of-thought); the other IDs (2610.02076, 2609.26550, 2609.24965, 2609.29283, 2609.26532) were already catalogued"
+    },
+    {
+      "round": 8,
+      "query": "Lev 决策模型 循环 recurrence 难题多想 arXiv 2026 (web search)",
+      "purpose": "WeChat lead follow-up",
+      "result": "RESOLVED to arXiv 2610.20951 (LEV: Thinking Fast and Deep with Looped Decision Models, Lehigh/UBC, first submitted 2026-10-14); never surfaced by any sweep because its abstract says 'decision models', 'System 1' and 'JevBench' rather than the standing query tokens; included this round"
+    },
+    {
+      "round": 8,
+      "query": "jev-x.com recent posts through 11/02",
+      "purpose": "X/Twitter community index",
+      "result": "no posts dated 11-01 or 11-02 indexed yet; 10/30-10/31 items repeat the JevAct (2610.38620) and Cornell/ASAPP (2610.35868) leads, both already included; new lead: alphaXiv post on a 4B decision model trained with OpenResearch on 117k+ decision examples; MiniCPM-OCR Jev still a product-only item"
+    },
+    {
+      "round": 8,
+      "query": "OpenResearch 4B decision model 117k decision examples Jev sarcasm alphaXiv (web search)",
+      "purpose": "X/Twitter lead follow-up (alphaXiv)",
+      "result": "only the X post itself (x.com/askalphaxiv/status/2116199951835582507); no arXiv record or technical report; the same search surfaced 2610.17205 (already included) plus OpenDecider, Decision-3.0 and NeoHorse-Jev-4B product pages"
+    },
+    {
+      "round": 8,
+      "query": "jevmodel.ai/citations vendor index (header 2026-10-31)",
+      "purpose": "Vendor citation index",
+      "result": "unchanged since 2026-10-31 (2609.29769, 2609.26550, 2609.14811); nothing new"
+    },
+    {
+      "round": 8,
+      "query": "\"Referring uncertain answers by decision-model confidence\" Jev arXiv (web search)",
+      "purpose": "carried-over ResearchGate lead",
+      "result": "the web search returned arXiv 2610.31315, which on fetching proved to be a DIFFERENT paper - 'The Value of System 1 Models in Medicine' (TUM/Crete/Charité et al., Jev 1.14 among four System 1 models on 86 clinical tasks, first submitted 2026-10-22, v2 10-23), never surfaced by any sweep because its abstract uses only 'System 1 models'; included this round. arXiv API title/author queries confirm the Ahn preprint itself still has no arXiv record; lead carried over again"
+    },
+    {
+      "round": 8,
+      "query": "Jev 决策模型 电车难题 论文 arXiv 屠荒者 (web search)",
+      "purpose": "carried-over WeChat lead (屠荒者)",
+      "result": "only a mirrored explainer (向上研究所 / amazingindex.com); no arXiv record located; lead carried over again"
     }
   ],
   "arxiv_site_search": {
@@ -596,10 +721,10 @@
       "purpose": "Early Jev corpus and four foundational methods"
     }
   ],
-  "unique_candidates": 380,
+  "unique_candidates": 388,
   "outcomes": {
-    "included": 251,
-    "excluded": 127,
+    "included": 257,
+    "excluded": 129,
     "pending": 2
   },
   "limitations": [
@@ -610,7 +735,7 @@
     "Broad discovery ends on 2026-10-16. Later targeted additions are logged separately and do not imply a fresh search or re-verification of the entire corpus.",
     "2026-10-27 round: Zhihu and Weibo returned no usable public search results (403 or ignored site filters); WeChat coverage relied on the Sogou public index."
   ],
-  "updated_on": "2026-11-01",
+  "updated_on": "2026-11-02",
   "targeted_additions": [
     {
       "reviewed_on": "2026-10-17",
@@ -734,6 +859,19 @@
       ],
       "added_papers": 0,
       "note": "The social round surfaced the first identifier of arXiv 2610.35868 (Jev-X post of a Cornell/ASAPP retriever-free RAG paper using Jev 1.13), which proved round 6's widened sweep still missed late-indexed 10-26 submissions and triggered this round's widened re-sweep; all five additions were formally sourced from the arXiv API. The carried-over DecisionRAG WeChat lead resolved to the same paper."
+    },
+    {
+      "searched_on": "2026-11-02",
+      "record": "data/social-search-2026-11-02.json",
+      "report": "docs/SOCIAL_SEARCH_2026-11-02.md",
+      "platforms": [
+        "WeChat",
+        "Zhihu",
+        "Sina Weibo",
+        "X / Twitter"
+      ],
+      "added_papers": 2,
+      "note": "Two additions originated in the social round: a WeChat explainer syndicated by 新浪财经 on 2026-11-02 resolved to arXiv 2610.20951 (LEV, looped decision models; closed Jev 1.13.0 as a reference), and the exact-title follow-up of the carried-over ResearchGate lead returned arXiv 2610.31315, which turned out to be a different, uncatalogued paper (TUM 'The Value of System 1 Models in Medicine', Jev 1.14 among four System 1 models on 86 clinical tasks). Both had been invisible to every API sweep because their abstracts use 'decision models', 'System 1' or 'JevBench' rather than the standing query tokens. Formal evidence for both comes from the arXiv Atom metadata, abstracts and LaTeXML full text."
     }
   ],
   "targeted_rechecks": [

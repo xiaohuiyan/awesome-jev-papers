@@ -3,6 +3,62 @@
 
 Short excerpts support relevance decisions, not paper quality or reproducibility. Scores measure topic fit and substantive contribution only. Abstract-level review is the default; targeted full-text checks are marked. 引文用于核实相关性，不是论文质量或模型性能评分。
 
+<a id="evidence-2610-41199"></a>
+## 2610.41199 — Beyond CLIP: Calibrated (Few-Shot) Defect Detection With System One Decision Models
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-02
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。
+
+- **topic**: “we used the API-based TypeSafe Jev (1.13.0)” — [Section 3.2, Models and Experimental Controls](https://arxiv.org/html/2610.41199v1)
+- **contribution**: “both Jev and Clef-Flash outperform CLIP's test accuracies” — [Abstract](https://arxiv.org/abs/2610.41199v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2610.41199v1); first submitted 2026-10-30; updated 2026-10-30. Full authors: Fadel M. Megahed; Ying-Ju Chen.
+
+<a id="evidence-2610-41132"></a>
+## 2610.41132 — When Disclosure Is Compulsory: Evaluating Ride-Hailing Rebalancing Policies with Self-Interested LLM Driver Agents
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-02
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。
+
+- **topic**: “the main agent chosen is Jev, a TypeSafe System One model” — [Section 3.2.4, LLM models](https://arxiv.org/html/2610.41132v1)
+- **contribution**: “disclosure costs R 3.7% of its profit in Manhattan” — [Abstract](https://arxiv.org/abs/2610.41132v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2610.41132v1); first submitted 2026-10-30; updated 2026-10-30. Full authors: Xinyu Wang; Andres Fielbaum.
+
+<a id="evidence-2610-41079"></a>
+## 2610.41079 — EDU-Jev Training System-One Decision Models for Education
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-02
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。
+
+- **topic**: “which we evaluate through the version 1.14 API” — [Section 1, Introduction (sentence on TypeSafe's hosted decision model Jev)](https://arxiv.org/html/2610.41079v1)
+- **contribution**: “EDU-Jev 4B achieves an average accuracy of 67.6%” — [Abstract](https://arxiv.org/abs/2610.41079v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2610.41079v1); first submitted 2026-10-29; updated 2026-10-29. Full authors: Jiazheng Li; Yulan He.
+
+<a id="evidence-2610-40752"></a>
+## 2610.40752 — PathoJev: Efficient Pathology Decisions from Shared Visual Context
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-02
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “Building on the System One paradigm, we introduce PathoJev” — [Abstract](https://arxiv.org/abs/2610.40752v1)
+- **contribution**: “the 9B and 27B models achieve mean accuracies of 77.2% and 78.1%” — [Abstract](https://arxiv.org/abs/2610.40752v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2610.40752v1); first submitted 2026-10-29; updated 2026-10-29. Full authors: Chengyang Zhang; Wenchuan Zhang; Bo Li; Xinyu Liu; Jiaming Yang; Mengran Li; Jie Chen; Wei Ju; Yuhao Yi; Hong Bu; Jiancheng Lv.
+
 <a id="evidence-2610-40588"></a>
 ## 2610.40588 — Pre-Crime for Agents, at the Last Second: Probing When a Recruited Agent Gives In
 
@@ -633,6 +689,20 @@ Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence
 
 Metadata: [reviewed v1](https://arxiv.org/abs/2610.31422v1); first submitted 2026-10-22; updated 2026-10-22. Full authors: Phat Huu Ha; Nguyen Xuan Phuc; Nong Nhut Quy; Trinh Tran Tran; Nguyen Minh Triet; Dang Van Thin.
 
+<a id="evidence-2610-31315"></a>
+## 2610.31315 — The Value of System 1 Models in Medicine
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-02
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。
+
+- **topic**: “Jev 1.14 was the best model on 45 of 78 tasks” — [Results, Tasks and Models](https://arxiv.org/html/2610.31315v2)
+- **contribution**: “the mean AUROC of the best model per task was 0.94 for medical knowledge” — [Abstract](https://arxiv.org/abs/2610.31315v2)
+
+Metadata: [reviewed v2](https://arxiv.org/abs/2610.31315v2); first submitted 2026-10-22; updated 2026-10-23. Full authors: Xiufeng Yang; Konstantinos Vrettos; Zeineb Ben Chaaben; Fabian Drexel; Jannik Lübberstedt; Johannes Moll; Anirudh Narayanan; Frederike Stumpf; Cosmin I. Bercea; Jiawen Wang; Evangelia E. Vassalou; Krischan Braitsch; Aymen Meddeb; Sebastian Ziegelmayer; Markus Graf; Marcus R. Makowski; Lisa Adams; Nassir Navab; Michail E. Klontzas; Keno Bressem.
+
 <a id="evidence-2610-30947"></a>
 ## 2610.30947 — RetiJev: Fast and Source-Grounded Ophthalmic Decision Models
 
@@ -1164,6 +1234,20 @@ A closely related decision model or method; no claim of reproducing proprietary 
 - **contribution**: “in one forward pass with a block-isolating attention mask” — [Abstract](https://arxiv.org/abs/2610.21150v1)
 
 Metadata: [reviewed v1](https://arxiv.org/abs/2610.21150v1); first submitted 2026-10-15; updated 2026-10-15. Full authors: Yang Xiao.
+
+<a id="evidence-2610-20951"></a>
+## 2610.20951 — LEV: Thinking Fast and Deep with Looped Decision Models
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-02
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。
+
+- **topic**: “the released Kev-0.8B and Kev-4B and the closed Jev 1.13.0” — [Section 5, Experimental Setup (Models)](https://arxiv.org/html/2610.20951v1)
+- **contribution**: “a 2.6B LEV goes from 63.2% at depth one to 76.2% at depth four” — [Abstract](https://arxiv.org/abs/2610.20951v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2610.20951v1); first submitted 2026-10-14; updated 2026-10-14. Full authors: Dingjie Song; Zhiling Yan; Yuxuan Zhang; Lichao Sun.
 
 <a id="evidence-2610-20927"></a>
 ## 2610.20927 — Prune the Summary, Not the History: Source-Judged Compaction for Long-Horizon Agents

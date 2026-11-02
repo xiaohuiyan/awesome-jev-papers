@@ -3040,6 +3040,70 @@
       "status": "excluded",
       "reason": "LLM confidence-routing preprint predating Jev by a year, surfaced via a Zhihu priority-claim explainer; no typed-decision-model content.",
       "screened_on": "2026-11-01"
+    },
+    {
+      "arxiv_id": "2610.41199",
+      "title": "Beyond CLIP: Calibrated (Few-Shot) Defect Detection With System One Decision Models",
+      "source_url": "https://arxiv.org/abs/2610.41199v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-02"
+    },
+    {
+      "arxiv_id": "2610.41132",
+      "title": "When Disclosure Is Compulsory: Evaluating Ride-Hailing Rebalancing Policies with Self-Interested LLM Driver Agents",
+      "source_url": "https://arxiv.org/abs/2610.41132v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-02"
+    },
+    {
+      "arxiv_id": "2610.41079",
+      "title": "EDU-Jev Training System-One Decision Models for Education",
+      "source_url": "https://arxiv.org/abs/2610.41079v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-02"
+    },
+    {
+      "arxiv_id": "2610.40752",
+      "title": "PathoJev: Efficient Pathology Decisions from Shared Visual Context",
+      "source_url": "https://arxiv.org/abs/2610.40752v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-02"
+    },
+    {
+      "arxiv_id": "2610.20951",
+      "title": "LEV: Thinking Fast and Deep with Looped Decision Models",
+      "source_url": "https://arxiv.org/abs/2610.20951v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-02"
+    },
+    {
+      "arxiv_id": "2610.31315",
+      "title": "The Value of System 1 Models in Medicine",
+      "source_url": "https://arxiv.org/abs/2610.31315v2",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-02"
+    },
+    {
+      "arxiv_id": "2610.39497",
+      "title": "Does Scaling Toward AGI Depend on What System-1 Lets System-2 Execute?",
+      "source_url": "https://arxiv.org/abs/2610.39497v1",
+      "status": "excluded",
+      "reason": "Matched the 'System 1' variant query; a theoretical System-1/System-2 conditional-interaction (predict-gate-execute-update) scaling framework in which Jev appears only as an incidental cited example of a commercial static cascade; no typed-decision-model use or evaluation.",
+      "screened_on": "2026-11-02"
+    },
+    {
+      "arxiv_id": "2610.40714",
+      "title": "PrivacyFlow: Privacy in AI Agents through Information Flow Analysis and Consequence-Aware Risk Management",
+      "source_url": "https://arxiv.org/abs/2610.40714v1",
+      "status": "excluded",
+      "reason": "Matched the 'System 1' variant query; an agentic privacy defense that uses the dual-process metaphor (System 2 planning versus System 1 execution); abstract and full text contain no Jev, System One or typed-decision-model content.",
+      "screened_on": "2026-11-02"
     }
   ]
 }

@@ -955,5 +955,38 @@
     "canonical_url": "https://github.com/Mei-TN/Jev-reranking",
     "description": "Project page for \"Improving JEV Entailment Reranking with Span Readouts and Selective Adaptation\"",
     "private": false
+  },
+  {
+    "arxiv_id": "2610.20951",
+    "url": "https://github.com/OpenLAIR/lev",
+    "source_url": "https://arxiv.org/abs/2610.20951v1",
+    "source_location": "arXiv comment (Code:) and title-page footnote",
+    "checked_on": "2026-11-02",
+    "status": "verified",
+    "canonical_url": "https://github.com/OpenLAIR/lev",
+    "description": "Lev: Thinking Fast and Deep with Looped Decision Models. One checkpoint, multiple depths: System 1.5 decision models that think in loops, not tokens.",
+    "private": false
+  },
+  {
+    "arxiv_id": "2610.40752",
+    "url": "https://github.com/ChyaZhang/PathoJev",
+    "source_url": "https://arxiv.org/abs/2610.40752v1",
+    "source_location": "abstract (Code:)",
+    "checked_on": "2026-11-02",
+    "status": "verified",
+    "canonical_url": "https://github.com/ChyaZhang/PathoJev",
+    "description": null,
+    "private": false
+  },
+  {
+    "arxiv_id": "2610.41199",
+    "url": "https://github.com/fmegahed/decision-models-for-industrial-image-qc",
+    "source_url": "https://arxiv.org/html/2610.41199v1",
+    "source_location": "Section 5 supplementary-website URL (fmegahed.github.io/decision-models-for-industrial-image-qc, the GitHub Pages site of this repository)",
+    "checked_on": "2026-11-02",
+    "status": "verified",
+    "canonical_url": "https://github.com/fmegahed/decision-models-for-industrial-image-qc",
+    "description": "Beyond CLIP: calibrated few-shot defect detection with structured decision models (JEV, Clef-Flash) - experiments, replication record and paper",
+    "private": false
   }
 ]

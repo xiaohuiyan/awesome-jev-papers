@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "updated_on": "2026-11-01",
+  "updated_on": "2026-11-02",
   "window": {
     "start": "2025-10-16",
-    "end": "2026-10-29",
+    "end": "2026-10-30",
     "basis": "first submission; reviewed version and verification date recorded per paper"
   },
   "categories": {
@@ -49,6 +49,315 @@
     "2610.04345"
   ],
   "papers": [
+    {
+      "arxiv_id": "2610.41199",
+      "title": "Beyond CLIP: Calibrated (Few-Shot) Defect Detection With System One Decision Models",
+      "authors": [
+        "Fadel M. Megahed",
+        "Ying-Ju Chen"
+      ],
+      "affiliations": [
+        "Farmer School of Business, Miami University",
+        "College of Arts and Sciences, University of Dayton"
+      ],
+      "first_submitted": "2026-10-30",
+      "updated": "2026-10-30",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.41199",
+      "reviewed_url": "https://arxiv.org/abs/2610.41199v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.41199v1",
+      "arxiv_categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "direct",
+      "tags": [
+        "applications",
+        "multimodal",
+        "calibration"
+      ],
+      "summary": {
+        "en": "Asks whether structured decision models can replace CLIP for industrial defect detection when only two reference images per class exist: with API-based TypeSafe Jev 1.13.0 and the open-weight Cloudflare Clef-Flash (run locally on SGLang) across five manufacturing case studies (metallic surfaces, 3D-printing extrusion profiles, stochastic textures, automotive assemblies, microstructures), both beat CLIP at k=2 (test accuracy 0.75-1.00 for Jev and 0.71-0.99 for Clef-Flash versus 0.67-0.84), an agentic loop that rewrites the guiding text descriptions significantly improves accuracy in 6 of 8 model-application pairs, and a calibration step lowers the Brier score in 13 of 15 configurations; ships replication code, the \"decisions\" package and a no-code web app.",
+        "zh": "追问在每类仅有两张参考图时,结构化决策模型能否取代 CLIP 做工业缺陷检测:以 API 调用的 TypeSafe Jev 1.13.0 与本地 SGLang 运行的开源 Cloudflare Clef-Flash,在五个制造案例(金属表面、3D 打印挤出轮廓、随机纹理、汽车装配、微观组织)上,k=2 时两者均胜过 CLIP(测试准确率 Jev 0.75~1.00、Clef-Flash 0.71~0.99,CLIP 0.67~0.84);让智能体循环改写引导文本描述在 8 个模型—应用组合中的 6 个显著提升准确率,校准步骤在 15 个配置中的 13 个降低 Brier 分数;附复现代码、\"decisions\" 软件包与无代码网页应用。"
+      },
+      "problem": {
+        "en": "Can System One decision models detect manufacturing defects reliably from just two reference images per class?",
+        "zh": "系统一决策模型能否仅凭每类两张参考图可靠检测制造缺陷?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "we used the API-based TypeSafe Jev (1.13.0)",
+          "location": "Section 3.2, Models and Experimental Controls",
+          "source_url": "https://arxiv.org/html/2610.41199v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "both Jev and Clef-Flash outperform CLIP's test accuracies",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.41199v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-02",
+      "code": [
+        {
+          "url": "https://github.com/fmegahed/decision-models-for-industrial-image-qc",
+          "source_url": "https://arxiv.org/html/2610.41199v1",
+          "source_location": "Section 5 supplementary-website URL (fmegahed.github.io/decision-models-for-industrial-image-qc, the GitHub Pages site of this repository)",
+          "verified_on": "2026-11-02",
+          "verification": "Author-linked repository behind the printed GitHub Pages URL; GitHub API confirmed public and accessible with a description matching the paper. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.41199v1",
+      "source_abstract_sha256": "b49d55eb40ed03f86ee64bb0ff77edd3116882ecbf08a04e2e7bbffb8ff18995"
+    },
+    {
+      "arxiv_id": "2610.41132",
+      "title": "When Disclosure Is Compulsory: Evaluating Ride-Hailing Rebalancing Policies with Self-Interested LLM Driver Agents",
+      "authors": [
+        "Xinyu Wang",
+        "Andres Fielbaum"
+      ],
+      "affiliations": [
+        "School of Civil Engineering, The University of Sydney"
+      ],
+      "first_submitted": "2026-10-30",
+      "updated": "2026-10-30",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.41132",
+      "reviewed_url": "https://arxiv.org/abs/2610.41132v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.41132v1",
+      "arxiv_categories": [
+        "cs.MA",
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "agents",
+      "relation_level": "direct",
+      "tags": [
+        "agents",
+        "applications",
+        "efficiency"
+      ],
+      "summary": {
+        "en": "Simulates what happens when the EU Platform Work Directive forces ride-hailing platforms to disclose their rebalancing rules and drivers let a model decide for them: every driver is an LLM agent maximizing its own net income, with hosted Jev 1.13.0 (option of highest probability) as the main agent across 500 Manhattan drivers and 52,461 requests and Claude Haiku 5.5 as the reasoning control, both answering the rule-comprehension quiz perfectly; once rules are disclosed, declined relocation offers fall from about four in five to one in four, the reactive policy loses 3.7% of its profit while the anticipatory policy's is unchanged (the two end 6.1% apart), and self-interested drivers turn the anticipatory policy into a win-win-win, lifting driver income, platform profit and service rate by 10-12% each; the small-model Jev runs cost USD 2.43 for 20,396 calls.",
+        "zh": "模拟欧盟平台工作指令强制网约车平台公开调度规则、司机把决策交给模型后会发生什么:每位司机都是最大化自身净收入的 LLM 智能体,主智能体为托管 Jev 1.13.0(取最高概率选项),在曼哈顿 500 名司机、52,461 次请求上运行,并以 Claude Haiku 5.5 作为推理模型对照,二者均满分通过规则理解测验;规则公开后,司机拒绝调度的比例从约五分之四降到四分之一,被动策略利润损失 3.7% 而前瞻策略不变(两者相差 6.1%),自利司机使前瞻策略成为三赢——司机收入、平台利润与服务率各提升 10%~12%;小模型上的 Jev 运行 20,396 次调用仅花费 2.43 美元。"
+      },
+      "problem": {
+        "en": "How do ride-hailing rebalancing policies fare once rules are disclosed and self-interested drivers let Jev decide for them?",
+        "zh": "规则公开、自利司机让 Jev 代为决策后,网约车调度策略表现如何?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "the main agent chosen is Jev, a TypeSafe System One model",
+          "location": "Section 3.2.4, LLM models",
+          "source_url": "https://arxiv.org/html/2610.41132v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "disclosure costs R 3.7% of its profit in Manhattan",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.41132v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-02",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.41132v1",
+      "source_abstract_sha256": "c73b9bc65833974bc6e8c7d096a3ede3fb7e6151c1b70911535e09147bcd4a27"
+    },
+    {
+      "arxiv_id": "2610.41079",
+      "title": "EDU-Jev Training System-One Decision Models for Education",
+      "authors": [
+        "Jiazheng Li",
+        "Yulan He"
+      ],
+      "affiliations": [
+        "King's College London"
+      ],
+      "first_submitted": "2026-10-29",
+      "updated": "2026-10-29",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.41079",
+      "reviewed_url": "https://arxiv.org/abs/2610.41079v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.41079v1",
+      "arxiv_categories": [
+        "cs.CL"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "architecture",
+      "relation_level": "direct",
+      "tags": [
+        "training",
+        "education",
+        "calibration",
+        "efficiency"
+      ],
+      "summary": {
+        "en": "Trains EDU-Jev, single-pass System One decision models at 0.8B, 2B and 4B for educational assessment (rubric scores, marking criteria, the first wrong step in a solution): a pointer head scores a marker per option so predictions stay within the allowed choices, one supervised stage fits soft cross-entropy to rater label distributions, and weight averaging finishes the recipe; across twelve education benchmarks the 4B model reaches 67.6% average accuracy, 9.4 points above the strongest of five commercial decision APIs (hosted Jev 1.14, Microsoft Decision-1 and Cloudflare Clef among them, queried through a zero-retention routing service) and 18.7 above the best open 4B decision model, matches the strongest API on four cross-domain education sets while trailing it on general decisions and reasoning, and the 2B model handles about 150 decisions per second on one H100.",
+        "zh": "训练面向教育评估(量规打分、评分点判定、找出解答中的首个错误步骤)的单次前向系统一决策模型 EDU-Jev(0.8B/2B/4B):指针头为每个选项的标记打分,使预测限定在允许选项内;单阶段监督训练以软交叉熵拟合评分者标签分布,再以权重平均收尾;在十二个教育基准上 4B 模型平均准确率 67.6%,比五个商业决策 API(含经零留存路由服务调用的托管 Jev 1.14、Microsoft Decision-1 与 Cloudflare Clef)中最强者高 9.4 个百分点、比最佳开源 4B 决策模型高 18.7 个点,在四个跨域教育集上与最强 API 持平但在通用决策与推理上落后;2B 模型在单张 H100 上每秒约处理 150 个决策。"
+      },
+      "problem": {
+        "en": "Can small single-pass decision models beat commercial decision APIs at rubric-based educational assessment?",
+        "zh": "小型单次前向决策模型能否在基于量规的教育评估上胜过商业决策 API?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "which we evaluate through the version 1.14 API",
+          "location": "Section 1, Introduction (sentence on TypeSafe's hosted decision model Jev)",
+          "source_url": "https://arxiv.org/html/2610.41079v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "EDU-Jev 4B achieves an average accuracy of 67.6%",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.41079v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-02",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.41079v1",
+      "source_abstract_sha256": "4a475c917e96481b2703d89d193bb163d9782bbb55304fd1cfebcda9b06179d4"
+    },
+    {
+      "arxiv_id": "2610.40752",
+      "title": "PathoJev: Efficient Pathology Decisions from Shared Visual Context",
+      "authors": [
+        "Chengyang Zhang",
+        "Wenchuan Zhang",
+        "Bo Li",
+        "Xinyu Liu",
+        "Jiaming Yang",
+        "Mengran Li",
+        "Jie Chen",
+        "Wei Ju",
+        "Yuhao Yi",
+        "Hong Bu",
+        "Jiancheng Lv"
+      ],
+      "affiliations": [
+        "College of Computer Science, Sichuan University",
+        "Department of Pathology and Institute of Clinical Pathology, West China Hospital, Sichuan University",
+        "Department of Computer Science, School of Computing, National University of Singapore",
+        "School of Intelligent Systems Engineering, Sun Yat-sen University"
+      ],
+      "first_submitted": "2026-10-29",
+      "updated": "2026-10-29",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.40752",
+      "reviewed_url": "https://arxiv.org/abs/2610.40752v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40752v1",
+      "arxiv_categories": [
+        "cs.CV"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "related",
+      "tags": [
+        "applications",
+        "medical",
+        "multimodal",
+        "efficiency"
+      ],
+      "summary": {
+        "en": "Brings the System One paradigm to pathology: PathoJev encodes a whole slide once into a shared visual prefix, then scores independent question suffixes in batches with a typed head that returns answer probabilities directly, reusing the hybrid backbone's recurrent states so that per-question cost grows less with slide-context length; starting from the open JEV-9B and trained on whole-slide plus region-of-interest supervision, the 9B and 27B models reach mean accuracies of 77.2% and 78.1% on three whole-slide benchmarks (5.4 and 6.3 points above SlideChat), stay competitive on five ROI benchmarks, run 9.1x faster than SlideChat on WSI-Bench, and shared context speeds eight-question workloads 6.9x/5.9x over separate prefix encoding (11.2x/8.9x at 64 questions); hosted Jev is cited only as the paradigm's origin and is not evaluated.",
+        "zh": "把系统一范式引入病理学:PathoJev 将整张切片一次性编码为共享视觉前缀,再以类型化头对独立的问题后缀批量打分、直接返回答案概率,并复用混合骨干的循环状态,使每多一个问题随切片上下文长度增长的计算更少;从开源 JEV-9B 出发、以整片与感兴趣区域双重监督训练的 9B 与 27B 模型在三个整片基准上平均准确率 77.2% 与 78.1%(高于 SlideChat 5.4 与 6.3 个百分点),在五个 ROI 基准上保持竞争力,WSI-Bench 上 9B 比 SlideChat 快 9.1 倍;共享上下文使八问工作负载比分别编码前缀快 6.9/5.9 倍,64 问时达 11.2/8.9 倍;托管 Jev 仅作为范式来源被引用,未被评测。"
+      },
+      "problem": {
+        "en": "How can one slide encoding answer many pathology questions with direct probabilities instead of generated text?",
+        "zh": "如何让一次切片编码直接以概率回答多个病理问题,而非逐题生成文本?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法；不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "Building on the System One paradigm, we introduce PathoJev",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.40752v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "the 9B and 27B models achieve mean accuracies of 77.2% and 78.1%",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.40752v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-02",
+      "code": [
+        {
+          "url": "https://github.com/ChyaZhang/PathoJev",
+          "source_url": "https://arxiv.org/abs/2610.40752v1",
+          "source_location": "abstract (Code:)",
+          "verified_on": "2026-11-02",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.40752v1",
+      "source_abstract_sha256": "79170dd1de14164308a645a3eec247bace57c00aad7fb1a3c4adac6588a8436a"
+    },
     {
       "arxiv_id": "2610.40588",
       "title": "Pre-Crime for Agents, at the Last Second: Probing When a Recruited Agent Gives In",
@@ -3424,6 +3733,101 @@
       "source_abstract_sha256": "a67d275f11b10cc5aa36fb3ad4a8b4d5cc6e1e0d5335f802ca4be4417423d6f2"
     },
     {
+      "arxiv_id": "2610.31315",
+      "title": "The Value of System 1 Models in Medicine",
+      "authors": [
+        "Xiufeng Yang",
+        "Konstantinos Vrettos",
+        "Zeineb Ben Chaaben",
+        "Fabian Drexel",
+        "Jannik Lübberstedt",
+        "Johannes Moll",
+        "Anirudh Narayanan",
+        "Frederike Stumpf",
+        "Cosmin I. Bercea",
+        "Jiawen Wang",
+        "Evangelia E. Vassalou",
+        "Krischan Braitsch",
+        "Aymen Meddeb",
+        "Sebastian Ziegelmayer",
+        "Markus Graf",
+        "Marcus R. Makowski",
+        "Lisa Adams",
+        "Nassir Navab",
+        "Michail E. Klontzas",
+        "Keno Bressem"
+      ],
+      "affiliations": [
+        "Technical University of Munich",
+        "University of Crete",
+        "University Hospital of Heraklion",
+        "Charité – Universitätsmedizin Berlin",
+        "Karolinska Institutet",
+        "National Center for Tumor Diseases West, Essen",
+        "University Hospital Essen"
+      ],
+      "first_submitted": "2026-10-22",
+      "updated": "2026-10-23",
+      "version": 2,
+      "arxiv_url": "https://arxiv.org/abs/2610.31315",
+      "reviewed_url": "https://arxiv.org/abs/2610.31315v2",
+      "pdf_url": "https://arxiv.org/pdf/2610.31315v2",
+      "arxiv_categories": [
+        "cs.LG"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "evaluation",
+      "relation_level": "direct",
+      "tags": [
+        "evaluation",
+        "medical",
+        "calibration",
+        "multimodal",
+        "benchmark"
+      ],
+      "summary": {
+        "en": "Evaluates four System 1 models zero-shot - hosted Jev 1.14 and GPT-6 Luna Decisions plus open-weight Clef (27B) and Clef-flash (9.5B), all through the OpenRouter decision interface - on 86 public tasks from 14 clinical domains in 20 languages spanning examination questions and medical imaging (2.4 million answers over 179,111 cases): the best model per task reaches mean AUROC 0.94 for medical knowledge, 0.93 for text understanding, 0.83 for clinical judgement from text, 0.89 for image perception, 0.84 for 2D findings and 0.69 for volumetric findings, imaging 0.09 below text; Jev 1.14 answered every question (GPT-6 Luna Decisions refused 1.3%) and was the best model on 45 of 78 primary tasks, the best model matched or beat the best published result on 13 of 26 text and 8 of 35 imaging tasks yet triage nurses still won (accuracy 0.85 vs 0.56), local open-weight decisions took 0.34-0.44 s and 24-81 J, accuracy fell up to 39 points from English to Yoruba (20.1 for Jev), and same-family generative models were 11-76x slower for 3-5 points more balanced accuracy.",
+        "zh": "通过 OpenRouter 决策接口零样本评测四个系统一模型——托管的 Jev 1.14 与 GPT-6 Luna Decisions,以及开源权重的 Clef(27B)与 Clef-flash(9.5B)——覆盖 14 个临床领域、20 种语言的 86 个公开任务(考试题与医学影像,179,111 个病例、240 万条回答):各任务最佳模型的平均 AUROC 在医学知识 0.94、文本理解 0.93、文本临床判断 0.83、图像感知 0.89、二维影像所见 0.84、体数据所见 0.69,影像比文本低 0.09;Jev 1.14 回答了所有问题(GPT-6 Luna Decisions 拒答 1.3%)并在 78 个主任务中的 45 个上最佳;最佳模型在 26 个文本任务中的 13 个、35 个影像任务中的 8 个追平或超过已发表最好结果,但分诊护士仍胜过模型(准确率 0.85 对 0.56);开源模型本地单次决策耗时 0.34~0.44 秒、能耗 24~81 焦;从英语到约鲁巴语准确率最多下降 39 个点(Jev 为 20.1);同系列生成式模型慢 11~76 倍,平衡准确率仅高 3~5 个点。"
+      },
+      "problem": {
+        "en": "When can System 1 models make clinical decisions quickly and with usable confidence, and when do they fail?",
+        "zh": "系统一模型何时能快速、带可用置信度地做出临床决策,何时会失效?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "Jev 1.14 was the best model on 45 of 78 tasks",
+          "location": "Results, Tasks and Models",
+          "source_url": "https://arxiv.org/html/2610.31315v2"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "the mean AUROC of the best model per task was 0.94 for medical knowledge",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.31315v2"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-02",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.31315v2",
+      "source_abstract_sha256": "f6fc83bf9e3062f5648fdd6dae499f2735bf258fbe62a1b8e6384109f4854e61"
+    },
+    {
       "arxiv_id": "2610.30947",
       "title": "RetiJev: Fast and Source-Grounded Ophthalmic Decision Models",
       "authors": [
@@ -6446,6 +6850,90 @@
       "code": [],
       "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.21150v1",
       "source_abstract_sha256": "0bcc877dec324ef07b72714a679aaabc209f56b7afd2957897a0845b92bf6e11"
+    },
+    {
+      "arxiv_id": "2610.20951",
+      "title": "LEV: Thinking Fast and Deep with Looped Decision Models",
+      "authors": [
+        "Dingjie Song",
+        "Zhiling Yan",
+        "Yuxuan Zhang",
+        "Lichao Sun"
+      ],
+      "affiliations": [
+        "Lehigh University",
+        "University of British Columbia",
+        "Vector Institute"
+      ],
+      "first_submitted": "2026-10-14",
+      "updated": "2026-10-14",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.20951",
+      "reviewed_url": "https://arxiv.org/abs/2610.20951v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.20951v1",
+      "arxiv_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "architecture",
+      "relation_level": "direct",
+      "tags": [
+        "architecture",
+        "adaptive-reasoning",
+        "efficiency",
+        "benchmark"
+      ],
+      "summary": {
+        "en": "Lets a decision model think deeper without generating tokens: LEV builds on a language model pretrained as a loop, re-reads the options after every loop step and trains all steps jointly, so one checkpoint answers at any depth; on three looped backbones accuracy rises with depth on the same weights, mostly on hard questions - a 2.6B LEV climbs from 63.2% at depth one to 76.2% at depth four on JevBench - while on-demand depth chosen per question by a small stopper (threshold fitted on unlabelled requests) saves 15-24% of computation for under one accuracy point, level with or slightly above a fixed mix of depths; on a locked test set the 1.4B and 3B models beat dense models and cascades of the same sub-50 ms latency by 5.4-8.8 points, with the released Kev-0.8B/4B and the closed Jev 1.13.0 (measured through the production API) reported as references.",
+        "zh": "让决策模型不生成 token 也能想得更深:LEV 建立在以循环方式预训练的语言模型之上,每个循环步后重读选项并联合训练所有步,一个检查点即可在任意深度作答;在三个循环骨干上,同一权重的准确率随深度上升、提升主要来自难题——2.6B 的 LEV 在 JevBench 上从深度一的 63.2% 升至深度四的 76.2%;由小型停止器按题决定深度(阈值在无标注请求上拟合)可节省 15%~24% 计算、准确率损失不到一个点,与固定深度混合持平或略优;在锁定测试集上,1.4B 与 3B 模型比同样低于 50 毫秒延迟的稠密模型与级联高 5.4~8.8 个点;已发布的 Kev-0.8B/4B 与闭源 Jev 1.13.0(经生产 API 测得)作为参考一并报告。"
+      },
+      "problem": {
+        "en": "Can a decision model spend more computation on hard questions by looping its layers instead of generating text?",
+        "zh": "决策模型能否通过循环层而非生成文本,把更多计算花在难题上?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev；具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "the released Kev-0.8B and Kev-4B and the closed Jev 1.13.0",
+          "location": "Section 5, Experimental Setup (Models)",
+          "source_url": "https://arxiv.org/html/2610.20951v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "a 2.6B LEV goes from 63.2% at depth one to 76.2% at depth four",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.20951v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-02",
+      "code": [
+        {
+          "url": "https://github.com/OpenLAIR/lev",
+          "source_url": "https://arxiv.org/abs/2610.20951v1",
+          "source_location": "arXiv comment (Code:) and title-page footnote",
+          "verified_on": "2026-11-02",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.20951v1",
+      "source_abstract_sha256": "db0ec23efc39739b2cafa544cb99a09f537f3c0542f22bac00adcf25cc3891c3"
     },
     {
       "arxiv_id": "2610.20927",
