@@ -3104,6 +3104,598 @@
       "status": "excluded",
       "reason": "Matched the 'System 1' variant query; an agentic privacy defense that uses the dual-process metaphor (System 2 planning versus System 1 execution); abstract and full text contain no Jev, System One or typed-decision-model content.",
       "screened_on": "2026-11-02"
+    },
+    {
+      "arxiv_id": "2611.04101",
+      "title": "Structured Clinical Memory as Context for Probabilistic Decision Models: A Synthetic Evaluation with Jev",
+      "source_url": "https://arxiv.org/abs/2611.04101v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2611.03759",
+      "title": "JevBreak: Your Model, Their Decision",
+      "source_url": "https://arxiv.org/abs/2611.03759v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2611.02957",
+      "title": "Cyber-JEV: Matched Contrastive Fine-Tuning of Language Models for Fast Source-Code Vulnerability Triage",
+      "source_url": "https://arxiv.org/abs/2611.02957v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2611.02155",
+      "title": "Decision Models as Policy Gates for Coding Agents: Explicit Policy Boundaries Improve Detection and Reduce False Alarms",
+      "source_url": "https://arxiv.org/abs/2611.02155v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2611.01463",
+      "title": "DIMWIT: Directly Invoking Models Without Intensive Tuning",
+      "source_url": "https://arxiv.org/abs/2611.01463v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2611.01370",
+      "title": "XDecideBench: Evaluating Typed Decision Models and Confidence Policies Across Languages",
+      "source_url": "https://arxiv.org/abs/2611.01370v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2611.00911",
+      "title": "S1CogBench: What System One Decision Models Can and Cannot Do on Cognitive Experiments",
+      "source_url": "https://arxiv.org/abs/2611.00911v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2611.00737",
+      "title": "Can Jev Improve Demonstration Retrieval for In-Context Learning?",
+      "source_url": "https://arxiv.org/abs/2611.00737v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2611.00505",
+      "title": "To Jev or Not to Jev: When Can System-1 Decision Models Replace LLM Judges?",
+      "source_url": "https://arxiv.org/abs/2611.00505v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2611.00496",
+      "title": "Swap, Replicate, Read the Mass: A Protocol for Auditing Demographic Bias in System One Decision Models",
+      "source_url": "https://arxiv.org/abs/2611.00496v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2611.00428",
+      "title": "Do Multimodal Models Decide Consistently on Equivalent Optical Spectra?",
+      "source_url": "https://arxiv.org/abs/2611.00428v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2611.01126",
+      "title": "Do GEO Gains Survive the Live Web? Evaluating In-the-Wild Visibility Gains of Generative Engine Optimization via LIVE-GEO",
+      "source_url": "https://arxiv.org/abs/2611.01126v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2611.00359",
+      "title": "Humanized but Still True? Auditing Facts and Detection in AI-Text Humanizers",
+      "source_url": "https://arxiv.org/abs/2611.00359v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2610.41350",
+      "title": "Operon-S1: a fast decision controller for long-horizon biomedical agents",
+      "source_url": "https://arxiv.org/abs/2610.41350v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2610.36689",
+      "title": "PsyJev: Psychological Analysis via System-1 Judgment",
+      "source_url": "https://arxiv.org/abs/2610.36689v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2610.23804",
+      "title": "Jarvis: Coordination Deserves a Brain of Its Own in Agentic Interactive Models",
+      "source_url": "https://arxiv.org/abs/2610.23804v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2610.23668",
+      "title": "TUPLE-Bench: Evaluating and Mitigating Privacy-Utility Trade-offs in Typed Decision Models",
+      "source_url": "https://arxiv.org/abs/2610.23668v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2610.23346",
+      "title": "Jev-as-a-Judge for Brazilian Portuguese Information Retrieval: Relevance Assessment and Reranking",
+      "source_url": "https://arxiv.org/abs/2610.23346v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2610.22526",
+      "title": "Literal Lock-In: How Test Language Shifts Literal Attraction in Typed Decision Models on Bengali Idioms",
+      "source_url": "https://arxiv.org/abs/2610.22526v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2609.30454",
+      "title": "Auditing System-1 Models on Biosecurity-Relevant Benchmarks: Calibration, Selective Prediction, and Permutation Instability in a Non-Generative Model",
+      "source_url": "https://arxiv.org/abs/2609.30454v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2610.21046",
+      "title": "PremiseCheck: Efficient Fact-Checking of Human and AI Peer Reviews",
+      "source_url": "https://arxiv.org/abs/2610.21046v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2610.37676",
+      "title": "Scoring Explanations Without Reading Them: Structural Shortcuts in Automated-Interpretability Evaluation Data",
+      "source_url": "https://arxiv.org/abs/2610.37676v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2609.34736",
+      "title": "SeLMRoute: Probabilistic Semantic Evidence for Large Language Model Routing",
+      "source_url": "https://arxiv.org/abs/2609.34736v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2610.09896",
+      "title": "NL2Hull: A Natural Language-Driven Constrained Ship Design Decision Framework",
+      "source_url": "https://arxiv.org/abs/2610.09896v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2610.15501",
+      "title": "Large Decision Models: Repurposing Large Language Models as Single-Pass Decision Makers",
+      "source_url": "https://arxiv.org/abs/2610.15501v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2610.14912",
+      "title": "Probable but Not Valid: A Psychometric Audit of Decision Models as Synthetic Survey Respondents",
+      "source_url": "https://arxiv.org/abs/2610.14912v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2610.17727",
+      "title": "SkillScreen: High-Recall Screening of Malicious Agent Skills with Decision Models",
+      "source_url": "https://arxiv.org/abs/2610.17727v2",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2611.03985",
+      "title": "Thinking Fast, Trading Late: System One Decision Models vs the Market",
+      "source_url": "https://arxiv.org/abs/2611.03985v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2611.03982",
+      "title": "SLATE: A Large-Scale Benchmark for Long-Horizon API Selection in E-commerce Tool Use",
+      "source_url": "https://arxiv.org/abs/2611.03982v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2611.03371",
+      "title": "EO-Jev: Decision Model for Earth Observation",
+      "source_url": "https://arxiv.org/abs/2611.03371v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2611.03360",
+      "title": "Every Pixel Is an Option: A System One Model for Medical Ultrasound Biometry",
+      "source_url": "https://arxiv.org/abs/2611.03360v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2611.03179",
+      "title": "Every Clause Counts: Instruction-Following Reranking by Multiplying Small, Answerable Questions",
+      "source_url": "https://arxiv.org/abs/2611.03179v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2611.03755",
+      "title": "Honest Small Decision Models for Finance: Scale, Specialization Collapse, and Mixed-Corpus Remediation",
+      "source_url": "https://arxiv.org/abs/2611.03755v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2611.02654",
+      "title": "VerdictAD: Few-Shot Anomaly Detection via Decision-Guided Refinement",
+      "source_url": "https://arxiv.org/abs/2611.02654v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2611.02522",
+      "title": "Ranked but Not Stopped: Detecting Prompt-Injection Hijacks from Typed Decision Models' Output Probabilities",
+      "source_url": "https://arxiv.org/abs/2611.02522v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2611.02455",
+      "title": "RLiD: Reinforcement Learning in the Decision Plane for Language Agents and LLMs",
+      "source_url": "https://arxiv.org/abs/2611.02455v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2611.01631",
+      "title": "Zero-shot evaluation of open vision-language models as System 1 decision models on radiology tasks",
+      "source_url": "https://arxiv.org/abs/2611.01631v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2611.01015",
+      "title": "IJev: Order-Invariant Decisions via Iterated Cyclic Reordering",
+      "source_url": "https://arxiv.org/abs/2611.01015v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2611.00774",
+      "title": "Decision-Centric Research: A Calibrated Decision Model and Benchmark for Scientific Agents",
+      "source_url": "https://arxiv.org/abs/2611.00774v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2611.00610",
+      "title": "Trail: Accurate Local Smart Home Control Using Decision Models",
+      "source_url": "https://arxiv.org/abs/2611.00610v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2610.42148",
+      "title": "Flide: Accelerating Decision Inference with Exact State Forking",
+      "source_url": "https://arxiv.org/abs/2610.42148v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2610.42128",
+      "title": "DecisionRank: On-Policy Distillation for Decision-Model Rerankers",
+      "source_url": "https://arxiv.org/abs/2610.42128v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2610.30963",
+      "title": "ReDence: A Hybrid Agentic and Decision-Model Framework for Rapid, Evidence-Grounded Detection of Modern Social Engineering Scams",
+      "source_url": "https://arxiv.org/abs/2610.30963v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2610.22401",
+      "title": "Audio System One Model: Typed Probabilistic Perception of Emotion in Speech",
+      "source_url": "https://arxiv.org/abs/2610.22401v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2610.16550",
+      "title": "CT0: Cybersecurity Transformer",
+      "source_url": "https://arxiv.org/abs/2610.16550v2",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2610.06950",
+      "title": "Learning to Decide, Not to Reason: Parameter-Efficient Decision Operators via Low-Rank Activation Steering",
+      "source_url": "https://arxiv.org/abs/2610.06950v2",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2610.01601",
+      "title": "Permutation-Robust Decision Modeling with Candidate-Independent Block-Causal Attention",
+      "source_url": "https://arxiv.org/abs/2610.01601v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2610.13675",
+      "title": "Can Multimodal Decision Models Classify Breast Ultrasound Images? Benchmarking CLEF and CLEF-Flash Across Prompts and Datasets",
+      "source_url": "https://arxiv.org/abs/2610.13675v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2610.07716",
+      "title": "JevCascade: Readout Stability and Inference-Time Compute Allocation for Prefill-Only Decision Models",
+      "source_url": "https://arxiv.org/abs/2610.07716v2",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2610.07177",
+      "title": "CLM-as-a-Judge: Evaluating an Open Contrastive Decision Model on Public Judge Benchmarks",
+      "source_url": "https://arxiv.org/abs/2610.07177v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2609.37832",
+      "title": "Can a Cacheable Decision Model Follow Rules?",
+      "source_url": "https://arxiv.org/abs/2609.37832v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2609.33671",
+      "title": "COGNIT-Guard: Calibrated Standalone Direct-Decision Guardrails with Heterogeneous CPU-NPU Confidence Cascading under Explicit Latency and False-Positive Constraints",
+      "source_url": "https://arxiv.org/abs/2609.33671v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2610.42053",
+      "title": "REA: A Routed Embodied Agent Runtime for Asynchronous Brain-Cerebellum Control",
+      "source_url": "https://arxiv.org/abs/2610.42053v1",
+      "status": "excluded",
+      "reason": "Matched the 'System 1' variant query; an embodied brain/cerebellum runtime whose fast path is VLA/whole-body policies; no Jev, System One model or typed-decision interface anywhere in the abstract or inspected body.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2610.37230",
+      "title": "TAO: Tool-Aware Joint Scheduling for LLM-Based Agentic Serving",
+      "source_url": "https://arxiv.org/abs/2610.37230v1",
+      "status": "excluded",
+      "reason": "Matched via incidental version-like tokens; an LLM agentic-serving scheduler with no Jev, System One or typed-decision-model content.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2610.24213",
+      "title": "Generalized Svetlichny Inequalities as a Cross-Platform Benchmark for Quantum Processors",
+      "source_url": "https://arxiv.org/abs/2610.24213v1",
+      "status": "excluded",
+      "reason": "False positive of the 'System 1' variant: 'Euro-Q-Exa System 1' is an IQM quantum processor name; quantum-physics benchmark with no decision-model content.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2610.24114",
+      "title": "Constant-Factor Local Approximation for Bipartite Densest Subgraph",
+      "source_url": "https://arxiv.org/abs/2610.24114v1",
+      "status": "excluded",
+      "reason": "Matched the variant queries via incidental metadata tokens; a graph-algorithms paper (local approximation of bipartite densest subgraph) with no Jev or decision-model content.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2610.22471",
+      "title": "Has GPT-6-Astra Achieved Embodied Intelligence?",
+      "source_url": "https://arxiv.org/abs/2610.22471v2",
+      "status": "excluded",
+      "reason": "Matched the 'System 1' variant; a GPT-6-Astra embodied-intelligence report using System 1/2 only as the usual embodied fast/slow policy framing; no typed decision models.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2610.19928",
+      "title": "MemDuet: Learning Dual-Process Memory for Long-Context Reasoning",
+      "source_url": "https://arxiv.org/abs/2610.19928v1",
+      "status": "excluded",
+      "reason": "Matched the 'System 1' variant; a Kahneman dual-process memory framework where System 1 is a small LLM evidence selector; no typed-decision interface.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2610.19378",
+      "title": "Robust Explanatory Analysis for Structured Optimization Networks (REASON) in Learning",
+      "source_url": "https://arxiv.org/abs/2610.19378v1",
+      "status": "excluded",
+      "reason": "Matched the 'System 1' variant; a System-1/System-2 two-loop residual-decomposition scheme for optimization networks; no Jev or decision-model content.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2610.17657",
+      "title": "Towards a Systematic Study of Embodied System 2 over Full Task Execution Cycles",
+      "source_url": "https://arxiv.org/abs/2610.17657v1",
+      "status": "excluded",
+      "reason": "Matched the 'System 1' variant; an embodied System-2 evaluation suite whose System 1 is a shared rule-based low-level action policy; no typed decision models.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2609.39334",
+      "title": "Taming Speculative Search for Test-Time Scaling in LLM Serving",
+      "source_url": "https://arxiv.org/abs/2609.39334v1",
+      "status": "excluded",
+      "reason": "Matched via an author surname (Jevdjic) and throughput ratios like 1.14x; speculative-search LLM serving work with no Jev or decision-model content.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2609.34247",
+      "title": "SALMONN-duo: Adaptive Dual-System Coordination for Full-Duplex Voice Agents",
+      "source_url": "https://arxiv.org/abs/2609.34247v1",
+      "status": "excluded",
+      "reason": "Matched the 'System 1' variant; a dual-system voice agent whose system 1 is a full-duplex speech LLM, not a typed decision model.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2609.33150",
+      "title": "Generalization Dynamics of LM Pre-training",
+      "source_url": "https://arxiv.org/abs/2609.33150v1",
+      "status": "excluded",
+      "reason": "Matched the 'System 1' variant; an LM pre-training dynamics study using System 1/2 only to describe computation modes; no decision models.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2609.32932",
+      "title": "Counting on Thinking: Tracing Evidence Integration in Language Models",
+      "source_url": "https://arxiv.org/abs/2609.32932v1",
+      "status": "excluded",
+      "reason": "Matched the 'System 1' variant; an evidence-integration cognition study of System 1/System 2 trade-offs in LLMs; no typed decision models.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2609.32591",
+      "title": "Think Fast, Plan Selectively: Adaptive Deliberation for Efficient Data-Driven MPC",
+      "source_url": "https://arxiv.org/abs/2609.32591v2",
+      "status": "excluded",
+      "reason": "Matched the 'System 1' variant; dual-process adaptive deliberation for model-predictive control in robotics; no typed decision models.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2609.24170",
+      "title": "An Unexpected Robot Policy: Early Evaluations of GPT-6 Astra on RoboDojo and Beyond",
+      "source_url": "https://arxiv.org/abs/2609.24170v1",
+      "status": "excluded",
+      "reason": "Matched the 'System 1' variant; an embodied System 1/2 framing of GPT-6 Astra as robot policy; no typed decision models.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2610.21837",
+      "title": "Covariance-Calibrated Prediction-Powered Inference",
+      "source_url": "https://arxiv.org/abs/2610.21837v1",
+      "status": "excluded",
+      "reason": "Matched 'decision model' via statistical vocabulary; a prediction-powered-inference estimator paper with no Jev or typed-decision content.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2610.21111",
+      "title": "A unified decision model for Bayesian ambiguity and non-affine statistics",
+      "source_url": "https://arxiv.org/abs/2610.21111v1",
+      "status": "excluded",
+      "reason": "General decision theory under Bayesian ambiguity and non-affine statistics; excluded per the repository's standing rule against general decision-theory matches.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2610.22416",
+      "title": "From Individual Songs to Music Corpora: Evaluating Explainable Harmonic Decision-Making on HookTheory",
+      "source_url": "https://arxiv.org/abs/2610.22416v1",
+      "status": "excluded",
+      "reason": "Matched 'decision model' in its music-theory sense (harmonic decision model for melody harmonization); no AI decision-model content.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2610.01218",
+      "title": "AGO AI Quality Gate: Evidence-First Release Decisions for Retrieval-Augmented Generation",
+      "source_url": "https://arxiv.org/abs/2610.01218v1",
+      "status": "excluded",
+      "reason": "Matched via a single incidental 'decision model' phrase; a self-hosted RAG quality-gate platform built on LLM judges, with no Jev or typed-decision interface.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2610.09057",
+      "title": "Epistemic Uncertainty-Aware Defect Detection for Quality Control in Medical Device Manufacturing",
+      "source_url": "https://arxiv.org/abs/2610.09057v1",
+      "status": "excluded",
+      "reason": "Matched via an incidental 'decision model' phrase; an epistemic-uncertainty defect-detection study for medical device manufacturing; no typed decision models.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2609.35217",
+      "title": "A Hierarchy of Entropy-Shapley Games for Multivariate Predictive Uncertainty",
+      "source_url": "https://arxiv.org/abs/2609.35217v1",
+      "status": "excluded",
+      "reason": "Matched via an incidental 'decision model' phrase; an entropy-Shapley uncertainty-attribution paper with no Jev or typed-decision content.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2609.32409",
+      "title": "Recovery-Directed Symbolic Distillation of Neural Likelihoods",
+      "source_url": "https://arxiv.org/abs/2609.32409v1",
+      "status": "excluded",
+      "reason": "Matched via an incidental 'decision model' phrase; symbolic distillation of neural likelihoods; no Jev or typed-decision content.",
+      "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2609.28182",
+      "title": "Finite-Sample Probabilistic Safety Certification for AI-Based Grid-Edge Coordination",
+      "source_url": "https://arxiv.org/abs/2609.28182v1",
+      "status": "excluded",
+      "reason": "Matched via an incidental 'decision model' phrase; finite-sample safety certification for grid-edge coordination; no Jev or typed-decision content.",
+      "screened_on": "2026-11-04"
     }
   ]
 }

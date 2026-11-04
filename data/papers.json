@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "updated_on": "2026-11-02",
+  "updated_on": "2026-11-04",
   "window": {
     "start": "2025-10-16",
-    "end": "2026-10-30",
+    "end": "2026-11-03",
     "basis": "first submission; reviewed version and verification date recorded per paper"
   },
   "categories": {
@@ -49,6 +49,2208 @@
     "2610.04345"
   ],
   "papers": [
+    {
+      "arxiv_id": "2611.04101",
+      "title": "Structured Clinical Memory as Context for Probabilistic Decision Models: A Synthetic Evaluation with Jev",
+      "authors": [
+        "Jash Sayani",
+        "Gaurang Karwande",
+        "Achinth Bharadwaj"
+      ],
+      "affiliations": [
+        "AbbyCare"
+      ],
+      "first_submitted": "2026-11-03",
+      "updated": "2026-11-03",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.04101",
+      "reviewed_url": "https://arxiv.org/abs/2611.04101v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.04101v1",
+      "arxiv_categories": [
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "direct",
+      "tags": [
+        "applications",
+        "clinical",
+        "memory"
+      ],
+      "summary": {
+        "en": "Asks whether a compact structured memory helps a probabilistic decision model when the patient vignette is already available: 30 fully synthetic cases across twelve clinical domains are paired with synthetically generated structured memory and 120 typed questions are evaluated with Jev; the raw-vignette arm reaches 90.0% accuracy (95% CI 84.6-95.4) and adding memory 93.3% (88.9-97.8), with five questions flipping incorrect-to-correct and one the other way (McNemar p=0.219), a gain the authors themselves flag as not statistically significant.",
+        "zh": "追问在患者病史原文已经可用时,紧凑的结构化记忆还能否帮助概率决策模型:构造覆盖 12 个临床领域的 30 个全合成病例,配以合成生成的结构化记忆,用 Jev 评测 120 个类型化问题;仅用原始病史文本准确率 90.0%(95% CI 84.6~95.4),加入结构化记忆后为 93.3%(88.9~97.8),5 题由错转对、1 题由对转错(McNemar p=0.219),作者明确指出该提升未达统计显著。"
+      },
+      "problem": {
+        "en": "Does a structured memory added to the raw patient vignette improve Jev's typed clinical answers?",
+        "zh": "在原始病史文本之上加入结构化记忆,能否提升 Jev 的类型化临床作答?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "evaluated 120 typed questions with Jev",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.04101v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "adding memory achieved 93.3%",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.04101v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.04101v1",
+      "source_abstract_sha256": "e7c78784bfdce332e558fdb41a9e834135cca1d845e27866ffd450830ba42968"
+    },
+    {
+      "arxiv_id": "2611.03985",
+      "title": "Thinking Fast, Trading Late: System One Decision Models vs the Market",
+      "authors": [
+        "Amir Dehkordi",
+        "Alireza Kargarzadeh",
+        "Nariman Khaledian",
+        "Navid Parvini",
+        "Sid Ghatak",
+        "Arman Khaledian"
+      ],
+      "affiliations": [
+        "Independent Researcher, London",
+        "TailState Intelligence Ltd",
+        "Zanista AI Ltd",
+        "Increase Alpha, LLC"
+      ],
+      "first_submitted": "2026-11-02",
+      "updated": "2026-11-02",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.03985",
+      "reviewed_url": "https://arxiv.org/abs/2611.03985v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03985v1",
+      "arxiv_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG",
+        "q-fin.ST"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "related",
+      "tags": [
+        "applications",
+        "reproducibility",
+        "calibration"
+      ],
+      "summary": {
+        "en": "Tests how much of the reported news-reading predictability of LLMs survives a look-ahead-free protocol, applied to System One decision models reading S&P 500 company news: OLIVIA uses point-in-time inputs with company identities masked, selects on validation data only, freezes the analysis plan by cryptographic hash, and unblinds the test period once through a logged lock; the readers are an open-weights model fine-tuned on 2024-2025 data plus three commercial decision models (Laya as the workhorse, with d3 among the systems), and the pre-registered evaluation reports what edge, if any, survives memorization and selection effects - code is released while the private data are not.",
+        "zh": "检验 LLM「读新闻预测股价」的能力在排除前视偏差的协议下还剩多少,并把被测对象换成阅读标普 500 公司新闻的系统一决策模型:OLIVIA 用时点数据并掩去公司身份、只在验证集上做选择、以密码学哈希冻结分析计划、经留痕解锁一次性揭开测试期;读新闻的是在 2024—2025 数据上微调的开源权重模型加三个商用决策模型(以 Laya 为主力,d3 亦在列);预注册评估报告剔除记忆与选择效应后(若有)剩余的优势——代码已开源,数据不公开。"
+      },
+      "problem": {
+        "en": "Does decision-model news reading still predict stock returns under a pre-registered, look-ahead-free test?",
+        "zh": "在预注册、无前视的测试下,决策模型读新闻还能预测股票收益吗?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "non-generative language models that return probabilities",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.03985v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "rules out look-ahead, memorization and selection",
+          "location": "Abstract (protocol goals)",
+          "source_url": "https://arxiv.org/abs/2611.03985v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [
+        {
+          "url": "https://github.com/AmirDehkordi/NewsAction",
+          "source_url": "https://arxiv.org/abs/2611.03985v1",
+          "source_location": "title-page note (Code availability:)",
+          "verified_on": "2026-11-04",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.03985v1",
+      "source_abstract_sha256": "098e8fc01a4843b6a8281005c80f4bbdd25c5e6948d862cd8632a547f21b66e5"
+    },
+    {
+      "arxiv_id": "2611.03982",
+      "title": "SLATE: A Large-Scale Benchmark for Long-Horizon API Selection in E-commerce Tool Use",
+      "authors": [
+        "Rongzhe Wei",
+        "Ge Shi",
+        "Min Cheng",
+        "Sarthak Ghosh",
+        "Vaibhav Gorde",
+        "Leman Akoglu",
+        "Pan Li",
+        "Na Zhang"
+      ],
+      "affiliations": [
+        "Amazon",
+        "Georgia Institute of Technology"
+      ],
+      "first_submitted": "2026-11-02",
+      "updated": "2026-11-02",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.03982",
+      "reviewed_url": "https://arxiv.org/abs/2611.03982v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03982v1",
+      "arxiv_categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "evaluation",
+      "relation_level": "related",
+      "tags": [
+        "agents",
+        "benchmark",
+        "evaluation"
+      ],
+      "summary": {
+        "en": "Benchmarks long-horizon API selection for e-commerce agents that must map each step of a standard operating procedure to one call among thousands of internal APIs, judged only by overall task success: SLATE (camera-ready for the NeurIPS 2026 AABA4ET workshop) exposes thousands of tools, evaluates multi-step behavior objectively instead of via LLM-as-judge scores that penalize valid alternative trajectories, and compares backbone LLMs against open decision models fine-tuned for the same choice (Jevify, AgentDecision, Strands-Decider, OpenJev-Flash-9B); decision models sharply raise step-wise accuracy over their backbones (e.g. 72.3% vs 65.7% at 4B, 74.8% vs 67.7% at 9B) while end-to-end task success stays in single digits for every system, locating the open problem.",
+        "zh": "为电商智能体的长程 API 选择建基准:须把标准作业流程的每一步映射到数千个内部 API 中的正确调用,且只以整任务成败论英雄;SLATE(NeurIPS 2026 AABA4ET 工作坊 camera-ready)提供数千工具,以客观标准而非惩罚合法替代路径的 LLM-as-judge 评分多步行为,并对比骨干 LLM 与为同一选择微调的开源决策模型(Jevify、AgentDecision、Strands-Decider、OpenJev-Flash-9B);决策模型显著提升逐步准确率(如 4B 时 72.3% 对 65.7%,9B 时 74.8% 对 67.7%),但所有系统的端到端任务成功率仍是个位数,开放问题由此定位。"
+      },
+      "problem": {
+        "en": "Can agents pick the right API call among thousands, over long horizons, judged only by task success?",
+        "zh": "智能体能否在数千个 API 中做对长程选择,且只以任务成败论定?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "choosing and composing the correct tools over a long horizon",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.03982v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "grade multi-step behavior with subjective LLM-as-a-judge scores",
+          "location": "Abstract (what SLATE avoids)",
+          "source_url": "https://arxiv.org/abs/2611.03982v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [
+        {
+          "url": "https://github.com/geshijoker/slate",
+          "source_url": "https://arxiv.org/abs/2611.03982v1",
+          "source_location": "arXiv comment (project page geshijoker.github.io/slate, the GitHub Pages site of this repository)",
+          "verified_on": "2026-11-04",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.03982v1",
+      "source_abstract_sha256": "484d60fde89eb931245dc5e26561784f059a2c1d02cbf68251d7da4775eca45a"
+    },
+    {
+      "arxiv_id": "2611.03759",
+      "title": "JevBreak: Your Model, Their Decision",
+      "authors": [
+        "Nitin Aravind Birur",
+        "Divyanshu Kumar",
+        "Sahil Agarwal",
+        "Prashanth Harshangi"
+      ],
+      "affiliations": [
+        "Enkrypt AI",
+        "Anaconda"
+      ],
+      "first_submitted": "2026-11-02",
+      "updated": "2026-11-02",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.03759",
+      "reviewed_url": "https://arxiv.org/abs/2611.03759v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03759v1",
+      "arxiv_categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "security",
+      "relation_level": "direct",
+      "tags": [
+        "security",
+        "red-teaming",
+        "adversarial"
+      ],
+      "summary": {
+        "en": "Shows that restricting a decision model's vocabulary does not restrict an attacker's influence: the Slot Attack appends text assembled from named components to steer predictions toward an attacker-chosen wrong option that is still in the allowed set, using only the returned label probabilities; across seven decision models spanning hosted APIs, open weights and an encoder, evaluated on 16 tasks from seven Decision Bench domains (240 examples, 990 targets per model), it flips 32-99% of initially correct decisions with a median of 17-72 queries per success, near-identical-accuracy models differ by about 20 points in attack success, and on roughly 20% of correct JEV decisions the attacker can force every available wrong answer in turn.",
+        "zh": "证明限制模型能说什么并不等于限制攻击者对其决策的影响:Slot Attack 仅凭返回的标签概率,在证据中拼入由命名组件构成的文本,把预测推向仍在合法选项集内的攻击者指定错误答案;在来自 Decision Bench 七个领域 16 个任务的 240 个例子上评测七个决策模型(托管 API、开源权重与编码器,每模型 990 个目标),对初始正确决策的成功率 32%~99%,每次成功平均只需 17~72 次查询;准确率几乎相同的模型攻击成功率可差约 20 个百分点;对 JEV 模型约 20% 的正确决策,攻击者能依次 forcing 全部错误选项。"
+      },
+      "problem": {
+        "en": "Can a black-box attacker steer typed decision models to any chosen wrong option using only returned probabilities?",
+        "zh": "黑盒攻击者能否仅凭返回的概率,把类型化决策模型导向任意指定的错误选项?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "seven decision models spanning hosted APIs",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.03759v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "The method relies solely on returned label probabilities",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.03759v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.03759v1",
+      "source_abstract_sha256": "2cb6fe7b80ee6239e677bad87aa0bd9ff67a1fcb9d0d01efbad5b4f1bd272eac"
+    },
+    {
+      "arxiv_id": "2611.03755",
+      "title": "Honest Small Decision Models for Finance: Scale, Specialization Collapse, and Mixed-Corpus Remediation",
+      "authors": [
+        "Ajitabh Kumar"
+      ],
+      "affiliations": [
+        "IntelCast, Mumbai"
+      ],
+      "first_submitted": "2026-11-02",
+      "updated": "2026-11-02",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.03755",
+      "reviewed_url": "https://arxiv.org/abs/2611.03755v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03755v1",
+      "arxiv_categories": [
+        "cs.LG",
+        "q-fin.ST"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "architecture",
+      "relation_level": "related",
+      "tags": [
+        "training",
+        "calibration",
+        "applications"
+      ],
+      "summary": {
+        "en": "Trains System-1 decision models for finance and audits what specialization costs: small LLMs (two families, K2-Horizon and Qwen3.5/3.8, nine rungs from 0.8B to 32B) are fine-tuned with one frozen LoRA recipe to answer choice/score/noul questions in a single pass - the primitive set TypeSafe's Jev established - on a public decision benchmark plus two new finance corpora (a programmatic-gold policy corpus and a reality-labeled outcome corpus with 19,640 realized forward-return questions in walk-forward splits and a sealed 2026 test); narrow fine-tuning costs 9-45 points of general decision competence, a gap that shrinks with scale, and on reality-labeled questions every rung lands at the horizon-conditioned prior (accuracy 0.37-0.38) with flat, well-calibrated probabilities - naturally honest uncertainty, sweet-spot ECE 0.026 at 2B - while mixed-corpus training remediates the collapse.",
+        "zh": "为金融训练系统一决策模型并审计专业化的代价:用同一冻结 LoRA 配方,在 0.8B~32B 的九档小模型(K2-Horizon 与 Qwen3.5/3.8 两族)上单次前向回答 choice/score/noul——即 TypeSafe Jev 确立的原语集——训练数据为公开决策基准加两个新金融语料(程序化金标准的政策语料,以及含 19,640 个实盘前瞻收益问题、滚动划分并封存 2026 测试集的现实标注语料);窄域微调使通用决策能力损失 9~45 个点,差距随规模缩小;在现实标注问题上,所有档位都落在按期限条件化的先验(准确率 0.37~0.38),概率平坦而校准良好——天然诚实的未知,2B 处 ECE 0.026 最佳——混合语料训练可修复专业坍缩。"
+      },
+      "problem": {
+        "en": "What does finance-specific fine-tuning cost general decision competence, and can models be honest about unpredictable returns?",
+        "zh": "金融微调要付出多少通用决策能力?模型能否对不可预测的收益保持诚实?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "answer typed questions",
+          "location": "Abstract (choice/score/noul single-pass training)",
+          "source_url": "https://arxiv.org/abs/2611.03755v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "Narrow fine-tuning costs general decision competence",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.03755v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.03755v1",
+      "source_abstract_sha256": "cc7b0f8ba0b2ff49d2ca99916ee0133488ed1391e1195b6c3f352cb264716023"
+    },
+    {
+      "arxiv_id": "2611.03371",
+      "title": "EO-Jev: Decision Model for Earth Observation",
+      "authors": [
+        "Mohamed Atef Abouelhadid",
+        "Diaa Addeen Abuhani",
+        "Muhammad Akhtar Munir",
+        "Fahad Shahbaz Khan",
+        "Salman Khan"
+      ],
+      "affiliations": [
+        "Mohamed Bin Zayed University of Artificial Intelligence",
+        "Massachusetts Institute of Technology",
+        "Linköping University",
+        "Australian National University"
+      ],
+      "first_submitted": "2026-11-02",
+      "updated": "2026-11-02",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.03371",
+      "reviewed_url": "https://arxiv.org/abs/2611.03371v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03371v1",
+      "arxiv_categories": [
+        "cs.CV"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "related",
+      "tags": [
+        "applications",
+        "multimodal",
+        "calibration"
+      ],
+      "summary": {
+        "en": "Brings decision models to earth observation, where workflows must select among known outcomes, estimate confidence and process large imagery volumes without autoregressive costs: a diagnostic study of the open 8.4B d3-flash across 30 settings from 23 public EO benchmarks finds that compositional reasoning transfers well while quantitative perception, option-order consistency and calibration under distribution shift remain weak; low-rank fine-tuning on public EO training splits produces EO-Jev, which improves over d3-flash on 26 of 30 settings and matches or exceeds specialist reference models, with training code released (hosted Jev appears as the paradigm's origin, not an evaluated system).",
+        "zh": "把决策模型引入对地观测:此类工作流要在已知结果中做选择、估计置信度并处理海量影像,且不能承受自回归解码的成本;对开源 8.4B d3-flash 在 23 个公开 EO 基准的 30 个设定上的诊断发现,组合推理迁移良好,但定量感知、选项顺序一致性与分布漂移下的校准仍是短板;在公开 EO 训练集上做低秩微调得到 EO-Jev,在 30 个设定中的 26 个超过 d3-flash,并追平或超过专用参照模型;训练代码已开源(托管 Jev 仅作为范式来源出现,未被评测)。"
+      },
+      "problem": {
+        "en": "How far does a general decision model reach on earth-observation tasks, and what does EO fine-tuning fix?",
+        "zh": "通用决策模型在对地观测任务上能走多远?领域微调能修复什么?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "Decision models offer an alternative",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.03371v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "EO-Jev improves significantly over d3-flash on 26 of 30 settings",
+          "location": "Section 1",
+          "source_url": "https://arxiv.org/html/2611.03371v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [
+        {
+          "url": "https://github.com/mbzuai-oryx/EO-Jev",
+          "source_url": "https://arxiv.org/abs/2611.03371v1",
+          "source_location": "title-page footnote (GitHub:)",
+          "verified_on": "2026-11-04",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.03371v1",
+      "source_abstract_sha256": "5b3e574965c81bbf95addc43587c1b97d59dbd4fdb2468c5164f900b06a7d22e"
+    },
+    {
+      "arxiv_id": "2611.03360",
+      "title": "Every Pixel Is an Option: A System One Model for Medical Ultrasound Biometry",
+      "authors": [
+        "Moein Heidari",
+        "Junbo Rao",
+        "Yudan Chen",
+        "Yasamin Medghalchi",
+        "River Jiang",
+        "Wenjin Chen",
+        "David J. Foran",
+        "Jasmine Grewal",
+        "Ilker Hacihaliloglu"
+      ],
+      "affiliations": [
+        "University of British Columbia",
+        "Rutgers Cancer Institute, New Brunswick"
+      ],
+      "first_submitted": "2026-11-02",
+      "updated": "2026-11-02",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.03360",
+      "reviewed_url": "https://arxiv.org/abs/2611.03360v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03360v1",
+      "arxiv_categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "related",
+      "tags": [
+        "applications",
+        "medical",
+        "multimodal"
+      ],
+      "summary": {
+        "en": "Guides ultrasound landmark detection with clinical measurement questions instead of task-specific heads: inspired by System One decision models, Kev-Bio uses decision representations of the language model to generate a query for each caliper endpoint, matches the queries against shared dense ultrasound features to produce spatial probability maps, and derives landmark coordinates and clinical measurements from them, trained end-to-end with both localization and measurement losses; on the nine-view FU/GU Biometry 2026 dataset it reaches a mean radial error of 22.50 pixels and a clinical-measurement MAE of 15.38, outperforming compared baselines and attacking the inter-operator variability of manual caliper placement.",
+        "zh": "用临床测量问题而非任务专用头来引导超声 landmark 检测:受系统一决策模型启发,Kev-Bio 利用 language model 的决策表示为每个卡尺端点生成查询,将其与共享的稠密超声特征匹配得到空间概率图,再由图导出 landmark 坐标与临床测量值,并以定位与测量两类损失端到端训练;在九视角的 FU/GU Biometry 2026 数据集上,平均径向误差 22.50 像素、临床测量 MAE 15.38,总体优于对比基线,直面手工放置卡尺带来的操作者间差异。"
+      },
+      "problem": {
+        "en": "Can measurement questions and spatial probability maps replace manual caliper placement in ultrasound biometry?",
+        "zh": "测量问题加空间概率图,能否替代超声测量中的人工卡尺放置?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "Inspired by System One decision models",
+          "location": "Abstract (Methods)",
+          "source_url": "https://arxiv.org/abs/2611.03360v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "a mean radial error (MRE) of 22.50 pixels",
+          "location": "Abstract (Results)",
+          "source_url": "https://arxiv.org/abs/2611.03360v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.03360v1",
+      "source_abstract_sha256": "64cf8b5c6823891e3457b39c61ca4b169b328d142c5575e25291087e025aee74"
+    },
+    {
+      "arxiv_id": "2611.03179",
+      "title": "Every Clause Counts: Instruction-Following Reranking by Multiplying Small, Answerable Questions",
+      "authors": [
+        "S. M. Mahbub Uddin Ahmed",
+        "Abdullah Al Musaddiq"
+      ],
+      "affiliations": [
+        "United International University, Dhaka",
+        "Islamic University of Technology"
+      ],
+      "first_submitted": "2026-11-02",
+      "updated": "2026-11-02",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.03179",
+      "reviewed_url": "https://arxiv.org/abs/2611.03179v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03179v1",
+      "arxiv_categories": [
+        "cs.IR",
+        "cs.CL"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "agents",
+      "relation_level": "related",
+      "tags": [
+        "reranking",
+        "retrieval",
+        "agents"
+      ],
+      "summary": {
+        "en": "Makes search rerankers follow the instructions attached to queries - beginner-level pages, a specific language, official sources only - which topical rerankers treat as a few extra words (on InfoSearch even GPT-4o as a list-wise reranker averages only 33.5 WISE): DMReranker splits an instructed query into a topic plus a short list of typed clauses, has a small judge decision model (open Clef) answer one narrow question per clause, and multiplies the answer probabilities into a single score; the zero-shot pipeline needs no reranking-specific training and reaches a macro WISE of 50.9 over all six InfoSearch dimensions while keeping original-mode nDCG@10 at 82.9, trails GPT-4o only on the stricter SICR metric (19.2 vs 32.1 raw, 67.0 when computed from ranks), and costs about $10 at list price to score all six dimensions.",
+        "zh": "让搜索重排器听懂查询附带的要求——面向初学者的页面、指定语言、仅官方来源——这些要求在主题重排器眼里只是几个多余的词(InfoSearch 上连 GPT-4o 列表式重排的 WISE 也只有 33.5):DMReranker 把带要求的查询拆成主题加一组类型化子句,由小型裁判决策模型(开源 Clef)对每条子句回答一个窄问题,再把答案概率相乘为单一分数;该零样本流水线无需重排专用训练,在 InfoSearch 全部六个维度上取得宏平均 WISE 50.9,同时原始模式 nDCG@10 保持 82.9;仅在更严格的 SICR 指标上落后 GPT-4o(原始分 19.2 对 32.1,按排名计算则为 67.0),按牌价给全部六个维度打分仅花约 10 美元。"
+      },
+      "problem": {
+        "en": "Can multiplying narrow typed-question probabilities teach rerankers to obey query instructions zero-shot?",
+        "zh": "把窄问题概率相乘,能否让重排器零样本地服从查询中的要求?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "a zero-shot reranker that splits an instructed query",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.03179v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "a macro WISE of 50.9",
+          "location": "Abstract (vs 33.5 for GPT-4o list-wise)",
+          "source_url": "https://arxiv.org/abs/2611.03179v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.03179v1",
+      "source_abstract_sha256": "936f417c5954edda0f19dbd7c75c30dfb318004081e0ccb7741634652b6daa76"
+    },
+    {
+      "arxiv_id": "2611.02957",
+      "title": "Cyber-JEV: Matched Contrastive Fine-Tuning of Language Models for Fast Source-Code Vulnerability Triage",
+      "authors": [
+        "Zhuyi Zhao",
+        "Shengjie Yuan",
+        "Shengyu Wang",
+        "Kang Wei",
+        "Wang Yang",
+        "Wenchao Xu",
+        "Fushuo Huo"
+      ],
+      "affiliations": [],
+      "first_submitted": "2026-11-02",
+      "updated": "2026-11-02",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.02957",
+      "reviewed_url": "https://arxiv.org/abs/2611.02957v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.02957v1",
+      "arxiv_categories": [
+        "cs.CR"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "security",
+      "relation_level": "direct",
+      "tags": [
+        "security",
+        "training",
+        "efficiency"
+      ],
+      "summary": {
+        "en": "Trains open-weight models to rank source-code functions for vulnerability review in Jev's single-pass style: because public vulnerable-plus-clean benchmarks keep few vulnerable functions once test-related examples are removed while large vulnerability records hold almost only vulnerable code (mixing them lets the data source predict the label), Cyber-JEV uses fix commits to build matched comparison groups and applies contrastive fine-tuning so a function no longer scores above its own fixed original; an ensemble of five fine-tuned Qwen3.5-4B models reaches AUROC 0.814 versus 0.743 for Jev 1.13, and with Jev's 4,031 alerts as the review budget it misses 16 of 322 vulnerable functions where Jev misses 39.",
+        "zh": "训练开源权重模型以 Jev 式单次前向为代码函数输出漏洞概率:由于同时含漏洞与无漏洞标签的公开基准在剔除与测试相关的样本后所剩漏洞函数寥寥,而更大的公开漏洞库几乎只有漏洞代码(直接混合会让数据来源泄露标签),Cyber-JEV 用修复提交构造匹配对照组并做对比微调,使模型不再把修复后的函数打得比原漏洞函数还高;五个微调 Qwen3.5-4B 组成的集成 AUROC 0.814,对比 Jev 1.13 的 0.743;以 Jev 的 4,031 条告警为审查预算时,322 个漏洞函数仅漏掉 16 个,而 Jev 漏掉 39 个。"
+      },
+      "problem": {
+        "en": "How can open-weight models learn fast source-code vulnerability triage when public labeled data is skewed?",
+        "zh": "公开标注数据严重偏斜时,开源模型如何学会快速的源代码漏洞分诊?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "compared with 0.743 for Jev 1.13",
+          "location": "Section V-A, Head-to-Head Triage Performance",
+          "source_url": "https://arxiv.org/html/2611.02957v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "a fine-tuning method that uses fix commits",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.02957v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.02957v1",
+      "source_abstract_sha256": "f3be43dd4c73c795f64ecb9b0465acdf93ab941954a0f139ecb9a7604fe96bab"
+    },
+    {
+      "arxiv_id": "2611.02654",
+      "title": "VerdictAD: Few-Shot Anomaly Detection via Decision-Guided Refinement",
+      "authors": [
+        "Shangquan Sun",
+        "Wenjun Luo",
+        "Yuanzhi Wang",
+        "Ruiqi Li",
+        "Ruoyu Chen",
+        "Jiachen Liu",
+        "Shijian Lu"
+      ],
+      "affiliations": [
+        "Nanyang Technological University",
+        "Michigan State University",
+        "University of Michigan"
+      ],
+      "first_submitted": "2026-11-02",
+      "updated": "2026-11-02",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.02654",
+      "reviewed_url": "https://arxiv.org/abs/2611.02654v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.02654v1",
+      "arxiv_categories": [
+        "cs.CV"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "related",
+      "tags": [
+        "applications",
+        "multimodal",
+        "efficiency"
+      ],
+      "summary": {
+        "en": "Refines few-shot industrial anomaly detection with typed decisions instead of replacing the detector: visual differences do not always mean genuine defects (normal appearance variation inflates scores) and structural or logical anomalies may not move local features at all, so VerdictAD - a training-free framework - has a frozen open decision model (Clef-Flash, using the Noul yes/no primitive) answer a reference-free and a reference-conditioned question about the whole image and about local windows, then gates the base detector's score by the decision probability; global and local verdict refinement run on top of existing few-shot detectors, and code plus experimental logs are released (hosted Jev is cited for the interface, not evaluated).",
+        "zh": "用类型化决策「精修」而非取代少样本工业异常检测:视觉差异未必是真缺陷(正常外观波动也会推高分数),而结构或逻辑异常可能完全不改变局部特征;于是免训练的 VerdictAD 让冻结的开源决策模型(Clef-Flash,用 Noul 是/否原语)对整图与局部窗口各回答一个无参照和一个有参照的问题,再以决策概率对基础检测器的分数做门控;全局与局部裁决精修叠加在既有少样本检测器之上;代码与实验日志已开源(托管 Jev 只被引用说明接口,未被评测)。"
+      },
+      "problem": {
+        "en": "Can typed yes/no decisions on images and image regions correct few-shot anomaly detectors' false cues?",
+        "zh": "对整图与局部做类型化是非判断,能否纠正少样本异常检测的错误线索?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "we adopt the frozen Clef-Flash model",
+          "location": "Section 3.1",
+          "source_url": "https://arxiv.org/html/2611.02654v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "refines existing anomaly detectors through visual decisions",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.02654v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [
+        {
+          "url": "https://github.com/sgstq0811/VerdictAD-Jev-AD",
+          "source_url": "https://arxiv.org/abs/2611.02654v1",
+          "source_location": "arXiv comment (Code and experimental logs available at)",
+          "verified_on": "2026-11-04",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.02654v1",
+      "source_abstract_sha256": "23106ce850ad1ed409a1495c7829316146664b4446804843d6b87d6f5fb46a4e"
+    },
+    {
+      "arxiv_id": "2611.02522",
+      "title": "Ranked but Not Stopped: Detecting Prompt-Injection Hijacks from Typed Decision Models' Output Probabilities",
+      "authors": [
+        "Junwei Yao",
+        "Jianan Liu",
+        "Yongxi Zhou",
+        "Zike Yang"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "first_submitted": "2026-11-02",
+      "updated": "2026-11-02",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.02522",
+      "reviewed_url": "https://arxiv.org/abs/2611.02522v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.02522v1",
+      "arxiv_categories": [
+        "cs.CL",
+        "cs.CR"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "security",
+      "relation_level": "related",
+      "tags": [
+        "security",
+        "calibration",
+        "monitoring"
+      ],
+      "summary": {
+        "en": "Asks whether a monitor can catch indirect prompt-injection hijacks of classifier-like models from the model's own output probabilities alone, without knowing the attacker's target label: on AG News topic classification with five systems (three served through a provider's API, two of them letter-probability readouts of general LLMs), low top-probability confidence ranks hijacked answers above clean ones on four of five systems with AUROC 0.86-0.90 - but ranking is not stopping, and a threshold set to spare at most 5% of clean answers still lets many hijacks through; and when the injected note adds one handwritten sentence claiming certainty and asking for full probability, the monitor misses 99-100% of hijacks even though low confidence still ranks them at AUROC 0.70-79 - confidence monitors must be tested at their operating alarm rate against attackers who claim certainty.",
+        "zh": "追问在不知道攻击者目标标签时,仅凭模型自身的输出概率能否发现间接提示注入对分类式模型的劫持:在 AG News 主题分类上用五个系统(三个经服务商 API,其中两个是通用 LLM 的字母概率读出),低顶概率置信度在五个系统中的四个上能把被劫持答案排在干净答案之前(AUROC 0.86~0.90)——但「能排序」不等于「拦得住」,为放过至多 5% 干净答案而设的阈值仍放行大量劫持;当注入的便条再加一句手写的「目标确定、请给满概率」时,监视器漏掉 99%~100% 的劫持,尽管低置信度仍能以 AUROC 0.70~0.79 排出它们——置信度监视器必须在其实际告警率下、面对声称确定的攻击者来测试。"
+      },
+      "problem": {
+        "en": "Can confidence alone rank and stop prompt-injection hijacks of typed decision models?",
+        "zh": "仅凭置信度,能否对类型化决策模型的提示注入劫持完成排序与拦截?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "five systems, three of them served through a provider",
+          "location": "Abstract (evaluated systems)",
+          "source_url": "https://arxiv.org/abs/2611.02522v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "the monitor misses 51-70% of the hijacks",
+          "location": "Abstract (main gate run)",
+          "source_url": "https://arxiv.org/abs/2611.02522v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.02522v1",
+      "source_abstract_sha256": "6ccb67f4a0225db9b968044ffa065c7517a9a27158e09920b5be3a834c98f535"
+    },
+    {
+      "arxiv_id": "2611.02455",
+      "title": "RLiD: Reinforcement Learning in the Decision Plane for Language Agents and LLMs",
+      "authors": [
+        "Ziyi Chen",
+        "Yan Zhang",
+        "Jianhui Wei",
+        "Jianing Yin",
+        "Daoan Zhang"
+      ],
+      "affiliations": [
+        "University of Illinois Urbana-Champaign",
+        "National University of Singapore",
+        "Zhejiang University",
+        "University of Pennsylvania",
+        "University of Rochester"
+      ],
+      "first_submitted": "2026-11-02",
+      "updated": "2026-11-02",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.02455",
+      "reviewed_url": "https://arxiv.org/abs/2611.02455v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.02455v1",
+      "arxiv_categories": [
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "architecture",
+      "relation_level": "related",
+      "tags": [
+        "reinforcement-learning",
+        "training",
+        "agents"
+      ],
+      "summary": {
+        "en": "Moves reinforcement learning for language agents into the decision plane: token-level RL spreads an action's advantage over the whole generated response - including reasoning chains and malformed text the environment never executes - adding variance to policy-gradient estimates, so RLiD compiles observations, an optional compact memory and a labeled action menu, and directly optimizes the probabilities of the executable options; the framework keeps credit assignment on the parsed action, and controlled comparisons against token-level RL show where decision-plane training wins for agents and LLMs (TypeSafe's hosted Jev 1.13 is cited as the served decision interface, not evaluated).",
+        "zh": "把语言智能体的强化学习搬进决策平面:token 级 RL 会把一个动作的优势摊到整段生成——包括环境根本不执行的推理链与格式错乱文本——给策略梯度估计添噪;RLiD 把观测、可选的紧凑记忆与带标签的动作菜单编译好,直接优化可执行选项的概率,使功劳分配落在被解析的动作上;与 token 级 RL 的对照实验显示决策平面训练在智能体与 LLM 上的优势(托管 Jev 1.13 仅作为被引用的服务式决策接口,未被评测)。"
+      },
+      "problem": {
+        "en": "Should RL assign credit to generated tokens, or to the executable action probabilities a menu provides?",
+        "zh": "强化学习的功劳该记在生成的 token 上,还是菜单给定的可执行动作概率上?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "directly optimizes the probabilities of executable action options",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.02455v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "variation in how the action is expressed",
+          "location": "Abstract (source of gradient variance)",
+          "source_url": "https://arxiv.org/abs/2611.02455v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.02455v1",
+      "source_abstract_sha256": "e8b70e8c5f60a3b8f3cbf1650d98427f0fbafdd6fb29f74d1634c34f4ca53cb3"
+    },
+    {
+      "arxiv_id": "2611.02155",
+      "title": "Decision Models as Policy Gates for Coding Agents: Explicit Policy Boundaries Improve Detection and Reduce False Alarms",
+      "authors": [
+        "James P. Beno"
+      ],
+      "affiliations": [
+        "Agent Approve"
+      ],
+      "first_submitted": "2026-11-01",
+      "updated": "2026-11-01",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.02155",
+      "reviewed_url": "https://arxiv.org/abs/2611.02155v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.02155v1",
+      "arxiv_categories": [
+        "cs.CL",
+        "cs.CR",
+        "cs.SE"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "security",
+      "relation_level": "direct",
+      "tags": [
+        "security",
+        "agents",
+        "benchmark"
+      ],
+      "summary": {
+        "en": "Tests whether a decision model can catch dangerous coding-agent actions at runtime: 22 hosted decision models and two prompted general models classify 2,643 synthetic tool calls (labeled blind against 28 rules, sealed holdout) in a multi-rule policy engine, with and without explicit policy boundaries written as examples and counterexamples; boundaries raise recall by 5.5-26.1 points on all 23 available models and cut false positives on 21 - Jev 1.14 goes from 89.3% to 98.2% recall while unnecessary interruptions fall from 30.6% to 4.8% - and with examples Jev's median latency is 120 ms at $0.46 per thousand requests; a follow-up on 16 scenarios written after the studies improves recall on 22 of 23 models.",
+        "zh": "检验决策模型能否在运行时拦住危险编程智能体动作:让 22 个托管决策模型与两个提示型通用模型在多规则策略引擎中分类 2,643 条合成工具调用(盲标 28 条规则并设封存保留集),比较有无以示例与反例写成的显式策略边界;边界使全部 23 个可用模型召回率提升 5.5~26.1 个点、21 个模型误报下降——Jev 1.14 召回从 89.3% 升至 98.2%,不必要的打断从 30.6% 降到 4.8%——加示例后 Jev 中位延迟 120 毫秒、每千次请求 0.46 美元;在研究完成后新写的 16 个场景上,跟进实验使 22/23 个模型召回再升。"
+      },
+      "problem": {
+        "en": "Can decision models gate coding-agent tool calls against written policies with high recall and few false alarms?",
+        "zh": "决策模型能否以高召回、低误报按成文策略为编程智能体的工具调用把关?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "We evaluated 22 hosted decision models",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.02155v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "recall rose from 89.3%",
+          "location": "Abstract (Jev 1.14)",
+          "source_url": "https://arxiv.org/abs/2611.02155v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [
+        {
+          "url": "https://github.com/agentapprove/decision-policy-rules",
+          "source_url": "https://arxiv.org/abs/2611.02155v1",
+          "source_location": "arXiv comment (Dataset, rule texts and harness available at)",
+          "verified_on": "2026-11-04",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.02155v1",
+      "source_abstract_sha256": "33d65a9166053cd4a42338132f746d30300bd998dc61ae40bfc27d4d78f664dd"
+    },
+    {
+      "arxiv_id": "2611.01631",
+      "title": "Zero-shot evaluation of open vision-language models as System 1 decision models on radiology tasks",
+      "authors": [
+        "Bradley J Erickson",
+        "Sara Salehi"
+      ],
+      "affiliations": [
+        "Mayo Clinic AI Laboratory, Rochester"
+      ],
+      "first_submitted": "2026-11-01",
+      "updated": "2026-11-01",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.01631",
+      "reviewed_url": "https://arxiv.org/abs/2611.01631v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.01631v1",
+      "arxiv_categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "evaluation",
+      "relation_level": "related",
+      "tags": [
+        "evaluation",
+        "medical",
+        "multimodal"
+      ],
+      "summary": {
+        "en": "Compares two open multimodal System 1 decision models - Clef 27B and d1 3B - with Clef's generative backbone (Qwen 3.8-27B) forced to single-token output, all run locally on one NVIDIA DGX Spark (GB10), on seven radiology tasks spanning text, radiographs, CT and MRI: three text-interpretation tasks (findings in CT-RATE reports, PadChest reports) and four image-detection tasks (3D CT volumes, MR device safety from AccessGUDID, line-and-tube position on RANZCR CLiP, motion-artifact severity on MR-ART), with Clef and d1 returning a probability for every option in one non-autoregressive pass.",
+        "zh": "在覆盖文本、胸片、CT 与 MRI 的七个放射学任务上,把两个开源多模态系统一决策模型——Clef 27B 与 d1 3B——与被迫单 token 输出的 Clef 生成式骨干(Qwen 3.8-27B)对比,三者都在单台 NVIDIA DGX Spark(GB10)上本地运行:三个文本判读任务(CT-RATE 报告、PadChest 报告的病灶判读)加四个图像检测任务(3D CT 体积、AccessGUDID 器械 MR 安全、RANZCR CLiP 管线位置、MR-ART 运动伪影分级);Clef 与 d1 均以一次非自回归前向为每个选项返回概率。"
+      },
+      "problem": {
+        "en": "How do open System 1 decision models behave zero-shot across radiology text and image tasks?",
+        "zh": "开源系统一决策模型在放射学文本与图像任务上的零样本表现如何?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "two multimodal System 1 decision models, Clef 27B and d1 3B",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.01631v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "seven radiology tasks",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.01631v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.01631v1",
+      "source_abstract_sha256": "5b317bf199100a4abb55645f6e0ee0650b58725136d22fa553fc5278d5f1acf7"
+    },
+    {
+      "arxiv_id": "2611.01463",
+      "title": "DIMWIT: Directly Invoking Models Without Intensive Tuning",
+      "authors": [
+        "Saarth Deshpande",
+        "Neeraja J. Yadwadkar",
+        "Venkat Arun"
+      ],
+      "affiliations": [
+        "The University of Texas at Austin"
+      ],
+      "first_submitted": "2026-11-01",
+      "updated": "2026-11-01",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.01463",
+      "reviewed_url": "https://arxiv.org/abs/2611.01463v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.01463v1",
+      "arxiv_categories": [
+        "cs.PF",
+        "cs.AI",
+        "cs.CV",
+        "cs.DC",
+        "cs.OS"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "direct",
+      "tags": [
+        "applications",
+        "efficiency",
+        "agents"
+      ],
+      "summary": {
+        "en": "Asks pretrained models to make resource-management decisions directly instead of developing task-specific policies: on microservice autoscaling, DRAM sizing and video encoding, DIMWIT compares a frontier LLM (Claude Opus 5.5) with two small decision models - proprietary Jev and the open-weight 421M Laya - given the current system state, desired outcome and available choices; a small decision model meets latency targets on two microservice applications while using within 10% of the replicas allocated by a tuned controller, and Jev or Laya answer each decision in 0.1-0.2 s (Laya 2-3 s on CPU) against 3-4 s for Opus, keeping both well inside a 95% performance target on the DRAM-sizing use case.",
+        "zh": "让预训练模型直接做资源管理决策,而非先开发任务专用策略:在微服务自动扩缩、DRAM 容量规划与视频编码三类任务上,DIMWIT 让前沿大模型(Claude Opus 5.5)与两个小型决策模型——专有 Jev 与开源 421M 的 Laya——依据当前系统状态、目标与候选动作直接选择;在两个微服务应用上,小决策模型在延迟达标的同时,副本数只比调优控制器多用不到 10%;Jev 与 Laya 每次决策 0.1~0.2 秒(Laya 在 CPU 上 2~3 秒),Opus 需 3~4 秒,且在 DRAM 规划用例中两者都稳守 95% 性能目标。"
+      },
+      "problem": {
+        "en": "Can pretrained models replace hand-built resource-management policies given only state, goal and choices?",
+        "zh": "只给定状态、目标与候选动作,预训练模型能否取代手工构建的资源管理策略?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "Jev Almeida (2026), a proprietary decision model",
+          "location": "Section 4, Evaluation setup (models)",
+          "source_url": "https://arxiv.org/html/2611.01463v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "meets latency targets while using within 10%",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.01463v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.01463v1",
+      "source_abstract_sha256": "47258d86f750c6fbec44dbc8037d7be50307f9d00275dce781b715529f44a011"
+    },
+    {
+      "arxiv_id": "2611.01370",
+      "title": "XDecideBench: Evaluating Typed Decision Models and Confidence Policies Across Languages",
+      "authors": [
+        "Marek Šuppa",
+        "Jaroslav Kopčan"
+      ],
+      "affiliations": [
+        "Comenius University in Bratislava",
+        "Cisco Systems",
+        "Kempelen Institute of Intelligent Technologies"
+      ],
+      "first_submitted": "2026-11-01",
+      "updated": "2026-11-01",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.01370",
+      "reviewed_url": "https://arxiv.org/abs/2611.01370v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.01370v1",
+      "arxiv_categories": [
+        "cs.CL"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "evaluation",
+      "relation_level": "direct",
+      "tags": [
+        "evaluation",
+        "benchmark",
+        "calibration"
+      ],
+      "summary": {
+        "en": "Benchmarks typed decision models and confidence policies across languages: XDecideBench covers nine suites, 122 languages, 88,425 texts and 153,875 typed questions under one scoring contract, reporting aligned, locally labelled and native items separately; model rankings change from suite to suite - the model best in English, chosen in hindsight, loses significantly in about a quarter of suite-language cells and falls far behind on Burmese Belebele - and three open models fine-tuned for typed decisions beat the Qwen models they were built from; hosted Jev is among the evaluated systems and the release includes pinned manifests, scorer and run receipts after pre-registration.",
+        "zh": "跨语言评测类型化决策模型与置信度策略:XDecideBench 以统一评分契约覆盖 9 个测试套件、122 种语言、88,425 条文本与 153,875 个类型化问题,并对齐翻译、本地标注与原生条目分别报告;模型排名随套件变化——事后选出的英语最佳模型在约四分之一的套件—语言单元上显著落后,在缅甸语 Belebele 上更是被大幅超越;三个为类型化决策微调的开源模型胜过其 Qwen 基座;托管 Jev 位列被测系统,发布物在预注册后包含锁定清单、评分器与运行回执。"
+      },
+      "problem": {
+        "en": "Do typed decision model rankings and confidence thresholds transfer across 122 languages?",
+        "zh": "类型化决策模型的排名与置信度阈值能否跨 122 种语言迁移?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "nine suites in 122 languages with 88,425 texts",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.01370v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "loses significantly in about a quarter of the suite-language cells",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.01370v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [
+        {
+          "url": "https://github.com/NaiveNeuron/XDecideBench",
+          "source_url": "https://arxiv.org/abs/2611.01370v1",
+          "source_location": "body (pre-registered release URLs for manifests, scorer and run receipts)",
+          "verified_on": "2026-11-04",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.01370v1",
+      "source_abstract_sha256": "c8722b02b7be584e443dfda6a98afd809d2252ff5e1a71584f70a04020139170"
+    },
+    {
+      "arxiv_id": "2611.01126",
+      "title": "Do GEO Gains Survive the Live Web? Evaluating In-the-Wild Visibility Gains of Generative Engine Optimization via LIVE-GEO",
+      "authors": [
+        "Runze Kong",
+        "Haibo Jin",
+        "Xucheng Yu",
+        "Xiaoqi Wang",
+        "Huimin Zeng",
+        "Haohan Wang"
+      ],
+      "affiliations": [
+        "University of Michigan, Ann Arbor",
+        "School of Information Sciences, University of Illinois Urbana-Champaign",
+        "University of Illinois Urbana-Champaign"
+      ],
+      "first_submitted": "2026-10-31",
+      "updated": "2026-10-31",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.01126",
+      "reviewed_url": "https://arxiv.org/abs/2611.01126v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.01126v1",
+      "arxiv_categories": [
+        "cs.IR"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "direct",
+      "tags": [
+        "applications",
+        "evaluation",
+        "retrieval"
+      ],
+      "summary": {
+        "en": "Asks whether generative-engine-optimization (GEO) visibility gains survive the live web, by publishing GEO-rewritten products as real webpages (LIVE-GEO) and evaluating five strategies on three generative engines (ChatGPT with GPT-6, Gemini 3.6 Thinking, Grok in Expert mode) against direct-text evaluators; the pipeline leans on typed decision models twice - a JEV safety screen rejects potentially malicious submissions, and a JEV verifier checks each description against its product specifications before publication, agreeing with reference labels on 90.7% of 194 numerical benchmark cases and with two-of-three human majorities on all 50 sampled descriptions, flagging 86 of 400 rewritten descriptions.",
+        "zh": "考察生成式引擎优化(GEO)的可见度提升能否在真实网页上存活:把 GEO 改写后的商品发布为真实网页(LIVE-GEO),在三个生成式引擎(ChatGPT GPT-6、Gemini 3.6 Thinking、专家模式 Grok)上评测五种策略,并与直评文本模型对照;流水线两处依赖类型化决策模型——JEV 安全筛查拒收可疑提交,JEV 校验器在发布前核对每条描述与商品规格,在 194 个数值基准案例上与参考标签一致率 90.7%,50 条人工抽检描述上全部与三人多数意见一致,共标记 86/400 条改写描述。"
+      },
+      "problem": {
+        "en": "Do GEO visibility gains survive when rewritten pages are evaluated live rather than from supplied text?",
+        "zh": "当改写页面以真实网页形式被评测而非直接喂文本时,GEO 的可见度提升还存在吗?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "JEV (Deußer et al., 2026) checks each submitted description",
+          "location": "Section on verification pipeline",
+          "source_url": "https://arxiv.org/html/2611.01126v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "agrees with the reference labels on 90.7%",
+          "location": "Numerical-faithfulness check",
+          "source_url": "https://arxiv.org/html/2611.01126v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.01126v1",
+      "source_abstract_sha256": "98a7326000045f48788861afaa5827222d761ca127631b2f939f428e121779c1"
+    },
+    {
+      "arxiv_id": "2611.01015",
+      "title": "IJev: Order-Invariant Decisions via Iterated Cyclic Reordering",
+      "authors": [
+        "Youzhi Zhang"
+      ],
+      "affiliations": [
+        "Hong Kong Institute of Science and Innovation, Chinese Academy of Sciences"
+      ],
+      "first_submitted": "2026-10-31",
+      "updated": "2026-10-31",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.01015",
+      "reviewed_url": "https://arxiv.org/abs/2611.01015v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.01015v1",
+      "arxiv_categories": [
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "architecture",
+      "relation_level": "related",
+      "tags": [
+        "option-sensitivity",
+        "calibration",
+        "architecture"
+      ],
+      "summary": {
+        "en": "Removes the residual order bias left in System One choice decisions: averaging a listwise readout over the K cyclic shifts of one invariant order kills input-order dependence but still depends on which of the (K-1)! cyclic classes the operator picked, and the probabilities carry a label prior; IJev iterates - reorder the options by the cyclic-averaged, label-prior-corrected distribution, then run another cyclic average - so every iterate is exactly input-order-invariant, and when the iteration does not converge the round distributions are averaged instead; on five benchmarks and five instruction-tuned models (Qwen3 1.7B/4B/8B, Mistral-7B, Phi-3.5-mini), IJev has flip rate zero in every cell and the uniform average over T=20 rounds substantially improves calibration at comparable accuracy.",
+        "zh": "消除系统一选择题残余的顺序偏差:把列表式读出在某个不变序的 K 个循环移位上平均,固然去掉了输入顺序依赖,却仍取决于算子选中了 (K-1)! 个循环类中的哪一个,且概率自带标签先验;IJev 迭代进行——按循环平均并校正标签先验后的分布重排选项,再做一轮循环平均——每一步迭代都严格输入序不变,不收敛时改为对各轮分布取平均;在五个基准与五个指令微调模型(Qwen3 1.7B/4B/8B、Mistral-7B、Phi-3.5-mini)上,IJev 每格翻转率均为零,T=20 轮均匀平均在准确率相近的同时大幅改善校准。"
+      },
+      "problem": {
+        "en": "Can option-order bias in single-pass choice decisions be eliminated exactly, at bounded cost, without training?",
+        "zh": "单次前向选择题的选项顺序偏差,能否被精确消除、成本有界且无需训练?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "System One decision models answer a choice question in one forward pass",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.01015v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "IJev has flip rate zero in every cell",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.01015v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.01015v1",
+      "source_abstract_sha256": "2021bf832ae31c09b61eacf4e57d58f207e1af42033491df2fd250ca6107ac62"
+    },
+    {
+      "arxiv_id": "2611.00911",
+      "title": "S1CogBench: What System One Decision Models Can and Cannot Do on Cognitive Experiments",
+      "authors": [
+        "Dengzhe Hou",
+        "Kazunori D Yamada"
+      ],
+      "affiliations": [
+        "Tohoku University"
+      ],
+      "first_submitted": "2026-10-31",
+      "updated": "2026-10-31",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.00911",
+      "reviewed_url": "https://arxiv.org/abs/2611.00911v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.00911v1",
+      "arxiv_categories": [
+        "cs.CL",
+        "cs.AI",
+        "q-bio.NC"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "evaluation",
+      "relation_level": "direct",
+      "tags": [
+        "evaluation",
+        "benchmark",
+        "calibration"
+      ],
+      "summary": {
+        "en": "Argues that a fast, well-formed decision does not show the model used the evidence, and tests it with cognitive experiments: S1CogBench evaluates what System One decision models such as Jev and Laya can and cannot do on 24 cognitive tasks - varying task demands and measuring how behaviour changes the way cognitive science does - across five open models plus Jev, since software increasingly asks models for decisions in routing, guardrails and automated gates while leaving no text to inspect; the benchmark and analysis code are released.",
+        "zh": "指出「答得快且格式正确」并不代表模型真的用了证据,并用认知实验加以检验:S1CogBench 在 24 个认知任务上考察 Jev、Laya 等系统一决策模型能与不能——像认知科学那样改变任务需求、观察行为如何随之变化——覆盖五个开源模型与 Jev;软件如今在路由、护栏与自动闸门中越来越多地要模型做决策且不留可检查的文本,这一盲区正是基准的动机;基准与分析代码已开源。"
+      },
+      "problem": {
+        "en": "What can System One decision models actually do on cognitive experiments that vary task demands?",
+        "zh": "在随任务需求变化的认知实验上,系统一决策模型究竟能做什么、不能做什么?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "such as Jev and Laya, return one fast decision",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.00911v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "24 cognitive tasks",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.00911v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [
+        {
+          "url": "https://github.com/dengzhe-hou/S1CogBench",
+          "source_url": "https://arxiv.org/abs/2611.00911v1",
+          "source_location": "arXiv comment (Code at)",
+          "verified_on": "2026-11-04",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.00911v1",
+      "source_abstract_sha256": "aa80ac7c6d208166924758ae03d53273ddd18b809094b2832974cf3c73a25009"
+    },
+    {
+      "arxiv_id": "2611.00774",
+      "title": "Decision-Centric Research: A Calibrated Decision Model and Benchmark for Scientific Agents",
+      "authors": [
+        "Shaoning Zeng",
+        "Wen Huang",
+        "Xinzhong Zhu",
+        "Yi Duan",
+        "Jianhang Zhou",
+        "Jianping Gou"
+      ],
+      "affiliations": [],
+      "first_submitted": "2026-10-31",
+      "updated": "2026-10-31",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.00774",
+      "reviewed_url": "https://arxiv.org/abs/2611.00774v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.00774v1",
+      "arxiv_categories": [
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "agents",
+      "relation_level": "related",
+      "tags": [
+        "scientific-workflows",
+        "training",
+        "calibration"
+      ],
+      "summary": {
+        "en": "Makes individual choices the unit of supervision, prediction and evaluation for scientific agents: Decision-Centric Research (DCR) defines 24 decision types over an explicit Research State, instantiates ten of them in the Research Decision Benchmark (RD-Bench) of 2,000 rule-generated cases, and trains the Decision-Centric Research Model (DCRM), whose candidate-token readout is shared across types to emit answers and option probabilities in one forward pass; under a held-out research-domain split a 0.6B state-aware DCRM reaches 89.4% Top-1 versus 27.8% for its question-only twin and 36.4% for DeepSeek-V4.1-Flash, and after held-out calibration its prediction sets average 1.515 candidates at 97.1% empirical coverage (57.4% smaller sets at similar coverage).",
+        "zh": "让「单个选择」成为科学智能体的监督、预测与评估单元:决策中心研究(DCR)在显式研究状态上定义 24 种决策类型,把其中十种实例化为 2,000 条规则生成案例的研究决策基准 RD-Bench,并训练决策中心研究模型 DCRM——其候选 token 读出跨类型共享,一次前向同时给出答案与选项概率;在留出研究域划分下,0.6B 的状态感知 DCRM Top-1 准确率 89.4%,而仅见问题的孪生模型为 27.8%、DeepSeek-V4.1-Flash 为 36.4%;经留出域校准后,预测集平均 1.515 个候选即达 97.1% 经验覆盖(相近覆盖下集大小缩小 57.4%)。"
+      },
+      "problem": {
+        "en": "Can scientific agents' strategic choices be supervised and evaluated one decision at a time?",
+        "zh": "科学智能体的策略选择能否被逐个决策地监督与评估?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "typed predictions over an explicit Research State",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.00774v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "89.4% Top-1 accuracy",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.00774v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.00774v1",
+      "source_abstract_sha256": "916c0e4b9c1b257da21cbcc2b52e1d860e28054c872e3c6139d910b6d4c87f21"
+    },
+    {
+      "arxiv_id": "2611.00737",
+      "title": "Can Jev Improve Demonstration Retrieval for In-Context Learning?",
+      "authors": [
+        "Rui Song",
+        "Yingji Li",
+        "Hao Xu"
+      ],
+      "affiliations": [
+        "College of Computer Science and Technology, Jilin University"
+      ],
+      "first_submitted": "2026-10-31",
+      "updated": "2026-10-31",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.00737",
+      "reviewed_url": "https://arxiv.org/abs/2611.00737v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.00737v1",
+      "arxiv_categories": [
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "agents",
+      "relation_level": "direct",
+      "tags": [
+        "retrieval",
+        "agents",
+        "efficiency"
+      ],
+      "summary": {
+        "en": "Uses Jev as the utility judge for in-context-learning demonstration selection: instead of retrieval heuristics, Jev directly scores the utility of candidate demonstrations with probabilistic judgments, and the paper demonstrates that this improves demonstration retrieval and downstream ICL performance across tasks; the emergence of a decision-oriented language model that produces probabilistic judgments without generation is framed as the enabling capability.",
+        "zh": "把 Jev 用作上下文学习示例选择的效用裁判:不走检索启发式,而是让 Jev 以概率判断直接为候选示例的效用打分,论文证明这能同时改进示例检索与下游 ICL 表现;不生成文本、只输出概率判断的决策导向语言模型的出现被视为使能条件。"
+      },
+      "problem": {
+        "en": "Can Jev's probabilistic judgments retrieve better in-context demonstrations than existing strategies?",
+        "zh": "Jev 的概率判断能否比既有策略检索到更好的上下文示例?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "the emergence of Jev, a decision-oriented language model",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.00737v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "Jev can effectively enhance demonstration retrieval",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.00737v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.00737v1",
+      "source_abstract_sha256": "74c34af8f2d3f61a01288baf282b242c08d805933fd197b4ee1f5b861e4ecc6f"
+    },
+    {
+      "arxiv_id": "2611.00610",
+      "title": "Trail: Accurate Local Smart Home Control Using Decision Models",
+      "authors": [
+        "Maleeha Masood",
+        "Deepak Vasisht",
+        "Indranil Gupta"
+      ],
+      "affiliations": [
+        "University of Illinois Urbana-Champaign"
+      ],
+      "first_submitted": "2026-10-31",
+      "updated": "2026-10-31",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.00610",
+      "reviewed_url": "https://arxiv.org/abs/2611.00610v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.00610v1",
+      "arxiv_categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "related",
+      "tags": [
+        "applications",
+        "agents",
+        "abstention"
+      ],
+      "summary": {
+        "en": "Replaces open-ended command generation in smart-home control with hierarchical typed decisions that run fully locally: Trail (Typed Registry-Anchored Inference) exploits the natural structure of a home's action space - selecting a room, then a device, then an operation from candidates derived from the runtime device registry - which keeps every action valid and enables confidence-based abstention when a request cannot be reliably resolved; the selector is JevK5, an open-source decision model built on Qwen3.5-4B (of the Jev and Microsoft-Decision-1 generation), fine-tuned once on action-resolution and argument decisions and reused for memory decisions, evaluated on Trek-Base/Trek-Robust suites against prompted and fine-tuned baselines.",
+        "zh": "把智能家居控制的开放式指令生成换成完全本地运行的层次化类型化决策:Trail(类型化注册表锚定推理)利用家庭动作空间的天然结构——先选房间、再选设备、再选操作,候选全部来自运行时设备注册表——既保证动作恒为合法,又支持在请求无法可靠解析时基于置信度弃答;选择器为基于 Qwen3.5-4B 的开源决策模型 JevK5(与 Jev、Microsoft-Decision-1 同代),只在动作解析与参数决策上微调一次即复用于记忆决策,并在 Trek-Base/Trek-Robust 套件上与提示及微调基线对比。"
+      },
+      "problem": {
+        "en": "Can hierarchical typed decisions over the device registry make local smart-home control accurate and private?",
+        "zh": "在设备注册表上做层次化类型化决策,能否让本地智能家居控制既准确又私密?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "We implement Trail using JevK5",
+          "location": "Section on implementation",
+          "source_url": "https://arxiv.org/html/2611.00610v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "confidence-based abstention",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.00610v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.00610v1",
+      "source_abstract_sha256": "9160269693fbb97fec49d817fda5a1df0f9adcda4e78ff1f1ca95dddf35d451b"
+    },
+    {
+      "arxiv_id": "2611.00505",
+      "title": "To Jev or Not to Jev: When Can System-1 Decision Models Replace LLM Judges?",
+      "authors": [
+        "Shreyas Subramanian"
+      ],
+      "affiliations": [
+        "Scale AI"
+      ],
+      "first_submitted": "2026-10-31",
+      "updated": "2026-10-31",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.00505",
+      "reviewed_url": "https://arxiv.org/abs/2611.00505v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.00505v1",
+      "arxiv_categories": [
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "evaluation",
+      "relation_level": "direct",
+      "tags": [
+        "judging",
+        "evaluation",
+        "efficiency"
+      ],
+      "summary": {
+        "en": "Asks when System-1 decision models can replace generative LLM judges: 14 System-1 decision models, selected by a pre-stated protocol from an independent leaderboard and every entry of a public decision-model catalog, are compared with four generative judges (Claude Haiku 5.5, GPT-5.6 with and without reasoning, Claude Opus 5.5 with thinking) on eleven established judge benchmarks; five of the 14 are statistically indistinguishable from GPT-5.6 without reasoning on all pairwise and best-of-4 benchmarks, the two strongest (DReX-Max, d1-ultra) beat Haiku by 10.5-14.4 points, and with a once-generated reference answer eleven models reach 90.3-93.4% on JudgeBench - level with Opus 5.5 and GPT-5.6-with-reasoning - while Jev costs about one-sixteenth of GPT-5.6's price per prompt.",
+        "zh": "追问系统一决策模型何时能替代生成式 LLM 裁判:按预先声明的协议从独立榜单与公开决策模型目录选出 14 个系统一决策模型,在 11 个成熟裁判基准上与四个生成式裁判(Claude Haiku 5.5、GPT-5.6 开/关推理、Claude Opus 5.5 thinking)对比;14 个中有 5 个在全部成对与四选一基准上与不开推理的 GPT-5.6 统计不可区分,最强的两个(DReX-Max、d1-ultra)超 Haiku 10.5~14.4 个点;给定一次性生成的参考答案后,11 个模型在 JudgeBench 上达 90.3%~93.4%,与 Opus 5.5 和开推理 GPT-5.6 持平,而 Jev 每条提示的成本约为 GPT-5.6 的十六分之一。"
+      },
+      "problem": {
+        "en": "When can System-1 decision models substitute for generative LLM judges, and at what accuracy and cost?",
+        "zh": "系统一决策模型何时能替代生成式 LLM 裁判,准确率与成本如何?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "Decision models such as TypeSafe",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.00505v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "statistically indistinguishable from Opus 5.5",
+          "location": "Abstract (reference-guided JudgeBench result)",
+          "source_url": "https://arxiv.org/abs/2611.00505v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.00505v1",
+      "source_abstract_sha256": "bf5afe2bd496eb97252be1d7b169cbd26e6288154f2f76d978dc3a89bc3a5150"
+    },
+    {
+      "arxiv_id": "2611.00496",
+      "title": "Swap, Replicate, Read the Mass: A Protocol for Auditing Demographic Bias in System One Decision Models",
+      "authors": [
+        "Alejandro Mozo Quesada",
+        "Sergio Gálvez Rojas",
+        "Francisco López Valverde"
+      ],
+      "affiliations": [
+        "Universidad de Málaga"
+      ],
+      "first_submitted": "2026-10-31",
+      "updated": "2026-10-31",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.00496",
+      "reviewed_url": "https://arxiv.org/abs/2611.00496v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.00496v1",
+      "arxiv_categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "evaluation",
+      "relation_level": "direct",
+      "tags": [
+        "bias",
+        "fairness",
+        "evaluation",
+        "calibration"
+      ],
+      "summary": {
+        "en": "Provides the first multi-model demographic-bias audit of System One decision models on established benchmarks: BBQ across all eleven categories, CrowS-Pairs and SilverSpoon are adapted to the typed interface; twelve models plus a no-thinking ablation make 1,638,000 decisions, with every order-sensitive item run twice under swapped options and native typed models additionally swapping labels; the audit finds widespread stereotype alignment, order-dependent answers, and confidence that tracks instability rather than error, with extra seeds and batch-16 repetitions for robustness - Jev, which ships only as an API, is audited through its hosted route.",
+        "zh": "给出首个在成熟基准上的系统一决策模型多人种人口统计学偏差审计:把覆盖全部 11 个类别的 BBQ、CrowS-Pairs 与 SilverSpoon 适配到类型化接口;12 个模型加一个去思考消融共做出 1,638,000 次决策,每个顺序敏感条目都以交换选项跑两遍,原生类型化模型还额外交换标签,并以多种子与 batch-16 复测保证稳健;结果发现刻板印象倾向普遍存在、答案随选项顺序改变、置信度追踪的是不稳定而非错误;只以 API 形式提供的 Jev 通过其托管通道接受审计。"
+      },
+      "problem": {
+        "en": "How much demographic bias, order sensitivity and misplaced confidence do System One decision models carry into production decisions?",
+        "zh": "系统一决策模型带入生产决策的群体偏差、顺序敏感与错位置信度有多重?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "Jev, which ships only as an API",
+          "location": "Section on audited systems",
+          "source_url": "https://arxiv.org/html/2611.00496v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "1,638,000 decisions",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.00496v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [
+        {
+          "url": "https://github.com/amozo-es/system-one-bias-protocol",
+          "source_url": "https://arxiv.org/abs/2611.00496v1",
+          "source_location": "body (harness and analysis code release statement)",
+          "verified_on": "2026-11-04",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.00496v1",
+      "source_abstract_sha256": "117b5c6333491834bcf05496716285835bb21af2e926443191cb868d71e7cf37"
+    },
+    {
+      "arxiv_id": "2611.00428",
+      "title": "Do Multimodal Models Decide Consistently on Equivalent Optical Spectra?",
+      "authors": [
+        "Ziyuan Wang",
+        "Genliang Zhu",
+        "Xiaobo Chen"
+      ],
+      "affiliations": [
+        "Independent Researcher",
+        "Georgia Institute of Technology",
+        "University of Massachusetts Amherst"
+      ],
+      "first_submitted": "2026-10-30",
+      "updated": "2026-10-30",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.00428",
+      "reviewed_url": "https://arxiv.org/abs/2611.00428v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.00428v1",
+      "arxiv_categories": [
+        "cs.LG",
+        "cs.CL",
+        "physics.optics"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "evaluation",
+      "relation_level": "direct",
+      "tags": [
+        "multimodal",
+        "calibration",
+        "evaluation",
+        "reproducibility"
+      ],
+      "summary": {
+        "en": "Tests whether multimodal decision models decide consistently when the same optical spectrum is presented in equivalent forms: measured spectra of silicon metasurfaces (MOCLIP) and gold nanoparticles are shown as four tables (nm, um, scientific notation, eV) and two plots, with partial spectra removing data inside or outside the queried range, to the decision models d3-nano and Jev 1.13, three GPT-6 Luna configurations and the Qwen3.5-2B base model; the audit measures representation invariance (the decision should not depend on which equivalent form the model sees) and abstention when the data needed for an answer is missing.",
+        "zh": "检验多模态决策模型对同一光学光谱的不同等价呈现是否给出一致决策:把硅超表面(MOCLIP)与金纳米颗粒的实测光谱分别以四种表格(纳米、微米、科学计数、电子伏特)与两种图呈现,并以部分光谱删去查询区间内外的数据,评测决策模型 d3-nano 与 Jev 1.13、三种 GPT-6 Luna 配置及 Qwen3.5-2B 基座;审计度量表征不变性(等价形式不应改变决策)与数据缺失时的弃答行为。"
+      },
+      "problem": {
+        "en": "Do decision models give the same answer for equivalent table and plot representations of a spectrum, and abstain when data is missing?",
+        "zh": "对光谱的等价表格与图像呈现,决策模型会给出相同答案吗?数据缺失时会弃答吗?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "the decision models d3-nano and Jev 1.13",
+          "location": "Abstract (models evaluated)",
+          "source_url": "https://arxiv.org/abs/2611.00428v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "We test representation invariance and abstention",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.00428v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [
+        {
+          "url": "https://github.com/zwang-devv/spectra-decision-audit",
+          "source_url": "https://arxiv.org/abs/2611.00428v1",
+          "source_location": "arXiv comment (Code and data:)",
+          "verified_on": "2026-11-04",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.00428v1",
+      "source_abstract_sha256": "7dc15479d00593aa3551ecd905e2ef0dcf03e9eeec70716f13557f222bafe9be"
+    },
+    {
+      "arxiv_id": "2611.00359",
+      "title": "Humanized but Still True? Auditing Facts and Detection in AI-Text Humanizers",
+      "authors": [
+        "Ziyuan Wang",
+        "Genliang Zhu",
+        "Xiaobo Chen"
+      ],
+      "affiliations": [
+        "Independent Researcher",
+        "Georgia Institute of Technology",
+        "University of Massachusetts Amherst"
+      ],
+      "first_submitted": "2026-10-30",
+      "updated": "2026-10-30",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.00359",
+      "reviewed_url": "https://arxiv.org/abs/2611.00359v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.00359v1",
+      "arxiv_categories": [
+        "cs.CL",
+        "cs.CR"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "evaluation",
+      "relation_level": "direct",
+      "tags": [
+        "evaluation",
+        "calibration",
+        "benchmark"
+      ],
+      "summary": {
+        "en": "Audits AI-text humanizers on two axes - do facts survive the rewrite, and can the output be detected: on the October 2026 cycle of a public humanizer leaderboard, all 11 commercial tools change or drop at least one checkable unit (numbers, dates, names, quoted spans) in 35-65% of the documents containing one, most often quoted spans; and on federal texts where human originals, AI-styled rewrites and humanized versions cover the same content, a single zero-shot choice question to Jev (typesafe/jev-1.13 via OpenRouter) separates human originals from humanized rewrites with AUROC 0.864 (0.827-0.902), a signal four other detectors miss.",
+        "zh": "从两个维度审计 AI 文本人性化工具——事实是否在改写中幸存、产物能否被识别:在公开人性化榜单 2026 年 10 月周期中,全部 11 款商业工具都会在 35%~65% 的含可核查单元(数字、日期、人名、引文片段)文档中改动或丢失至少一个单元,引文片段受损最多;在人类原文、AI 风格改写与人性化产物覆盖相同内容的联邦文本上,向 Jev(经 OpenRouter 调用 typesafe/jev-1.13)仅问一个零样本选择题,即可区分人类原文与人性化文本,AUROC 0.864(0.827~0.902),而其余四个检测器均无此信号。"
+      },
+      "problem": {
+        "en": "Do AI-text humanizers preserve checkable facts, and can a decision model catch their outputs zero-shot?",
+        "zh": "AI 文本人性化工具会保留可核查事实吗?决策模型能否零样本识破其产物?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "a general-purpose decision model, Jev, asked a single zero-shot question",
+          "location": "Section 4.3 (H3)",
+          "source_url": "https://arxiv.org/html/2611.00359v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "separated human originals from humanized rewrites with AUROC 0.864",
+          "location": "Section 4.3 (H3)",
+          "source_url": "https://arxiv.org/html/2611.00359v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [
+        {
+          "url": "https://github.com/zwang-devv/humanizer-fact-audit",
+          "source_url": "https://arxiv.org/abs/2611.00359v1",
+          "source_location": "arXiv comment (Code and data:)",
+          "verified_on": "2026-11-04",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.00359v1",
+      "source_abstract_sha256": "4d94fc974c05b78cf95a6692f7d166dfc9ab2a054f0ea47a50a79cacf3a1c83c"
+    },
+    {
+      "arxiv_id": "2610.42148",
+      "title": "Flide: Accelerating Decision Inference with Exact State Forking",
+      "authors": [
+        "Bobo Li",
+        "Jiajia Song",
+        "Hao Fei",
+        "Wynne Hsu",
+        "Mong Li Lee"
+      ],
+      "affiliations": [
+        "National University of Singapore",
+        "University of Oxford"
+      ],
+      "first_submitted": "2026-10-30",
+      "updated": "2026-10-30",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.42148",
+      "reviewed_url": "https://arxiv.org/abs/2610.42148v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42148v1",
+      "arxiv_categories": [
+        "cs.CL"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "architecture",
+      "relation_level": "related",
+      "tags": [
+        "architecture",
+        "efficiency",
+        "agents"
+      ],
+      "summary": {
+        "en": "Builds an inference engine for decision-model workloads instead of borrowing generation-oriented ones, which suffer severe prefix recomputation or distorted output probabilities: Flide decouples the logical tree structure of a decision request from its physical execution in a single flattened token stream; ForkAttention navigates request dependencies through GPU-resident indices across standard attention and recurrent Gated DeltaNet layers, guaranteeing in exact arithmetic that every query branch evaluates identically to an isolated forward pass, while branch topologies expressed as GPU metadata let expanding agent histories resume from earlier checkpoints; on public hybrid and decision models Flide answers queries up to 9.5 times faster than vLLM and SGLang while staying closest to a float32 reference in total variation distance.",
+        "zh": "为决策模型负载专门打造推理引擎,而不再借用生成式引擎——后者有严重的前缀重算开销或输出概率失真:Flide 把决策请求的逻辑树结构与单条扁平 token 流中的物理执行解耦;ForkAttention 以常驻 GPU 的索引在标准注意力与循环 Gated DeltaNet 层上导航请求依赖,以精确算术保证每个查询分支与孤立前向完全一致;以 GPU 元数据表达分支拓扑,还可让不断增长的智能体历史从早前检查点恢复;在公开混合与决策模型上,Flide 比 vLLM 与 SGLang 最快快 9.5 倍,且总变差距离最贴近 float32 参照。"
+      },
+      "problem": {
+        "en": "Can a decision request's branch tree execute exactly, once, inside a single inference stream?",
+        "zh": "决策请求的分支树能否在单条推理流中被精确地一次执行?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "Decision models such as Jev have emerged",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.42148v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "up to 9.5 times faster than vLLM and SGLang",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.42148v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [
+        {
+          "url": "https://github.com/OmniJev/Flide",
+          "source_url": "https://arxiv.org/abs/2610.42148v1",
+          "source_location": "title page (Source Code:)",
+          "verified_on": "2026-11-04",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.42148v1",
+      "source_abstract_sha256": "3c5c25a6211729e310c63c0a9ee945efdee4a4c7fb75ca2d4582706bf3052923"
+    },
+    {
+      "arxiv_id": "2610.42128",
+      "title": "DecisionRank: On-Policy Distillation for Decision-Model Rerankers",
+      "authors": [
+        "Yanran Wu",
+        "Dian Yu",
+        "Chongyang Bai",
+        "Jieyi Zhang",
+        "Rui Liu",
+        "Tianyi Chen",
+        "Shike Mei",
+        "Hang Cui",
+        "Frank Shyu",
+        "Sandeep Pandey",
+        "Luke Simon",
+        "Chunwei Liu",
+        "Xi Liu"
+      ],
+      "affiliations": [
+        "Meta",
+        "Purdue University"
+      ],
+      "first_submitted": "2026-10-30",
+      "updated": "2026-10-30",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.42128",
+      "reviewed_url": "https://arxiv.org/abs/2610.42128v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42128v1",
+      "arxiv_categories": [
+        "cs.CL"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "architecture",
+      "relation_level": "related",
+      "tags": [
+        "training",
+        "reranking",
+        "efficiency"
+      ],
+      "summary": {
+        "en": "Distills a generative LLM's ranking knowledge into a decision model whose student reads scores from the first-token position: the teacher expresses preferences only through ranked lists of document IDs, so DecisionRank trains with item-space on-policy distillation - the student's document scores are sorted into a ranked sequence that the generative teacher takes as input, and its conditional feedback directly supervises those scores - combined with offline ranking supervision; the result is state of the art on general and reasoning-intensive retrieval (TREC DL, BEIR, BRIGHT), item-space OPD consistently beats alternative objectives across four benchmarks, a 1.7B student surpasses its 27B generative teacher on TREC DL19-23, and the 8B model beats its generative listwise counterpart while running 24.5x faster on TREC DL and 16.7x faster on BRIGHT.",
+        "zh": "把生成式 LLM 的排序知识蒸馏进以首 token 位置读分数的决策模型:教师只能用文档 ID 序列的排名表表达偏好,于是 DecisionRank 采用物品空间在线策略蒸馏——把学生的文档分数排序成列表交给生成式教师,其条件反馈直接监督这些分数——再叠加离线排序监督;成果在通用与推理密集型检索(TREC DL、BEIR、BRIGHT)上均为最优,物品空间 OPD 在四个基准上稳定胜过其他训练目标;1.7B 学生在 TREC DL19-23 上超过 27B 生成式教师,8B 模型胜过其生成式列表对应物,且在 TREC DL 上快 24.5 倍、BRIGHT 上快 16.7 倍。"
+      },
+      "problem": {
+        "en": "Can a first-token decision model inherit a generative teacher's ranking skill without decoding lists?",
+        "zh": "首 token 决策模型能否不解码列表就继承生成式教师的排序能力?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "directly predicting choices or scores",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.42128v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "surpasses its 27B generative teacher on TREC DL19",
+          "location": "Abstract (1.7B student, TREC DL19-23)",
+          "source_url": "https://arxiv.org/abs/2610.42128v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.42128v1",
+      "source_abstract_sha256": "22b5cffb7e0fccb7450f69f01c8a51e4f48ca0b74230b1d4a892ded005f1e6c1"
+    },
+    {
+      "arxiv_id": "2610.41350",
+      "title": "Operon-S1: a fast decision controller for long-horizon biomedical agents",
+      "authors": [
+        " Genoria AI Team",
+        "Yuejie Hou",
+        "Yueyuxiao Yang",
+        "Weiting Tang",
+        "Meng Yang"
+      ],
+      "affiliations": [
+        "Genoria AI"
+      ],
+      "first_submitted": "2026-10-30",
+      "updated": "2026-10-30",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.41350",
+      "reviewed_url": "https://arxiv.org/abs/2610.41350v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.41350v1",
+      "arxiv_categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "agents",
+      "relation_level": "direct",
+      "tags": [
+        "agents",
+        "scientific-workflows",
+        "efficiency"
+      ],
+      "summary": {
+        "en": "Separates judging from doing for long-horizon biomedical agents: a decision harness poses the agent's recurring judgements (conventions, skills, errors, evidence, stopping) as closed questions at 13 decision points and acts only through fixed messages that never contain an answer, so any model can serve as the judge; across seven life-science benchmarks a local 322M decision model (LAYA) takes over the judgements with a 0.6 s median in-loop request on CPU at no request cost and no measurable score change on five of six benchmarks, while the general LLM asked the same questions accounts for 8.0-35.2% of task cost, a hosted JEV serves as a comparator under equal time budgets, and retraining on labels from task construction, verifiers or execution raises decision accuracy at every question, with a promotion gate for new versions.",
+        "zh": "为长程生物医学智能体把「判断」从「执行」中剥离:决策挽具把智能体反复出现的判断(规范、技能、错误、证据、停止)在 13 个决策点写成封闭问题,且只通过绝不含答案的固定消息起作用,因此任何模型都能担任裁判;在七个生命科学基准上,本地 322M 决策模型(LAYA)接管判断后,CPU 上单次环内请求中位 0.6 秒、零请求成本,六个基准中五个分数无可测变化,而让通用大模型回答同样问题要占任务成本的 8.0%~35.2%;托管 JEV 作为等时预算下的对照;用任务构造、校验器或执行产生的标签重训可提升每个问题的决策准确率,新版本须经晋升闸门上线。"
+      },
+      "problem": {
+        "en": "Can a fast decision controller take over an agent's recurring judgements without hurting task outcomes?",
+        "zh": "快速的决策控制器能否接管智能体反复出现的判断而不损害任务结果?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "A hosted model, JEV, serves as a comparator",
+          "location": "Methods (comparators)",
+          "source_url": "https://arxiv.org/html/2610.41350v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "no measurable change in the agent",
+          "location": "Results (five of six benchmarks)",
+          "source_url": "https://arxiv.org/abs/2610.41350v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.41350v1",
+      "source_abstract_sha256": "b7621699ff22f8d31eb80c9489be6a6c63a9ca27e7d1e4dc6458e3a9be8fde26"
+    },
     {
       "arxiv_id": "2610.41199",
       "title": "Beyond CLIP: Calibrated (Few-Shot) Defect Detection With System One Decision Models",
@@ -1781,6 +3983,81 @@
       ],
       "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.36804v1",
       "source_abstract_sha256": "2d3c2ee7763a0df1883cfc0d6f9fddc73e952bd4e397054f9c09749ee7487dbb"
+    },
+    {
+      "arxiv_id": "2610.36689",
+      "title": "PsyJev: Psychological Analysis via System-1 Judgment",
+      "authors": [
+        "Fangyuan Liu",
+        "Sirui Zhao",
+        "Xiaohao Wang",
+        "Guo Cheng",
+        "Peng Zhang",
+        "Enhong Chen"
+      ],
+      "affiliations": [
+        "State Key Laboratory of Cognitive Intelligence, University of Science and Technology of China",
+        "Beijing University of Technology",
+        "School of Information Science and Technology, University of Science and Technology of China"
+      ],
+      "first_submitted": "2026-10-27",
+      "updated": "2026-10-27",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.36689",
+      "reviewed_url": "https://arxiv.org/abs/2610.36689v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.36689v1",
+      "arxiv_categories": [
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "direct",
+      "tags": [
+        "applications",
+        "training",
+        "social-science"
+      ],
+      "summary": {
+        "en": "Builds a shared question-conditioned decision interface for psychological content analysis: PsyJudgeBench organizes 13 annotated datasets and 82 questions across six psychological areas (preserving source-specific criteria and masks for unobserved labels), and PsyJev is a System-1 model that directly produces distributions over the question-defined answers - joint supervised training establishes the shared judgment function, then Judgment-Anchored RLCD adapts logit-space perturbations with a Brier-based question-group reward; across 2B, 4B and 9B scales PsyJev outperforms same-backbone answer-SFT baselines, and the general-purpose Jev API achieves 52.91 average F1 zero-shot as the reference.",
+        "zh": "为心理内容分析构建共享的按问题条件化的决策接口:PsyJudgeBench 整理 13 个标注数据集、覆盖六个心理领域的 82 个问题(保留各数据集专属标准并遮蔽未观测标签);PsyJev 是直接对请求中定义的答案输出分布的系统一模型——先以联合监督训练建立共享判断函数,再以锚定判断的 RLCD(JA-RLCD)借助基于 Brier 的问题组奖励在 logit 空间微调;在 2B/4B/9B 三个规模上 PsyJev 均胜过同骨干的答案-SFT 基线,通用 Jev API 以零样本平均 F1 52.91 作为参照。"
+      },
+      "problem": {
+        "en": "Can one System-1 judgment interface serve heterogeneous psychological text-analysis tasks?",
+        "zh": "一个系统一判断接口能否服务异构的心理学文本分析任务?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "The general-purpose Jev API achieves 52.91 average F1",
+          "location": "Results (zero-shot reference)",
+          "source_url": "https://arxiv.org/html/2610.36689v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "PsyJev outperforms the corresponding same-backbone answer-SFT baselines",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/html/2610.36689v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.36689v1",
+      "source_abstract_sha256": "bd645c28f39fe522260128eead28e4deca32816dbc14d43c3f6306e2540f9781"
     },
     {
       "arxiv_id": "2610.36595",
@@ -3826,6 +6103,78 @@
       "code": [],
       "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.31315v2",
       "source_abstract_sha256": "f6fc83bf9e3062f5648fdd6dae499f2735bf258fbe62a1b8e6384109f4854e61"
+    },
+    {
+      "arxiv_id": "2610.30963",
+      "title": "ReDence: A Hybrid Agentic and Decision-Model Framework for Rapid, Evidence-Grounded Detection of Modern Social Engineering Scams",
+      "authors": [
+        "Jaishnoor Kaur",
+        "Josef Horáček",
+        "Ian Waskom",
+        "Sayak Saha Roy"
+      ],
+      "affiliations": [
+        "Louisiana State University"
+      ],
+      "first_submitted": "2026-10-22",
+      "updated": "2026-10-22",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.30963",
+      "reviewed_url": "https://arxiv.org/abs/2610.30963v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30963v1",
+      "arxiv_categories": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "agents",
+      "relation_level": "related",
+      "tags": [
+        "agents",
+        "security",
+        "efficiency"
+      ],
+      "summary": {
+        "en": "Couples an agentic investigator with a specialized decision model to detect social-engineering scams that require walking website workflows, verifying claims against external sources and connecting evidence across pages: ReDence is an open-source hybrid framework with two locally hosted models - a fine-tuned multimodal agentic Investigator (Qwen3.5-4B) doing planning, evidence interpretation and reporting, and a specialized Decider (Tev1) handling binary and multiple-choice tasks including browser-action selection, evidence assessment and continue-or-stop decisions - so discrete choices stop relying on lengthy generated text; it reaches 96% accuracy across twelve SE scam categories, substantially outperforming existing detectors while running at least four times faster than comparable agentic models, and produces structured, evidence-grounded reports.",
+        "zh": "让智能体调查员与专用决策模型协作,检测需要浏览网站流程、对外部来源核验主张并跨页串联证据的社会工程骗局:开源混合框架 ReDence 本地托管两个模型——微调的多模态智能体调查员(Qwen3.5-4B)负责调查规划、证据解读与报告,专用决策器(Tev1)负责二选与多选任务,包括浏览器动作选择、证据评估和是否继续调查——从而让离散决策摆脱冗长的生成文本;在十二类骗局上准确率 96%,大幅超过既有检测器,且比同类智能体模型至少快四倍,同时输出结构化、有据可查的报告。"
+      },
+      "problem": {
+        "en": "Can a specialized decision model carry the discrete choices of an agentic scam investigation?",
+        "zh": "专用决策模型能否承担智能体骗局调查中的全部离散选择?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "a specialized Decider (Tev1)",
+          "location": "Abstract (framework components)",
+          "source_url": "https://arxiv.org/abs/2610.30963v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "accuracy in detecting scams across twelve SE scam categories",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.30963v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.30963v1",
+      "source_abstract_sha256": "6a03ebc8099fa6047e4e4e3e8c5e569bfa26ab78b960af076e16a8a26e990f0b"
     },
     {
       "arxiv_id": "2610.30947",
@@ -6127,6 +8476,238 @@
       "source_abstract_sha256": "cf4f34ccd8b54bd7040b1649ddea58d0822c45e8c9576070fc15756d1e63e985"
     },
     {
+      "arxiv_id": "2610.23804",
+      "title": "Jarvis: Coordination Deserves a Brain of Its Own in Agentic Interactive Models",
+      "authors": [
+        "Yuxiang Wang",
+        "Shengbo Cai",
+        "Zhixian Zhao",
+        "Yingda Shen",
+        "Yuancheng Wang",
+        "Xueyao Zhang",
+        "Liqiang Zhang",
+        "Teddy Sun",
+        "Steve Yves",
+        "Zhizheng Wu"
+      ],
+      "affiliations": [
+        "The Chinese University of Hong Kong, Shenzhen",
+        "Tencent Hunyuan",
+        "Amphion Technology Co., Ltd."
+      ],
+      "first_submitted": "2026-10-16",
+      "updated": "2026-10-16",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.23804",
+      "reviewed_url": "https://arxiv.org/abs/2610.23804v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.23804v1",
+      "arxiv_categories": [
+        "cs.SD"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "agents",
+      "relation_level": "direct",
+      "tags": [
+        "agents",
+        "monitoring",
+        "multimodal"
+      ],
+      "summary": {
+        "en": "Gives coordination a brain of its own for full-duplex interactive models: while a slow reasoning brain handles tool use in the background and a realtime front model sustains dialogue, user refinements, cancellations and replacements make in-flight plans stale because the front model only sees the conversation and the back end only its own task; Jarvis is a coordination harness in which models judge and code enforces - its typed decision model, JEV, reads each utterance against the live tasks and picks among options such as brief, remind, revise or cancel, keeping both sides consistent without stalling either.",
+        "zh": "为全双工交互模型让「协调」拥有独立的大脑:慢速推理大脑在后台处理工具使用、实时前台模型维持对话,而用户的细化、取消与替换会让在途计划过期——前台只见对话、后台只见自己的任务;Jarvis 是一个「模型做判断、代码来执行」的协调挽具:其类型化决策模型 JEV 对照在途任务读每一轮话语,在提示、提醒、修订、取消等选项中抉择,使两侧保持一致又不阻塞任何一方。"
+      },
+      "problem": {
+        "en": "Who should read a new utterance against the tasks already in flight - the front model, the back end, or a dedicated coordinator?",
+        "zh": "新话语该由谁来对照在途任务解读——前台模型、后端,还是专职协调者?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "Its typed decision model, JEV, reads each turn",
+          "location": "Introduction",
+          "source_url": "https://arxiv.org/html/2610.23804v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "Coordination deserves a brain of its own",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.23804v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.23804v1",
+      "source_abstract_sha256": "16c7f36c67c1ed49401327605cf13d294bd1746d7d7d1d6de4e54cd7d96bf7a9"
+    },
+    {
+      "arxiv_id": "2610.23668",
+      "title": "TUPLE-Bench: Evaluating and Mitigating Privacy-Utility Trade-offs in Typed Decision Models",
+      "authors": [
+        "Yiqu Yang",
+        "Qiaoyuan Zheng",
+        "Yang Tian",
+        "Yu Fan",
+        "Elliott Ash"
+      ],
+      "affiliations": [
+        "ETH Zurich",
+        "The University of Hong Kong"
+      ],
+      "first_submitted": "2026-10-16",
+      "updated": "2026-10-16",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.23668",
+      "reviewed_url": "https://arxiv.org/abs/2610.23668v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.23668v1",
+      "arxiv_categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "security",
+      "relation_level": "direct",
+      "tags": [
+        "security",
+        "privacy",
+        "benchmark"
+      ],
+      "summary": {
+        "en": "Shows that typed decision models leak more than the selected category: besides the chosen label they expose per-candidate probabilities and sometimes a separate confidence score, which downstream decisions use but which can reveal information beyond a recipient's authorization; TUPLE-Bench builds paired synthetic cases where a recipient may learn a coarse operational category but not its fine-grained cause, and across nine models instructions to withhold the cause fail - 91.88-99.93% of responses reveal it through direct selection or residual score patterns - even when the causes are excluded from the candidate list; the benchmark ships with evaluation APIs and paired privacy-utility audits.",
+        "zh": "揭示类型化决策模型的泄露不止于所选类别:除选中标签外还暴露每个候选的概率、有时另有独立置信度,这些字段服务于下游决策,却可能泄露超出接收方授权的信息;TUPLE-Bench 构造成对合成案例,允许接收方得知粗粒度业务类别、不允许得知细粒度成因;九个模型上「隐瞒成因」的指令全部失效——91.88%~99.93% 的响应通过直接选择或残差分数模式暴露成因,即便把成因从候选列表中剔除也无效;基准附评估 API 与隐私—效用成对审计。"
+      },
+      "problem": {
+        "en": "Can typed decision models be instructed to withhold a fine-grained cause while sharing a coarse category?",
+        "zh": "类型化决策模型能否在共享粗粒度类别的同时,按指令隐瞒细粒度成因?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "Jev never withholds and directly selects the correct mechanism",
+          "location": "Results (withholding behaviour)",
+          "source_url": "https://arxiv.org/html/2610.23668v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "91.88%",
+          "location": "Abstract (share of responses revealing the cause, range 91.88-99.93%)",
+          "source_url": "https://arxiv.org/abs/2610.23668v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [
+        {
+          "url": "https://github.com/qiaoyuan667/tuple-bench",
+          "source_url": "https://arxiv.org/abs/2610.23668v1",
+          "source_location": "title-page author-block links (GitHub)",
+          "verified_on": "2026-11-04",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.23668v1",
+      "source_abstract_sha256": "80e5be3dd3874d31abf98387cbb97babe4d1d33b20468ef813afaa590ae90739"
+    },
+    {
+      "arxiv_id": "2610.23346",
+      "title": "Jev-as-a-Judge for Brazilian Portuguese Information Retrieval: Relevance Assessment and Reranking",
+      "authors": [
+        "Leandro Carísio Fernandes",
+        "Jayr Pereira"
+      ],
+      "affiliations": [
+        "Câmara dos Deputados, Brasília",
+        "Centro de Ciências e Tecnologia, Universidade Federal do Cariri",
+        "Faculdade de Engenharia Elétrica e da Computação, Universidade Estadual de Campinas"
+      ],
+      "first_submitted": "2026-10-16",
+      "updated": "2026-10-16",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.23346",
+      "reviewed_url": "https://arxiv.org/abs/2610.23346v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.23346v1",
+      "arxiv_categories": [
+        "cs.IR"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "evaluation",
+      "relation_level": "direct",
+      "tags": [
+        "judging",
+        "reranking",
+        "evaluation"
+      ],
+      "summary": {
+        "en": "Uses Jev-as-a-judge to produce relevance judgments for four Brazilian Portuguese IR collections and to rerank: against the collections' official judgments, exact agreement ranges from 52.9% to 64.9% and quadratic weighted Cohen's kappa from 0.52 to 0.82, with at least 94.5% of annotations matching exactly or differing by only one relevance level - most disagreements are between adjacent levels - and Jev is also evaluated as a reranker on the same collections.",
+        "zh": "以 Jev 作裁判为四个巴西葡萄牙语信息检索集生成相关性判定并做重排:与官方判定相比,完全一致率 52.9%~64.9%,二次加权 Cohen's kappa 0.52~0.82,至少 94.5% 的标注完全一致或仅差一个相关级别——分歧多发生在相邻级别之间;Jev 还在同一批集合上被评测为重排器。"
+      },
+      "problem": {
+        "en": "Can a System One decision model replace human relevance judgments for Portuguese IR collections?",
+        "zh": "系统一决策模型能否替代葡萄牙语检索集的人工相关性判定?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "We use Jev-as-a-judge to generate relevance judgments",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.23346v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "exact agreement ranged from 52.9% to 64.9%",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.23346v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.23346v1",
+      "source_abstract_sha256": "a7b84f9c0890606172c7134e3a0b20a63c562d0670b6d8cad27e487245bdf4c9"
+    },
+    {
       "arxiv_id": "2610.23170",
       "title": "Chinese Decision: A Family of Language Models for Single-Pass Probabilistic Decision-Making",
       "authors": [
@@ -6201,6 +8782,83 @@
       ],
       "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.23170v2",
       "source_abstract_sha256": "518a8e9cdd098df8107242627b4b892f070c002b2fd07331a8a53a52eb168013"
+    },
+    {
+      "arxiv_id": "2610.22526",
+      "title": "Literal Lock-In: How Test Language Shifts Literal Attraction in Typed Decision Models on Bengali Idioms",
+      "authors": [
+        "Adib Sakhawat",
+        "Syed Rifat Raiyan"
+      ],
+      "affiliations": [
+        "Systems and Software Lab (SSL), Department of Computer Science and Engineering, Islamic University of Technology"
+      ],
+      "first_submitted": "2026-10-15",
+      "updated": "2026-10-15",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.22526",
+      "reviewed_url": "https://arxiv.org/abs/2610.22526v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.22526v1",
+      "arxiv_categories": [
+        "cs.CL"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "evaluation",
+      "relation_level": "direct",
+      "tags": [
+        "option-sensitivity",
+        "evaluation",
+        "benchmark"
+      ],
+      "summary": {
+        "en": "Audits three decision models - an encoder scorer, a decoder scorer and a closed API (Jev-1.13) - entirely through input interventions, using expert-annotated Bengali idioms that carry a gold figurative and a gold literal gloss: dropping the idiom's own literal gloss into the option list draws every arm toward it, accounting for 65% to 96% of each arm's remaining Bengali errors, while a model-by-language matrix over one shared item set shows how strongly the effect depends on the test language; because decision models generate nothing, rationales and chain-of-thought do not apply, so literal-attraction probes are the usable lens.",
+        "zh": "完全通过输入干预审计三个决策模型——编码器打分器、解码器打分器与闭源 API(Jev-1.13)——所用材料是带有金标准比喻义与字面义释义的专家标注孟加拉语习语:把习语自带的字面释义混入选项列表,会把每个模型都拉向字面义,占各模型剩余孟加拉语错误的 65%~96%;跨语言矩阵(同一组条目)显示该效应高度依赖测试语言;由于决策模型不生成任何文本,无法用理由或思维链审视,字面吸引因此成为可用的透镜。"
+      },
+      "problem": {
+        "en": "How strongly do option-list cues, not evidence, drive typed decision models' answers across test languages?",
+        "zh": "在不同测试语言中,选项列表里的线索(而非证据)对类型化决策模型的答案有多大驱动力?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "Laya-ml, Lod-lille and Jev-1.13 keep these three markers",
+          "location": "Figure 1 caption (audited models)",
+          "source_url": "https://arxiv.org/html/2610.22526v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "taking 65% to 96% of each arm",
+          "location": "Abstract (share of remaining Bengali errors drawn to the literal gloss)",
+          "source_url": "https://arxiv.org/abs/2610.22526v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [
+        {
+          "url": "https://github.com/sakhadib/literal-lock-in",
+          "source_url": "https://arxiv.org/abs/2610.22526v1",
+          "source_location": "body (Code and data are available at)",
+          "verified_on": "2026-11-04",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.22526v1",
+      "source_abstract_sha256": "4188c78911ef13ed429bcf6264d621363c4b1ffa35747ace7bfbdabd898368e3"
     },
     {
       "arxiv_id": "2610.22276",
@@ -6850,6 +9508,161 @@
       "code": [],
       "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.21150v1",
       "source_abstract_sha256": "0bcc877dec324ef07b72714a679aaabc209f56b7afd2957897a0845b92bf6e11"
+    },
+    {
+      "arxiv_id": "2610.21046",
+      "title": "PremiseCheck: Efficient Fact-Checking of Human and AI Peer Reviews",
+      "authors": [
+        "Dingjie Song",
+        "Zhiling Yan",
+        "Ziqian Zhang",
+        "Yuxuan Zhang",
+        "Lichao Sun"
+      ],
+      "affiliations": [
+        "Lehigh University",
+        "University of British Columbia",
+        "Vector Institute"
+      ],
+      "first_submitted": "2026-10-15",
+      "updated": "2026-10-15",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.21046",
+      "reviewed_url": "https://arxiv.org/abs/2610.21046v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.21046v1",
+      "arxiv_categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "direct",
+      "tags": [
+        "applications",
+        "judging",
+        "efficiency"
+      ],
+      "summary": {
+        "en": "Fact-checks peer-review comments (human or AI written) that misstate what a paper says: the ReviewFact benchmark labels such factual errors under three parts; on whole comments Jev performs at chance on the NLP reviews and below an LLM elsewhere, but on single premises that annotators wrote out from the comments Jev is as accurate as GPT-5.5, so PremiseCheck splits the work - an LLM decomposes each comment into self-contained premises without reading the paper, and the decision model checks each premise against the paper - reaching the strongest configuration's F1 on three fields at about half its cost, and on NLP reviews at a quarter of the cost and under half the latency (a Jev-to-GPT-5.5 cascade covers the rest).",
+        "zh": "核查(人或 AI 撰写的)同行评审意见中对论文内容的失实陈述:ReviewFact 基准为这类事实错误标注并分三部分;在整条意见上 Jev 于 NLP 评审接近随机、其余部分也逊于 LLM,但在标注者从意见中拆出的单条前提上,Jev 与 GPT-5.5 同样准确——于是 PremiseCheck 分工:让 LLM 不读论文、只把意见拆成自含前提,再由决策模型把每条前提对着论文核查;在三个领域的 F1 追平最强配置、成本约其一半,NLP 评审上成本仅四分之一、延迟不到一半(其余走 Jev→GPT-5.5 级联)。"
+      },
+      "problem": {
+        "en": "Can peer-review factual errors be caught cheaply by splitting premise generation (LLM) from premise checking (decision model)?",
+        "zh": "把「生成前提」(LLM)与「核查前提」(决策模型)分工,能否廉价地发现评审意见中的事实错误?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "The LLM is GPT-5.5 and the decision model is Jev",
+          "location": "Experimental setup",
+          "source_url": "https://arxiv.org/html/2610.21046v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "Jev is as accurate as GPT-5.5",
+          "location": "Results (single premises, Appendix D.1)",
+          "source_url": "https://arxiv.org/html/2610.21046v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [
+        {
+          "url": "https://github.com/OpenLAIR/PremiseCheck",
+          "source_url": "https://arxiv.org/abs/2610.21046v1",
+          "source_location": "title-page footnote (Code:)",
+          "verified_on": "2026-11-04",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.21046v1",
+      "source_abstract_sha256": null
+    },
+    {
+      "arxiv_id": "2610.22401",
+      "title": "Audio System One Model: Typed Probabilistic Perception of Emotion in Speech",
+      "authors": [
+        "Jaime Bellver-Soler",
+        "Iván Martín-Fernández",
+        "Anmol Guragain",
+        "Luis Fernando D'Haro"
+      ],
+      "affiliations": [
+        "Speech Technology and Machine Learning Group (THAU), Universidad Politécnica de Madrid"
+      ],
+      "first_submitted": "2026-10-14",
+      "updated": "2026-10-14",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.22401",
+      "reviewed_url": "https://arxiv.org/abs/2610.22401v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.22401v1",
+      "arxiv_categories": [
+        "cs.SD"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "related",
+      "tags": [
+        "applications",
+        "multimodal",
+        "efficiency"
+      ],
+      "summary": {
+        "en": "Gives speech its own System One model: classifiers answer fast but over one fixed label set, while audio language models take any question in text yet answer by generation, one pass per question, with poorly calibrated probabilities; ASOM answers choice, score and yes/no questions written at request time in a single pass without generation, each with a probability distribution - frozen speech and text encoders feed a 6.2M-parameter reader with no per-class parameters, trained on listener vote distributions; on MSP-Podcast it matches a classifier trained on the same features and data, leads the best of six zero-shot ALMs by 0.072 and a fine-tuned ALM by 0.026, answers 20 questions in 13.1 ms (17-41x faster than ALMs), handles reworded questions, reduced and new label sets, scales and gender, and on 21 unseen corpora in 13 languages leads the best zero-shot ALM by 0.138 where the words carry no emotion.",
+        "zh": "为语音打造专属的系统一模型:分类器答得快却锁死一个标签集,音频语言模型什么问题都能接、却要靠生成逐题作答且概率校准差;ASOM 对请求时写下的选择、评分与是非题一次前向作答、不生成文本,每题带概率分布——冻结的语音与文本编码器喂给一个 6.2M 参数、无逐类参数的读取器,以听者投票分布训练;在 MSP-Podcast 上追平同特征同数据的分类器,领先六个零样本音频语言模型中最佳者 0.072、领先同数据微调的音频语言模型 0.026,20 个问题只需 13.1 毫秒(比音频语言模型快 17~41 倍);还能应付改写问题、缩减或全新标签集、音阶与性别,并在 13 种语言的 21 个未见语料上,于词面不含情绪处领先最佳零样本音频语言模型 0.138。"
+      },
+      "problem": {
+        "en": "Can one pass over a voice answer any written perceptual question with calibrated probabilities?",
+        "zh": "对一段语音的一次前向,能否带校准概率地回答任意写下的感知问题?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "choice, score and yes/no questions written at request time",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.22401v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "20 questions in 13.1 ms",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.22401v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.22401v1",
+      "source_abstract_sha256": "ae525df0c9c3b452b9b85b07476896bf617971c665f8f7990ee52925a5cd375d"
     },
     {
       "arxiv_id": "2610.20951",
@@ -9114,6 +11927,82 @@
       "source_abstract_sha256": "ceefb2eccfddfe0f2c66e214ad87ea251d1a87c744f03ea146e83287daa5eed7"
     },
     {
+      "arxiv_id": "2610.17727",
+      "title": "SkillScreen: High-Recall Screening of Malicious Agent Skills with Decision Models",
+      "authors": [
+        "Jerrold Huang",
+        "Junwei Quan",
+        "Saiyue Lyu",
+        "Zihan Guo",
+        "Yingqiang Ge"
+      ],
+      "affiliations": [
+        "University of British Columbia",
+        "University of Toronto",
+        "Rutgers University"
+      ],
+      "first_submitted": "2026-10-13",
+      "updated": "2026-10-14",
+      "version": 2,
+      "arxiv_url": "https://arxiv.org/abs/2610.17727",
+      "reviewed_url": "https://arxiv.org/abs/2610.17727v2",
+      "pdf_url": "https://arxiv.org/pdf/2610.17727v2",
+      "arxiv_categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "security",
+      "relation_level": "direct",
+      "tags": [
+        "security",
+        "agents",
+        "evaluation"
+      ],
+      "summary": {
+        "en": "Screens agent skills for malicious behaviour with decision models, where legitimate automation and attacks look deceptively similar and a practical screen must catch nearly every attack while sparing benign skills: the approach reads a skill's visible text as an NLI-style hypothesis and scores contradiction; systems compared include task-tuned models, the untuned OpenJev-2B using the same hypothesis, and TypeSafe Jev 1.13 queried as a commercial NLI API with the same hypothesis and visible text prefix (Jev-2B detects 4% of malicious skills untuned, quantifying how much task-specific training matters), alongside SkillSpector as a static-scanner control.",
+        "zh": "用决策模型筛查智能体技能的恶意行为——合法自动化与攻击在表面惊人地相似,实用的筛查须几乎不漏攻击又不误伤良性技能:方法把技能可见文本读作 NLI 式假设并为「矛盾」打分;对比系统包括任务微调模型、用同一假设的未调优 OpenJev-2B,以及以同一假设与可见文本前缀作为商用 NLI API 调用的 TypeSafe Jev 1.13(未调优的 Jev-2B 仅检出 4% 的恶意技能,量化了任务微调的重要性),并以 SkillSpector 作静态扫描器对照。"
+      },
+      "problem": {
+        "en": "Can decision models give near-certain recall on malicious agent skills without rejecting benign automation?",
+        "zh": "决策模型能否对恶意智能体技能做到近乎必中,同时不误伤良性自动化?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "We query TypeSafe Jev 1.13 (TypeSafe, 2026), a commercial NLI API",
+          "location": "Experimental setup",
+          "source_url": "https://arxiv.org/html/2610.17727v2"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "Jev-2B detects 4% of malicious skills",
+          "location": "Results (untuned baseline)",
+          "source_url": "https://arxiv.org/html/2610.17727v2"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.17727v2",
+      "source_abstract_sha256": null
+    },
+    {
       "arxiv_id": "2610.17309",
       "title": "StartLux-Decision: AutoThink Decision Models with Reinforcement Learning for Calibrated Deliberative Decisions",
       "authors": [
@@ -9599,6 +12488,74 @@
       "source_abstract_sha256": "6bae55e5a32549201fcc42a14af69a27c8eae28928d1deb10f2c4610513c9c19"
     },
     {
+      "arxiv_id": "2610.16550",
+      "title": "CT0: Cybersecurity Transformer",
+      "authors": [
+        "Víctor Mayoral-Vilches"
+      ],
+      "affiliations": [
+        "Alias Robotics, Vitoria-Gasteiz"
+      ],
+      "first_submitted": "2026-10-12",
+      "updated": "2026-10-15",
+      "version": 2,
+      "arxiv_url": "https://arxiv.org/abs/2610.16550",
+      "reviewed_url": "https://arxiv.org/abs/2610.16550v2",
+      "pdf_url": "https://arxiv.org/pdf/2610.16550v2",
+      "arxiv_categories": [
+        "cs.CR"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "security",
+      "relation_level": "related",
+      "tags": [
+        "security",
+        "training",
+        "architecture"
+      ],
+      "summary": {
+        "en": "Asks how small a cybersecurity-specialist transformer can be and still serve a practitioner: CT0-Micro is a ~4B model built on an open base whose backbone is specialised by two-phase on-policy distillation on a Cybersecurity AI dataset, and CT0 serves two modes from one set of weights - System 1 answers typed security decisions (is this file suspicious, is this request an attack, did the model just refuse) in a single forward pass without generating a token, System 2 is the usual tool-using agent, and a confidence gate spends generation only where the fast path is unsure (a pointer head adapted from the Jev/System One lineage); specialisation lifts the agentic path to 21.1% on cybench-subtask against 7.6% for its base, the fast path screens eighty files per second for indicators of compromise, catches its own refusals at 96.5% in 47 ms where the self-judging route reaches 76.5% in 254 ms and misses half, and flags jailbreaks at AUROC 0.966 in 8 ms.",
+        "zh": "追问一个网络安全专精的 transformer 可以做到多小仍对从业者有用:CT0-Micro 是约 4B 的模型,在开源基座上经两阶段在线策略蒸馏于 Cybersecurity AI 数据集完成专精;CT0 一套权重服务两种模式——系统一单次前向、不生成 token 地回答类型化安全决策(该文件是否可疑、该请求是否攻击、模型是否刚拒绝),系统二是常规工具智能体,置信闸门只在快通道不确定时才花生成(指针头改编自 Jev/系统一脉络);专精使智能体路径在 cybench-subtask 上从基座的 7.6% 升至 21.1%;快通道每秒筛查八十个文件的失陷指标,47 毫秒内以 96.5% 抓住自身拒答——自我判断路径 254 毫秒只到 76.5% 且漏掉一半——并在 8 毫秒内以 AUROC 0.966 标记越狱请求。"
+      },
+      "problem": {
+        "en": "How small can a cybersecurity model be if a fast typed-decision path handles what generation used to?",
+        "zh": "若由快速类型化决策通道接手原本靠生成完成的判断,网络安全模型能做多小?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "System 1 answers typed security decisions",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.16550v2"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "screens eighty files per second",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.16550v2"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.16550v2",
+      "source_abstract_sha256": "543df0b140c98e9952048fea191a13efd2b4d58613fa65e4e5ed4ffde8995c04"
+    },
+    {
       "arxiv_id": "2610.16238",
       "title": "Embodied Skill Bench: Benchmarking How Well Agents with Embodied Skills Perform on Physical Tasks",
       "authors": [
@@ -9988,6 +12945,158 @@
       "source_abstract_sha256": "9f33fd2ebe00dee4da709d6a4c634981ed09d5cc896bac4dd304984b346ae8f1"
     },
     {
+      "arxiv_id": "2610.15501",
+      "title": "Large Decision Models: Repurposing Large Language Models as Single-Pass Decision Makers",
+      "authors": [
+        "Ziyi Chen",
+        "Yan Zhang",
+        "Jianhui Wei",
+        "Jianing Yin",
+        "Daoan Zhang"
+      ],
+      "affiliations": [
+        "University of Illinois Urbana-Champaign",
+        "National University of Singapore",
+        "Zhejiang University",
+        "University of Pennsylvania",
+        "University of Rochester"
+      ],
+      "first_submitted": "2026-10-11",
+      "updated": "2026-10-11",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.15501",
+      "reviewed_url": "https://arxiv.org/abs/2610.15501v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.15501v1",
+      "arxiv_categories": [
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "architecture",
+      "relation_level": "direct",
+      "tags": [
+        "architecture",
+        "training",
+        "efficiency"
+      ],
+      "summary": {
+        "en": "Repurposes LLMs as single-pass decision makers (Large Decision Models): instead of autoregressive decoding, an LLM maps a prompt and a run-time label set to a distribution over the labels in one forward pass - an operation the authors call readout - which existing systems such as Jev, Nimble, OpenJev and Laya already offer; decision tuning adapts the model's rollout habit to this readout interface, and the tuned models are compared against released decision models on Nimble's 13-subset benchmark and the typed-decisions test set reported for Jev and Laya; readout recovers a median 92% of reasoning's accuracy advantage while generating 27-58% of its tokens.",
+        "zh": "把 LLM 改造为单次前向的决策者(Large Decision Models):不再自回归解码,而是把提示与运行时给定的标签集一次前向映射为标签分布——作者称之为 readout,Jev、Nimble、OpenJev、Laya 等现有系统已提供该接口;决策微调(decision tuning)把模型固有的 rollout 习惯适配到 readout 接口,并在 Nimble 13 子集基准与 Jev、Laya 公布的 typed-decisions 测试集上与已发布决策模型对比;readout 以 27%~58% 的 token 生成量挽回推理准确率优势的中位数 92%。"
+      },
+      "problem": {
+        "en": "Can one LLM serve both generation and single-pass readout over run-time label sets without losing either skill?",
+        "zh": "同一个 LLM 能否既保留生成、又对运行时标签集做单次 readout 而互不损伤?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "Existing systems such as Jev, Nimble, OpenJev and Laya offer this interface",
+          "location": "Section 2",
+          "source_url": "https://arxiv.org/html/2610.15501v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "a median 92% of reasoning",
+          "location": "Results (readout recovers a median 92% of reasoning's accuracy advantage)",
+          "source_url": "https://arxiv.org/html/2610.15501v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [
+        {
+          "url": "https://github.com/JianhuiWei7/LDM",
+          "source_url": "https://arxiv.org/abs/2610.15501v1",
+          "source_location": "body (Code is available at)",
+          "verified_on": "2026-11-04",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.15501v1",
+      "source_abstract_sha256": null
+    },
+    {
+      "arxiv_id": "2610.37676",
+      "title": "Scoring Explanations Without Reading Them: Structural Shortcuts in Automated-Interpretability Evaluation Data",
+      "authors": [
+        "Xupeng Chen"
+      ],
+      "affiliations": [
+        "Dimension Gate"
+      ],
+      "first_submitted": "2026-10-10",
+      "updated": "2026-10-10",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.37676",
+      "reviewed_url": "https://arxiv.org/abs/2610.37676v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37676v1",
+      "arxiv_categories": [
+        "cs.CL"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "evaluation",
+      "relation_level": "direct",
+      "tags": [
+        "evaluation",
+        "calibration",
+        "reproducibility"
+      ],
+      "summary": {
+        "en": "Finds that automated-interpretability evaluation can be scored without reading the explanation: on Neuronpedia's stored fuzzing runs for 500 random GPT-2 small features, 91.3% of activating examples are cropped with the peak on the centre token, and a rule that says yes exactly when the centre token is marked reaches balanced accuracy 0.979 against 0.838 for the stored LLM scorers; the paper gives closed forms for what such structural-cue rules can score, separates sequence cues by decomposition, and re-tests whether explanations change conclusions using one scorer, Jev, a commercial typed decision model - which reaches pooled correlation 0.331 with the real explanation on natural windows against 0.013 with a shuffled one, above every position prior.",
+        "zh": "发现自动可解释性评测不看解释也能拿高分:在 Neuronpedia 存储的 500 个随机 GPT-2 small 特征模糊测试中,91.3% 的激活样本裁剪后峰值恰在中心 token,一条「中心 token 被标记就说是」的规则平衡准确率达 0.979,而存库的 LLM 评分器只有 0.838;论文给出此类结构线索规则可得分数的闭式解,用分解方法剥离序列线索,并以一个商用类型化决策模型 Jev 重测解释是否改变结论——自然窗口上 Jev 拿到真解释时汇聚相关 0.331、拿打乱解释时 0.013,高于一切位置先验。"
+      },
+      "problem": {
+        "en": "Are automated-interpretability scores evidence about the explanation, or about structural cues in the evaluation data?",
+        "zh": "自动可解释性的分数究竟是对解释的证据,还是对评测数据结构线索的证据?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "one scorer, Jev, a commercial typed decision model",
+          "location": "Section on the scorer",
+          "source_url": "https://arxiv.org/html/2610.37676v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "reaches a pooled correlation of 0.331 over 49 features",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.37676v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.37676v1",
+      "source_abstract_sha256": null
+    },
+    {
       "arxiv_id": "2610.15029",
       "title": "Toward System One Clinical Intelligence: Parameter-Efficient Fine-Tuning and Counterfactual Explainability of Decision Foundation Models",
       "authors": [
@@ -10056,6 +13165,79 @@
       "code": [],
       "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.15029v1",
       "source_abstract_sha256": "40def5386ff121fb968c99153ce814b54b9106bb8c8dd974010acfe42cc4da17"
+    },
+    {
+      "arxiv_id": "2610.14912",
+      "title": "Probable but Not Valid: A Psychometric Audit of Decision Models as Synthetic Survey Respondents",
+      "authors": [
+        "Mantas Lukauskas",
+        "Viktorija Šarkauskaitė"
+      ],
+      "affiliations": [
+        "Hostinger",
+        "Kaunas University of Technology",
+        "AI Insight Lab"
+      ],
+      "first_submitted": "2026-10-10",
+      "updated": "2026-10-10",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.14912",
+      "reviewed_url": "https://arxiv.org/abs/2610.14912v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.14912v1",
+      "arxiv_categories": [
+        "cs.AI",
+        "cs.CY",
+        "stat.AP"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "evaluation",
+      "relation_level": "direct",
+      "tags": [
+        "evaluation",
+        "social-science",
+        "calibration"
+      ],
+      "summary": {
+        "en": "Runs a psychometric audit of decision models used as synthetic survey respondents: because decision models return a probability for each point of a rating scale instead of text, silicon samples built on them promise cheap survey simulation, but the audit tests whether the resulting responses are merely probable or actually valid - comparing latent-trait recovery, inter-item consistency and subgroup structure against human reference samples across the evaluated systems (Jev 1.13 among them, called through OpenRouter) - and reports where the models' score distributions track real respondent behaviour and where they collapse to central, over-confident answers that no validity check on probabilities alone can rescue.",
+        "zh": "对被用作合成问卷受访者的决策模型做心理测量学审计:决策模型对量表每个刻度点返回概率而非文本,以此构建的「硅样本」承诺廉价的问卷模拟;该审计检验其作答是「看起来像样」还是真正有效——在潜变量恢复、条目间一致性与子群体结构上与人类参照样本对比(受测系统包括经 OpenRouter 调用的 Jev 1.13)——并报告模型分数分布何时贴近真实受访者行为、何时坍缩为居中且过度自信的答案,而仅凭概率的效度检查无法挽救这一点。"
+      },
+      "problem": {
+        "en": "Are decision-model survey responses valid psychological measurements, or just probable-looking text-free answers?",
+        "zh": "决策模型的问卷作答是有效的心理测量,还是 merely 像模像样的无文本回答?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "Jev stays below MiniMax M3",
+          "location": "Results (model comparison)",
+          "source_url": "https://arxiv.org/html/2610.14912v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "Decision models are a new class of language models",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.14912v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.14912v1",
+      "source_abstract_sha256": null
     },
     {
       "arxiv_id": "2610.14631",
@@ -10348,6 +13530,80 @@
       ],
       "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.14112v1",
       "source_abstract_sha256": "3e342feaa81c1a6fd83db29afc8d9781bffe681a200401203d1a816f63db41f6"
+    },
+    {
+      "arxiv_id": "2610.13675",
+      "title": "Can Multimodal Decision Models Classify Breast Ultrasound Images? Benchmarking CLEF and CLEF-Flash Across Prompts and Datasets",
+      "authors": [
+        "Tran Cao Minh",
+        "Hai Tran",
+        "Ha Minh Tan"
+      ],
+      "affiliations": [
+        "Research and Development Center, VNSO Technology JSC",
+        "Department of Information Technology, Ho Chi Minh City University of Education",
+        "Faculty of Information Science and Engineering, University of Information Technology",
+        "Vietnam National University, Ho Chi Minh City"
+      ],
+      "first_submitted": "2026-10-09",
+      "updated": "2026-10-09",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.13675",
+      "reviewed_url": "https://arxiv.org/abs/2610.13675v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13675v1",
+      "arxiv_categories": [
+        "eess.IV",
+        "cs.CV"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "evaluation",
+      "relation_level": "related",
+      "tags": [
+        "evaluation",
+        "medical",
+        "multimodal"
+      ],
+      "summary": {
+        "en": "Benchmarks open multimodal decision models on breast ultrasound: 2,818 images from Dataset B, BUSI and BUS-BRA (binary benign-malignant, except BUSI's normal class) are submitted without preprocessing or parameter changes to CLEF and CLEF-Flash under three prompts - minimal labels, an explicit classification task, or sonographic criteria - reporting accuracy, macro F1, balanced accuracy, precision, throughput and latency; CLEF-Flash with the clinical prompt is most accurate everywhere (74.85% Dataset B, 66.28% BUSI, 51.63% BUS-BRA) while CLEF with the task prompt wins macro F1 and balanced accuracy on BUSI, clinical instructions help CLEF-Flash but hurt CLEF, benign-to-malignant confusion is frequent, and on BUS-BRA every configuration falls below a 67.63% majority-class predictor - motivating class-specific evaluation before clinical use (TypeSafe's Jev interface is the formulation's reference, not an evaluated system).",
+        "zh": "在乳腺超声上评测开源多模态决策模型:来自 Dataset B、BUSI 与 BUS-BRA 的 2,818 张图像(除 BUSI 含正常类外均为良恶二分类)不做预处理、不改参数,以三种提示——极简标签、显式分类任务、超声学标准——提交给 CLEF 与 CLEF-Flash,报告准确率、宏 F1、平衡准确率、精确率、吞吐与延迟;带临床提示的 CLEF-Flash 在三个数据集上准确率均最高(74.85%、66.28%、51.63%),而带任务提示的 CLEF 在 BUSI 上宏 F1 与平衡准确率最佳;临床指令对 CLEF-Flash 有益却全面损害 CLEF;良→误判恶的混淆频繁,BUS-BRA 上所有配置都低于 67.63% 的多数类基线——提示临床应用前须做分类别评测(TypeSafe Jev 接口仅作为表述参照,未被评测)。"
+      },
+      "problem": {
+        "en": "How do open multimodal decision models behave on breast-ultrasound classification across prompts and datasets?",
+        "zh": "开源多模态决策模型在乳腺超声分类上,随提示与数据集变化的表现如何?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "benchmarks inference with CLEF and CLEF-Flash on 2818 breast ultrasound images",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.13675v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "74.85% on Dataset B",
+          "location": "Abstract (CLEF-Flash, clinical prompt)",
+          "source_url": "https://arxiv.org/abs/2610.13675v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.13675v1",
+      "source_abstract_sha256": null
     },
     {
       "arxiv_id": "2610.13092",
@@ -11384,6 +14640,86 @@
       "source_abstract_sha256": "dce90f6104b820ef0b9828edd817b1f58e5be0d8b7919da63d28f347e90143a1"
     },
     {
+      "arxiv_id": "2610.09896",
+      "title": "NL2Hull: A Natural Language-Driven Constrained Ship Design Decision Framework",
+      "authors": [
+        "Wenhua Huo",
+        "Fenglei Han",
+        "Wangyuan Zhao",
+        "Jialin Wu",
+        "Jiayi Han"
+      ],
+      "affiliations": [
+        "Harbin Engineering University"
+      ],
+      "first_submitted": "2026-10-07",
+      "updated": "2026-10-07",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.09896",
+      "reviewed_url": "https://arxiv.org/abs/2610.09896v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.09896v1",
+      "arxiv_categories": [
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "direct",
+      "tags": [
+        "applications",
+        "multimodal",
+        "benchmark"
+      ],
+      "summary": {
+        "en": "Casts natural-language ship-form editing as typed decisions: a decision model reads the design state and returns, in one pass, both a natural-language editing instruction and a probability distribution over candidate answers for each typed question; on the new Ship Design Decision Benchmark (SDDBench) - covering question accuracy, probability quality, FFD exact match and latency - the trained Chip model reaches 99.32% FFD exact match with NLL 0.0951, ECE 0.0032 and Brier 0.0551, beating JEV's 90.96% question accuracy and 84.52% FFD exact match, and Chip keeps general decision competence when tested on the public JevBench against published typed-decision references.",
+        "zh": "把自然语言驱动的船体外形编辑转化为类型化决策:决策模型读取设计状态,一次前向同时给出自然语言编辑指令与每个类型化问题上候选答案的概率分布;在新提出的船舶设计决策基准 SDDBench(涵盖问题准确率、概率质量、FFD 精确匹配与延迟)上,训练出的 Chip 模型 FFD 精确匹配 99.32%,NLL 0.0951、ECE 0.0032、Brier 0.0551,优于 JEV 的 90.96% 问题准确率与 84.52% FFD 精确匹配;在公开 JevBench 上对照已发表的类型化决策参考结果,Chip 仍保持通用决策能力。"
+      },
+      "problem": {
+        "en": "Can typed decisions drive constrained ship-form editing with calibrated probabilities in one pass?",
+        "zh": "类型化决策能否一次前向、带校准概率地驱动带约束的船体外形编辑?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "lower than the corresponding values of JEV",
+          "location": "Section 3.2.1, SDDBench results",
+          "source_url": "https://arxiv.org/html/2610.09896v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "FFD exact match at 99.32%",
+          "location": "Section 3.2.1, SDDBench results",
+          "source_url": "https://arxiv.org/html/2610.09896v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [
+        {
+          "url": "https://github.com/wenhuahuo/NL2Hull",
+          "source_url": "https://arxiv.org/abs/2610.09896v1",
+          "source_location": "body (Our code and dataset is available at)",
+          "verified_on": "2026-11-04",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.09896v1",
+      "source_abstract_sha256": null
+    },
+    {
       "arxiv_id": "2610.09683",
       "title": "System Switch: When Should a Fast Decision Model Stop and Think?",
       "authors": [
@@ -12041,6 +15377,84 @@
       "source_abstract_sha256": "a44799c83020fe914731ea1b534856e6928b406ce199b1589b84cea91f25c6ed"
     },
     {
+      "arxiv_id": "2610.07716",
+      "title": "JevCascade: Readout Stability and Inference-Time Compute Allocation for Prefill-Only Decision Models",
+      "authors": [
+        "Ran Li",
+        "Lei Chen"
+      ],
+      "affiliations": [
+        "Hong Kong University of Science and Technology",
+        "Hong Kong University of Science and Technology (Guangzhou)"
+      ],
+      "first_submitted": "2026-10-06",
+      "updated": "2026-10-10",
+      "version": 2,
+      "arxiv_url": "https://arxiv.org/abs/2610.07716",
+      "reviewed_url": "https://arxiv.org/abs/2610.07716v2",
+      "pdf_url": "https://arxiv.org/pdf/2610.07716v2",
+      "arxiv_categories": [
+        "cs.CL"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "architecture",
+      "relation_level": "related",
+      "tags": [
+        "adaptive-reasoning",
+        "efficiency",
+        "cascading"
+      ],
+      "summary": {
+        "en": "Makes inference-time compute allocation decidable for prefill-only decision models, which score every menu candidate in one forward pass and never decode: when an intervention changes only the menu (input text fixed), the post-intervention accuracy is already determined by the cached first-pass distribution - a restriction predictor simply restricts the pass-1 probabilities to the new menu, renormalizes and reads the argmax, with no labels and no second pass, predicting menu-only interventions to within 4.2 points across six model families and sixteen datasets (exactly for one family), while a probability-level variant errs by 21.0 points and same-scale generative models by 1.6-15.8; exploiting this, uniform extra passes buy calibration but almost no accuracy, and at matched cost a confidence cascade beats every scheme that re-asks the same model - a 0.8B model on a curated five-candidate menu reaches 95.4% on CLINC150 against 80.0% for a 4B model on the full 150-label menu.",
+        "zh": "让仅预填充的决策模型的推理时算力分配变得可决策:这类模型一次前向为菜单全部候选打分、从不解码;当干预只改菜单(输入文本不变)时,干预后的准确率已由缓存的首遍分布决定——限制预测器只需把首遍概率限制到新菜单、重归一化并取 argmax,零标签、零二次前向,在六个模型族、十六个数据集上把仅菜单干预预测到 4.2 个点以内(其中一族完全精确),而概率层面的同类估计误差 21.0 个点,同规模生成式模型差 1.6~15.8 个点;据此,均匀加算遍数只买到校准、几乎买不到准确率,等成本下置信级联胜过一切重问同一模型的方案——0.8B 模型在精选五候选菜单上于 CLINC150 达 95.4%,而 4B 模型在全量 150 标签菜单上只有 80.0%。"
+      },
+      "problem": {
+        "en": "Can a decision model tell, before spending compute, whether a second pass would change its answer?",
+        "zh": "决策模型能否在花费算力之前就知道,再算一遍会不会改变答案?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "Prefill-only decision models score every candidate in a menu",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.07716v2"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "95.4% on CLINC150",
+          "location": "Abstract (0.8B on curated 5-candidate menu)",
+          "source_url": "https://arxiv.org/abs/2610.07716v2"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [
+        {
+          "url": "https://github.com/rlisml/jev-cascade",
+          "source_url": "https://arxiv.org/abs/2610.07716v2",
+          "source_location": "body (Code and data are available at)",
+          "verified_on": "2026-11-04",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.07716v2",
+      "source_abstract_sha256": null
+    },
+    {
       "arxiv_id": "2610.07327",
       "title": "SharedKV-BT: Node-Local Typed Decisions for Behavior-Tree Agents",
       "authors": [
@@ -12107,6 +15521,76 @@
       "code": [],
       "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.07327v1",
       "source_abstract_sha256": "3e6dd354dad796572aba184c563aa771bbc30a0d969f67267c78a24ef897f998"
+    },
+    {
+      "arxiv_id": "2610.07177",
+      "title": "CLM-as-a-Judge: Evaluating an Open Contrastive Decision Model on Public Judge Benchmarks",
+      "authors": [
+        "Gowthamkumar Nandakishore"
+      ],
+      "affiliations": [
+        "Independent researcher"
+      ],
+      "first_submitted": "2026-10-05",
+      "updated": "2026-10-05",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.07177",
+      "reviewed_url": "https://arxiv.org/abs/2610.07177v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.07177v1",
+      "arxiv_categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "evaluation",
+      "relation_level": "related",
+      "tags": [
+        "judging",
+        "calibration",
+        "evaluation"
+      ],
+      "summary": {
+        "en": "Evaluates an open contrastive decision model as a judge and finds it near chance on the hard public benchmarks: Contrastive-LM/CLM-v0.1-8B scores 0.351-0.593 (best-of-four and pairwise, against chances of 0.250 and 0.500), is statistically indistinguishable from coin flipping on RM-Bench and JudgeBench, and answers every HaluEval item with one constant label; same-parameter reward models and generative judges score far higher everywhere. Two properties do work: a single pooled temperature fit repairs overconfident raw scores (+0.401 at worst) to ECE at most 0.062, and the decision order-flip rate is 0.0002 against 0.2188 for a generative judge with a near-zero length-preference shift; but the confidence-gated cascade escalates 0.923-1.000 of items to the strong judge at a pre-registered 0.97 retention bar - calibrated confidence about a near-chance judge has almost nothing to keep - under a preregistration frozen before any test item was seen.",
+        "zh": "评测一个开源对比式决策模型担任裁判,发现在高难公开基准上接近随机:Contrastive-LM/CLM-v0.1-8B 在四选一与成对比较中得 0.351~0.593(机会水平分别为 0.250 与 0.500),在 RM-Bench 与 JudgeBench 上与抛硬币无统计差异,HaluEval 每题都答同一个标签;同参数量的奖励模型与生成式裁判全面大幅更高。有两个性质确实成立:一次合并温度拟合把最差高估 +0.401 的原始分数修复到 ECE 至多 0.062,且决策翻转率 0.0002(生成式裁判 0.2188)、长度偏好偏移近乎为零;但在预注册的 0.97 保留线下,置信闸门级联把 0.923~1.000 的条目升级给强裁判——对一个近乎随机的裁判,校准好的置信几乎无可保留;评测在见到任何测试条目前已冻结预注册。"
+      },
+      "problem": {
+        "en": "What can a small open decision model contribute as a judge when its raw judgments are near chance?",
+        "zh": "当一个开源小决策模型的原始判断近乎随机时,它作裁判还能贡献什么?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "An open contrastive decision model is near chance as a judge",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.07177v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "repairs expected calibration error to at most 0.062",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.07177v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.07177v1",
+      "source_abstract_sha256": null
     },
     {
       "arxiv_id": "2610.06744",
@@ -12585,6 +16069,85 @@
       ],
       "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.04985v1",
       "source_abstract_sha256": "5dc2955350437ef4a8fbde47bb4cf7c2e4173a76c61b0c6de6d2768f388cc0e4"
+    },
+    {
+      "arxiv_id": "2610.06950",
+      "title": "Learning to Decide, Not to Reason: Parameter-Efficient Decision Operators via Low-Rank Activation Steering",
+      "authors": [
+        "Ran Li",
+        "Lei Chen"
+      ],
+      "affiliations": [
+        "Hong Kong University of Science and Technology",
+        "Hong Kong University of Science and Technology (Guangzhou)"
+      ],
+      "first_submitted": "2026-10-03",
+      "updated": "2026-10-08",
+      "version": 2,
+      "arxiv_url": "https://arxiv.org/abs/2610.06950",
+      "reviewed_url": "https://arxiv.org/abs/2610.06950v2",
+      "pdf_url": "https://arxiv.org/pdf/2610.06950v2",
+      "arxiv_categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "architecture",
+      "relation_level": "related",
+      "tags": [
+        "training",
+        "efficiency",
+        "architecture"
+      ],
+      "summary": {
+        "en": "Injects skills into a frozen language model two orders of magnitude cheaper than reinforcement-learning operators: DecSteer is a System-1 decision operator trained by behaviour cloning whose default form uses 330K parameters to match a 1.33M RL-trained operator while collapsing 3,685-token deliberation into a 6-token decision with no accuracy loss, and whose rank-4 variant needs only 23K parameters (1/58 of the strongest published skill operator) for SearchQA and nearly for LiveMath; the recipe transfers across five tasks and three backbones with out-of-distribution gains persisting on LiveMath problems released months after training, and the trainability edge is traced to initialization - prior operators zero the gradient of both large factor matrices at step one - while a logit-lens probe shows the operator amplifies the answer along the model's existing late-layer pathway rather than writing it earlier.",
+        "zh": "以比强化学习算子便宜约两个数量级的代价把技能注入冻结语言模型:DecSteer 是行为克隆训练的系统一决策算子,默认 330K 参数即可匹敌 1.33M 的 RL 算子,并把 3,685 token 的深思坍缩为 6 token 的决策而无精度损失;rank-4 变体只需 23K 参数(最强已发表技能算子的 1/58)即足以覆盖 SearchQA、近乎覆盖 LiveMath;同一配方跨五个任务、三个骨干迁移,对训练数月后发布的 LiveMath 新题仍有分布外收益;可训练性优势被归因于初始化——既有算子在第一步就把两个大因子矩阵的梯度清零——logit-lens 探针则显示算子是沿模型既有的后层通路放大答案,而非提前写出答案。"
+      },
+      "problem": {
+        "en": "Can a low-rank steering operator decide in six tokens what deliberation did in thousands?",
+        "zh": "低秩转向算子能否用 6 个 token 完成数千 token 深思才能做的决策?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "a System-1 decision operator trained by behavior cloning",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.06950v2"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "330K parameters to match a 1.33M-parameter operator",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.06950v2"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [
+        {
+          "url": "https://github.com/rlisml/decisionsteer",
+          "source_url": "https://arxiv.org/abs/2610.06950v2",
+          "source_location": "body (Code on GitHub)",
+          "verified_on": "2026-11-04",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.06950v2",
+      "source_abstract_sha256": "5bd3131b9c2d739b06b6b97e73c52ed4730c2569ae90816db9aab4e6c20fbbe2"
     },
     {
       "arxiv_id": "2610.04345",
@@ -13664,6 +17227,83 @@
       "source_abstract_sha256": "ad984b3c543d45431d712c095bd59f755d50e631e6ffce570ea9f644dfa101ac"
     },
     {
+      "arxiv_id": "2610.01601",
+      "title": "Permutation-Robust Decision Modeling with Candidate-Independent Block-Causal Attention",
+      "authors": [
+        "Guy Amit"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "first_submitted": "2026-10-01",
+      "updated": "2026-10-01",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.01601",
+      "reviewed_url": "https://arxiv.org/abs/2610.01601v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.01601v1",
+      "arxiv_categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "architecture",
+      "relation_level": "related",
+      "tags": [
+        "option-sensitivity",
+        "architecture",
+        "training"
+      ],
+      "summary": {
+        "en": "Attacks a hidden failure mode of decision models that score a variable-sized candidate set in one sequence: standard causal cross-encoding is expressive but lets a candidate's score depend on serialization order rather than the decision problem itself - increasingly relevant where System 1 components inside generative systems see candidates proposed or ordered differently across runs; candidate-independent block-causal attention preserves causal computation within the shared context and each candidate while blocking cross-candidate information flow and resetting candidate positions, consistently reducing permutation sensitivity at competitive decision quality across Gemma 3 1B, Qwen3 1.7B and Qwen3 4B backbones, with ablations showing candidate isolation as the primary source of the effect and position resetting completing the symmetry; code and the Qwen3-4B artifact are released.",
+        "zh": "针对在单序列中为可变候选集打分的决策模型的隐患:标准因果交叉编码表达力强,却会让候选分数取决于序列化顺序而非决策问题本身——当生成系统内的系统一组件在不同运行中看到不同提出或排序的候选时,问题日益突出;候选独立块因果注意力在共享上下文与每个候选内部保留因果计算,同时阻断跨候选信息流并重置候选位置,在 Gemma 3 1B、Qwen3 1.7B 与 4B 骨干上一致降低排列敏感且决策质量具竞争力;消融显示候选隔离是主因、位置重置补全对称性;代码与 Qwen3-4B 产物已发布。"
+      },
+      "problem": {
+        "en": "Should a candidate's score depend on where it sits in the serialized option sequence?",
+        "zh": "候选的分数应该取决于它在序列化选项序列中的位置吗?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "Decision models often score a variable-sized set of candidate actions",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.01601v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "consistently reduces permutation sensitivity",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.01601v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [
+        {
+          "url": "https://github.com/guyAmit/ci-decision-models",
+          "source_url": "https://arxiv.org/abs/2610.01601v1",
+          "source_location": "body (Code is available at the project repository)",
+          "verified_on": "2026-11-04",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.01601v1",
+      "source_abstract_sha256": "4e73bf27dc933ddd303c75b28bc53d107edb3f108b50e7bad582fea21f9b21cb"
+    },
+    {
       "arxiv_id": "2610.01231",
       "title": "Judgement in the Age of Jev: From Evaluation Scarcity to Evaluation Abundance",
       "authors": [
@@ -14696,6 +18336,86 @@
       }
     },
     {
+      "arxiv_id": "2609.37832",
+      "title": "Can a Cacheable Decision Model Follow Rules?",
+      "authors": [
+        "Dushyant Rajput",
+        "Nirdesh Chauhan",
+        "Siddharth Kosaraju"
+      ],
+      "affiliations": [
+        "AltSlate Labs LLP"
+      ],
+      "first_submitted": "2026-09-29",
+      "updated": "2026-09-29",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2609.37832",
+      "reviewed_url": "https://arxiv.org/abs/2609.37832v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.37832v1",
+      "arxiv_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "architecture",
+      "relation_level": "related",
+      "tags": [
+        "architecture",
+        "efficiency",
+        "guarantees"
+      ],
+      "summary": {
+        "en": "Asks whether a decision model that follows rules can also be cacheable: Certo, a small non-generative model (Qwen3-4B) that scores candidate actions from text and returns a probability, is most accurate as a joint scorer reading state, rules and each candidate together - but that makes cost grow with the menu; encoding each candidate once and reusing it across states is about 5x cheaper at 77 candidates yet separates state from candidate, and the tested conversion to cacheable scoring loses rule-sensitivity (recall@1 1.00 falls to 0.24) with a failed shortlist+rerank rescue; targeted counterfactual supervision restores strong performance on held-out synthetic rule tasks (paraphrase, counterfactual, composition; reproducible across seeds), on real rules the benefit is not established - after fixing a truncation confound the joint scorer wins the short tier 0.861 vs 0.500 - and a matched cross-domain prose mixture even hurts (-9.3 and -16.2 points).",
+        "zh": "追问能遵循规则的决策模型能否同时可缓存:Certo 是一个小型非生成模型(Qwen3-4B),从文本为候选动作打分并返回概率;它作为联合打分器(状态、规则与每个候选一起读)最准,但成本随菜单增长;把每个候选只编码一次、跨状态复用在 77 个候选时便宜约 5 倍,却把状态与候选割裂——实测转为可缓存打分后规则敏感性丢失(recall@1 从 1.00 跌到 0.24),短清单+重排的补救也失败;针对性的反事实监督能在留出的合成规则任务(复述、反事实、组合)上恢复强表现且跨种子可复现,但在真实规则上收益未确立——修正截断混杂后联合打分器在短档以 0.861 对 0.500 取胜——而匹配的跨领域真实语料混合甚至有害(-9.3 与 -16.2 个点)。"
+      },
+      "problem": {
+        "en": "Can a cacheable decision model still read the rules, or does caching break rule-sensitivity?",
+        "zh": "可缓存的决策模型还能读懂规则吗?缓存会不会破坏规则敏感性?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "scores candidate actions from their text and returns a probability",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2609.37832v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "recall@1 1.00",
+          "location": "Abstract (joint scorer holds 1.00 while caching drops to 0.24)",
+          "source_url": "https://arxiv.org/abs/2609.37832v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [
+        {
+          "url": "https://github.com/AltSlate-Labs/certo-rules-or-reuse",
+          "source_url": "https://arxiv.org/abs/2609.37832v1",
+          "source_location": "body (artifact release statement)",
+          "verified_on": "2026-11-04",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2609.37832v1",
+      "source_abstract_sha256": null
+    },
+    {
       "arxiv_id": "2609.37647",
       "title": "Evaluating and Benchmarking the System One Model Jev",
       "authors": [
@@ -15645,6 +19365,88 @@
       "source_abstract_sha256": "4aee8edd65542ffc0ba8800c681db222984cbf1bc40b239c829feb823aab3ffa"
     },
     {
+      "arxiv_id": "2609.34736",
+      "title": "SeLMRoute: Probabilistic Semantic Evidence for Large Language Model Routing",
+      "authors": [
+        "Vasilis Perifanis",
+        "Nikolaos Pavlidis",
+        "Symeon Symeonidis"
+      ],
+      "affiliations": [
+        "Indigma Innovations",
+        "Democritus University of Thrace",
+        "Athena Research Center"
+      ],
+      "first_submitted": "2026-09-28",
+      "updated": "2026-09-28",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2609.34736",
+      "reviewed_url": "https://arxiv.org/abs/2609.34736v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.34736v1",
+      "arxiv_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "architecture",
+      "relation_level": "direct",
+      "tags": [
+        "architecture",
+        "cascading",
+        "calibration"
+      ],
+      "summary": {
+        "en": "Routes each query to the most suitable LLM using probabilistic semantic evidence instead of latent embeddings: SeLMRoute has a typed decision model answer a small set of semantic questions about what the query needs (JEV exposing typed Noul, Choice and Score decisions, with open-weight Laya as the swap-in backend), then a separate performance regressor learned on grouped out-of-fold predictions maps that evidence to candidate-model scores; under a five-fold grouped protocol JEV-SeLMRoute reaches 72.64% average accuracy against 70.53% for Laya-SeLMRoute and 69.23% for the best single fixed model, while JEV-Direct routing without the semantic representation manages 68.78% - the JEV-based semantic state beats the Laya-based one by a statistically significant 2.1 points.",
+        "zh": "用概率化语义证据而非潜变量嵌入为每个查询挑选最合适的 LLM:SeLMRoute 先让类型化决策模型回答一小组关于查询需求的语义问题(JEV 提供类型化的 Noul/Choice/Score 决策,开源 Laya 可整体替换为后端),再由基于分组折外预测训练的性能回归器把证据映射为候选模型分数;五折分组协议下,JEV-SeLMRoute 平均准确率 72.64%,高于 Laya-SeLMRoute 的 70.53% 与最佳单一固定模型的 69.23%,不经语义表征的 JEV-Direct 只有 68.78%——基于 JEV 的语义状态比基于 Laya 的高 2.1 个点且统计显著。"
+      },
+      "problem": {
+        "en": "Can routing state what a query needs in explicit semantic evidence instead of opaque embeddings?",
+        "zh": "路由能否用显式语义证据说明查询需要什么,而非依赖不透明的嵌入?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "The JEV-based semantic state performs significantly better",
+          "location": "Results",
+          "source_url": "https://arxiv.org/html/2609.34736v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "JEV-Direct reaches 68.78%",
+          "location": "Results (five-fold direct-routing experiment)",
+          "source_url": "https://arxiv.org/html/2609.34736v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [
+        {
+          "url": "https://github.com/Indigma-Innovations/SeLMRoute",
+          "source_url": "https://arxiv.org/abs/2609.34736v1",
+          "source_location": "body (Our code is available at)",
+          "verified_on": "2026-11-04",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2609.34736v1",
+      "source_abstract_sha256": null
+    },
+    {
       "arxiv_id": "2609.34261",
       "title": "RoboICL: Embodied In-Context Learning with GPT-6 Astra",
       "authors": [
@@ -16385,6 +20187,84 @@
       "source_abstract_sha256": "d467da617d7fe4afe0495a87bbc05d99a12429c31c60c15690c3c01991d4613d"
     },
     {
+      "arxiv_id": "2609.33671",
+      "title": "COGNIT-Guard: Calibrated Standalone Direct-Decision Guardrails with Heterogeneous CPU-NPU Confidence Cascading under Explicit Latency and False-Positive Constraints",
+      "authors": [
+        "Hao Chen"
+      ],
+      "affiliations": [
+        "School of Cyber Security, Guangdong Polytechnic Normal University"
+      ],
+      "first_submitted": "2026-09-27",
+      "updated": "2026-09-27",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2609.33671",
+      "reviewed_url": "https://arxiv.org/abs/2609.33671v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.33671v1",
+      "arxiv_categories": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "security",
+      "relation_level": "related",
+      "tags": [
+        "security",
+        "calibration",
+        "cascading",
+        "efficiency"
+      ],
+      "summary": {
+        "en": "Decides when a safety gateway should generate tokens and when it should directly output a calibrated decision: COGNIT-Guard couples a validation-calibrated CPU fast gatekeeper with confidence-gated escalation to an NPU-resident 322M bidirectional direct-decision model (Laya-322M) under an asymmetric false-positive penalty, jointly handling probability calibration, dual-use false-positive control and heterogeneous CPU-NPU routing under explicit latency SLOs for pre-ingestion screening before the target LLM's prefill; on the clean unseen DUCS-Bench split (N=607) it reaches 98.85% accuracy with benign FPR 0.42%, 1.12% ECE and 0.0104 Brier; on Huawei Ascend 910C, pure NPU inference runs at 21.77 ms mean latency (45.90 QPS) and the live serial CPU-NPU cascade at 41.63 ms with 99.23% accuracy and 0.00% FPR.",
+        "zh": "判定安全网关何时该生成 token、何时该直接输出校准决策:COGNIT-Guard 把经校验校准的 CPU 快速守门员与置信闸门升级到 NPU 上的 322M 双向直出决策模型(Laya-322M)耦合,在非对称假阳性惩罚下同时处理概率校准、两用误报控制与显式延迟 SLO 下的 CPU—NPU 异构路由,用于目标 LLM 预填充前的摄入前筛查;在干净的未见 DUCS-Bench 测试集(N=607)上准确率 98.85%、良性误报率 0.42%、ECE 1.12%、Brier 0.0104;在华为昇腾 910C 上,纯 NPU 推理平均延迟 21.77 毫秒(45.90 QPS),实时串行 CPU—NPU 级联 41.63 毫秒、准确率 99.23%、误报 0.00%。"
+      },
+      "problem": {
+        "en": "When should a pre-ingestion safety guardrail decide directly instead of generating?",
+        "zh": "摄入前安全护栏何时应直接决策、何时才需要生成?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "directly output a calibrated decision",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2609.33671v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "98.85% accuracy",
+          "location": "Abstract (DUCS-Bench clean split)",
+          "source_url": "https://arxiv.org/abs/2609.33671v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [
+        {
+          "url": "https://github.com/moyuan10086/cascaded-guardrail-npu",
+          "source_url": "https://arxiv.org/abs/2609.33671v1",
+          "source_location": "body (Code, evaluation scripts, and the DUCS-Bench release)",
+          "verified_on": "2026-11-04",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2609.33671v1",
+      "source_abstract_sha256": null
+    },
+    {
       "arxiv_id": "2609.33538",
       "title": "Jev Matches 7B Language Models for Speech-Neuroprosthesis Rescoring",
       "authors": [
@@ -17111,6 +20991,83 @@
       ],
       "metadata_source": "https://export.arxiv.org/api/query?id_list=2609.30706v1",
       "source_abstract_sha256": "8048aa3e37eef910222dedf7945d3d4160bf82eab2dbb32bd7d3de417b9cd62a"
+    },
+    {
+      "arxiv_id": "2609.30454",
+      "title": "Auditing System-1 Models on Biosecurity-Relevant Benchmarks: Calibration, Selective Prediction, and Permutation Instability in a Non-Generative Model",
+      "authors": [
+        "Kimon Antonios Provatas",
+        "Ilias Georgakopoulos-Soares"
+      ],
+      "affiliations": [
+        "Division of Pharmacology and Toxicology, College of Pharmacy, The University of Texas at Austin"
+      ],
+      "first_submitted": "2026-09-24",
+      "updated": "2026-09-24",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2609.30454",
+      "reviewed_url": "https://arxiv.org/abs/2609.30454v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.30454v1",
+      "arxiv_categories": [
+        "cs.LG"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "security",
+      "relation_level": "direct",
+      "tags": [
+        "security",
+        "calibration",
+        "evaluation"
+      ],
+      "summary": {
+        "en": "Audits one commercial System-1 model - Jev, queried through the v1 REST endpoint where the alias jev-latest resolved to jev-1.13.0 throughout - on biosecurity-relevant knowledge: 6,020 multiple-choice items from the Weapons of Mass Destruction Proxy (WMDP), a paraphrase-robust WMDP-Bio variant and six LAB-Bench subtasks, measuring accuracy, calibration, error detection, selective prediction and sensitivity to option order; the analysis separates what the model knows from what its confidence means, in a setting where inexpensive single-pass components are attractive but their reliability on biosecurity-relevant tasks had not been systematically examined.",
+        "zh": "审计一个商用系统一模型——经 v1 REST 端点调用、别名 jev-latest 全程解析为 jev-1.13.0 的 Jev——在生物安全相关知识上的表现:取自 WMDP、抗复述的 WMDP-Bio 变体与六个 LAB-Bench 子任务的 6,020 道选择题,度量准确率、校准、错误检测、选择性预测与选项顺序敏感度;分析区分「模型知道什么」与「其置信度意味着什么」——廉价单次前向组件固然诱人,但其在生物安全相关任务上的可靠性此前从未被系统检视。"
+      },
+      "problem": {
+        "en": "How reliable are a commercial System-1 model's answers and confidences on biosecurity-relevant knowledge?",
+        "zh": "商用系统一模型在生物安全相关知识上的答案与置信度有多可靠?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "resolved to jev-1.13.0 throughout",
+          "location": "Section III, Experimental Setup",
+          "source_url": "https://arxiv.org/html/2609.30454v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "6,020 multiple-choice items",
+          "location": "Section III, Experimental Setup",
+          "source_url": "https://arxiv.org/abs/2609.30454v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-04",
+      "code": [
+        {
+          "url": "https://github.com/Georgakopoulos-Soares-lab/biosafety_knowledge_jev",
+          "source_url": "https://arxiv.org/abs/2609.30454v1",
+          "source_location": "Code Availability statement",
+          "verified_on": "2026-11-04",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2609.30454v1",
+      "source_abstract_sha256": "a08befbd47c3ca389edc99f8ef8a4a92f80d838857d021238351653ccdaf582f"
     },
     {
       "arxiv_id": "2609.30243",

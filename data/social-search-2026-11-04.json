@@ -1,0 +1,82 @@
+{
+ "schema_version": 1,
+ "searched_on": "2026-11-04",
+ "time_zone": "Asia/Shanghai",
+ "purpose": "Collect recent Jev, decision-model and System One papers from WeChat, Zhihu, Sina Weibo and X, then verify against original arXiv records and deduplicate.",
+ "recency": "Queries targeted 2026-11-01 through 2026-11-04; discovery date is not paper submission date.",
+ "queries": [
+  {
+   "platform": "WeChat (web search)",
+   "tool": "Web search",
+   "query": "Jev TypeSafe 决策模型 arXiv 新论文 11月"
+  },
+  {
+   "platform": "WeChat (web search)",
+   "tool": "Web search",
+   "query": "微信公众号 Jev 决策模型 arXiv 新论文 11月2日 OR 11月3日 OR 11月4日"
+  },
+  {
+   "platform": "Zhihu",
+   "tool": "Web search site filter",
+   "query": "site:zhihu.com Jev 决策模型 \"System One\" 论文 arXiv"
+  },
+  {
+   "platform": "Zhihu (follow-up)",
+   "tool": "Web search",
+   "query": "\"从Jev 到 OpenAI Decisions\" 决策模型 30天 论文"
+  },
+  {
+   "platform": "Sina Weibo",
+   "tool": "Web search site filter",
+   "query": "site:weibo.com Jev 决策模型 TypeSafe arXiv"
+  },
+  {
+   "platform": "X / Twitter (web search)",
+   "tool": "Web search",
+   "query": "Jev TypeSafe decision model arxiv paper November 2026"
+  },
+  {
+   "platform": "X / Twitter",
+   "tool": "Community index",
+   "query": "jev-x.com posts through 11/03",
+   "url": "https://jev-x.com/"
+  },
+  {
+   "platform": "X lead follow-up",
+   "tool": "Web search",
+   "query": "DecisionRAG arXiv Jev retrieval topic document passage tree"
+  },
+  {
+   "platform": "X lead follow-up",
+   "tool": "Web search",
+   "query": "Smaug-Audio-Decisions arXiv technical report audio decision model"
+  },
+  {
+   "platform": "Vendor index",
+   "tool": "Direct fetch",
+   "query": "jevmodel.ai/citations (header 2026-11-03)",
+   "url": "https://jevmodel.ai/citations"
+  },
+  {
+   "platform": "Carried-over ResearchGate lead",
+   "tool": "Web search",
+   "query": "\"Referring uncertain answers\" Ahn decision-model confidence Jev arXiv Sangzin"
+  },
+  {
+   "platform": "Carried-over WeChat lead",
+   "tool": "Web search",
+   "query": "Jev 决策模型 电车难题 屠荒者 论文 arXiv"
+  }
+ ],
+ "findings": [
+  "WeChat-adjacent web search surfaced only already-catalogued papers (2609.37647, 2610.18610, 2610.01231, 2610.00831, 2609.24965, 2610.02076) and explainer/product commentary (Jev Chat Jarvis app, aigc.bar, codefather posts).",
+  "Zhihu: a 30-day survey post (2026-10-16, 从Jev 到 OpenAI Decisions) and MedJev/Chinese-Jev/Jev-Mem roundups all reference already-catalogued papers; 2606.12372 was excluded on 2026-11-01; no new arXiv records.",
+  "Sina Weibo: one product-explainer post (只会涂答题卡的AI Jev); no arXiv records.",
+  "X / jev-x.com: 11/01-11/03 posts include two independent DecisionRAG posts resolving to already-included 2610.35868; Smaug-Audio-Decisions-0.7B (Abacus.AI, Bindu Reddy post) is a Hugging Face model card (fine-tune of EmbeddingGemma) with no arXiv paper; remaining posts are Claude-Code routing tutorials and product use cases.",
+  "Vendor citation index jevmodel.ai/citations updated to 2026-11-03: newly added 2609.37647 (already catalogued); other citations unchanged; fetch truncated at card 126/234 so later additions, if any, were not visible.",
+  "Ahn ResearchGate preprint still has no arXiv record; carried over again. 屠荒者 WeChat lead still has no arXiv record; carried over again."
+ ],
+ "added_papers": 0,
+ "added_papers_note": "No new records of its own this round: every surfaced arXiv ID was already catalogued and no platform-only lead resolved to an arXiv record. All 52 additions of 2026-11-04 came from the arXiv API sweeps, including the whole-window variant backfill (2026-09-15 forward) that the 2026-11-02 social round's blind-spot findings motivated.",
+ "limitations": "WeChat and Weibo cannot be searched natively from this environment; both were covered through web search. jev-x.com and the vendor citation index were read through summarizing fetches, which truncate long pages. X posts cannot be opened directly; leads were followed through web search."
+}

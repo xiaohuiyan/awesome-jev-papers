@@ -363,6 +363,114 @@
       "round": 8,
       "query": "ti:\"Referring uncertain answers\" / all:\"decision-model confidence\" AND all:Korean / au:Ahn_Sangzin AND all:Jev (carried-over ResearchGate lead; confirms no arXiv record)",
       "count": 0
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 9,
+      "query": "all:\"language model\" AND submittedDate:[202610310000 TO 202611042359] sanity probe (50 records; published dates 11-02 and 11-03 present at run time, Wednesday 02:45 UTC)",
+      "count": 50
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 9,
+      "query": "all:\"Jev\" AND submittedDate:[202610310000 TO 202611042359]",
+      "count": 10
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 9,
+      "query": "all:\"System One\" AND submittedDate:[202610310000 TO 202611042359]",
+      "count": 5
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 9,
+      "query": "all:\"typed decision\" AND submittedDate:[202610310000 TO 202611042359]",
+      "count": 5
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 9,
+      "query": "all:\"decision model\" AND submittedDate:[202610310000 TO 202611042359]",
+      "count": 21
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 9,
+      "query": "all:MedJev AND submittedDate:[202610310000 TO 202611042359] (variant)",
+      "count": 0
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 9,
+      "query": "all:\"System-One\" AND submittedDate:[202610310000 TO 202611042359] (variant)",
+      "count": 5
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 9,
+      "query": "all:\"System 1\" AND submittedDate:[202610310000 TO 202611042359] (variant)",
+      "count": 3
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 9,
+      "query": "all:\"decision models\" AND submittedDate:[202610310000 TO 202611042359] (variant)",
+      "count": 21
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 9,
+      "query": "all:JevBench AND submittedDate:[202610310000 TO 202611042359] (new variant)",
+      "count": 0
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 9,
+      "query": "all:MedJev AND submittedDate:[202609150000 TO 202611042359] (whole-window backfill, 2026-09-15 forward, per the round-8 blind-spot plan)",
+      "count": 1
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 9,
+      "query": "all:\"System-One\" AND submittedDate:[202609150000 TO 202611042359] (whole-window backfill)",
+      "count": 89
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 9,
+      "query": "all:\"System 1\" AND submittedDate:[202609150000 TO 202611042359] (whole-window backfill)",
+      "count": 44
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 9,
+      "query": "all:\"decision models\" AND submittedDate:[202609150000 TO 202611042359] (whole-window backfill; 199 total, newest 100 fetched)",
+      "count": 100
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 9,
+      "query": "all:JevBench AND submittedDate:[202609150000 TO 202611042359] (whole-window backfill)",
+      "count": 7
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 9,
+      "query": "all:\"decision models\" AND submittedDate:[202609150000 TO 202610152359] (old-window complement for the unfetched 09-15..10-15 tail of the plural query)",
+      "count": 100
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 9,
+      "query": "all:\"decision model\" AND submittedDate:[202609150000 TO 202610152359] (old-window complement)",
+      "count": 100
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 9,
+      "query": "all:\"typed decision\" AND submittedDate:[202609150000 TO 202610152359] (old-window complement)",
+      "count": 46
     }
   ],
   "web_discovery_queries": [
@@ -708,6 +816,54 @@
       "query": "Jev 决策模型 电车难题 论文 arXiv 屠荒者 (web search)",
       "purpose": "carried-over WeChat lead (屠荒者)",
       "result": "only a mirrored explainer (向上研究所 / amazingindex.com); no arXiv record located; lead carried over again"
+    },
+    {
+      "round": 9,
+      "query": "Jev TypeSafe 决策模型 arXiv 新论文 11月 (web search)",
+      "purpose": "WeChat-adjacent leads",
+      "result": "all surfaced IDs already catalogued (2609.37647, 2610.18610, 2610.01231, 2610.00831, 2609.24965, 2610.02076); explainers only"
+    },
+    {
+      "round": 9,
+      "query": "site:zhihu.com Jev 决策模型 \"System One\" 论文 arXiv (web search)",
+      "purpose": "Zhihu leads",
+      "result": "10 articles; a 30-day survey post (2026-10-16) and MedJev/Chinese-Jev roundups reference already-catalogued papers; 2606.12372 previously excluded; no new arXiv records"
+    },
+    {
+      "round": 9,
+      "query": "site:weibo.com Jev 决策模型 TypeSafe arXiv (web search)",
+      "purpose": "Weibo leads",
+      "result": "one product-explainer post; no arXiv records"
+    },
+    {
+      "round": 9,
+      "query": "jev-x.com recent posts through 11/03",
+      "purpose": "X/Twitter community index",
+      "result": "11/01-11/03 posts: DecisionRAG resolved to already-included 2610.35868; Smaug-Audio-Decisions-0.7B is a Hugging Face model card with no paper; the rest are tutorials and product posts"
+    },
+    {
+      "round": 9,
+      "query": "Smaug-Audio-Decisions arXiv technical report audio decision model (web search)",
+      "purpose": "X lead follow-up (Bindu Reddy post)",
+      "result": "no arXiv record; HF model card only (fine-tune of EmbeddingGemma); product-only item"
+    },
+    {
+      "round": 9,
+      "query": "jevmodel.ai/citations vendor index (header 2026-11-03)",
+      "purpose": "Vendor citation index",
+      "result": "updated since 10-31: newly added 2609.37647, already catalogued; remaining citations unchanged"
+    },
+    {
+      "round": 9,
+      "query": "\"Referring uncertain answers\" Ahn decision-model confidence Jev arXiv Sangzin (web search)",
+      "purpose": "carried-over ResearchGate lead",
+      "result": "still ResearchGate-only (dated 2026-10-14); no arXiv record; lead carried over again"
+    },
+    {
+      "round": 9,
+      "query": "Jev 决策模型 电车难题 屠荒者 论文 arXiv (web search)",
+      "purpose": "carried-over WeChat lead (屠荒者)",
+      "result": "no arXiv record; only mirrored explainers; lead carried over again"
     }
   ],
   "arxiv_site_search": {
@@ -721,10 +877,10 @@
       "purpose": "Early Jev corpus and four foundational methods"
     }
   ],
-  "unique_candidates": 388,
+  "unique_candidates": 462,
   "outcomes": {
-    "included": 257,
-    "excluded": 129,
+    "included": 309,
+    "excluded": 151,
     "pending": 2
   },
   "limitations": [
@@ -735,7 +891,7 @@
     "Broad discovery ends on 2026-10-16. Later targeted additions are logged separately and do not imply a fresh search or re-verification of the entire corpus.",
     "2026-10-27 round: Zhihu and Weibo returned no usable public search results (403 or ignored site filters); WeChat coverage relied on the Sogou public index."
   ],
-  "updated_on": "2026-11-02",
+  "updated_on": "2026-11-04",
   "targeted_additions": [
     {
       "reviewed_on": "2026-10-17",
@@ -872,6 +1028,19 @@
       ],
       "added_papers": 2,
       "note": "Two additions originated in the social round: a WeChat explainer syndicated by 新浪财经 on 2026-11-02 resolved to arXiv 2610.20951 (LEV, looped decision models; closed Jev 1.13.0 as a reference), and the exact-title follow-up of the carried-over ResearchGate lead returned arXiv 2610.31315, which turned out to be a different, uncatalogued paper (TUM 'The Value of System 1 Models in Medicine', Jev 1.14 among four System 1 models on 86 clinical tasks). Both had been invisible to every API sweep because their abstracts use 'decision models', 'System 1' or 'JevBench' rather than the standing query tokens. Formal evidence for both comes from the arXiv Atom metadata, abstracts and LaTeXML full text."
+    },
+    {
+      "searched_on": "2026-11-04",
+      "record": "data/social-search-2026-11-04.json",
+      "report": "docs/SOCIAL_SEARCH_2026-11-04.md",
+      "platforms": [
+        "WeChat",
+        "Zhihu",
+        "Sina Weibo",
+        "X / Twitter"
+      ],
+      "added_papers": 0,
+      "note": "The social round contributed no new records of its own: every arXiv ID it surfaced was already catalogued (DecisionRAG 2610.35868, the vendor index's new citation 2609.37647) or a product-only item (Smaug-Audio-Decisions-0.7B). All 52 additions of this round came from the API sweeps, including the whole-window variant backfill since 2026-09-15 that round 8's social findings motivated; two carried-over leads (Ahn ResearchGate preprint, 屠荒者 WeChat explainer) remain unresolved without arXiv records."
     }
   ],
   "targeted_rechecks": [
