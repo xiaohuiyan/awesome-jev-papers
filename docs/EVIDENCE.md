@@ -3,6 +3,90 @@
 
 Short excerpts support relevance decisions, not paper quality or reproducibility. Scores measure topic fit and substantive contribution only. Abstract-level review is the default; targeted full-text checks are marked. 引文用于核实相关性，不是论文质量或模型性能评分。
 
+<a id="evidence-2611-05827"></a>
+## 2611.05827 — TandemBench: Benchmarking Decision Models for Multi-Agent Collaboration
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-05
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “We evaluate 40 native decision models” — [Abstract](https://arxiv.org/abs/2611.05827v1)
+- **contribution**: “Native decision models remain close to chance in optimality verification” — [Abstract](https://arxiv.org/abs/2611.05827v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.05827v1); first submitted 2026-11-04; updated 2026-11-04. Full authors: Baohang Li; Xiaocheng Feng; Bing Qin.
+
+<a id="evidence-2611-05702"></a>
+## 2611.05702 — TACT: A Pragmatic Approach to Qualitative Analysis with an AI Council
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-05
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。
+
+- **topic**: “we used TypeSafe’s Jev 1.13 as the decision model” — [Section IV, TACT-Full stage 4](https://arxiv.org/html/2611.05702v1)
+- **contribution**: “candidate codebook achieved an F1 of 0.75-0.77” — [Abstract](https://arxiv.org/abs/2611.05702v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.05702v1); first submitted 2026-11-03; updated 2026-11-03. Full authors: Rudrajit Choudhuri; Christian Bird; Carmen Badea; Anita Sarma.
+
+<a id="evidence-2611-05553"></a>
+## 2611.05553 — Decision Models as Scalable Economic Surrogates that Capture Human Variation
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-05
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。
+
+- **topic**: “consisting of Jev, D1 Ultra, Mammoth and Perplexity” — [Section 2 (model selection)](https://arxiv.org/html/2611.05553v1)
+- **contribution**: “reproduce the variation in human responses more closely than LLMs” — [Abstract](https://arxiv.org/abs/2611.05553v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.05553v1); first submitted 2026-11-03; updated 2026-11-03. Full authors: Maxime Saxena; Fabio Caccioli; R. Maria del Rio-Chanona.
+
+<a id="evidence-2611-05448"></a>
+## 2611.05448 — Jev with Foresight: Safe Language-Guided Autonomous Driving via a Language World Model
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-05
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。
+
+- **topic**: “We use jev-1.13.0 through its HTTP API” — [Section IV-A, Implementation](https://arxiv.org/html/2611.05448v1)
+- **contribution**: “collision rate from 26.0% to 2.4%” — [Abstract](https://arxiv.org/abs/2611.05448v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.05448v1); first submitted 2026-11-03; updated 2026-11-03. Full authors: Yansong Qu; Jiancong Chen; Samuel Labi.
+
+<a id="evidence-2611-04510"></a>
+## 2611.04510 — Fast, Cheap, and Fair? Evaluating Decision Models
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-05
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。
+
+- **topic**: “the first systematic bias and fairness audit of JEV” — [Abstract (LaTeXML rendering)](https://arxiv.org/html/2611.04510v1)
+- **contribution**: “names, rather than explicitly stated attributes, drive JEV’s remaining effects” — [Section 4.2, Bias Analysis](https://arxiv.org/html/2611.04510v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.04510v1); first submitted 2026-11-03; updated 2026-11-03. Full authors: Muhammad Uzair Ul Haq; Davide Rigoni; Alessandro Sperduti; Flavia Fabris.
+
+<a id="evidence-2611-04480"></a>
+## 2611.04480 — ReListen: Training-Free Evidence Localization in Hour-Long Audio with Frozen Audio Language Models
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-05
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “This scoring is a Jev-style scan (TypeSafe AI, 2026)” — [Section 3.1, Jev-Style Scan by the Reader](https://arxiv.org/html/2611.04480v1)
+- **contribution**: “exceeds a transcript of the whole recording by 9.2 points” — [Abstract](https://arxiv.org/abs/2611.04480v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.04480v1); first submitted 2026-11-03; updated 2026-11-03. Full authors: Ming-Hao Hsu; Shujie Liu; Yuxuan Hu; Yuxiang Wang; Yingda Shen; Jinyu Li; Zhizheng Wu.
+
 <a id="evidence-2611-04101"></a>
 ## 2611.04101 — Structured Clinical Memory as Context for Probabilistic Decision Models: A Synthetic Evaluation with Jev
 
@@ -1934,6 +2018,20 @@ Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence
 - **contribution**: “We introduce AgriJev, a family of adapted Qwen3.5 models at 0.8B,” — [Abstract](https://arxiv.org/abs/2610.19478v1)
 
 Metadata: [reviewed v1](https://arxiv.org/abs/2610.19478v1); first submitted 2026-10-14; updated 2026-10-14. Full authors: Xuechen Li.
+
+<a id="evidence-2611-05396"></a>
+## 2611.05396 — A System One Approach to General Protein Evolution
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-05
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “Jev (TypeSafe AI, 2026) exemplifies this approach” — [Section 1 (Introduction)](https://arxiv.org/html/2611.05396v1)
+- **contribution**: “One policy covers peptides, small folded domains, and antibodies” — [Abstract](https://arxiv.org/abs/2611.05396v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.05396v1); first submitted 2026-10-13; updated 2026-10-13. Full authors: Yibo Wen; Han Liu.
 
 <a id="evidence-2610-19118"></a>
 ## 2610.19118 — DecisionRobust: Benchmarking Robustness for JEV Style Decision Models Across Text and Vision

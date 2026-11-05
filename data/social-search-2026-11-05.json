@@ -1,0 +1,66 @@
+{
+ "schema_version": 1,
+ "searched_on": "2026-11-05",
+ "time_zone": "Asia/Shanghai",
+ "purpose": "Collect recent Jev, decision-model and System One papers from WeChat, Zhihu, Sina Weibo and X, then verify against original arXiv records and deduplicate.",
+ "recency": "Queries targeted 2026-11-03 through 2026-11-05; discovery date is not paper submission date.",
+ "queries": [
+  {
+   "platform": "WeChat (web search)",
+   "tool": "Web search",
+   "query": "Jev TypeSafe 决策模型 arXiv 新论文 11月5日"
+  },
+  {
+   "platform": "Zhihu",
+   "tool": "Web search site filter",
+   "query": "site:zhihu.com Jev 决策模型 \"System One\" 论文 arXiv"
+  },
+  {
+   "platform": "Sina Weibo",
+   "tool": "Web search site filter",
+   "query": "site:weibo.com Jev 决策模型 TypeSafe arXiv"
+  },
+  {
+   "platform": "X / Twitter (web search)",
+   "tool": "Web search",
+   "query": "Jev TypeSafe decision model arxiv paper November 2026"
+  },
+  {
+   "platform": "X / Twitter",
+   "tool": "Web search",
+   "query": "jev-x.com posts 11/04 OR 11/05 Jev decision model paper"
+  },
+  {
+   "platform": "X lead follow-up (today's sweep additions)",
+   "tool": "Web search",
+   "query": "\"TandemBench\" OR \"Fast, Cheap, and Fair\" OR \"Jev-AD\" OR \"Economic Surrogates\" decision model arXiv 2611"
+  },
+  {
+   "platform": "Vendor index",
+   "tool": "Direct fetch",
+   "query": "jevmodel.ai/citations (header 2026-11-03)",
+   "url": "https://jevmodel.ai/citations"
+  },
+  {
+   "platform": "Carried-over ResearchGate lead",
+   "tool": "Web search",
+   "query": "\"Referring uncertain answers\" Ahn decision-model confidence Jev arXiv Sangzin"
+  },
+  {
+   "platform": "Carried-over WeChat lead",
+   "tool": "Web search",
+   "query": "Jev 决策模型 电车难题 屠荒者 论文 arXiv"
+  }
+ ],
+ "findings": [
+  "WeChat-adjacent web search surfaced only already-catalogued papers (2610.18610 Jev-ToM, 2610.02076 LLM-as-Jev, 2609.24965 scientific decisions, 2609.32160 early evidence audit) and explainer content; no new arXiv records.",
+  "Zhihu: 10 articles; the 30-day survey post (2026-10-16), the MedJev roundup (arxiv-cs.CL 2026.10.28 digest -> 2610.36006), the Chinese-Jev digest (2026.09.30), Jev-Mem roundups, a Chinese tutorial project and a robot-decision post all reference already-catalogued papers; no new arXiv records.",
+  "Sina Weibo: the same single product-explainer post (只会涂答题卡的AI Jev) as previous rounds; no arXiv records.",
+  "X / web: no jev-x.com posts with new arXiv records surfaced for 11/04-11/05; the day's new papers appear only through a GitHub daily-arXiv tracker (Tavish9/awesome-daily-AI-arxiv) listing 2611.04510, which the API sweep had already caught; remaining results are explainers (langchain, openrouter, greennode, Medium) and the stas4000/jev-papers community classification project with no new paper.",
+  "Vendor citation index jevmodel.ai/citations unchanged since 2026-11-03 (header 2026-11-03); fetch again truncated at card 126/234; visible citations all already catalogued (2609.29769, 2609.26550, 2609.14811, 2609.37647).",
+  "Ahn ResearchGate preprint still has no arXiv record; carried over again. 屠荒者 WeChat trolley-problem lead still has no arXiv record; the surrounding discourse resolves to Zach Landes' blog test and Chinese explainers, with every cited arXiv ID (2610.24929, 2609.28613, 2609.28587, 2609.29283, 2610.37732) already catalogued."
+ ],
+ "added_papers": 0,
+ "added_papers_note": "No new records of its own this round: every surfaced arXiv ID was already catalogued and no platform-only lead resolved to an arXiv record. All 7 additions of 2026-11-05 came from the arXiv API sweeps (fresh window plus whole-window variant re-run, which caught the late-indexed 2611.05396, first submitted 2026-10-13).",
+ "limitations": "WeChat and Weibo cannot be searched natively from this environment; both were covered through web search. jev-x.com could not be reached directly this round and was covered through web search; the vendor citation index was read through a summarizing fetch that truncates long pages. X posts cannot be opened directly; leads were followed through web search."
+}

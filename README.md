@@ -12,9 +12,9 @@ This reading list asks a concrete question: given context and a set of options, 
 
 | Papers | Direct Jev | Related methods | Foundations | With verified code |
 | ---: | ---: | ---: | ---: | ---: |
-| **309** | 200 | 105 | 4 | 113 |
+| **316** | 204 | 108 | 4 | 115 |
 
-Updated **2026-11-04** · Main window **2025-10-16–2026-11-03** (first submission)
+Updated **2026-11-05** · Main window **2025-10-16–2026-11-04** (first submission)
 
 [Start with ten papers](#recommended-reading) · [Browse by question](#category-index) · [Foundations](#foundations) · [Data and maintenance](#reuse-and-updates)
 
@@ -51,11 +51,11 @@ Suggested path: **assess the evidence → compare capabilities → understand mo
 | Your question | Topic | Direct / related | Total |
 | --- | --- | ---: | ---: |
 | How do we train a model specifically to choose? | [Model architectures and training](#architecture) | 15 / 42 | 57 |
-| When are fast decisions good enough? | [Benchmarks and comparative evaluation](#evaluation) | 40 / 10 | 50 |
+| When are fast decisions good enough? | [Benchmarks and comparative evaluation](#evaluation) | 41 / 10 | 51 |
 | Can we trust the model's confidence? | [Calibration, reliability and selective decisions](#calibration) | 17 / 9 | 26 |
-| When should an agent search, use a tool, or delegate? | [Search, memory, tools and agent decisions](#agents) | 34 / 12 | 46 |
+| When should an agent search, use a tool, or delegate? | [Search, memory, tools and agent decisions](#agents) | 35 / 13 | 48 |
 | Can phrasing, option order, or attacks change the decision? | [Security, robustness and decision bias](#security) | 40 / 9 | 49 |
-| How do quality and speed trade off in real workflows? | [Domain applications and deployment efficiency](#applications) | 54 / 23 | 77 |
+| How do quality and speed trade off in real workflows? | [Domain applications and deployment efficiency](#applications) | 56 / 25 | 81 |
 
 Each paper has one primary category; 4 foundations are listed separately. Categories group direct Jev work before related methods, with newest first submissions first within each group. Entries keep published date, authors, affiliations, problem, and contribution; affiliations come from the papers themselves (HTML full text or PDF first page), and 15 papers that state none omit the field. Full author lists, tags, and verification records live in the [evidence ledger](docs/EVIDENCE.md) and [BibTeX](references.bib).
 
@@ -529,8 +529,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 40
+### Direct Jev · 41
 
+<a id="paper-2611-04510"></a>
+#### [Fast, Cheap, and Fair? Evaluating Decision Models](https://arxiv.org/abs/2611.04510v1) · [PDF](https://arxiv.org/pdf/2611.04510v1)
+- **📅 Published**: 2026-11-03 (v1)
+- **👥 Authors**: Muhammad Uzair Ul Haq; Davide Rigoni; Alessandro Sperduti; Flavia Fabris
+- **🏢 Affiliations**: Amajor SB S.p.A., Italy; University of Padova; University of Trento; Fondazione Bruno Kessler
+- **🎯 Problem**: How biased is a typed decision model when screening job candidates, once noise is accounted for?
+- **💡 Contribution**: Runs the first systematic bias and fairness audit of JEV (jev-1.13.0) as a recruitment screener, an EU AI Act high-risk use: counterfactual CV datasets vary explicit demographic attributes and implicit cues, effects are measured on screening scores, rankings and shortlists against a noise floor from name substitutions and typos, and JEV is compared with the open-weight Laya and generative GPT-6 Luna and GPT-6.1 Sol; JEV is nearly deterministic (Excl@5 run-to-run 2.9% versus 29.6% for GPT-6 Luna), its statistically significant biases remain small - score shifts peak at 0.37 points, rank shifts stay below 0.4 positions in pools of 41-65 CVs, exclusion of shortlisted candidates peaks at 8.2% - and names rather than explicitly stated attributes drive the remaining effects, while shortlist validity stays comparable to the generative models.
+---
 <a id="paper-2611-01370"></a>
 #### [XDecideBench: Evaluating Typed Decision Models and Confidence Policies Across Languages](https://arxiv.org/abs/2611.01370v1) · [PDF](https://arxiv.org/pdf/2611.01370v1) · [Code](https://github.com/NaiveNeuron/XDecideBench)
 - **📅 Published**: 2026-11-01 (v1)
@@ -1154,8 +1162,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 34
+### Direct Jev · 35
 
+<a id="paper-2611-05448"></a>
+#### [Jev with Foresight: Safe Language-Guided Autonomous Driving via a Language World Model](https://arxiv.org/abs/2611.05448v1) · [PDF](https://arxiv.org/pdf/2611.05448v1)
+- **📅 Published**: 2026-11-03 (v1)
+- **👥 Authors**: Yansong Qu; Jiancong Chen; Samuel Labi
+- **🏢 Affiliations**: Lyles School of Civil and Construction Engineering, Purdue University
+- **🎯 Problem**: Can a typed decision model drive safely from natural-language commands if code supplies foreseen consequences?
+- **💡 Contribution**: Closes the safety gap between language-guided driving agents and world-model agents by pairing the two: Jev-AD grounds the passenger's free-form command once with four typed questions answered by Jev (jev-1.13.0 through its HTTP API, about 870 input tokens per decision state), then a language world model predicts for every candidate action how up to nine nearby vehicles move over the next two seconds, and code turns those predictions into foreseen consequences that Jev compares instead of inferring them from coordinates; in 500 simulated highway-merging episodes this foresight lowers the same decision model's collision rate from 26.0% to 2.4% at 0.25 seconds per decision, achieves the passenger's intent in 93% of command trials, and in 500 replayed real-world NGSIM episodes cuts collisions from 48.2% to 2.8% while the world model foresees 93% of dangerous actions.
+---
 <a id="paper-2611-00737"></a>
 #### [Can Jev Improve Demonstration Retrieval for In-Context Learning?](https://arxiv.org/abs/2611.00737v1) · [PDF](https://arxiv.org/pdf/2611.00737v1)
 - **📅 Published**: 2026-10-31 (v1)
@@ -1428,8 +1444,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: Can a System One layer coordinate an agent's memory operations efficiently?
 - **💡 Contribution**: Introduces a System-One-controlled memory architecture to coordinate efficient agent memory operations.
 ---
-### Related model / method · 12
+### Related model / method · 13
 
+<a id="paper-2611-05827"></a>
+#### [TandemBench: Benchmarking Decision Models for Multi-Agent Collaboration](https://arxiv.org/abs/2611.05827v1) · [PDF](https://arxiv.org/pdf/2611.05827v1)
+- **📅 Published**: 2026-11-04 (v1)
+- **👥 Authors**: Baohang Li; Xiaocheng Feng; Bing Qin
+- **🏢 Affiliations**: Harbin Institute of Technology; Peng Cheng Laboratory
+- **🎯 Problem**: Can native decision models both select optimal multi-agent team plans and verify whether better arrangements exist?
+- **💡 Contribution**: Asks whether decision models can choose team plans, not just single actions: TandemBench builds 1,200 questions in multi-agent cooking scenarios where a coordination choice determines how members divide work, exchange resources and act in parallel, with reference answers established by execution and exact search; 40 native decision models (best: KnowLine at 62.50% decision accuracy, Laya-421M at 25.88%) are compared with 10 general-purpose LLMs, and in paired variants that add or remove the optimal plan, models must judge whether better arrangements exist beyond the supplied options - verification accuracy stays near the 50% chance level for the native models while paired tests expose systematic reporters of better alternatives, showing that plan-choice accuracy alone can conceal such errors. Hosted Jev is not among the evaluated systems.
+---
 <a id="paper-2611-03179"></a>
 #### [Every Clause Counts: Instruction-Following Reranking by Multiplying Small, Answerable Questions](https://arxiv.org/abs/2611.03179v1) · [PDF](https://arxiv.org/pdf/2611.03179v1)
 - **📅 Published**: 2026-11-02 (v1)
@@ -1931,8 +1955,24 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 54
+### Direct Jev · 56
 
+<a id="paper-2611-05702"></a>
+#### [TACT: A Pragmatic Approach to Qualitative Analysis with an AI Council](https://arxiv.org/abs/2611.05702v1) · [PDF](https://arxiv.org/pdf/2611.05702v1) · [Code](https://github.com/rudrajit1729/TACT)
+- **📅 Published**: 2026-11-03 (v1)
+- **👥 Authors**: Rudrajit Choudhuri; Christian Bird; Carmen Badea; Anita Sarma
+- **🏢 Affiliations**: Oregon State University; Microsoft Research
+- **🎯 Problem**: Can qualitative thematic analysis scale with AI help while humans keep interpretation and judgment?
+- **💡 Contribution**: Keeps humans in control of AI-assisted thematic analysis by bounding an AI council: TACT has AI coders from different model families assign codes, adversaries critique each coder's assignments, a reconciler merges them, and a decision model - TypeSafe's Jev 1.13, answering a yes/no question with a calibrated 0-1 score - surfaces high-uncertainty code assignments for human review; on 256 Stack Overflow threads coded by other researchers the candidate codebook reaches F1 0.75-0.77 and final coding F1 0.71-0.72, manual-versus-TACT agreement is Cohen's kappa 0.79-0.85 on a held-out sample, and model calls cost $13.77 (TACT-Lite) to $33.59 (TACT-Full) per 100 threads.
+---
+<a id="paper-2611-05553"></a>
+#### [Decision Models as Scalable Economic Surrogates that Capture Human Variation](https://arxiv.org/abs/2611.05553v1) · [PDF](https://arxiv.org/pdf/2611.05553v1)
+- **📅 Published**: 2026-11-03 (v1)
+- **👥 Authors**: Maxime Saxena; Fabio Caccioli; R. Maria del Rio-Chanona
+- **🏢 Affiliations**: University College London; London School of Economics and Political Science; Google DeepMind
+- **🎯 Problem**: Can decision models stand in for human respondents in economic simulations and surveys, at scale?
+- **💡 Contribution**: Tests decision models as human surrogates in economics, a role increasingly filled by costly LLMs that under-represent variation in human behaviour: 10 DMs (including Jev jev-1.13.0, one of the four frontier DMs by Artificial Analysis Decision Index, alongside D1 Ultra, Mammoth and Perplexity) are compared with 8 LLMs in a household spending survey, classic economic games and a labour-market field experiment; frontier DMs reproduce the variation in human responses more closely than LLMs in all three settings, match LLMs on the modal human response in the spending survey but less well in the games, and run roughly ten times faster than the fastest LLM at potentially over a hundred times lower cost, while non-frontier DMs such as Laya and AnyJev sit near a uniform-response benchmark.
+---
 <a id="paper-2611-04101"></a>
 #### [Structured Clinical Memory as Context for Probabilistic Decision Models: A Synthetic Evaluation with Jev](https://arxiv.org/abs/2611.04101v1) · [PDF](https://arxiv.org/pdf/2611.04101v1)
 - **📅 Published**: 2026-11-03 (v1)
@@ -2364,8 +2404,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: Can a low-latency decision model replace LLMs in edge service orchestration?
 - **💡 Contribution**: Integrates Jev into edge service orchestration and measures verified requests, admission behavior and execution outcomes.
 ---
-### Related model / method · 23
+### Related model / method · 25
 
+<a id="paper-2611-04480"></a>
+#### [ReListen: Training-Free Evidence Localization in Hour-Long Audio with Frozen Audio Language Models](https://arxiv.org/abs/2611.04480v1) · [PDF](https://arxiv.org/pdf/2611.04480v1)
+- **📅 Published**: 2026-11-03 (v1)
+- **👥 Authors**: Ming-Hao Hsu; Shujie Liu; Yuxuan Hu et al. (7 authors)
+- **🏢 Affiliations**: The Chinese University of Hong Kong, Shenzhen; Microsoft CoreAI; Microsoft Research Asia
+- **🎯 Problem**: Can a frozen audio language model locate its own evidence in hour-long recordings without training?
+- **💡 Contribution**: Lets a frozen audio language model find its own evidence in hour-long recordings using the Jev decision interface: in a Jev-style scan (TypeSafe AI, 2026), each 20-second window receives a yes/no decision read as a probability rather than generated text, and the model then answers from the highest-scoring minute; the selected minute overlaps the annotated evidence for 88.5% of VoiceGiraffe questions versus 58.8% for transcript retrieval, the same scan grounds events on LAT-Bench (temporal IoU 47.7) as well as a model trained for temporal grounding, answering from it beats uniformly sampled audio by 8.5-21.3 points and the whole-recording transcript by 9.2 points on VoiceGiraffe, with constant memory and no training.
+---
 <a id="paper-2611-03985"></a>
 #### [Thinking Fast, Trading Late: System One Decision Models vs the Market](https://arxiv.org/abs/2611.03985v1) · [PDF](https://arxiv.org/pdf/2611.03985v1) · [Code](https://github.com/AmirDehkordi/NewsAction)
 - **📅 Published**: 2026-11-02 (v1)
@@ -2477,6 +2525,14 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🏢 Affiliations**: Speech Technology and Machine Learning Group (THAU), Universidad Politécnica de Madrid
 - **🎯 Problem**: Can one pass over a voice answer any written perceptual question with calibrated probabilities?
 - **💡 Contribution**: Gives speech its own System One model: classifiers answer fast but over one fixed label set, while audio language models take any question in text yet answer by generation, one pass per question, with poorly calibrated probabilities; ASOM answers choice, score and yes/no questions written at request time in a single pass without generation, each with a probability distribution - frozen speech and text encoders feed a 6.2M-parameter reader with no per-class parameters, trained on listener vote distributions; on MSP-Podcast it matches a classifier trained on the same features and data, leads the best of six zero-shot ALMs by 0.072 and a fine-tuned ALM by 0.026, answers 20 questions in 13.1 ms (17-41x faster than ALMs), handles reworded questions, reduced and new label sets, scales and gender, and on 21 unseen corpora in 13 languages leads the best zero-shot ALM by 0.138 where the words carry no emotion.
+---
+<a id="paper-2611-05396"></a>
+#### [A System One Approach to General Protein Evolution](https://arxiv.org/abs/2611.05396v1) · [PDF](https://arxiv.org/pdf/2611.05396v1) · [Code](https://github.com/Yibo-Wen/Pev)
+- **📅 Published**: 2026-10-13 (v1)
+- **👥 Authors**: Yibo Wen; Han Liu
+- **🏢 Affiliations**: Northwestern University
+- **🎯 Problem**: Can one System One-style policy decide which mutation to test next and when to stop, across protein families?
+- **💡 Contribution**: Frames protein engineering as a sequence of typed decisions and trains a general mutation policy in the System One style that Jev exemplifies: given a parent sequence and assay context, Pev (about 1.6M parameters on a frozen ESM-2 backbone, trained on measured outcomes across families rather than fitted to the target family) encodes the parent once and returns calibrated probabilities for choosing an edit or stopping, plus each edit's probability of improving the assay outcome; one policy covers peptides, small folded domains and antibodies across binding and stability objectives, finds 3.3x as many beneficial mutations as random selection and 1.8x as many as zero-shot ESM-2 in ten-well screens on held-out families, beats a ridge surrogate refitted on target measurements on the held-out GB1 landscape, and shared encoding gives over 800x the throughput of per-mutant encoding at 1,000 candidates per request.
 ---
 <a id="paper-2610-15029"></a>
 #### [Toward System One Clinical Intelligence: Parameter-Efficient Fine-Tuning and Counterfactual Explainability of Decision Foundation Models](https://arxiv.org/abs/2610.15029v1) · [PDF](https://arxiv.org/pdf/2610.15029v1)

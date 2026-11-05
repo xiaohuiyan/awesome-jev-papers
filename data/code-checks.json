@@ -1241,5 +1241,27 @@
     "canonical_url": "https://github.com/moyuan10086/cascaded-guardrail-npu",
     "description": "COGNIT-Guard: Calibrated Standalone Direct-Decision Guardrails with Heterogeneous CPU-NPU Confidence Cascading (arXiv:2609.33671)",
     "private": false
+  },
+  {
+    "arxiv_id": "2611.05702",
+    "url": "https://github.com/rudrajit1729/TACT",
+    "source_url": "https://arxiv.org/abs/2611.05702v1",
+    "source_location": "Reference [9] (TACT: Replication package)",
+    "checked_on": "2026-11-05",
+    "status": "verified",
+    "canonical_url": "https://github.com/rudrajit1729/TACT",
+    "description": "TACT: Traceable AI Council for Thematic analysis. Replication package for the paper.",
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.05396",
+    "url": "https://github.com/Yibo-Wen/Pev",
+    "source_url": "https://arxiv.org/abs/2611.05396v1",
+    "source_location": "Appendix (code of the main experiments)",
+    "checked_on": "2026-11-05",
+    "status": "verified",
+    "canonical_url": "https://github.com/Yibo-Wen/Pev",
+    "description": "A System One Model for Protein Evolution",
+    "private": false
   }
 ]

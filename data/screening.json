@@ -3696,6 +3696,62 @@
       "status": "excluded",
       "reason": "Matched via an incidental 'decision model' phrase; finite-sample safety certification for grid-edge coordination; no Jev or typed-decision content.",
       "screened_on": "2026-11-04"
+    },
+    {
+      "arxiv_id": "2611.05827",
+      "title": "TandemBench: Benchmarking Decision Models for Multi-Agent Collaboration",
+      "source_url": "https://arxiv.org/abs/2611.05827v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-05"
+    },
+    {
+      "arxiv_id": "2611.05702",
+      "title": "TACT: A Pragmatic Approach to Qualitative Analysis with an AI Council",
+      "source_url": "https://arxiv.org/abs/2611.05702v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-05"
+    },
+    {
+      "arxiv_id": "2611.05553",
+      "title": "Decision Models as Scalable Economic Surrogates that Capture Human Variation",
+      "source_url": "https://arxiv.org/abs/2611.05553v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-05"
+    },
+    {
+      "arxiv_id": "2611.05448",
+      "title": "Jev with Foresight: Safe Language-Guided Autonomous Driving via a Language World Model",
+      "source_url": "https://arxiv.org/abs/2611.05448v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-05"
+    },
+    {
+      "arxiv_id": "2611.04510",
+      "title": "Fast, Cheap, and Fair? Evaluating Decision Models",
+      "source_url": "https://arxiv.org/abs/2611.04510v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-05"
+    },
+    {
+      "arxiv_id": "2611.04480",
+      "title": "ReListen: Training-Free Evidence Localization in Hour-Long Audio with Frozen Audio Language Models",
+      "source_url": "https://arxiv.org/abs/2611.04480v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-05"
+    },
+    {
+      "arxiv_id": "2611.05396",
+      "title": "A System One Approach to General Protein Evolution",
+      "source_url": "https://arxiv.org/abs/2611.05396v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-05"
     }
   ]
 }

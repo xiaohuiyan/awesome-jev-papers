@@ -12,9 +12,9 @@
 
 | 收录论文 | Jev 直接相关 | 同类模型与方法 | 基础背景 | 含已核实代码 |
 | ---: | ---: | ---: | ---: | ---: |
-| **309** | 200 | 105 | 4 | 113 |
+| **316** | 204 | 108 | 4 | 115 |
 
-更新于 **2026-11-04** · 主要收录窗口 **2025-10-16—2026-11-03**（首次提交日期）
+更新于 **2026-11-05** · 主要收录窗口 **2025-10-16—2026-11-04**（首次提交日期）
 
 [十篇入门](#recommended-reading) · [按问题选文](#category-index) · [基础背景](#foundations) · [数据与维护](#reuse-and-updates)
 
@@ -51,11 +51,11 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 | 你想了解什么？ | 主题 | 直接 / 相关 | 合计 |
 | --- | --- | ---: | ---: |
 | 怎样训练一个专门做选择的模型？ | [模型架构与训练方法](#architecture) | 15 / 42 | 57 |
-| 快决策在哪些任务上够用？ | [基准测试与比较评估](#evaluation) | 40 / 10 | 50 |
+| 快决策在哪些任务上够用？ | [基准测试与比较评估](#evaluation) | 41 / 10 | 51 |
 | 模型说有把握，真的可靠吗？ | [概率校准、可靠性与选择性决策](#calibration) | 17 / 9 | 26 |
-| 何时搜索、调用工具或交给更强的模型？ | [搜索、记忆、工具与智能体决策](#agents) | 34 / 12 | 46 |
+| 何时搜索、调用工具或交给更强的模型？ | [搜索、记忆、工具与智能体决策](#agents) | 35 / 13 | 48 |
 | 换个问法或选项顺序，会不会改变判断？ | [安全、鲁棒性与决策偏置](#security) | 40 / 9 | 49 |
-| 放进真实工作流，质量与速度如何取舍？ | [领域应用与部署效率](#applications) | 54 / 23 | 77 |
+| 放进真实工作流，质量与速度如何取舍？ | [领域应用与部署效率](#applications) | 56 / 25 | 81 |
 
 每篇只计入一个主分类；另有 4 篇基础背景。每类先列 Jev 直接相关，再列同类方法；组内按首次提交日期倒序排列。条目保留发表时间、作者、单位、解决问题与核心贡献；单位取自论文原文（HTML 全文或 PDF 首页），15 篇未署名单位的论文不展示该项。完整作者名单、标签与核实记录见[证据台账](docs/EVIDENCE.md)与 [BibTeX](references.bib)。
 
@@ -529,8 +529,16 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 [返回分类导航](#category-index)
 
-### Jev 直接相关 · 40
+### Jev 直接相关 · 41
 
+<a id="paper-2611-04510"></a>
+#### [Fast, Cheap, and Fair? Evaluating Decision Models](https://arxiv.org/abs/2611.04510v1) · [PDF](https://arxiv.org/pdf/2611.04510v1)
+- **📅 发表时间**：2026-11-03（v1）
+- **👥 作者**：Muhammad Uzair Ul Haq；Davide Rigoni；Alessandro Sperduti；Flavia Fabris
+- **🏢 单位**：Amajor SB S.p.A., Italy；University of Padova；University of Trento；Fondazione Bruno Kessler
+- **🎯 解决问题**：剔除噪声后,类型化决策模型在简历筛选中的偏见到底有多大?
+- **💡 核心贡献**：对 JEV(jev-1.13.0)做首个系统性的招聘场景偏见与公平性审计——EU AI Act 定性的高风险用途:反事实简历数据集同时改变显式人口属性与隐性线索,对筛选得分、排名与短名单的影响都以姓名替换和错别字构成的噪声下限为参照,并将 JEV 与开源 Laya、生成式 GPT-6 Luna、GPT-6.1 Sol 对比;JEV 几乎是确定性的(短名单变动 Excl@5 重复运行 2.9%,GPT-6 Luna 为 29.6%),统计显著的偏见幅度很小——得分变化峰值 0.37 分,41~65 份简历池中排名变化不超过 0.4 位,短名单排除率峰值 8.2%——且残余效应主要由姓名而非显式属性驱动,短名单效度与生成式模型相当。
+---
 <a id="paper-2611-01370"></a>
 #### [XDecideBench: Evaluating Typed Decision Models and Confidence Policies Across Languages](https://arxiv.org/abs/2611.01370v1) · [PDF](https://arxiv.org/pdf/2611.01370v1) · [代码](https://github.com/NaiveNeuron/XDecideBench)
 - **📅 发表时间**：2026-11-01（v1）
@@ -1154,8 +1162,16 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 [返回分类导航](#category-index)
 
-### Jev 直接相关 · 34
+### Jev 直接相关 · 35
 
+<a id="paper-2611-05448"></a>
+#### [Jev with Foresight: Safe Language-Guided Autonomous Driving via a Language World Model](https://arxiv.org/abs/2611.05448v1) · [PDF](https://arxiv.org/pdf/2611.05448v1)
+- **📅 发表时间**：2026-11-03（v1）
+- **👥 作者**：Yansong Qu；Jiancong Chen；Samuel Labi
+- **🏢 单位**：Lyles School of Civil and Construction Engineering, Purdue University
+- **🎯 解决问题**：若由代码提供可预见的后果,类型化决策模型能否依自然语言指令安全驾驶?
+- **💡 核心贡献**：把语言驾驶智能体与世界模型智能体的长处拼在一起:Jev-AD 先用四个类型化问题让 Jev(经 HTTP API 调用 jev-1.13.0,每个决策状态约 870 输入 token)一次性理解乘客的自由格式指令,再由语言世界模型为每个候选动作预测未来两秒内至多九辆近旁车辆的运动,代码把这些预测转写成「可预见的后果」交给 Jev 比较,而不必从坐标里隐式推断;在 500 段仿真高速汇入场景中,该预见把同一决策模型的碰撞率从 26.0% 降到 2.4%,每次决策仅 0.25 秒,93% 的指令试验达成乘客意图;在 500 段真实 NGSIM 复放中碰撞率从 48.2% 降至 2.8%,世界模型预见 93% 的危险动作。
+---
 <a id="paper-2611-00737"></a>
 #### [Can Jev Improve Demonstration Retrieval for In-Context Learning?](https://arxiv.org/abs/2611.00737v1) · [PDF](https://arxiv.org/pdf/2611.00737v1)
 - **📅 发表时间**：2026-10-31（v1）
@@ -1428,8 +1444,16 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🎯 解决问题**：智能体的记忆操作能否交给快速决策层协调，以提升效率？
 - **💡 核心贡献**：提出由 System One 控制的记忆架构，以协调高效的智能体记忆操作。
 ---
-### 同类模型与方法 · 12
+### 同类模型与方法 · 13
 
+<a id="paper-2611-05827"></a>
+#### [TandemBench: Benchmarking Decision Models for Multi-Agent Collaboration](https://arxiv.org/abs/2611.05827v1) · [PDF](https://arxiv.org/pdf/2611.05827v1)
+- **📅 发表时间**：2026-11-04（v1）
+- **👥 作者**：Baohang Li；Xiaocheng Feng；Bing Qin
+- **🏢 单位**：Harbin Institute of Technology；Peng Cheng Laboratory
+- **🎯 解决问题**：原生决策模型能否既选出多智能体最优团队计划,又判断选项之外是否存在更优安排?
+- **💡 核心贡献**：追问决策模型能否不只选单个动作、还能选团队计划:TandemBench 构造多智能体做饭场景中的 1,200 个问题,协调选择决定成员如何分工、交换资源与并行行动,参考答案由执行与精确搜索确立;40 个原生决策模型(最优 KnowLine 决策准确率 62.50%,Laya-421M 仅 25.88%)与 10 个通用大模型对比,并在保留或移除最优计划的配对变体中判断给定选项之外是否存在更优安排——原生模型的验证准确率始终徘徊在 50% 随机水平附近,配对检验还暴露出一批无论最优计划是否在场都报告「有更好方案」的模型,说明仅看选计划的准确率会掩盖这类系统性错误。托管 Jev 不在被测系统之列。
+---
 <a id="paper-2611-03179"></a>
 #### [Every Clause Counts: Instruction-Following Reranking by Multiplying Small, Answerable Questions](https://arxiv.org/abs/2611.03179v1) · [PDF](https://arxiv.org/pdf/2611.03179v1)
 - **📅 发表时间**：2026-11-02（v1）
@@ -1931,8 +1955,24 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 [返回分类导航](#category-index)
 
-### Jev 直接相关 · 54
+### Jev 直接相关 · 56
 
+<a id="paper-2611-05702"></a>
+#### [TACT: A Pragmatic Approach to Qualitative Analysis with an AI Council](https://arxiv.org/abs/2611.05702v1) · [PDF](https://arxiv.org/pdf/2611.05702v1) · [代码](https://github.com/rudrajit1729/TACT)
+- **📅 发表时间**：2026-11-03（v1）
+- **👥 作者**：Rudrajit Choudhuri；Christian Bird；Carmen Badea；Anita Sarma
+- **🏢 单位**：Oregon State University；Microsoft Research
+- **🎯 解决问题**：AI 辅助的主题分析能否规模化,同时让人类保留解释与判断权?
+- **💡 核心贡献**：用有边界的「AI 议会」把解释权留在人手里:不同模型家族的 AI 编码员各自赋码,对抗者逐一批评其他编码员的赋码,再由调和者合并;决策模型——TypeSafe 的 Jev 1.13,以 0~1 校准分数回答一个是/否问题——负责把高不确定性的赋码挑出来交人复核;在他人标注的 256 个 Stack Overflow 帖子上,候选码本 F1 0.75~0.77、最终编码 F1 0.71~0.72,保留样本上人工与 TACT 编码的一致性 Cohen's kappa 0.79~0.85,每 100 个帖子的模型调用成本 13.77 美元(TACT-Lite)至 33.59 美元(TACT-Full)。
+---
+<a id="paper-2611-05553"></a>
+#### [Decision Models as Scalable Economic Surrogates that Capture Human Variation](https://arxiv.org/abs/2611.05553v1) · [PDF](https://arxiv.org/pdf/2611.05553v1)
+- **📅 发表时间**：2026-11-03（v1）
+- **👥 作者**：Maxime Saxena；Fabio Caccioli；R. Maria del Rio-Chanona
+- **🏢 单位**：University College London；London School of Economics and Political Science；Google DeepMind
+- **🎯 解决问题**：决策模型能否大规模充当经济模拟与调查中的人类被试替身?
+- **💡 核心贡献**：检验决策模型能否充当经济学中的人类代理——这个角色目前多由昂贵且低估人群行为差异的 LLM 担任:在家庭消费调查、经典经济博弈与劳动力市场现场实验三个场景中,10 个决策模型(含 jev-1.13.0 版 Jev,按 Artificial Analysis 决策指数与 D1 Ultra、Mammoth、Perplexity 并列四个前沿 DM)与 8 个 LLM 对比;前沿 DM 在全部三个场景中都比 LLM 更贴近人类应答的变异分布,在消费调查中捕捉众数应答的能力与 LLM 持平、在博弈中稍逊,速度约为最快 LLM 的十倍、成本可低两个数量级以上;Laya、AnyJev 等非前沿 DM 则接近均匀响应基线。
+---
 <a id="paper-2611-04101"></a>
 #### [Structured Clinical Memory as Context for Probabilistic Decision Models: A Synthetic Evaluation with Jev](https://arxiv.org/abs/2611.04101v1) · [PDF](https://arxiv.org/pdf/2611.04101v1)
 - **📅 发表时间**：2026-11-03（v1）
@@ -2364,8 +2404,16 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🎯 解决问题**：边缘服务编排能否用低延迟决策模型替代 LLM？
 - **💡 核心贡献**：将 Jev 接入边缘服务编排，测量经核验请求、准入行为和执行结果。
 ---
-### 同类模型与方法 · 23
+### 同类模型与方法 · 25
 
+<a id="paper-2611-04480"></a>
+#### [ReListen: Training-Free Evidence Localization in Hour-Long Audio with Frozen Audio Language Models](https://arxiv.org/abs/2611.04480v1) · [PDF](https://arxiv.org/pdf/2611.04480v1)
+- **📅 发表时间**：2026-11-03（v1）
+- **👥 作者**：Ming-Hao Hsu；Shujie Liu；Yuxuan Hu 等（共 7 位）
+- **🏢 单位**：The Chinese University of Hong Kong, Shenzhen；Microsoft CoreAI；Microsoft Research Asia
+- **🎯 解决问题**：冻结的音频语言模型能否不经训练,自行定位小时级录音中回答所需的证据?
+- **💡 核心贡献**：让冻结的音频语言模型用 Jev 的决策接口在小时级录音里自己找证据:在 Jev 式扫描(TypeSafe AI, 2026)中,每个 20 秒窗口得到的是一个作为概率读取的是/否决策而非生成文本,模型随后只「重听」得分最高的一分钟再作答;所选分钟与人工标注证据的重叠率在 VoiceGiraffe 上达 88.5%,转录检索仅 58.8%;同一扫描在 LAT-Bench 上的时间 IoU(47.7)与专门训练的时序定位模型相当;从所选证据作答比均匀采样音频高 8.5~21.3 个点,在 VoiceGiraffe 上比整段录音的转录高 9.2 个点,且全程无需训练、显存恒定。
+---
 <a id="paper-2611-03985"></a>
 #### [Thinking Fast, Trading Late: System One Decision Models vs the Market](https://arxiv.org/abs/2611.03985v1) · [PDF](https://arxiv.org/pdf/2611.03985v1) · [代码](https://github.com/AmirDehkordi/NewsAction)
 - **📅 发表时间**：2026-11-02（v1）
@@ -2477,6 +2525,14 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🏢 单位**：Speech Technology and Machine Learning Group (THAU), Universidad Politécnica de Madrid
 - **🎯 解决问题**：对一段语音的一次前向,能否带校准概率地回答任意写下的感知问题?
 - **💡 核心贡献**：为语音打造专属的系统一模型:分类器答得快却锁死一个标签集,音频语言模型什么问题都能接、却要靠生成逐题作答且概率校准差;ASOM 对请求时写下的选择、评分与是非题一次前向作答、不生成文本,每题带概率分布——冻结的语音与文本编码器喂给一个 6.2M 参数、无逐类参数的读取器,以听者投票分布训练;在 MSP-Podcast 上追平同特征同数据的分类器,领先六个零样本音频语言模型中最佳者 0.072、领先同数据微调的音频语言模型 0.026,20 个问题只需 13.1 毫秒(比音频语言模型快 17~41 倍);还能应付改写问题、缩减或全新标签集、音阶与性别,并在 13 种语言的 21 个未见语料上,于词面不含情绪处领先最佳零样本音频语言模型 0.138。
+---
+<a id="paper-2611-05396"></a>
+#### [A System One Approach to General Protein Evolution](https://arxiv.org/abs/2611.05396v1) · [PDF](https://arxiv.org/pdf/2611.05396v1) · [代码](https://github.com/Yibo-Wen/Pev)
+- **📅 发表时间**：2026-10-13（v1）
+- **👥 作者**：Yibo Wen；Han Liu
+- **🏢 单位**：Northwestern University
+- **🎯 解决问题**：能否用单一 System One 式策略,跨蛋白家族决定下一个测哪个突变、何时停止?
+- **💡 核心贡献**：把蛋白质工程改写成一系列类型化决策,并按 Jev 所示范的 System One 范式训练通用突变策略:给定亲本序列与实验场景,Pev(冻结 ESM-2 骨干上约 160 万参数,用跨家族实测结果训练而不针对目标家族拟合)只编码亲本一次,即返回「选哪个编辑或停止」的校准概率,以及每个编辑改善实验结果的概率;单一策略覆盖多肽、小结构域与抗体,横跨结合与稳定性目标;在留出家族的十孔筛选中,有益突变产出是随机选择的 3.3 倍、零样本 ESM-2 的 1.8 倍,在留出的 GB1 地形上胜过用目标测量重拟合的岭回归代理;共享编码在每请求 1,000 候选时吞吐量超逐突变编码 800 倍以上。
 ---
 <a id="paper-2610-15029"></a>
 #### [Toward System One Clinical Intelligence: Parameter-Efficient Fine-Tuning and Counterfactual Explainability of Decision Foundation Models](https://arxiv.org/abs/2610.15029v1) · [PDF](https://arxiv.org/pdf/2610.15029v1)

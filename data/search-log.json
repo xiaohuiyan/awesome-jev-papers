@@ -471,6 +471,96 @@
       "round": 9,
       "query": "all:\"typed decision\" AND submittedDate:[202609150000 TO 202610152359] (old-window complement)",
       "count": 46
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 10,
+      "query": "all:\"language model\" AND submittedDate:[202611030000 TO 202611052359] sanity probe (50 records; published dates 11-03 and 11-04 present at run time, Thursday 02:43 UTC)",
+      "count": 50
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 10,
+      "query": "all:\"Jev\" AND submittedDate:[202611030000 TO 202611052359]",
+      "count": 4
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 10,
+      "query": "all:\"System One\" AND submittedDate:[202611030000 TO 202611052359]",
+      "count": 0
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 10,
+      "query": "all:\"typed decision\" AND submittedDate:[202611030000 TO 202611052359]",
+      "count": 2
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 10,
+      "query": "all:\"decision model\" AND submittedDate:[202611030000 TO 202611052359]",
+      "count": 6
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 10,
+      "query": "all:MedJev AND submittedDate:[202611030000 TO 202611052359] (variant)",
+      "count": 0
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 10,
+      "query": "all:\"System-One\" AND submittedDate:[202611030000 TO 202611052359] (variant)",
+      "count": 0
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 10,
+      "query": "all:\"System 1\" AND submittedDate:[202611030000 TO 202611052359] (variant)",
+      "count": 1
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 10,
+      "query": "all:\"decision models\" AND submittedDate:[202611030000 TO 202611052359] (variant)",
+      "count": 6
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 10,
+      "query": "all:JevBench AND submittedDate:[202611030000 TO 202611052359] (variant)",
+      "count": 0
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 10,
+      "query": "all:MedJev AND submittedDate:[202609150000 TO 202611052359] (whole-window variant re-run, 2026-09-15 forward)",
+      "count": 1
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 10,
+      "query": "all:\"System-One\" AND submittedDate:[202609150000 TO 202611052359] (whole-window variant re-run)",
+      "count": 90
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 10,
+      "query": "all:\"System 1\" AND submittedDate:[202609150000 TO 202611052359] (whole-window variant re-run)",
+      "count": 45
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 10,
+      "query": "all:\"decision models\" AND submittedDate:[202609150000 TO 202611052359] (whole-window variant re-run; 204 total, newest 100 fetched)",
+      "count": 100
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 10,
+      "query": "all:JevBench AND submittedDate:[202609150000 TO 202611052359] (whole-window variant re-run)",
+      "count": 7
     }
   ],
   "web_discovery_queries": [
@@ -864,6 +954,60 @@
       "query": "Jev 决策模型 电车难题 屠荒者 论文 arXiv (web search)",
       "purpose": "carried-over WeChat lead (屠荒者)",
       "result": "no arXiv record; only mirrored explainers; lead carried over again"
+    },
+    {
+      "round": 10,
+      "query": "Jev TypeSafe 决策模型 arXiv 新论文 11月5日 (web search)",
+      "purpose": "WeChat-adjacent leads",
+      "result": "all surfaced IDs already catalogued (2610.18610, 2610.02076, 2609.24965, 2609.32160); explainers only"
+    },
+    {
+      "round": 10,
+      "query": "site:zhihu.com Jev 决策模型 \"System One\" 论文 arXiv (web search)",
+      "purpose": "Zhihu leads",
+      "result": "10 articles; 30-day survey, MedJev/Chinese-Jev/Jev-Mem roundups, tutorial and robot posts all reference already-catalogued papers; no new arXiv records"
+    },
+    {
+      "round": 10,
+      "query": "site:weibo.com Jev 决策模型 TypeSafe arXiv (web search)",
+      "purpose": "Weibo leads",
+      "result": "the same single product-explainer post; no arXiv records"
+    },
+    {
+      "round": 10,
+      "query": "Jev TypeSafe decision model arxiv paper November 2026 (web search)",
+      "purpose": "X/Twitter leads",
+      "result": "explainers and community projects only; no new arXiv records"
+    },
+    {
+      "round": 10,
+      "query": "jev-x.com posts 11/04-11/05 (web search)",
+      "purpose": "X/Twitter community index",
+      "result": "no posts with new arXiv records surfaced this round"
+    },
+    {
+      "round": 10,
+      "query": "\"TandemBench\" OR \"Fast, Cheap, and Fair\" OR \"Jev-AD\" OR \"Economic Surrogates\" decision model arXiv 2611 (web search)",
+      "purpose": "X lead follow-up (today's sweep additions)",
+      "result": "2611.04510 appears in the Tavish9/awesome-daily-AI-arxiv GitHub tracker, already caught by the sweep; no additional papers"
+    },
+    {
+      "round": 10,
+      "query": "jevmodel.ai/citations vendor index (header 2026-11-03)",
+      "purpose": "Vendor citation index",
+      "result": "unchanged since 11-03; visible citations all catalogued; fetch truncated at card 126/234"
+    },
+    {
+      "round": 10,
+      "query": "\"Referring uncertain answers\" Ahn decision-model confidence Jev arXiv Sangzin (web search)",
+      "purpose": "carried-over ResearchGate lead",
+      "result": "still ResearchGate-only (dated 2026-10-14); no arXiv record; lead carried over again"
+    },
+    {
+      "round": 10,
+      "query": "Jev 决策模型 电车难题 屠荒者 论文 arXiv (web search)",
+      "purpose": "carried-over WeChat lead (屠荒者)",
+      "result": "no arXiv record; discourse resolves to Zach Landes' blog test and Chinese explainers citing already-catalogued papers; lead carried over again"
     }
   ],
   "arxiv_site_search": {
@@ -877,9 +1021,9 @@
       "purpose": "Early Jev corpus and four foundational methods"
     }
   ],
-  "unique_candidates": 462,
+  "unique_candidates": 469,
   "outcomes": {
-    "included": 309,
+    "included": 316,
     "excluded": 151,
     "pending": 2
   },
@@ -891,7 +1035,7 @@
     "Broad discovery ends on 2026-10-16. Later targeted additions are logged separately and do not imply a fresh search or re-verification of the entire corpus.",
     "2026-10-27 round: Zhihu and Weibo returned no usable public search results (403 or ignored site filters); WeChat coverage relied on the Sogou public index."
   ],
-  "updated_on": "2026-11-04",
+  "updated_on": "2026-11-05",
   "targeted_additions": [
     {
       "reviewed_on": "2026-10-17",
@@ -1041,6 +1185,19 @@
       ],
       "added_papers": 0,
       "note": "The social round contributed no new records of its own: every arXiv ID it surfaced was already catalogued (DecisionRAG 2610.35868, the vendor index's new citation 2609.37647) or a product-only item (Smaug-Audio-Decisions-0.7B). All 52 additions of this round came from the API sweeps, including the whole-window variant backfill since 2026-09-15 that round 8's social findings motivated; two carried-over leads (Ahn ResearchGate preprint, 屠荒者 WeChat explainer) remain unresolved without arXiv records."
+    },
+    {
+      "searched_on": "2026-11-05",
+      "record": "data/social-search-2026-11-05.json",
+      "report": "docs/SOCIAL_SEARCH_2026-11-05.md",
+      "platforms": [
+        "WeChat",
+        "Zhihu",
+        "Sina Weibo",
+        "X / Twitter"
+      ],
+      "added_papers": 0,
+      "note": "The social round contributed no new records of its own: every arXiv ID it surfaced was already catalogued and no platform-only lead resolved to an arXiv record. All 7 additions of this round came from the API sweeps, including the whole-window variant re-run that caught the late-indexed 2611.05396 (first submitted 2026-10-13); two carried-over leads (Ahn ResearchGate preprint, 屠荒者 WeChat explainer) remain unresolved without arXiv records."
     }
   ],
   "targeted_rechecks": [
