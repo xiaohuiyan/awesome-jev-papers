@@ -1,5 +1,5 @@
 {
-  "screened_on": "2026-10-17",
+  "screened_on": "2026-11-06",
   "candidates": [
     {
       "arxiv_id": "2610.22276",
@@ -3752,6 +3752,94 @@
       "status": "included",
       "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
       "screened_on": "2026-11-05"
+    },
+    {
+      "arxiv_id": "2611.06384",
+      "title": "Presentation Sensitivity in Typed Decision Models for Subjective Text Evaluation",
+      "source_url": "https://arxiv.org/abs/2611.06384v1",
+      "status": "included",
+      "reason": "Meets topic and substantive-contribution criteria; targeted full-text review and limitations recorded in papers.json and docs/ARXIV_SEARCH_2026-11-06.md.",
+      "screened_on": "2026-11-06"
+    },
+    {
+      "arxiv_id": "2611.06238",
+      "title": "Zuse: A Decision Model for European Languages",
+      "source_url": "https://arxiv.org/abs/2611.06238v1",
+      "status": "included",
+      "reason": "Meets topic and substantive-contribution criteria; targeted full-text review and limitations recorded in papers.json and docs/ARXIV_SEARCH_2026-11-06.md.",
+      "screened_on": "2026-11-06"
+    },
+    {
+      "arxiv_id": "2611.07327",
+      "title": "Permanent and Transient Representations for Continual Reinforcement Learning",
+      "source_url": "https://arxiv.org/abs/2611.07327v1",
+      "status": "excluded",
+      "reason": "Complementary value-function representations for continual RL; the systems/one token match does not establish a typed decision interface or hosted Jev evaluation.",
+      "screened_on": "2026-11-06"
+    },
+    {
+      "arxiv_id": "2611.06184",
+      "title": "Can Astra Solve RoboMME without Breaking the Bank?",
+      "source_url": "https://arxiv.org/abs/2611.06184v1",
+      "status": "excluded",
+      "reason": "System 1 denotes a low-level vision-language-action robot policy; the inspected abstract does not establish a Jev-like probabilistic typed-choice interface or hosted Jev evaluation.",
+      "screened_on": "2026-11-06"
+    },
+    {
+      "arxiv_id": "2610.40692",
+      "title": "CausalGrade: Evidence-Guided Causal Graph Scoring with Jev",
+      "source_url": "https://arxiv.org/abs/2610.40692v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-06"
+    },
+    {
+      "arxiv_id": "2610.22588",
+      "title": "SAG2: Embedding-Free Multi-Hop Retrieval with BM25 and JEV",
+      "source_url": "https://arxiv.org/abs/2610.22588v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-06"
+    },
+    {
+      "arxiv_id": "2610.22407",
+      "title": "Towards Adaptive and Real-Survey-Aligned Simulated Urban Mobility Behaviour of Generative Agents",
+      "source_url": "https://arxiv.org/abs/2610.22407v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-06"
+    },
+    {
+      "arxiv_id": "2610.33389",
+      "title": "OneCodeReviewBench: Typed Decisions for Code Review and Search",
+      "source_url": "https://arxiv.org/abs/2610.33389v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-06"
+    },
+    {
+      "arxiv_id": "2610.25985",
+      "title": "NIOCIS: Typed-Decision Next-Hop Routing with Node-Conditioned Option Spaces for Tool-Use Agents",
+      "source_url": "https://arxiv.org/abs/2610.25985v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-06"
+    },
+    {
+      "arxiv_id": "2610.37688",
+      "title": "One Confidence Threshold, Unequal Coverage: Language Gaps in Typed Decision Interfaces and How Translating Inputs Reduces Them",
+      "source_url": "https://arxiv.org/abs/2610.37688v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-06"
+    },
+    {
+      "arxiv_id": "2611.02096",
+      "title": "EarthJev: Calibrated, Non-Generative Answers to Natural-Language Questions about Sentinel-2 Land Cover",
+      "source_url": "https://arxiv.org/abs/2611.02096v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-06"
     }
   ]
 }

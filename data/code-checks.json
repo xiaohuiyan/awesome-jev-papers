@@ -1263,5 +1263,49 @@
     "canonical_url": "https://github.com/Yibo-Wen/Pev",
     "description": "A System One Model for Protein Evolution",
     "private": false
+  },
+  {
+    "arxiv_id": "2610.22588",
+    "url": "https://github.com/Zleap-AI/SAG-Benchmark",
+    "source_url": "https://arxiv.org/abs/2610.22588v1",
+    "source_location": "Footnote 1 (Benchmark and evaluation code)",
+    "checked_on": "2026-11-06",
+    "status": "verified",
+    "canonical_url": "https://github.com/Zleap-AI/SAG-Benchmark",
+    "description": "Official benchmark reproduction code for the SAG paper",
+    "private": false
+  },
+  {
+    "arxiv_id": "2610.22407",
+    "url": "https://github.com/Ytlse/generative-agents-urban-mobility",
+    "source_url": "https://arxiv.org/abs/2610.22407v1",
+    "source_location": "Footnote 2 (protocol, code, seeds and evaluation population)",
+    "checked_on": "2026-11-06",
+    "status": "verified",
+    "canonical_url": "https://github.com/Ytlse/generative-agents-urban-mobility",
+    "description": "Generative agents for urban mobility: GAMA simulation, multi-provider LLM gateway and evaluation against a real travel survey. Research code and reproducibility artifacts.",
+    "private": false
+  },
+  {
+    "arxiv_id": "2610.25985",
+    "url": "https://github.com/geilihan/niocis",
+    "source_url": "https://arxiv.org/abs/2610.25985v1",
+    "source_location": "arXiv comment (code and pseudonymized derived corpus)",
+    "checked_on": "2026-11-06",
+    "status": "verified",
+    "canonical_url": "https://github.com/geilihan/niocis",
+    "description": "Public code and pseudonymized derived corpus for NIOCIS (arXiv:2610.25985)",
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.02096",
+    "url": "https://github.com/CosmoIknosLab/EarthJev",
+    "source_url": "https://arxiv.org/abs/2611.02096v1",
+    "source_location": "arXiv comment (Code and model)",
+    "checked_on": "2026-11-06",
+    "status": "verified",
+    "canonical_url": "https://github.com/CosmoIknosLab/EarthJev",
+    "description": "EarthJev: calibrated, non-generative answers to natural-language questions about 12-band Sentinel-2 images. One forward pass returns a probability for every option of every question; no token is generated.",
+    "private": false
   }
 ]

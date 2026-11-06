@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_on": "2026-11-05",
+  "updated_on": "2026-11-06",
   "window": {
     "start": "2025-10-16",
     "end": "2026-11-04",
@@ -49,6 +49,147 @@
     "2610.04345"
   ],
   "papers": [
+    {
+      "arxiv_id": "2611.06384",
+      "title": "Presentation Sensitivity in Typed Decision Models for Subjective Text Evaluation",
+      "authors": [
+        "Jatin Agrawal",
+        "Radhika Mamidi"
+      ],
+      "affiliations": [
+        "LTRC, IIITH"
+      ],
+      "first_submitted": "2026-11-04",
+      "updated": "2026-11-04",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.06384",
+      "reviewed_url": "https://arxiv.org/abs/2611.06384v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.06384v1",
+      "arxiv_categories": [
+        "cs.CL"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "security",
+      "relation_level": "direct",
+      "tags": [
+        "evaluation",
+        "robustness",
+        "bias"
+      ],
+      "summary": {
+        "en": "Audits Jev 1.13, Clef Flash and Perplexity Decider on 9,000 annotated items through 702,000 judgments, independently varying order, identifiers, endorsements, framing and rubrics. Controlled comparisons and repeated calls separate presentation effects from repeatability: Jev favors second-position summaries by 6.11 probability points. Findings cover three English subjective-evaluation tasks; human-reference choices and rubric wording limit generalization.",
+        "zh": "在 9,000 个标注样本、702,000 次判断上审计 Jev 1.13、Clef Flash 与 Perplexity Decider，分别控制顺序、标识符、背书、提问框架及评分量表；通过受控比较和重复调用区分呈现敏感性与重复稳定性。Jev 在摘要任务中对第二位置的概率偏好达 6.11 个百分点。结论限于三类英文主观评测任务，受人工参考答案选择与量表措辞影响。"
+      },
+      "problem": {
+        "en": "Do typed evaluators change their judgments when the text stays fixed but its presentation changes?",
+        "zh": "文本不变、呈现方式改变时，类型化评测模型是否会改变判断？"
+      },
+      "relation": {
+        "en": "Direct audit of hosted Jev; Appendix D identifies the typesafe/jev-1.13 route and retained response identifiers.",
+        "zh": "直接审计托管 Jev；附录 D 标明 typesafe/jev-1.13 路由及所保留的响应模型标识。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "presentation sensitivity in Jev, Clef Flash, and Perplexity Decider",
+          "source_url": "https://arxiv.org/abs/2611.06384v1",
+          "location": "Abstract"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "we collect 702,000 judgments",
+          "source_url": "https://arxiv.org/abs/2611.06384v1",
+          "location": "Abstract"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-06",
+      "code": [],
+      "metadata_source": "https://arxiv.org/abs/2611.06384v1",
+      "metadata_verification_note": "Verified against versioned arXiv abstract page, submission history and HTML full text. Atom API unavailable; API cross-check remains pending. Abstract fingerprint uses whitespace-normalized abstract-page text with its hyperlink restored.",
+      "source_abstract_sha256": "3ebc5f383a40786eed6f74bbc70b79ed517b9d60e163c2efef1eef3c9077040b"
+    },
+    {
+      "arxiv_id": "2611.06238",
+      "title": "Zuse: A Decision Model for European Languages",
+      "authors": [
+        "Umair Mehmood Imam"
+      ],
+      "affiliations": [
+        "Bineric AI",
+        "OsloMet, Norway"
+      ],
+      "first_submitted": "2026-11-04",
+      "updated": "2026-11-04",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.06238",
+      "reviewed_url": "https://arxiv.org/abs/2611.06238v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.06238v1",
+      "arxiv_categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "architecture",
+      "relation_level": "direct",
+      "tags": [
+        "training",
+        "multilingual",
+        "calibration"
+      ],
+      "summary": {
+        "en": "Studies 4B, 9B and 27B decision models with low-rank adapters and pointer heads for 27 European languages. Task-dependent calibration and data-mixture pitfalls are analyzed; English comparisons use Jev results reported by the Kev project. The European suite also guided model selection, most runs use one seed, and the full training recipe and data are undisclosed. Treat the findings as exploratory, not an independent multilingual win over Jev.",
+        "zh": "研究面向 27 种欧洲语言、采用低秩适配器与指针头的 4B、9B、27B 决策模型，分析任务相关校准误差及数据混合问题；英文对比引用 Kev 项目报告的 Jev 结果。欧洲评测集同时参与选模，多数实验仅单种子，完整训练配方与数据未公开；应视为探索性结果，不能据此声称多语言性能胜过 Jev。"
+      },
+      "problem": {
+        "en": "How do multilingual decision models transfer across languages, calibrate by task and support selective automation?",
+        "zh": "多语言决策模型如何跨语言迁移、按任务校准并支持选择性自动化？"
+      },
+      "relation": {
+        "en": "Direct comparison with previously reported Jev results in Section 6.1/Table 3; not a new hosted-Jev run. Jev revision is unknown, and no European-suite Jev comparison is provided.",
+        "zh": "第 6.1 节及表 3 对比既有 Jev 评测结果，属于直接比较，但并非重新调用托管 Jev；其版本未知，欧洲评测集未对比 Jev。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "On English public suites Zuse is behind Jev and Kev",
+          "source_url": "https://arxiv.org/abs/2611.06238v1",
+          "location": "Abstract"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "train a low-rank adapter and a pointer head",
+          "source_url": "https://arxiv.org/abs/2611.06238v1",
+          "location": "Abstract"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-06",
+      "code": [],
+      "metadata_source": "https://arxiv.org/abs/2611.06238v1",
+      "metadata_verification_note": "Verified against versioned arXiv abstract page, submission history and HTML full text. Atom API unavailable; API cross-check remains pending. Abstract fingerprint uses whitespace-normalized abstract-page text with its hyperlink restored.",
+      "source_abstract_sha256": "ff1661391582253ea74324dc57c2d5d83bb36ad497145205c0331c0a8ef43249"
+    },
     {
       "arxiv_id": "2611.05827",
       "title": "TandemBench: Benchmarking Decision Models for Multi-Agent Collaboration",
@@ -1496,6 +1637,85 @@
       ],
       "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.02155v1",
       "source_abstract_sha256": "33d65a9166053cd4a42338132f746d30300bd998dc61ae40bfc27d4d78f664dd"
+    },
+    {
+      "arxiv_id": "2611.02096",
+      "title": "EarthJev: Calibrated, Non-Generative Answers to Natural-Language Questions about Sentinel-2 Land Cover",
+      "authors": [
+        "Domenico Benfenati",
+        "Antonio Maria Rinaldi",
+        "Cristian Tommasino"
+      ],
+      "affiliations": [
+        "DIETI, University of Naples Federico II"
+      ],
+      "first_submitted": "2026-11-01",
+      "updated": "2026-11-01",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.02096",
+      "reviewed_url": "https://arxiv.org/abs/2611.02096v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.02096v1",
+      "arxiv_categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "related",
+      "tags": [
+        "applications",
+        "multimodal",
+        "calibration"
+      ],
+      "summary": {
+        "en": "A 0.8B model that answers typed questions about 12-band Sentinel-2 patches without generating any token, following the open OneJev recipe (option-letter logits at one position, cross-entropy plus Brier). Trained on 70,890 questions from 5% of BigEarthNet v2.0, it reaches 86.0% accuracy on 36,028 test questions (three seeds) with ECE 0.006 at 19.9 ms per question; training the whole vision encoder raises accuracy to 88.4% at the same cost. Hosted Jev is neither used nor evaluated; multimodal baselines saw only RGB composites and the data cover ten European countries.",
+        "zh": "0.8B 模型对 12 波段 Sentinel-2 影像块回答类型化问题、不生成任何 token，采用开放 OneJev 配方（单位置选项字母 logits，交叉熵加 Brier 训练）。以 BigEarthNet v2.0 的 5%（70,890 题）训练，36,028 个测试题准确率 86.0%（三种子）、ECE 0.006、单题 19.9 毫秒；解冻整个视觉编码器可在同成本下达到 88.4%。未使用或评测托管 Jev；多模态基线仅见 RGB 合成图，数据限于十个欧洲国家。"
+      },
+      "problem": {
+        "en": "Can typed questions about multispectral satellite patches be answered non-generatively with calibrated probabilities?",
+        "zh": "多光谱卫星影像块的类型化问题能否以非生成方式给出校准概率？"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "following the open OneJev recipe, the answer is read from the logits",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.02096v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "On 36,028 test questions it reaches 86.0% accuracy",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.02096v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-06",
+      "code": [
+        {
+          "url": "https://github.com/CosmoIknosLab/EarthJev",
+          "source_url": "https://arxiv.org/abs/2611.02096v1",
+          "source_location": "arXiv comment (Code and model)",
+          "verified_on": "2026-11-06",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.02096v1",
+      "source_abstract_sha256": "8b492cad6bedc0e66d4389e400b8a0a7afb888af09c4bb73bfab4944f24aefca"
     },
     {
       "arxiv_id": "2611.01631",
@@ -3309,6 +3529,81 @@
       ],
       "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.39747v1",
       "source_abstract_sha256": "b045fcbd21e8211bfd30be68b0992069305da4780bf35e0399f1e26412aeec48"
+    },
+    {
+      "arxiv_id": "2610.40692",
+      "title": "CausalGrade: Evidence-Guided Causal Graph Scoring with Jev",
+      "authors": [
+        "Jiangming Zhong",
+        "Jiawei Zhu",
+        "Guanting Wu",
+        "Qiaoxi Cai",
+        "Wanyi Chen",
+        "Jiale Li"
+      ],
+      "affiliations": [
+        "Guangdong University of Technology"
+      ],
+      "first_submitted": "2026-10-28",
+      "updated": "2026-10-28",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.40692",
+      "reviewed_url": "https://arxiv.org/abs/2610.40692v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40692v1",
+      "arxiv_categories": [
+        "stat.ML",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "direct",
+      "tags": [
+        "applications",
+        "judging",
+        "causal-discovery"
+      ],
+      "summary": {
+        "en": "Scores candidate causal graphs by giving Jev 1.13.0 evidence of association, conditional dependence and directionality from observational data plus CDFM edge probabilities, then measuring adjacency agreement with Jev's edge-level judgments. Across 300 synthetic datasets the score tracks structural error (Spearman -0.52 to -0.76 over four discovery algorithms), and on 500 graph-selection tasks it reaches a 54.4% best-candidate hit rate versus 48.4% for self-compatibility. Candidates come from thresholding the same CDFM output, so sparsification and discrimination gains are partly confounded; no author code was located.",
+        "zh": "将关联、条件依赖与方向性证据连同 CDFM 边概率交给 Jev 1.13.0，再用邻接结构与 Jev 边级判断的一致度为候选因果图打分。300 个合成数据集上得分与结构误差呈较强负相关（四种发现算法 Spearman -0.52 至 -0.76）；500 个图选择任务最佳候选命中 54.4%，高于自兼容基线 48.4%。候选图由同一 CDFM 输出阈值化得到，稀疏化与判别增益部分混淆；未找到作者代码。"
+      },
+      "problem": {
+        "en": "How can candidate causal graphs be scored when the true causal structure is unknown?",
+        "zh": "真因果结构未知时，如何为候选因果图的结构质量打分？"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "a causal graph scoring method based on the probabilistic judgment model Jev",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.40692v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "Jev produces probabilistic judgments about direct causal edges",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.40692v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-06",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.40692v1",
+      "source_abstract_sha256": "3413faff117130463c5f05ca0875b8ef3ada256dbc6b8e234318632782a469b2"
     },
     {
       "arxiv_id": "2610.38915",
@@ -5946,6 +6241,75 @@
       "source_abstract_sha256": "86fad83b3094c9be17c9b6d7abe218cc697f17f979d8a04ba18f1f6e8a6cd869"
     },
     {
+      "arxiv_id": "2610.33389",
+      "title": "OneCodeReviewBench: Typed Decisions for Code Review and Search",
+      "authors": [
+        "Mohamad Mohebifar",
+        "Alex Bit"
+      ],
+      "affiliations": [
+        "Codemod Inc."
+      ],
+      "first_submitted": "2026-10-24",
+      "updated": "2026-10-24",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.33389",
+      "reviewed_url": "https://arxiv.org/abs/2610.33389v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.33389v1",
+      "arxiv_categories": [
+        "cs.SE"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "evaluation",
+      "relation_level": "direct",
+      "tags": [
+        "benchmark",
+        "evaluation",
+        "code-review"
+      ],
+      "summary": {
+        "en": "A benchmark of 1,968 synthetic code-review cases across 12 languages and YAML, with Boolean, categorical and ordered answers under explicit contracts, comparing ten model-adapter systems; Jev used jev-1.13.0. OpenAI Decisions leads Boolean balanced accuracy (81.3%) while Kev-27B leads Choice accuracy (76.8%) and Score MAE (0.367), so rankings depend on answer type. All cases are synthetic with small fixtures and no repository-scale transfer; the dataset and reproduction artifact are archived on Zenodo (DOI 10.5281/zenodo.23604731) rather than GitHub, so the catalogue's code count is unchanged.",
+        "zh": "1,968 个合成代码评审用例覆盖 12 种语言与 YAML，布尔、类别与有序答案均在显式契约下给出，比较十套模型-适配器系统；Jev 使用 jev-1.13.0。OpenAI Decisions 布尔平衡准确率领先（81.3%），Kev-27B 选择准确率（76.8%）与评分 MAE（0.367）领先，排名取决于答案类型。用例全部为合成小场景、未见仓库级迁移；数据与复现工件存于 Zenodo（DOI 10.5281/zenodo.23604731）而非 GitHub，目录代码计数不变。"
+      },
+      "problem": {
+        "en": "Can bounded code-review judgements be expressed as typed decisions with reference answers?",
+        "zh": "有界的代码评审判断能否表达为带参考答案的类型化决策？"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "Jev used jev-1.13.0; OpenAI Decisions used gpt-6-luna",
+          "location": "Section V-A (access modes)",
+          "source_url": "https://arxiv.org/html/2610.33389v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "1,968 synthetic cases across 12 programming languages and YAML",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.33389v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-06",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.33389v1",
+      "source_abstract_sha256": "5ef999c9e5fcf79b958a199414a460f7e147c2eab00f33c87d4292b178a6b424"
+    },
+    {
       "arxiv_id": "2610.33258",
       "title": "Two Uncertainties Are Not One: Disagreement versus Decision-Risk in Cheap Structured Content Moderation",
       "authors": [
@@ -8077,6 +8441,85 @@
       "source_abstract_sha256": "01423a8f1ee53e2fc254f493b85a9b5e82cdf29755360db8c9239d6da3ab4ac8"
     },
     {
+      "arxiv_id": "2610.25985",
+      "title": "NIOCIS: Typed-Decision Next-Hop Routing with Node-Conditioned Option Spaces for Tool-Use Agents",
+      "authors": [
+        "Jin Han",
+        "Mingfeng Xin",
+        "Feng Liang",
+        "Jingtao Yu"
+      ],
+      "affiliations": [],
+      "first_submitted": "2026-10-19",
+      "updated": "2026-10-19",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.25985",
+      "reviewed_url": "https://arxiv.org/abs/2610.25985v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.25985v1",
+      "arxiv_categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "agents",
+      "relation_level": "related",
+      "tags": [
+        "agents",
+        "efficiency",
+        "networking"
+      ],
+      "summary": {
+        "en": "A routing layer that folds tool-agent execution logs into a loop-collapsed action graph and asks one typed question per hop: which declared option, plus stop, comes next. A local Laya 0.3.21 reads a calibrated distribution in 10-19.5 ms versus 2.2 s per LLM hop, matching the logged next hop on 32.2% of 3,875 held-out decisions against a leave-one-out ceiling of 25.6-44.9%; its most confident 15% holds 91.9% accuracy. Hosted Jev is not used; labels are convention-derived weak labels and 7.9% of targets fall outside the declared option space.",
+        "zh": "将工具 agent 执行日志折叠为环折叠动作图，每一跳只问一个类型化问题：下一个声明的选项或停止。本地 Laya 0.3.21 单次前向 10-19.5 毫秒读出校准分布，对比 LLM 每跳 2.2 秒；3,875 个留出决策中与日志下一跳一致率 32.2%（留一上限 25.6-44.9%），最有把握的 15% 决策准确率 91.9%。未使用托管 Jev；标签为约定推导的弱标签，7.9% 的目标不在声明选项空间内。"
+      },
+      "problem": {
+        "en": "Can recurring tool-agent routing decisions be served by a one-pass calibrated typed readout instead of an LLM?",
+        "zh": "工具 agent 的重复路由决策能否由单次前向的校准类型化读出替代 LLM？"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "answering one typed question: which declared option at a state",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.25985v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "On 1,615 production security-operations episodes we measure",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.25985v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-06",
+      "code": [
+        {
+          "url": "https://github.com/geilihan/niocis",
+          "source_url": "https://arxiv.org/abs/2610.25985v1",
+          "source_location": "arXiv comment (code and pseudonymized derived corpus)",
+          "verified_on": "2026-11-06",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.25985v1",
+      "source_abstract_sha256": "e32cb590c228eaf07fa41d08fcd5b0b956324a62bf0df2e57959ed95fc2197b0"
+    },
+    {
       "arxiv_id": "2610.25947",
       "title": "Claim Laundering: When Agent Decision Models Trust Records Over Reality",
       "authors": [
@@ -8704,6 +9147,80 @@
       "source_abstract_sha256": "d6ea7e64f4f63dc8a117a2312929acad8de1575d071088fa02398f9611894e65"
     },
     {
+      "arxiv_id": "2610.37688",
+      "title": "One Confidence Threshold, Unequal Coverage: Language Gaps in Typed Decision Interfaces and How Translating Inputs Reduces Them",
+      "authors": [
+        "Junwei Yao",
+        "Yongxi Zhou",
+        "Zike Yang",
+        "Zhijun Wang",
+        "Jianan Liu",
+        "Yanxian Chen",
+        "Wenbo Ye"
+      ],
+      "affiliations": [],
+      "first_submitted": "2026-10-17",
+      "updated": "2026-10-17",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.37688",
+      "reviewed_url": "https://arxiv.org/abs/2610.37688v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37688v1",
+      "arxiv_categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "calibration",
+      "relation_level": "related",
+      "tags": [
+        "calibration",
+        "multilingual",
+        "bias"
+      ],
+      "summary": {
+        "en": "A confirmatory study of whether one 0.9 confidence threshold serves all languages on typed decision interfaces: OpenAI Decisions (gpt-6-luna), Microsoft Decision-1 and Perplexity Decider v1.1 27B each classify 1,000 MASSIVE items in 51 languages. Even when answered correctly in both languages, the English version clears the threshold 8.6-11.7 points more often and observed coverage trails English in every other language; translate-test shrinks the gap to 0.8-1.4 points. Hosted Jev is not tested; the main evidence is MASSIVE-only, with 150-300 items per language in supporting checks.",
+        "zh": "检验单一 0.9 置信阈值是否对各语言公平：OpenAI Decisions（gpt-6-luna）、Microsoft Decision-1 与 Perplexity Decider v1.1 27B 各对 51 种语言的 1,000 条 MASSIVE 条目分类。即使两种语言都答对，英文版过阈值的比例仍高 8.6-11.7 个百分点，其他语言覆盖率均低于英文；翻译后输入将差距缩至 0.8-1.4 个百分点。未测试托管 Jev；主要证据限于 MASSIVE，辅助检验每语言仅 150-300 条。"
+      },
+      "problem": {
+        "en": "Does a single confidence threshold on typed decision APIs give equal automation coverage across languages?",
+        "zh": "类型化决策接口上单一置信阈值能否给各语言同等的自动化覆盖率？"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "typed decision interfaces, APIs that return a probability for each option",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.37688v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "interfaces classified 1,000 MASSIVE items, each in 51 languages",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.37688v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-06",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.37688v1",
+      "source_abstract_sha256": "e781b2f770d8913bfde54257105f2825380254a85d09e0c12d512a9cccdfdf36"
+    },
+    {
       "arxiv_id": "2610.24692",
       "title": "Native Probability Outputs for Clinical Triage: An Evaluation of Calibration and Decision Accuracy",
       "authors": [
@@ -9232,6 +9749,82 @@
       ],
       "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.23170v2",
       "source_abstract_sha256": "518a8e9cdd098df8107242627b4b892f070c002b2fd07331a8a53a52eb168013"
+    },
+    {
+      "arxiv_id": "2610.22588",
+      "title": "SAG2: Embedding-Free Multi-Hop Retrieval with BM25 and JEV",
+      "authors": [
+        "Yuchao Wu"
+      ],
+      "affiliations": [
+        "Zleap AI"
+      ],
+      "first_submitted": "2026-10-15",
+      "updated": "2026-10-15",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.22588",
+      "reviewed_url": "https://arxiv.org/abs/2610.22588v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.22588v1",
+      "arxiv_categories": [
+        "cs.CL"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "direct",
+      "tags": [
+        "retrieval",
+        "efficiency",
+        "applications"
+      ],
+      "summary": {
+        "en": "An embedding-free multi-hop retrieval stack (SQLite + BM25) whose evidence decisions come from hosted typesafe/jev-1.13-20260917 through OpenRouter's Noul interface: selected passages feed further retrieval and newly found evidence guides later judgments. Highest Recall@5/10 among compared methods on MuSiQue, 2WikiMultiHopQA and HotpotQA (R@10 86.62/97.43/99.00%) and 81.10% document R@10 over 511,962 documents; indexing 11,656 passages takes 2.36 s. Complete-evidence coverage on four-hop questions is 28.31%, and dependence on the hosted service blocks full on-premise deployment.",
+        "zh": "免嵌入的多跳检索架构（SQLite+BM25），证据判断由 OpenRouter Noul 接口调用的托管 typesafe/jev-1.13-20260917 完成：选中段落提供后续检索词，新证据再引导下一步判断。在 MuSiQue、2WikiMultiHopQA、HotpotQA 上取得对比方法中最高的 Recall@5/10（R@10 86.62/97.43/99.00%），51.2 万文档语料上文档 R@10 达 81.10%；索引 11,656 段仅 2.36 秒。四跳问题的完全证据覆盖率仅 28.31%，且依赖托管服务、无法完全本地部署。"
+      },
+      "problem": {
+        "en": "Can accurate multi-hop retrieval run on lightweight lexical infrastructure without offline embeddings?",
+        "zh": "多跳检索能否只靠轻量词法索引运行、无需离线嵌入？"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "the returned model is typesafe/jev-1.13-20260917",
+          "location": "Section 4.1 (implementation)",
+          "source_url": "https://arxiv.org/html/2610.22588v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "SAG2 achieves the highest Recall@5 and Recall@10 among the compared methods",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.22588v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-06",
+      "code": [
+        {
+          "url": "https://github.com/Zleap-AI/SAG-Benchmark",
+          "source_url": "https://arxiv.org/abs/2610.22588v1",
+          "source_location": "Footnote 1 (Benchmark and evaluation code)",
+          "verified_on": "2026-11-06",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.22588v1",
+      "source_abstract_sha256": "4d1403d4c8ec37c150a2eecfa042676f346571eb97b0af597d1ca5f5b8106c27"
     },
     {
       "arxiv_id": "2610.22526",
@@ -10042,6 +10635,86 @@
       ],
       "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.21046v1",
       "source_abstract_sha256": null
+    },
+    {
+      "arxiv_id": "2610.22407",
+      "title": "Towards Adaptive and Real-Survey-Aligned Simulated Urban Mobility Behaviour of Generative Agents",
+      "authors": [
+        "Yves Bru",
+        "Kamaldeep Singh Oberoi",
+        "Benoit Gaudou"
+      ],
+      "affiliations": [
+        "IRIT, Université Toulouse Capitole",
+        "CESI LINEACT"
+      ],
+      "first_submitted": "2026-10-14",
+      "updated": "2026-10-14",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2610.22407",
+      "reviewed_url": "https://arxiv.org/abs/2610.22407v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.22407v1",
+      "arxiv_categories": [
+        "cs.MA",
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "direct",
+      "tags": [
+        "agents",
+        "social-science",
+        "applications"
+      ],
+      "summary": {
+        "en": "Simulates daily multimodal mobility for Toulouse with fifteen decision-makers, including Jev (Jev-1.13, version jev-1.13.0) as a typed classifier under minimal and tuned prompts. Jev reaches 3.65 composite points, inside the fitted reference-model range (3.43-4.38), at roughly one-fiftieth of Gemini 3.5's cost, but trip-level realism fails for every generative agent and the unforeseen-event check rests on a single agent and event. Findings are specific to the Toulouse 2023 survey; prompts were tuned on splits, not per-trip choices.",
+        "zh": "为图卢兹构建日常多模式出行模拟，比较 15 个决策器，包括作为类型化分类器的 Jev（Jev-1.13，版本 jev-1.13.0，最小与调优两种提示）。Jev 综合 3.65 分落在拟合参考模型区间（3.43-4.38）内，成本约为 Gemini 3.5 的五十分之一；但所有生成式 agent 的逐次出行真实感均未达标，突发事件检验仅基于单个 agent 与单个事件。结论限于图卢兹 2023 年调查；提示按数据分片调优而非逐次出行。"
+      },
+      "problem": {
+        "en": "Can generative agents reproduce real household travel-survey behaviour in city-scale mobility simulation?",
+        "zh": "生成式 agent 能否在城市规模出行模拟中复现真实家庭出行调查行为？"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "Jev (Jev-1.13 TypeSafe model, version jev-1.13.0)",
+          "location": "Section 4 (decision-makers)",
+          "source_url": "https://arxiv.org/html/2610.22407v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "We compare the performance of fifteen decision-makers",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.22407v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-06",
+      "code": [
+        {
+          "url": "https://github.com/Ytlse/generative-agents-urban-mobility",
+          "source_url": "https://arxiv.org/abs/2610.22407v1",
+          "source_location": "Footnote 2 (protocol, code, seeds and evaluation population)",
+          "verified_on": "2026-11-06",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.22407v1",
+      "source_abstract_sha256": "269337c0c866d588eeb9110ea34d75aa5fd46c0390c0ed901e6615d1db8b81e1"
     },
     {
       "arxiv_id": "2610.22401",

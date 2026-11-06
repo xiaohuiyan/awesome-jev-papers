@@ -41,6 +41,7 @@ If the available passages leave technical scope or model identity unresolved, re
 
 ## Source and version handling
 
+- When Atom is unavailable, a targeted addition may use the official versioned abstract page, submission history and HTML author block. Set `metadata_source` to the page actually read and record the pending Atom cross-check in `metadata_verification_note`; a web-derived abstract fingerprint is not evidence of API verification.
 - arXiv Atom metadata supplies exact titles, full author lists, first-submission dates, update dates, subjects and version IDs. The indexed web search is a discovery aid, not the final authority.
 - The versioned abstract is the citation target. The unversioned arXiv link also appears so readers can check later revisions.
 - `publication_status` records “arXiv manuscript.” A missing journal reference does not prove that a paper is unpublished. No conference acceptance is inferred from a title or search snippet.

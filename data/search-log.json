@@ -561,6 +561,168 @@
       "round": 10,
       "query": "all:JevBench AND submittedDate:[202609150000 TO 202611052359] (whole-window variant re-run)",
       "count": 7
+    },
+    {
+      "engine": "arxiv-web",
+      "searched_on": "2026-11-06",
+      "query": "Jev",
+      "url": "https://arxiv.org/search/?query=Jev&searchtype=all&abstracts=show&order=-announced_date_first&size=50",
+      "window": "Screen first-submission dates 2026-10-31 through 2026-11-06; latest-first discovery also shows older papers.",
+      "coverage": "Inspected available result excerpts and followed candidate primary pages; no exhaustive result count claimed."
+    },
+    {
+      "engine": "arxiv-web",
+      "searched_on": "2026-11-06",
+      "query": "\"System One\"",
+      "url": "https://arxiv.org/search/?query=%22System+One%22&searchtype=all&abstracts=show&order=-announced_date_first&size=50",
+      "window": "Screen first-submission dates 2026-10-31 through 2026-11-06; latest-first discovery also shows older papers.",
+      "coverage": "Inspected available result excerpts and followed candidate primary pages; no exhaustive result count claimed."
+    },
+    {
+      "engine": "arxiv-web",
+      "searched_on": "2026-11-06",
+      "query": "\"System 1\"",
+      "url": "https://arxiv.org/search/?query=%22System+1%22&searchtype=all&abstracts=show&order=-announced_date_first&size=50",
+      "window": "Screen first-submission dates 2026-10-31 through 2026-11-06; latest-first discovery also shows older papers.",
+      "coverage": "Inspected available result excerpts and followed candidate primary pages; no exhaustive result count claimed."
+    },
+    {
+      "engine": "arxiv-web",
+      "searched_on": "2026-11-06",
+      "query": "\"typed decision\"",
+      "url": "https://arxiv.org/search/?query=%22typed+decision%22&searchtype=all&abstracts=show&order=-announced_date_first&size=50",
+      "window": "Screen first-submission dates 2026-10-31 through 2026-11-06; latest-first discovery also shows older papers.",
+      "coverage": "Inspected available result excerpts and followed candidate primary pages; no exhaustive result count claimed."
+    },
+    {
+      "engine": "arxiv-web",
+      "searched_on": "2026-11-06",
+      "query": "\"decision models\"",
+      "url": "https://arxiv.org/search/?query=%22decision+models%22&searchtype=all&abstracts=show&order=-announced_date_first&size=50",
+      "window": "Screen first-submission dates 2026-10-31 through 2026-11-06; latest-first discovery also shows older papers.",
+      "coverage": "Inspected available result excerpts and followed candidate primary pages; no exhaustive result count claimed."
+    },
+    {
+      "engine": "arxiv-web",
+      "searched_on": "2026-11-06",
+      "query": "\"decision model\"",
+      "url": "https://arxiv.org/search/?query=%22decision+model%22&searchtype=all&abstracts=show&order=-announced_date_first&size=50",
+      "window": "Screen first-submission dates 2026-10-31 through 2026-11-06; latest-first discovery also shows older papers.",
+      "coverage": "Inspected available result excerpts and followed candidate primary pages; no exhaustive result count claimed."
+    },
+    {
+      "engine": "arxiv-web",
+      "searched_on": "2026-11-06",
+      "query": "\"System-One\"",
+      "url": "https://arxiv.org/search/?query=%22System-One%22&searchtype=all&abstracts=show&order=-announced_date_first&size=50",
+      "window": "Screen first-submission dates 2026-10-31 through 2026-11-06; latest-first discovery also shows older papers.",
+      "coverage": "Inspected available result excerpts and followed candidate primary pages; no exhaustive result count claimed."
+    },
+    {
+      "engine": "arxiv-web",
+      "searched_on": "2026-11-06",
+      "query": "JevBench",
+      "url": "https://arxiv.org/search/?query=JevBench&searchtype=all&abstracts=show&order=-announced_date_first&size=50",
+      "window": "Screen first-submission dates 2026-10-31 through 2026-11-06; latest-first discovery also shows older papers.",
+      "coverage": "Inspected available result excerpts and followed candidate primary pages; no exhaustive result count claimed."
+    },
+    {
+      "engine": "arxiv-web",
+      "searched_on": "2026-11-06",
+      "query": "MedJev",
+      "url": "https://arxiv.org/search/?query=MedJev&searchtype=all&abstracts=show&order=-announced_date_first&size=50",
+      "window": "Screen first-submission dates 2026-10-31 through 2026-11-06; latest-first discovery also shows older papers.",
+      "coverage": "Inspected available result excerpts and followed candidate primary pages; no exhaustive result count claimed."
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 11,
+      "query": "all:\"language model\" AND submittedDate:[202611050000 TO 202611062359] sanity probe (11 records; published dates present: 11-05 only at run time, Friday 02:50 UTC)",
+      "count": 11
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 11,
+      "query": "all:\"Jev\" AND submittedDate:[202611050000 TO 202611062359]",
+      "count": 0
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 11,
+      "query": "all:\"System One\" AND submittedDate:[202611050000 TO 202611062359]",
+      "count": 1
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 11,
+      "query": "all:\"typed decision\" AND submittedDate:[202611050000 TO 202611062359]",
+      "count": 0
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 11,
+      "query": "all:\"decision model\" AND submittedDate:[202611050000 TO 202611062359]",
+      "count": 0
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 11,
+      "query": "all:MedJev AND submittedDate:[202609150000 TO 202611062359] (whole-window variant re-run, 2026-09-15 forward)",
+      "count": 1
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 11,
+      "query": "all:\"System-One\" AND submittedDate:[202609150000 TO 202611062359] (whole-window variant re-run)",
+      "count": 91
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 11,
+      "query": "all:\"System 1\" AND submittedDate:[202609150000 TO 202611062359] (whole-window variant re-run)",
+      "count": 46
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 11,
+      "query": "all:\"decision models\" AND submittedDate:[202609150000 TO 202611062359] (whole-window variant re-run; 206 total, newest 100 fetched)",
+      "count": 100
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 11,
+      "query": "all:JevBench AND submittedDate:[202609150000 TO 202611062359] (whole-window variant re-run)",
+      "count": 7
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 11,
+      "query": "all:\"Jev\" AND submittedDate:[202609150000 TO 202611062359] (whole-window STANDING re-run, first since round 8; 209 total, newest 200 fetched)",
+      "count": 200
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 11,
+      "query": "all:\"System One\" AND submittedDate:[202609150000 TO 202611062359] (whole-window standing re-run)",
+      "count": 91
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 11,
+      "query": "all:\"typed decision\" AND submittedDate:[202609150000 TO 202611062359] (whole-window standing re-run)",
+      "count": 71
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 11,
+      "query": "all:\"decision model\" AND submittedDate:[202609150000 TO 202611062359] (whole-window standing re-run; 206 total, newest 200 fetched)",
+      "count": 200
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 11,
+      "query": "id_list=2611.02096v1 (EarthJev, surfaced by web/social cross-check; its Jev token only appears fused inside EarthJev/OneJev, so no query matched it)",
+      "count": 1
     }
   ],
   "web_discovery_queries": [
@@ -1008,6 +1170,72 @@
       "query": "Jev 决策模型 电车难题 屠荒者 论文 arXiv (web search)",
       "purpose": "carried-over WeChat lead (屠荒者)",
       "result": "no arXiv record; discourse resolves to Zach Landes' blog test and Chinese explainers citing already-catalogued papers; lead carried over again"
+    },
+    {
+      "round": 11,
+      "query": "site:mp.weixin.qq.com Jev 决策模型 2026年11月 (web search)",
+      "purpose": "WeChat leads",
+      "result": "no dated hits; cookbook/explainer archives only, all referencing catalogued papers"
+    },
+    {
+      "round": 11,
+      "query": "site:mp.weixin.qq.com Jev 决策模型 (web search, undated)",
+      "purpose": "WeChat leads",
+      "result": "Datawhale jev-cookbook archive, BAAI/juejin/puppyone explainers; no new arXiv records"
+    },
+    {
+      "round": 11,
+      "query": "site:zhihu.com Jev 决策模型 System One (web search)",
+      "purpose": "Zhihu leads",
+      "result": "10 columns; explainers plus the '一周13篇论文' digest and the 10-23 cs.AI digest — Jev-DLC/RetiJev/etc. all already catalogued"
+    },
+    {
+      "round": 11,
+      "query": "知乎 Jev 论文 2026年11月 决策模型 arxiv (web search)",
+      "purpose": "Zhihu recent-week leads",
+      "result": "surfaces LLM-as-Jev (2610.02076, catalogued), General Decision Models (2610.03935, catalogued), Jev in the Wild (2609.30216, catalogued); no new records"
+    },
+    {
+      "round": 11,
+      "query": "site:weibo.com Jev 决策模型 (web search)",
+      "purpose": "Weibo leads",
+      "result": "ttarticle explainers: Ant 27B -> SII-Decision-27B in 2610.03935 (catalogued); 0.6B open multimodal -> StartLux/community tools (catalogued or product-only); Jev multimodal update is vendor product news"
+    },
+    {
+      "round": 11,
+      "query": "蚂蚁 Jev 27B 决策模型 论文 arxiv (web search)",
+      "purpose": "Weibo lead follow-up (Ant Group)",
+      "result": "resolves to arXiv 2610.03935 General Decision Models (SII-Decision-27B), already catalogued; no separate paper"
+    },
+    {
+      "round": 11,
+      "query": "\"decision model\" 0.6B open source multimodal Jev alternative (web search)",
+      "purpose": "Weibo lead follow-up (0.6B open model)",
+      "result": "Medium article on the Qwen3-0.6B community tool and Decision 3.0 / Vega product news; Vega is a HuggingFace model card by the Laya author with no arXiv record — retained as a watch lead, not a paper"
+    },
+    {
+      "round": 11,
+      "query": "Vega 800M typed decision model physics open source arxiv (web search)",
+      "purpose": "new lead follow-up (Vega)",
+      "result": "HF model card nandakishorm/vega-08b-public-intents + LinkedIn/Reddit announcement; no arXiv record; lead retained for watching"
+    },
+    {
+      "round": 11,
+      "query": "\"LLM2Jev\" arxiv (web search)",
+      "purpose": "lead disambiguation",
+      "result": "LLM2Jev is the v1 title of arXiv 2610.02076 (retitled LLM-as-Jev at v2), already catalogued"
+    },
+    {
+      "round": 11,
+      "query": "Jev decision model arxiv new paper November 2026 (web search)",
+      "purpose": "X/Twitter leads (post-morning cross-check)",
+      "result": "surfaces 2611-series papers; 6 of 7 catalogued, EarthJev (2611.02096) was NOT catalogued -> fed into round 11 screening and added"
+    },
+    {
+      "round": 11,
+      "query": "Jev arxiv 2611 new paper November 5 6 2026 twitter (web search)",
+      "purpose": "X/Twitter leads (fresh-window cross-check)",
+      "result": "Cyber-JEV/EO-Jev/Honest Small DMs/ReListen/Zuse/XDecideBench all catalogued; EarthJev surfaced here and added via round 11"
     }
   ],
   "arxiv_site_search": {
@@ -1021,10 +1249,10 @@
       "purpose": "Early Jev corpus and four foundational methods"
     }
   ],
-  "unique_candidates": 469,
+  "unique_candidates": 480,
   "outcomes": {
-    "included": 316,
-    "excluded": 151,
+    "included": 325,
+    "excluded": 153,
     "pending": 2
   },
   "limitations": [
@@ -1035,7 +1263,7 @@
     "Broad discovery ends on 2026-10-16. Later targeted additions are logged separately and do not imply a fresh search or re-verification of the entire corpus.",
     "2026-10-27 round: Zhihu and Weibo returned no usable public search results (403 or ignored site filters); WeChat coverage relied on the Sogou public index."
   ],
-  "updated_on": "2026-11-05",
+  "updated_on": "2026-11-06",
   "targeted_additions": [
     {
       "reviewed_on": "2026-10-17",
@@ -1077,6 +1305,26 @@
       "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.23170v2",
       "full_text_source": "https://arxiv.org/pdf/2610.23170v2",
       "result": "Included: direct Jev; Model architectures and training category."
+    },
+    {
+      "reviewed_on": "2026-11-06",
+      "trigger": "User-requested arXiv weekly gap search (2026-10-31 through 2026-11-06)",
+      "papers": [
+        {
+          "arxiv_id": "2611.06384",
+          "version": 1,
+          "source_url": "https://arxiv.org/abs/2611.06384v1",
+          "review_level": "abstract + targeted full text"
+        },
+        {
+          "arxiv_id": "2611.06238",
+          "version": 1,
+          "source_url": "https://arxiv.org/abs/2611.06238v1",
+          "review_level": "abstract + targeted full text"
+        }
+      ],
+      "outcome": "2 direct Jev papers added; 2 lexical/dual-process candidates excluded. arXiv web search and primary pages used; API unavailable. Not an exhaustive API sweep.",
+      "report": "docs/ARXIV_SEARCH_2026-11-06.md"
     }
   ],
   "social_searches": [
@@ -1198,6 +1446,29 @@
       ],
       "added_papers": 0,
       "note": "The social round contributed no new records of its own: every arXiv ID it surfaced was already catalogued and no platform-only lead resolved to an arXiv record. All 7 additions of this round came from the API sweeps, including the whole-window variant re-run that caught the late-indexed 2611.05396 (first submitted 2026-10-13); two carried-over leads (Ahn ResearchGate preprint, 屠荒者 WeChat explainer) remain unresolved without arXiv records."
+    },
+    {
+      "searched_on": "2026-11-06",
+      "record": "data/social-search-2026-11-06.json",
+      "report": "docs/SOCIAL_SEARCH_2026-11-06.md",
+      "platforms": [
+        "X / Twitter (web index and secondary summaries)"
+      ],
+      "added_papers": 0,
+      "note": "Coverage-limited weekly search (10-31 through 11-06): X returned 403; paper leads were duplicates. Added a three-paper reading shortlist and retained one author benchmark blog as a non-paper lead. No completed API sweep or exhaustive X coverage claimed."
+    },
+    {
+      "searched_on": "2026-11-06",
+      "record": "data/social-search-2026-11-06.json",
+      "report": "docs/SOCIAL_SEARCH_2026-11-06.md",
+      "platforms": [
+        "WeChat 公众号",
+        "Zhihu",
+        "Sina Weibo",
+        "X / Twitter (cross-check)"
+      ],
+      "added_papers": 1,
+      "note": "Same-day CN-platform round after the morning X-only search: every WeChat/Zhihu/Weibo paper lead resolved to already-catalogued records (Ant 27B -> 2610.03935; Jev-DLC -> 2610.31521; StartLux -> 2610.17309; LLM2Jev -> 2610.02076 v2). The X cross-check summary, however, surfaced EarthJev (2611.02096, first submitted 11-01), which no API query had ever matched because its Jev token only appears fused inside EarthJev/OneJev; it was added by the round-11 arXiv screening. Vega (800M, Laya author) remains a model-card-only watch lead."
     }
   ],
   "targeted_rechecks": [

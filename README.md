@@ -12,9 +12,9 @@ This reading list asks a concrete question: given context and a set of options, 
 
 | Papers | Direct Jev | Related methods | Foundations | With verified code |
 | ---: | ---: | ---: | ---: | ---: |
-| **316** | 204 | 108 | 4 | 115 |
+| **325** | 210 | 111 | 4 | 119 |
 
-Updated **2026-11-05** · Main window **2025-10-16–2026-11-04** (first submission)
+Updated **2026-11-06** · Main window **2025-10-16–2026-11-04** (first submission)
 
 [Start with ten papers](#recommended-reading) · [Browse by question](#category-index) · [Foundations](#foundations) · [Data and maintenance](#reuse-and-updates)
 
@@ -50,14 +50,14 @@ Suggested path: **assess the evidence → compare capabilities → understand mo
 
 | Your question | Topic | Direct / related | Total |
 | --- | --- | ---: | ---: |
-| How do we train a model specifically to choose? | [Model architectures and training](#architecture) | 15 / 42 | 57 |
-| When are fast decisions good enough? | [Benchmarks and comparative evaluation](#evaluation) | 41 / 10 | 51 |
-| Can we trust the model's confidence? | [Calibration, reliability and selective decisions](#calibration) | 17 / 9 | 26 |
-| When should an agent search, use a tool, or delegate? | [Search, memory, tools and agent decisions](#agents) | 35 / 13 | 48 |
-| Can phrasing, option order, or attacks change the decision? | [Security, robustness and decision bias](#security) | 40 / 9 | 49 |
-| How do quality and speed trade off in real workflows? | [Domain applications and deployment efficiency](#applications) | 56 / 25 | 81 |
+| How do we train a model specifically to choose? | [Model architectures and training](#architecture) | 16 / 42 | 58 |
+| When are fast decisions good enough? | [Benchmarks and comparative evaluation](#evaluation) | 42 / 10 | 52 |
+| Can we trust the model's confidence? | [Calibration, reliability and selective decisions](#calibration) | 17 / 10 | 27 |
+| When should an agent search, use a tool, or delegate? | [Search, memory, tools and agent decisions](#agents) | 35 / 14 | 49 |
+| Can phrasing, option order, or attacks change the decision? | [Security, robustness and decision bias](#security) | 41 / 9 | 50 |
+| How do quality and speed trade off in real workflows? | [Domain applications and deployment efficiency](#applications) | 59 / 26 | 85 |
 
-Each paper has one primary category; 4 foundations are listed separately. Categories group direct Jev work before related methods, with newest first submissions first within each group. Entries keep published date, authors, affiliations, problem, and contribution; affiliations come from the papers themselves (HTML full text or PDF first page), and 15 papers that state none omit the field. Full author lists, tags, and verification records live in the [evidence ledger](docs/EVIDENCE.md) and [BibTeX](references.bib).
+Each paper has one primary category; 4 foundations are listed separately. Categories group direct Jev work before related methods, with newest first submissions first within each group. Entries keep published date, authors, affiliations, problem, and contribution; affiliations come from the papers themselves (HTML full text or PDF first page), and 17 papers that state none omit the field. Full author lists, tags, and verification records live in the [evidence ledger](docs/EVIDENCE.md) and [BibTeX](references.bib).
 
 <a id="architecture"></a>
 ## Model architectures and training
@@ -66,8 +66,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 15
+### Direct Jev · 16
 
+<a id="paper-2611-06238"></a>
+#### [Zuse: A Decision Model for European Languages](https://arxiv.org/abs/2611.06238v1) · [PDF](https://arxiv.org/pdf/2611.06238v1)
+- **📅 Published**: 2026-11-04 (v1)
+- **👥 Authors**: Umair Mehmood Imam
+- **🏢 Affiliations**: Bineric AI; OsloMet, Norway
+- **🎯 Problem**: How do multilingual decision models transfer across languages, calibrate by task and support selective automation?
+- **💡 Contribution**: Studies 4B, 9B and 27B decision models with low-rank adapters and pointer heads for 27 European languages. Task-dependent calibration and data-mixture pitfalls are analyzed; English comparisons use Jev results reported by the Kev project. The European suite also guided model selection, most runs use one seed, and the full training recipe and data are undisclosed. Treat the findings as exploratory, not an independent multilingual win over Jev.
+---
 <a id="paper-2610-41079"></a>
 #### [EDU-Jev Training System-One Decision Models for Education](https://arxiv.org/abs/2610.41079v1) · [PDF](https://arxiv.org/pdf/2610.41079v1)
 - **📅 Published**: 2026-10-29 (v1)
@@ -529,7 +537,7 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 41
+### Direct Jev · 42
 
 <a id="paper-2611-04510"></a>
 #### [Fast, Cheap, and Fair? Evaluating Decision Models](https://arxiv.org/abs/2611.04510v1) · [PDF](https://arxiv.org/pdf/2611.04510v1)
@@ -641,6 +649,14 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🏢 Affiliations**: The Hong Kong University of Science and Technology (Guangzhou)
 - **🎯 Problem**: How far can System 1 models go on time-series decisions?
 - **💡 Contribution**: Converts continuous forecasting targets into discrete decisions and evaluates Jev 1.13.0 across classification, event-type and direction tasks.
+---
+<a id="paper-2610-33389"></a>
+#### [OneCodeReviewBench: Typed Decisions for Code Review and Search](https://arxiv.org/abs/2610.33389v1) · [PDF](https://arxiv.org/pdf/2610.33389v1)
+- **📅 Published**: 2026-10-24 (v1)
+- **👥 Authors**: Mohamad Mohebifar; Alex Bit
+- **🏢 Affiliations**: Codemod Inc.
+- **🎯 Problem**: Can bounded code-review judgements be expressed as typed decisions with reference answers?
+- **💡 Contribution**: A benchmark of 1,968 synthetic code-review cases across 12 languages and YAML, with Boolean, categorical and ordered answers under explicit contracts, comparing ten model-adapter systems; Jev used jev-1.13.0. OpenAI Decisions leads Boolean balanced accuracy (81.3%) while Kev-27B leads Choice accuracy (76.8%) and Score MAE (0.367), so rankings depend on answer type. All cases are synthetic with small fixtures and no repository-scale transfer; the dataset and reproduction artifact are archived on Zenodo (DOI 10.5281/zenodo.23604731) rather than GitHub, so the catalogue's code count is unchanged.
 ---
 <a id="paper-2610-31422"></a>
 #### [How Well Do Decision Models Transfer to Vietnamese? An Empirical Study of Text Classification](https://arxiv.org/abs/2610.31422v1) · [PDF](https://arxiv.org/pdf/2610.31422v1)
@@ -1083,7 +1099,7 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: Does accepting confident judgments and escalating the rest actually pay off?
 - **💡 Contribution**: Tests accepting confident Jev judgments and escalating uncertain cases, with held-out validation of thresholds.
 ---
-### Related model / method · 9
+### Related model / method · 10
 
 <a id="paper-2610-37732"></a>
 #### [ThinkJev: One Thought, Every Budget for Calibrated Typed Decisions](https://arxiv.org/abs/2610.37732v1) · [PDF](https://arxiv.org/pdf/2610.37732v1)
@@ -1115,6 +1131,13 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **👥 Authors**: Agus Sudjianto; Denis Burakov
 - **🎯 Problem**: What do Jev-style training choices imply about the probabilities a decision model emits?
 - **💡 Contribution**: Computes exact finite-sample risks for the three training ingredients documented for Jev, using Gaussian surrogates of candidate scoring.
+---
+<a id="paper-2610-37688"></a>
+#### [One Confidence Threshold, Unequal Coverage: Language Gaps in Typed Decision Interfaces and How Translating Inputs Reduces Them](https://arxiv.org/abs/2610.37688v1) · [PDF](https://arxiv.org/pdf/2610.37688v1)
+- **📅 Published**: 2026-10-17 (v1)
+- **👥 Authors**: Junwei Yao; Yongxi Zhou; Zike Yang et al. (7 authors)
+- **🎯 Problem**: Does a single confidence threshold on typed decision APIs give equal automation coverage across languages?
+- **💡 Contribution**: A confirmatory study of whether one 0.9 confidence threshold serves all languages on typed decision interfaces: OpenAI Decisions (gpt-6-luna), Microsoft Decision-1 and Perplexity Decider v1.1 27B each classify 1,000 MASSIVE items in 51 languages. Even when answered correctly in both languages, the English version clears the threshold 8.6-11.7 points more often and observed coverage trails English in every other language; translate-test shrinks the gap to 0.8-1.4 points. Hosted Jev is not tested; the main evidence is MASSIVE-only, with 150-300 items per language in supporting checks.
 ---
 <a id="paper-2610-19856"></a>
 #### [Lost in the Fallback: How Reliably Do Typed Decision Models Use Fallback Options?](https://arxiv.org/abs/2610.19856v1) · [PDF](https://arxiv.org/pdf/2610.19856v1)
@@ -1444,7 +1467,7 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: Can a System One layer coordinate an agent's memory operations efficiently?
 - **💡 Contribution**: Introduces a System-One-controlled memory architecture to coordinate efficient agent memory operations.
 ---
-### Related model / method · 13
+### Related model / method · 14
 
 <a id="paper-2611-05827"></a>
 #### [TandemBench: Benchmarking Decision Models for Multi-Agent Collaboration](https://arxiv.org/abs/2611.05827v1) · [PDF](https://arxiv.org/pdf/2611.05827v1)
@@ -1492,6 +1515,13 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🏢 Affiliations**: Peking University; Institute of Automation, Chinese Academy of Sciences; Newcastle University
 - **🎯 Problem**: When should an embodied agent pay for slow spatial reasoning?
 - **💡 Contribution**: Casts fast-mode spatial judgments as structured binary decisions wrapped in conformal prediction sets, escalating only ambiguous queries to slow reasoning.
+---
+<a id="paper-2610-25985"></a>
+#### [NIOCIS: Typed-Decision Next-Hop Routing with Node-Conditioned Option Spaces for Tool-Use Agents](https://arxiv.org/abs/2610.25985v1) · [PDF](https://arxiv.org/pdf/2610.25985v1) · [Code](https://github.com/geilihan/niocis)
+- **📅 Published**: 2026-10-19 (v1)
+- **👥 Authors**: Jin Han; Mingfeng Xin; Feng Liang; Jingtao Yu
+- **🎯 Problem**: Can recurring tool-agent routing decisions be served by a one-pass calibrated typed readout instead of an LLM?
+- **💡 Contribution**: A routing layer that folds tool-agent execution logs into a loop-collapsed action graph and asks one typed question per hop: which declared option, plus stop, comes next. A local Laya 0.3.21 reads a calibrated distribution in 10-19.5 ms versus 2.2 s per LLM hop, matching the logged next hop on 32.2% of 3,875 held-out decisions against a leave-one-out ceiling of 25.6-44.9%; its most confident 15% holds 91.9% accuracy. Hosted Jev is not used; labels are convention-derived weak labels and 7.9% of targets fall outside the declared option space.
 ---
 <a id="paper-2610-16967"></a>
 #### [Proactive Physical AI through Continuous Observation and Timely Intervention](https://arxiv.org/abs/2610.16967v1) · [PDF](https://arxiv.org/pdf/2610.16967v1)
@@ -1555,8 +1585,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 40
+### Direct Jev · 41
 
+<a id="paper-2611-06384"></a>
+#### [Presentation Sensitivity in Typed Decision Models for Subjective Text Evaluation](https://arxiv.org/abs/2611.06384v1) · [PDF](https://arxiv.org/pdf/2611.06384v1)
+- **📅 Published**: 2026-11-04 (v1)
+- **👥 Authors**: Jatin Agrawal; Radhika Mamidi
+- **🏢 Affiliations**: LTRC, IIITH
+- **🎯 Problem**: Do typed evaluators change their judgments when the text stays fixed but its presentation changes?
+- **💡 Contribution**: Audits Jev 1.13, Clef Flash and Perplexity Decider on 9,000 annotated items through 702,000 judgments, independently varying order, identifiers, endorsements, framing and rubrics. Controlled comparisons and repeated calls separate presentation effects from repeatability: Jev favors second-position summaries by 6.11 probability points. Findings cover three English subjective-evaluation tasks; human-reference choices and rubric wording limit generalization.
+---
 <a id="paper-2611-03759"></a>
 #### [JevBreak: Your Model, Their Decision](https://arxiv.org/abs/2611.03759v1) · [PDF](https://arxiv.org/pdf/2611.03759v1)
 - **📅 Published**: 2026-11-02 (v1)
@@ -1955,7 +1993,7 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 56
+### Direct Jev · 59
 
 <a id="paper-2611-05702"></a>
 #### [TACT: A Pragmatic Approach to Qualitative Analysis with an AI Council](https://arxiv.org/abs/2611.05702v1) · [PDF](https://arxiv.org/pdf/2611.05702v1) · [Code](https://github.com/rudrajit1729/TACT)
@@ -2012,6 +2050,14 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🏢 Affiliations**: The Hong Kong Polytechnic University
 - **🎯 Problem**: Can guideline logic be compiled so a fast model only answers local questions?
 - **💡 Contribution**: Compiles radiology guidelines into an executable decision graph, where an LLM extracts local decision subgraphs during compilation and hosted Jev (v1.13.0) answers localized clinical questions at inference while deterministic traversal resolves Boolean logic: across 347 renal-cyst, adnexal-mass and thyroid-nodule cases, System One accuracy rises from 57.3% to 90.8%, above retrieval-augmented GPT-4o (80.1%) and graph-guided GPT-4o with chain-of-thought (82.7%), at substantially lower latency and cost without task-specific training.
+---
+<a id="paper-2610-40692"></a>
+#### [CausalGrade: Evidence-Guided Causal Graph Scoring with Jev](https://arxiv.org/abs/2610.40692v1) · [PDF](https://arxiv.org/pdf/2610.40692v1)
+- **📅 Published**: 2026-10-28 (v1)
+- **👥 Authors**: Jiangming Zhong; Jiawei Zhu; Guanting Wu et al. (6 authors)
+- **🏢 Affiliations**: Guangdong University of Technology
+- **🎯 Problem**: How can candidate causal graphs be scored when the true causal structure is unknown?
+- **💡 Contribution**: Scores candidate causal graphs by giving Jev 1.13.0 evidence of association, conditional dependence and directionality from observational data plus CDFM edge probabilities, then measuring adjacency agreement with Jev's edge-level judgments. Across 300 synthetic datasets the score tracks structural error (Spearman -0.52 to -0.76 over four discovery algorithms), and on 500 graph-selection tasks it reaches a 54.4% best-candidate hit rate versus 48.4% for self-compatibility. Candidates come from thresholding the same CDFM output, so sparsification and discrimination gains are partly confounded; no author code was located.
 ---
 <a id="paper-2610-38697"></a>
 #### [SatOps-Decision: Low-Latency Discriminative Decisions for Onboard Satellite Communication Operations](https://arxiv.org/abs/2610.38697v1) · [PDF](https://arxiv.org/pdf/2610.38697v1)
@@ -2133,6 +2179,14 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: Can a decision model judge whether a paragraph can answer a normative question?
 - **💡 Contribution**: Fine-tunes Qwen-based Jev-style classifiers for normative paragraph usability and benchmarks them against hosted Jev.
 ---
+<a id="paper-2610-22588"></a>
+#### [SAG2: Embedding-Free Multi-Hop Retrieval with BM25 and JEV](https://arxiv.org/abs/2610.22588v1) · [PDF](https://arxiv.org/pdf/2610.22588v1) · [Code](https://github.com/Zleap-AI/SAG-Benchmark)
+- **📅 Published**: 2026-10-15 (v1)
+- **👥 Authors**: Yuchao Wu
+- **🏢 Affiliations**: Zleap AI
+- **🎯 Problem**: Can accurate multi-hop retrieval run on lightweight lexical infrastructure without offline embeddings?
+- **💡 Contribution**: An embedding-free multi-hop retrieval stack (SQLite + BM25) whose evidence decisions come from hosted typesafe/jev-1.13-20260917 through OpenRouter's Noul interface: selected passages feed further retrieval and newly found evidence guides later judgments. Highest Recall@5/10 among compared methods on MuSiQue, 2WikiMultiHopQA and HotpotQA (R@10 86.62/97.43/99.00%) and 81.10% document R@10 over 511,962 documents; indexing 11,656 passages takes 2.36 s. Complete-evidence coverage on four-hop questions is 28.31%, and dependence on the hosted service blocks full on-premise deployment.
+---
 <a id="paper-2610-21046"></a>
 #### [PremiseCheck: Efficient Fact-Checking of Human and AI Peer Reviews](https://arxiv.org/abs/2610.21046v1) · [PDF](https://arxiv.org/pdf/2610.21046v1) · [Code](https://github.com/OpenLAIR/PremiseCheck)
 - **📅 Published**: 2026-10-15 (v1)
@@ -2140,6 +2194,14 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🏢 Affiliations**: Lehigh University; University of British Columbia; Vector Institute
 - **🎯 Problem**: Can peer-review factual errors be caught cheaply by splitting premise generation (LLM) from premise checking (decision model)?
 - **💡 Contribution**: Fact-checks peer-review comments (human or AI written) that misstate what a paper says: the ReviewFact benchmark labels such factual errors under three parts; on whole comments Jev performs at chance on the NLP reviews and below an LLM elsewhere, but on single premises that annotators wrote out from the comments Jev is as accurate as GPT-5.5, so PremiseCheck splits the work - an LLM decomposes each comment into self-contained premises without reading the paper, and the decision model checks each premise against the paper - reaching the strongest configuration's F1 on three fields at about half its cost, and on NLP reviews at a quarter of the cost and under half the latency (a Jev-to-GPT-5.5 cascade covers the rest).
+---
+<a id="paper-2610-22407"></a>
+#### [Towards Adaptive and Real-Survey-Aligned Simulated Urban Mobility Behaviour of Generative Agents](https://arxiv.org/abs/2610.22407v1) · [PDF](https://arxiv.org/pdf/2610.22407v1) · [Code](https://github.com/Ytlse/generative-agents-urban-mobility)
+- **📅 Published**: 2026-10-14 (v1)
+- **👥 Authors**: Yves Bru; Kamaldeep Singh Oberoi; Benoit Gaudou
+- **🏢 Affiliations**: IRIT, Université Toulouse Capitole; CESI LINEACT
+- **🎯 Problem**: Can generative agents reproduce real household travel-survey behaviour in city-scale mobility simulation?
+- **💡 Contribution**: Simulates daily multimodal mobility for Toulouse with fifteen decision-makers, including Jev (Jev-1.13, version jev-1.13.0) as a typed classifier under minimal and tuned prompts. Jev reaches 3.65 composite points, inside the fitted reference-model range (3.43-4.38), at roughly one-fiftieth of Gemini 3.5's cost, but trip-level realism fails for every generative agent and the unforeseen-event check rests on a single agent and event. Findings are specific to the Toulouse 2023 survey; prompts were tuned on splits, not per-trip choices.
 ---
 <a id="paper-2610-19536"></a>
 #### [Typed Decision Models on Tabular Data](https://arxiv.org/abs/2610.19536v1) · [PDF](https://arxiv.org/pdf/2610.19536v1)
@@ -2404,7 +2466,7 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: Can a low-latency decision model replace LLMs in edge service orchestration?
 - **💡 Contribution**: Integrates Jev into edge service orchestration and measures verified requests, admission behavior and execution outcomes.
 ---
-### Related model / method · 25
+### Related model / method · 26
 
 <a id="paper-2611-04480"></a>
 #### [ReListen: Training-Free Evidence Localization in Hour-Long Audio with Frozen Audio Language Models](https://arxiv.org/abs/2611.04480v1) · [PDF](https://arxiv.org/pdf/2611.04480v1)
@@ -2445,6 +2507,14 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🏢 Affiliations**: Nanyang Technological University; Michigan State University; University of Michigan
 - **🎯 Problem**: Can typed yes/no decisions on images and image regions correct few-shot anomaly detectors' false cues?
 - **💡 Contribution**: Refines few-shot industrial anomaly detection with typed decisions instead of replacing the detector: visual differences do not always mean genuine defects (normal appearance variation inflates scores) and structural or logical anomalies may not move local features at all, so VerdictAD - a training-free framework - has a frozen open decision model (Clef-Flash, using the Noul yes/no primitive) answer a reference-free and a reference-conditioned question about the whole image and about local windows, then gates the base detector's score by the decision probability; global and local verdict refinement run on top of existing few-shot detectors, and code plus experimental logs are released (hosted Jev is cited for the interface, not evaluated).
+---
+<a id="paper-2611-02096"></a>
+#### [EarthJev: Calibrated, Non-Generative Answers to Natural-Language Questions about Sentinel-2 Land Cover](https://arxiv.org/abs/2611.02096v1) · [PDF](https://arxiv.org/pdf/2611.02096v1) · [Code](https://github.com/CosmoIknosLab/EarthJev)
+- **📅 Published**: 2026-11-01 (v1)
+- **👥 Authors**: Domenico Benfenati; Antonio Maria Rinaldi; Cristian Tommasino
+- **🏢 Affiliations**: DIETI, University of Naples Federico II
+- **🎯 Problem**: Can typed questions about multispectral satellite patches be answered non-generatively with calibrated probabilities?
+- **💡 Contribution**: A 0.8B model that answers typed questions about 12-band Sentinel-2 patches without generating any token, following the open OneJev recipe (option-letter logits at one position, cross-entropy plus Brier). Trained on 70,890 questions from 5% of BigEarthNet v2.0, it reaches 86.0% accuracy on 36,028 test questions (three seeds) with ECE 0.006 at 19.9 ms per question; training the whole vision encoder raises accuracy to 88.4% at the same cost. Hosted Jev is neither used nor evaluated; multimodal baselines saw only RGB composites and the data cover ten European countries.
 ---
 <a id="paper-2611-00610"></a>
 #### [Trail: Accurate Local Smart Home Control Using Decision Models](https://arxiv.org/abs/2611.00610v1) · [PDF](https://arxiv.org/pdf/2611.00610v1)
@@ -2650,7 +2720,7 @@ Earlier work on calibration, rejection, cascades, and generalist classification.
 | --- | --- |
 | Download and cite | [JSON](data/papers.json) · [BibTeX](references.bib) |
 | Check inclusion evidence | [Evidence ledger](docs/EVIDENCE.md) · [Selection rules](docs/METHODOLOGY.md) |
-| Understand search coverage | [Search log](docs/SEARCH_LOG.md) · [Social-platform search](docs/SOCIAL_SEARCH_2026-10-17.md) |
+| Understand search coverage | [Search log](docs/SEARCH_LOG.md) · [Weekly X and CN-platform search (11-06)](docs/SOCIAL_SEARCH_2026-11-06.md) · [arXiv search (+9 papers in two rounds)](docs/ARXIV_SEARCH_2026-11-06.md) |
 | Inspect screening | [Screening ledger](data/screening.json) · [Pending](docs/PENDING.md) |
 | Contribute | [Contributing](CONTRIBUTING.md) · [Changelog](CHANGELOG.md) |
 

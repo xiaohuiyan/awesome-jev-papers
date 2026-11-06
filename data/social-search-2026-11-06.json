@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "searched_on": "2026-11-06",
+  "time_zone": "Asia/Shanghai",
+  "purpose": "User-requested weekly X/Twitter discovery and quality screening for Jev / System 1 decision models.",
+  "recency": "2026-10-31 through 2026-11-06 (calendar dates, through execution time). Initial date queries also covered 10-30 as a boundary buffer; undated queries were discovery aids, not proof of weekly X activity.",
+  "queries": [
+    {
+      "platform": "Web index (X discovery and primary-source follow-up)",
+      "query": "site:x.com Jev paper after:2026-10-30 before:2026-11-07"
+    },
+    {
+      "platform": "Web index (X discovery and primary-source follow-up)",
+      "query": "site:twitter.com Jev paper after:2026-10-30"
+    },
+    {
+      "platform": "Web index (X discovery and primary-source follow-up)",
+      "query": "site:x.com \"decision model\" paper after:2026-10-30 before:2026-11-07"
+    },
+    {
+      "platform": "Web index (X discovery and primary-source follow-up)",
+      "query": "site:x.com \"System 1\" arxiv after:2026-10-30 before:2026-11-07"
+    },
+    {
+      "platform": "Web index (X discovery and primary-source follow-up)",
+      "query": "\"Jev\" \"decision\" paper twitter"
+    },
+    {
+      "platform": "Web index (X discovery and primary-source follow-up)",
+      "query": "\"Jev\" \"System One\" arxiv November 2026"
+    },
+    {
+      "platform": "Web index (X discovery and primary-source follow-up)",
+      "query": "site:x.com \"Jev\" arxiv"
+    },
+    {
+      "platform": "Web index (X discovery and primary-source follow-up)",
+      "query": "\"typed decision\" paper November 2026"
+    },
+    {
+      "platform": "Web index (X discovery and primary-source follow-up)",
+      "query": "Jev arxiv \"November 5\" \"2026\""
+    },
+    {
+      "platform": "Web index (X discovery and primary-source follow-up)",
+      "query": "Jev decision paper \"November 6\" \"2026\""
+    },
+    {
+      "platform": "Web index (X discovery and primary-source follow-up)",
+      "query": "\"System One\" \"paper\" \"twitter\" November"
+    },
+    {
+      "platform": "Web index (X discovery and primary-source follow-up)",
+      "query": "site:x.com/ \"decision models\" arxiv"
+    },
+    {
+      "platform": "Web index (X discovery and primary-source follow-up)",
+      "query": "site:jev-x.com \"11/06\" paper"
+    },
+    {
+      "platform": "Web index (X discovery and primary-source follow-up)",
+      "query": "\"Jev\" \"arxiv\" \"2611\" November 6"
+    },
+    {
+      "platform": "Web index (X discovery and primary-source follow-up)",
+      "query": "\"Structured Clinical Memory\" \"Jev\" arxiv"
+    },
+    {
+      "platform": "Web index (X discovery and primary-source follow-up)",
+      "query": "\"decision models\" \"paper\" site:x.com -site:help.x.com -site:marketing.x.com"
+    },
+    {
+      "platform": "Web index (X discovery and primary-source follow-up)",
+      "query": "site:arxiv.org/abs/2611 \"decision models\""
+    },
+    {
+      "platform": "Web index (X discovery and primary-source follow-up)",
+      "query": "site:arxiv.org \"Jev\" \"Nov\" \"2026\""
+    },
+    {
+      "platform": "Web index (X discovery and primary-source follow-up)",
+      "query": "site:arxiv.org \"System One\" \"Nov\" \"2026\""
+    },
+    {
+      "platform": "Web index (X discovery and primary-source follow-up)",
+      "query": "site:jev-x.com/ arxiv paper research November 2026"
+    },
+    {
+      "platform": "Web index (X discovery and primary-source follow-up)",
+      "query": "\"Jev\" \"paper\" \"Nov 5\""
+    },
+    {
+      "platform": "Web index (X discovery and primary-source follow-up)",
+      "query": "\"Jev\" \"paper\" \"Nov 6\""
+    },
+    {
+      "platform": "Web index (X discovery and primary-source follow-up)",
+      "query": "\"decision model\" \"arxiv\" \"November\" \"2026\" -site:arxiv-troller.com"
+    },
+    {
+      "platform": "Web index (X discovery and primary-source follow-up)",
+      "query": "\"Amir Pournasserian\" \"decision\" arxiv"
+    },
+    {
+      "platform": "Web index (X discovery and primary-source follow-up)",
+      "query": "\"Jev\" paper site:x.com/ \"November\" -site:help.x.com -site:marketing.x.com"
+    },
+    {
+      "platform": "Web index (WeChat 公众号 discovery)",
+      "query": "site:mp.weixin.qq.com Jev 决策模型 2026年11月"
+    },
+    {
+      "platform": "Web index (WeChat 公众号 discovery)",
+      "query": "site:mp.weixin.qq.com Jev 决策模型"
+    },
+    {
+      "platform": "Web index (Zhihu discovery)",
+      "query": "site:zhihu.com Jev 决策模型 System One"
+    },
+    {
+      "platform": "Web index (Zhihu discovery)",
+      "query": "知乎 Jev 论文 2026年11月 决策模型 arxiv"
+    },
+    {
+      "platform": "Web index (Sina Weibo discovery)",
+      "query": "site:weibo.com Jev 决策模型"
+    },
+    {
+      "platform": "Web index (Sina Weibo lead follow-up)",
+      "query": "蚂蚁 Jev 27B 决策模型 综合评分 论文 arxiv"
+    },
+    {
+      "platform": "Web index (Sina Weibo lead follow-up)",
+      "query": "\"decision model\" 0.6B open source multimodal arxiv November 2026 Jev alternative"
+    },
+    {
+      "platform": "Web index (new lead follow-up)",
+      "query": "Vega 800M typed decision model physics open source arxiv"
+    },
+    {
+      "platform": "Web index (lead disambiguation)",
+      "query": "\"LLM2Jev\" arxiv"
+    },
+    {
+      "platform": "Web index (X/Twitter cross-check after morning round)",
+      "query": "Jev decision model arxiv new paper November 2026"
+    },
+    {
+      "platform": "Web index (X/Twitter cross-check after morning round)",
+      "query": "Jev arxiv 2611 new paper November 5 6 2026 twitter"
+    }
+  ],
+  "access_limits": [
+    "Connected search service failed with a transport error; used the web search fallback.",
+    "X native search and two original status URLs returned HTTP 403; no authenticated timeline was collected.",
+    "Jev-X initially returned a page header dated 11/06 UTC, but subsequent reads timed out; its feed was not reviewed.",
+    "arXiv API attempts failed; this was not a completed API sweep. Primary arXiv web pages were available."
+  ],
+  "findings": [
+    "No new eligible paper verified in this round; this does not establish absence of new papers on X.",
+    "Recent paper leads resolved to existing catalogue entries. Three were selected for a weekly reading shortlist using primary sources, without asserting a verified weekly X post.",
+    "Personal demonstrations and blog benchmarks were retained separately from papers.",
+    {
+      "round": "same-day CN-platform supplement (after the X-only morning round)",
+      "platforms": [
+        "WeChat 公众号",
+        "Zhihu",
+        "Sina Weibo",
+        "X / Twitter (cross-check)"
+      ],
+      "result": "No platform-independent new arXiv records: Ant 27B -> SII-Decision-27B (2610.03935, catalogued); Jev-DLC -> 2610.31521; StartLux -> 2610.17309; LLM2Jev -> 2610.02076 v2 (catalogued as LLM-as-Jev); Jev in the Wild -> 2609.30216. The X cross-check summary, however, surfaced EarthJev (2611.02096, first submitted 11-01) which no API query had ever matched (Jev token only fused inside EarthJev/OneJev); it was verified via its arXiv abstract page, submission history and PDF body, and added by the same-day arXiv round 11."
+    }
+  ],
+  "paper_leads": [
+    {
+      "arxiv_id": "2611.05827",
+      "title": "TandemBench: Benchmarking Decision Models for Multi-Agent Collaboration",
+      "source_url": "https://arxiv.org/abs/2611.05827v1",
+      "first_submitted": "2026-11-04",
+      "status": "already_catalogued",
+      "weekly_reading_selection": "priority",
+      "x_post_verified": false
+    },
+    {
+      "arxiv_id": "2611.03755",
+      "title": "Honest Small Decision Models for Finance: Scale, Specialization Collapse, and Mixed-Corpus Remediation",
+      "source_url": "https://arxiv.org/abs/2611.03755v1",
+      "first_submitted": "2026-11-02",
+      "status": "already_catalogued",
+      "weekly_reading_selection": "priority",
+      "x_post_verified": false
+    },
+    {
+      "arxiv_id": "2611.05553",
+      "title": "Decision Models as Scalable Economic Surrogates that Capture Human Variation",
+      "source_url": "https://arxiv.org/abs/2611.05553v1",
+      "first_submitted": "2026-11-03",
+      "status": "already_catalogued",
+      "weekly_reading_selection": "priority",
+      "x_post_verified": false
+    },
+    {
+      "arxiv_id": "2611.04101",
+      "title": "Structured Clinical Memory as Context for Probabilistic Decision Models: A Synthetic Evaluation with Jev",
+      "source_url": "https://arxiv.org/abs/2611.04101v1",
+      "first_submitted": "2026-11-03",
+      "status": "already_catalogued",
+      "weekly_reading_selection": "pilot",
+      "x_post_verified": false
+    },
+    {
+      "arxiv_id": "2611.02654",
+      "title": "VerdictAD: Few-Shot Anomaly Detection via Decision-Guided Refinement",
+      "source_url": "https://arxiv.org/abs/2611.02654v1",
+      "first_submitted": "2026-11-02",
+      "status": "already_catalogued",
+      "weekly_reading_selection": "duplicate",
+      "x_post_verified": false
+    }
+  ],
+  "non_paper_leads": [
+    {
+      "title": "Decision models against small LLMs: Jev, Kev, Laya and Mammoth-1 on 6,662 decisions",
+      "url": "https://pournasserian.com/writing/decision-models-vs-small-llms-2026",
+      "published_on": "2026-11-05",
+      "status": "watch_for_paper",
+      "reason": "Author benchmark blog read; no corresponding arXiv record located. X provenance unverified. Not counted as a paper."
+    },
+    {
+      "title": "Synthetic AI shoppers / advertising demo",
+      "url": "https://x.com/TheMattBerman/status/2116574903713358097",
+      "secondary_source": "https://jevdaily.com/issues/2026-11-01",
+      "post_date_reported_by_secondary_source": "2026-10-31",
+      "original_access": "403",
+      "status": "not_a_verified_paper"
+    },
+    {
+      "title": "Jev-as-a-judge position-bias warning",
+      "url": "https://x.com/hammer_mt/status/2116234738990223645",
+      "secondary_source": "https://jevdaily.com/issues/2026-10-31",
+      "post_date_reported_by_secondary_source": "2026-10-30",
+      "original_access": "403",
+      "status": "outside_window_and_not_a_verified_paper"
+    },
+    {
+      "title": "Prism email comparison and spam-ranking integration",
+      "secondary_sources": [
+        "https://jevdaily.com/issues/2026-11-04",
+        "https://jevdaily.com/issues/2026-11-03"
+      ],
+      "status": "not_a_verified_paper"
+    },
+    {
+      "lead": "Vega 800M physics typed decision model (Laya author)",
+      "source": "https://huggingface.co/nandakishorm/vega-08b-public-intents + LinkedIn/Reddit announcements",
+      "disposition": "Model card only, no arXiv record; retained as a watch lead alongside Smaug-Audio-Decisions. Not counted as a paper or in arXiv pending."
+    }
+  ],
+  "outcome": {
+    "added_papers": 0,
+    "catalogue_total": 316,
+    "direct": 204,
+    "related": 108,
+    "foundations": 4,
+    "papers_with_verified_code": 115,
+    "same_day_cn_platform_supplement": "0 platform-independent new papers; 1 discovery chain (EarthJev 2611.02096) handed to and included by arXiv round 11; catalogue 318 -> 325 after both same-day arXiv rounds."
+  }
+}

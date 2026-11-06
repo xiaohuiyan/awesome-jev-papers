@@ -130,7 +130,7 @@ def readme(data, lang):
         lines += ["| 用途 | 入口 |", "| --- | --- |",
                   "| 下载与引用 | [结构化 JSON](data/papers.json) · [BibTeX](references.bib) |",
                   "| 核实收录依据 | [证据台账](docs/EVIDENCE.md) · [收录规则](docs/METHODOLOGY.md) |",
-                  "| 了解检索覆盖 | [检索记录](docs/SEARCH_LOG.md) · [社交平台检索](docs/SOCIAL_SEARCH_2026-10-17.md) |",
+                  "| 了解检索覆盖 | [检索记录](docs/SEARCH_LOG.md) · [本周 X 与中文平台检索（11-06）](docs/SOCIAL_SEARCH_2026-11-06.md) · [arXiv 检索（两轮共新增 9 篇）](docs/ARXIV_SEARCH_2026-11-06.md) |",
                   "| 查看筛选过程 | [筛选台账](data/screening.json) · [待核实](docs/PENDING.md) |",
                   "| 参与维护 | [贡献指南](CONTRIBUTING.md) · [更新记录](CHANGELOG.md) |", "",
                   "更新时编辑数据，再运行下列命令。GitHub Actions 检查数据与文档一致性，不自动添加论文。", ""]
@@ -138,7 +138,7 @@ def readme(data, lang):
         lines += ["| Purpose | Resources |", "| --- | --- |",
                   "| Download and cite | [JSON](data/papers.json) · [BibTeX](references.bib) |",
                   "| Check inclusion evidence | [Evidence ledger](docs/EVIDENCE.md) · [Selection rules](docs/METHODOLOGY.md) |",
-                  "| Understand search coverage | [Search log](docs/SEARCH_LOG.md) · [Social-platform search](docs/SOCIAL_SEARCH_2026-10-17.md) |",
+                  "| Understand search coverage | [Search log](docs/SEARCH_LOG.md) · [Weekly X and CN-platform search (11-06)](docs/SOCIAL_SEARCH_2026-11-06.md) · [arXiv search (+9 papers in two rounds)](docs/ARXIV_SEARCH_2026-11-06.md) |",
                   "| Inspect screening | [Screening ledger](data/screening.json) · [Pending](docs/PENDING.md) |",
                   "| Contribute | [Contributing](CONTRIBUTING.md) · [Changelog](CHANGELOG.md) |", "",
                   "Edit the data, then run the commands below. GitHub Actions checks catalogue consistency; it does not automatically add papers.", ""]
