@@ -12,9 +12,9 @@
 
 | 收录论文 | Jev 直接相关 | 同类模型与方法 | 基础背景 | 含已核实代码 |
 | ---: | ---: | ---: | ---: | ---: |
-| **325** | 210 | 111 | 4 | 119 |
+| **336** | 214 | 118 | 4 | 123 |
 
-更新于 **2026-11-06** · 主要收录窗口 **2025-10-16—2026-11-04**（首次提交日期）
+更新于 **2026-11-09** · 主要收录窗口 **2025-10-16—2026-11-06**（首次提交日期）
 
 [十篇入门](#recommended-reading) · [按问题选文](#category-index) · [基础背景](#foundations) · [数据与维护](#reuse-and-updates)
 
@@ -50,12 +50,12 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 | 你想了解什么？ | 主题 | 直接 / 相关 | 合计 |
 | --- | --- | ---: | ---: |
-| 怎样训练一个专门做选择的模型？ | [模型架构与训练方法](#architecture) | 16 / 42 | 58 |
+| 怎样训练一个专门做选择的模型？ | [模型架构与训练方法](#architecture) | 17 / 43 | 60 |
 | 快决策在哪些任务上够用？ | [基准测试与比较评估](#evaluation) | 42 / 10 | 52 |
-| 模型说有把握，真的可靠吗？ | [概率校准、可靠性与选择性决策](#calibration) | 17 / 10 | 27 |
-| 何时搜索、调用工具或交给更强的模型？ | [搜索、记忆、工具与智能体决策](#agents) | 35 / 14 | 49 |
-| 换个问法或选项顺序，会不会改变判断？ | [安全、鲁棒性与决策偏置](#security) | 41 / 9 | 50 |
-| 放进真实工作流，质量与速度如何取舍？ | [领域应用与部署效率](#applications) | 59 / 26 | 85 |
+| 模型说有把握，真的可靠吗？ | [概率校准、可靠性与选择性决策](#calibration) | 17 / 11 | 28 |
+| 何时搜索、调用工具或交给更强的模型？ | [搜索、记忆、工具与智能体决策](#agents) | 35 / 16 | 51 |
+| 换个问法或选项顺序，会不会改变判断？ | [安全、鲁棒性与决策偏置](#security) | 43 / 10 | 53 |
+| 放进真实工作流，质量与速度如何取舍？ | [领域应用与部署效率](#applications) | 60 / 28 | 88 |
 
 每篇只计入一个主分类；另有 4 篇基础背景。每类先列 Jev 直接相关，再列同类方法；组内按首次提交日期倒序排列。条目保留发表时间、作者、单位、解决问题与核心贡献；单位取自论文原文（HTML 全文或 PDF 首页），17 篇未署名单位的论文不展示该项。完整作者名单、标签与核实记录见[证据台账](docs/EVIDENCE.md)与 [BibTeX](references.bib)。
 
@@ -66,8 +66,16 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 [返回分类导航](#category-index)
 
-### Jev 直接相关 · 16
+### Jev 直接相关 · 17
 
+<a id="paper-2611-07854"></a>
+#### [Towards Foundation Decision Models: Drex](https://arxiv.org/abs/2611.07854v1) · [PDF](https://arxiv.org/pdf/2611.07854v1) · [代码](https://github.com/nace-ai/drex-decision-models)
+- **📅 发表时间**：2026-11-05（v1）
+- **👥 作者**：Nischay Dhankhar；Alisher Amantay；Zhanibek Datbayev 等（共 9 位）
+- **🏢 单位**：Nace.AI
+- **🎯 解决问题**：开源决策模型家族能否在定义明确的决策任务上追平托管 System One API？
+- **💡 核心贡献**：Nace.AI 技术报告，发布 Drex 四个开源决策模型（8B DLM、9B v1.5、35B/3B 激活 v2.0、27B Max），沿用 Jev 开创的 System One 接口并基于开源 Kev 栈构建。训练结合监督微调与调整反馈强化学习（RLAF）及一致性损失（Max 另加视觉调优）；Decision Index 0.4.1 上 Max 得 67.52，托管 Jev 1.14.0 为 60.70；Decision Bench v4 上超过 Jev 1.14，与 d3-turbo、GPT-6 Sol 统计打平，落后 Claude Opus 5.5 1.6 分，单次请求 183 毫秒。数字由 Nace.AI 在其自跑的基准上自行报告，托管 Jev 对比取决于测试时的 API 版本，选项重排稳定性也仅由 Drex 方面自报、未经独立审计。
+---
 <a id="paper-2611-06238"></a>
 #### [Zuse: A Decision Model for European Languages](https://arxiv.org/abs/2611.06238v1) · [PDF](https://arxiv.org/pdf/2611.06238v1)
 - **📅 发表时间**：2026-11-04（v1）
@@ -196,8 +204,16 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🎯 解决问题**：本地决策读取方式能否兼顾准确率与吞吐量？
 - **💡 核心贡献**：研究现有模型的本地决策读取方式，并以 Jev 作为准确率与吞吐量外部参照。
 ---
-### 同类模型与方法 · 42
+### 同类模型与方法 · 43
 
+<a id="paper-2611-07736"></a>
+#### [Extending Reasoning in Typed Decision Models via Looping](https://arxiv.org/abs/2611.07736v1) · [PDF](https://arxiv.org/pdf/2611.07736v1)
+- **📅 发表时间**：2026-11-05（v1）
+- **👥 作者**：David Berghaus；Arber Zela；Behzad Shomali 等（共 7 位）
+- **🏢 单位**：Lamarr Institute for Machine Learning and Artificial Intelligence；Fraunhofer IAIS；EPFL；University of Bonn
+- **🎯 解决问题**：类型化决策模型能否不靠生成 token 就为困难输入投入更多测试时算力？
+- **💡 核心贡献**：证明循环层只有与决策模型共同训练才有收益：RELOAD 用中间块的阻尼循环微调预训练编码器/解码器，轻量控制器按输入自适应选择循环次数。在 0.4B-4B 的六个模型上（解码器遵循开源 Kev 的 Jev 风格重建），循环同时提升准确率与校准，在需要比训练时更长推理链的问题上编码器最高增益 23 个百分点；等量训练算力或更多数据都无法弥合差距，逐遍独立层要近两倍参数才接近。控制器以约四分之三算力保留大部分增益。未评测托管 Jev。
+---
 <a id="paper-2611-03755"></a>
 #### [Honest Small Decision Models for Finance: Scale, Specialization Collapse, and Mixed-Corpus Remediation](https://arxiv.org/abs/2611.03755v1) · [PDF](https://arxiv.org/pdf/2611.03755v1)
 - **📅 发表时间**：2026-11-02（v1）
@@ -1099,8 +1115,16 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🎯 解决问题**：接受高置信判断、转交不确定案例的策略，实际收益如何？
 - **💡 核心贡献**：测试接受高置信 Jev 判断并转交不确定案例的策略，对阈值进行留出验证。
 ---
-### 同类模型与方法 · 10
+### 同类模型与方法 · 11
 
+<a id="paper-2611-08439"></a>
+#### [Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes](https://arxiv.org/abs/2611.08439v1) · [PDF](https://arxiv.org/pdf/2611.08439v1) · [代码](https://github.com/beskvladimir-create/ru-jev)
+- **📅 发表时间**：2026-11-05（v1）
+- **👥 作者**：Vladimir Beskorovainyi
+- **🏢 单位**：Besk Tech
+- **🎯 解决问题**：对调用方提供选项的类型化决策编码器，标签措辞在多大程度上决定准确率？
+- **💡 核心贡献**：对比独立研发的 307M 多语交叉编码器 Ru-Jev 的两个版本，隔离出以多种表面形式呈现标签的增强：固定问题，仅改变十八个路由标签在十套词表中的措辞。在由常规词/外来词构成的留出词表上，增强版全部场景更准，最多高 0.24（14 项增益中 11 项通过 Holm 校正）；缩写无增益，不透明代码在剔除训练相关标签后两个版本都不高于随机；多数格子风险-覆盖面积改善，但十八候选下行话与俚语的自信错误增加。研究未调用 Jev API——名字仅为致敬；两个未见数据集上准确率分别变动 -8.4 与 +5.6 个百分点，并记录了四类评测隐患。
+---
 <a id="paper-2610-37732"></a>
 #### [ThinkJev: One Thought, Every Budget for Calibrated Typed Decisions](https://arxiv.org/abs/2610.37732v1) · [PDF](https://arxiv.org/pdf/2610.37732v1)
 - **📅 发表时间**：2026-10-27（v1）
@@ -1467,8 +1491,24 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🎯 解决问题**：智能体的记忆操作能否交给快速决策层协调，以提升效率？
 - **💡 核心贡献**：提出由 System One 控制的记忆架构，以协调高效的智能体记忆操作。
 ---
-### 同类模型与方法 · 14
+### 同类模型与方法 · 16
 
+<a id="paper-2611-08162"></a>
+#### [RouteAlign: Aligning Task Requirements with Model Profiles for LLM Service Selection](https://arxiv.org/abs/2611.08162v1) · [PDF](https://arxiv.org/pdf/2611.08162v1) · [代码](https://github.com/MemTensor/RouteAlign)
+- **📅 发表时间**：2026-11-05（v1）
+- **👥 作者**：Jihao Zhao；Ding Chen；Yanfang Chen 等（共 7 位）
+- **🏢 单位**：MemTensor (Shanghai) Technology Co., Ltd.；Renmin University of China；Shanghai Jiao Tong University
+- **🎯 解决问题**：LLM 服务选择应如何获取面向具体任务的性能证据，而非依赖聚合分数？
+- **💡 核心贡献**：以任务需求为中心组织 LLM 服务选择：历史需求积累全局模型画像与局部能力估计，新到需求决定当前决策依据哪些测量，共享打分器整合证据，生成成本偏好约束最终选择。与既有路由器、直接调用候选及开放 Jev 风格决策后端（Kev 0.8B-9B、Open-Jev 2B/9B、Decider、SemIf）相比，RouteAlign 将质量-成本边界外推，两项主要指标比最强的 Jev 风格配置高 5.22 与 6.44 分，生成成本低 9.7%。未使用托管 Jev；结果基于作者自选的异构服务池，打分器复用也仅在目录更新模拟中验证。
+---
+<a id="paper-2611-07934"></a>
+#### [The Blindfolded Controller: Decision Model-Guided Training for Reinforcement Learning](https://arxiv.org/abs/2611.07934v1) · [PDF](https://arxiv.org/pdf/2611.07934v1)
+- **📅 发表时间**：2026-11-05（v1）
+- **👥 作者**：Muhammad Ibrahim Khan；Aniket Dixit；Faizan Ahmed；James Brusey
+- **🏢 单位**：Coventry University
+- **🎯 解决问题**：决策模型能否为强化学习策略提供初始引导，让探索从胜任行为起步？
+- **💡 核心贡献**：决策模型引导训练（DMGT）用环境与任务的文字描述查询开放多模态决策模型 d3-turbo 来初始化 RL 策略：agent 从首局就能到达目标并获得奖励，再由 RL 提升到超出 DM 本身的水平。七个稀疏奖励任务上，该方法七胜纯 RL、五胜纯 DM，消融实验还归纳出为 DM 撰写环境/任务描述的指南。托管 Jev 仅作为决策模型示例被引用；增益仅在作者自建任务套件上验证，描述指南也来自为验证而做的同一批消融。
+---
 <a id="paper-2611-05827"></a>
 #### [TandemBench: Benchmarking Decision Models for Multi-Agent Collaboration](https://arxiv.org/abs/2611.05827v1) · [PDF](https://arxiv.org/pdf/2611.05827v1)
 - **📅 发表时间**：2026-11-04（v1）
@@ -1585,8 +1625,24 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 [返回分类导航](#category-index)
 
-### Jev 直接相关 · 41
+### Jev 直接相关 · 43
 
+<a id="paper-2611-08845"></a>
+#### [Jev as an LLM Safety Guardrail: An Empirical Study of Input Filtering, Selective Output Review, and Over-Refusal](https://arxiv.org/abs/2611.08845v1) · [PDF](https://arxiv.org/pdf/2611.08845v1) · [代码](https://github.com/ANRGUSC/llm-safe-jev)
+- **📅 发表时间**：2026-11-06（v1）
+- **👥 作者**：Olivia Cognetti；Bhaskar Krishnamachari
+- **🏢 单位**：University of Southern California
+- **🎯 解决问题**：托管 Jev 能否充当小模型 LLM 的外部安全护栏，同时不过度拒绝正常请求？
+- **💡 核心贡献**：将 Jev（jev-latest）作为 Qwen2.5-1.5B 流水线的前置安全过滤器，在 970 条 AdvBench/XSTest 提示上端到端评测。输入过滤把有害提示的回答从 527/720（73.2%）降到 17/720（2.4%），但良性拒答从 1.2% 升到 10.8%；分层过滤加选择性输出复核落在 5.6% 有害回答、4.0% 良性拒答、8.1% 提示需复核，联合阈值调优将宏 F1 从 0.9351 提到 0.9512。与重新调参的单门在等预算下相比增益有限，且在留出集上不稳定；证据仅覆盖三个英文安全数据集。代码与数据在 GitHub。
+---
+<a id="paper-2611-08229"></a>
+#### [Escalate or Close: How Fast-Tier Models Handle Held-Out Web Attack Families in Two-Tier Triage](https://arxiv.org/abs/2611.08229v1) · [PDF](https://arxiv.org/pdf/2611.08229v1)
+- **📅 发表时间**：2026-11-05（v1）
+- **👥 作者**：Maciej Kisielewicz；Michał Kędziora；Ngoc Thanh Nguyen
+- **🏢 单位**：Wrocław University of Science and Technology
+- **🎯 解决问题**：监督式快层对新攻击族误放行时，零样本决策模型还能把它们上报吗？
+- **💡 核心贡献**：把七个 Web 攻击族逐族从训练、再校准与阈值中留出，将载荷拼入真实浏览流量，比较零样本决策模型、监督检测器、本地语言模型、OWASP CRS 与异常基线。监督式 ModernBERT 给留出的路径穿越攻击 37-60% 的低危判定，而托管 Jev 与 Clef 在 5% 良性预算内对每个族至少上报 97.6%（0.1% 预算下 Jev 82-97%）。控制实验揭示了限制：Jev 会把 37% 的良性孪生请求上报，其未公开的训练数据可能已含这些公开攻击族，且 Jev 引导的搜索能在 300 次查询内让 43% 的留出攻击通过——重问时 Jev 对这些请求 60% 的答案又改为上报，Clef 则始终一致。
+---
 <a id="paper-2611-06384"></a>
 #### [Presentation Sensitivity in Typed Decision Models for Subjective Text Evaluation](https://arxiv.org/abs/2611.06384v1) · [PDF](https://arxiv.org/pdf/2611.06384v1)
 - **📅 发表时间**：2026-11-04（v1）
@@ -1912,8 +1968,16 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🎯 解决问题**：类型化决策模型跟随的是选项名称，还是名称绑定到的定义？
 - **💡 核心贡献**：改变名称与定义的映射，测试 Jev 是否跟随标签而非给定语义决策。
 ---
-### 同类模型与方法 · 9
+### 同类模型与方法 · 10
 
+<a id="paper-2611-08325"></a>
+#### [Decision Models as Retrieval Gates Against Injection and Pollution](https://arxiv.org/abs/2611.08325v1) · [PDF](https://arxiv.org/pdf/2611.08325v1)
+- **📅 发表时间**：2026-11-05（v1）
+- **👥 作者**：Mahdi Ghadamyari；Reza Habibi
+- **🏢 单位**：Google；University of California, Santa Cruz
+- **🎯 解决问题**：开放权重决策模型能否在生成前筛掉检索页中的注入指令与伪造污染？
+- **💡 核心贡献**：测试开放权重决策模型作为检索门控：Kev-4B 门读取每段的 HTML 并回答类型化筛查问题。在 1,000 个含隐藏注入指令的论坛页问题上，攻击成功率从无防御的 27.9% 降到已发表缓解措施的 13.6%、加门后 5.7%，单段 76 毫秒，186 个带人读指令的良性页误标 4 个；干净查询的响应率变化在一个点内。在三分之二页面为伪造的 200 查询污染测试台上，先过滤候选池使准确率保持 83%、伪造暴露仅 0.5%（无过滤为 28%）。大模型裁判排序更好（AUROC 0.99 对 0.94）但成本十倍；研究全部用开放权重模型，托管 Jev 仅被引用。
+---
 <a id="paper-2611-02522"></a>
 #### [Ranked but Not Stopped: Detecting Prompt-Injection Hijacks from Typed Decision Models' Output Probabilities](https://arxiv.org/abs/2611.02522v1) · [PDF](https://arxiv.org/pdf/2611.02522v1)
 - **📅 发表时间**：2026-11-02（v1）
@@ -1993,8 +2057,16 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 [返回分类导航](#category-index)
 
-### Jev 直接相关 · 59
+### Jev 直接相关 · 60
 
+<a id="paper-2611-08014"></a>
+#### [Probabilistic Relevance Decisions for Semantic Retrieval](https://arxiv.org/abs/2611.08014v1) · [PDF](https://arxiv.org/pdf/2611.08014v1)
+- **📅 发表时间**：2026-11-05（v1）
+- **👥 作者**：Bahadır Tatar；Cevat Şener
+- **🏢 单位**：Recruspace LLC；Middle East Technical University
+- **🎯 解决问题**：决策 API 的相关性打分能否比纯稠密检索排序取得更好的重排效果？
+- **💡 核心贡献**：在 BEIR SciFact 上比较纯稠密 BGE-M3 与 TypeSafe Jev（Noul 接口，jev-1.13.0）、OpenAI Decisions Predicate 重排：300 条官方查询，先在正例增强的 100 文档池上评测，再在全库检索的 50/100 深度上重排。深度 50 时全库 nDCG@10 从 0.6413（稠密）升至 0.7545（OpenAI）与 0.7805（Jev），Jev 在观测 Recall@5 与 nDCG@10 上最高；新算 API 分数使成本约翻倍，Jev 每查询 0.0016 美元、重排中位延迟 3.13 秒，缓存可部分抵消。四个配对自助法的深度置信区间都包含零，OpenAI 大量精确零分在并列随机化下暴露排序敏感性；探索性未校正分析不宣称普遍优势、校准或深度等价。
+---
 <a id="paper-2611-05702"></a>
 #### [TACT: A Pragmatic Approach to Qualitative Analysis with an AI Council](https://arxiv.org/abs/2611.05702v1) · [PDF](https://arxiv.org/pdf/2611.05702v1) · [代码](https://github.com/rudrajit1729/TACT)
 - **📅 发表时间**：2026-11-03（v1）
@@ -2466,8 +2538,24 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🎯 解决问题**：边缘服务编排能否用低延迟决策模型替代 LLM？
 - **💡 核心贡献**：将 Jev 接入边缘服务编排，测量经核验请求、准入行为和执行结果。
 ---
-### 同类模型与方法 · 26
+### 同类模型与方法 · 28
 
+<a id="paper-2611-08879"></a>
+#### [GeoJeV: Unified Spatial Probability for Training-Free Efficient Evidence Acquisition in Ultra-High-Resolution Remote Sensing](https://arxiv.org/abs/2611.08879v1) · [PDF](https://arxiv.org/pdf/2611.08879v1)
+- **📅 发表时间**：2026-11-06（v1）
+- **👥 作者**：Xinyi Niu；Lingfeng Chen；Jiehua Zhang 等（共 7 位）
+- **🏢 单位**：National University of Defense Technology
+- **🎯 解决问题**：超高分辨率遥感影像的证据获取能否摆脱生成式模型的搜索控制？
+- **💡 核心贡献**：免训练的超高分遥感证据获取方法，用冻结的开放 Jev 风格模型替代生成式 MLLM 的搜索控制：每一步由 metask-jev-4b-policy-mix1 给出候选区域概率分布，Region Rank、Sparse Branch 与 Depth Gate 将同一分布转化为搜索优先级、分支宽度与细化深度，中间无需解码。在 LRS-GRO、MME-RealWorld-RS 与 LRS-VQA 上将 Qwen3-VL-8B 平均准确率提升 5.32 个百分点，每题仅多花 1.12 秒，较近期方法提速 7.8 倍。托管 Jev 仅被引用、未使用或评测；每个基准只有一个主回答骨干，备选仅 LLaVA-OV-7B。
+---
+<a id="paper-2611-07896"></a>
+#### [AffordJEV: Affordance Grounding by Confirming Candidate Regions](https://arxiv.org/abs/2611.07896v1) · [PDF](https://arxiv.org/pdf/2611.07896v1)
+- **📅 发表时间**：2026-11-05（v1）
+- **👥 作者**：Jincheng Li；Yutian Zhang；Jianyu Zhang 等（共 5 位）
+- **🏢 单位**：Peking University
+- **🎯 解决问题**：可供性定位能否用对候选区域的直接决策替代思维链定位？
+- **💡 核心贡献**：用层级确认替代思维链式可供性定位：冻结分割器提出物体/部件/子部件候选，System One 判别器（Qwen3.5-4B 上的 LoRA 调优头）单次前向为同层全部候选打分，判据双向流动、后层可纠正前层。仅用 InstructPart 训练，在域内与零样本迁移 UMD、IIT-AFF 上超过思维链方法，整体优于放入同一框架的已发布判别器 Valen-4B、H2O-Lightning-4B、JevAny-4B-LoRA（含各自重训版本）。托管 Jev 仅作为 API 文献被引用；操作词对齐使其判别器增益变动 14.22 gIoU、重训 JevAny 为 6.39，措辞敏感性与架构因素未被分离。
+---
 <a id="paper-2611-04480"></a>
 #### [ReListen: Training-Free Evidence Localization in Hour-Long Audio with Frozen Audio Language Models](https://arxiv.org/abs/2611.04480v1) · [PDF](https://arxiv.org/pdf/2611.04480v1)
 - **📅 发表时间**：2026-11-03（v1）
@@ -2720,7 +2808,7 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 | --- | --- |
 | 下载与引用 | [结构化 JSON](data/papers.json) · [BibTeX](references.bib) |
 | 核实收录依据 | [证据台账](docs/EVIDENCE.md) · [收录规则](docs/METHODOLOGY.md) |
-| 了解检索覆盖 | [检索记录](docs/SEARCH_LOG.md) · [本周 X 与中文平台检索（11-06）](docs/SOCIAL_SEARCH_2026-11-06.md) · [arXiv 检索（两轮共新增 9 篇）](docs/ARXIV_SEARCH_2026-11-06.md) |
+| 了解检索覆盖 | [检索记录](docs/SEARCH_LOG.md) · [X 与中文平台检索（11-09）](docs/SOCIAL_SEARCH_2026-11-09.md) · [arXiv 检索（11-09 新增 11 篇）](docs/ARXIV_SEARCH_2026-11-09.md) |
 | 查看筛选过程 | [筛选台账](data/screening.json) · [待核实](docs/PENDING.md) |
 | 参与维护 | [贡献指南](CONTRIBUTING.md) · [更新记录](CHANGELOG.md) |
 

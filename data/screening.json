@@ -1,5 +1,5 @@
 {
-  "screened_on": "2026-11-06",
+  "screened_on": "2026-11-09",
   "candidates": [
     {
       "arxiv_id": "2610.22276",
@@ -3840,6 +3840,126 @@
       "status": "included",
       "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
       "screened_on": "2026-11-06"
+    },
+    {
+      "arxiv_id": "2611.08845",
+      "title": "Jev as an LLM Safety Guardrail: An Empirical Study of Input Filtering, Selective Output Review, and Over-Refusal",
+      "source_url": "https://arxiv.org/abs/2611.08845v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-09"
+    },
+    {
+      "arxiv_id": "2611.08229",
+      "title": "Escalate or Close: How Fast-Tier Models Handle Held-Out Web Attack Families in Two-Tier Triage",
+      "source_url": "https://arxiv.org/abs/2611.08229v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-09"
+    },
+    {
+      "arxiv_id": "2611.08014",
+      "title": "Probabilistic Relevance Decisions for Semantic Retrieval",
+      "source_url": "https://arxiv.org/abs/2611.08014v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-09"
+    },
+    {
+      "arxiv_id": "2611.07854",
+      "title": "Towards Foundation Decision Models: Drex",
+      "source_url": "https://arxiv.org/abs/2611.07854v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-09"
+    },
+    {
+      "arxiv_id": "2611.08879",
+      "title": "GeoJeV: Unified Spatial Probability for Training-Free Efficient Evidence Acquisition in Ultra-High-Resolution Remote Sensing",
+      "source_url": "https://arxiv.org/abs/2611.08879v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-09"
+    },
+    {
+      "arxiv_id": "2611.07736",
+      "title": "Extending Reasoning in Typed Decision Models via Looping",
+      "source_url": "https://arxiv.org/abs/2611.07736v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-09"
+    },
+    {
+      "arxiv_id": "2611.07896",
+      "title": "AffordJEV: Affordance Grounding by Confirming Candidate Regions",
+      "source_url": "https://arxiv.org/abs/2611.07896v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-09"
+    },
+    {
+      "arxiv_id": "2611.07934",
+      "title": "The Blindfolded Controller: Decision Model-Guided Training for Reinforcement Learning",
+      "source_url": "https://arxiv.org/abs/2611.07934v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-09"
+    },
+    {
+      "arxiv_id": "2611.08162",
+      "title": "RouteAlign: Aligning Task Requirements with Model Profiles for LLM Service Selection",
+      "source_url": "https://arxiv.org/abs/2611.08162v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-09"
+    },
+    {
+      "arxiv_id": "2611.08325",
+      "title": "Decision Models as Retrieval Gates Against Injection and Pollution",
+      "source_url": "https://arxiv.org/abs/2611.08325v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-09"
+    },
+    {
+      "arxiv_id": "2611.08439",
+      "title": "Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes",
+      "source_url": "https://arxiv.org/abs/2611.08439v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-09"
+    },
+    {
+      "arxiv_id": "2611.07945",
+      "title": "tok: a textual concrete syntax of BPMN and DMN for humans and AI agents",
+      "source_url": "https://arxiv.org/abs/2611.07945v1",
+      "status": "excluded",
+      "reason": "BPMN/DMN modelling-notation paper; 'Decision Model' refers to the OMG DMN standard, not Jev-style typed decision models.",
+      "screened_on": "2026-11-09"
+    },
+    {
+      "arxiv_id": "2611.08304",
+      "title": "Hardness of integer linear feasibility with cyclic support",
+      "source_url": "https://arxiv.org/abs/2611.08304v1",
+      "status": "excluded",
+      "reason": "Integer-linear-feasibility hardness proof in combinatorial optimization; the 'System One' token match involves no Jev or typed-decision interface.",
+      "screened_on": "2026-11-09"
+    },
+    {
+      "arxiv_id": "2611.08715",
+      "title": "Efficient Spintronic Stochastic In-Sensor Computing Modules",
+      "source_url": "https://arxiv.org/abs/2611.08715v1",
+      "status": "excluded",
+      "reason": "Spintronic in-sensor computing hardware; incidental 'System One' token match with no Jev or typed-decision content.",
+      "screened_on": "2026-11-09"
+    },
+    {
+      "arxiv_id": "2611.08908",
+      "title": "Toward LLM Self-Play Under Data Scarcity: Effectiveness, Generalizability, and Trustworthiness",
+      "source_url": "https://arxiv.org/abs/2611.08908v1",
+      "status": "excluded",
+      "reason": "Position paper outlining LLM self-play research directions; uses the System 1/System 2 metaphor only, with no Jev or typed decision model content.",
+      "screened_on": "2026-11-09"
     }
   ]
 }

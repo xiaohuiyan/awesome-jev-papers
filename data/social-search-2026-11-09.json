@@ -1,0 +1,33 @@
+{
+ "schema_version": 1,
+ "searched_on": "2026-11-09",
+ "time_zone": "Asia/Shanghai",
+ "purpose": "User-requested collection of recent Jev / System One / typed decision model papers from WeChat, Zhihu, Weibo and X/Twitter, run before the round-12 arXiv sweep.",
+ "recency": "2026-11-07 through 2026-11-09 (the days since the 11-06 rounds), with undated discovery queries for the surrounding week; paper first-submission dates are taken from arXiv records, not post dates.",
+ "queries": [
+  {"platform": "Web index (WeChat discovery)", "query": "site:mp.weixin.qq.com Jev 决策模型 2026年11月"},
+  {"platform": "Web index (WeChat discovery)", "query": "site:mp.weixin.qq.com Jev 决策模型"},
+  {"platform": "Web index (Zhihu discovery)", "query": "site:zhihu.com Jev 决策模型 System One 2026年11月"},
+  {"platform": "Web index (Zhihu discovery)", "query": "site:zhihu.com Jev 决策模型 System One"},
+  {"platform": "Web index (Weibo discovery)", "query": "site:weibo.com Jev 决策模型 论文"},
+  {"platform": "Web index (X/Twitter cross-check)", "query": "Jev decision model arxiv new paper November 7 8 9 2026"},
+  {"platform": "Web index (lead follow-up)", "query": "Sarvam AI Prism open weight decision model arxiv November 2026"},
+  {"platform": "Web index (aggregator cross-check)", "query": "jevdaily Jev arxiv 2611 paper November 2026"},
+  {"platform": "Web index (X/Twitter cross-check)", "query": "twitter Jev System One typed decision arxiv 2611.1"},
+  {"platform": "Direct fetch (aggregator)", "query": "https://jevdaily.com/issues/2026-11-07"},
+  {"platform": "Direct fetch (aggregator)", "query": "https://jevdaily.com/issues/2026-11-08"},
+  {"platform": "Direct fetch (aggregator)", "query": "https://jevdaily.com/issues/2026-11-09 (returned 404; issue not yet published at fetch time)"}
+ ],
+ "paper_leads": [
+  {"lead": "Jev-Mem / Chinese-Jev / LLM-as-Jev / Releasing the Inner Jev / JevBreak / 2609.37647", "source": "Zhihu columns, jevdaily aggregation, web search", "resolution": "all already catalogued"},
+  {"lead": "Ant 27B / 0.6B open multimodal (carried over)", "source": "Weibo ttarticle explainers", "resolution": "already catalogued (2610.03935, 2610.17309) or product-only"}
+ ],
+ "non_paper_leads": [
+  {"lead": "Sarvam Prism (2026-11-03)", "source": "Sarvam AI blog (sarvam.ai/blogs/sarvam-prism), Unite.AI coverage", "status": "open-weight decision model on Sarvam 105B, Apache 2.0, 71.8 avg / 44 ms on B200; no arXiv record; watch lead alongside Vega"},
+  {"lead": "TypeSafe Jev 1.14 formal release", "source": "WeChat/36kr syndicated news", "status": "preview released 10-14, formal release reported due mid-November 2026; product news, no paper"},
+  {"lead": "decision-cloning accuracy experiment", "source": "jevdaily 2026-11-08 quoting an X post", "status": "personal blog experiment (60% one-shot / 85% ten / 95% 400 shots); no paper located"},
+  {"lead": "Treg Jev-powered social API; ILIAS MCP servers; skill feedback doc", "source": "jevdaily 2026-11-07", "status": "product/tooling news; no papers"}
+ ],
+ "added_papers": 0,
+ "note": "Every surfaced arXiv record was already catalogued. The round-12 additions came from the arXiv API sweep that followed, not from social discovery; see docs/ARXIV_SEARCH_2026-11-09.md. Platform access limits: WeChat articles are not fully indexed by search engines; X native search was not reachable; findings rely on web search and aggregator pages, so absence of hits is not proof of absence."
+}

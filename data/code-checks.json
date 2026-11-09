@@ -1307,5 +1307,49 @@
     "canonical_url": "https://github.com/CosmoIknosLab/EarthJev",
     "description": "EarthJev: calibrated, non-generative answers to natural-language questions about 12-band Sentinel-2 images. One forward pass returns a probability for every option of every question; no token is generated.",
     "private": false
+  },
+  {
+    "arxiv_id": "2611.08845",
+    "url": "https://github.com/ANRGUSC/llm-safe-jev",
+    "source_url": "https://arxiv.org/abs/2611.08845v1",
+    "source_location": "arXiv comment (Code and data)",
+    "checked_on": "2026-11-09",
+    "status": "verified",
+    "canonical_url": "https://github.com/ANRGUSC/llm-safe-jev",
+    "description": "Reproducibility code and data for Jev as an LLM Safety Guardrail",
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.07854",
+    "url": "https://github.com/nace-ai/drex-decision-models",
+    "source_url": "https://arxiv.org/abs/2611.07854v1",
+    "source_location": "Abstract (All four models are open source)",
+    "checked_on": "2026-11-09",
+    "status": "verified",
+    "canonical_url": "https://github.com/nace-ai/drex-decision-models",
+    "description": "Open Drex decision models: runtime, docs and model pages",
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.08162",
+    "url": "https://github.com/MemTensor/RouteAlign",
+    "source_url": "https://arxiv.org/abs/2611.08162v1",
+    "source_location": "Full text (project repository)",
+    "checked_on": "2026-11-09",
+    "status": "verified",
+    "canonical_url": "https://github.com/MemTensor/RouteAlign",
+    "description": "RouteAlign",
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.08439",
+    "url": "https://github.com/beskvladimir-create/ru-jev",
+    "source_url": "https://arxiv.org/abs/2611.08439v1",
+    "source_location": "arXiv comment (code)",
+    "checked_on": "2026-11-09",
+    "status": "verified",
+    "canonical_url": "https://github.com/beskvladimir-create/ru-jev",
+    "description": "Ru-Jev: an open Russian typed-decision model. Calibrated choices over a fixed option set, on CPU.",
+    "private": false
   }
 ]

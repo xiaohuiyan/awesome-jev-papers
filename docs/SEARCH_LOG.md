@@ -1,6 +1,6 @@
 # Search snapshot / 检索记录
 
-**Broad-search snapshot:** 2026-10-16, Asia/Shanghai. **Window:** 2025-10-16–2026-10-16, plus four marked foundations. **Latest targeted addition:** 2026-11-05.
+**Broad-search snapshot:** 2026-10-16, Asia/Shanghai. **Window:** 2025-10-16–2026-10-16, plus four marked foundations. **Latest targeted addition:** 2026-11-09.
 
 The complete machine-readable record is [search-log.json](../data/search-log.json); decisions for all candidates are in [screening.json](../data/screening.json).
 
@@ -15,6 +15,7 @@ The complete machine-readable record is [search-log.json](../data/search-log.jso
 
 ## Targeted additions
 
+- **2026-11-09, arXiv round 12:** [Monday sweep](ARXIV_SEARCH_2026-11-09.md): fresh window 11-06..11-09 (index reached 11-06) plus whole-window standing+variant re-runs - 15 fresh candidates, **11 added** (4 direct Jev: the LLM-safety-guardrail study, Escalate or Close two-tier web-attack triage, Drex foundation decision models, SciFact relevance-decision reranking; 7 related: GeoJeV, RELOAD looping, AffordJEV, DMGT, RouteAlign, open retrieval gates, Ru-Jev label wording), 4 excluded. The nine 11-05 first submissions were announced only Sunday 20:00 ET and were caught by the whole-window re-run after Friday's round-11 missed them. Four GitHub repos verified, code count 119→123. Counts: 336 included, 157 excluded, 2 pending. The same-day [social round](SOCIAL_SEARCH_2026-11-09.md) contributed no records of its own; Sarvam Prism (no arXiv record) joined the watch leads.
 - **2026-11-06, arXiv round 11 (API recovered):** [Same-day second sweep](ARXIV_SEARCH_2026-11-06.md): fresh window 11-05..11-06 (index reached 11-05) with standing queries plus variant re-runs, and — first since round 8 — the **standing queries re-run over the whole window since 09-15**, which surfaced six late-indexed first submissions (10-14..10-28). A web/social cross-check added EarthJev (2611.02096, first submitted 11-01), never matched by any query because its Jev token only appears fused inside "EarthJev"/"OneJev". **7 added: 4 direct** (CausalGrade 2610.40692, SAG2 2610.22588, urban-mobility agents 2610.22407, OneCodeReviewBench 2610.33389 — all pinned to jev-1.13.0/jev-1.13-20260917) **and 3 related** (NIOCIS 2610.25985, threshold language gaps 2610.37688, EarthJev 2611.02096); no exclusions. Four GitHub repos verified, code count 115→119. Counts: 325 included, 153 excluded, 2 pending. The two broad standing queries read their newest 200 of 206/209 records; the unread tails are pre-October records already covered by earlier rounds.
 
 - **2026-11-06, arXiv follow-up:** [Weekly gap search](ARXIV_SEARCH_2026-11-06.md) added presentation sensitivity (2611.06384) and Zuse (2611.06238), both direct Jev; excluded two lexical/dual-process candidates. Counts: 318 included, 153 excluded, 2 pending. Nine arXiv web query variants; official versioned pages and targeted HTML review. API unavailable, so no exhaustive sweep or Atom verification claimed.

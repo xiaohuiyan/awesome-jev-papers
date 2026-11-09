@@ -3,6 +3,160 @@
 
 Short excerpts support relevance decisions, not paper quality or reproducibility. Scores measure topic fit and substantive contribution only. Abstract-level review is the default; targeted full-text checks are marked. 引文用于核实相关性，不是论文质量或模型性能评分。
 
+<a id="evidence-2611-08879"></a>
+## 2611.08879 — GeoJeV: Unified Spatial Probability for Training-Free Efficient Evidence Acquisition in Ultra-High-Resolution Remote Sensing
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-09
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “we use metask-jev-4b-policy-mix1 as the JeV model” — [Implementation details](https://arxiv.org/html/2611.08879v1)
+- **contribution**: “improves the average accuracy of Qwen3-VL-8B by +5.32pp” — [Abstract](https://arxiv.org/abs/2611.08879v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.08879v1); first submitted 2026-11-06; updated 2026-11-06. Full authors: Xinyi Niu; Lingfeng Chen; Jiehua Zhang; Panhe Hu; Li Liu; Zhen Liu; Yongxiang Liu.
+
+<a id="evidence-2611-08845"></a>
+## 2611.08845 — Jev as an LLM Safety Guardrail: An Empirical Study of Input Filtering, Selective Output Review, and Over-Refusal
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-09
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。
+
+- **topic**: “evaluation of Jev, a probabilistic decision model” — [Abstract](https://arxiv.org/abs/2611.08845v1)
+- **contribution**: “to 17/720 (2.4%) with input filtering” — [Abstract](https://arxiv.org/abs/2611.08845v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.08845v1); first submitted 2026-11-06; updated 2026-11-06. Full authors: Olivia Cognetti; Bhaskar Krishnamachari.
+
+<a id="evidence-2611-08439"></a>
+## 2611.08439 — Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-09
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “Typed-decision models score options that the caller supplies at request time” — [Abstract](https://arxiv.org/abs/2611.08439v1)
+- **contribution**: “the augmented release is more accurate in every setting, by up to 0.24” — [Abstract](https://arxiv.org/abs/2611.08439v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.08439v1); first submitted 2026-11-05; updated 2026-11-05. Full authors: Vladimir Beskorovainyi.
+
+<a id="evidence-2611-08325"></a>
+## 2611.08325 — Decision Models as Retrieval Gates Against Injection and Pollution
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-09
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “answer typed questions about a text without generating tokens” — [Abstract](https://arxiv.org/abs/2611.08325v1)
+- **contribution**: “falls from 27.9% with no defence” — [Abstract](https://arxiv.org/abs/2611.08325v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.08325v1); first submitted 2026-11-05; updated 2026-11-05. Full authors: Mahdi Ghadamyari; Reza Habibi.
+
+<a id="evidence-2611-08229"></a>
+## 2611.08229 — Escalate or Close: How Fast-Tier Models Handle Held-Out Web Attack Families in Two-Tier Triage
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-09
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。
+
+- **topic**: “Jev and Clef, two hosted decision models” — [Abstract](https://arxiv.org/abs/2611.08229v1)
+- **contribution**: “escalate at least 97.6% of every family within the same budget” — [Abstract](https://arxiv.org/abs/2611.08229v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.08229v1); first submitted 2026-11-05; updated 2026-11-05. Full authors: Maciej Kisielewicz; Michał Kędziora; Ngoc Thanh Nguyen.
+
+<a id="evidence-2611-08162"></a>
+## 2611.08162 — RouteAlign: Aligning Task Requirements with Model Profiles for LLM Service Selection
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-09
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “Comparisons with open Jev-style decision backends show consistent quality gains” — [Abstract](https://arxiv.org/abs/2611.08162v1)
+- **contribution**: “extends the empirical quality-cost frontier toward higher task quality” — [Abstract](https://arxiv.org/abs/2611.08162v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.08162v1); first submitted 2026-11-05; updated 2026-11-05. Full authors: Jihao Zhao; Ding Chen; Yanfang Chen; Bo Tang; Feiyu Xiong; Junchi Yan; Zhiyu Li.
+
+<a id="evidence-2611-08014"></a>
+## 2611.08014 — Probabilistic Relevance Decisions for Semantic Retrieval
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-09
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。
+
+- **topic**: “with TypeSafe Jev Noul and OpenAI Decisions Predicate scores” — [Abstract](https://arxiv.org/abs/2611.08014v1)
+- **contribution**: “Jev has the highest observed Recall@5 and nDCG@10” — [Abstract](https://arxiv.org/abs/2611.08014v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.08014v1); first submitted 2026-11-05; updated 2026-11-05. Full authors: Bahadır Tatar; Cevat Şener.
+
+<a id="evidence-2611-07934"></a>
+## 2611.07934 — The Blindfolded Controller: Decision Model-Guided Training for Reinforcement Learning
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-09
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “can perform well in sparse-reward tasks” — [Abstract](https://arxiv.org/abs/2611.07934v1)
+- **contribution**: “outperforms RL in all seven and DM in five” — [Abstract](https://arxiv.org/abs/2611.07934v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.07934v1); first submitted 2026-11-05; updated 2026-11-05. Full authors: Muhammad Ibrahim Khan; Aniket Dixit; Faizan Ahmed; James Brusey.
+
+<a id="evidence-2611-07896"></a>
+## 2611.07896 — AffordJEV: Affordance Grounding by Confirming Candidate Regions
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-09
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “a System One model decides directly which of them perform the operation” — [Abstract](https://arxiv.org/abs/2611.07896v1)
+- **contribution**: “the first approach to bring System One models to affordance grounding” — [Abstract](https://arxiv.org/abs/2611.07896v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.07896v1); first submitted 2026-11-05; updated 2026-11-05. Full authors: Jincheng Li; Yutian Zhang; Jianyu Zhang; Xinshun Wang; Mengyuan Liu.
+
+<a id="evidence-2611-07854"></a>
+## 2611.07854 — Towards Foundation Decision Models: Drex
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-09
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。
+
+- **topic**: “67.52 on the public suite vs. 60.70 for Jev 1.14.0” — [Abstract](https://arxiv.org/abs/2611.07854v1)
+- **contribution**: “We present Drex, a family of four open decision models” — [Abstract](https://arxiv.org/abs/2611.07854v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.07854v1); first submitted 2026-11-05; updated 2026-11-05. Full authors: Nischay Dhankhar; Alisher Amantay; Zhanibek Datbayev; Darkhan Akhmetov; Yash Shah; Nurmukhamed Ubaidullayev; Raman Saparkhan; Dos Baha; Abulhair Saparov.
+
+<a id="evidence-2611-07736"></a>
+## 2611.07736 — Extending Reasoning in Typed Decision Models via Looping
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-09
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “choose among a fixed set of answer options in a single forward pass” — [Abstract](https://arxiv.org/abs/2611.07736v1)
+- **contribution**: “looping improves both accuracy and calibration” — [Abstract](https://arxiv.org/abs/2611.07736v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.07736v1); first submitted 2026-11-05; updated 2026-11-05. Full authors: David Berghaus; Arber Zela; Behzad Shomali; Markus Frey; Mehdi Ali; Rafet Sifa; Volkan Cevher.
+
 <a id="evidence-2611-06384"></a>
 ## 2611.06384 — Presentation Sensitivity in Typed Decision Models for Subjective Text Evaluation
 
