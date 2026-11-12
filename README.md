@@ -12,9 +12,9 @@ This reading list asks a concrete question: given context and a set of options, 
 
 | Papers | Direct Jev | Related methods | Foundations | With verified code |
 | ---: | ---: | ---: | ---: | ---: |
-| **336** | 214 | 118 | 4 | 123 |
+| **356** | 225 | 127 | 4 | 131 |
 
-Updated **2026-11-09** · Main window **2025-10-16–2026-11-06** (first submission)
+Updated **2026-11-12** · Main window **2025-10-16–2026-11-10** (first submission)
 
 [Start with ten papers](#recommended-reading) · [Browse by question](#category-index) · [Foundations](#foundations) · [Data and maintenance](#reuse-and-updates)
 
@@ -50,14 +50,14 @@ Suggested path: **assess the evidence → compare capabilities → understand mo
 
 | Your question | Topic | Direct / related | Total |
 | --- | --- | ---: | ---: |
-| How do we train a model specifically to choose? | [Model architectures and training](#architecture) | 17 / 43 | 60 |
-| When are fast decisions good enough? | [Benchmarks and comparative evaluation](#evaluation) | 42 / 10 | 52 |
-| Can we trust the model's confidence? | [Calibration, reliability and selective decisions](#calibration) | 17 / 11 | 28 |
-| When should an agent search, use a tool, or delegate? | [Search, memory, tools and agent decisions](#agents) | 35 / 16 | 51 |
-| Can phrasing, option order, or attacks change the decision? | [Security, robustness and decision bias](#security) | 43 / 10 | 53 |
-| How do quality and speed trade off in real workflows? | [Domain applications and deployment efficiency](#applications) | 60 / 28 | 88 |
+| How do we train a model specifically to choose? | [Model architectures and training](#architecture) | 17 / 45 | 62 |
+| When are fast decisions good enough? | [Benchmarks and comparative evaluation](#evaluation) | 45 / 11 | 56 |
+| Can we trust the model's confidence? | [Calibration, reliability and selective decisions](#calibration) | 18 / 12 | 30 |
+| When should an agent search, use a tool, or delegate? | [Search, memory, tools and agent decisions](#agents) | 36 / 16 | 52 |
+| Can phrasing, option order, or attacks change the decision? | [Security, robustness and decision bias](#security) | 46 / 11 | 57 |
+| How do quality and speed trade off in real workflows? | [Domain applications and deployment efficiency](#applications) | 63 / 32 | 95 |
 
-Each paper has one primary category; 4 foundations are listed separately. Categories group direct Jev work before related methods, with newest first submissions first within each group. Entries keep published date, authors, affiliations, problem, and contribution; affiliations come from the papers themselves (HTML full text or PDF first page), and 17 papers that state none omit the field. Full author lists, tags, and verification records live in the [evidence ledger](docs/EVIDENCE.md) and [BibTeX](references.bib).
+Each paper has one primary category; 4 foundations are listed separately. Categories group direct Jev work before related methods, with newest first submissions first within each group. Entries keep published date, authors, affiliations, problem, and contribution; affiliations come from the papers themselves (HTML full text or PDF first page), and 18 papers that state none omit the field. Full author lists, tags, and verification records live in the [evidence ledger](docs/EVIDENCE.md) and [BibTeX](references.bib).
 
 <a id="architecture"></a>
 ## Model architectures and training
@@ -204,8 +204,23 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: Can local decision readouts balance accuracy with throughput?
 - **💡 Contribution**: Studies local decision readouts from existing models with Jev as an external accuracy-throughput reference.
 ---
-### Related model / method · 43
+### Related model / method · 45
 
+<a id="paper-2611-13777"></a>
+#### [Omni-JEV: Text and Dual-Stream Speech Decisions](https://arxiv.org/abs/2611.13777v1) · [PDF](https://arxiv.org/pdf/2611.13777v1)
+- **📅 Published**: 2026-11-10 (v1)
+- **👥 Authors**: Shengzhou Kong
+- **🏢 Affiliations**: Merit Interactive Research Institute
+- **🎯 Problem**: Can one Jev-style model decide when a full-duplex voice assistant should respond, keep listening, or interrupt?
+- **💡 Contribution**: Formulates full-duplex dialogue control at collected-segment endpoints and trains Omni-JEV, an open model mapping text or role-indexed dual-stream speech to probabilities over five interaction actions, built on an aligned speech-to-speech understanding backbone that encodes the acoustic roles separately and shares its candidate readout with text inputs. Bilingual weak supervision supports cross-entropy fine-tuning followed by RLCD (reinforcement learning for probability-sensitive decisions); a Gaussian-logit variant and a categorical Choice variant are compared from the same supervised initialization under matched training exposure, showing different trade-offs between classification and probability quality, and Gaussian Omni-JEV reaches 84.08% audio and 96.55% text accuracy. Hosted Jev is cited for the interface only, and the five-way action taxonomy is the authors' own design.
+---
+<a id="paper-2611-12992"></a>
+#### [ZeroPoint: Lightweight Energy-Based Decision Model](https://arxiv.org/abs/2611.12992v1) · [PDF](https://arxiv.org/pdf/2611.12992v1) · [Code](https://github.com/Javihaus/zeropoint)
+- **📅 Published**: 2026-11-08 (v1)
+- **👥 Authors**: Javier Marín
+- **🎯 Problem**: How can an energy-based decision model decide that none of the listed options fits?
+- **💡 Contribution**: Observes that a standard energy-based decision model learns only relative compatibility - adding the same input-dependent quantity to all energies changes nothing - so there is no learned reference level for abstaining. ZeroPoint makes the empty answer a state with energy zero for every input, shared with the listed options in one distribution, turning select-or-abstain into ordinary inference trained with negative log-likelihood; the energy function is a small order-invariant multilingual encoder reading the input together with all options. With the same encoder and data, the fixed zero separates inputs with and without an acceptable option slightly better than a learned rejection class and clearly better than a thresholded softmax while leaving the choice among options unchanged, and ablations show most of the benefit comes from training with no-fit examples. The paper states no affiliation; comparisons use the open Laya model and baselines, not hosted Jev.
+---
 <a id="paper-2611-07736"></a>
 #### [Extending Reasoning in Typed Decision Models via Looping](https://arxiv.org/abs/2611.07736v1) · [PDF](https://arxiv.org/pdf/2611.07736v1)
 - **📅 Published**: 2026-11-05 (v1)
@@ -553,8 +568,32 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 42
+### Direct Jev · 45
 
+<a id="paper-2611-14309"></a>
+#### [MMDM: Measuring Massive Multitask Decision Making](https://arxiv.org/abs/2611.14309v1) · [PDF](https://arxiv.org/pdf/2611.14309v1) · [Code](https://github.com/mmdm-benchmark/mmdm)
+- **📅 Published**: 2026-11-10 (v1)
+- **👥 Authors**: Junhao Shen; Qing Zong; Yue Guo et al. (6 authors)
+- **🏢 Affiliations**: The Chinese University of Hong Kong; Hong Kong University of Science and Technology; LIGHTSPEED; Independent Researcher
+- **🎯 Problem**: How do decision models behave when options are many, interdependent, or constrained?
+- **💡 Contribution**: A 5,448-question benchmark across 16 newly built task categories for single-select, multi-select and soft-label decision making, with option spaces from 2 to 1,024 and inputs to 64,817 tokens, run over 28 decision models. Jev 1.14.0 scores 67.17 hard single-select accuracy against 76.00 for the best open WeMM-JEV 27B and 73.32 for Liquid-d1-Ultra, while Perplexity Decider-V1.2 tops world knowledge at 78.75% but falls to 53.95% on option logic and 47.95% on constraint planning; the best hard multi-select accuracy across all models is 36.81%. Soft-label tasks come with Brier and calibration-error profiles. Questions are fresh constructions or source-grounded recompositions rather than recycled benchmarks, but labels and soft targets derive from the authors' own pipeline, and API versions are pinned at test time.
+---
+<a id="paper-2611-10802"></a>
+#### [Evaluating Jev on Arabic: Comparing Decision Models and LLMs Across Arabic Tasks and Dialects](https://arxiv.org/abs/2611.10802v1) · [PDF](https://arxiv.org/pdf/2611.10802v1)
+- **📅 Published**: 2026-11-07 (v1)
+- **👥 Authors**: Hossam Elsafty; Tobias Deußer; Lorenz Sparrenberg et al. (5 authors)
+- **🏢 Affiliations**: Fraunhofer Institute for Intelligent Analysis and Information Systems IAIS; University of Bonn; Lamarr Institute for Machine Learning and Artificial Intelligence
+- **🎯 Problem**: How does Jev perform on Arabic tasks, and does it degrade on dialects versus Modern Standard Arabic?
+- **💡 Contribution**: Evaluates 67 systems (47 decision models, 20 LLMs) on 43 Arabic tasks across 9 task families under one shared zero-shot protocol, with English controls in three parallel resources that can be removed in a separate comparison. Jev 1.14.0 averages 69.24 versus 68.77 for Jev 1.13.0 and 71.81 for the highest-scoring Gemma-4-31B; removing English controls or repeated cross-task items leaves the system order unchanged, and version-to-version gains vary by task family. Within Jev 1.14.0, pooled dialect-minus-MSA accuracy gaps run -7.94 to -0.35 points across four datasets, SIB-200's source-clustered interval includes zero, and paired contrasts show a larger Palestinian banking penalty for Jev 1.14.0 than for either compared LLM under simultaneous uncertainty while other gap contrasts remain inconclusive. All findings are explicitly descriptive - no general dialect-robustness ranking or causal claim.
+---
+<a id="paper-2611-10705"></a>
+#### [AbductionBench: Benchmarking Abductive Reasoning in Large Language Models](https://arxiv.org/abs/2611.10705v1) · [PDF](https://arxiv.org/pdf/2611.10705v1)
+- **📅 Published**: 2026-11-07 (v1)
+- **👥 Authors**: Moein Salimi; Amir Qeysarbeigi; Babak Hosseini Mohtasham et al. (11 authors)
+- **🏢 Affiliations**: Sharif University of Technology; University of Tehran; Tarbiat Modares University
+- **🎯 Problem**: How well do LLMs - and a fast decision model - generate, discriminate, revise and probe explanations?
+- **💡 Contribution**: A unified taxonomy of abductive reasoning instantiated on 27 datasets spanning ten domains, harmonizing heterogeneous tasks and separating final-answer evaluation from analysis of the observable reasoning traces and interaction histories produced alongside. Eight LLMs from four families are evaluated on single-choice selection together with Jev, a non-LLM System One decision system (69,599 static responses plus 2,400 passive and interactive episodes): Jev matches or exceeds small LLMs when selecting among explanations over compact evidence but falls substantially behind on longer cases, so candidate discrimination and extended evidence integration place different demands on a system. In interactive tasks the share of relevant actions declines at later steps and a relevant first question predicts a correct final answer; traces are analysed as observable outputs, not faithful internal computation. Hosted Jev's coverage is the single-choice subset only.
+---
 <a id="paper-2611-04510"></a>
 #### [Fast, Cheap, and Fair? Evaluating Decision Models](https://arxiv.org/abs/2611.04510v1) · [PDF](https://arxiv.org/pdf/2611.04510v1)
 - **📅 Published**: 2026-11-03 (v1)
@@ -889,8 +928,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: Which steps in an agent trajectory are redundant, and can they be detected automatically?
 - **💡 Contribution**: Includes Jev in a benchmark for detecting redundant steps in agent trajectories.
 ---
-### Related model / method · 10
+### Related model / method · 11
 
+<a id="paper-2611-13843"></a>
+#### [PolyRoute: A Twelve-Language and Code-Mixed Benchmark for Typed-Decision Routing, with Baselines and a Leaderboard](https://arxiv.org/abs/2611.13843v1) · [PDF](https://arxiv.org/pdf/2611.13843v1)
+- **📅 Published**: 2026-11-10 (v1)
+- **👥 Authors**: Mohammed Nayeem Khan; Sarun Kumar K S
+- **🏢 Affiliations**: Intel Corporation
+- **🎯 Problem**: How do typed-decision encoders route requests outside English, including code-mixed text?
+- **💡 Contribution**: A fixed multilingual yardstick for typed-decision routing: 322 native-language support messages across 12 languages and 9 writing systems, 156 code-mixed or romanised messages (Hinglish, Spanglish, Arabizi), 967 optional native training rows and a three-way department-routing protocol. LLM-made labels pass a blind second pass (91% of candidates kept), an independent model agrees on 97.2% of test items, and the split resolves differences only above about 4 points; all texts and labels are LLM-generated. On the 13-system leaderboard the Laya family's English-root checkpoint scores 61.2%, the shipped multilingual checkpoint 77.3% and the best fine-tune 96.6%, while TF-IDF with logistic regression reaches 91.9% - a strong classical baseline for a small dataset - and on four withheld languages the multilingual systems score 77%, 90% and 93%. Hosted Jev is not among the evaluated systems.
+---
 <a id="paper-2611-03982"></a>
 #### [SLATE: A Large-Scale Benchmark for Long-Horizon API Selection in E-commerce Tool Use](https://arxiv.org/abs/2611.03982v1) · [PDF](https://arxiv.org/pdf/2611.03982v1) · [Code](https://github.com/geshijoker/slate)
 - **📅 Published**: 2026-11-02 (v1)
@@ -977,8 +1024,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 17
+### Direct Jev · 18
 
+<a id="paper-2611-11480"></a>
+#### [Beyond Ranking: Are Decision Models Calibrated Relevance Scorers?](https://arxiv.org/abs/2611.11480v1) · [PDF](https://arxiv.org/pdf/2611.11480v1)
+- **📅 Published**: 2026-11-08 (v1)
+- **👥 Authors**: Shengyao Zhuang; Xueguang Ma; Matthias Petri; Jimmy Lin
+- **🏢 Affiliations**: Keenable; University of Waterloo
+- **🎯 Problem**: Are decision models' native relevance probabilities calibrated against human assessors?
+- **💡 Contribution**: Revisits pointwise relevance reranking in the decision-model era: after reproducing Beyond Yes and No's FLAN-UL2 setting on eight BEIR collections, it runs hosted Jev (jev-1.13 via OpenRouter) and two open-weight decision models under the same protocol, where Jev and the 27B pplx-decider rerank ahead of FLAN-UL2 and three cross-encoders on average. Jev's native probabilities are overconfident against TREC assessors - of the DL21 pairs it scores above 0.9, only 66% are relevant - but a two-parameter calibration fitted on 2,257 DL19 pairs removes much of the error and transfers to DL21, after which Jev's DL21 Brier score beats FLAN-UL2 and the cross-encoders mainly by separating relevant from non-relevant pairs; calibrated probabilities also let an expected-F1 cut-off rule match a DL19-tuned threshold with no parameter of its own. Conclusions span eight collections with TREC label sets, and the fitted calibration is collection-specific.
+---
 <a id="paper-2610-37229"></a>
 #### [Decision Models as Judges for Hallucination Detection](https://arxiv.org/abs/2610.37229v1) · [PDF](https://arxiv.org/pdf/2610.37229v1)
 - **📅 Published**: 2026-10-27 (v1)
@@ -1115,8 +1170,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: Does accepting confident judgments and escalating the rest actually pay off?
 - **💡 Contribution**: Tests accepting confident Jev judgments and escalating uncertain cases, with held-out validation of thresholds.
 ---
-### Related model / method · 11
+### Related model / method · 12
 
+<a id="paper-2611-12521"></a>
+#### [Can the Confidence and Decisions of System 1 Models Be Trusted? An Explainability and Perturbation Audit of Jev-Style Decision Models](https://arxiv.org/abs/2611.12521v1) · [PDF](https://arxiv.org/pdf/2611.12521v1) · [Code](https://github.com/j2launay/jev-decision-models-xai)
+- **📅 Published**: 2026-11-09 (v1)
+- **👥 Authors**: Julien Delaunay
+- **🏢 Affiliations**: Independent Researcher
+- **🎯 Problem**: Are Jev-style models calibrated under label-preserving edits, and can their confidence be explained faithfully?
+- **💡 Contribution**: An open, deterministic audit benchmark scoring System 1 decision models on calibration under label-preserving perturbations, cross-question interference in bundled requests and post-hoc attribution faithfulness, over NLI (e-SNLI), adversarial syntactic shortcuts (HANS), synthetic clinical triage, Tensor Trust prompt-injection defense and an 86-case logic-gate trigger suite. Across five open-weight models (0.8B-27B) plus logprob and JSON/CoT System 2 baselines: provider confidence proves an exact closed-form dispersion transform (1 - H(p)/ln K on sub-10B models) rather than empirical accuracy; bundling questions flips 11.7-22.4% of binary answers on the 0.8B model versus 0.1-0.2% at 4B; models at 4B and above are better calibrated under syntactic shift (ECE 0.030-0.087) than logprob (0.144) or JSON (0.378) baselines; 4B+ models reach 0.988-0.998 AUROC injection defense at 48-60 ms; and single-pass speed makes 512-coalition XAI interactive, with S1-SHAP mitigating softmax saturation on disjunctive OR gates. Hosted Jev appears as context; the audited models are open-weight.
+---
 <a id="paper-2611-08439"></a>
 #### [Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes](https://arxiv.org/abs/2611.08439v1) · [PDF](https://arxiv.org/pdf/2611.08439v1) · [Code](https://github.com/beskvladimir-create/ru-jev)
 - **📅 Published**: 2026-11-05 (v1)
@@ -1209,8 +1272,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 35
+### Direct Jev · 36
 
+<a id="paper-2611-10977"></a>
+#### [DM-Call: Decision-Model-Guided Function Calling with Cumulative Verification Feedback](https://arxiv.org/abs/2611.10977v1) · [PDF](https://arxiv.org/pdf/2611.10977v1) · [Code](https://github.com/gogoymh/decision-model-guided-function-calling)
+- **📅 Published**: 2026-11-07 (v1)
+- **👥 Authors**: Minhyeong Yu; Wonduk Seo; Seunghyun Lee
+- **🏢 Affiliations**: Enhans; University College London
+- **🎯 Problem**: Can decision-model verification catch semantically wrong but schema-valid function calls?
+- **💡 Contribution**: Adds a decision-model verifier to function calling: local schema validation plus separate decision-model checks of function selection and argument correctness, with rejected candidates fed back through accumulated verification probabilities, binary judgments and schema errors in a hybrid numeric-plus-verbal representation, refining without executing external tools. On BFCL and API-Bank first-call settings, DM-Call with hosted Jev (jev-1.13.0) or the open-weight 27B PPLX Decider v1.1 as verifier improves accuracy over direct generation at modest additional cost, and the two verifiers land close to each other. Gains are shown on two function-calling suites, and the verified calls come from the same generation pipeline rather than an adversarially chosen set.
+---
 <a id="paper-2611-05448"></a>
 #### [Jev with Foresight: Safe Language-Guided Autonomous Driving via a Language World Model](https://arxiv.org/abs/2611.05448v1) · [PDF](https://arxiv.org/pdf/2611.05448v1)
 - **📅 Published**: 2026-11-03 (v1)
@@ -1625,8 +1696,32 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 43
+### Direct Jev · 46
 
+<a id="paper-2611-14115"></a>
+#### [LEASH: Stay Safe in Agentic Robotics](https://arxiv.org/abs/2611.14115v1) · [PDF](https://arxiv.org/pdf/2611.14115v1)
+- **📅 Published**: 2026-11-10 (v1)
+- **👥 Authors**: Qinfeng Zhu; Weiguang Zhao; Ke Sun et al. (8 authors)
+- **🏢 Affiliations**: Xi'an Jiaotong-Liverpool University; Duke Kunshan University; University of Liverpool; National University of Singapore; CNRS
+- **🎯 Problem**: Can a fast decision model gate foundation-model robots against unsafe tasks, actions and irreversible operations?
+- **💡 Contribution**: Introduces RoboRisk, 92 simulated plus 13 physical robot tasks spanning task refusal, plan repair, execution hazards, injection and sequential memory, all executed closed-loop, and LEASH, a safety harness whose task, action and commit gates review the task, each action and each irreversible operation through a hosted decision model (Jev or OpenAI's Decisions API) under one shared safety policy. Six foundation models show high harm rates when off-leash; with Jev, harm falls and safe success rises for every reported planner in simulation and on physical robots, task completion is largely preserved, and time and token overhead stay small. Effects are reported per planner-environment pair, and the shared safety policy is the authors' design rather than an independently audited standard.
+---
+<a id="paper-2611-09264"></a>
+#### [Nudging Decision Models: Do Digital Nudges Steer Fast, Generation-Free AI Agents?](https://arxiv.org/abs/2611.09264v1) · [PDF](https://arxiv.org/pdf/2611.09264v1)
+- **📅 Published**: 2026-11-06 (v1)
+- **👥 Authors**: Sascha Kaltenpoth; Haya Halimeh; Kevin Bösch; Oliver Müller
+- **🏢 Affiliations**: Paderborn University
+- **🎯 Problem**: Are generation-free decision models steerable by the same digital nudges that affect humans?
+- **💡 Contribution**: Adapts an online shopping experiment previously run with humans and LLM agents to three decision models - hosted Jev (jev-1.13.0), Microsoft Decision-1 and Liquid d1 - across 600 runs per model with control, default-placement and social-influence conditions. In the control the preselected product is chosen 47-49% of the time; the automatic default nudge raises this to 97.5-99.9% and social-influence information to 75-96%, and all three models respond more strongly to the automatic nudge - the opposite of what has been reported for reasoning-capable LLM agents, matching the System 1 label developers use. First evidence that non-generative decision-model agents carry agent-type-specific nudge susceptibility; the setting is one synthetic shop with three models, and the human and LLM-agent comparisons come from the earlier experiments rather than a re-run under identical conditions.
+---
+<a id="paper-2611-08995"></a>
+#### [Same Facts, Different Remedy: Linguistic Profiling and Arbitrariness in LLM and System One Decisions](https://arxiv.org/abs/2611.08995v1) · [PDF](https://arxiv.org/pdf/2611.08995v1)
+- **📅 Published**: 2026-11-06 (v1)
+- **👥 Authors**: Colin Priest
+- **🏢 Affiliations**: School of Risk and Actuarial Studies, UNSW Business School
+- **🎯 Problem**: Do LLM and System One complaint systems reward how people write rather than what happened?
+- **💡 Contribution**: Audits three remedy-decision systems - GPT-4o-mini and GPT-5-mini returning single labels, and Jev 1.13.0 returning a distribution over remedies - on US consumer financial complaints rewritten by two sociolinguistic models instructed to preserve every fact, with pre-registered hypotheses tested once on held-out complaints. At the group scale, older, college-educated and higher-SES styles receive slightly more generous remedies; the effects replicate but every monetary-remedy gap stays within 0.5 percentage points. At the individual scale, two style versions of the same complaint receive different monetary decisions 2.6-6.3% of the time; for Jev the mean total-variation distance between two scorings of the same text is 0.021 with tier flips in 2.5% of re-scores. Positive controls show all three systems respond 49-387 times more strongly to remedy-relevant facts than to style; standardising style cut GPT-4o-mini's education and SES gaps by 94% and 87% but reversed two of Jev's gaps and did not stabilise individual decisions, while independent LLM auditors flagged material fact changes in 3.3-11.7% of rewrites. Group disparities and individual instability are reported as separate fairness outcomes.
+---
 <a id="paper-2611-08845"></a>
 #### [Jev as an LLM Safety Guardrail: An Empirical Study of Input Filtering, Selective Output Review, and Over-Refusal](https://arxiv.org/abs/2611.08845v1) · [PDF](https://arxiv.org/pdf/2611.08845v1) · [Code](https://github.com/ANRGUSC/llm-safe-jev)
 - **📅 Published**: 2026-11-06 (v1)
@@ -1968,8 +2063,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: Do typed decision models follow the option name or the definition bound to it?
 - **💡 Contribution**: Changes name-definition mappings to test whether Jev decisions follow labels instead of supplied meanings.
 ---
-### Related model / method · 10
+### Related model / method · 11
 
+<a id="paper-2611-09803"></a>
+#### [Maya a1: Do the Options Read the Model, or Does Their Position? Order Sensitivity in a Non-Autoregressive Decision Model](https://arxiv.org/abs/2611.09803v1) · [PDF](https://arxiv.org/pdf/2611.09803v1)
+- **📅 Published**: 2026-11-06 (v1)
+- **👥 Authors**: Mohammed Nayeem Khan; Logesh L
+- **🏢 Affiliations**: Intel Corporation
+- **🎯 Problem**: Does a non-autoregressive decision model's answer depend on where an option is listed?
+- **💡 Contribution**: Re-engineers the open 421M-parameter Laya checkpoint (a two-layer option head with no positional tensor and a documented but unused parallel layout) and presents 951 Qwen-verified questions under every cyclic rotation of their options: the released checkpoint changes its answer for 25.8% of questions (19.7% on the English items), accuracy with the gold option first versus last differs by 10.1 points, and flips concentrate at low confidence (54% in the bottom tercile versus 8% at the top). Fine-tuning on 2,818 teacher-verified rows with option shuffling cuts the flip rate to 7.2%, of which shuffling alone accounts for 4.2 points, and the authors' parallel layout fine-tune reaches 0.5%; a confidence-weighted vote over orderings gains 0.6 points at 4.1x compute. Labels are LLM-made and teacher-filtered, and the conclusions concern Laya rather than hosted Jev.
+---
 <a id="paper-2611-08325"></a>
 #### [Decision Models as Retrieval Gates Against Injection and Pollution](https://arxiv.org/abs/2611.08325v1) · [PDF](https://arxiv.org/pdf/2611.08325v1)
 - **📅 Published**: 2026-11-05 (v1)
@@ -2057,8 +2160,24 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 60
+### Direct Jev · 63
 
+<a id="paper-2611-10414"></a>
+#### [Track or Follow? A Jev-Compatible Multi-Agent Trading System When Web News Lags the Market](https://arxiv.org/abs/2611.10414v1) · [PDF](https://arxiv.org/pdf/2611.10414v1) · [Code](https://github.com/yebof/track-or-follow)
+- **📅 Published**: 2026-11-07 (v1)
+- **👥 Authors**: Yebo Feng; Guangyan Gan; Liangrui Pan et al. (7 authors)
+- **🏢 Affiliations**: Nanyang Technological University; Wuhan University; UCL Centre for Blockchain Technologies and DLT Science Foundation
+- **🎯 Problem**: Do news-reading agents' typed judgments track the market's reaction to events, or merely follow prices?
+- **💡 Contribution**: Builds a multi-agent trading system whose agents share only point-in-time stores and answer typed questions through the Jev interface (hosted jev-1.13.0 among the readers), with code setting every position under a proved bound on how far text can move it. In a hash-committed test, a Jev-compatible reader built from a pinned LLM's option probabilities tracks announcement-window abnormal returns (weekly Spearman 0.119), also after the LLM's release, and its event types agree with the issuers' 8-K filings (AUC 0.833); Jev's own judgments on news published after its release track the reaction as well (descriptive). Exploratory analyses locate the association: 72% of earnings news appears after the issuer's filing, contributor-written items often report the price move, and measuring from the first post-publication trade collapses the association to 0.023. The confirmatory weekly test detects no rank information over code-only features, and decision cards traced 88% of successful attacks to a planted item.
+---
+<a id="paper-2611-10145"></a>
+#### [TrialJev: Open-Weight Single Pass Eligibility Scoring for Patient Trial Screening](https://arxiv.org/abs/2611.10145v1) · [PDF](https://arxiv.org/pdf/2611.10145v1) · [Code](https://github.com/oibrahi1/TrialJev)
+- **📅 Published**: 2026-11-06 (v1)
+- **👥 Authors**: Omar Ibrahim; Grant Hamblin; Benjamin Haibe-Kains
+- **🏢 Affiliations**: AI Hub, University Health Network; Department of Medical Biophysics, University of Toronto; Vector Institute for Artificial Intelligence; Structural Genomics Consortium, University Health Network
+- **🎯 Problem**: Can open-weight single-pass scoring prioritise clinical-trial eligibility without sending patient records to an external API?
+- **💡 Contribution**: An open-weight eligibility scorer: LoRA-adapted Qwen models plus a pointer head score natural-language answer options in a single forward pass, trained on TREC Clinical Trials 2021 and evaluated on 6,975 eligible-or-excluded pairs from 50 unseen TREC 2022 synthetic patients. TrialJev reaches 80.97% (Qwen3.5-27B) and 81.84% (Qwen3.8-27B) accuracy versus 79.87-79.93% for LLMs fine-tuned to generate verdicts, and under a common development-fitted decision correction the two 27B models land at 80.99% and 81.88% against 81.28% for the hosted Jev API (jev-1.13.0), with paired confidence intervals including zero. In matched batch-1 measurements verdict generation takes 2.45-2.70 times the one-pass latency (about 178 ms per pair at 27B locally), and an A/B-logit ablation attributes the efficiency edge to avoiding decoding rather than the pointer head itself. Evaluation covers synthetic patients only, clinical use is unvalidated, and hosted latency is API-reported rather than local hardware.
+---
 <a id="paper-2611-08014"></a>
 #### [Probabilistic Relevance Decisions for Semantic Retrieval](https://arxiv.org/abs/2611.08014v1) · [PDF](https://arxiv.org/pdf/2611.08014v1)
 - **📅 Published**: 2026-11-05 (v1)
@@ -2066,6 +2185,14 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🏢 Affiliations**: Recruspace LLC; Middle East Technical University
 - **🎯 Problem**: Can decision-API relevance scores rerank dense retrieval better than the dense ranking alone?
 - **💡 Contribution**: Compares dense-only BGE-M3 with TypeSafe Jev (Noul interface, jev-1.13.0) and OpenAI Decisions Predicate reranking on BEIR SciFact: 300 official queries over positive-enriched 100-document pools and full-corpus retrieval reranked at depths 50 and 100. At depth 50, full-corpus nDCG@10 rises from 0.6413 (dense) to 0.7545 (OpenAI) and 0.7805 (Jev), with Jev highest on observed Recall@5 and nDCG@10; unique-condition API scoring roughly doubles cost, Jev at 0.0016 USD per query with 3.13 s median rerank latency, partly offset by cached decisions. All four paired-bootstrap depth intervals include zero, OpenAI returns many exact-zero scores whose secondary tie randomization reveals ranking sensitivity, and the exploratory unadjusted analyses claim no general superiority, calibration or depth equivalence.
+---
+<a id="paper-2611-09994"></a>
+#### [A Systematic Comparison of In-Context Learning Strategies for Peptide Property Prediction in Low-Data Regimes](https://arxiv.org/abs/2611.09994v1) · [PDF](https://arxiv.org/pdf/2611.09994v1) · [Code](https://github.com/BigChemistry-RobotLab/icl-benchmark)
+- **📅 Published**: 2026-11-03 (v1)
+- **👥 Authors**: Jiantao Zhao; Andrei Voinea; Mathijs F. J. Mabesoone
+- **🏢 Affiliations**: Institute for Molecules and Materials, Radboud University
+- **🎯 Problem**: Can in-context learning - including hosted decision models - predict peptide properties in low-data regimes?
+- **💡 Contribution**: Systematically compares in-context learning strategies for peptide property prediction across five low-data tasks (pH-dependent surface activity, IR spectral signatures, self-assembly, two anti-cancer activities), benchmarking LLMs, tabular foundation models, XGBoost and typed decision models - hosted Jev 1.14 and GPT-6 Luna Decisions - as ICL predictors against the classical baseline. ICL is competitive but does not significantly outperform XGBoost, and performance varies between models and tasks; Jev 1.14 achieves a higher mean macro-F1 across the five tasks than DeepSeek-V4.1 Flash and Gemma-4 31B, with endpoint cost reporting that includes Jev 1.14 at USD 0.042 per 1M input tokens. Label-corruption ablations suggest models use both in-context examples and pretraining knowledge, which can bias predictions toward established sequence-property relationships. Datasets are small, so between-model differences lack statistical power, and the Jev results are zero-shot API calls on one peptide suite.
 ---
 <a id="paper-2611-05702"></a>
 #### [TACT: A Pragmatic Approach to Qualitative Analysis with an AI Council](https://arxiv.org/abs/2611.05702v1) · [PDF](https://arxiv.org/pdf/2611.05702v1) · [Code](https://github.com/rudrajit1729/TACT)
@@ -2538,8 +2665,32 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: Can a low-latency decision model replace LLMs in edge service orchestration?
 - **💡 Contribution**: Integrates Jev into edge service orchestration and measures verified requests, admission behavior and execution outcomes.
 ---
-### Related model / method · 28
+### Related model / method · 32
 
+<a id="paper-2611-11359"></a>
+#### [NuJEV: Structured Visual Judgments for Consistent Nuclei Quantification](https://arxiv.org/abs/2611.11359v1) · [PDF](https://arxiv.org/pdf/2611.11359v1)
+- **📅 Published**: 2026-11-08 (v1)
+- **👥 Authors**: Yonghuang Wu; Pengfei Wang; Zhenyang Liang et al. (7 authors)
+- **🏢 Affiliations**: Fudan University
+- **🎯 Problem**: Can nuclei be counted and typed by structured visual judgments instead of free-form generation?
+- **💡 Contribution**: Applies the Jev structured-decision idea to nuclear perception: visual LoRA and a parallel head are jointly trained on Qwen3-VL-2B to predict nuclear presence, centers and types, with one image encoding feeding both the nuclear head and the original language decoder, which interprets region and type requests while counts are computed from the predicted nuclei. On 2,732 PanNuke test images NuJEV reaches a five-query mean absolute error of 1.844 overall and 5.268 on dense images with localization/typed F1 of 0.816/0.682; a matched-encoder ablation attributes 41.0% of the dense-error reduction to visual adaptation, and language-request MAE falls 76.2% relative to direct generation. Evidence covers the PanNuke family only, the head is locally trained rather than a hosted Jev call, and code is promised but not yet released.
+---
+<a id="paper-2611-11234"></a>
+#### [LoMASA: A Local Multi-Agent Sales Assistant with Confidence-Gated Delegation for B2B Quoting](https://arxiv.org/abs/2611.11234v1) · [PDF](https://arxiv.org/pdf/2611.11234v1)
+- **📅 Published**: 2026-11-08 (v1)
+- **👥 Authors**: Yu Liu; Xingbang Du
+- **🏢 Affiliations**: Xi'an International Studies University; Information Systems Design Laboratory, Hokkaido University
+- **🎯 Problem**: Can a fully local two-model system settle B2B quoting decisions with confidence-gated delegation?
+- **💡 Contribution**: A training-free desktop assistant where a 35B mixture-of-experts model acts as System 1, answering each decision in one forward pass and reading its confidence from the probabilities of the answer options, while a 27B dense System 2 model writes customer replies and escalation briefs and is consulted only when System 1 is unsure; code computes every price, margin and option, and hard pricing rules cannot be overridden. On 500 simulated episodes with 1,512 decisions built from public supply-chain data, 38.0% of decisions settle automatically with a median latency of 2.67 s, 42.5% escalate to a manager by hard rule, and the salesperson decides only 19.5%; on automatically settled decisions the system matches a rule baseline's 0.894 accuracy with fewer below-floor margin commitments (2.61% versus 4.53%). Option probabilities are well calibrated without training, unlike confidence stated in words by the same model; the 27B model rarely changes a decision, and results rest on simulated episodes.
+---
+<a id="paper-2611-10334"></a>
+#### [Reproducible LoRA Inference Through Deterministic Split-K Reduction](https://arxiv.org/abs/2611.10334v1) · [PDF](https://arxiv.org/pdf/2611.10334v1)
+- **📅 Published**: 2026-11-07 (v1)
+- **👥 Authors**: Dhayaneshwar Balusamy; Ankur Mohan
+- **🏢 Affiliations**: JPMorgan Chase & Co
+- **🎯 Problem**: Can LoRA-adapted decision-model inference be made bit-reproducible without losing speed?
+- **💡 Contribution**: Shows that vLLM's atomic Split-K reduction makes LoRA inference nondeterministic and quantifies the damage across GSM8K, MBPP and Jev-style structured toxicity decisions on Civil Comments: under identical-input replay, atomic Split-K=8 produces different FP32 shrink outputs in 97.61% of comparisons; repeated atomic inference changes generated outputs in 17.30% of GSM8K and 14.96% of MBPP comparisons; and structured-decision probabilities vary in 81.47% of atomic comparisons, with decision flips. Controlled tracing shows how shrink differences propagate into the KV cache and final answers. A deterministic Triton Split-K=8 keeps the parallelism with no observed variation, at 16.8-21.1% latency speedup over unsplit reduction and only 1.02-2.62% extra latency relative to the atomic kernel. The decision-model axis is one of three workloads, and determinism is claimed under identical inputs rather than across serving stacks.
+---
 <a id="paper-2611-08879"></a>
 #### [GeoJeV: Unified Spatial Probability for Training-Free Efficient Evidence Acquisition in Ultra-High-Resolution Remote Sensing](https://arxiv.org/abs/2611.08879v1) · [PDF](https://arxiv.org/pdf/2611.08879v1)
 - **📅 Published**: 2026-11-06 (v1)
@@ -2555,6 +2706,14 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🏢 Affiliations**: Peking University
 - **🎯 Problem**: Can affordance grounding be driven by direct decisions over candidate regions instead of chain-of-thought localization?
 - **💡 Contribution**: Replaces chain-of-thought affordance grounding with hierarchical confirmation: frozen segmenters propose object, part and sub-part regions, and a System One judge - a LoRA-tuned head on Qwen3.5-4B - scores all candidates of a level in one pass, with verdicts flowing both directions so later levels correct earlier ones. Trained only on InstructPart, it beats chain-of-thought methods in-domain and in zero-shot transfer to UMD and IIT-AFF, and runs better overall than the released judges Valen-4B, H2O-Lightning-4B and JevAny-4B-LoRA placed in the same framework, retrained variants included. Hosted Jev appears only as a cited API reference; operation-word alignment moves gains by 14.22 gIoU for their judge versus 6.39 for retrained JevAny, so wording sensitivity is not isolated from architecture.
+---
+<a id="paper-2611-10005"></a>
+#### [EarthJev: Efficient Visual Evidence Acquisition and Decision for UHR Remote Sensing Understanding](https://arxiv.org/abs/2611.10005v1) · [PDF](https://arxiv.org/pdf/2611.10005v1) · [Code](https://github.com/Da1daidaidai/EarthJev)
+- **📅 Published**: 2026-11-04 (v1)
+- **👥 Authors**: Pengyu Dai; Yao Zhang; Jian Song et al. (9 authors)
+- **🏢 Affiliations**: RIKEN Center for Advanced Intelligence Project; Wuhan University; The University of Tokyo
+- **🎯 Problem**: Can evidence search over ultra-high-resolution scenes run on decision signals instead of generative judgments?
+- **💡 Contribution**: Separates region scoring from answer generation for UHR remote-sensing VQA: a spatial pointer verifier uses visual and geometric cues to guide exploration or bypass search, an evidence-aware decision mechanism scores compact candidate views in batches with a lightweight head on frozen representations instead of generating textual region judgments, and format-specific confidence calibration selects between answers generated from memory and from overview presentations of the acquired evidence. Across five benchmarks with frozen Qwen3.5-9B it reaches 53.06% mean accuracy, beating ZoomSearch with the same answering model by 2.33-14.73 points per benchmark while cutting mean latency from 11.30 to 1.67 s per question; with four additional frozen answering models, model-specific fitting of the decision modules and calibration mappings adds 3.41-6.53 points over single-pass baselines. The Jev in the name follows the Jev-style scoring idea - hosted Jev is cited (TypeSafe blog) but not called - and the decision modules are fitted per answering model.
 ---
 <a id="paper-2611-04480"></a>
 #### [ReListen: Training-Free Evidence Localization in Hour-Long Audio with Frozen Audio Language Models](https://arxiv.org/abs/2611.04480v1) · [PDF](https://arxiv.org/pdf/2611.04480v1)

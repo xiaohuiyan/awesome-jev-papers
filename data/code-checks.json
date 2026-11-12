@@ -1351,5 +1351,93 @@
     "canonical_url": "https://github.com/beskvladimir-create/ru-jev",
     "description": "Ru-Jev: an open Russian typed-decision model. Calibrated choices over a fixed option set, on CPU.",
     "private": false
+  },
+  {
+    "arxiv_id": "2611.14309",
+    "url": "https://github.com/mmdm-benchmark/mmdm",
+    "source_url": "https://arxiv.org/abs/2611.14309v1",
+    "source_location": "Reproducibility section (evaluation toolkit)",
+    "checked_on": "2026-11-12",
+    "status": "verified",
+    "canonical_url": "https://github.com/mmdm-benchmark/mmdm",
+    "description": "MMDM: data, code, and evaluation for measuring massive multitask decision making",
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.10977",
+    "url": "https://github.com/gogoymh/decision-model-guided-function-calling",
+    "source_url": "https://arxiv.org/abs/2611.10977v1",
+    "source_location": "Footnote 1 (Code is available at)",
+    "checked_on": "2026-11-12",
+    "status": "verified",
+    "canonical_url": "https://github.com/gogoymh/decision-model-guided-function-calling",
+    "description": null,
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.10414",
+    "url": "https://github.com/yebof/track-or-follow",
+    "source_url": "https://arxiv.org/abs/2611.10414v1",
+    "source_location": "Section 3 (The code repository)",
+    "checked_on": "2026-11-12",
+    "status": "verified",
+    "canonical_url": "https://github.com/yebof/track-or-follow",
+    "description": "Code and results for the paper \"Track or Follow? A Jev-Compatible Multi-Agent Trading System When Web News Lags the Market\"",
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.10145",
+    "url": "https://github.com/oibrahi1/TrialJev",
+    "source_url": "https://arxiv.org/abs/2611.10145v1",
+    "source_location": "arXiv comment (Code: https://github.com/oibrahi1/TrialJev)",
+    "checked_on": "2026-11-12",
+    "status": "verified",
+    "canonical_url": "https://github.com/oibrahi1/TrialJev",
+    "description": null,
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.09994",
+    "url": "https://github.com/BigChemistry-RobotLab/icl-benchmark",
+    "source_url": "https://arxiv.org/abs/2611.09994v1",
+    "source_location": "Appendix (code used to obtain the results)",
+    "checked_on": "2026-11-12",
+    "status": "verified",
+    "canonical_url": "https://github.com/BigChemistry-RobotLab/icl-benchmark",
+    "description": "In-context learning for peptide property prediction in low-data regimes: LLMs, decision models, and tabular foundation models against classical baselines.",
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.12992",
+    "url": "https://github.com/Javihaus/zeropoint",
+    "source_url": "https://arxiv.org/abs/2611.12992v1",
+    "source_location": "Reference [17] (author's own software citation)",
+    "checked_on": "2026-11-12",
+    "status": "verified",
+    "canonical_url": "https://github.com/Javihaus/zeropoint",
+    "description": "CPU-first, energy-based decision model. Picks the option that fits,  or says none does,  without being told that none is an option",
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.12521",
+    "url": "https://github.com/j2launay/jev-decision-models-xai",
+    "source_url": "https://arxiv.org/abs/2611.12521v1",
+    "source_location": "arXiv comment (Code and benchmark artifacts)",
+    "checked_on": "2026-11-12",
+    "status": "verified",
+    "canonical_url": "https://github.com/j2launay/jev-decision-models-xai",
+    "description": "Jev-style “System 1” decision models replace autoregressive text generation with a single forward pass that returns typed, structured answers. I introduce an open, deterministic evaluation bench that audits Jev-style decision models ",
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.10005",
+    "url": "https://github.com/Da1daidaidai/EarthJev",
+    "source_url": "https://arxiv.org/abs/2611.10005v1",
+    "source_location": "Abstract (Code is available at)",
+    "checked_on": "2026-11-12",
+    "status": "verified",
+    "canonical_url": "https://github.com/Da1daidaidai/EarthJev",
+    "description": "EarthJev: Efficient Visual Evidence Acquisition and Decision for UHR Remote Sensing Understanding",
+    "private": false
   }
 ]

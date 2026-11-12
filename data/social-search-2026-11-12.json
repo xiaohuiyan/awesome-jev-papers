@@ -1,0 +1,35 @@
+{
+ "schema_version": 1,
+ "searched_on": "2026-11-12",
+ "time_zone": "Asia/Shanghai",
+ "purpose": "User-requested collection of recent Jev / System One / typed decision model papers from WeChat, Zhihu, Weibo and X/Twitter, run before the round-13 arXiv sweep.",
+ "recency": "2026-11-07 through 2026-11-12 (the days since the 11-09 round), with undated discovery queries for the surrounding week; paper first-submission dates are taken from arXiv records, not post dates.",
+ "queries": [
+  {"platform": "Web index (WeChat discovery)", "query": "site:mp.weixin.qq.com Jev 决策模型 2026年11月"},
+  {"platform": "Web index (WeChat discovery)", "query": "微信公众号 Jev 决策模型 论文 11月"},
+  {"platform": "Web index (Zhihu discovery)", "query": "site:zhihu.com Jev 决策模型 System One 2026年11月"},
+  {"platform": "Web index (Weibo discovery)", "query": "site:weibo.com Jev 决策模型 论文"},
+  {"platform": "Web index (X/Twitter cross-check)", "query": "Jev decision model arxiv new paper November 10 11 12 2026"},
+  {"platform": "Web index (X/Twitter cross-check)", "query": "twitter X Jev System One typed decision model paper arxiv 2611.09 OR 2611.10 OR 2611.11"},
+  {"platform": "Web index (lead follow-up)", "query": "Sarvam Prism decision model arxiv November 2026 TypeSafe Jev 1.14 release"},
+  {"platform": "Web index (lead follow-up)", "query": "JEV-27B-VL multimodal decision model arxiv"},
+  {"platform": "Direct fetch (aggregator)", "query": "https://jevdaily.com/issues/2026-11-09 (returned 404; issue not published at fetch time)"},
+  {"platform": "Direct fetch (aggregator)", "query": "https://jevdaily.com/issues/2026-11-10"},
+  {"platform": "Direct fetch (aggregator)", "query": "https://jevdaily.com/issues/2026-11-11"},
+  {"platform": "Direct fetch (aggregator)", "query": "https://jevdaily.com/issues/2026-11-12 (returned 404; issue not yet published at fetch time)"}
+ ],
+ "paper_leads": [
+  {"lead": "arXiv 2611.11480 Beyond Ranking: Are Decision Models Calibrated Relevance Scorers?", "source": "X/Twitter cross-check (web search), surfaced before the arXiv sweep completed", "resolution": "new record; also caught independently by the round-13 arXiv sweep and screened there"},
+  {"lead": "arXiv 2611.10802 Evaluating Jev on Arabic", "source": "X/Twitter cross-check (web search), surfaced before the arXiv sweep completed", "resolution": "new record; also caught independently by the round-13 arXiv sweep and screened there"},
+  {"lead": "arXiv 2611.10005 EarthJev: Efficient Visual Evidence Acquisition and Decision for UHR Remote Sensing Understanding", "source": "X/Twitter cross-check (web search)", "resolution": "new record NOT caught by any standing or variant API query (the unhyphenated compound name does not match all:\"Jev\" and the abstract has no other standing token); fetched via targeted id_list follow-up and added as the social round's own contribution (1 paper)"},
+  {"lead": "JevBreak / XDecideBench / Policy Gates / Multimodal consistency / Drex / 2609.28940 / 2611.00505 / 2611.05448", "source": "Zhihu columns, jevdaily aggregation, web search", "resolution": "all already catalogued"}
+ ],
+ "non_paper_leads": [
+  {"lead": "JEV-27B-VL (autotrust)", "source": "Hugging Face model card autotrust/JEV-27B-VL + WeChat article (ModelScope community syndication, datawhale jev-cookbook)", "status": "open-weight 27B multimodal decision model (Apache 2.0 LoRA on Qwen3.8-27B), 78.3% on VL-RewardBench, first of 20 on Jev Decision Index 0.3 Vision; no dedicated arXiv record; watch lead alongside Prism and Vega"},
+  {"lead": "Sarvam Prism (2026-11-03, carried over)", "source": "Sarvam AI blog, Unite.AI / ET CIO coverage", "status": "still no arXiv record; coverage confirms internal tests against Jev 1.14 and Microsoft-Decision-1; remains a watch lead"},
+  {"lead": "TypeSafe Jev 1.14 formal release", "source": "carried over from 11-09 round", "status": "reported due mid-November 2026; product news, no paper"},
+  {"lead": "Jev Daily 11-10/11-11 product news", "source": "jevdaily.com direct fetch", "status": "Browser Use 1.0.0 release, voice coffee ordering on Jev (~200 ms), keyword-judging cost report ($8.04 / 201M tokens); no papers in either issue"}
+ ],
+ "added_papers": 1,
+ "note": "The X/Twitter cross-check surfaced three arXiv IDs not previously in the ledger before the sweep finished. Two (2611.10802, 2611.11480) were also caught independently by the round-13 arXiv API sweep; the third, EarthJev (2611.10005, first submitted 11-04), was invisible to every standing and variant API query because the unhyphenated compound name does not match all:\"Jev\" and no other standing token appears in its abstract - it was fetched via a targeted id_list follow-up and added as this round's own contribution (1 paper). WeChat site-restricted search returned no dated hits (indexing limitation); Zhihu columns cluster in 2026-09/10 and every cited paper was already catalogued; no 2026-11 Zhihu column found. X native search was not reachable; findings rely on web search and aggregator pages, so absence of hits is not proof of absence. See docs/SOCIAL_SEARCH_2026-11-12.md and docs/ARXIV_SEARCH_2026-11-12.md."
+}
