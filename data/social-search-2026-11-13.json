@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "searched_on": "2026-11-13",
+  "time_zone": "Asia/Shanghai",
+  "purpose": "User-requested collection of recent Jev / System One / typed decision model papers from WeChat, Zhihu, Weibo and X/Twitter, run alongside the round-14 arXiv sweep.",
+  "recency": "2026-11-11 through 2026-11-13 (the days since the 11-12 round), with undated discovery queries for the surrounding week; paper first-submission dates are taken from arXiv records, not post dates.",
+  "queries": [
+    {"platform": "Web index (WeChat discovery)", "query": "site:mp.weixin.qq.com Jev 决策模型 2026年11月", "result": "no dated hits (WeChat indexing limitation)"},
+    {"platform": "Web index (WeChat discovery)", "query": "微信公众号 Jev 决策模型 论文 11月", "result": "explainers and republished columns only; the only paper-shaped leads (REFLEX 2609.26532, StartLux 2610.17309) are already catalogued; new non-paper lead: StartLux v1.1 release coverage"},
+    {"platform": "Web index (Zhihu discovery)", "query": "site:zhihu.com Jev 决策模型 System One 2026年11月", "result": "columns cluster in 2026-09/10; no 2026-11 column found; every cited paper already catalogued"},
+    {"platform": "Web index (Zhihu discovery)", "query": "知乎专栏 Jev System One 决策模型 2026年11月 新论文", "result": "no hits"},
+    {"platform": "Web index (Weibo discovery)", "query": "site:weibo.com Jev 决策模型 论文", "result": "ttarticle explainers and funding news only; no new paper leads"},
+    {"platform": "Web index (X/Twitter cross-check)", "query": "Jev decision model arxiv new paper November 11 12 13 2026", "result": "surfaced 2610.32955 (Measure Before You Train, v2.1 reported) alongside already-catalogued records (2611.03759, 2610.02076, 2609.32160, 2609.28940, 2610.18610); 2610.32955 is catalogued at v1 (updated 2026-11-06) - catalogue pins the reviewed version per methodology"},
+    {"platform": "Web index (X/Twitter cross-check)", "query": "twitter X Jev System One typed decision model paper arxiv 2611.10 OR 2611.11 OR 2611.12", "result": "no ledger-external IDs; ecosystem items only (Cloudflare clef, Laya, community awesome-jev repo, Barrow/Pachaar/mvanhorn posts)"},
+    {"platform": "Web index (lead follow-up)", "query": "Sarvam Prism decision model arxiv TypeSafe Jev 1.14 release November 2026", "result": "Prism still has no arXiv record (blog + 25-model decision study); Jev 1.14 is now the current stable: docs.typesafe.ai shows jev-latest pointing to jev-1.14.0 with 1.13 deprecated, OpenRouter lists typesafe/jev-1.14"},
+    {"platform": "Web index (lead follow-up)", "query": "JEV-27B-VL autotrust multimodal decision model arxiv report", "result": "still HF/ModelScope model card + vLLM recipe only, no dedicated arXiv record; DecisionRobust (2610.19118) surfaced alongside and is already catalogued"},
+    {"platform": "Web index (lead follow-up)", "query": "TypeSafe \"Jev 1.14\" formal release jev-latest November 12 2026", "result": "jev-latest transitioned to jev-1.14.0 (~11-12 per docs/shattered.io); DoltHub engineering blog 'Working with Jev' (11-12) and an aihubmix 'Gemini Decision 1 vs Jev 1.14' comparison are non-paper items"},
+    {"platform": "Web index (lead follow-up)", "query": "\"Can Jev Be Your Q or Policy in Reinforcement Learning\" arxiv", "result": "OpenReview lead resolved to arXiv 2610.11692 (first submitted 10-08), already catalogued"},
+    {"platform": "Web index (lead follow-up)", "query": "StartLux open-source decision model arxiv \"Decision Index\" Jev 2026", "result": "resolved to arXiv 2610.17309, already catalogued at v1; the v1.1 model release (27B AutoThink, self-run 73.37 on Decision Index 0.3.2) is a non-paper leaderboard claim"},
+    {"platform": "Direct fetch (aggregator)", "query": "https://jevdaily.com/issues/2026-11-12", "result": "published; no papers: Google Gemini Decisions API (Gemini Decision 1, $0.10/M input tokens, up to 1,000 closed-set questions), Mike Taylor using Every's cut editing software (Jev-based scene detection), Theo's Gemini latency critique"},
+    {"platform": "Direct fetch (aggregator)", "query": "https://jevdaily.com/issues/2026-11-13", "result": "404 - issue not published at fetch time (02:0x UTC)"}
+  ],
+  "paper_leads": [],
+  "non_paper_leads": [
+    {"name": "Google Gemini Decisions API / Gemini Decision 1", "source": "Jev Daily 2026-11-12 issue + aihubmix comparison (11-12)", "note": "decision model at $0.10/M input tokens (about 2.4x Jev 1.14's $0.042), up to 1,000 closed-set questions; vendor product with no technical report yet - watch lead alongside Prism/Vega/JEV-27B-VL"},
+    {"name": "Jev 1.14 formal stable release", "source": "docs.typesafe.ai models page; OpenRouter typesafe/jev-1.14; shattered.io coverage", "note": "jev-latest now points to jev-1.14.0 with jev-1.13.0 deprecated - resolves the mid-November formal-release watch lead from rounds 9-13; no official technical report yet"},
+    {"name": "StartLux-Decision v1.1", "source": "Pandaily post on X; decision.startlux.com leaderboard", "note": "self-run 73.37 for the 27B AutoThink on Decision Index 0.3.2; the paper (2610.17309) is catalogued at reviewed v1; the v1.1 claim is vendor/leaderboard news"},
+    {"name": "DoltHub: Working with Jev", "source": "dolthub.com blog, 2026-11-12", "note": "engineering walkthrough of Jev 1.14.0 typed answers under 200 ms; non-paper"}
+  ],
+  "added_papers": 0,
+  "note": "Four-platform round run alongside the round-14 arXiv sweep: every paper-shaped lead (REFLEX, StartLux, Measure Before You Train v2.1, the OpenReview RL lead, DecisionRobust, and all X-surfaced IDs) resolved to already-catalogued arXiv records; 0 new records of its own. New non-paper leads: Google Gemini Decisions API (Gemini Decision 1) joining Prism/Vega/JEV-27B-VL as watch leads, and the Jev 1.14 jev-latest stable transition resolving the mid-November release watch lead. Jev Daily's 11-12 issue contains no papers; the 11-13 issue was not yet published."
+}

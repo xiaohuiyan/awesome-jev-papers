@@ -1,5 +1,5 @@
 {
-  "screened_on": "2026-11-12",
+  "screened_on": "2026-11-13",
   "candidates": [
     {
       "arxiv_id": "2610.22276",
@@ -4160,6 +4160,14 @@
       "status": "included",
       "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
       "screened_on": "2026-11-12"
+    },
+    {
+      "arxiv_id": "2606.25331",
+      "title": "Improved Large Language Diffusion Models",
+      "source_url": "https://arxiv.org/abs/2606.25331v1",
+      "status": "excluded",
+      "reason": "Masked-diffusion LM architecture paper (8B, bidirectional attention, 12T tokens); confidence-based scoring appears only as a multiple-choice evaluation protocol. No hosted-Jev use or typed-decision-interface contribution; surfaced by the community awesome-jev list as Jev-lineage speculation, which that list itself disclaims. Pre-window companions from the same list (RLCD 2307.12950, LLaDA 2502.09992, SalesRLAgent 2503.23303) are outside the window and not screened.",
+      "screened_on": "2026-11-13"
     }
   ]
 }
