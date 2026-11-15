@@ -1439,5 +1439,60 @@
     "canonical_url": "https://github.com/Da1daidaidai/EarthJev",
     "description": "EarthJev: Efficient Visual Evidence Acquisition and Decision for UHR Remote Sensing Understanding",
     "private": false
+  },
+  {
+    "arxiv_id": "2611.17167",
+    "url": "https://github.com/ZJU-REAL/decision-agents",
+    "source_url": "https://arxiv.org/abs/2611.17167v1",
+    "source_location": "Abstract (code availability statement)",
+    "checked_on": "2026-11-15",
+    "status": "verified",
+    "canonical_url": "https://github.com/ZJU-REAL/decision-agents",
+    "description": "Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents",
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.15576",
+    "url": "https://github.com/wuzengqing001225/jev-survey-distributions",
+    "source_url": "https://arxiv.org/abs/2611.15576v1",
+    "source_location": "Footnote on page 1 (source code availability)",
+    "checked_on": "2026-11-15",
+    "status": "verified",
+    "canonical_url": "https://github.com/wuzengqing001225/jev-survey-distributions",
+    "description": null,
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.15777",
+    "url": "https://github.com/holdrain/SO-Arena",
+    "source_url": "https://arxiv.org/abs/2611.15777v1",
+    "source_location": "Links block under the title (benchmark GitHub)",
+    "checked_on": "2026-11-15",
+    "status": "verified",
+    "canonical_url": "https://github.com/holdrain/SO-Arena",
+    "description": "SO-Arena: benchmarking System One competence and reliability across 2,919 tasks and 11 domains.",
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.15671",
+    "url": "https://github.com/Level5Tech/clef-quant-bench",
+    "source_url": "https://arxiv.org/abs/2611.15671v1",
+    "source_location": "arXiv comment and closing section (code and data release)",
+    "checked_on": "2026-11-15",
+    "status": "verified",
+    "canonical_url": "https://github.com/Level5Tech/clef-quant-bench",
+    "description": "Code and data for The Noise Floor of a Quantization Comparison",
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.15572",
+    "url": "https://github.com/yuan-phd/jevmark",
+    "source_url": "https://arxiv.org/abs/2611.15572v1",
+    "source_location": "Closing of Section 1 (jevmark repository and released adapters)",
+    "checked_on": "2026-11-15",
+    "status": "verified",
+    "canonical_url": "https://github.com/yuan-phd/jevmark",
+    "description": "RLCD, calibration and LoRA on a Qwen3 decision model: one forward pass, no generated text, a probability distribution over the options in each request.",
+    "private": false
   }
 ]

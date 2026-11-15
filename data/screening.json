@@ -1,5 +1,5 @@
 {
-  "screened_on": "2026-11-13",
+  "screened_on": "2026-11-15",
   "candidates": [
     {
       "arxiv_id": "2610.22276",
@@ -4168,6 +4168,158 @@
       "status": "excluded",
       "reason": "Masked-diffusion LM architecture paper (8B, bidirectional attention, 12T tokens); confidence-based scoring appears only as a multiple-choice evaluation protocol. No hosted-Jev use or typed-decision-interface contribution; surfaced by the community awesome-jev list as Jev-lineage speculation, which that list itself disclaims. Pre-window companions from the same list (RLCD 2307.12950, LLaDA 2502.09992, SalesRLAgent 2503.23303) are outside the window and not screened.",
       "screened_on": "2026-11-13"
+    },
+    {
+      "arxiv_id": "2611.17167",
+      "title": "Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents",
+      "source_url": "https://arxiv.org/abs/2611.17167v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-15"
+    },
+    {
+      "arxiv_id": "2611.15576",
+      "title": "Can Model Answer Probabilities Represent Survey Populations? Conditional Prediction and Joint Validity in Jev Survey Simulation",
+      "source_url": "https://arxiv.org/abs/2611.15576v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-15"
+    },
+    {
+      "arxiv_id": "2611.14861",
+      "title": "Is Jev a Good Multilingual Judge?",
+      "source_url": "https://arxiv.org/abs/2611.14861v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-15"
+    },
+    {
+      "arxiv_id": "2611.16937",
+      "title": "S1-Evo: Experience-Guided Evidence Competition Attacks on Typed System-1 Decision Models",
+      "source_url": "https://arxiv.org/abs/2611.16937v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-15"
+    },
+    {
+      "arxiv_id": "2611.15777",
+      "title": "SO-Arena: Benchmarking the Capability Spectrum and Reliability of System One Models",
+      "source_url": "https://arxiv.org/abs/2611.15777v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-15"
+    },
+    {
+      "arxiv_id": "2611.16961",
+      "title": "The Value of Thinking: Learning When to Reason in Hybrid Decision Models",
+      "source_url": "https://arxiv.org/abs/2611.16961v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-15"
+    },
+    {
+      "arxiv_id": "2611.16565",
+      "title": "Look Here, Then Decide: Small Decision Models in a Harness Find Memory-Safety Vulnerabilities at Scale on Commodity GPUs",
+      "source_url": "https://arxiv.org/abs/2611.16565v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-15"
+    },
+    {
+      "arxiv_id": "2611.16499",
+      "title": "Recalibrating a Typed-Decision Model in an Afternoon: A Hands-On Recipe for Laya's Confidence Scores",
+      "source_url": "https://arxiv.org/abs/2611.16499v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-15"
+    },
+    {
+      "arxiv_id": "2611.16366",
+      "title": "CURATOR: Scalable Fine-grained Evidence Selection for Retrieval-Augmented Generation using Decision Models",
+      "source_url": "https://arxiv.org/abs/2611.16366v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-15"
+    },
+    {
+      "arxiv_id": "2611.16321",
+      "title": "From Large Language Models to Efficient System One Models via Adaptive Computation",
+      "source_url": "https://arxiv.org/abs/2611.16321v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-15"
+    },
+    {
+      "arxiv_id": "2611.15671",
+      "title": "The Noise Floor of a Quantization Comparison: Engine, restart, batch and kernel drift, measured against 8-bit and 4-bit effects in two decision models",
+      "source_url": "https://arxiv.org/abs/2611.15671v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-15"
+    },
+    {
+      "arxiv_id": "2611.15592",
+      "title": "Small Heads, Strong Decisions: A Controlled Study of Typed-Decision Models",
+      "source_url": "https://arxiv.org/abs/2611.15592v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-15"
+    },
+    {
+      "arxiv_id": "2611.15362",
+      "title": "JEV-VAD: Efficient Semantic Endpointing via Task-First Conditioning and Decoder-Prefix Pruning",
+      "source_url": "https://arxiv.org/abs/2611.15362v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-15"
+    },
+    {
+      "arxiv_id": "2611.15302",
+      "title": "Browser Immune System (BIS): Innate and Adaptive Threat Detection in the Browser with a Cybersecurity Transformer",
+      "source_url": "https://arxiv.org/abs/2611.15302v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-15"
+    },
+    {
+      "arxiv_id": "2611.16778",
+      "title": "Data-Driven Robust Inventory Planning and Advertising under Product Return",
+      "source_url": "https://arxiv.org/abs/2611.16778v1",
+      "status": "excluded",
+      "reason": "Operations-research stochastic optimization of joint inventory and advertising; the 'decision model' token refers to the optimization formulation, with no Jev, System One, or typed-decision content.",
+      "screened_on": "2026-11-15"
+    },
+    {
+      "arxiv_id": "2611.16655",
+      "title": "MuViRL: Multimodal View-Invariant Visual Speech Representation Learning via Calibrated View Aggregation",
+      "source_url": "https://arxiv.org/abs/2611.16655v1",
+      "status": "excluded",
+      "reason": "Self-supervised visual speech representation learning; the internal 'multimodal decision model' that weights views is not a typed-decision or System One interface; no Jev content.",
+      "screened_on": "2026-11-15"
+    },
+    {
+      "arxiv_id": "2611.14652",
+      "title": "The memory cost of sequential quantum state preparation",
+      "source_url": "https://arxiv.org/abs/2611.14652v1",
+      "status": "excluded",
+      "reason": "Quantum resource theory of memory for sequential state preparation; matched 'System One' only via the phrase 'systems one at a time'. No decision-model content. First submitted 11-10 but announced only after the round-13 whole-window re-run.",
+      "screened_on": "2026-11-15"
+    },
+    {
+      "arxiv_id": "2611.13015",
+      "title": "From Questions to Decisions: Benchmarking How LLM Agents Acquire Decision-Relevant Information from Human Beings",
+      "source_url": "https://arxiv.org/abs/2611.13015v1",
+      "status": "excluded",
+      "reason": "Ask2Decide benchmark on LLM agents asking humans for decision-relevant facts; a planning/clarification study over frontier LLMs with no Jev, System One, or typed-decision content. Surfaced by the round-15 social round; fetched via targeted id_list.",
+      "screened_on": "2026-11-15"
+    },
+    {
+      "arxiv_id": "2611.15572",
+      "title": "Learning a calibrated decision head from logged bandit feedback",
+      "source_url": "https://arxiv.org/abs/2611.15572v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-15"
     }
   ]
 }

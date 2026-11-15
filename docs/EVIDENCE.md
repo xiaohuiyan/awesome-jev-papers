@@ -3,6 +3,216 @@
 
 Short excerpts support relevance decisions, not paper quality or reproducibility. Scores measure topic fit and substantive contribution only. Abstract-level review is the default; targeted full-text checks are marked. 引文用于核实相关性，不是论文质量或模型性能评分。
 
+<a id="evidence-2611-17167"></a>
+## 2611.17167 — Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-15
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。
+
+- **topic**: “use JEV as a teacher on ALFWorld and WebShop” — [Abstract](https://arxiv.org/abs/2611.17167v1)
+- **contribution**: “raises a Qwen2.5-1.5B policy over GRPO from 72.8% to 82.9% success on ALFWorld” — [Abstract](https://arxiv.org/abs/2611.17167v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.17167v1); first submitted 2026-11-12; updated 2026-11-12. Full authors: Haochen Liu; Qianhao Zhu; Zixuan Wang; Dingming Li; Tongbo Chen; Peng Qiu; Yingqi Qu; Weiming Lu; Jun Xiao; Yongliang Shen.
+
+<a id="evidence-2611-16961"></a>
+## 2611.16961 — The Value of Thinking: Learning When to Reason in Hybrid Decision Models
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-15
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。
+
+- **topic**: “We evaluate HDM on MMLU-Pro, AGIEval, GPQA-Diamond, JevBench, BANKING77” — [Abstract](https://arxiv.org/abs/2611.16961v1)
+- **contribution**: “On the agentic venue MiniWoB HDM-27B cuts token cost by 80.1%” — [Abstract (page 1)](https://arxiv.org/html/2611.16961v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.16961v1); first submitted 2026-11-12; updated 2026-11-12. Full authors: Zhengxu Yu; Ke Xu; Meng Fang; Haitham Ammar; Weilin Luo; Jun Wang.
+
+<a id="evidence-2611-16937"></a>
+## 2611.16937 — S1-Evo: Experience-Guided Evidence Competition Attacks on Typed System-1 Decision Models
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-15
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。
+
+- **topic**: “S1-Evo reaches 71.99% mean ASR and 57.47% high-confidence ASR on jev-1.14” — [Abstract (page 1)](https://arxiv.org/html/2611.16937v1)
+- **contribution**: “causes up to 24.00% E2E agent violations” — [Abstract (page 1)](https://arxiv.org/html/2611.16937v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.16937v1); first submitted 2026-11-12; updated 2026-11-12. Full authors: Kaixiang Wang; Junjie Li; Zhaojiacheng Zhou; Jiong Lou; Jie Li.
+
+<a id="evidence-2611-16565"></a>
+## 2611.16565 — Look Here, Then Decide: Small Decision Models in a Harness Find Memory-Safety Vulnerabilities at Scale on Commodity GPUs
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-15
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “These models answer a typed question in one forward pass” — [Abstract](https://arxiv.org/abs/2611.16565v1)
+- **contribution**: “separates vulnerable from benign functions with AUC 0.73” — [Abstract](https://arxiv.org/abs/2611.16565v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.16565v1); first submitted 2026-11-12; updated 2026-11-12. Full authors: Tim De Wachter; Kyryl Volkov; Myrto Eleftheria Gkogkou; Mathieu Huysman.
+
+<a id="evidence-2611-16499"></a>
+## 2611.16499 — Recalibrating a Typed-Decision Model in an Afternoon: A Hands-On Recipe for Laya's Confidence Scores
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-15
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “A typed-decision model such as Laya reads a text and a list of options” — [Abstract](https://arxiv.org/abs/2611.16499v1)
+- **contribution**: “the released Laya checkpoint has a pooled ECE of 0.073” — [Abstract](https://arxiv.org/abs/2611.16499v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.16499v1); first submitted 2026-11-12; updated 2026-11-12. Full authors: Mohammed Nayeem Khan; Aliyas Ahmad Misri.
+
+<a id="evidence-2611-16366"></a>
+## 2611.16366 — CURATOR: Scalable Fine-grained Evidence Selection for Retrieval-Augmented Generation using Decision Models
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-15
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “Pretrained decision model can be used to efficiently evaluate multiple spans” — [Abstract](https://arxiv.org/abs/2611.16366v1)
+- **contribution**: “we introduce CURATOR, a fine-tuned decision model” — [Abstract](https://arxiv.org/abs/2611.16366v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.16366v1); first submitted 2026-11-12; updated 2026-11-12. Full authors: Shib Dasgupta; Bandish Parikh; Rashmi Gangadharaiah.
+
+<a id="evidence-2611-16321"></a>
+## 2611.16321 — From Large Language Models to Efficient System One Models via Adaptive Computation
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-15
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “decision information is concentrated in intermediate layers” — [Abstract](https://arxiv.org/abs/2611.16321v1)
+- **contribution**: “A lightweight gate reads the hidden state at each exit” — [Abstract](https://arxiv.org/abs/2611.16321v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.16321v1); first submitted 2026-11-12; updated 2026-11-12. Full authors: Minh-Anh Nguyen.
+
+<a id="evidence-2611-15777"></a>
+## 2611.15777 — SO-Arena: Benchmarking the Capability Spectrum and Reliability of System One Models
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-15
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。
+
+- **topic**: “two closed decision APIs (Jev API 1.14 and OpenAI Decisions)” — [Section 4 setup](https://arxiv.org/html/2611.15777v1)
+- **contribution**: “strong overall performance does not necessarily imply reliable decision-making” — [Abstract](https://arxiv.org/abs/2611.15777v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.15777v1); first submitted 2026-11-11; updated 2026-11-11. Full authors: Lichen Li; Ziping Dong; Sicheng Feng; Qi Li; Xinchao Wang.
+
+<a id="evidence-2611-15671"></a>
+## 2611.15671 — The Noise Floor of a Quantization Comparison: Engine, restart, batch and kernel drift, measured against 8-bit and 4-bit effects in two decision models
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-15
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “We measure each of these sources on the same 2,400 public decisions” — [Abstract](https://arxiv.org/abs/2611.15671v1)
+- **contribution**: “every 4-bit interval excludes every non-quantization source” — [Abstract](https://arxiv.org/abs/2611.15671v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.15671v1); first submitted 2026-11-11; updated 2026-11-11. Full authors: Aleks Blagojevich; Trevor Sunderland.
+
+<a id="evidence-2611-15592"></a>
+## 2611.15592 — Small Heads, Strong Decisions: A Controlled Study of Typed-Decision Models
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-15
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “TypeSafe announced Jev as the first model in its System One category” — [Abstract](https://arxiv.org/abs/2611.15592v1)
+- **contribution**: “We re-implement five readouts and train all of them under one protocol” — [Abstract](https://arxiv.org/abs/2611.15592v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.15592v1); first submitted 2026-11-11; updated 2026-11-11. Full authors: Ritvik Rastogi.
+
+<a id="evidence-2611-15576"></a>
+## 2611.15576 — Can Model Answer Probabilities Represent Survey Populations? Conditional Prediction and Joint Validity in Jev Survey Simulation
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-15
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。
+
+- **topic**: “We evaluate the option probabilities returned by Jev, a TypeSafe decision model” — [Abstract](https://arxiv.org/abs/2611.15576v1)
+- **contribution**: “Sequential completion has mixed effects on joint validity” — [Abstract](https://arxiv.org/abs/2611.15576v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.15576v1); first submitted 2026-11-11; updated 2026-11-11. Full authors: Zengqing Wu; Chuan Xiao.
+
+<a id="evidence-2611-15572"></a>
+## 2611.15572 — Learning a calibrated decision head from logged bandit feedback
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-15
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “reads a state and a list of options and returns a probability per option” — [Abstract](https://arxiv.org/abs/2611.15572v1)
+- **contribution**: “beats fine-tuning on confirmed answers only” — [Abstract](https://arxiv.org/abs/2611.15572v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.15572v1); first submitted 2026-11-11; updated 2026-11-11. Full authors: Ye Yuan.
+
+<a id="evidence-2611-15362"></a>
+## 2611.15362 — JEV-VAD: Efficient Semantic Endpointing via Task-First Conditioning and Decoder-Prefix Pruning
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-15
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “maps the assistant-prefix state directly to a stop probability” — [Abstract](https://arxiv.org/abs/2611.15362v1)
+- **contribution**: “decoder-prefix pruning physically retains only the initial decoder blocks” — [Abstract](https://arxiv.org/abs/2611.15362v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.15362v1); first submitted 2026-11-11; updated 2026-11-11. Full authors: Jintao Liang; Nan Li; Longbiao Wang; Tubin Huang; Min Xu.
+
+<a id="evidence-2611-15302"></a>
+## 2611.15302 — Browser Immune System (BIS): Innate and Adaptive Threat Detection in the Browser with a Cybersecurity Transformer
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-15
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “typed decision mode, System 1, with its official pieces” — [Abstract](https://arxiv.org/abs/2611.15302v1)
+- **contribution**: “It answers a typed security question in about 150 ms on a laptop GPU” — [Abstract](https://arxiv.org/abs/2611.15302v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.15302v1); first submitted 2026-11-11; updated 2026-11-11. Full authors: Víctor Mayoral-Vilches; Eduardo Worrel.
+
+<a id="evidence-2611-14861"></a>
+## 2611.14861 — Is Jev a Good Multilingual Judge?
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-15
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。
+
+- **topic**: “We evaluate Jev against generative LLM judges on four multilingual benchmarks” — [Abstract](https://arxiv.org/abs/2611.14861v1)
+- **contribution**: “its probability outputs help identify errors across tasks” — [Abstract](https://arxiv.org/abs/2611.14861v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.14861v1); first submitted 2026-11-11; updated 2026-11-11. Full authors: Wei Liu; Yi Fan; Xiyan Fu.
+
 <a id="evidence-2611-14309"></a>
 ## 2611.14309 — MMDM: Measuring Massive Multitask Decision Making
 
