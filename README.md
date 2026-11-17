@@ -12,9 +12,9 @@ This reading list asks a concrete question: given context and a set of options, 
 
 | Papers | Direct Jev | Related methods | Foundations | With verified code |
 | ---: | ---: | ---: | ---: | ---: |
-| **371** | 231 | 136 | 4 | 136 |
+| **376** | 231 | 141 | 4 | 139 |
 
-Updated **2026-11-15** · Main window **2025-10-16–2026-11-12** (first submission)
+Updated **2026-11-17** · Main window **2025-10-16–2026-11-13** (first submission)
 
 [Start with ten papers](#recommended-reading) · [Browse by question](#category-index) · [Foundations](#foundations) · [Data and maintenance](#reuse-and-updates)
 
@@ -50,12 +50,12 @@ Suggested path: **assess the evidence → compare capabilities → understand mo
 
 | Your question | Topic | Direct / related | Total |
 | --- | --- | ---: | ---: |
-| How do we train a model specifically to choose? | [Model architectures and training](#architecture) | 18 / 47 | 65 |
+| How do we train a model specifically to choose? | [Model architectures and training](#architecture) | 18 / 48 | 66 |
 | When are fast decisions good enough? | [Benchmarks and comparative evaluation](#evaluation) | 47 / 11 | 58 |
 | Can we trust the model's confidence? | [Calibration, reliability and selective decisions](#calibration) | 18 / 14 | 32 |
-| When should an agent search, use a tool, or delegate? | [Search, memory, tools and agent decisions](#agents) | 37 / 17 | 54 |
-| Can phrasing, option order, or attacks change the decision? | [Security, robustness and decision bias](#security) | 47 / 11 | 58 |
-| How do quality and speed trade off in real workflows? | [Domain applications and deployment efficiency](#applications) | 64 / 36 | 100 |
+| When should an agent search, use a tool, or delegate? | [Search, memory, tools and agent decisions](#agents) | 37 / 18 | 55 |
+| Can phrasing, option order, or attacks change the decision? | [Security, robustness and decision bias](#security) | 47 / 12 | 59 |
+| How do quality and speed trade off in real workflows? | [Domain applications and deployment efficiency](#applications) | 64 / 38 | 102 |
 
 Each paper has one primary category; 4 foundations are listed separately. Categories group direct Jev work before related methods, with newest first submissions first within each group. Entries keep published date, authors, affiliations, problem, and contribution; affiliations come from the papers themselves (HTML full text or PDF first page), and 21 papers that state none omit the field. Full author lists, tags, and verification records live in the [evidence ledger](docs/EVIDENCE.md) and [BibTeX](references.bib).
 
@@ -212,8 +212,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: Can local decision readouts balance accuracy with throughput?
 - **💡 Contribution**: Studies local decision readouts from existing models with Jev as an external accuracy-throughput reference.
 ---
-### Related model / method · 47
+### Related model / method · 48
 
+<a id="paper-2611-17867"></a>
+#### [UltraBERT-JEV: Encoder models for System One Applications](https://arxiv.org/abs/2611.17867v1) · [PDF](https://arxiv.org/pdf/2611.17867v1)
+- **📅 Published**: 2026-11-13 (v1)
+- **👥 Authors**: Astarag Mohapatra
+- **🏢 Affiliations**: Independent Researcher
+- **🎯 Problem**: Do encoder backbones make better System One decision models than decoders?
+- **💡 Contribution**: A technical report comparing four fine-tuning recipes for UltraBERT-380M with one mask per option, differing in how options are scored and turned into probabilities (one follows DeepSeek-V3's expert gate). Trained on the same data as Qwen3-0.6B under the LLM-as-Jev recipe (67.6%), the encoder reaches 69.7-72.1%; scoring 'yes' minus 'no' beats 'yes' alone (69.7 to 71.3 on test, 57.8 to 59.6 external), sigmoid normalisation adds 0.8 points, and a square-root softplus adds none. Latency is 29 ms per decision versus 68 ms on an A100 at the cost of more peak memory (2.8 vs 2.2 GiB); an auxiliary head trained with a SelfCite-adapted reward predicts evidence sentences in the same pass.
+---
 <a id="paper-2611-16321"></a>
 #### [From Large Language Models to Efficient System One Models via Adaptive Computation](https://arxiv.org/abs/2611.16321v1) · [PDF](https://arxiv.org/pdf/2611.16321v1)
 - **📅 Published**: 2026-11-12 (v1)
@@ -1624,8 +1632,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: Can a System One layer coordinate an agent's memory operations efficiently?
 - **💡 Contribution**: Introduces a System-One-controlled memory architecture to coordinate efficient agent memory operations.
 ---
-### Related model / method · 17
+### Related model / method · 18
 
+<a id="paper-2611-17780"></a>
+#### [LuthorSQL: A One-Pass Text-to-SQL Model as System 1 for a Slower LLM Agent](https://arxiv.org/abs/2611.17780v1) · [PDF](https://arxiv.org/pdf/2611.17780v1) · [Code](https://github.com/IAMIbrahimmemon/luthorsql)
+- **📅 Published**: 2026-11-13 (v1)
+- **👥 Authors**: Ibrahim Memon; Armin Karamzade; M. Hanif Jhaveri; Roy Fox
+- **🏢 Affiliations**: University of California, Irvine; Independent Researcher
+- **🎯 Problem**: Can local hardware offload a hosted text-to-SQL agent without losing accuracy?
+- **💡 Contribution**: A non-autoregressive 7B text-to-SQL model, inspired by TypeSafe's Jev, acting as a System 1 gate for a slower LLM agent: one forward pass predicts slot scores over a bounded grammar of query plans, up to 32 candidate plans are compiled and run, and a trained validator picks an answer or escalates. Alone it reaches 68.03% execution accuracy on BIRD's hidden test at 0.84 s per question on a single GPU, keeps accuracy in 9 GB with 8-bit weights, and transfers zero-shot to five other SQL engines within 3.1 points; in a pre-registered confidence cascade with Claude Opus 5.5 over 227 post-cutoff questions it answers nearly half locally and cuts API cost by 33.3% at the same accuracy.
+---
 <a id="paper-2611-16366"></a>
 #### [CURATOR: Scalable Fine-grained Evidence Selection for Retrieval-Augmented Generation using Decision Models](https://arxiv.org/abs/2611.16366v1) · [PDF](https://arxiv.org/pdf/2611.16366v1)
 - **📅 Published**: 2026-11-12 (v1)
@@ -1776,7 +1792,7 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **💡 Contribution**: Proposes S1-Evo, a self-evolving attack framework aimed at typed System-1 decision interfaces, which perturb untrusted fields through contract-aware evidence channels to create evidence competition while preserving fact invariance, distilling verified flips into reusable experience cards. Across four benchmarks and three S1 models it reaches 71.99% mean attack success and 57.47% high-confidence success on jev-1.14 (also jev-1.13 and kev-4B), causes up to 24.00% end-to-end agent violations in dual-system S1/S2 workflows, and cuts attacker LLM token usage by 32.10-62.26% against iterative rewriting baselines; two inference-time mitigations are examined.
 ---
 <a id="paper-2611-14115"></a>
-#### [LEASH: Stay Safe in Agentic Robotics](https://arxiv.org/abs/2611.14115v1) · [PDF](https://arxiv.org/pdf/2611.14115v1)
+#### [LEASH: Stay Safe in Agentic Robotics](https://arxiv.org/abs/2611.14115v1) · [PDF](https://arxiv.org/pdf/2611.14115v1) · [Code](https://github.com/zhuqinfeng1999/LEASH)
 - **📅 Published**: 2026-11-10 (v1)
 - **👥 Authors**: Qinfeng Zhu; Weiguang Zhao; Ke Sun et al. (8 authors)
 - **🏢 Affiliations**: Xi'an Jiaotong-Liverpool University; Duke Kunshan University; University of Liverpool; National University of Singapore; CNRS
@@ -2140,7 +2156,7 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: Do typed decision models follow the option name or the definition bound to it?
 - **💡 Contribution**: Changes name-definition mappings to test whether Jev decisions follow labels instead of supplied meanings.
 ---
-### Related model / method · 11
+### Related model / method · 12
 
 <a id="paper-2611-09803"></a>
 #### [Maya a1: Do the Options Read the Model, or Does Their Position? Order Sensitivity in a Non-Autoregressive Decision Model](https://arxiv.org/abs/2611.09803v1) · [PDF](https://arxiv.org/pdf/2611.09803v1)
@@ -2173,6 +2189,14 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🏢 Affiliations**: IBM SIL
 - **🎯 Problem**: Who verifies an agent's proposed action against policy before it executes?
 - **💡 Contribution**: JevAct intercepts selected agent actions before execution: domain policies compile into executable state checks plus structured questions answered by Kev, an open-source Jev-type decision model, and flagged proposals return with targeted feedback for bounded revision; reliability improves across eleven LLM agents on tau2-bench and BFCL.
+---
+<a id="paper-2610-30090"></a>
+#### [VX-One: Typed, Calibrated Decision Heads for Real-Time Perimeter Triage](https://arxiv.org/abs/2610.30090v2) · [PDF](https://arxiv.org/pdf/2610.30090v2)
+- **📅 Published**: 2026-10-21 (v2)
+- **👥 Authors**: Juan S. Santillana
+- **🏢 Affiliations**: Independent research
+- **🎯 Problem**: Where do typed, calibrated decision heads help - and fail - in perimeter triage?
+- **💡 Contribution**: Implements the commercial System One primitive triad (TypeSafe Jev; Microsoft Decision-1) as a small multi-head network (100K-10M parameters) for real-time network-perimeter triage: a calibrated binary gate, a closed-set choice with an explicit unknown option where the benchmark supports it, and an ordinal score, temperature-calibrated per head at 0.7-1.7 ms single-event CPU p50. On UNSW-NB15, CIC-IDS2017 and EMBER2024 against calibrated XGBoost, Random Forest, MLP and Kitsune baselines the results are deliberately double-sided: the gate ties the best baseline on UNSW, wins temporal CIC detection (0.734 vs 0.639) but loses multi-class attribution; leave-one-family-out transfer is mixed, and calibration collapses under temporal drift (ECE 0.04 to 0.40) for every method while ranking partly survives. A five-day Suricata-to-VX-One cascade is measured end to end.
 ---
 <a id="paper-2610-18326"></a>
 #### [Jev-Guard: Fast Routing and Auditing Agent Actions over Editable Policy Trees](https://arxiv.org/abs/2610.18326v1) · [PDF](https://arxiv.org/pdf/2610.18326v1)
@@ -2750,8 +2774,24 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: Can a low-latency decision model replace LLMs in edge service orchestration?
 - **💡 Contribution**: Integrates Jev into edge service orchestration and measures verified requests, admission behavior and execution outcomes.
 ---
-### Related model / method · 36
+### Related model / method · 38
 
+<a id="paper-2611-18330"></a>
+#### [Marimba: A System One Model for Speech](https://arxiv.org/abs/2611.18330v1) · [PDF](https://arxiv.org/pdf/2611.18330v1)
+- **📅 Published**: 2026-11-13 (v1)
+- **👥 Authors**: Solano Amadori
+- **🏢 Affiliations**: charcot.ai
+- **🎯 Problem**: How do you give a System One model an audio window instead of text?
+- **💡 Contribution**: An interface for typed speech decisions built on frozen Qwen3-ASR 0.6B features: lexical questions score ASR transcripts zero-shot, non-lexical questions use a question-conditioned head plus a layer-18 turn-end readout, and language identification reuses the ASR model's own language scores. Reports decoder AUROC 0.80-0.92 on private conversational speech (0.92-0.97 on public read speech), Speech Commands four-way accuracy 0.93 with binary lexical ECE at most 0.08, speaker-change AUROC 0.966-0.980 on AMI/VoxConverse above an ECAPA baseline, and a turn-end readout at AUROC 0.930 versus Smart Turn v3.2 at 0.982 on that model's own test set.
+---
+<a id="paper-2611-17705"></a>
+#### [S1Pert: Scalable Target-Specific Gene Response Prediction with System-One Intelligence](https://arxiv.org/abs/2611.17705v1) · [PDF](https://arxiv.org/pdf/2611.17705v1) · [Code](https://github.com/liujiawen-jpg/S1Pert)
+- **📅 Published**: 2026-11-13 (v1)
+- **👥 Authors**: Xiaoqi Sheng; Hou wang; Yan Liang et al. (8 authors)
+- **🏢 Affiliations**: South China University of Technology
+- **🎯 Problem**: Can perturbation-response prediction escape memorised gene-level frequencies?
+- **💡 Contribution**: A System-One framework for target-specific gene response prediction: a frozen Jev-style encoder (the open-source DECIDER-4B) extracts reusable representations of perturbation targets, query genes and historical evidence; pair-specific interactions are computed offline and cached (multilevel landmark caching), and a lightweight hierarchical cross-attention decoder combines them with cross-target pairwise ranking and synchronized historical-evidence dropout to reduce reliance on gene-level response frequencies. Directional Welch tests and equivalence testing separate statistically supported responses from inconclusive labels.
+---
 <a id="paper-2611-16565"></a>
 #### [Look Here, Then Decide: Small Decision Models in a Harness Find Memory-Safety Vulnerabilities at Scale on Commodity GPUs](https://arxiv.org/abs/2611.16565v1) · [PDF](https://arxiv.org/pdf/2611.16565v1)
 - **📅 Published**: 2026-11-12 (v1)
@@ -3084,7 +3124,7 @@ Earlier work on calibration, rejection, cascades, and generalist classification.
 | --- | --- |
 | Download and cite | [JSON](data/papers.json) · [BibTeX](references.bib) |
 | Check inclusion evidence | [Evidence ledger](docs/EVIDENCE.md) · [Selection rules](docs/METHODOLOGY.md) |
-| Understand search coverage | [Search log](docs/SEARCH_LOG.md) · [X and CN-platform search (11-09)](docs/SOCIAL_SEARCH_2026-11-09.md) · [arXiv search (+11 papers)](docs/ARXIV_SEARCH_2026-11-09.md) |
+| Understand search coverage | [Search log](docs/SEARCH_LOG.md) · [X and CN-platform search (11-17)](docs/SOCIAL_SEARCH_2026-11-17.md) · [arXiv search (+5 papers)](docs/ARXIV_SEARCH_2026-11-17.md) |
 | Inspect screening | [Screening ledger](data/screening.json) · [Pending](docs/PENDING.md) |
 | Contribute | [Contributing](CONTRIBUTING.md) · [Changelog](CHANGELOG.md) |
 

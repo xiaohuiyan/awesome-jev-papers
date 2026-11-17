@@ -3,6 +3,62 @@
 
 Short excerpts support relevance decisions, not paper quality or reproducibility. Scores measure topic fit and substantive contribution only. Abstract-level review is the default; targeted full-text checks are marked. 引文用于核实相关性，不是论文质量或模型性能评分。
 
+<a id="evidence-2611-18330"></a>
+## 2611.18330 — Marimba: A System One Model for Speech
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-17
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “an interface for typed speech decisions built on frozen Qwen3-ASR” — [Abstract](https://arxiv.org/abs/2611.18330v1)
+- **contribution**: “binary lexical ECE is at most 0.08” — [Abstract](https://arxiv.org/abs/2611.18330v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.18330v1); first submitted 2026-11-13; updated 2026-11-13. Full authors: Solano Amadori.
+
+<a id="evidence-2611-17867"></a>
+## 2611.17867 — UltraBERT-JEV: Encoder models for System One Applications
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-17
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “encoder models that pick one of several options in a single forward pass” — [Abstract](https://arxiv.org/abs/2611.17867v1)
+- **contribution**: “the encoder reaches 69.7% to 72.1%” — [Abstract](https://arxiv.org/abs/2611.17867v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.17867v1); first submitted 2026-11-13; updated 2026-11-13. Full authors: Astarag Mohapatra.
+
+<a id="evidence-2611-17780"></a>
+## 2611.17780 — LuthorSQL: A One-Pass Text-to-SQL Model as System 1 for a Slower LLM Agent
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-17
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “a rapid System 1 gate for a slower LLM agent (System 2)” — [Abstract](https://arxiv.org/abs/2611.17780v1)
+- **contribution**: “answers nearly half of all questions locally and cuts API cost by 33.3%” — [Abstract](https://arxiv.org/abs/2611.17780v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.17780v1); first submitted 2026-11-13; updated 2026-11-13. Full authors: Ibrahim Memon; Armin Karamzade; M. Hanif Jhaveri; Roy Fox.
+
+<a id="evidence-2611-17705"></a>
+## 2611.17705 — S1Pert: Scalable Target-Specific Gene Response Prediction with System-One Intelligence
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-17
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “a System-One framework for target-specific gene response prediction” — [Abstract](https://arxiv.org/abs/2611.17705v1)
+- **contribution**: “S1Pert improves target-specific response discrimination” — [Abstract](https://arxiv.org/abs/2611.17705v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.17705v1); first submitted 2026-11-13; updated 2026-11-13. Full authors: Xiaoqi Sheng; Hou wang; Yan Liang; Yutong Li; Wenhao Du; Tinghe Zhang; Jiawen Liu; Hongmin Cai.
+
 <a id="evidence-2611-17167"></a>
 ## 2611.17167 — Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents
 
@@ -1962,6 +2018,20 @@ A closely related decision model or method; no claim of reproducing proprietary 
 - **contribution**: “seven graph anomaly detection benchmarks” — [Abstract](https://arxiv.org/abs/2610.30777v1)
 
 Metadata: [reviewed v1](https://arxiv.org/abs/2610.30777v1); first submitted 2026-10-22; updated 2026-10-22. Full authors: Xinyu Zhao; Qingyun Sun; Ziwei Zhang; Tianchen Zhu; Daqing Li; Jianxin Li.
+
+<a id="evidence-2610-30090"></a>
+## 2610.30090 — VX-One: Typed, Calibrated Decision Heads for Real-Time Perimeter Triage
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-17
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “System One decision models, sold as APIs” — [Section 1, Introduction](https://arxiv.org/html/2610.30090v2)
+- **contribution**: “a binary gate, a closed-set choice with an explicit unknown option” — [Abstract](https://arxiv.org/abs/2610.30090v2)
+
+Metadata: [reviewed v2](https://arxiv.org/abs/2610.30090v2); first submitted 2026-10-21; updated 2026-10-24. Full authors: Juan S. Santillana.
 
 <a id="evidence-2610-30045"></a>
 ## 2610.30045 — Which Differences Matter? Controlled Tests of Rule Transfer, Joint Reliability, and Information Use in Decision Models

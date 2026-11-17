@@ -12,9 +12,9 @@
 
 | 收录论文 | Jev 直接相关 | 同类模型与方法 | 基础背景 | 含已核实代码 |
 | ---: | ---: | ---: | ---: | ---: |
-| **371** | 231 | 136 | 4 | 136 |
+| **376** | 231 | 141 | 4 | 139 |
 
-更新于 **2026-11-15** · 主要收录窗口 **2025-10-16—2026-11-12**（首次提交日期）
+更新于 **2026-11-17** · 主要收录窗口 **2025-10-16—2026-11-13**（首次提交日期）
 
 [十篇入门](#recommended-reading) · [按问题选文](#category-index) · [基础背景](#foundations) · [数据与维护](#reuse-and-updates)
 
@@ -50,12 +50,12 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 | 你想了解什么？ | 主题 | 直接 / 相关 | 合计 |
 | --- | --- | ---: | ---: |
-| 怎样训练一个专门做选择的模型？ | [模型架构与训练方法](#architecture) | 18 / 47 | 65 |
+| 怎样训练一个专门做选择的模型？ | [模型架构与训练方法](#architecture) | 18 / 48 | 66 |
 | 快决策在哪些任务上够用？ | [基准测试与比较评估](#evaluation) | 47 / 11 | 58 |
 | 模型说有把握，真的可靠吗？ | [概率校准、可靠性与选择性决策](#calibration) | 18 / 14 | 32 |
-| 何时搜索、调用工具或交给更强的模型？ | [搜索、记忆、工具与智能体决策](#agents) | 37 / 17 | 54 |
-| 换个问法或选项顺序，会不会改变判断？ | [安全、鲁棒性与决策偏置](#security) | 47 / 11 | 58 |
-| 放进真实工作流，质量与速度如何取舍？ | [领域应用与部署效率](#applications) | 64 / 36 | 100 |
+| 何时搜索、调用工具或交给更强的模型？ | [搜索、记忆、工具与智能体决策](#agents) | 37 / 18 | 55 |
+| 换个问法或选项顺序，会不会改变判断？ | [安全、鲁棒性与决策偏置](#security) | 47 / 12 | 59 |
+| 放进真实工作流，质量与速度如何取舍？ | [领域应用与部署效率](#applications) | 64 / 38 | 102 |
 
 每篇只计入一个主分类；另有 4 篇基础背景。每类先列 Jev 直接相关，再列同类方法；组内按首次提交日期倒序排列。条目保留发表时间、作者、单位、解决问题与核心贡献；单位取自论文原文（HTML 全文或 PDF 首页），21 篇未署名单位的论文不展示该项。完整作者名单、标签与核实记录见[证据台账](docs/EVIDENCE.md)与 [BibTeX](references.bib)。
 
@@ -212,8 +212,16 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🎯 解决问题**：本地决策读取方式能否兼顾准确率与吞吐量？
 - **💡 核心贡献**：研究现有模型的本地决策读取方式，并以 Jev 作为准确率与吞吐量外部参照。
 ---
-### 同类模型与方法 · 47
+### 同类模型与方法 · 48
 
+<a id="paper-2611-17867"></a>
+#### [UltraBERT-JEV: Encoder models for System One Applications](https://arxiv.org/abs/2611.17867v1) · [PDF](https://arxiv.org/pdf/2611.17867v1)
+- **📅 发表时间**：2026-11-13（v1）
+- **👥 作者**：Astarag Mohapatra
+- **🏢 单位**：Independent Researcher
+- **🎯 解决问题**：编码器骨干做 System One 决策模型,会比解码器更好吗?
+- **💡 核心贡献**：技术报告:比较 UltraBERT-380M 每选项一个掩码的四种微调配方,差别在选项打分方式与概率化方式(其一沿用 DeepSeek-V3 专家门)。与 LLM-as-Jev 配方的 Qwen3-0.6B 同数据训练(67.6%),编码器达 69.7-72.1%;"yes 减 no"打分胜过单用 yes(测试 69.7 升至 71.3,外部 57.8 升至 59.6),sigmoid 归一化加 0.8 点,平方根 softplus 无增益。A100 上每决策 29 毫秒对 68 毫秒,代价是峰值显存更高(2.8 对 2.2 GiB);辅助头以 SelfCite 改造的奖励训练,同次前向预测支持句。
+---
 <a id="paper-2611-16321"></a>
 #### [From Large Language Models to Efficient System One Models via Adaptive Computation](https://arxiv.org/abs/2611.16321v1) · [PDF](https://arxiv.org/pdf/2611.16321v1)
 - **📅 发表时间**：2026-11-12（v1）
@@ -1624,8 +1632,16 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🎯 解决问题**：智能体的记忆操作能否交给快速决策层协调，以提升效率？
 - **💡 核心贡献**：提出由 System One 控制的记忆架构，以协调高效的智能体记忆操作。
 ---
-### 同类模型与方法 · 17
+### 同类模型与方法 · 18
 
+<a id="paper-2611-17780"></a>
+#### [LuthorSQL: A One-Pass Text-to-SQL Model as System 1 for a Slower LLM Agent](https://arxiv.org/abs/2611.17780v1) · [PDF](https://arxiv.org/pdf/2611.17780v1) · [代码](https://github.com/IAMIbrahimmemon/luthorsql)
+- **📅 发表时间**：2026-11-13（v1）
+- **👥 作者**：Ibrahim Memon；Armin Karamzade；M. Hanif Jhaveri；Roy Fox
+- **🏢 单位**：University of California, Irvine；Independent Researcher
+- **🎯 解决问题**：本地硬件能否在不损失准确率的前提下接管托管 text-to-SQL 智能体?
+- **💡 核心贡献**：受 TypeSafe Jev 启发的非自回归 7B text-to-SQL 模型,作为慢速 LLM 智能体的 System 1 门:一次前向预测有界文法查询计划的槽位分数,编译并运行至多 32 个候选计划,由训练出的校验器作答或上报。单独在 BIRD 隐藏测试集上以单卡 0.84 秒/题达到 68.03% 执行准确率,8 比特权重下 9 GB 显存仍保持精度,零样本迁移到五种 SQL 引擎差距 3.1 分以内;与 Claude Opus 5.5 预注册置信级联,227 个截止后问题上本地作答近半、同等准确率下省 33.3% API 成本。
+---
 <a id="paper-2611-16366"></a>
 #### [CURATOR: Scalable Fine-grained Evidence Selection for Retrieval-Augmented Generation using Decision Models](https://arxiv.org/abs/2611.16366v1) · [PDF](https://arxiv.org/pdf/2611.16366v1)
 - **📅 发表时间**：2026-11-12（v1）
@@ -1776,7 +1792,7 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **💡 核心贡献**：提出面向高速打字决策(System-1)接口的自进化攻击框架 S1-Evo:通过契约感知的证据通道扰动不可信字段,在保持事实不变的前提下制造证据竞争,并把验证过的翻转蒸馏为可复用的经验卡。在四个基准、三个 S1 模型上,对 jev-1.14 的平均攻击成功率 71.99%、高置信成功率 57.47%(另测 jev-1.13 与 kev-4B),在双系统 S1/S2 工作流中造成最高 24.00% 的端到端违规;相较迭代改写基线,攻击方 LLM token 开销降低 32.10-62.26%,并检验了两种推理时缓解措施。
 ---
 <a id="paper-2611-14115"></a>
-#### [LEASH: Stay Safe in Agentic Robotics](https://arxiv.org/abs/2611.14115v1) · [PDF](https://arxiv.org/pdf/2611.14115v1)
+#### [LEASH: Stay Safe in Agentic Robotics](https://arxiv.org/abs/2611.14115v1) · [PDF](https://arxiv.org/pdf/2611.14115v1) · [代码](https://github.com/zhuqinfeng1999/LEASH)
 - **📅 发表时间**：2026-11-10（v1）
 - **👥 作者**：Qinfeng Zhu；Weiguang Zhao；Ke Sun 等（共 8 位）
 - **🏢 单位**：Xi'an Jiaotong-Liverpool University；Duke Kunshan University；University of Liverpool；National University of Singapore；CNRS
@@ -2140,7 +2156,7 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🎯 解决问题**：类型化决策模型跟随的是选项名称，还是名称绑定到的定义？
 - **💡 核心贡献**：改变名称与定义的映射，测试 Jev 是否跟随标签而非给定语义决策。
 ---
-### 同类模型与方法 · 11
+### 同类模型与方法 · 12
 
 <a id="paper-2611-09803"></a>
 #### [Maya a1: Do the Options Read the Model, or Does Their Position? Order Sensitivity in a Non-Autoregressive Decision Model](https://arxiv.org/abs/2611.09803v1) · [PDF](https://arxiv.org/pdf/2611.09803v1)
@@ -2173,6 +2189,14 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🏢 单位**：IBM SIL
 - **🎯 解决问题**：智能体的动作执行前,谁来对照策略做独立校验?
 - **💡 核心贡献**：JevAct 在执行前拦截智能体的部分动作:领域策略编译为可执行状态检查与结构化问题,由开源 Jev 型决策模型 Kev 作答;被标记的提议连同针对性反馈退回智能体限时修改,在 tau2-bench 与 BFCL 上提升十一个智能体的可靠性。
+---
+<a id="paper-2610-30090"></a>
+#### [VX-One: Typed, Calibrated Decision Heads for Real-Time Perimeter Triage](https://arxiv.org/abs/2610.30090v2) · [PDF](https://arxiv.org/pdf/2610.30090v2)
+- **📅 发表时间**：2026-10-21（v2）
+- **👥 作者**：Juan S. Santillana
+- **🏢 单位**：Independent research
+- **🎯 解决问题**：类型化、校准的决策头在边界分诊里哪里有用、哪里失灵?
+- **💡 核心贡献**：把商业 System One 原语三元组(TypeSafe Jev;Microsoft Decision-1)实现为小型多头网络(100K-10M 参数)用于实时网络边界分诊:校准二分类门、带显式 unknown 选项的闭集选择(基准支持处)与序数分,逐头温度校准,CPU 单事件 p50 0.7-1.7 毫秒。在 UNSW-NB15、CIC-IDS2017、EMBER2024 上对照校准 XGBoost、RF、MLP、Kitsune,结果刻意两面呈现:UNSW 门控持平最强基线,时序 CIC 检测胜出(0.734 对 0.639)但多类归因落败;留一族迁移好坏参半,时间漂移下所有方法校准崩溃(ECE 0.04 升至 0.40)而排序部分保留;并端到端测量五天 Suricata 到 VX-One 级联。
 ---
 <a id="paper-2610-18326"></a>
 #### [Jev-Guard: Fast Routing and Auditing Agent Actions over Editable Policy Trees](https://arxiv.org/abs/2610.18326v1) · [PDF](https://arxiv.org/pdf/2610.18326v1)
@@ -2750,8 +2774,24 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🎯 解决问题**：边缘服务编排能否用低延迟决策模型替代 LLM？
 - **💡 核心贡献**：将 Jev 接入边缘服务编排，测量经核验请求、准入行为和执行结果。
 ---
-### 同类模型与方法 · 36
+### 同类模型与方法 · 38
 
+<a id="paper-2611-18330"></a>
+#### [Marimba: A System One Model for Speech](https://arxiv.org/abs/2611.18330v1) · [PDF](https://arxiv.org/pdf/2611.18330v1)
+- **📅 发表时间**：2026-11-13（v1）
+- **👥 作者**：Solano Amadori
+- **🏢 单位**：charcot.ai
+- **🎯 解决问题**：怎样让 System One 模型直接面对音频窗口而不是文本?
+- **💡 核心贡献**：基于冻结 Qwen3-ASR 0.6B 特征的类型化语音决策接口:词面问题对 ASR 转写零样本打分,非词面问题走问题条件头和第 18 层回合结束读出,语言辨识复用 ASR 自身语言分数。私有对话语音上解码器 AUROC 0.80-0.92(公开朗读语音 0.92-0.97),Speech Commands 四分类准确率 0.93、二分类词面 ECE 至多 0.08,AMI/VoxConverse 说话人切换 AUROC 0.966-0.980 超 ECAPA 基线;回合结束读出 AUROC 0.930,对比 Smart Turn v3.2 自家测试集的 0.982。
+---
+<a id="paper-2611-17705"></a>
+#### [S1Pert: Scalable Target-Specific Gene Response Prediction with System-One Intelligence](https://arxiv.org/abs/2611.17705v1) · [PDF](https://arxiv.org/pdf/2611.17705v1) · [代码](https://github.com/liujiawen-jpg/S1Pert)
+- **📅 发表时间**：2026-11-13（v1）
+- **👥 作者**：Xiaoqi Sheng；Hou wang；Yan Liang 等（共 8 位）
+- **🏢 单位**：South China University of Technology
+- **🎯 解决问题**：扰动响应预测能否摆脱对基因级历史频率的记忆?
+- **💡 核心贡献**：面向靶点特异性基因响应预测的 System-One 框架:冻结的 Jev 式编码器(开源 DECIDER-4B)提取扰动靶点、查询基因与历史证据的可复用表示,成对交互离线计算并缓存(多级地标缓存),轻量层次交叉注意力解码器结合跨靶点成对排序与同步历史证据丢弃,降低对基因级响应频率的依赖;方向性 Welch 检验与等价检验把有统计支持的响应与不确定标签分开。
+---
 <a id="paper-2611-16565"></a>
 #### [Look Here, Then Decide: Small Decision Models in a Harness Find Memory-Safety Vulnerabilities at Scale on Commodity GPUs](https://arxiv.org/abs/2611.16565v1) · [PDF](https://arxiv.org/pdf/2611.16565v1)
 - **📅 发表时间**：2026-11-12（v1）
@@ -3084,7 +3124,7 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 | --- | --- |
 | 下载与引用 | [结构化 JSON](data/papers.json) · [BibTeX](references.bib) |
 | 核实收录依据 | [证据台账](docs/EVIDENCE.md) · [收录规则](docs/METHODOLOGY.md) |
-| 了解检索覆盖 | [检索记录](docs/SEARCH_LOG.md) · [X 与中文平台检索（11-09）](docs/SOCIAL_SEARCH_2026-11-09.md) · [arXiv 检索（11-09 新增 11 篇）](docs/ARXIV_SEARCH_2026-11-09.md) |
+| 了解检索覆盖 | [检索记录](docs/SEARCH_LOG.md) · [X 与中文平台检索（11-17）](docs/SOCIAL_SEARCH_2026-11-17.md) · [arXiv 检索（11-17 新增 5 篇）](docs/ARXIV_SEARCH_2026-11-17.md) |
 | 查看筛选过程 | [筛选台账](data/screening.json) · [待核实](docs/PENDING.md) |
 | 参与维护 | [贡献指南](CONTRIBUTING.md) · [更新记录](CHANGELOG.md) |
 

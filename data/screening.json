@@ -1,5 +1,5 @@
 {
-  "screened_on": "2026-11-15",
+  "screened_on": "2026-11-17",
   "candidates": [
     {
       "arxiv_id": "2610.22276",
@@ -4320,6 +4320,54 @@
       "status": "included",
       "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
       "screened_on": "2026-11-15"
+    },
+    {
+      "arxiv_id": "2611.18330",
+      "title": "Marimba: A System One Model for Speech",
+      "source_url": "https://arxiv.org/abs/2611.18330v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-17"
+    },
+    {
+      "arxiv_id": "2611.17780",
+      "title": "LuthorSQL: A One-Pass Text-to-SQL Model as System 1 for a Slower LLM Agent",
+      "source_url": "https://arxiv.org/abs/2611.17780v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-17"
+    },
+    {
+      "arxiv_id": "2611.17705",
+      "title": "S1Pert: Scalable Target-Specific Gene Response Prediction with System-One Intelligence",
+      "source_url": "https://arxiv.org/abs/2611.17705v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-17"
+    },
+    {
+      "arxiv_id": "2611.17867",
+      "title": "UltraBERT-JEV: Encoder models for System One Applications",
+      "source_url": "https://arxiv.org/abs/2611.17867v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-17"
+    },
+    {
+      "arxiv_id": "2610.30090",
+      "title": "VX-One: Typed, Calibrated Decision Heads for Real-Time Perimeter Triage",
+      "source_url": "https://arxiv.org/abs/2610.30090v2",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-17"
+    },
+    {
+      "arxiv_id": "2601.07206",
+      "title": "LLMRouterBench: A Massive Benchmark and Unified Framework for LLM Routing",
+      "source_url": "https://arxiv.org/abs/2601.07206v1",
+      "status": "excluded",
+      "reason": "General LLM-query routing benchmark (400K+ instances, 21 datasets, 33 models, 10 routing baselines); routing is model-selection infrastructure that predates Jev, with no typed-decision or System One interface and no hosted-Jev use. Surfaced by the first four-list external awesome-list diff (awesome-system-one).",
+      "screened_on": "2026-11-17"
     }
   ]
 }

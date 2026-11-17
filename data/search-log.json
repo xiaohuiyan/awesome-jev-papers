@@ -1221,6 +1221,144 @@
       "round": 15,
       "query": "/recent listings (skip/show=100 paging to each category's end) for the 37 categories carrying catalogue papers - announcements spanning first submissions through 11-14; 5,233 entries; title/entry grep for jev|System One|System 1|decision model; 38 hits = 32 catalogued + 5 false positives verified token-free at abstract level in round 14 (2611.11274, 2611.11918, 2611.12544, 2611.13337, 2611.13448) + 1 new catch (2611.15572, included)",
       "count": 38
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 17,
+      "query": "all:\"language model\" AND submittedDate:[202611130000 TO 202611172359] sanity probe (50 records; published dates present: 11-13 only at run time, Tuesday 01:43 UTC)",
+      "count": 50
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 17,
+      "query": "all:\"Jev\" AND submittedDate:[202611130000 TO 202611172359]",
+      "count": 1
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 17,
+      "query": "all:\"System One\" AND submittedDate:[202611130000 TO 202611172359]",
+      "count": 3
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 17,
+      "query": "all:\"typed decision\" AND submittedDate:[202611130000 TO 202611172359]",
+      "count": 0
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 17,
+      "query": "all:\"decision model\" AND submittedDate:[202611130000 TO 202611172359]",
+      "count": 0
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 17,
+      "query": "all:MedJev AND submittedDate:[202611130000 TO 202611172359]",
+      "count": 0
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 17,
+      "query": "all:\"System-One\" AND submittedDate:[202611130000 TO 202611172359]",
+      "count": 3
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 17,
+      "query": "all:\"System 1\" AND submittedDate:[202611130000 TO 202611172359]",
+      "count": 1
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 17,
+      "query": "all:\"decision models\" AND submittedDate:[202611130000 TO 202611172359]",
+      "count": 0
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 17,
+      "query": "all:JevBench AND submittedDate:[202611130000 TO 202611172359]",
+      "count": 0
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 17,
+      "query": "all:\"Jev\" AND submittedDate:[202609150000 TO 202611172359] (whole-window standing re-run; 236 total, newest 200 fetched)",
+      "count": 200
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 17,
+      "query": "all:\"System One\" AND submittedDate:[202609150000 TO 202611172359] (whole-window standing re-run)",
+      "count": 105
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 17,
+      "query": "all:\"typed decision\" AND submittedDate:[202609150000 TO 202611172359] (whole-window standing re-run)",
+      "count": 79
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 17,
+      "query": "all:\"decision model\" AND submittedDate:[202609150000 TO 202611172359] (whole-window standing re-run; 237 total, newest 200 fetched)",
+      "count": 200
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 17,
+      "query": "all:MedJev AND submittedDate:[202609150000 TO 202611172359] (whole-window variant re-run)",
+      "count": 1
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 17,
+      "query": "all:\"System-One\" AND submittedDate:[202609150000 TO 202611172359] (whole-window variant re-run)",
+      "count": 105
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 17,
+      "query": "all:\"System 1\" AND submittedDate:[202609150000 TO 202611172359] (whole-window variant re-run)",
+      "count": 57
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 17,
+      "query": "all:\"decision models\" AND submittedDate:[202609150000 TO 202611172359] (whole-window variant re-run; 238 total, newest 100 fetched)",
+      "count": 100
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 17,
+      "query": "all:JevBench AND submittedDate:[202609150000 TO 202611172359] (whole-window variant re-run)",
+      "count": 8
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 17,
+      "query": "id_list=2611.14309,2611.14115 (X-cross-check leads; both already catalogued by round 13 - 11-10 first submissions the whole-window token queries could not reach at run time)",
+      "count": 2
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 17,
+      "query": "id_list=2610.30090 (external awesome-jev-security list diff; v2 latest)",
+      "count": 1
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 17,
+      "query": "id_list=2601.07206 (external awesome-system-one list diff)",
+      "count": 1
+    },
+    {
+      "engine": "arxiv-listing-page",
+      "round": 17,
+      "query": "/recent listings (skip/show=100 paging to each category's end) for the 37 categories carrying catalogue papers - announcements spanning first submissions of 11-08 through 11-17 at run time; grep for fused-name Jev compounds and standing tokens (5,031 entries)",
+      "count": 36
     }
   ],
   "web_discovery_queries": [
@@ -1980,6 +2118,54 @@
       "query": "https://jevdaily.com/issues/2026-11-13 and /2026-11-14 (direct fetch)",
       "purpose": "aggregator daily issues for the sweep gap days",
       "result": "11-13 issue: 100-agent swarm gym atlas, Sydney Runkle Slack agent with a Jev should-respond gate, Hamilton Ulmer adding Gemini Decisions to HotdogBench (Jev still ahead) - no papers; 11-14 issue: Browser Use 1.0.4 cost drop, Allie the Icon speculative-questions Jev batching pattern - no papers"
+    },
+    {
+      "round": 17,
+      "query": "site:mp.weixin.qq.com Jev 决策模型 2026年11月 (web search)",
+      "purpose": "WeChat leads",
+      "result": "no dated November hits (WeChat indexing limitation); ecosystem items unchanged from round 15; no new paper leads"
+    },
+    {
+      "round": 17,
+      "query": "site:zhihu.com Jev 决策模型 System One 2026年11月 (web search)",
+      "purpose": "Zhihu leads",
+      "result": "one new column (posted ~11-15): a 2,919-question SO-Arena explainer pointing at catalogued 2611.15777; no new paper"
+    },
+    {
+      "round": 17,
+      "query": "site:weibo.com Jev 决策模型 论文 (web search)",
+      "purpose": "Weibo leads",
+      "result": "ttarticle explainers and funding news only; no new paper leads"
+    },
+    {
+      "round": 17,
+      "query": "Jev decision model arxiv new paper November 16 17 2026 (web search)",
+      "purpose": "X/Twitter leads (cross-check)",
+      "result": "surfaced 2611.17867 (also caught independently by the round-17 API sweep and added), plus 2611.14309 and 2611.14115 - both already catalogued by round 13, re-surfaced here because the whole-window token queries still cannot reach their 11-10 submissions. Also surfaced already-catalogued 2611.15592 (now v2), 2611.17167, 2611.15576, 2611.10802, 2611.12521"
+    },
+    {
+      "round": 17,
+      "query": "Sarvam Prism OR \"Intern-Decision\" OR \"书生·明决\" OR \"Gemini Decisions\" arxiv technical report decision model November 2026 (web search)",
+      "purpose": "watch-lead follow-up",
+      "result": "no change: Sarvam Prism still blog + weights only (71.8 at 44 ms on one B200 per vendor coverage); 书生·明决/Intern-Decision still has no arXiv report of its own (benchmarked inside catalogued 2610.03935 and others); Gemini Decisions still API-only"
+    },
+    {
+      "round": 17,
+      "query": "four external awesome-list diffs: Promethe-us/awesome-jev, andyrewlee/awesome-system-one, AnotiaWang/awesome-decision-models, Sarim-MBZUAI/awesome-jev-security (raw README fetch)",
+      "purpose": "external-list cross-check",
+      "result": "first four-list diff: awesome-decision-models clean; awesome-jev's three missing IDs (2307.12950 RLCD, 2502.09992 LLaDA, 2503.23303 SalesRLAgent) are pre-window background per the round-14 disposition; awesome-system-one adds seven pre-window background IDs plus in-window 2601.07206 LLMRouterBench (excluded: general LLM routing, no typed-decision interface); awesome-jev-security adds in-window 2610.30090 VX-One (added; title breaks the all:\"typed decision\" phrase query - 'Typed, Calibrated Decision Heads')"
+    },
+    {
+      "round": 17,
+      "query": "https://jevdaily.com/issues/2026-11-15 (direct fetch)",
+      "purpose": "aggregator daily issue",
+      "result": "no papers; ecosystem items only (Fable 5.2 Blender film, Shipper agent-routing weekend build, Jev input-token pricing behaviour: state billed once across parallel questions)"
+    },
+    {
+      "round": 17,
+      "query": "https://jevdaily.com/issues/2026-11-16 and /2026-11-17 (direct fetch)",
+      "purpose": "aggregator daily issues",
+      "result": "both 404 at run time (issues not yet published); to re-check next round"
     }
   ],
   "arxiv_site_search": {
@@ -1993,10 +2179,10 @@
       "purpose": "Early Jev corpus and four foundational methods"
     }
   ],
-  "unique_candidates": 540,
+  "unique_candidates": 546,
   "outcomes": {
-    "included": 371,
-    "excluded": 167,
+    "included": 376,
+    "excluded": 168,
     "pending": 2
   },
   "limitations": [
@@ -2007,7 +2193,7 @@
     "Broad discovery ends on 2026-10-16. Later targeted additions are logged separately and do not imply a fresh search or re-verification of the entire corpus.",
     "2026-10-27 round: Zhihu and Weibo returned no usable public search results (403 or ignored site filters); WeChat coverage relied on the Sogou public index."
   ],
-  "updated_on": "2026-11-15",
+  "updated_on": "2026-11-17",
   "targeted_additions": [
     {
       "reviewed_on": "2026-10-17",
@@ -2269,6 +2455,20 @@
       ],
       "added_papers": 0,
       "note": "Four-platform round run alongside the round-15 arXiv sweep: the X/Twitter cross-check surfaced four new IDs (2611.15576, 2611.15777, 2611.16321, 2611.17167), all of which the round-15 arXiv API sweep also caught independently, so additions are credited to the sweep's screening. The social round's own ledger contribution is one exclusion: Ask2Decide (2611.13015, LLM clarification benchmark, no typed-decision content). Watch leads unchanged: Sarvam Prism, Vega, JEV-27B-VL, Gemini Decisions and 书生·明决/Intern-Decision all still lack arXiv records, though Intern-Decision-4B now appears inside two catalogued papers. Jev Daily 11-13/11-14 issues contain no papers."
+    },
+    {
+      "searched_on": "2026-11-17",
+      "record": "data/social-search-2026-11-17.json",
+      "report": "docs/SOCIAL_SEARCH_2026-11-17.md",
+      "platforms": [
+        "WeChat 公众号",
+        "Zhihu",
+        "Sina Weibo",
+        "X / Twitter (cross-check)",
+        "Jev Daily (aggregator)"
+      ],
+      "added_papers": 0,
+      "note": "Four-platform round run alongside the round-17 arXiv sweep: 0 new records of its own. The X/Twitter cross-check surfaced one new ID (2611.17867), which the API sweep also caught independently, so the addition is credited to the sweep; its other fresh-looking IDs (2611.14309, 2611.14115, 2611.15592v2) were all already catalogued. Zhihu gained one SO-Arena explainer column (catalogued paper). Jev Daily 11-15 has no papers; the 11-16/11-17 issues were not yet published at run time. Watch leads unchanged (Prism, 书生·明决, Gemini Decisions all still lack arXiv records)."
     }
   ],
   "targeted_rechecks": [

@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "updated_on": "2026-11-15",
+  "updated_on": "2026-11-17",
   "window": {
     "start": "2025-10-16",
-    "end": "2026-11-12",
+    "end": "2026-11-13",
     "basis": "first submission; reviewed version and verification date recorded per paper"
   },
   "categories": {
@@ -49,6 +49,311 @@
     "2610.04345"
   ],
   "papers": [
+    {
+      "arxiv_id": "2611.18330",
+      "title": "Marimba: A System One Model for Speech",
+      "authors": [
+        "Solano Amadori"
+      ],
+      "affiliations": [
+        "charcot.ai"
+      ],
+      "first_submitted": "2026-11-13",
+      "updated": "2026-11-13",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.18330",
+      "reviewed_url": "https://arxiv.org/abs/2611.18330v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.18330v1",
+      "arxiv_categories": [
+        "eess.AS",
+        "cs.CL",
+        "cs.SD"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "related",
+      "tags": [
+        "applications",
+        "speech",
+        "calibration"
+      ],
+      "summary": {
+        "en": "An interface for typed speech decisions built on frozen Qwen3-ASR 0.6B features: lexical questions score ASR transcripts zero-shot, non-lexical questions use a question-conditioned head plus a layer-18 turn-end readout, and language identification reuses the ASR model's own language scores. Reports decoder AUROC 0.80-0.92 on private conversational speech (0.92-0.97 on public read speech), Speech Commands four-way accuracy 0.93 with binary lexical ECE at most 0.08, speaker-change AUROC 0.966-0.980 on AMI/VoxConverse above an ECAPA baseline, and a turn-end readout at AUROC 0.930 versus Smart Turn v3.2 at 0.982 on that model's own test set.",
+        "zh": "基于冻结 Qwen3-ASR 0.6B 特征的类型化语音决策接口:词面问题对 ASR 转写零样本打分,非词面问题走问题条件头和第 18 层回合结束读出,语言辨识复用 ASR 自身语言分数。私有对话语音上解码器 AUROC 0.80-0.92(公开朗读语音 0.92-0.97),Speech Commands 四分类准确率 0.93、二分类词面 ECE 至多 0.08,AMI/VoxConverse 说话人切换 AUROC 0.966-0.980 超 ECAPA 基线;回合结束读出 AUROC 0.930,对比 Smart Turn v3.2 自家测试集的 0.982。"
+      },
+      "problem": {
+        "en": "How do you give a System One model an audio window instead of text?",
+        "zh": "怎样让 System One 模型直接面对音频窗口而不是文本?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "an interface for typed speech decisions built on frozen Qwen3-ASR",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.18330v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "binary lexical ECE is at most 0.08",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.18330v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-17",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.18330v1",
+      "source_abstract_sha256": "1f58f63920d203082e4762857b2f8a0a126813ccb005e801038b69cb54a4ed97"
+    },
+    {
+      "arxiv_id": "2611.17867",
+      "title": "UltraBERT-JEV: Encoder models for System One Applications",
+      "authors": [
+        "Astarag Mohapatra"
+      ],
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "first_submitted": "2026-11-13",
+      "updated": "2026-11-13",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.17867",
+      "reviewed_url": "https://arxiv.org/abs/2611.17867v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17867v1",
+      "arxiv_categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "architecture",
+      "relation_level": "related",
+      "tags": [
+        "architecture",
+        "readout",
+        "efficiency"
+      ],
+      "summary": {
+        "en": "A technical report comparing four fine-tuning recipes for UltraBERT-380M with one mask per option, differing in how options are scored and turned into probabilities (one follows DeepSeek-V3's expert gate). Trained on the same data as Qwen3-0.6B under the LLM-as-Jev recipe (67.6%), the encoder reaches 69.7-72.1%; scoring 'yes' minus 'no' beats 'yes' alone (69.7 to 71.3 on test, 57.8 to 59.6 external), sigmoid normalisation adds 0.8 points, and a square-root softplus adds none. Latency is 29 ms per decision versus 68 ms on an A100 at the cost of more peak memory (2.8 vs 2.2 GiB); an auxiliary head trained with a SelfCite-adapted reward predicts evidence sentences in the same pass.",
+        "zh": "技术报告:比较 UltraBERT-380M 每选项一个掩码的四种微调配方,差别在选项打分方式与概率化方式(其一沿用 DeepSeek-V3 专家门)。与 LLM-as-Jev 配方的 Qwen3-0.6B 同数据训练(67.6%),编码器达 69.7-72.1%;\"yes 减 no\"打分胜过单用 yes(测试 69.7 升至 71.3,外部 57.8 升至 59.6),sigmoid 归一化加 0.8 点,平方根 softplus 无增益。A100 上每决策 29 毫秒对 68 毫秒,代价是峰值显存更高(2.8 对 2.2 GiB);辅助头以 SelfCite 改造的奖励训练,同次前向预测支持句。"
+      },
+      "problem": {
+        "en": "Do encoder backbones make better System One decision models than decoders?",
+        "zh": "编码器骨干做 System One 决策模型,会比解码器更好吗?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "encoder models that pick one of several options in a single forward pass",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.17867v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "the encoder reaches 69.7% to 72.1%",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.17867v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-17",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.17867v1",
+      "source_abstract_sha256": "ad23ff346e98b3daeac575d1f7532cf2da5b7de5914a8b7dfa732fcc404415b2"
+    },
+    {
+      "arxiv_id": "2611.17780",
+      "title": "LuthorSQL: A One-Pass Text-to-SQL Model as System 1 for a Slower LLM Agent",
+      "authors": [
+        "Ibrahim Memon",
+        "Armin Karamzade",
+        "M. Hanif Jhaveri",
+        "Roy Fox"
+      ],
+      "affiliations": [
+        "University of California, Irvine",
+        "Independent Researcher"
+      ],
+      "first_submitted": "2026-11-13",
+      "updated": "2026-11-13",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.17780",
+      "reviewed_url": "https://arxiv.org/abs/2611.17780v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17780v1",
+      "arxiv_categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.DB",
+        "cs.LG"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "agents",
+      "relation_level": "related",
+      "tags": [
+        "agents",
+        "efficiency",
+        "text-to-SQL"
+      ],
+      "summary": {
+        "en": "A non-autoregressive 7B text-to-SQL model, inspired by TypeSafe's Jev, acting as a System 1 gate for a slower LLM agent: one forward pass predicts slot scores over a bounded grammar of query plans, up to 32 candidate plans are compiled and run, and a trained validator picks an answer or escalates. Alone it reaches 68.03% execution accuracy on BIRD's hidden test at 0.84 s per question on a single GPU, keeps accuracy in 9 GB with 8-bit weights, and transfers zero-shot to five other SQL engines within 3.1 points; in a pre-registered confidence cascade with Claude Opus 5.5 over 227 post-cutoff questions it answers nearly half locally and cuts API cost by 33.3% at the same accuracy.",
+        "zh": "受 TypeSafe Jev 启发的非自回归 7B text-to-SQL 模型,作为慢速 LLM 智能体的 System 1 门:一次前向预测有界文法查询计划的槽位分数,编译并运行至多 32 个候选计划,由训练出的校验器作答或上报。单独在 BIRD 隐藏测试集上以单卡 0.84 秒/题达到 68.03% 执行准确率,8 比特权重下 9 GB 显存仍保持精度,零样本迁移到五种 SQL 引擎差距 3.1 分以内;与 Claude Opus 5.5 预注册置信级联,227 个截止后问题上本地作答近半、同等准确率下省 33.3% API 成本。"
+      },
+      "problem": {
+        "en": "Can local hardware offload a hosted text-to-SQL agent without losing accuracy?",
+        "zh": "本地硬件能否在不损失准确率的前提下接管托管 text-to-SQL 智能体?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "a rapid System 1 gate for a slower LLM agent (System 2)",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.17780v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "answers nearly half of all questions locally and cuts API cost by 33.3%",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.17780v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-17",
+      "code": [
+        {
+          "url": "https://github.com/IAMIbrahimmemon/luthorsql",
+          "source_url": "https://arxiv.org/abs/2611.17780v1",
+          "source_location": "Abstract (code availability statement)",
+          "verified_on": "2026-11-17",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.17780v1",
+      "source_abstract_sha256": "7c81b897af92ef54d6c29b641e29a78d9e99b2f051c67d5a77bcdaa223afd89d"
+    },
+    {
+      "arxiv_id": "2611.17705",
+      "title": "S1Pert: Scalable Target-Specific Gene Response Prediction with System-One Intelligence",
+      "authors": [
+        "Xiaoqi Sheng",
+        "Hou wang",
+        "Yan Liang",
+        "Yutong Li",
+        "Wenhao Du",
+        "Tinghe Zhang",
+        "Jiawen Liu",
+        "Hongmin Cai"
+      ],
+      "affiliations": [
+        "South China University of Technology"
+      ],
+      "first_submitted": "2026-11-13",
+      "updated": "2026-11-13",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.17705",
+      "reviewed_url": "https://arxiv.org/abs/2611.17705v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17705v1",
+      "arxiv_categories": [
+        "q-bio.GN"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "related",
+      "tags": [
+        "applications",
+        "bioinformatics",
+        "efficiency"
+      ],
+      "summary": {
+        "en": "A System-One framework for target-specific gene response prediction: a frozen Jev-style encoder (the open-source DECIDER-4B) extracts reusable representations of perturbation targets, query genes and historical evidence; pair-specific interactions are computed offline and cached (multilevel landmark caching), and a lightweight hierarchical cross-attention decoder combines them with cross-target pairwise ranking and synchronized historical-evidence dropout to reduce reliance on gene-level response frequencies. Directional Welch tests and equivalence testing separate statistically supported responses from inconclusive labels.",
+        "zh": "面向靶点特异性基因响应预测的 System-One 框架:冻结的 Jev 式编码器(开源 DECIDER-4B)提取扰动靶点、查询基因与历史证据的可复用表示,成对交互离线计算并缓存(多级地标缓存),轻量层次交叉注意力解码器结合跨靶点成对排序与同步历史证据丢弃,降低对基因级响应频率的依赖;方向性 Welch 检验与等价检验把有统计支持的响应与不确定标签分开。"
+      },
+      "problem": {
+        "en": "Can perturbation-response prediction escape memorised gene-level frequencies?",
+        "zh": "扰动响应预测能否摆脱对基因级历史频率的记忆?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "a System-One framework for target-specific gene response prediction",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.17705v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "S1Pert improves target-specific response discrimination",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.17705v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-17",
+      "code": [
+        {
+          "url": "https://github.com/liujiawen-jpg/S1Pert",
+          "source_url": "https://arxiv.org/abs/2611.17705v1",
+          "source_location": "Abstract (code availability statement)",
+          "verified_on": "2026-11-17",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.17705v1",
+      "source_abstract_sha256": "f6bf8da481ffb9c6f98e7451edb1fea45ea8577baeb0949bc589cd5b0f9383c7"
+    },
     {
       "arxiv_id": "2611.17167",
       "title": "Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents",
@@ -1317,7 +1622,15 @@
       },
       "review_level": "abstract + targeted full text",
       "verified_on": "2026-11-12",
-      "code": [],
+      "code": [
+        {
+          "url": "https://github.com/zhuqinfeng1999/LEASH",
+          "source_url": "https://arxiv.org/abs/2611.14115v1",
+          "source_location": "Project page linked in the paper (header)",
+          "verified_on": "2026-11-17",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
       "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.14115v1",
       "source_abstract_sha256": "a800a0365f1146871e71f4a60f7b378cb830497e6d6ac5130157362d7490322e"
     },
@@ -10622,6 +10935,77 @@
       ],
       "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.30777v1",
       "source_abstract_sha256": "555c70ba4313a7666867416e5f9eb0377cae87e510aaa1efe5879672d710488a"
+    },
+    {
+      "arxiv_id": "2610.30090",
+      "title": "VX-One: Typed, Calibrated Decision Heads for Real-Time Perimeter Triage",
+      "authors": [
+        "Juan S. Santillana"
+      ],
+      "affiliations": [
+        "Independent research"
+      ],
+      "first_submitted": "2026-10-21",
+      "updated": "2026-10-24",
+      "version": 2,
+      "arxiv_url": "https://arxiv.org/abs/2610.30090",
+      "reviewed_url": "https://arxiv.org/abs/2610.30090v2",
+      "pdf_url": "https://arxiv.org/pdf/2610.30090v2",
+      "arxiv_categories": [
+        "cs.CR",
+        "cs.CL",
+        "cs.LG",
+        "cs.NI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "security",
+      "relation_level": "related",
+      "tags": [
+        "security",
+        "calibration",
+        "deployment"
+      ],
+      "summary": {
+        "en": "Implements the commercial System One primitive triad (TypeSafe Jev; Microsoft Decision-1) as a small multi-head network (100K-10M parameters) for real-time network-perimeter triage: a calibrated binary gate, a closed-set choice with an explicit unknown option where the benchmark supports it, and an ordinal score, temperature-calibrated per head at 0.7-1.7 ms single-event CPU p50. On UNSW-NB15, CIC-IDS2017 and EMBER2024 against calibrated XGBoost, Random Forest, MLP and Kitsune baselines the results are deliberately double-sided: the gate ties the best baseline on UNSW, wins temporal CIC detection (0.734 vs 0.639) but loses multi-class attribution; leave-one-family-out transfer is mixed, and calibration collapses under temporal drift (ECE 0.04 to 0.40) for every method while ranking partly survives. A five-day Suricata-to-VX-One cascade is measured end to end.",
+        "zh": "把商业 System One 原语三元组(TypeSafe Jev;Microsoft Decision-1)实现为小型多头网络(100K-10M 参数)用于实时网络边界分诊:校准二分类门、带显式 unknown 选项的闭集选择(基准支持处)与序数分,逐头温度校准,CPU 单事件 p50 0.7-1.7 毫秒。在 UNSW-NB15、CIC-IDS2017、EMBER2024 上对照校准 XGBoost、RF、MLP、Kitsune,结果刻意两面呈现:UNSW 门控持平最强基线,时序 CIC 检测胜出(0.734 对 0.639)但多类归因落败;留一族迁移好坏参半,时间漂移下所有方法校准崩溃(ECE 0.04 升至 0.40)而排序部分保留;并端到端测量五天 Suricata 到 VX-One 级联。"
+      },
+      "problem": {
+        "en": "Where do typed, calibrated decision heads help - and fail - in perimeter triage?",
+        "zh": "类型化、校准的决策头在边界分诊里哪里有用、哪里失灵?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "System One decision models, sold as APIs",
+          "location": "Section 1, Introduction",
+          "source_url": "https://arxiv.org/html/2610.30090v2"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "a binary gate, a closed-set choice with an explicit unknown option",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2610.30090v2"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-17",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2610.30090v2",
+      "source_abstract_sha256": "a48a52c5fea8b0919ac5698c66093f65583b97b5ff001d6e927f9b49981f27f5"
     },
     {
       "arxiv_id": "2610.30045",

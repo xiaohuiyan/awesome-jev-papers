@@ -1494,5 +1494,38 @@
     "canonical_url": "https://github.com/yuan-phd/jevmark",
     "description": "RLCD, calibration and LoRA on a Qwen3 decision model: one forward pass, no generated text, a probability distribution over the options in each request.",
     "private": false
+  },
+  {
+    "arxiv_id": "2611.17780",
+    "url": "https://github.com/IAMIbrahimmemon/luthorsql",
+    "source_url": "https://arxiv.org/abs/2611.17780v1",
+    "source_location": "Abstract (code availability statement)",
+    "checked_on": "2026-11-17",
+    "status": "verified",
+    "canonical_url": "https://github.com/IAMIbrahimmemon/luthorsql",
+    "description": "LuthorSQL: one-pass text-to-SQL System 1 for an LLM agent ",
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.17705",
+    "url": "https://github.com/liujiawen-jpg/S1Pert",
+    "source_url": "https://arxiv.org/abs/2611.17705v1",
+    "source_location": "Abstract (code availability statement)",
+    "checked_on": "2026-11-17",
+    "status": "verified",
+    "canonical_url": "https://github.com/liujiawen-jpg/S1Pert",
+    "description": "The full code of S1Pert.",
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.14115",
+    "url": "https://github.com/zhuqinfeng1999/LEASH",
+    "source_url": "https://arxiv.org/abs/2611.14115v1",
+    "source_location": "Project page linked in the paper (header)",
+    "checked_on": "2026-11-17",
+    "status": "verified",
+    "canonical_url": "https://github.com/zhuqinfeng1999/LEASH",
+    "description": "LEASH: Stay Safe in Agentic Robotics. RoboRisk benchmark (92 simulated + 13 real-robot tasks) and a camera-grounded safety harness for foundation-model robot planners.",
+    "private": false
   }
 ]

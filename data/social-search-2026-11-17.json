@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "searched_on": "2026-11-17",
+  "time_zone": "UTC",
+  "purpose": "Four-platform social discovery round (WeChat, Zhihu, Sina Weibo, X/Twitter cross-check) plus the Jev Daily aggregator, run alongside the round-17 arXiv sweep; window 2026-11-15 through 2026-11-17 (absorbing the uncommitted 11-16 round-16 slot).",
+  "recency": "posts and articles dated 2026-11-15 through 2026-11-17; arXiv first-submission dates kept authoritative and separate",
+  "queries": [
+    {"platform": "WeChat 公众号", "query": "site:mp.weixin.qq.com Jev 决策模型 2026年11月", "hits": "no dated November hits (WeChat indexing limitation); ecosystem items unchanged from round 15"},
+    {"platform": "Zhihu", "query": "site:zhihu.com Jev 决策模型 System One 2026年11月", "hits": "one new column (~11-15): 2,919-question SO-Arena explainer pointing at catalogued 2611.15777"},
+    {"platform": "Sina Weibo", "query": "site:weibo.com Jev 决策模型 论文", "hits": "ttarticle explainers and funding news only; no new paper leads"},
+    {"platform": "X / Twitter (cross-check)", "query": "Jev decision model arxiv new paper November 16 17 2026", "hits": "2611.17867 (new; also caught independently by the round-17 API sweep), 2611.14309 + 2611.14115 (already catalogued by round 13), 2611.15592v2 (catalogued at v1)"},
+    {"platform": "web (watch-lead follow-up)", "query": "Sarvam Prism OR \"Intern-Decision\" OR \"书生·明决\" OR \"Gemini Decisions\" arxiv technical report decision model November 2026", "hits": "no change: Prism blog+weights only (71.8 at 44 ms on one B200 per vendor coverage); Intern-Decision benchmarked inside catalogued papers but no own arXiv report; Gemini Decisions API-only"},
+    {"platform": "Jev Daily (aggregator)", "query": "direct fetch issues/2026-11-15, /2026-11-16, /2026-11-17", "hits": "11-15 published, no papers (Fable 5.2 Blender film; Shipper agent-routing weekend build; Jev input-token pricing: state billed once across parallel questions); 11-16 and 11-17 both 404, not yet published"}
+  ],
+  "paper_leads": [
+    {"arxiv_id": "2611.17867", "title": "UltraBERT-JEV: Encoder models for System One Applications", "source": "X/Twitter cross-check (web index)", "resolution": "also caught independently by the round-17 arXiv API sweep; addition credited to the sweep"},
+    {"arxiv_id": "2611.14309", "title": "MMDM: Measuring Massive Multitask Decision Making", "source": "X/Twitter cross-check (web index)", "resolution": "already catalogued by round 13 (direct, evaluation); no action"},
+    {"arxiv_id": "2611.14115", "title": "LEASH: Stay Safe in Agentic Robotics", "source": "X/Twitter cross-check (web index)", "resolution": "already catalogued by round 13 (direct, security); code link backfilled this round via the arXiv-side verification, not a social addition"}
+  ],
+  "non_paper_leads": [
+    {"item": "知乎专栏《可靠性只排第七：SO-Arena 用2919道题体检System One模型》", "resolution": "explainer for catalogued 2611.15777; non-paper"},
+    {"item": "Sarvam Prism", "resolution": "blog + open weights, no arXiv record; watch lead unchanged"},
+    {"item": "书生·明决 / Intern-Decision", "resolution": "open-sourced 09-28, evaluated inside catalogued papers; no own arXiv report; watch lead unchanged"},
+    {"item": "Gemini Decisions", "resolution": "API-only, no arXiv record; watch lead unchanged"},
+    {"item": "Jev Daily 11-15 issue ecosystem items", "resolution": "Fable 5.2 Blender film, Shipper agent-routing build, Jev input-token pricing behaviour; no papers"}
+  ],
+  "added_papers": 0,
+  "note": "Zero social-owned additions this round. The single new ID surfaced by the X cross-check (2611.17867) was independently caught by the same-day API sweep and credited there; MMDM and LEASH re-surfaced by the cross-check were already catalogued in round 13. Native X, WeChat, Zhihu and Weibo search remain unreachable from this environment; discovery relies on web indexes, so absence of hits is weak evidence of absence."
+}
