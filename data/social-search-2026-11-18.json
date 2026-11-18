@@ -1,0 +1,64 @@
+{
+ "schema_version": 1,
+ "searched_on": "2026-11-18",
+ "time_zone": "UTC",
+ "purpose": "Four-platform social discovery round (WeChat, Zhihu, Sina Weibo, X/Twitter cross-check) plus the Jev Daily aggregator and the four-list external awesome diff, run alongside the round-18 arXiv sweep; window 2026-11-16 through 2026-11-18.",
+ "recency": "posts and articles dated 2026-11-16 through 2026-11-18; arXiv first-submission dates kept authoritative and separate",
+ "queries": [
+  {
+   "platform": "WeChat 公众号",
+   "query": "site:mp.weixin.qq.com Jev 决策模型 2026年11月",
+   "hits": "no dated November hits (WeChat indexing limitation); ecosystem items unchanged from round 15"
+  },
+  {
+   "platform": "Zhihu",
+   "query": "site:zhihu.com Jev 决策模型 System One 2026年11月",
+   "hits": "no new columns beyond round 17's SO-Arena explainer; remaining items are the known Sept-Oct explainers"
+  },
+  {
+   "platform": "Sina Weibo",
+   "query": "site:weibo.com Jev 决策模型 论文",
+   "hits": "ttarticle explainers and funding news only; no new paper leads"
+  },
+  {
+   "platform": "X / Twitter (cross-check)",
+   "query": "Jev decision model arxiv new paper November 17 18 2026",
+   "hits": "only already-catalogued work: LLM-as-Jev (2610.02076), General Decision Models (2610.03935), Releasing the Inner Jev (2610.17205), JEV and Laya pen-testing layers (2609.28940), Typed Decision Models early audit (2609.32160); no new IDs"
+  },
+  {
+   "platform": "web (watch-lead follow-up)",
+   "query": "Sarvam Prism OR \"Intern-Decision\" OR \"书生·明决\" OR \"Gemini Decisions\" arxiv technical report decision model November 2026",
+   "hits": "no change: Prism blog + open weights only (71.8 at 44 ms per vendor coverage); Intern-Decision benchmarked inside catalogued papers but no own arXiv report; Gemini Decisions API-only"
+  },
+  {
+   "platform": "Jev Daily (aggregator)",
+   "query": "direct fetch issues/2026-11-16, /2026-11-17, /2026-11-18",
+   "hits": "all three 404 at run time (issues not yet published); to re-check next round"
+  }
+ ],
+ "paper_leads": [],
+ "non_paper_leads": [
+  {
+   "item": "Sarvam Prism",
+   "resolution": "blog + open weights, no arXiv record; watch lead unchanged"
+  },
+  {
+   "item": "书生·明决 / Intern-Decision",
+   "resolution": "open-sourced 09-28, evaluated inside catalogued papers; no own arXiv report; watch lead unchanged"
+  },
+  {
+   "item": "Gemini Decisions",
+   "resolution": "API-only, no arXiv record; watch lead unchanged"
+  },
+  {
+   "item": "Jev Daily 11-16/11-17/11-18 issues",
+   "resolution": "all three unpublished (404) at run time; aggregator backlog to re-check next round"
+  },
+  {
+   "item": "four external awesome-list diffs (awesome-jev, awesome-system-one, awesome-decision-models, awesome-jev-security)",
+   "resolution": "clean: only pre-window background IDs remain outside the ledger (3 on awesome-jev, 7 on awesome-system-one, per the standing dispositions)"
+  }
+ ],
+ "added_papers": 0,
+ "note": "Zero social-owned additions this round. The X cross-check surfaced only already-catalogued papers; the four-list diff is clean; Jev Daily has published nothing since the 11-15 issue. Native X, WeChat, Zhihu and Weibo search remain unreachable from this environment; discovery relies on web indexes, so absence of hits is weak evidence of absence."
+}

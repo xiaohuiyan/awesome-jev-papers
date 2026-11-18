@@ -12,9 +12,9 @@
 
 | 收录论文 | Jev 直接相关 | 同类模型与方法 | 基础背景 | 含已核实代码 |
 | ---: | ---: | ---: | ---: | ---: |
-| **376** | 231 | 141 | 4 | 139 |
+| **393** | 239 | 150 | 4 | 146 |
 
-更新于 **2026-11-17** · 主要收录窗口 **2025-10-16—2026-11-13**（首次提交日期）
+更新于 **2026-11-18** · 主要收录窗口 **2025-10-16—2026-11-16**（首次提交日期）
 
 [十篇入门](#recommended-reading) · [按问题选文](#category-index) · [基础背景](#foundations) · [数据与维护](#reuse-and-updates)
 
@@ -50,14 +50,14 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 | 你想了解什么？ | 主题 | 直接 / 相关 | 合计 |
 | --- | --- | ---: | ---: |
-| 怎样训练一个专门做选择的模型？ | [模型架构与训练方法](#architecture) | 18 / 48 | 66 |
-| 快决策在哪些任务上够用？ | [基准测试与比较评估](#evaluation) | 47 / 11 | 58 |
+| 怎样训练一个专门做选择的模型？ | [模型架构与训练方法](#architecture) | 19 / 48 | 67 |
+| 快决策在哪些任务上够用？ | [基准测试与比较评估](#evaluation) | 48 / 12 | 60 |
 | 模型说有把握，真的可靠吗？ | [概率校准、可靠性与选择性决策](#calibration) | 18 / 14 | 32 |
-| 何时搜索、调用工具或交给更强的模型？ | [搜索、记忆、工具与智能体决策](#agents) | 37 / 18 | 55 |
-| 换个问法或选项顺序，会不会改变判断？ | [安全、鲁棒性与决策偏置](#security) | 47 / 12 | 59 |
-| 放进真实工作流，质量与速度如何取舍？ | [领域应用与部署效率](#applications) | 64 / 38 | 102 |
+| 何时搜索、调用工具或交给更强的模型？ | [搜索、记忆、工具与智能体决策](#agents) | 40 / 20 | 60 |
+| 换个问法或选项顺序，会不会改变判断？ | [安全、鲁棒性与决策偏置](#security) | 48 / 13 | 61 |
+| 放进真实工作流，质量与速度如何取舍？ | [领域应用与部署效率](#applications) | 66 / 43 | 109 |
 
-每篇只计入一个主分类；另有 4 篇基础背景。每类先列 Jev 直接相关，再列同类方法；组内按首次提交日期倒序排列。条目保留发表时间、作者、单位、解决问题与核心贡献；单位取自论文原文（HTML 全文或 PDF 首页），21 篇未署名单位的论文不展示该项。完整作者名单、标签与核实记录见[证据台账](docs/EVIDENCE.md)与 [BibTeX](references.bib)。
+每篇只计入一个主分类；另有 4 篇基础背景。每类先列 Jev 直接相关，再列同类方法；组内按首次提交日期倒序排列。条目保留发表时间、作者、单位、解决问题与核心贡献；单位取自论文原文（HTML 全文或 PDF 首页），22 篇未署名单位的论文不展示该项。完整作者名单、标签与核实记录见[证据台账](docs/EVIDENCE.md)与 [BibTeX](references.bib)。
 
 <a id="architecture"></a>
 ## 模型架构与训练方法
@@ -66,7 +66,7 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 [返回分类导航](#category-index)
 
-### Jev 直接相关 · 18
+### Jev 直接相关 · 19
 
 <a id="paper-2611-16961"></a>
 #### [The Value of Thinking: Learning When to Reason in Hybrid Decision Models](https://arxiv.org/abs/2611.16961v1) · [PDF](https://arxiv.org/pdf/2611.16961v1)
@@ -139,6 +139,14 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🏢 单位**：Tear Labs；University of Maryland, College Park
 - **🎯 解决问题**：冻结的决策模型能否靠测试时搜索变得更好？
 - **💡 核心贡献**：搜索冻结决策模型评分高于自身提案的完整答案，应用于托管 JEV 与开源模型，大幅提升精确匹配率。
+---
+<a id="paper-2611-18655"></a>
+#### [Beveridge: Open Weight System One Decision Models with Calibrated Probabilities](https://arxiv.org/abs/2611.18655v1) · [PDF](https://arxiv.org/pdf/2611.18655v1) · [代码](https://github.com/sathiskumarjothi0-oss/bev-decisions-pypi)
+- **📅 发表时间**：2026-10-17（v1）
+- **👥 作者**：Sathiskumar Jothi
+- **🏢 单位**：BDST: Big Data Science & Technology Ltd, United Kingdom
+- **🎯 解决问题**：0.4B 开源模型能否做出 675B LLM 都不敢自动交付的校准文档决策?
+- **💡 核心贡献**：开源(Apache 2.0)权重 System One 决策模型家族:输入文档与至多 15 个类型化问题(是/否、选项、有序等级),一次前向返回每个选项的校准概率。Beveridge-Large-C(398M:ModernBERT-large 加 3.5M 决策网络,含类型化数字/日期特征、规则引擎事实、证据注意力与可学习停机)在运维文档基准上达 93.0%,优于五个 31B-675B 通用 LLM 中最好的 91.1%,并以相同请求经 API 评测的托管 Jev 为 87.9%;ECE 0.029 使其能在 95% 准确率下自动交付 76% 的决策,H200 上单次决策 4.9 ms。Pro 变体 LoRA 适配 Gemma 4 26B-A4B,把未见网站类型的下一步准确率从 49.4% 提到 98.2%。
 ---
 <a id="paper-2610-23170"></a>
 #### [Chinese Decision: A Family of Language Models for Single-Pass Probabilistic Decision-Making](https://arxiv.org/abs/2610.23170v2) · [PDF](https://arxiv.org/pdf/2610.23170v2) · [代码](https://github.com/yanqiangmiffy/chinese-decision)
@@ -599,8 +607,16 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 [返回分类导航](#category-index)
 
-### Jev 直接相关 · 47
+### Jev 直接相关 · 48
 
+<a id="paper-2611-20191"></a>
+#### [Do We Still Need Fine-Tuned Classifiers? Swapping Typed Decision Models into 24 ACL-Venue Papers](https://arxiv.org/abs/2611.20191v1) · [PDF](https://arxiv.org/pdf/2611.20191v1)
+- **📅 发表时间**：2026-11-15（v1）
+- **👥 作者**：Marek Šuppa；Jaroslav Kopčan
+- **🏢 单位**：Comenius University in Bratislava；Cisco Systems；Kempelen Institute of Intelligent Technologies
+- **🎯 解决问题**：零样本类型化决策模型能替换多少微调文本分类器?
+- **💡 核心贡献**：在 24 篇 ACL 论文各自的切分、标签定义与指标下,把原预测器换成托管 Jev;得到的 46 个英文测试集构成 TDM-Gauntlet 基准,并用 Cloudflare Clef、Microsoft-Decision-1、GPT-6 Luna Decisions 交叉核对。零样本 Jev 直接替换其中 12/46 个测试集的预测器(多为标签平实的单次判断);给 500 条标注后,校准加 GEPA 式提示优化以每次 1.66 美元的中位成本弥补与原方法差距的中位 72%,Qwen3.8-27B 的 LoRA 微调弥补 97%——微调仍最准。
+---
 <a id="paper-2611-15777"></a>
 #### [SO-Arena: Benchmarking the Capability Spectrum and Reliability of System One Models](https://arxiv.org/abs/2611.15777v1) · [PDF](https://arxiv.org/pdf/2611.15777v1) · [代码](https://github.com/holdrain/SO-Arena)
 - **📅 发表时间**：2026-11-11（v1）
@@ -974,8 +990,16 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🎯 解决问题**：智能体轨迹中哪些步骤是冗余的，能否自动识别？
 - **💡 核心贡献**：在检测智能体轨迹冗余步骤的基准中纳入 Jev。
 ---
-### 同类模型与方法 · 11
+### 同类模型与方法 · 12
 
+<a id="paper-2611-20335"></a>
+#### [When Should Decision Models Compare Candidates?](https://arxiv.org/abs/2611.20335v1) · [PDF](https://arxiv.org/pdf/2611.20335v1)
+- **📅 发表时间**：2026-11-16（v1）
+- **👥 作者**：Fangzhi Li；Quan Shi；Wenting Yang 等（共 10 位）
+- **🏢 单位**：William & Mary；International School of Krakow；University of California, San Diego；University of California, Davis；Stanford University 等（共 7 家）
+- **🎯 解决问题**：候选动作该单独打分,还是参照同组其他候选一起打分?
+- **💡 核心贡献**：比较决策模型选动作的三种打分接口——Pointwise(逐个候选独立打分)、Setwise(分数依赖集合)与 Candidate Attention(候选间注意力)——在五个外部智能体决策基准(BFCL、MetaTool、Open-Jev、JevBench、Mind2Web,每方法相同的 9,156 条请求)加两个受控合成任务上评估。Pointwise 保持竞争力;Setwise 在部分工具选择与二判任务上占优;Candidate Attention 未能稳定超过 Pointwise,但定向关系训练能让 Setwise 学会候选间依赖并迁移到偏移输入。
+---
 <a id="paper-2611-13843"></a>
 #### [PolyRoute: A Twelve-Language and Code-Mixed Benchmark for Typed-Decision Routing, with Baselines and a Leaderboard](https://arxiv.org/abs/2611.13843v1) · [PDF](https://arxiv.org/pdf/2611.13843v1)
 - **📅 发表时间**：2026-11-10（v1）
@@ -1334,8 +1358,31 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 [返回分类导航](#category-index)
 
-### Jev 直接相关 · 37
+### Jev 直接相关 · 40
 
+<a id="paper-2611-21478"></a>
+#### [Jetriever: Shifting Agent Memory Retrieval from Similarity to Utility](https://arxiv.org/abs/2611.21478v1) · [PDF](https://arxiv.org/pdf/2611.21478v1) · [代码](https://github.com/imlrz/Jetriever)
+- **📅 发表时间**：2026-11-16（v1）
+- **👥 作者**：Ruizhe Li；Licheng Zhang；Mingxuan Du；Zhendong Mao
+- **🏢 单位**：University of Science and Technology of China (USTC)
+- **🎯 解决问题**：智能体该如何检索「对回答有用但与问题不相似」的记忆?
+- **💡 核心贡献**：把智能体记忆检索从相似度换成全池效用打分:每条记忆由托管 Jev 按对当前问题的有用性给出决策分并据此排序。InMind 125 道间接问题任务上金标对话以 84.8% 的比例排第一(索引用户轮次时 BM25/MiniLM 对照仅 1.6%/0.0%);MemoryAgentBench 60 题抽样四维分 55.4%,对照 ReFind 44.3%;Jev 检索成本每题 0.00834/0.03103 美元。
+---
+<a id="paper-2611-21155"></a>
+#### [Edit Recommendation: Can LLMs Anticipate Edit Requests from Users, and When?](https://arxiv.org/abs/2611.21155v1) · [PDF](https://arxiv.org/pdf/2611.21155v1) · [代码](https://github.com/ntt-dkiku/llm-edit-recommendation)
+- **📅 发表时间**：2026-11-16（v1）
+- **👥 作者**：Daisuke Kikuta
+- **🏢 单位**：NTT, Inc.
+- **🎯 解决问题**：智能体何时该展示预判到的修改请求,何时该保持沉默?
+- **💡 核心贡献**：用 WildChat-4.8M 对话日志构建 EditRecBench,检验 LLM 智能体能否在用户发出修改请求前预判它,并用决策模型做门控、只展示高置信预测:门控按 TypeSafe(Jev)文档以决策模型实现(另引 OpenAI),训练后的门控模型优于现有决策模型,门控阈值下展示建议的 pass@5 提高 12-25 分。
+---
+<a id="paper-2611-19912"></a>
+#### [AgenticJevNav: Agentic Object Search and Navigation via Event-Driven Verification](https://arxiv.org/abs/2611.19912v1) · [PDF](https://arxiv.org/pdf/2611.19912v1)
+- **📅 发表时间**：2026-11-15（v1）
+- **👥 作者**：Shuning Zhang；Shuli Zhang；Yunheng Wang 等（共 11 位）
+- **🎯 解决问题**：执行失败、证据迟到时,机器人应如何保持目标并调整动作?
+- **💡 核心贡献**：智能体目标搜索与导航架构:规划 Agent 持有目标并授权有界动作集,执行受阻/失败或连续两段低进度时由托管 Jev 审查结构化证据(版本、新鲜度与一次性检查约束决策应用),目标修订会撤销过期请求,独立 RGB 反射可否决前进。六类仿真任务 60 次试验成功率 73.33%,高出次优纯 Agent 对照 21.67 个百分点;GENISOM L1 四足实机 30 次试验成功率 70.0%。
+---
 <a id="paper-2611-17167"></a>
 #### [Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents](https://arxiv.org/abs/2611.17167v1) · [PDF](https://arxiv.org/pdf/2611.17167v1) · [代码](https://github.com/ZJU-REAL/decision-agents)
 - **📅 发表时间**：2026-11-12（v1）
@@ -1632,8 +1679,24 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🎯 解决问题**：智能体的记忆操作能否交给快速决策层协调，以提升效率？
 - **💡 核心贡献**：提出由 System One 控制的记忆架构，以协调高效的智能体记忆操作。
 ---
-### 同类模型与方法 · 18
+### 同类模型与方法 · 20
 
+<a id="paper-2611-21053"></a>
+#### [System 1 agents: a method for local, reliable and fast agentic AI](https://arxiv.org/abs/2611.21053v1) · [PDF](https://arxiv.org/pdf/2611.21053v1) · [代码](https://github.com/eltzanis/SystemOneAgents)
+- **📅 发表时间**：2026-11-16（v1）
+- **👥 作者**：Eleftherios Tzanis；Michail E. Klontzas
+- **🏢 单位**：Artificial Intelligence and Translational Imaging (ATI) Lab, University of Crete；CLINTEC, Karolinska Institute；University Hospital of Heraklion
+- **🎯 解决问题**：隐私受限的临床智能体如何不靠 LLM 生成文本就完成工具调用?
+- **💡 核心贡献**：本地无文本生成的工具调用智能体:确定性编译器把工具 schema 与请求编译成多选题(选项来自请求与 schema),由单次前向的决策模型作答(经 llama.cpp 的 /v1/systemone 端点服务的原生 SystemOne 模型,如 OpenJev、Clef、pplx-decider)。157 个生物医学工具的 1,952 次请求上,最好的 System 1 智能体选对工具或正确拒绝的比例 97.0%(18 种本地 LLM 智能体配置最好 95.2%),6,056 个给定参数值填对 97.0%,且调用零捏造(LLM 调用捏造率 5.5-19.7%)。框架已开源。
+---
+<a id="paper-2611-19123"></a>
+#### [Beyond Plain MCP: Do Decision Models and Code Mode Make Tool Use Cheaper and Faster?](https://arxiv.org/abs/2611.19123v1) · [PDF](https://arxiv.org/pdf/2611.19123v1) · [代码](https://github.com/abhishek085/mcp-decision-layer)
+- **📅 发表时间**：2026-11-14（v1）
+- **👥 作者**：Abhishek Rai
+- **🏢 单位**：Independent researcher
+- **🎯 解决问题**：当智能体能对工具写代码时,决策模型路由器还有收益吗?
+- **💡 核心贡献**：在覆盖 12 个服务器、至多 1,958 个干扰工具与三个开源权重智能体(Qwen、Gemma、Nemotron)的受控测试台上,预注册评估 MCP 工具使用范式:code mode(智能体对类型化工具桩写脚本)大幅胜过普通 MCP,token 用量降 70-90% 且效用更高;工具桩声明返回形状提示可使弱智能体成功率波动至多 39.5 分,影响大于加路由器;「code mode 前加决策层更好」的中心假设未获证实(弱智能体轻微不显著提升,最强者略有代价)。发布测试台、微调 4B 工具选择模型与全部评估轨迹。
+---
 <a id="paper-2611-17780"></a>
 #### [LuthorSQL: A One-Pass Text-to-SQL Model as System 1 for a Slower LLM Agent](https://arxiv.org/abs/2611.17780v1) · [PDF](https://arxiv.org/pdf/2611.17780v1) · [代码](https://github.com/IAMIbrahimmemon/luthorsql)
 - **📅 发表时间**：2026-11-13（v1）
@@ -1782,8 +1845,16 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 [返回分类导航](#category-index)
 
-### Jev 直接相关 · 47
+### Jev 直接相关 · 48
 
+<a id="paper-2611-20955"></a>
+#### [Jev-as-a-Reward: Validating Probabilistic Safety Judges for Reinforcement Learning](https://arxiv.org/abs/2611.20955v1) · [PDF](https://arxiv.org/pdf/2611.20955v1)
+- **📅 发表时间**：2026-11-16（v1）
+- **👥 作者**：Eunkyeong Lee；Junhyung Moon；Seunggwan Hong；Dongsuk Oh
+- **🏢 单位**：KT；Sungkyunkwan University；Kyungpook National University
+- **🎯 解决问题**：当策略学会利用置信门盲区时,廉价概率安全裁判还能当 RL 奖励吗?
+- **💡 核心贡献**：提出在 RL 训练前后持续校验概率安全裁判的协议:区分「被自信放行的伤害」的份额与数量,裁判换版本后重新校验,并监测策略对置信门盲区的利用。应用于两个版本的托管 Jev 概率奖励:主参照下 11 次运行中被放行伤害均收缩但多慢于被捕获伤害,且集中于盲区;二值化裁判在 Llama 上达到逃逸判据;加辅助性项后 HarmBench 攻击成功率从 0.287 降至至多 0.033。
+---
 <a id="paper-2611-16937"></a>
 #### [S1-Evo: Experience-Guided Evidence Competition Attacks on Typed System-1 Decision Models](https://arxiv.org/abs/2611.16937v1) · [PDF](https://arxiv.org/pdf/2611.16937v1)
 - **📅 发表时间**：2026-11-12（v1）
@@ -2156,8 +2227,16 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🎯 解决问题**：类型化决策模型跟随的是选项名称，还是名称绑定到的定义？
 - **💡 核心贡献**：改变名称与定义的映射，测试 Jev 是否跟随标签而非给定语义决策。
 ---
-### 同类模型与方法 · 12
+### 同类模型与方法 · 13
 
+<a id="paper-2611-20699"></a>
+#### [A First Look at System One Decision Models for Malware Detection](https://arxiv.org/abs/2611.20699v1) · [PDF](https://arxiv.org/pdf/2611.20699v1)
+- **📅 发表时间**：2026-11-16（v1）
+- **👥 作者**：Pier Mattia Basciano；Giovanni Farina；Salvatore Monteleone
+- **🏢 单位**：Department of Engineering, Niccolò Cusano University, Rome, Italy
+- **🎯 解决问题**：类型化单次前向决策比 LLM 文本生成更会读恶意软件证据吗?
+- **💡 核心贡献**：System One 决策模型在 Windows PE 恶意软件检测上的首次评估:Ghidra 与 capa 把二进制分解为规范化文本状态,三种读出打分——A0(单判定问题概率)、A1(32 个原子行为问题)、A2(状态嵌入上的头)。托管 Jev 因使用政策禁止分析恶意软件而明确不在评估内;研究覆盖 CLM-8B、十个开源决策模型与两个 LLM,数据为 BODMAS 时序切分、SOREL-20M 分布外恶意样本与 14,534 组匹配良性文件。A0 浪费静态证据(13 个模型 AUROC 0.4025-0.8590);A1 平均提升 +54.61%;S1Mal 集成达 AUROC 0.9946,在实测 1.45% FPR 下检出 93.47%。
+---
 <a id="paper-2611-09803"></a>
 #### [Maya a1: Do the Options Read the Model, or Does Their Position? Order Sensitivity in a Non-Autoregressive Decision Model](https://arxiv.org/abs/2611.09803v1) · [PDF](https://arxiv.org/pdf/2611.09803v1)
 - **📅 发表时间**：2026-11-06（v1）
@@ -2261,8 +2340,24 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 [返回分类导航](#category-index)
 
-### Jev 直接相关 · 64
+### Jev 直接相关 · 66
 
+<a id="paper-2611-19225"></a>
+#### [Budgeted Decision-Model-Guided Joint-Action Search for Satellite Edge Computing](https://arxiv.org/abs/2611.19225v1) · [PDF](https://arxiv.org/pdf/2611.19225v1)
+- **📅 发表时间**：2026-11-14（v1）
+- **👥 作者**：Ziming Liu；Minghao Sun；Ran Tao；Xiaoli Chu
+- **🏢 单位**：School of Electrical and Electronic Engineering, University of Sheffield
+- **🎯 解决问题**：如何在不重复调用 LLM 的时延下保住 LLM 级的资源配置质量?
+- **💡 核心贡献**：面向卫星边缘计算的预算化联合动作搜索(BJAS):用单终端更新与继承功率的卸载替换构造有界候选池,由托管 Jev(jev-1.13.0)给出池内选项概率做批量选择,更新前先数值验证改进。每方法 60 次完整运行下,完整 Jev 版 BJAS 相对 LLM 生成卸载将平均求解时间削减 97.16%,任务完成时延与 LLM 基线接近,且低于遗传算法与 DDPG 基线。
+---
+<a id="paper-2611-19005"></a>
+#### [AdaMenu: Query-Adaptive Menus for Decision Models over Large Label Spaces](https://arxiv.org/abs/2611.19005v1) · [PDF](https://arxiv.org/pdf/2611.19005v1)
+- **📅 发表时间**：2026-11-13（v1）
+- **👥 作者**：Jiangze Yan；Yi Shen；Jieyun Huang 等（共 8 位）
+- **🏢 单位**：Unicom Data Intelligence, China Unicom；Data Science & Artificial Intelligence Research Institute, China Unicom
+- **🎯 解决问题**：上千个标签放不进决策模型的一份菜单时怎么办?
+- **💡 核心贡献**：为决策模型大标签空间分类设计查询自适应候选菜单:每条查询从有标签示例检索紧凑标签菜单(尺寸按聚合检索分自适应),只需一次决策模型调用,避免层级分类的串行与误差传播。在至多 1,016 标签的四个标签集上用开源与闭源决策模型评估:在双方均可运行的全部 16 个模型×标签组上胜过 TypeSafe 束搜索基线(+16.6 到 +34.3 分),三个较小标签集上与全菜单准确率差 -0.5 到 +7.2 分而输入 token 降 3.2-22.9 倍,且在选项上限排除全菜单时仍可运行。
+---
 <a id="paper-2611-15576"></a>
 #### [Can Model Answer Probabilities Represent Survey Populations? Conditional Prediction and Joint Validity in Jev Survey Simulation](https://arxiv.org/abs/2611.15576v1) · [PDF](https://arxiv.org/pdf/2611.15576v1) · [代码](https://github.com/wuzengqing001225/jev-survey-distributions)
 - **📅 发表时间**：2026-11-11（v1）
@@ -2774,8 +2869,48 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🎯 解决问题**：边缘服务编排能否用低延迟决策模型替代 LLM？
 - **💡 核心贡献**：将 Jev 接入边缘服务编排，测量经核验请求、准入行为和执行结果。
 ---
-### 同类模型与方法 · 38
+### 同类模型与方法 · 43
 
+<a id="paper-2611-21604"></a>
+#### [FaceJev: Direct Visual Decisions for Face Forgery Detection](https://arxiv.org/abs/2611.21604v1) · [PDF](https://arxiv.org/pdf/2611.21604v1)
+- **📅 发表时间**：2026-11-16（v1）
+- **👥 作者**：Siran Peng；Tianshuo Zhang；Yibo Xue 等（共 9 位）
+- **🏢 单位**：MAIS, CASIA；SAI, UCAS；IIE, CAS；SCSE, FIE, M.U.S.T.
+- **🎯 解决问题**：人脸伪造检测能否改写成按部位的类型化决策,而非文字解释?
+- **💡 核心贡献**：采用 Jev 范式的 MLLM 人脸伪造检测:八个人脸部位问题共享同一图像编码,从原生答案 logits 读出异常概率,任一部位异常即判伪造,判定与部位决策直接挂钩。新数据集 PartForensics(约 16 万张图、八部位二值标注)监督这些决策,FS-GRPO 以与其备选项的精确奖励对比优化每个部位决策。在未见伪造类型上超过最强基线 7.25 个百分点。
+---
+<a id="paper-2611-21393"></a>
+#### [Train After You Measure: a Pre-Registered Learning Curve for Fine-Tuning Typed Decision Models on One User's Labels](https://arxiv.org/abs/2611.21393v1) · [PDF](https://arxiv.org/pdf/2611.21393v1) · [代码](https://github.com/federicolucca/foyer-measure)
+- **📅 发表时间**：2026-11-16（v1）
+- **👥 作者**：Federico Lucca
+- **🏢 单位**：Independent researcher, Trento, Italy
+- **🎯 解决问题**：用单个用户的标注微调小型类型化决策模型,能胜过逻辑回归吗?
+- **💡 核心贡献**：《Measure Before You Train》的预注册后续:在同一用户 50-587 封邮件标注上对公开 Tev1-0.8B/4B 类型化决策模型做 LoRA 微调,与用相同标注训练的 TF-IDF 逻辑回归对比(免费 T4 GPU,固定从未用于选择的测试集)。消息类型上 4B 模型在 400 条标注时未达预注册的 3 分优势(+2.6),用全部 587 条则通过(+3.3);三个动作开关上基线在所有预算下领先(0.931 对 0.904/0.899);五个假设被证伪四个,其中两个反而利好微调。
+---
+<a id="paper-2611-20992"></a>
+#### [MedJev: A System One Vision-Language Decision Model for Fast and Effective Medical Image Understanding](https://arxiv.org/abs/2611.20992v1) · [PDF](https://arxiv.org/pdf/2611.20992v1) · [代码](https://github.com/zfkarl/MedJev)
+- **📅 发表时间**：2026-11-16（v1）
+- **👥 作者**：Fan Zhang；Hao Wu；Jinyang Wu 等（共 8 位）
+- **🏢 单位**：The Chinese University of Hong Kong；Tsinghua University；National University of Singapore；Tongji University；Guangdong Laboratory of Artificial Intelligence and Digital Economy (SZ) 等（共 6 家）
+- **🎯 解决问题**：医学影像理解能否跳过自回归解码,单次多模态前向直接给出决策?
+- **💡 核心贡献**：面向医学影像的 System One 视觉-语言决策模型:删去 Qwen3.5-4B VLM 的上层语言与生成输出通路(保留完整视觉通路与全部视觉 token),决策头以预训练 query-key 匹配加 MLP 残差给每个候选打分,单次多模态前向直接从图像、问题与候选答案映射到决策。MedJev-4B 在四个医学分类与 VQA 基准上均较原模型提升准确率与速度(绝对准确率 +7.93%,端到端加速 6.04 倍),并在 4B-9B 通用与医学 VLM 中报告最优的准确率与推理速度。
+---
+<a id="paper-2611-20129"></a>
+#### [Can decision models extract clinical data from cancer pathology reports? An evaluation of accuracy, calibration, and failure modes](https://arxiv.org/abs/2611.20129v1) · [PDF](https://arxiv.org/pdf/2611.20129v1)
+- **📅 发表时间**：2026-11-15（v1）
+- **👥 作者**：Indranil Mallick；Paromita Roy
+- **🏢 单位**：Department of Radiation Oncology, Tata Medical Center, Kolkata；Department of Pathology, Tata Medical Center, Kolkata
+- **🎯 解决问题**：类型化决策模型能否快速、准确且校准地抽取结构化临床数据?
+- **💡 核心贡献**：决策模型在临床文本上的首次评估:两个开源权重模型(Nimble 9B、Tev1 4B)从单中心 1,113 份口腔癌病理报告中提取 25 个字段,与前瞻维护的临床数据库比对,并与本地 Qwen3.5 9B、云端 GLM-5.3-flash 对比(未评托管 Jev 与 Laya)。Tev1 平均字段准确率 0.917,与 Qwen3.5 9B(0.918)统计持平且快四倍(每份 15 秒),合并 ECE 0.022-0.026;两个决策模型在简单二值字段上追平 GLM-5.3-flash,在分箱测量与未报告字段上偏弱;把概率低于 0.94 的答案升级给 GLM-5.3-flash 可将 Tev1 提到 0.982,升级占 38%。
+---
+<a id="paper-2611-19138"></a>
+#### [SuperGlance: Driving at a Glance with a Vision-Language Model](https://arxiv.org/abs/2611.19138v1) · [PDF](https://arxiv.org/pdf/2611.19138v1)
+- **📅 发表时间**：2026-11-14（v1）
+- **👥 作者**：Jieyuan Pei；Xin Yan；Mingwei Xu 等（共 12 位）
+- **🏢 单位**：Institute for AI Industry Research (AIR), Tsinghua University；HiThink Research；The Hong Kong University of Science and Technology (Guangzhou)；Agency for Science, Technology and Research (A*STAR), Singapore；University of Washington 等（共 7 家）
+- **🎯 解决问题**：VLM 能否用它早已读入的隐状态直接开车,而不逐 token 解码?
+- **💡 核心贡献**：把 decoder-only VLM 变成编码器式驾驶策略:线性头从首个 token 之前的隐状态一次前向为固定的 5,273 条候选轨迹打分;候选集固定后奖励离线计算,监督目标可按奖励加权、强化学习可最大化精确期望奖励,多选题训练让同一前向保留视觉问答能力。规划仅 84 ms GPU 时间,比 Qwen-Drive-1.0 快六倍,NAVSIM、PAI-AV、WOD-E2E 上不落下风;视觉多选题回答与基座 VLM 解码相当。
+---
 <a id="paper-2611-18330"></a>
 #### [Marimba: A System One Model for Speech](https://arxiv.org/abs/2611.18330v1) · [PDF](https://arxiv.org/pdf/2611.18330v1)
 - **📅 发表时间**：2026-11-13（v1）
@@ -3124,7 +3259,7 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 | --- | --- |
 | 下载与引用 | [结构化 JSON](data/papers.json) · [BibTeX](references.bib) |
 | 核实收录依据 | [证据台账](docs/EVIDENCE.md) · [收录规则](docs/METHODOLOGY.md) |
-| 了解检索覆盖 | [检索记录](docs/SEARCH_LOG.md) · [X 与中文平台检索（11-17）](docs/SOCIAL_SEARCH_2026-11-17.md) · [arXiv 检索（11-17 新增 5 篇）](docs/ARXIV_SEARCH_2026-11-17.md) |
+| 了解检索覆盖 | [检索记录](docs/SEARCH_LOG.md) · [X 与中文平台检索（11-18）](docs/SOCIAL_SEARCH_2026-11-18.md) · [arXiv 检索（11-18 新增 17 篇）](docs/ARXIV_SEARCH_2026-11-18.md) |
 | 查看筛选过程 | [筛选台账](data/screening.json) · [待核实](docs/PENDING.md) |
 | 参与维护 | [贡献指南](CONTRIBUTING.md) · [更新记录](CHANGELOG.md) |
 

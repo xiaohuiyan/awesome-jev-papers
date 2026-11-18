@@ -1527,5 +1527,82 @@
     "canonical_url": "https://github.com/zhuqinfeng1999/LEASH",
     "description": "LEASH: Stay Safe in Agentic Robotics. RoboRisk benchmark (92 simulated + 13 real-robot tasks) and a camera-grounded safety harness for foundation-model robot planners.",
     "private": false
+  },
+  {
+    "arxiv_id": "2611.21478",
+    "url": "https://github.com/imlrz/Jetriever",
+    "source_url": "https://arxiv.org/abs/2611.21478v1",
+    "source_location": "Title page ('Project repository')",
+    "checked_on": "2026-11-18",
+    "status": "verified",
+    "canonical_url": "https://github.com/imlrz/Jetriever",
+    "description": "Jetriever: Jev-based agent memory retrieval system and research artifacts",
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.21155",
+    "url": "https://github.com/ntt-dkiku/llm-edit-recommendation",
+    "source_url": "https://arxiv.org/abs/2611.21155v1",
+    "source_location": "Abstract ('Our code is available at')",
+    "checked_on": "2026-11-18",
+    "status": "verified",
+    "canonical_url": "https://github.com/ntt-dkiku/llm-edit-recommendation",
+    "description": null,
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.18655",
+    "url": "https://github.com/sathiskumarjothi0-oss/bev-decisions-pypi",
+    "source_url": "https://arxiv.org/abs/2611.18655v1",
+    "source_location": "Releases statement ('Code and examples (GitHub)')",
+    "checked_on": "2026-11-18",
+    "status": "verified",
+    "canonical_url": "https://github.com/sathiskumarjothi0-oss/bev-decisions-pypi",
+    "description": "Beveridge: System One decision models with open weights. Typed yes/no, choice and score decisions with calibrated probabilities, on your own machines. pip install bev-decisions",
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.21393",
+    "url": "https://github.com/federicolucca/foyer-measure",
+    "source_url": "https://arxiv.org/abs/2611.21393v1",
+    "source_location": "Reproducibility statement",
+    "checked_on": "2026-11-18",
+    "status": "verified",
+    "canonical_url": "https://github.com/federicolucca/foyer-measure",
+    "description": "Measurement harness for a personal inbox agent: code and protocol of arXiv:2610.32955 (Measure Before You Train)",
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.21053",
+    "url": "https://github.com/eltzanis/SystemOneAgents",
+    "source_url": "https://arxiv.org/abs/2611.21053v1",
+    "source_location": "Abstract ('freely available as open-source software')",
+    "checked_on": "2026-11-18",
+    "status": "verified",
+    "canonical_url": "https://github.com/eltzanis/SystemOneAgents",
+    "description": "A method to develop System 1 Agents",
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.20992",
+    "url": "https://github.com/zfkarl/MedJev",
+    "source_url": "https://arxiv.org/abs/2611.20992v1",
+    "source_location": "End of abstract ('Code:')",
+    "checked_on": "2026-11-18",
+    "status": "verified",
+    "canonical_url": "https://github.com/zfkarl/MedJev",
+    "description": "MedJev: A System One Vision-Language Decision Model for Fast and Effective Medical Image Understanding",
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.19123",
+    "url": "https://github.com/abhishek085/mcp-decision-layer",
+    "source_url": "https://arxiv.org/abs/2611.19123v1",
+    "source_location": "Artifacts statement ('Code and pre-registration')",
+    "checked_on": "2026-11-18",
+    "status": "verified",
+    "canonical_url": "https://github.com/abhishek085/mcp-decision-layer",
+    "description": "Beyond Plain MCP: Do Decision Models and Code Mode Make Tool Use Cheaper and Faster? ",
+    "private": false
   }
 ]

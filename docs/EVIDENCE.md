@@ -3,6 +3,230 @@
 
 Short excerpts support relevance decisions, not paper quality or reproducibility. Scores measure topic fit and substantive contribution only. Abstract-level review is the default; targeted full-text checks are marked. 引文用于核实相关性，不是论文质量或模型性能评分。
 
+<a id="evidence-2611-21604"></a>
+## 2611.21604 — FaceJev: Direct Visual Decisions for Face Forgery Detection
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-18
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “Following the Jev formulation, FaceJev answers eight independent questions” — [Abstract](https://arxiv.org/abs/2611.21604v1)
+- **contribution**: “outperforms the strongest baseline by 7.25 percentage points” — [Abstract](https://arxiv.org/abs/2611.21604v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.21604v1); first submitted 2026-11-16; updated 2026-11-16. Full authors: Siran Peng; Tianshuo Zhang; Yibo Xue; Ajian Liu; Haoyuan Zhang; Weisong Zhao; Shuhuan Chen; Xiangyu Zhu; Zhen Lei.
+
+<a id="evidence-2611-21478"></a>
+## 2611.21478 — Jetriever: Shifting Agent Memory Retrieval from Similarity to Utility
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-18
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。
+
+- **topic**: “ranks each stored memory by Jev's decision score” — [Abstract](https://arxiv.org/abs/2611.21478v1)
+- **contribution**: “places the gold exchange first in 84.8% of cases” — [Abstract](https://arxiv.org/abs/2611.21478v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.21478v1); first submitted 2026-11-16; updated 2026-11-16. Full authors: Ruizhe Li; Licheng Zhang; Mingxuan Du; Zhendong Mao.
+
+<a id="evidence-2611-21393"></a>
+## 2611.21393 — Train After You Measure: a Pre-Registered Learning Curve for Fine-Tuning Typed Decision Models on One User's Labels
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-18
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “Fine-tuning a small typed decision model on one user's email labels” — [Abstract](https://arxiv.org/abs/2611.21393v1)
+- **contribution**: “The main study was registered before any fine-tuning run” — [Abstract](https://arxiv.org/abs/2611.21393v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.21393v1); first submitted 2026-11-16; updated 2026-11-16. Full authors: Federico Lucca.
+
+<a id="evidence-2611-21155"></a>
+## 2611.21155 — Edit Recommendation: Can LLMs Anticipate Edit Requests from Users, and When?
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-18
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。
+
+- **topic**: “implement the gating model using a decision model” — [Section 4.2 (Decision model for gating)](https://arxiv.org/html/2611.21155v1)
+- **contribution**: “raises pass@5 among shown suggestions by 12--25 points” — [Abstract](https://arxiv.org/abs/2611.21155v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.21155v1); first submitted 2026-11-16; updated 2026-11-16. Full authors: Daisuke Kikuta.
+
+<a id="evidence-2611-21053"></a>
+## 2611.21053 — System 1 agents: a method for local, reliable and fast agentic AI
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-18
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “local agents that call tools without generating text” — [Abstract](https://arxiv.org/abs/2611.21053v1)
+- **contribution**: “chose the right tool, or correctly declined, for 97.0% of requests” — [Abstract](https://arxiv.org/abs/2611.21053v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.21053v1); first submitted 2026-11-16; updated 2026-11-16. Full authors: Eleftherios Tzanis; Michail E. Klontzas.
+
+<a id="evidence-2611-20992"></a>
+## 2611.20992 — MedJev: A System One Vision-Language Decision Model for Fast and Effective Medical Image Understanding
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-18
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “maps medical images, questions, and candidate answers directly to decisions” — [Abstract](https://arxiv.org/abs/2611.20992v1)
+- **contribution**: “improves both accuracy and speed over the original model” — [Abstract](https://arxiv.org/abs/2611.20992v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.20992v1); first submitted 2026-11-16; updated 2026-11-16. Full authors: Fan Zhang; Hao Wu; Jinyang Wu; Hongyu Qu; Zheng Lian; Dongfu Yin; Qingsong Wen; Pheng-Ann Heng.
+
+<a id="evidence-2611-20955"></a>
+## 2611.20955 — Jev-as-a-Reward: Validating Probabilistic Safety Judges for Reinforcement Learning
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-18
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。
+
+- **topic**: “We apply it to two versions of Jev, a commercial decision-only judge” — [Abstract](https://arxiv.org/abs/2611.20955v1)
+- **contribution**: “passed harm shrinks in all 11 runs under the primary reference” — [Abstract](https://arxiv.org/abs/2611.20955v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.20955v1); first submitted 2026-11-16; updated 2026-11-16. Full authors: Eunkyeong Lee; Junhyung Moon; Seunggwan Hong; Dongsuk Oh.
+
+<a id="evidence-2611-20699"></a>
+## 2611.20699 — A First Look at System One Decision Models for Malware Detection
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-18
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “System One decision models answer a typed question about a text” — [Abstract](https://arxiv.org/abs/2611.20699v1)
+- **contribution**: “S1Mal reaches 0.9946 and detects 93.47% of the malware” — [Abstract](https://arxiv.org/abs/2611.20699v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.20699v1); first submitted 2026-11-16; updated 2026-11-16. Full authors: Pier Mattia Basciano; Giovanni Farina; Salvatore Monteleone.
+
+<a id="evidence-2611-20335"></a>
+## 2611.20335 — When Should Decision Models Compare Candidates?
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-18
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “Should decision models score candidates independently” — [Abstract](https://arxiv.org/abs/2611.20335v1)
+- **contribution**: “Pointwise scoring remains competitive” — [Abstract](https://arxiv.org/abs/2611.20335v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.20335v1); first submitted 2026-11-16; updated 2026-11-16. Full authors: Fangzhi Li; Quan Shi; Wenting Yang; Yueqiao Chen; Jiayu Chang; Shuting Zhao; Zhaowei Xu; Yizhao Chen; Guanchu Wu; Han Xu.
+
+<a id="evidence-2611-20191"></a>
+## 2611.20191 — Do We Still Need Fine-Tuned Classifiers? Swapping Typed Decision Models into 24 ACL-Venue Papers
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-18
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。
+
+- **topic**: “We swap the predictors of 24 ACL-venue papers for Jev” — [Abstract](https://arxiv.org/abs/2611.20191v1)
+- **contribution**: “Jev directly replaced the paper's predictor on 12 of the 46 test sets” — [Abstract](https://arxiv.org/abs/2611.20191v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.20191v1); first submitted 2026-11-15; updated 2026-11-15. Full authors: Marek Šuppa; Jaroslav Kopčan.
+
+<a id="evidence-2611-20129"></a>
+## 2611.20129 — Can decision models extract clinical data from cancer pathology reports? An evaluation of accuracy, calibration, and failure modes
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-18
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “Decision models are a new class of language model” — [Abstract](https://arxiv.org/abs/2611.20129v1)
+- **contribution**: “Tev1 reached a mean field accuracy of 0.917” — [Abstract](https://arxiv.org/abs/2611.20129v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.20129v1); first submitted 2026-11-15; updated 2026-11-15. Full authors: Indranil Mallick; Paromita Roy.
+
+<a id="evidence-2611-19912"></a>
+## 2611.19912 — AgenticJevNav: Agentic Object Search and Navigation via Event-Driven Verification
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-18
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。
+
+- **topic**: “Jev reviews structured evidence after blocked/failed execution” — [Abstract](https://arxiv.org/abs/2611.19912v1)
+- **contribution**: “achieves 73.33% SR over 60 trials” — [Abstract](https://arxiv.org/abs/2611.19912v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.19912v1); first submitted 2026-11-15; updated 2026-11-15. Full authors: Shuning Zhang; Shuli Zhang; Yunheng Wang; Wei Lu; Jiaxi Zhang; Yihang Kang; Tao Wang; Xiangyu Chen; Yixiao Feng; Kai Sheng; Renjing Xu.
+
+<a id="evidence-2611-19225"></a>
+## 2611.19225 — Budgeted Decision-Model-Guided Joint-Action Search for Satellite Edge Computing
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-18
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。
+
+- **topic**: “uses Jev for batched selection” — [Section 1 (contributions)](https://arxiv.org/html/2611.19225v1)
+- **contribution**: “reduces mean total solver time by 97.16% relative to LLM-generated offloading” — [Abstract](https://arxiv.org/abs/2611.19225v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.19225v1); first submitted 2026-11-14; updated 2026-11-14. Full authors: Ziming Liu; Minghao Sun; Ran Tao; Xiaoli Chu.
+
+<a id="evidence-2611-19138"></a>
+## 2611.19138 — SuperGlance: Driving at a Glance with a Vision-Language Model
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-18
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “Its linear head scores a fixed set of 5,273 candidate trajectories” — [Abstract](https://arxiv.org/abs/2611.19138v1)
+- **contribution**: “It plans in 84 ms of GPU time, six times faster than Qwen-Drive-1.0” — [Abstract](https://arxiv.org/abs/2611.19138v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.19138v1); first submitted 2026-11-14; updated 2026-11-14. Full authors: Jieyuan Pei; Xin Yan; Mingwei Xu; Haiyi Zhang; Siyu Zou; Zhangyi Hu; Zhuoxuan Li; Yuguang Yang; Rongjunchen Zhang; Cheng Chi; Hui Xiong; Yan Wang.
+
+<a id="evidence-2611-19123"></a>
+## 2611.19123 — Beyond Plain MCP: Do Decision Models and Code Mode Make Tool Use Cheaper and Faster?
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-18
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “decision layers which are cheap routers that preselect tool subsets” — [Abstract](https://arxiv.org/abs/2611.19123v1)
+- **contribution**: “cutting token usage by 70 to 90 percent” — [Abstract](https://arxiv.org/abs/2611.19123v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.19123v1); first submitted 2026-11-14; updated 2026-11-14. Full authors: Abhishek Rai.
+
+<a id="evidence-2611-19005"></a>
+## 2611.19005 — AdaMenu: Query-Adaptive Menus for Decision Models over Large Label Spaces
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-18
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。
+
+- **topic**: “Decision models such as Jev return probabilities over caller-defined options” — [Abstract](https://arxiv.org/abs/2611.19005v1)
+- **contribution**: “It outperforms TypeSafe's beam-search baseline on all 16” — [Abstract](https://arxiv.org/abs/2611.19005v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.19005v1); first submitted 2026-11-13; updated 2026-11-13. Full authors: Jiangze Yan; Yi Shen; Jieyun Huang; Wenjing Zhang; Zhaoxiang Liu; Ning Wang; Kai Wang; Shiguo Lian.
+
 <a id="evidence-2611-18330"></a>
 ## 2611.18330 — Marimba: A System One Model for Speech
 
@@ -2382,6 +2606,20 @@ Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence
 - **contribution**: “Jev finds and selects records without error up to 20k tokens” — [Abstract](https://arxiv.org/abs/2610.24929v1)
 
 Metadata: [reviewed v1](https://arxiv.org/abs/2610.24929v1); first submitted 2026-10-18; updated 2026-10-18. Full authors: Wang Yang; Xinpeng Li; Yanyan Zhang; Chuang Ma; Shouren Wang; Jianzhe Wei; Liqin Ye; Xiaoran Cai; Mohsen Hariri; Vipin Chaudhary; Xiaotian Han.
+
+<a id="evidence-2611-18655"></a>
+## 2611.18655 — Beveridge: Open Weight System One Decision Models with Calibrated Probabilities
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-18
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。
+
+- **topic**: “a commercial System One model, through its API with the identical request” — [Section 5 (evaluation setup)](https://arxiv.org/html/2611.18655v1)
+- **contribution**: “reaches 93.0% on our operations-document benchmark” — [Abstract](https://arxiv.org/abs/2611.18655v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.18655v1); first submitted 2026-10-17; updated 2026-10-17. Full authors: Sathiskumar Jothi.
 
 <a id="evidence-2610-37688"></a>
 ## 2610.37688 — One Confidence Threshold, Unequal Coverage: Language Gaps in Typed Decision Interfaces and How Translating Inputs Reduces Them

@@ -1,5 +1,5 @@
 {
-  "screened_on": "2026-11-17",
+  "screened_on": "2026-11-18",
   "candidates": [
     {
       "arxiv_id": "2610.22276",
@@ -4368,6 +4368,166 @@
       "status": "excluded",
       "reason": "General LLM-query routing benchmark (400K+ instances, 21 datasets, 33 models, 10 routing baselines); routing is model-selection infrastructure that predates Jev, with no typed-decision or System One interface and no hosted-Jev use. Surfaced by the first four-list external awesome-list diff (awesome-system-one).",
       "screened_on": "2026-11-17"
+    },
+    {
+      "arxiv_id": "2611.21478",
+      "title": "Jetriever: Shifting Agent Memory Retrieval from Similarity to Utility",
+      "source_url": "https://arxiv.org/abs/2611.21478v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-18"
+    },
+    {
+      "arxiv_id": "2611.21155",
+      "title": "Edit Recommendation: Can LLMs Anticipate Edit Requests from Users, and When?",
+      "source_url": "https://arxiv.org/abs/2611.21155v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-18"
+    },
+    {
+      "arxiv_id": "2611.20955",
+      "title": "Jev-as-a-Reward: Validating Probabilistic Safety Judges for Reinforcement Learning",
+      "source_url": "https://arxiv.org/abs/2611.20955v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-18"
+    },
+    {
+      "arxiv_id": "2611.20191",
+      "title": "Do We Still Need Fine-Tuned Classifiers? Swapping Typed Decision Models into 24 ACL-Venue Papers",
+      "source_url": "https://arxiv.org/abs/2611.20191v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-18"
+    },
+    {
+      "arxiv_id": "2611.19912",
+      "title": "AgenticJevNav: Agentic Object Search and Navigation via Event-Driven Verification",
+      "source_url": "https://arxiv.org/abs/2611.19912v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-18"
+    },
+    {
+      "arxiv_id": "2611.19225",
+      "title": "Budgeted Decision-Model-Guided Joint-Action Search for Satellite Edge Computing",
+      "source_url": "https://arxiv.org/abs/2611.19225v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-18"
+    },
+    {
+      "arxiv_id": "2611.19005",
+      "title": "AdaMenu: Query-Adaptive Menus for Decision Models over Large Label Spaces",
+      "source_url": "https://arxiv.org/abs/2611.19005v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-18"
+    },
+    {
+      "arxiv_id": "2611.18655",
+      "title": "Beveridge: Open Weight System One Decision Models with Calibrated Probabilities",
+      "source_url": "https://arxiv.org/abs/2611.18655v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-18"
+    },
+    {
+      "arxiv_id": "2611.21604",
+      "title": "FaceJev: Direct Visual Decisions for Face Forgery Detection",
+      "source_url": "https://arxiv.org/abs/2611.21604v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-18"
+    },
+    {
+      "arxiv_id": "2611.21393",
+      "title": "Train After You Measure: a Pre-Registered Learning Curve for Fine-Tuning Typed Decision Models on One User's Labels",
+      "source_url": "https://arxiv.org/abs/2611.21393v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-18"
+    },
+    {
+      "arxiv_id": "2611.21053",
+      "title": "System 1 agents: a method for local, reliable and fast agentic AI",
+      "source_url": "https://arxiv.org/abs/2611.21053v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-18"
+    },
+    {
+      "arxiv_id": "2611.20992",
+      "title": "MedJev: A System One Vision-Language Decision Model for Fast and Effective Medical Image Understanding",
+      "source_url": "https://arxiv.org/abs/2611.20992v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-18"
+    },
+    {
+      "arxiv_id": "2611.20699",
+      "title": "A First Look at System One Decision Models for Malware Detection",
+      "source_url": "https://arxiv.org/abs/2611.20699v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-18"
+    },
+    {
+      "arxiv_id": "2611.20335",
+      "title": "When Should Decision Models Compare Candidates?",
+      "source_url": "https://arxiv.org/abs/2611.20335v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-18"
+    },
+    {
+      "arxiv_id": "2611.20129",
+      "title": "Can decision models extract clinical data from cancer pathology reports? An evaluation of accuracy, calibration, and failure modes",
+      "source_url": "https://arxiv.org/abs/2611.20129v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-18"
+    },
+    {
+      "arxiv_id": "2611.19138",
+      "title": "SuperGlance: Driving at a Glance with a Vision-Language Model",
+      "source_url": "https://arxiv.org/abs/2611.19138v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-18"
+    },
+    {
+      "arxiv_id": "2611.19123",
+      "title": "Beyond Plain MCP: Do Decision Models and Code Mode Make Tool Use Cheaper and Faster?",
+      "source_url": "https://arxiv.org/abs/2611.19123v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-18"
+    },
+    {
+      "arxiv_id": "2611.18753",
+      "title": "Conv-Reluplex: A Verification Framework For Convolution Neural Networks",
+      "source_url": "https://arxiv.org/abs/2611.18753v1",
+      "status": "excluded",
+      "reason": "Conv-Reluplex extension of Reluplex to convolutional/pooling layers with MNIST adversarial experiments; no Jev, System One or typed-decision content in title or abstract - the whole-window all:\"System One\" match is a block-level artefact, not abstract text.",
+      "screened_on": "2026-11-18"
+    },
+    {
+      "arxiv_id": "2611.18761",
+      "title": "Frame First, Decode Once: Object-Centric Coordinates and Single-Pass Decoding for System-1 World Models",
+      "source_url": "https://arxiv.org/abs/2611.18761v1",
+      "status": "excluded",
+      "reason": "Single-pass geometric-primitive coordinate decoding (LocateAnything/VFlash style) for System-1 robot-pushing world models; 'System-1' is the fast/single-pass metaphor with no typed decision interface (no caller-supplied options or probability over choices) - generic dual-process work excluded per the documented rule.",
+      "screened_on": "2026-11-18"
+    },
+    {
+      "arxiv_id": "2611.19461",
+      "title": "Program Distillation: Transferring LLM Capability from System 2 to System 0",
+      "source_url": "https://arxiv.org/abs/2611.19461v1",
+      "status": "excluded",
+      "reason": "Program Distillation transfers LLM capability from System 2 into compiled System 0 student programs; the contribution is executable programs, not a decision model or interface. Jev-like decision models (SemIf-4B, Laya, 0.239 on PDBench) appear only as baselines with no hosted-Jev use - excluded under the generic dual-process rule.",
+      "screened_on": "2026-11-18"
     }
   ]
 }
