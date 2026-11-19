@@ -3315,7 +3315,7 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 | --- | --- |
 | 下载与引用 | [结构化 JSON](data/papers.json) · [BibTeX](references.bib) |
 | 核实收录依据 | [证据台账](docs/EVIDENCE.md) · [收录规则](docs/METHODOLOGY.md) |
-| 了解检索覆盖 | [检索记录](docs/SEARCH_LOG.md) · [X 与中文平台检索（11-18）](docs/SOCIAL_SEARCH_2026-11-18.md) · [arXiv 检索（11-18 新增 17 篇）](docs/ARXIV_SEARCH_2026-11-18.md) |
+| 了解检索覆盖 | [检索记录](docs/SEARCH_LOG.md) · [X 与中文平台检索（11-19）](docs/SOCIAL_SEARCH_2026-11-19.md) · [arXiv 检索（11-19 新增 7 篇）](docs/ARXIV_SEARCH_2026-11-19.md) |
 | 查看筛选过程 | [筛选台账](data/screening.json) · [待核实](docs/PENDING.md) |
 | 参与维护 | [贡献指南](CONTRIBUTING.md) · [更新记录](CHANGELOG.md) |
 

@@ -3315,7 +3315,7 @@ Earlier work on calibration, rejection, cascades, and generalist classification.
 | --- | --- |
 | Download and cite | [JSON](data/papers.json) · [BibTeX](references.bib) |
 | Check inclusion evidence | [Evidence ledger](docs/EVIDENCE.md) · [Selection rules](docs/METHODOLOGY.md) |
-| Understand search coverage | [Search log](docs/SEARCH_LOG.md) · [X and CN-platform search (11-18)](docs/SOCIAL_SEARCH_2026-11-18.md) · [arXiv search (+17 papers)](docs/ARXIV_SEARCH_2026-11-18.md) |
+| Understand search coverage | [Search log](docs/SEARCH_LOG.md) · [X and CN-platform search (11-19)](docs/SOCIAL_SEARCH_2026-11-19.md) · [arXiv search (+7 papers)](docs/ARXIV_SEARCH_2026-11-19.md) |
 | Inspect screening | [Screening ledger](data/screening.json) · [Pending](docs/PENDING.md) |
 | Contribute | [Contributing](CONTRIBUTING.md) · [Changelog](CHANGELOG.md) |
 
