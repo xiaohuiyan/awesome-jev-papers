@@ -12,9 +12,9 @@
 
 | 收录论文 | Jev 直接相关 | 同类模型与方法 | 基础背景 | 含已核实代码 |
 | ---: | ---: | ---: | ---: | ---: |
-| **393** | 239 | 150 | 4 | 146 |
+| **400** | 243 | 153 | 4 | 148 |
 
-更新于 **2026-11-18** · 主要收录窗口 **2025-10-16—2026-11-16**（首次提交日期）
+更新于 **2026-11-19** · 主要收录窗口 **2025-10-16—2026-11-17**（首次提交日期）
 
 [十篇入门](#recommended-reading) · [按问题选文](#category-index) · [基础背景](#foundations) · [数据与维护](#reuse-and-updates)
 
@@ -51,11 +51,11 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 | 你想了解什么？ | 主题 | 直接 / 相关 | 合计 |
 | --- | --- | ---: | ---: |
 | 怎样训练一个专门做选择的模型？ | [模型架构与训练方法](#architecture) | 19 / 48 | 67 |
-| 快决策在哪些任务上够用？ | [基准测试与比较评估](#evaluation) | 48 / 12 | 60 |
+| 快决策在哪些任务上够用？ | [基准测试与比较评估](#evaluation) | 49 / 13 | 62 |
 | 模型说有把握，真的可靠吗？ | [概率校准、可靠性与选择性决策](#calibration) | 18 / 14 | 32 |
-| 何时搜索、调用工具或交给更强的模型？ | [搜索、记忆、工具与智能体决策](#agents) | 40 / 20 | 60 |
+| 何时搜索、调用工具或交给更强的模型？ | [搜索、记忆、工具与智能体决策](#agents) | 42 / 20 | 62 |
 | 换个问法或选项顺序，会不会改变判断？ | [安全、鲁棒性与决策偏置](#security) | 48 / 13 | 61 |
-| 放进真实工作流，质量与速度如何取舍？ | [领域应用与部署效率](#applications) | 66 / 43 | 109 |
+| 放进真实工作流，质量与速度如何取舍？ | [领域应用与部署效率](#applications) | 67 / 45 | 112 |
 
 每篇只计入一个主分类；另有 4 篇基础背景。每类先列 Jev 直接相关，再列同类方法；组内按首次提交日期倒序排列。条目保留发表时间、作者、单位、解决问题与核心贡献；单位取自论文原文（HTML 全文或 PDF 首页），22 篇未署名单位的论文不展示该项。完整作者名单、标签与核实记录见[证据台账](docs/EVIDENCE.md)与 [BibTeX](references.bib)。
 
@@ -607,8 +607,16 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 [返回分类导航](#category-index)
 
-### Jev 直接相关 · 48
+### Jev 直接相关 · 49
 
+<a id="paper-2611-22949"></a>
+#### [Can Decision Models Replace LLMs in Real-World Contact Center Classification and Judging Tasks?](https://arxiv.org/abs/2611.22949v1) · [PDF](https://arxiv.org/pdf/2611.22949v1)
+- **📅 发表时间**：2026-11-17（v1）
+- **👥 作者**：Md Tahmid Rahman Laskar；Xue-Yong Fu；Shashi Bhushan TN
+- **🏢 单位**：Dialpad Inc.
+- **🎯 解决问题**：客服中心里哪些判断可以交给决策模型、哪些会翻车?
+- **💡 核心贡献**：零样本对比九个决策模型与十三个生成式 LLM,覆盖八个真实客服中心场景(六分类、两裁判),含 API 闭源 JEV 1.13、Gemini-Decision-1、OpenJev、Clef 及开源变体。多数决策模型在分类上能追平前沿 LLM,API 闭源模型在 API 类中单价最低;高置信预测更准,可支撑选择性路由。主要弱点是弃答——大多几乎不选「无答案」选项,构成与最强 LLM 差距的大头(Gemini-Decision-1 是例外);小模型裁判质量骤降且更受位置偏置影响。
+---
 <a id="paper-2611-20191"></a>
 #### [Do We Still Need Fine-Tuned Classifiers? Swapping Typed Decision Models into 24 ACL-Venue Papers](https://arxiv.org/abs/2611.20191v1) · [PDF](https://arxiv.org/pdf/2611.20191v1)
 - **📅 发表时间**：2026-11-15（v1）
@@ -990,8 +998,16 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🎯 解决问题**：智能体轨迹中哪些步骤是冗余的，能否自动识别？
 - **💡 核心贡献**：在检测智能体轨迹冗余步骤的基准中纳入 Jev。
 ---
-### 同类模型与方法 · 12
+### 同类模型与方法 · 13
 
+<a id="paper-2611-21995"></a>
+#### [Deciding Without Pointing: A Case Study of Whether a Decision Model Localizes the Anomalies It Detects](https://arxiv.org/abs/2611.21995v1) · [PDF](https://arxiv.org/pdf/2611.21995v1)
+- **📅 发表时间**：2026-11-16（v1）
+- **👥 作者**：Hsiang-Hung Lee
+- **🏢 单位**：Politecnico di Milano
+- **🎯 解决问题**：决策模型检测出异常时,它知道异常在哪里吗?
+- **💡 核心贡献**：单作者案例研究:决策模型判断出异常时,它知道异常在哪吗?Clef-flash(Qwen3.5-9B 后训练骨干)在工业检测上检测能力不均衡(MVTec AD 每类图像 AUROC 0.924,MVTec AD 2 仅 0.668);前者上决策头路由注意力每图像素 AUROC 仅 0.391,遮住图像 token 检测不变。骨干注意力确实指向缺陷,但换问法即低于中心先验、去掉文本上下文即低于随机;测试集上探测骨干状态确实携带位置信息。按区域提问、重训决策头或读骨干可部分恢复定位,但都不及专用少样本定位器;Clef(27B 骨干)的决策头同样给不出有用的图。
+---
 <a id="paper-2611-20335"></a>
 #### [When Should Decision Models Compare Candidates?](https://arxiv.org/abs/2611.20335v1) · [PDF](https://arxiv.org/pdf/2611.20335v1)
 - **📅 发表时间**：2026-11-16（v1）
@@ -1358,8 +1374,24 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 [返回分类导航](#category-index)
 
-### Jev 直接相关 · 40
+### Jev 直接相关 · 42
 
+<a id="paper-2611-22991"></a>
+#### [RagHarnessDebugger: Jev-Guided Agentic RAG in Contract Inference Repair Auditing](https://arxiv.org/abs/2611.22991v1) · [PDF](https://arxiv.org/pdf/2611.22991v1)
+- **📅 发表时间**：2026-11-17（v1）
+- **👥 作者**：Moriya Dechtiar；Daniel Martin Katz；Michael J. Bommarito 等（共 5 位）
+- **🏢 单位**：Harvard University；Illinois Tech - Chicago Kent College of Law；CLTDS, Bucerius Law School；Yong Pung How School of Law, Singapore Management University；CodeX - The Stanford Center for Legal Informatics, Stanford University 等（共 7 家）
+- **🎯 解决问题**：如何判断智能体 RAG 系统的自我修复是否真的有效?
+- **💡 核心贡献**：在 Jev 引导的智能体 RAG 修复框架里记录每一次修复决策并审计这份记录:轨迹是否完整、每次校验是否记在对应候选上、接受规则实际能到达哪些答案。审计层暴露出策略接受缺口——开发/复现集分别有 77%/76% 可用而未实现的修复,标注错误分析加反事实回放把「丢失的修复」追到终局决策;修订后的框架比 BM25 基线准确率高 3.6/3.7 分,甚至比全文参考分数还高 1.1/2.4 分。
+---
+<a id="paper-2611-22432"></a>
+#### [Think Once, Act Fast: Cost-Effective Recursive Self-Improvement for Decision Model Harness](https://arxiv.org/abs/2611.22432v1) · [PDF](https://arxiv.org/pdf/2611.22432v1) · [代码](https://github.com/usail-hkust/JevRSI)
+- **📅 发表时间**：2026-11-17（v1）
+- **👥 作者**：Siqi Lai；Haitao Li；Hao Liu
+- **🏢 单位**：Hong Kong University of Science and Technology (Guangzhou)；LIGHTSPEED
+- **🎯 解决问题**：如何既保住 System-1 的速度,又不丢 System-2 处理复杂任务的能力?
+- **💡 核心贡献**：把快慢思考拆到两个模型:托管 Jev 式 System-1(Jev-1.14,另评 StartLux 9B/27B)做低时延动作选择,异步 System-2 LLM 递归改进由过程、状态记忆与世界模型组成的模块化 harness,效用驱动检索按历史效用选模块。三个数据集上 JevRSI 多个设置追平或超过 LLM 智能体且成本合算;随 harness 成熟 System-2 干预递减,摊薄 System-2 开销(决策模型调用统一按 TypeSafe Jev API 计价)。
+---
 <a id="paper-2611-21478"></a>
 #### [Jetriever: Shifting Agent Memory Retrieval from Similarity to Utility](https://arxiv.org/abs/2611.21478v1) · [PDF](https://arxiv.org/pdf/2611.21478v1) · [代码](https://github.com/imlrz/Jetriever)
 - **📅 发表时间**：2026-11-16（v1）
@@ -2340,8 +2372,16 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 [返回分类导航](#category-index)
 
-### Jev 直接相关 · 66
+### Jev 直接相关 · 67
 
+<a id="paper-2611-22926"></a>
+#### [When Do Typed Decision Models Work in Transportation? Evidence from Travel Choice and Traffic Signal Control](https://arxiv.org/abs/2611.22926v1) · [PDF](https://arxiv.org/pdf/2611.22926v1)
+- **📅 发表时间**：2026-11-17（v1）
+- **👥 作者**：Hongyang Zhang；Boyuan Deng；Siyuan Feng 等（共 5 位）
+- **🏢 单位**：The Hong Kong Polytechnic University；Johns Hopkins University；Hong Kong University of Science and Technology；JD iCity, JD Technology；JD Intelligent Cities Research
+- **🎯 解决问题**：类型化决策模型在出行方式选择与交通信号控制中够用吗?
+- **💡 核心贡献**：决策模型首次系统进入交通领域:TypeSafe Jev 与 GPT-6 Luna Decisions 对比传统离散选择方法、强化学习与四个对话 LLM,覆盖 Swissmetro 出行方式选择与闭环交通信号控制。Swissmetro 上不及传统离散选择模型与最强对话基线,且随输入表示与问法大幅波动;信号控制在若干场景与成熟控制器相当,但在更难路网下降级,时延与成本明显低于对话 LLM。
+---
 <a id="paper-2611-19225"></a>
 #### [Budgeted Decision-Model-Guided Joint-Action Search for Satellite Edge Computing](https://arxiv.org/abs/2611.19225v1) · [PDF](https://arxiv.org/pdf/2611.19225v1)
 - **📅 发表时间**：2026-11-14（v1）
@@ -2869,8 +2909,24 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🎯 解决问题**：边缘服务编排能否用低延迟决策模型替代 LLM？
 - **💡 核心贡献**：将 Jev 接入边缘服务编排，测量经核验请求、准入行为和执行结果。
 ---
-### 同类模型与方法 · 43
+### 同类模型与方法 · 45
 
+<a id="paper-2611-22879"></a>
+#### [SlideJev: Order-Stable and Tissue-Grounded Jev Decisions for Whole-Slide Pathology](https://arxiv.org/abs/2611.22879v1) · [PDF](https://arxiv.org/pdf/2611.22879v1) · [代码](https://github.com/leowu-ai/SlideJev)
+- **📅 发表时间**：2026-11-17（v1）
+- **👥 作者**：Lei Wu；Jiashuai Liu；Di Zhang 等（共 12 位）
+- **🏢 单位**：Xi'an Jiaotong University；Institute of Intelligent Medicine, Chinese Academy of Medical Sciences；University of Cambridge
+- **🎯 解决问题**：如何让全切片病理 VQA 的回答跟随组织证据而非选项顺序?
+- **💡 核心贡献**：为全切片病理 VQA 构建 Jev 决策接口:每个候选答案单独打分——用冻结原语言模型头的支持与拒绝对数似然之差,并行提示、不带选项位置标签;候选条件阅读与比较门控更新视觉 token,以同一分数配合问答与成对图像监督端到端训练。三个全切片病理 VQA 基准上取得最高平均准确率,四种选项顺序下答案一致率 100%,且正确图像相对错配/无图输入的增益最大。
+---
+<a id="paper-2611-22296"></a>
+#### [SpecSearch: Towards Hardware-Aware Efficient Speculative Decoding](https://arxiv.org/abs/2611.22296v1) · [PDF](https://arxiv.org/pdf/2611.22296v1)
+- **📅 发表时间**：2026-11-17（v1）
+- **👥 作者**：Selin Yildirim；Ali Zeyrek；Deming Chen
+- **🏢 单位**：University of Illinois Urbana-Champaign
+- **🎯 解决问题**：能否不依赖现场校准,为每组负载与 GPU 直接选出解码配置?
+- **💡 核心贡献**：硬件感知搜索引擎按 workload-GPU 组合联合优化解码策略、草稿长度与精度:解析成本模型加多 GPU 校准测量;再训练一个基于 Jev 的预测器(冻结 Qwen3-4B + LoRA 适配器 + 线性修正层)在新 GPU 上免现场校准直接选出高吞吐配置。RTX 5090/H100/L40/MI300X 上,全校准 SpecSearch 平均达自回归解码 2.01 倍、vLLM 投机解码 1.36 倍吞吐;预测器保持对 SD 1.30 倍、保留全校准吞吐的 97.36%。
+---
 <a id="paper-2611-21604"></a>
 #### [FaceJev: Direct Visual Decisions for Face Forgery Detection](https://arxiv.org/abs/2611.21604v1) · [PDF](https://arxiv.org/pdf/2611.21604v1)
 - **📅 发表时间**：2026-11-16（v1）

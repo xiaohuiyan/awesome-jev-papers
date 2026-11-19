@@ -1604,5 +1604,27 @@
     "canonical_url": "https://github.com/abhishek085/mcp-decision-layer",
     "description": "Beyond Plain MCP: Do Decision Models and Code Mode Make Tool Use Cheaper and Faster? ",
     "private": false
+  },
+  {
+    "arxiv_id": "2611.22432",
+    "url": "https://github.com/usail-hkust/JevRSI",
+    "source_url": "https://arxiv.org/abs/2611.22432v1",
+    "source_location": "Abstract ('Our project is available at')",
+    "checked_on": "2026-11-19",
+    "status": "verified",
+    "canonical_url": "https://github.com/usail-hkust/JevRSI",
+    "description": "The code of JevRSI.",
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.22879",
+    "url": "https://github.com/leowu-ai/SlideJev",
+    "source_url": "https://arxiv.org/abs/2611.22879v1",
+    "source_location": "Abstract ('Our code is publicly available at')",
+    "checked_on": "2026-11-19",
+    "status": "verified",
+    "canonical_url": "https://github.com/leowu-ai/SlideJev",
+    "description": null,
+    "private": false
   }
 ]

@@ -12,9 +12,9 @@ This reading list asks a concrete question: given context and a set of options, 
 
 | Papers | Direct Jev | Related methods | Foundations | With verified code |
 | ---: | ---: | ---: | ---: | ---: |
-| **393** | 239 | 150 | 4 | 146 |
+| **400** | 243 | 153 | 4 | 148 |
 
-Updated **2026-11-18** · Main window **2025-10-16–2026-11-16** (first submission)
+Updated **2026-11-19** · Main window **2025-10-16–2026-11-17** (first submission)
 
 [Start with ten papers](#recommended-reading) · [Browse by question](#category-index) · [Foundations](#foundations) · [Data and maintenance](#reuse-and-updates)
 
@@ -51,11 +51,11 @@ Suggested path: **assess the evidence → compare capabilities → understand mo
 | Your question | Topic | Direct / related | Total |
 | --- | --- | ---: | ---: |
 | How do we train a model specifically to choose? | [Model architectures and training](#architecture) | 19 / 48 | 67 |
-| When are fast decisions good enough? | [Benchmarks and comparative evaluation](#evaluation) | 48 / 12 | 60 |
+| When are fast decisions good enough? | [Benchmarks and comparative evaluation](#evaluation) | 49 / 13 | 62 |
 | Can we trust the model's confidence? | [Calibration, reliability and selective decisions](#calibration) | 18 / 14 | 32 |
-| When should an agent search, use a tool, or delegate? | [Search, memory, tools and agent decisions](#agents) | 40 / 20 | 60 |
+| When should an agent search, use a tool, or delegate? | [Search, memory, tools and agent decisions](#agents) | 42 / 20 | 62 |
 | Can phrasing, option order, or attacks change the decision? | [Security, robustness and decision bias](#security) | 48 / 13 | 61 |
-| How do quality and speed trade off in real workflows? | [Domain applications and deployment efficiency](#applications) | 66 / 43 | 109 |
+| How do quality and speed trade off in real workflows? | [Domain applications and deployment efficiency](#applications) | 67 / 45 | 112 |
 
 Each paper has one primary category; 4 foundations are listed separately. Categories group direct Jev work before related methods, with newest first submissions first within each group. Entries keep published date, authors, affiliations, problem, and contribution; affiliations come from the papers themselves (HTML full text or PDF first page), and 22 papers that state none omit the field. Full author lists, tags, and verification records live in the [evidence ledger](docs/EVIDENCE.md) and [BibTeX](references.bib).
 
@@ -607,8 +607,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 48
+### Direct Jev · 49
 
+<a id="paper-2611-22949"></a>
+#### [Can Decision Models Replace LLMs in Real-World Contact Center Classification and Judging Tasks?](https://arxiv.org/abs/2611.22949v1) · [PDF](https://arxiv.org/pdf/2611.22949v1)
+- **📅 Published**: 2026-11-17 (v1)
+- **👥 Authors**: Md Tahmid Rahman Laskar; Xue-Yong Fu; Shashi Bhushan TN
+- **🏢 Affiliations**: Dialpad Inc.
+- **🎯 Problem**: Which contact-center decisions can decision models take over from LLMs, and where do they fail?
+- **💡 Contribution**: Compares nine decision models against thirteen generative LLMs, zero-shot, on eight real contact-center use cases (six classification, two judging), covering the API-based closed JEV 1.13 alongside Gemini-Decision-1, OpenJev, Clef and open variants. Many decision models match frontier LLMs on classification, with the API-based closed models cheapest per request among API options; confident predictions are more accurate, enabling selective routing. The dominant weakness is abstention - most rarely choose the no-answer option, which accounts for most of the gap to the strongest LLMs (Gemini-Decision-1 the exception) - and smaller models judge worse and are more position-biased.
+---
 <a id="paper-2611-20191"></a>
 #### [Do We Still Need Fine-Tuned Classifiers? Swapping Typed Decision Models into 24 ACL-Venue Papers](https://arxiv.org/abs/2611.20191v1) · [PDF](https://arxiv.org/pdf/2611.20191v1)
 - **📅 Published**: 2026-11-15 (v1)
@@ -990,8 +998,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: Which steps in an agent trajectory are redundant, and can they be detected automatically?
 - **💡 Contribution**: Includes Jev in a benchmark for detecting redundant steps in agent trajectories.
 ---
-### Related model / method · 12
+### Related model / method · 13
 
+<a id="paper-2611-21995"></a>
+#### [Deciding Without Pointing: A Case Study of Whether a Decision Model Localizes the Anomalies It Detects](https://arxiv.org/abs/2611.21995v1) · [PDF](https://arxiv.org/pdf/2611.21995v1)
+- **📅 Published**: 2026-11-16 (v1)
+- **👥 Authors**: Hsiang-Hung Lee
+- **🏢 Affiliations**: Politecnico di Milano
+- **🎯 Problem**: Does a decision model that detects an anomaly also know where it is?
+- **💡 Contribution**: A single-author case study asking whether a decision model that flags an anomaly also knows where it is. Clef-flash (post-trained Qwen3.5-9B backbone) detects unevenly on industrial inspection (per-category image AUROC 0.924 on MVTec AD, 0.668 on MVTec AD 2); on MVTec AD its decision-head routing attention yields only 0.391 mean per-image pixel AUROC and hiding image tokens leaves detection unchanged. The backbone's attention points at the defect but falls below a center prior when the question changes and below chance without textual context, while probing backbone states on the test split does carry location. Region-specific questions, head retraining or reading the backbone recover some location, none matching dedicated few-shot localizers; Clef (27B backbone) gives no useful head map either.
+---
 <a id="paper-2611-20335"></a>
 #### [When Should Decision Models Compare Candidates?](https://arxiv.org/abs/2611.20335v1) · [PDF](https://arxiv.org/pdf/2611.20335v1)
 - **📅 Published**: 2026-11-16 (v1)
@@ -1358,8 +1374,24 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 40
+### Direct Jev · 42
 
+<a id="paper-2611-22991"></a>
+#### [RagHarnessDebugger: Jev-Guided Agentic RAG in Contract Inference Repair Auditing](https://arxiv.org/abs/2611.22991v1) · [PDF](https://arxiv.org/pdf/2611.22991v1)
+- **📅 Published**: 2026-11-17 (v1)
+- **👥 Authors**: Moriya Dechtiar; Daniel Martin Katz; Michael J. Bommarito et al. (5 authors)
+- **🏢 Affiliations**: Harvard University; Illinois Tech - Chicago Kent College of Law; CLTDS, Bucerius Law School; Yong Pung How School of Law, Singapore Management University; CodeX - The Stanford Center for Legal Informatics, Stanford University +2 more
+- **🎯 Problem**: How can we tell whether an agentic RAG system's self-repairs are actually working?
+- **💡 Contribution**: Records every repair decision inside a Jev-guided agentic RAG harness for ContractNLI contract inference, then audits that record: whether each trace is intact, whether each validation is counted for the right candidate, and which answers the acceptance rule can actually reach. The audit layer exposed a policy acceptance gap of 77%/76% of available but unrealized repairs (development/replication sets), and labeled error analysis plus counterfactual replay traced missing repairs to the terminal decision. The revised harness improves accuracy over the BM25-only baseline by 3.6/3.7 points and even the full contract-access reference by 1.1/2.4.
+---
+<a id="paper-2611-22432"></a>
+#### [Think Once, Act Fast: Cost-Effective Recursive Self-Improvement for Decision Model Harness](https://arxiv.org/abs/2611.22432v1) · [PDF](https://arxiv.org/pdf/2611.22432v1) · [Code](https://github.com/usail-hkust/JevRSI)
+- **📅 Published**: 2026-11-17 (v1)
+- **👥 Authors**: Siqi Lai; Haitao Li; Hao Liu
+- **🏢 Affiliations**: Hong Kong University of Science and Technology (Guangzhou); LIGHTSPEED
+- **🎯 Problem**: How to keep System-1 speed without losing System-2 competence on complex tasks?
+- **💡 Contribution**: Splits fast and slow reasoning across two models: a hosted Jev-style System-1 (Jev-1.14; StartLux 9B/27B also evaluated) performs low-latency action selection, while an asynchronous System-2 LLM recursively improves a modular harness of procedures, state memory and world models, with utility-driven retrieval picking modules by past utility. Across three datasets JevRSI matches or surpasses LLM agents in several settings at favorable cost; System-2 interventions shrink as the harness matures, amortizing System-2 spend (all decision-model calls priced via the TypeSafe Jev API).
+---
 <a id="paper-2611-21478"></a>
 #### [Jetriever: Shifting Agent Memory Retrieval from Similarity to Utility](https://arxiv.org/abs/2611.21478v1) · [PDF](https://arxiv.org/pdf/2611.21478v1) · [Code](https://github.com/imlrz/Jetriever)
 - **📅 Published**: 2026-11-16 (v1)
@@ -2340,8 +2372,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 66
+### Direct Jev · 67
 
+<a id="paper-2611-22926"></a>
+#### [When Do Typed Decision Models Work in Transportation? Evidence from Travel Choice and Traffic Signal Control](https://arxiv.org/abs/2611.22926v1) · [PDF](https://arxiv.org/pdf/2611.22926v1)
+- **📅 Published**: 2026-11-17 (v1)
+- **👥 Authors**: Hongyang Zhang; Boyuan Deng; Siyuan Feng et al. (5 authors)
+- **🏢 Affiliations**: The Hong Kong Polytechnic University; Johns Hopkins University; Hong Kong University of Science and Technology; JD iCity, JD Technology; JD Intelligent Cities Research
+- **🎯 Problem**: Do typed decision models hold up in travel-mode choice and traffic signal control?
+- **💡 Contribution**: First systematic look at typed decision models in transportation: TypeSafe Jev and GPT-6 Luna Decisions versus conventional discrete-choice methods, reinforcement learning, and four chat LLMs on Swissmetro travel-mode choice and closed-loop traffic signal control. On Swissmetro they trail traditional discrete choice models and the strongest chat baseline, varying substantially with input representation and question framing; in signal control they are competitive with established controllers in several scenarios but degrade on harder networks, at clearly lower latency and cost than chat LLMs.
+---
 <a id="paper-2611-19225"></a>
 #### [Budgeted Decision-Model-Guided Joint-Action Search for Satellite Edge Computing](https://arxiv.org/abs/2611.19225v1) · [PDF](https://arxiv.org/pdf/2611.19225v1)
 - **📅 Published**: 2026-11-14 (v1)
@@ -2869,8 +2909,24 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: Can a low-latency decision model replace LLMs in edge service orchestration?
 - **💡 Contribution**: Integrates Jev into edge service orchestration and measures verified requests, admission behavior and execution outcomes.
 ---
-### Related model / method · 43
+### Related model / method · 45
 
+<a id="paper-2611-22879"></a>
+#### [SlideJev: Order-Stable and Tissue-Grounded Jev Decisions for Whole-Slide Pathology](https://arxiv.org/abs/2611.22879v1) · [PDF](https://arxiv.org/pdf/2611.22879v1) · [Code](https://github.com/leowu-ai/SlideJev)
+- **📅 Published**: 2026-11-17 (v1)
+- **👥 Authors**: Lei Wu; Jiashuai Liu; Di Zhang et al. (12 authors)
+- **🏢 Affiliations**: Xi'an Jiaotong University; Institute of Intelligent Medicine, Chinese Academy of Medical Sciences; University of Cambridge
+- **🎯 Problem**: How to stop whole-slide VQA answers from following option order instead of tissue evidence?
+- **💡 Contribution**: Builds a Jev decision interface for whole-slide pathology VQA: each candidate answer is scored separately, by the difference between support and rejection log-likelihoods from the original frozen language-model head, in parallel prompts without option-position labels. Candidate-conditioned reading and comparison drive gated updates to visual tokens, trained end-to-end through the same scores with question-answer and paired-image supervision. Across three whole-slide pathology VQA benchmarks it reaches the highest mean overall accuracy with 100% answer consistency over four option orders, and the largest gains from correct images over mismatched or image-free inputs.
+---
+<a id="paper-2611-22296"></a>
+#### [SpecSearch: Towards Hardware-Aware Efficient Speculative Decoding](https://arxiv.org/abs/2611.22296v1) · [PDF](https://arxiv.org/pdf/2611.22296v1)
+- **📅 Published**: 2026-11-17 (v1)
+- **👥 Authors**: Selin Yildirim; Ali Zeyrek; Deming Chen
+- **🏢 Affiliations**: University of Illinois Urbana-Champaign
+- **🎯 Problem**: Can decoding configuration be picked per workload-GPU pair without on-site calibration?
+- **💡 Contribution**: A hardware-aware search engine that jointly optimizes decoding strategy, draft length and precision per workload-GPU pair, using an analytical cost model plus calibration measurements from multiple GPUs. A Jev-based predictor - a frozen Qwen3-4B with LoRA adapters and a linear correction layer, parameter-efficiently trained on calibration data - then selects high-throughput configurations on held-out GPUs without deployment-GPU calibration. Across RTX 5090, H100, L40 and MI300X, full-calibration SpecSearch averages 2.01x autoregressive and 1.36x speculative decoding throughput under vLLM; the predictor keeps 1.30x over SD while retaining 97.36% of full-calibration throughput.
+---
 <a id="paper-2611-21604"></a>
 #### [FaceJev: Direct Visual Decisions for Face Forgery Detection](https://arxiv.org/abs/2611.21604v1) · [PDF](https://arxiv.org/pdf/2611.21604v1)
 - **📅 Published**: 2026-11-16 (v1)

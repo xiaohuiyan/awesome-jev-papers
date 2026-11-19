@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/fklzPHaIfXFPQGcsV5OUALUpIho</id>
+  <title>arXiv Query: search_query=&amp;id_list=2610.38895v1&amp;start=0&amp;max_results=10</title>
+  <updated>2026-10-31T02:49:05Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=10&amp;id_list=2610.38895v1" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>1</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2610.38895v1</id>
+    <title>FlipJev: Fast Black-Box Red Teaming Finds Universal Adversarial Suffixes for Typed Decision Models</title>
+    <updated>2026-10-28T20:53:38Z</updated>
+    <link href="https://arxiv.org/abs/2610.38895v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.38895v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Typed decision models are an emerging class of language models that make decisions instead of generating free-text responses. They answer in a single fast and cheap query and are increasingly used, including in security-sensitive tasks. However, red teaming of these models leaves two gaps: existing adaptive attacks do not use their speed, and few studies have searched for universal adversarial examples. We fill both gaps on Jev, the representative typed decision model, with a quick black-box query-based attack that calls no attacker language model. We conduct extensive experiments on 12 datasets with different data types and application scenarios. The results show that Jev resists common prompt injections: no strategy changes a correct answer in 10,240 paired tests. In contrast, our attack finds short suffixes that flip confident answers within minutes. These suffixes are universal: one suffix per dataset flips 43% of unseen documents. Because typed decision models, unlike classic NLP models, can serve many tasks, we test whether these suffixes transfer across tasks. We find that one suffix generated from one task can flip 90-100% of the samples in other tasks. We therefore believe the evaluation of typed decision models must include strict adaptive attacks to fully reveal their robustness.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-28T20:53:38Z</published>
+    <arxiv:comment>Pre-print. Code: https://github.com/SaFo-Lab/FlipJev, Webpage: https://flipjev.github.io</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Xiaogeng Liu</name>
+    </author>
+    <author>
+      <name>Xinyan Wang</name>
+    </author>
+    <author>
+      <name>Chaowei Xiao</name>
+    </author>
+  </entry>
+</feed>

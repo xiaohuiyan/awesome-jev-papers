@@ -1,5 +1,5 @@
 {
-  "screened_on": "2026-11-18",
+  "screened_on": "2026-11-19",
   "candidates": [
     {
       "arxiv_id": "2610.22276",
@@ -4528,6 +4528,86 @@
       "status": "excluded",
       "reason": "Program Distillation transfers LLM capability from System 2 into compiled System 0 student programs; the contribution is executable programs, not a decision model or interface. Jev-like decision models (SemIf-4B, Laya, 0.239 on PDBench) appear only as baselines with no hosted-Jev use - excluded under the generic dual-process rule.",
       "screened_on": "2026-11-18"
+    },
+    {
+      "arxiv_id": "2611.22991",
+      "title": "RagHarnessDebugger: Jev-Guided Agentic RAG in Contract Inference Repair Auditing",
+      "source_url": "https://arxiv.org/abs/2611.22991v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-19"
+    },
+    {
+      "arxiv_id": "2611.22949",
+      "title": "Can Decision Models Replace LLMs in Real-World Contact Center Classification and Judging Tasks?",
+      "source_url": "https://arxiv.org/abs/2611.22949v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-19"
+    },
+    {
+      "arxiv_id": "2611.22926",
+      "title": "When Do Typed Decision Models Work in Transportation? Evidence from Travel Choice and Traffic Signal Control",
+      "source_url": "https://arxiv.org/abs/2611.22926v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-19"
+    },
+    {
+      "arxiv_id": "2611.22432",
+      "title": "Think Once, Act Fast: Cost-Effective Recursive Self-Improvement for Decision Model Harness",
+      "source_url": "https://arxiv.org/abs/2611.22432v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-19"
+    },
+    {
+      "arxiv_id": "2611.22879",
+      "title": "SlideJev: Order-Stable and Tissue-Grounded Jev Decisions for Whole-Slide Pathology",
+      "source_url": "https://arxiv.org/abs/2611.22879v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-19"
+    },
+    {
+      "arxiv_id": "2611.22296",
+      "title": "SpecSearch: Towards Hardware-Aware Efficient Speculative Decoding",
+      "source_url": "https://arxiv.org/abs/2611.22296v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-19"
+    },
+    {
+      "arxiv_id": "2611.21995",
+      "title": "Deciding Without Pointing: A Case Study of Whether a Decision Model Localizes the Anomalies It Detects",
+      "source_url": "https://arxiv.org/abs/2611.21995v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-19"
+    },
+    {
+      "arxiv_id": "2611.22660",
+      "title": "Prescription for the rotational and orbital evolution of main-sequence binaries undergoing resonance locking",
+      "source_url": "https://arxiv.org/abs/2611.22660v1",
+      "status": "excluded",
+      "reason": "Stellar-binaries resonance-locking prescription (astro-ph.SR); the all:\"System One\" match is the adjacent-word artefact 'evolution of the system. One possible channel' - no Jev, System One or typed-decision content in the paper.",
+      "screened_on": "2026-11-19"
+    },
+    {
+      "arxiv_id": "2611.21895",
+      "title": "World-Grounded Reinforcement Learning for Pollution-Aware Bird Movement Modeling Using a Multi-Instance DQN Framework",
+      "source_url": "https://arxiv.org/abs/2611.21895v1",
+      "status": "excluded",
+      "reason": "Bird-movement multi-instance DQN with AQI rewards; the whole-window all:\"decision model\" match is stemming of 'ecological decision modeling' in the closing sentence - generic RL decision modeling without any typed-decision interface (no caller-supplied options or probability over choices), excluded per the documented generic decision-theory rule.",
+      "screened_on": "2026-11-19"
+    },
+    {
+      "arxiv_id": "2611.21681",
+      "title": "Remark on internal relaxation in large number qubit systems",
+      "source_url": "https://arxiv.org/abs/2611.21681v1",
+      "status": "excluded",
+      "reason": "Quantum-relaxation remark (quant-ph); the all:\"System One\" match is the adjacent-word artefact 'two parts of the system, one of which is treated as an environment' - no decision-model content.",
+      "screened_on": "2026-11-19"
     }
   ]
 }

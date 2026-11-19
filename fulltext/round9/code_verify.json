@@ -1,0 +1,163 @@
+{
+ "2611.03985v1": {
+  "repo": "AmirDehkordi/NewsAction",
+  "ok": true,
+  "private": false,
+  "description": "Pre-registered, look-ahead-free test of AI decision models on financial news and stock-price reactions (code, docs, paper; no data)",
+  "html_url": "https://github.com/AmirDehkordi/NewsAction"
+ },
+ "2611.02155v1": {
+  "repo": "agentapprove/decision-policy-rules",
+  "ok": true,
+  "private": false,
+  "description": "Decision Models as Policy Gates for Coding Agents: data, rules and harness",
+  "html_url": "https://github.com/agentapprove/decision-policy-rules"
+ },
+ "2611.01370v1": {
+  "repo": "NaiveNeuron/XDecideBench",
+  "ok": true,
+  "private": false,
+  "description": "A benchmark of typed decisions and confidence policies across languages. Code, manifests and scorer to follow.",
+  "html_url": "https://github.com/NaiveNeuron/XDecideBench"
+ },
+ "2611.00911v1": {
+  "repo": "dengzhe-hou/S1CogBench",
+  "ok": true,
+  "private": false,
+  "description": "What System One (System-1) decision models such as Jev, Laya and Intern-Decision can and cannot do on 24 cognitive experiments. Protocol-aware evaluation and reproducible task runners.",
+  "html_url": "https://github.com/dengzhe-hou/S1CogBench"
+ },
+ "2611.00496v1": {
+  "repo": "amozo-es/system-one-bias-protocol",
+  "ok": true,
+  "private": false,
+  "description": "Audit protocol for demographic bias in typed decision models (BBQ, CrowS-Pairs, SilverSpoon) \u2014 swap, replicate, read the mass",
+  "html_url": "https://github.com/amozo-es/system-one-bias-protocol"
+ },
+ "2611.00428v1": {
+  "repo": "zwang-devv/spectra-decision-audit",
+  "ok": true,
+  "private": false,
+  "description": null,
+  "html_url": "https://github.com/zwang-devv/spectra-decision-audit"
+ },
+ "2611.00359v1": {
+  "repo": "zwang-devv/humanizer-fact-audit",
+  "ok": true,
+  "private": false,
+  "description": null,
+  "html_url": "https://github.com/zwang-devv/humanizer-fact-audit"
+ },
+ "2610.42148v1": {
+  "repo": "OmniJev/flide",
+  "ok": true,
+  "private": false,
+  "description": "\ud83d\udd25\ud83d\udd25 Accelerating decision inference with exact state forking",
+  "html_url": "https://github.com/OmniJev/Flide"
+ },
+ "2610.22526v1": {
+  "repo": "sakhadib/literal-lock-in",
+  "ok": true,
+  "private": false,
+  "description": "Literal Lock-In \u2014 how test language shifts literal attraction in typed decision models on Bengali idioms. Paper, site, per-item outputs and analysis.",
+  "html_url": "https://github.com/sakhadib/literal-lock-in"
+ },
+ "2609.30454v1": {
+  "repo": "Georgakopoulos-Soares-lab/biosafety_knowledge_jev",
+  "ok": true,
+  "private": false,
+  "description": null,
+  "html_url": "https://github.com/Georgakopoulos-Soares-lab/biosafety_knowledge_jev"
+ },
+ "2611.03371v1": {
+  "repo": "mbzuai-oryx/EO-Jev",
+  "ok": true,
+  "private": false,
+  "description": "EO-Jev: Decision Model for Earth Observation. Code for training and evaluation; project page on gh-pages.",
+  "html_url": "https://github.com/mbzuai-oryx/EO-Jev"
+ },
+ "2611.02654v1": {
+  "repo": "sgstq0811/VerdictAD-Jev-AD",
+  "ok": true,
+  "private": false,
+  "description": "Jev for Anomaly Detection: Training-Free Few-Shot Industrial Anomaly Detection via Decision-Guided Refinement (VerdictAD).",
+  "html_url": "https://github.com/sgstq0811/VerdictAD-Jev-AD"
+ },
+ "2610.09896v1": {
+  "repo": "wenhuahuo/NL2Hull",
+  "ok": true,
+  "private": false,
+  "description": "Natural-language-driven constrained ship-form design with NURBS and free-form deformation (FFD).",
+  "html_url": "https://github.com/wenhuahuo/NL2Hull"
+ },
+ "2610.15501v1": {
+  "repo": "JianhuiWei7/LDM",
+  "ok": true,
+  "private": false,
+  "description": "Large Decision Models: Repurposing Large Language Models as Single-Pass Decision Makers. Fast probabilistic decisions with schema transfer and reasoning distillation.",
+  "html_url": "https://github.com/JianhuiWei7/LDM"
+ },
+ "2610.07716v2": {
+  "repo": "rlisml/jev-cascade",
+  "ok": true,
+  "private": false,
+  "description": "Let a 0.8B Jev-like prefill-only decision model perform like a 4B one: re-run only the 25% questions it is least sure about, with two flat passes, 40% of the extra cost, and 96% of the accuracy with confidence cascades.",
+  "html_url": "https://github.com/rlisml/jev-cascade"
+ },
+ "2609.37832v1": {
+  "repo": "AltSlate-Labs/certo-rules-or-reuse",
+  "ok": true,
+  "private": false,
+  "description": "Artifact release for the paper 'Can a Cacheable Decision Model Follow Rules?' \u2014 scripts, evaluation suites, and per-item predictions for the four Certo experiments.",
+  "html_url": "https://github.com/AltSlate-Labs/certo-rules-or-reuse"
+ },
+ "2609.33671v1": {
+  "repo": "moyuan10086/cascaded-guardrail-npu",
+  "ok": true,
+  "private": false,
+  "description": "COGNIT-Guard: Calibrated Standalone Direct-Decision Guardrails with Heterogeneous CPU-NPU Confidence Cascading (arXiv:2609.33671)",
+  "html_url": "https://github.com/moyuan10086/cascaded-guardrail-npu"
+ },
+ "2610.06950v2": {
+  "repo": "rlisml/decisionsteer",
+  "ok": true,
+  "private": false,
+  "description": null,
+  "html_url": "https://github.com/rlisml/decisionsteer"
+ },
+ "2610.21046v1": {
+  "repo": "OpenLAIR/PremiseCheck",
+  "ok": true,
+  "private": false,
+  "description": "PremiseCheck: efficient fact-checking of human and AI peer reviews",
+  "html_url": "https://github.com/OpenLAIR/PremiseCheck"
+ },
+ "2609.34736v1": {
+  "repo": "Indigma-Innovations/SeLMRoute",
+  "ok": true,
+  "private": false,
+  "description": "Probabilistic Semantic Evidence for Large Language Model Routing",
+  "html_url": "https://github.com/Indigma-Innovations/SeLMRoute"
+ },
+ "2611.03982v1": {
+  "repo": "geshijoker/slate",
+  "ok": true,
+  "private": false,
+  "description": "Project page for SLATE (NeurIPS 2026)",
+  "html_url": "https://github.com/geshijoker/slate"
+ },
+ "2610.23668v1": {
+  "repo": "qiaoyuan667/tuple-bench",
+  "ok": true,
+  "private": false,
+  "description": "TUPLE-Bench: paired privacy\u2013utility audits of typed decision outputs, with evaluation APIs, frozen responses and WCPQ.",
+  "html_url": "https://github.com/qiaoyuan667/tuple-bench"
+ },
+ "2610.01601v1": {
+  "repo": "guyAmit/ci-decision-models",
+  "ok": true,
+  "private": false,
+  "description": null,
+  "html_url": "https://github.com/guyAmit/ci-decision-models"
+ }
+}

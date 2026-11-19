@@ -1,0 +1,209 @@
+{
+ "2611.05827v1": {
+  "bytes": 288739,
+  "hits": {
+   "Jev": 3,
+   "JEV": 2,
+   "decision model": 18,
+   "decision models": 16,
+   "Laya": 2,
+   "github.com": 1
+  },
+  "affiliations": [],
+  "urls": [
+   "https://github.com/lililibaohang/TandemBench."
+  ],
+  "contexts": [
+   "horizon goals and option orders. 2 Related Work Decision Models. Decision-model evaluation covers both individual choices and decisions within agent workflows. JEVal and OpenDecisions assess accuracy, calibration, and inference efficiency (Duan et al., 2026; Geuter et al., 2026), while DecisionRobust and DecisionPivot exa",
+   ". Duan et al. (2026) F. Duan, J. Lin, J. Wang, J. Xiang, J. Wu, X. Zhang, H. Yan, S. Wang, and Z. Wei General decision models: benchmarking and insights beyond Jev. Note: Version 2, 12 October 2026 External Links: 2610.03935, Link Cited by: §1, §1, §2. Geuter et al. (2026) J. Geuter, A. Cheng, and D. Alvarez-Melis Releasi",
+   "on 2, 12 October 2026 External Links: 2610.03935, Link Cited by: §1, §1, §2. Geuter et al. (2026) J. Geuter, A. Cheng, and D. Alvarez-Melis Releasing the inner Jev: a simple recipe for open decision models. Note: Version 1, 12 October 2026 External Links: 2610.17205, Link Cited by: §1, §2. Kokel et al. (2025) H. Kokel, M.",
+   "2. External Links: Link, Document, ISBN 979-8-89176-251-0 Cited by: §2. Zhu et al. (2026) K. Zhu, T. Feng, X. Han, H. Wang, L. Yang, X. Tang, J. You, and H. Ji JevAgentHarness: benchmarking, deploying and training decision models that share control with LLMs. Note: Version 1, 15 October 2026 External Links: 2610.21412, Li"
+  ]
+ },
+ "2611.05702v1": {
+  "bytes": 248592,
+  "hits": {
+   "Jev": 3,
+   "decision model": 12,
+   "TypeSafe": 4,
+   "typesafe": 1,
+   "1.13": 3,
+   "github.com": 1
+  },
+  "affiliations": [],
+  "urls": [
+   "https://github.com/rudrajit1729/TACT"
+  ],
+  "contexts": [
+   "critiques each AI coder’s assignments, and the AI coder answers each critique and revises its assignments. Second, tact uses a decision model, i.e., TypeSafe’s Jev [47], a model trained to return calibrated probabilities, to answer a yes/no question with a score between 0 and 1: how likely each code is to apply to each un",
+   "of Gemini critiqued Claude, Claude critiqued GPT, and GPT critiqued Gemini, and an instance of GPT-5.6 critiqued the reconciler. In Stage 4, we used TypeSafe’s Jev 1.13 as the decision model [47]. We ran the AI analysts and the reconciler at each provider’s default reasoning mode (adaptive thinking for Claude, auto mode f",
+   "ght prompting elicits reasoning in large language models,” Advances in neural information processing systems, vol. 35, pp. 24 824–24 837, 2022. [47] TypeSafe, “Jev 1.13: Models and API reference,” TypeSafe documentation, https://docs.typesafe.ai/models, 2026, model jev-1.13.0. Accessed 2026-09-30. [48] N. McDonald, S. Sch",
+   "[TypeSafe] ignments, and the AI coder answers each critique and revises its assignments. Second, tact uses a decision model, i.e., TypeSafe’s Jev [47], a model trained to return calibrated probabilities, to answer a yes/no question with a score between 0 and",
+   "[TypeSafe] laude critiqued GPT, and GPT critiqued Gemini, and an instance of GPT-5.6 critiqued the reconciler. In Stage 4, we used TypeSafe’s Jev 1.13 as the decision model [47]. We ran the AI analysts and the reconciler at each provider’s default reasoning m",
+   "[1.13] GPT, and GPT critiqued Gemini, and an instance of GPT-5.6 critiqued the reconciler. In Stage 4, we used TypeSafe’s Jev 1.13 as the decision model [47]. We ran the AI analysts and the reconciler at each provider’s default reasoning mode (adapti",
+   "[1.13] guage models,” Advances in neural information processing systems, vol. 35, pp. 24 824–24 837, 2022. [47] TypeSafe, “Jev 1.13: Models and API reference,” TypeSafe documentation, https://docs.typesafe.ai/models, 2026, model jev-1.13.0. Accessed 2",
+   "[commercial] e other two AI coders expose. Where budgets, company policy or the need to keep data on the team’s own servers rule out commercial models from three providers, a team could draw the three AI coders from three open-weight model families run locally an",
+   "[API] tegory. Using the IDs, we retrieved each post’s text, answers, comments and revision history through the Stack Exchange API. Of the 303 posts, 256 still existed and 47 had been deleted since 2023. Because Zhang et al.’s reported frequencies co",
+   "[API] vances in neural information processing systems, vol. 35, pp. 24 824–24 837, 2022. [47] TypeSafe, “Jev 1.13: Models and API reference,” TypeSafe documentation, https://docs.typesafe.ai/models, 2026, model jev-1.13.0. Accessed 2026-09-30. [48]"
+  ]
+ },
+ "2611.05553v1": {
+  "bytes": 460041,
+  "hits": {
+   "Jev": 43,
+   "JEV": 1,
+   "System One": 1,
+   "System 1": 1,
+   "decision model": 19,
+   "decision models": 5,
+   "TypeSafe": 3,
+   "Laya": 9,
+   "1.13": 2,
+   "1.14": 2
+  },
+  "affiliations": [],
+  "urls": [],
+  "contexts": [
+   "he best of our knowledge, the first to research using DMs as human surrogates for economic modelling. The closest work to ours is Huang et al. (2026), who used Jev to make decisions inside a predator-prey simulation. DMs have also been considered for use in social sciences by Ibrahim and Zaki (2026), who found that DMs ca",
+   "ound that DMs can be useful as a first step in annotation pipelines. On DM evaluation, Asseri and Asseri (2026) used the Values Survey Module 2013 to find that Jev, one of the most popular DMs, defaults to American values. However, we expect the body of work on DMs to expand quickly as they become more entrenched in the A",
+   "ls span capability levels in standard Decision benchmarks, and we use the Artificial Analysis Decision Index to define a group of “frontier” DMs, consisting of Jev, D1 Ultra, Mammoth and Perplexity (Artificial Analysis, 2026; Kirkby et al., 2026). These four models are the four highest scoring DMs of those we test on the",
+   "uestion, asking the models to “act like a human” and exploring the impact of the system prompt for LLMs. We run these checks on the four frontier DMs (Mammoth, Jev, D1 Ultra and Perplexity) and three LLMs (Gemini Argon, GLM Flash and Sol) and find that our results are robust to these changes; full details are in Appendix",
+   "ini Argon, GLM Flash and Sol) and find that our results are robust to these changes; full details are in Appendix B.1. Turning to non-frontier DMs, Laya and AnyJev perform close to the Uniform benchmark on both Turing test and KL divergence. Other DMs such as Mercury or Luna Decisions, which are behind the DM frontier acc",
+   "in-1 distance and the Turing Test results against the Human results and a Uniform benchmark. DMs are circles and LLMs are hollow squares. The frontier DMs are: Jev, D1 Ultra, Mammoth and Perplexity. Qwen (NT) is Qwen with no thinking, and Gemini Flash (LT) is Gemini Flash with low thinking. Just as with LLMs, not all DMs",
+   "exity. Qwen (NT) is Qwen with no thinking, and Gemini Flash (LT) is Gemini Flash with low thinking. Just as with LLMs, not all DMs are equal. The frontier DMs (Jev, D1 Ultra, Mammoth and Perplexity) generally have lower Wasserstein-1 distance and higher Turing test metrics than other DMs. All DMs which have statistically",
+   "tance than the Uniform distribution are frontier DMs and frontier DMs also have a higher Turing test win rate than the baseline. As in Section 3.1, Laya and AnyJev are close to the Uniform benchmark while the remaining DMs are somewhere between the Uniform benchmark and the frontier models. The uniform baseline is a stron",
+   "tion of near 100%, in keeping with our earlier results that Laya is roughly as good as a random uniform distribution at predicting human responses. However, AnyJev does better in these experiments than in the consumption survey and economic games: it generally gives a smooth curve which often matches the human data well (",
+   "s per call and cost per 1000 calls across all experiments. Focusing only on the frontier DMs which give the most realistic representations of humans, a DM like Jev is around 10-100 times faster across experiments compared to the LLMs we test. Similarly, the cheapest frontier DM, Perplexity, is around 10-300 times cheaper",
+   "[TypeSafe] ipt lies entirely with the authors. References Almeida (2026) D. Almeida Introducing System One Models &amp; Jev. Note: TypeSafe AI BlogCompany blog post External Links: Link Cited by: §1. Andreoni (1995) J. Andreoni Cooperation in public-goods exp",
+   "[TypeSafe] ove inattention-corrected fitted parameters. A.2 Models Model Name Model Provider Cost $/M in/out Device Jev jev-1.13.0 TypeSafe 0.042 / 0.00 API Perplexity pplx-decider-v1.1-27b Perplexity 0.02 / 0.00 API Mammoth baseten-mammoth-27b Baseten 0.10 /",
+   "[1.13] the above inattention-corrected fitted parameters. A.2 Models Model Name Model Provider Cost $/M in/out Device Jev jev-1.13.0 TypeSafe 0.042 / 0.00 API Perplexity pplx-decider-v1.1-27b Perplexity 0.02 / 0.00 API Mammoth baseten-mammoth-27b Bas",
+   "[1.13] Index scores. Jev score is in fact Jev 1.14, a slightly newer version than we use. Artificial Analysis have not run Jev 1.13 on their benchmark, but TypeSafe, the creators of Jev, find little difference in score between the two models on their"
+  ]
+ },
+ "2611.05448v1": {
+  "bytes": 200889,
+  "hits": {
+   "Jev": 90,
+   "System One": 1,
+   "System 1": 1,
+   "typed decision": 11,
+   "decision model": 19,
+   "decision models": 2,
+   "TypeSafe": 2,
+   "typesafe": 1,
+   "1.13": 1,
+   "github.com": 1
+  },
+  "affiliations": [],
+  "urls": [
+   "https://github.com/eleurent/highway-env"
+  ],
+  "contexts": [
+   "Jev with Foresight: Safe Language-Guided Autonomous Driving via a Language World Model // Restore the saved color scheme preference, or // enact the browser prefer",
+   "out GitHub Submit in GitHub Why HTML? Report Issue Back to Abstract Download PDF Contents Reading mode Colour theme Abstract I Introduction II Related Work III Jev-AD III-A Overview III-B Typed decisions with Jev III-C Language world model and foresight IV Experiments IV-A Setup IV-B Command understanding IV-C Accuracy of",
+   "e Back to Abstract Download PDF Contents Reading mode Colour theme Abstract I Introduction II Related Work III Jev-AD III-A Overview III-B Typed decisions with Jev III-C Language world model and foresight IV Experiments IV-A Setup IV-B Command understanding IV-C Accuracy of the foresight IV-D Safety and speed in closed lo",
+   "liar traffic IV-G Replayed real-world traffic V Conclusion References License: arXiv.org perpetual non-exclusive license arXiv:2611.05448v1 [cs.RO] 03 Nov 2026 Jev with Foresight: Safe Language-Guided Autonomous Driving via a Language World Model Yansong Qu Jiancong Chen Samuel Labi ††thanks: The authors are with the Lyle",
+   "iving commands, but as driving agents they reason in generated text for seconds and must infer each action’s consequences implicitly from the scene. We present Jev-AD, which pairs Jev, a typed decision model that answers predefined questions with probabilities, not generated text, with a language world model that predicts",
+   "as driving agents they reason in generated text for seconds and must infer each action’s consequences implicitly from the scene. We present Jev-AD, which pairs Jev, a typed decision model that answers predefined questions with probabilities, not generated text, with a language world model that predicts for every candidate",
+   "del that predicts for every candidate action how nearby vehicles move over the next two seconds. Code turns these predictions into foreseen consequences, which Jev compares instead of inferring them from coordinates. In simulated highway merging (500 car-episodes), this foresight lowers the same decision model’s collision",
+   "mulated highway merging (500 car-episodes), this foresight lowers the same decision model’s collision rate from 26.0% to 2.4% at 0.25 seconds per decision, and Jev-AD achieves the passenger’s intent in 93% of free-form command trials. In 500 replayed real-world NGSIM episodes, foresight lowers the collision rate from 48.2",
+   "rld model, learned from this traffic, foresees 93% of dangerous actions. Project page: https://ys-qu.github.io/jev-ad-website. Index Terms: Autonomous driving, Jev, large language models, world models, natural-language commands, human–vehicle interaction, trajectory prediction. I Introduction As autonomous vehicles (AVs)",
+   "tion fixes the type of its answer (a choice among named options, a score on a scale, or yes/no), and the model returns a probability for every possible answer. Jev, released by TypeSafe AI in limited early access in September 2026, is one such model: it answers typed questions (choices, scores, and yes/no questions) with",
+   "[TypeSafe] ptions, a score on a scale, or yes/no), and the model returns a probability for every possible answer. Jev, released by TypeSafe AI in limited early access in September 2026, is one such model: it answers typed questions (choices, scores, and yes/n",
+   "[TypeSafe] ual-process approach to autonomous driving,” in Advances in Neural Information Processing Systems (NeurIPS), 2024. [10] TypeSafe AI, “Introducing system one models &amp; Jev,” https://typesafe.ai/blog/introducing-system-one-models-and-jev, 2026. [1",
+   "[1.13] command understanding, we also prompt Llama-3-8B [38] locally for the four grounding fields. Implementation. We use jev-1.13.0 through its HTTP API; a decision state has about 870 input tokens ($0.042 per million at the list price during the ex",
+   "[API] e also prompt Llama-3-8B [38] locally for the four grounding fields. Implementation. We use jev-1.13.0 through its HTTP API; a decision state has about 870 input tokens ($0.042 per million at the list price during the experiments, output free)"
+  ]
+ },
+ "2611.04510v1": {
+  "bytes": 652188,
+  "hits": {
+   "Jev": 5,
+   "JEV": 46,
+   "System 1": 3,
+   "typed decision": 1,
+   "decision model": 8,
+   "decision models": 6,
+   "TypeSafe": 6,
+   "typesafe": 1,
+   "Laya": 22,
+   "1.13": 7,
+   "huggingface.co": 3
+  },
+  "affiliations": [],
+  "urls": [
+   "https://huggingface.co/convaiinnovations/laya-multilingualAccessed",
+   "https://huggingface.co/datasets/cnamuangtoun/resume-job-description-fit"
+  ],
+  "contexts": [
+   "cient alternative to general-purpose LLMs, yet their fairness remains largely unexplored. This article presents the first systematic bias and fairness audit of JEV, a typed-decision model targeting recruitment applications. The study evaluates how explicit demographic attributes and implicit candidate cues influence scree",
+   "idity Assessment and Efficiency Comparison On JD-Fit, validity is assessed using ROC AUC (Hanley and McNeil, 1982; Fawcett, 2006), its difference Δ​AUC=AUCm−AUCJEV\\Delta\\mathrm{AUC}=\\mathrm{AUC}_{m}-\\mathrm{AUC}_{\\textnormal{JEV}} between the evaluated model mm and the JEV reference evaluator, Balanced Accuracy (Brodersen",
+   "assessed using ROC AUC (Hanley and McNeil, 1982; Fawcett, 2006), its difference Δ​AUC=AUCm−AUCJEV\\Delta\\mathrm{AUC}=\\mathrm{AUC}_{m}-\\mathrm{AUC}_{\\textnormal{JEV}} between the evaluated model mm and the JEV reference evaluator, Balanced Accuracy (Brodersen et al., 2010) and Macro-F1 at the model-specific thresholds cali",
+   "he best value per column. Table 1 shows that JEV is nearly deterministic, while the Generative Models are not. Across 7 runs on the 572 CVs in hiring-fairness, JEV’s scores agree almost perfectly: scores and rankings remain highly stable, with very few changes in labels or shortlist membership. This aligns with the low ru",
+   "reported by Tang and Zheng (2026) and Du et al. (2026). The Generative Models are less consistent, with GPT-6 Luna’s scores varying up to eight times more than JEV’s. Shortlist changes reach 18% for GPT-6.1 Sol and 30% for GPT-6 Luna, partly due to more frequent ties at the cut-off caused by their coarser scoring scales (",
+   "et al., 2025; Gao et al., 2026b; Rozado, 2026). Despite 11 out of 16 Δ\\DeltaScore effects and 13 out of 22 Δ\\DeltaRank effects being statistically significant, JEV’s biases remain small: Δ\\DeltaScore peaks at 0.370.37 points, Δ\\DeltaRank stays below 0.40.4 positions in pools of 41–65 CVs, and Excl​@​5\\mathrm{Excl@5} reach",
+   "reaches 8.2%8.2\\% against a 2.9%2.9\\% in run-to-run variation, equivalent to about 3 additional CVs across pools. Such small effects are visible also thanks to JEV’s high stability across runs. Another interesting finding is that names, rather than explicitly stated attributes, drive JEV’s remaining effects. Explicitly st",
+   "effects are visible also thanks to JEV’s high stability across runs. Another interesting finding is that names, rather than explicitly stated attributes, drive JEV’s remaining effects. Explicitly stating Asian ethnicity has negligible effect, while Asian names lower scores by 0.110.11 points relative to White names. Male,",
+   "-6.1 Sol shows statistically significant Δ\\DeltaScore or Δ\\DeltaRank effects, but this does not imply absence of bias. GPT-6 Luna’s estimates are comparable to JEV’s, yet its run-to-run variation is eight times larger as shown in Table 1. Excl​@​5\\mathrm{Excl@5} ranges from 24.524.5–50.050.0% for GPT-6 Luna and 3.73.7–14.",
+   "Rank) and exclude 11.811.8–23.5%23.5\\% of shortlisted candidates. 4.3 Validity Assessment Table 3 reports the results on the JD-Fit dataset, demonstrating that JEV’s shortlist quality is comparable to that of the Generative Models, with JEV, GPT-6 Luna, and GPT-6.1 Sol all distinguishing Fit from NotFit pairs well above c",
+   "[TypeSafe] ls, remains unexplored. To address this gap, this article presents a comparative evaluation of two Decision Models, JEV TypeSafe AI (2026) and Laya (Convai Innovations, 2026), and two Generative Models, specifically GPT-6 Luna and GPT-6.1 Sol. Usin",
+   "[TypeSafe] Models, Decision Models directly return probability distributions over predefined options. Recent systems include JEV (TypeSafe AI, 2026) and the open alternative Laya (Convai Innovations, 2026). On public benchmarks, JEV performs strongly, outper",
+   "[1.13] ) Disag@5 (%) Laya 1.000 0.00 0.00 0.0 0.0 GPT-6 Luna 0.942 4.11 4.46 5.6 29.6 GPT-6.1 Sol 0.987 1.43 1.95 1.7 18.3 JEV 1.13.0 0.999 0.50 0.67 0.7 2.9 Table 1: Run-to-run variations on hiring-fairness CVs over 7 runs. Bold marks the best value",
+   "[1.13] run, making repeated evaluations necessary to distinguish bias from noise. 4.2 Bias Analysis Attribute Signal Group JEV 1.13.0 Laya GPT-6 Luna GPT-6.1 Sol Δ\\DeltaScore Δ\\DeltaRank Excl@5 Δ\\DeltaScore Δ\\DeltaRank Excl@5 Δ\\DeltaScore Δ\\DeltaRank"
+  ]
+ },
+ "2611.04480v1": {
+  "bytes": 641738,
+  "hits": {
+   "Jev": 15,
+   "decision model": 3,
+   "decision models": 1,
+   "TypeSafe": 5,
+   "huggingface.co": 1
+  },
+  "affiliations": [],
+  "urls": [
+   "https://huggingface.co/datasets/distil-whisper/rev16"
+  ],
+  "contexts": [
+   "ng mode Colour theme Abstract 1 Introduction 2 Related Work Long-Audio Understanding. Answer Probabilities as Scores. Re-Listening Audio Models. 3 ReListen 3.1 Jev-Style Scan by the Reader 3.2 Answering Native Questions Event Intervals. 3.3 Extension to Occurrence Questions 4 Experimental Setup 4.1 Benchmarks LongAudioSpa",
+   "ions about the Whole Recording 5.7 Occurrence Questions 6 Conclusion References A Benchmark Examples A.1 LongAudioSpan A.2 VoiceGiraffe A.3 LAT-Bench B Prompts Jev-Style Scan. Presence. Routing. Answering. C Further Details for Reproduction Baselines. Evaluation Details. Cost. D Comparisons with Closely Related Systems LA",
+   "The Full Recording. Results by Dimension. Transcript Systems. F Questions about the Whole Recording G VoiceGiraffe and LAT-Bench in Detail H Robustness of the Jev-Style Scan A Second Reader. A Contrastive Audio-Text Model as Scanner. A Dense Text Retriever. I Scores along Recordings J Reading and Listening The Reader as",
+   "be trained for this behavior. We propose ReListen, a training-free method in which a frozen audio language model finds its own evidence before answering. In a Jev-style scan, the model scores each 20-second window by the probability that it helps answer the question, and it then answers from the highest-scoring minute. T",
+   "by the model’s confidence that it helps to answer the question. The same model then listens again to the highest-scoring minute and answers. This scoring is a Jev-style scan (TypeSafe AI, 2026): each window receives a yes/no decision read as a probability rather than generated text. The scan examines the whole recording,",
+   "eta}(\\text{no})ℓi\\ell_{i}kkpjp_{j}πj(k)\\pi_{j}^{(k)}k=2k=2t⋆t^{\\star}t⋆t^{\\star} Figure 2: Architecture of ReListen. One frozen reader scores every window in a Jev-style scan (1). It reads each yes/no decision from one forward pass as a probability, and it then answers from the selected audio (3). The native-question path",
+   "ankers score query-document pairs this way (Nogueira et al., 2020), VQAScore scores image-text alignment (Lin et al., 2024), and recent decision models such as Jev (TypeSafe AI, 2026) answer typed questions with probabilities instead of text. Closest to our scan is the localization probe of video question answering (Yu et",
+   "asks the same kind of yes/no question about video frames. Its localizer, however, is a separately trained module on clips of 12 to 76 seconds. In contrast, our Jev-style scan is the frozen answering model itself, applied to recordings in which one minute is at most a tenth of the audio. Yes/no probes of audio language mod",
+   "The reader scores every short window of the recording by whether the window helps to answer the question. It then answers from the highest-scoring windows. The Jev-style scan and native-question answering use no training. We also study a supervised occurrence extension with acoustic detectors and calibration on annotated",
+   "use no training. We also study a supervised occurrence extension with acoustic detectors and calibration on annotated development recordings (Section 3.3). 3.1 Jev-Style Scan by the Reader We first cut the recording into windows w1,…,wnw_{1},\\dots,w_{n} of length τ\\tau, with a hop δ&lt;τ\\delta&lt;\\tau between consecutive",
+   "[TypeSafe] uestion. The same model then listens again to the highest-scoring minute and answers. This scoring is a Jev-style scan (TypeSafe AI, 2026): each window receives a yes/no decision read as a probability rather than generated text. The scan examines t",
+   "[TypeSafe] ogueira et al., 2020), VQAScore scores image-text alignment (Lin et al., 2024), and recent decision models such as Jev (TypeSafe AI, 2026) answer typed questions with probabilities instead of text. Closest to our scan is the localization probe of v"
+  ]
+ },
+ "2611.05396v1": {
+  "bytes": 374490,
+  "hits": {
+   "Jev": 2,
+   "System One": 12,
+   "decision model": 3,
+   "TypeSafe": 4,
+   "Kev": 7,
+   "github.com": 1,
+   "huggingface.co": 1
+  },
+  "affiliations": [],
+  "urls": [
+   "https://github.com/Yibo-Wen/Pev",
+   "https://huggingface.co/Yibooooo/Pev"
+  ],
+  "contexts": [
+   "say-relevant probabilities. We approach protein evolution from the System One perspective: learning to return a structured decision in a single parallel query. Jev (TypeSafe AI, 2026) exemplifies this approach by mapping structured state to typed outputs with calibrated probabilities. Protein engineering offers a natural",
+   "W. Thornton. 2016. Epistasis in protein evolution. Protein Science, 25(7):1204–1218. TypeSafe AI (2026) TypeSafe AI. 2026. Introducing System One models &amp; Jev. Blog post. Wang et al. (2026) Ziqing Wang, Yibo Wen, William Pattie, Xiao Luo, Weimin Wu, Jerry Yao-Chieh Hu, Abhishek Pandey, Han Liu, and Kaize Ding. 2026.",
+   "[TypeSafe] in evolution from the System One perspective: learning to return a structured decision in a single parallel query. Jev (TypeSafe AI, 2026) exemplifies this approach by mapping structured state to typed outputs with calibrated probabilities. Protein",
+   "[TypeSafe] n (2016) Tyler N. Starr and Joseph W. Thornton. 2016. Epistasis in protein evolution. Protein Science, 25(7):1204–1218. TypeSafe AI (2026) TypeSafe AI. 2026. Introducing System One models &amp; Jev. Blog post. Wang et al. (2026) Ziqing Wang, Yibo W",
+   "[commercial] peptide binding CC BY 4.0 AlphaSeq (Ab-14 releases) antibody binding CC BY-NC-SA 4.0 AbAgym antibody–antigen scans non-commercial FLAb antibody mutation series per-study terms GB1 four-site closed-loop landscape only CC BY 4.0 Sources. Pev uses nine",
+   "[System One] A System One Approach to General Protein Evolution // Restore the saved color scheme preference, or // enact the browser preference",
+   "[System One] xt and coverage in biological foundation models. Landscapes for closed-loop evaluation. Calibration and proper scoring. System One models. B Data, Splits and Licenses Sources. Splits. Held-out lineages. C Formal Definitions Beneficial edit. Benchmark"
+  ]
+ }
+}

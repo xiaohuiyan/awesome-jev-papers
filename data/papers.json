@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "updated_on": "2026-11-18",
+  "updated_on": "2026-11-19",
   "window": {
     "start": "2025-10-16",
-    "end": "2026-11-16",
+    "end": "2026-11-17",
     "basis": "first submission; reviewed version and verification date recorded per paper"
   },
   "categories": {
@@ -49,6 +49,541 @@
     "2610.04345"
   ],
   "papers": [
+    {
+      "arxiv_id": "2611.22991",
+      "title": "RagHarnessDebugger: Jev-Guided Agentic RAG in Contract Inference Repair Auditing",
+      "authors": [
+        "Moriya Dechtiar",
+        "Daniel Martin Katz",
+        "Michael J. Bommarito",
+        "Hongming Wang",
+        "Sylvain Jaume"
+      ],
+      "affiliations": [
+        "Harvard University",
+        "Illinois Tech - Chicago Kent College of Law",
+        "CLTDS, Bucerius Law School",
+        "Yong Pung How School of Law, Singapore Management University",
+        "CodeX - The Stanford Center for Legal Informatics, Stanford University",
+        "Bommarito Consulting, LLC",
+        "Massachusetts Institute of Technology"
+      ],
+      "first_submitted": "2026-11-17",
+      "updated": "2026-11-17",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.22991",
+      "reviewed_url": "https://arxiv.org/abs/2611.22991v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.22991v1",
+      "arxiv_categories": [
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "agents",
+      "relation_level": "direct",
+      "tags": [
+        "agents",
+        "retrieval",
+        "judging",
+        "efficiency"
+      ],
+      "summary": {
+        "en": "Records every repair decision inside a Jev-guided agentic RAG harness for ContractNLI contract inference, then audits that record: whether each trace is intact, whether each validation is counted for the right candidate, and which answers the acceptance rule can actually reach. The audit layer exposed a policy acceptance gap of 77%/76% of available but unrealized repairs (development/replication sets), and labeled error analysis plus counterfactual replay traced missing repairs to the terminal decision. The revised harness improves accuracy over the BM25-only baseline by 3.6/3.7 points and even the full contract-access reference by 1.1/2.4.",
+        "zh": "在 Jev 引导的智能体 RAG 修复框架里记录每一次修复决策并审计这份记录:轨迹是否完整、每次校验是否记在对应候选上、接受规则实际能到达哪些答案。审计层暴露出策略接受缺口——开发/复现集分别有 77%/76% 可用而未实现的修复,标注错误分析加反事实回放把「丢失的修复」追到终局决策;修订后的框架比 BM25 基线准确率高 3.6/3.7 分,甚至比全文参考分数还高 1.1/2.4 分。"
+      },
+      "problem": {
+        "en": "How can we tell whether an agentic RAG system's self-repairs are actually working?",
+        "zh": "如何判断智能体 RAG 系统的自我修复是否真的有效?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "records every repair decision in a Jev-guided harness",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.22991v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "improved accuracy over the initial BM25-only baseline by 3.6 points",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.22991v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-19",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.22991v1",
+      "source_abstract_sha256": "0c01a2ee2f21c6050de4db18838bd58c731f20994a5845a7c00cd7f8be47d981"
+    },
+    {
+      "arxiv_id": "2611.22949",
+      "title": "Can Decision Models Replace LLMs in Real-World Contact Center Classification and Judging Tasks?",
+      "authors": [
+        "Md Tahmid Rahman Laskar",
+        "Xue-Yong Fu",
+        "Shashi Bhushan TN"
+      ],
+      "affiliations": [
+        "Dialpad Inc."
+      ],
+      "first_submitted": "2026-11-17",
+      "updated": "2026-11-17",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.22949",
+      "reviewed_url": "https://arxiv.org/abs/2611.22949v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.22949v1",
+      "arxiv_categories": [
+        "cs.CL"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "evaluation",
+      "relation_level": "direct",
+      "tags": [
+        "evaluation",
+        "benchmark",
+        "abstention",
+        "efficiency"
+      ],
+      "summary": {
+        "en": "Compares nine decision models against thirteen generative LLMs, zero-shot, on eight real contact-center use cases (six classification, two judging), covering the API-based closed JEV 1.13 alongside Gemini-Decision-1, OpenJev, Clef and open variants. Many decision models match frontier LLMs on classification, with the API-based closed models cheapest per request among API options; confident predictions are more accurate, enabling selective routing. The dominant weakness is abstention - most rarely choose the no-answer option, which accounts for most of the gap to the strongest LLMs (Gemini-Decision-1 the exception) - and smaller models judge worse and are more position-biased.",
+        "zh": "零样本对比九个决策模型与十三个生成式 LLM,覆盖八个真实客服中心场景(六分类、两裁判),含 API 闭源 JEV 1.13、Gemini-Decision-1、OpenJev、Clef 及开源变体。多数决策模型在分类上能追平前沿 LLM,API 闭源模型在 API 类中单价最低;高置信预测更准,可支撑选择性路由。主要弱点是弃答——大多几乎不选「无答案」选项,构成与最强 LLM 差距的大头(Gemini-Decision-1 是例外);小模型裁判质量骤降且更受位置偏置影响。"
+      },
+      "problem": {
+        "en": "Which contact-center decisions can decision models take over from LLMs, and where do they fail?",
+        "zh": "客服中心里哪些判断可以交给决策模型、哪些会翻车?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "the API-based closed JEV 1.13 (TypeSafe AI, 2026)",
+          "location": "Section 4 (Experimental Setup, Models)",
+          "source_url": "https://arxiv.org/html/2611.22949v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "compare nine decision models against thirteen generative LLMs",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.22949v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-19",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.22949v1",
+      "source_abstract_sha256": "9365a04225c772e64a19ae331f01afe8765f618d145f8f0b6434881e62ec7d68"
+    },
+    {
+      "arxiv_id": "2611.22926",
+      "title": "When Do Typed Decision Models Work in Transportation? Evidence from Travel Choice and Traffic Signal Control",
+      "authors": [
+        "Hongyang Zhang",
+        "Boyuan Deng",
+        "Siyuan Feng",
+        "Kai Chen",
+        "Junbo Zhang"
+      ],
+      "affiliations": [
+        "The Hong Kong Polytechnic University",
+        "Johns Hopkins University",
+        "Hong Kong University of Science and Technology",
+        "JD iCity, JD Technology",
+        "JD Intelligent Cities Research"
+      ],
+      "first_submitted": "2026-11-17",
+      "updated": "2026-11-17",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.22926",
+      "reviewed_url": "https://arxiv.org/abs/2611.22926v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.22926v1",
+      "arxiv_categories": [
+        "cs.CL"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "direct",
+      "tags": [
+        "applications",
+        "efficiency",
+        "evaluation",
+        "robustness"
+      ],
+      "summary": {
+        "en": "First systematic look at typed decision models in transportation: TypeSafe Jev and GPT-6 Luna Decisions versus conventional discrete-choice methods, reinforcement learning, and four chat LLMs on Swissmetro travel-mode choice and closed-loop traffic signal control. On Swissmetro they trail traditional discrete choice models and the strongest chat baseline, varying substantially with input representation and question framing; in signal control they are competitive with established controllers in several scenarios but degrade on harder networks, at clearly lower latency and cost than chat LLMs.",
+        "zh": "决策模型首次系统进入交通领域:TypeSafe Jev 与 GPT-6 Luna Decisions 对比传统离散选择方法、强化学习与四个对话 LLM,覆盖 Swissmetro 出行方式选择与闭环交通信号控制。Swissmetro 上不及传统离散选择模型与最强对话基线,且随输入表示与问法大幅波动;信号控制在若干场景与成熟控制器相当,但在更难路网下降级,时延与成本明显低于对话 LLM。"
+      },
+      "problem": {
+        "en": "Do typed decision models hold up in travel-mode choice and traffic signal control?",
+        "zh": "类型化决策模型在出行方式选择与交通信号控制中够用吗?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "We systematically evaluate TypeSafe Jev and GPT-6 Luna Decisions",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.22926v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "demonstrate competitive performance against established controllers",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.22926v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-19",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.22926v1",
+      "source_abstract_sha256": "0b0598fa7112fa313ec9d58ad8d3eec96ede2af5029d2c2585ff4557df29b856"
+    },
+    {
+      "arxiv_id": "2611.22879",
+      "title": "SlideJev: Order-Stable and Tissue-Grounded Jev Decisions for Whole-Slide Pathology",
+      "authors": [
+        "Lei Wu",
+        "Jiashuai Liu",
+        "Di Zhang",
+        "Chunze Yang",
+        "Jiusong Ge",
+        "Junbo Lu",
+        "Yongqi Liang",
+        "Wenjie Zhao",
+        "Ni Zhang",
+        "Chen Li",
+        "Zeyu Gao",
+        "Qidong Liu"
+      ],
+      "affiliations": [
+        "Xi'an Jiaotong University",
+        "Institute of Intelligent Medicine, Chinese Academy of Medical Sciences",
+        "University of Cambridge"
+      ],
+      "first_submitted": "2026-11-17",
+      "updated": "2026-11-17",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.22879",
+      "reviewed_url": "https://arxiv.org/abs/2611.22879v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.22879v1",
+      "arxiv_categories": [
+        "cs.CV"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "related",
+      "tags": [
+        "applications",
+        "medical",
+        "multimodal",
+        "option-sensitivity"
+      ],
+      "summary": {
+        "en": "Builds a Jev decision interface for whole-slide pathology VQA: each candidate answer is scored separately, by the difference between support and rejection log-likelihoods from the original frozen language-model head, in parallel prompts without option-position labels. Candidate-conditioned reading and comparison drive gated updates to visual tokens, trained end-to-end through the same scores with question-answer and paired-image supervision. Across three whole-slide pathology VQA benchmarks it reaches the highest mean overall accuracy with 100% answer consistency over four option orders, and the largest gains from correct images over mismatched or image-free inputs.",
+        "zh": "为全切片病理 VQA 构建 Jev 决策接口:每个候选答案单独打分——用冻结原语言模型头的支持与拒绝对数似然之差,并行提示、不带选项位置标签;候选条件阅读与比较门控更新视觉 token,以同一分数配合问答与成对图像监督端到端训练。三个全切片病理 VQA 基准上取得最高平均准确率,四种选项顺序下答案一致率 100%,且正确图像相对错配/无图输入的增益最大。"
+      },
+      "problem": {
+        "en": "How to stop whole-slide VQA answers from following option order instead of tissue evidence?",
+        "zh": "如何让全切片病理 VQA 的回答跟随组织证据而非选项顺序?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "enabling order-stable selection through Jev",
+          "location": "Section 3 (Method)",
+          "source_url": "https://arxiv.org/html/2611.22879v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "the highest mean overall accuracy and 100% answer consistency",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.22879v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-19",
+      "code": [
+        {
+          "url": "https://github.com/leowu-ai/SlideJev",
+          "source_url": "https://arxiv.org/abs/2611.22879v1",
+          "source_location": "Abstract ('Our code is publicly available at')",
+          "verified_on": "2026-11-19",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.22879v1",
+      "source_abstract_sha256": "49afad30bc474ce9b19bb1d690558d1b7977def8c85020880841750e995d7224"
+    },
+    {
+      "arxiv_id": "2611.22432",
+      "title": "Think Once, Act Fast: Cost-Effective Recursive Self-Improvement for Decision Model Harness",
+      "authors": [
+        "Siqi Lai",
+        "Haitao Li",
+        "Hao Liu"
+      ],
+      "affiliations": [
+        "Hong Kong University of Science and Technology (Guangzhou)",
+        "LIGHTSPEED"
+      ],
+      "first_submitted": "2026-11-17",
+      "updated": "2026-11-17",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.22432",
+      "reviewed_url": "https://arxiv.org/abs/2611.22432v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.22432v1",
+      "arxiv_categories": [
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "agents",
+      "relation_level": "direct",
+      "tags": [
+        "agents",
+        "efficiency",
+        "memory",
+        "adaptive-reasoning"
+      ],
+      "summary": {
+        "en": "Splits fast and slow reasoning across two models: a hosted Jev-style System-1 (Jev-1.14; StartLux 9B/27B also evaluated) performs low-latency action selection, while an asynchronous System-2 LLM recursively improves a modular harness of procedures, state memory and world models, with utility-driven retrieval picking modules by past utility. Across three datasets JevRSI matches or surpasses LLM agents in several settings at favorable cost; System-2 interventions shrink as the harness matures, amortizing System-2 spend (all decision-model calls priced via the TypeSafe Jev API).",
+        "zh": "把快慢思考拆到两个模型:托管 Jev 式 System-1(Jev-1.14,另评 StartLux 9B/27B)做低时延动作选择,异步 System-2 LLM 递归改进由过程、状态记忆与世界模型组成的模块化 harness,效用驱动检索按历史效用选模块。三个数据集上 JevRSI 多个设置追平或超过 LLM 智能体且成本合算;随 harness 成熟 System-2 干预递减,摊薄 System-2 开销(决策模型调用统一按 TypeSafe Jev API 计价)。"
+      },
+      "problem": {
+        "en": "How to keep System-1 speed without losing System-2 competence on complex tasks?",
+        "zh": "如何既保住 System-1 的速度,又不丢 System-2 处理复杂任务的能力?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "The decision models are Jev-1.14 (TypeSafe AI, 2026) and StartLux",
+          "location": "Section 4.1 (Experiment Settings)",
+          "source_url": "https://arxiv.org/html/2611.22432v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "consistently improves decision quality, matching or surpassing LLM agents",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.22432v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-19",
+      "code": [
+        {
+          "url": "https://github.com/usail-hkust/JevRSI",
+          "source_url": "https://arxiv.org/abs/2611.22432v1",
+          "source_location": "Abstract ('Our project is available at')",
+          "verified_on": "2026-11-19",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.22432v1",
+      "source_abstract_sha256": "fbcd2ee014a5dcbc1cf1f3e3d41968deeccf416ea9889faf108f6774afa4922f"
+    },
+    {
+      "arxiv_id": "2611.22296",
+      "title": "SpecSearch: Towards Hardware-Aware Efficient Speculative Decoding",
+      "authors": [
+        "Selin Yildirim",
+        "Ali Zeyrek",
+        "Deming Chen"
+      ],
+      "affiliations": [
+        "University of Illinois Urbana-Champaign"
+      ],
+      "first_submitted": "2026-11-17",
+      "updated": "2026-11-17",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.22296",
+      "reviewed_url": "https://arxiv.org/abs/2611.22296v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.22296v1",
+      "arxiv_categories": [
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "related",
+      "tags": [
+        "applications",
+        "efficiency",
+        "training"
+      ],
+      "summary": {
+        "en": "A hardware-aware search engine that jointly optimizes decoding strategy, draft length and precision per workload-GPU pair, using an analytical cost model plus calibration measurements from multiple GPUs. A Jev-based predictor - a frozen Qwen3-4B with LoRA adapters and a linear correction layer, parameter-efficiently trained on calibration data - then selects high-throughput configurations on held-out GPUs without deployment-GPU calibration. Across RTX 5090, H100, L40 and MI300X, full-calibration SpecSearch averages 2.01x autoregressive and 1.36x speculative decoding throughput under vLLM; the predictor keeps 1.30x over SD while retaining 97.36% of full-calibration throughput.",
+        "zh": "硬件感知搜索引擎按 workload-GPU 组合联合优化解码策略、草稿长度与精度:解析成本模型加多 GPU 校准测量;再训练一个基于 Jev 的预测器(冻结 Qwen3-4B + LoRA 适配器 + 线性修正层)在新 GPU 上免现场校准直接选出高吞吐配置。RTX 5090/H100/L40/MI300X 上,全校准 SpecSearch 平均达自回归解码 2.01 倍、vLLM 投机解码 1.36 倍吞吐;预测器保持对 SD 1.30 倍、保留全校准吞吐的 97.36%。"
+      },
+      "problem": {
+        "en": "Can decoding configuration be picked per workload-GPU pair without on-site calibration?",
+        "zh": "能否不依赖现场校准,为每组负载与 GPU 直接选出解码配置?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "a Jev-based predictor learns to select high-throughput decoding configurations",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.22296v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "eliminating the need for held-out GPU calibration",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.22296v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-19",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.22296v1",
+      "source_abstract_sha256": "132928e302893fbff18d167aa81cebd5f0d7d81d44aa3247348e6ea7eccb6898"
+    },
+    {
+      "arxiv_id": "2611.21995",
+      "title": "Deciding Without Pointing: A Case Study of Whether a Decision Model Localizes the Anomalies It Detects",
+      "authors": [
+        "Hsiang-Hung Lee"
+      ],
+      "affiliations": [
+        "Politecnico di Milano"
+      ],
+      "first_submitted": "2026-11-16",
+      "updated": "2026-11-16",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.21995",
+      "reviewed_url": "https://arxiv.org/abs/2611.21995v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.21995v1",
+      "arxiv_categories": [
+        "cs.CV"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "evaluation",
+      "relation_level": "related",
+      "tags": [
+        "evaluation",
+        "multimodal",
+        "readout"
+      ],
+      "summary": {
+        "en": "A single-author case study asking whether a decision model that flags an anomaly also knows where it is. Clef-flash (post-trained Qwen3.5-9B backbone) detects unevenly on industrial inspection (per-category image AUROC 0.924 on MVTec AD, 0.668 on MVTec AD 2); on MVTec AD its decision-head routing attention yields only 0.391 mean per-image pixel AUROC and hiding image tokens leaves detection unchanged. The backbone's attention points at the defect but falls below a center prior when the question changes and below chance without textual context, while probing backbone states on the test split does carry location. Region-specific questions, head retraining or reading the backbone recover some location, none matching dedicated few-shot localizers; Clef (27B backbone) gives no useful head map either.",
+        "zh": "单作者案例研究:决策模型判断出异常时,它知道异常在哪吗?Clef-flash(Qwen3.5-9B 后训练骨干)在工业检测上检测能力不均衡(MVTec AD 每类图像 AUROC 0.924,MVTec AD 2 仅 0.668);前者上决策头路由注意力每图像素 AUROC 仅 0.391,遮住图像 token 检测不变。骨干注意力确实指向缺陷,但换问法即低于中心先验、去掉文本上下文即低于随机;测试集上探测骨干状态确实携带位置信息。按区域提问、重训决策头或读骨干可部分恢复定位,但都不及专用少样本定位器;Clef(27B 骨干)的决策头同样给不出有用的图。"
+      },
+      "problem": {
+        "en": "Does a decision model that detects an anomaly also know where it is?",
+        "zh": "决策模型检测出异常时,它知道异常在哪里吗?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "answer a typed question about an image with a probability per option",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.21995v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "hiding the image tokens from it leaves detection unchanged",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.21995v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-19",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.21995v1",
+      "source_abstract_sha256": "8e8a550d794c97ebb55663e25af9df2c695e26d10259307c82bfb5629f0ca75f"
+    },
     {
       "arxiv_id": "2611.21604",
       "title": "FaceJev: Direct Visual Decisions for Face Forgery Detection",

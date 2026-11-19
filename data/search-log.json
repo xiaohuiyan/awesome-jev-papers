@@ -1491,6 +1491,132 @@
       "round": 18,
       "query": "/recent listings (skip/show=100 paging to each category's end) for the 37 categories carrying catalogue papers - announcements spanning first submissions through 11-18 at run time; grep for fused-name Jev compounds and standing tokens (5,812 entries)",
       "count": 45
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 19,
+      "query": "all:\"language model\" AND submittedDate:[202611170000 TO 202611192359] sanity probe (50 records; published dates present: 11-17 only at run time, Thursday 01:42 UTC)",
+      "count": 50
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 19,
+      "query": "all:\"Jev\" AND submittedDate:[202611170000 TO 202611192359]",
+      "count": 5
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 19,
+      "query": "all:\"System One\" AND submittedDate:[202611170000 TO 202611192359]",
+      "count": 1
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 19,
+      "query": "all:\"typed decision\" AND submittedDate:[202611170000 TO 202611192359]",
+      "count": 1
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 19,
+      "query": "all:\"decision model\" AND submittedDate:[202611170000 TO 202611192359]",
+      "count": 3
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 19,
+      "query": "all:MedJev AND submittedDate:[202611170000 TO 202611192359]",
+      "count": 0
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 19,
+      "query": "all:\"System-One\" AND submittedDate:[202611170000 TO 202611192359]",
+      "count": 1
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 19,
+      "query": "all:\"System 1\" AND submittedDate:[202611170000 TO 202611192359]",
+      "count": 1
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 19,
+      "query": "all:\"decision models\" AND submittedDate:[202611170000 TO 202611192359]",
+      "count": 3
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 19,
+      "query": "all:JevBench AND submittedDate:[202611170000 TO 202611192359]",
+      "count": 0
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 19,
+      "query": "all:\"Jev\" AND submittedDate:[202609150000 TO 202611192359] (whole-window standing re-run; 248 total, newest 200 fetched)",
+      "count": 200
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 19,
+      "query": "all:\"System One\" AND submittedDate:[202609150000 TO 202611192359] (whole-window standing re-run)",
+      "count": 112
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 19,
+      "query": "all:\"typed decision\" AND submittedDate:[202609150000 TO 202611192359] (whole-window standing re-run)",
+      "count": 81
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 19,
+      "query": "all:\"decision model\" AND submittedDate:[202609150000 TO 202611192359] (whole-window standing re-run; 256 total, newest 200 fetched)",
+      "count": 200
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 19,
+      "query": "all:MedJev AND submittedDate:[202609150000 TO 202611192359] (whole-window variant re-run)",
+      "count": 2
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 19,
+      "query": "all:\"System-One\" AND submittedDate:[202609150000 TO 202611192359] (whole-window variant re-run)",
+      "count": 112
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 19,
+      "query": "all:\"System 1\" AND submittedDate:[202609150000 TO 202611192359] (whole-window variant re-run)",
+      "count": 62
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 19,
+      "query": "all:\"decision models\" AND submittedDate:[202609150000 TO 202611192359] (whole-window variant re-run; 257 total, newest 100 fetched)",
+      "count": 100
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 19,
+      "query": "all:JevBench AND submittedDate:[202609150000 TO 202611192359] (whole-window variant re-run)",
+      "count": 8
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 19,
+      "query": "id_list=10-candidate metadata fetch (the 10 pool records outside the screening ledger)",
+      "count": 10
+    },
+    {
+      "engine": "arxiv-listing-page",
+      "round": 19,
+      "query": "/recent listings (skip/show=100 paging to each category's end) for the 37 categories carrying catalogue papers - announcements spanning first submissions through 11-17 at run time; grep for fused-name Jev compounds and standing tokens (5,184 entries)",
+      "count": 41
     }
   ],
   "web_discovery_queries": [
@@ -2340,6 +2466,54 @@
       "query": "https://jevdaily.com/issues/2026-11-16, /2026-11-17 and /2026-11-18 (direct fetch)",
       "purpose": "aggregator daily issues",
       "result": "all three still 404 at run time (issues not yet published); to re-check next round"
+    },
+    {
+      "round": 19,
+      "query": "site:mp.weixin.qq.com Jev 决策模型 2026年11月 (web search)",
+      "purpose": "WeChat leads",
+      "result": "no dated November hits (WeChat indexing limitation); ecosystem items unchanged from round 15; no new paper leads"
+    },
+    {
+      "round": 19,
+      "query": "site:zhihu.com Jev 决策模型 System One 2026年11月 (web search)",
+      "purpose": "Zhihu leads",
+      "result": "no new columns beyond round 17's SO-Arena explainer; remaining items are the known Sept-Oct explainers; no new paper leads"
+    },
+    {
+      "round": 19,
+      "query": "site:weibo.com Jev 决策模型 论文 (web search)",
+      "purpose": "Weibo leads",
+      "result": "ttarticle explainers and funding news only; no new paper leads"
+    },
+    {
+      "round": 19,
+      "query": "Jev decision model arxiv new paper November 18 19 2026 (web search)",
+      "purpose": "X/Twitter leads (cross-check)",
+      "result": "only already-catalogued work surfaced: LLM-as-Jev (2610.02076), General Decision Models (2610.03935), Releasing the Inner Jev (2610.17205), Replacing LLMs with Jev Decision Models (2609.22753), Typed Decision Models early audit (2609.32160); no new IDs"
+    },
+    {
+      "round": 19,
+      "query": "Sarvam Prism OR \"Intern-Decision\" OR \"书生·明决\" OR \"Gemini Decisions\" arxiv technical report decision model November 2026 (web search)",
+      "purpose": "watch-lead follow-up",
+      "result": "standing leads unchanged (Prism blog + open weights, 71.8 at 44 ms per vendor coverage; 书生·明决/Intern-Decision and Gemini Decisions still no own arXiv records); new ecosystem mention Microsoft-Decision-1.1 (Qwen3.5-9B-based) landed on OpenRouter with calibrated probabilities per Jev Daily 11-17/11-18 and AI/TLDR 11-18 - recorded as a new watch lead, no arXiv record yet"
+    },
+    {
+      "round": 19,
+      "query": "\"ufakzeka-karar\" Turkish decision model arxiv Daily Papers (web search)",
+      "purpose": "aggregator-coverage follow-up",
+      "result": "resolves to arXiv 2610.06744, already catalogued since round 7; not a new lead"
+    },
+    {
+      "round": 19,
+      "query": "four external awesome-list diffs: Promethe-us/awesome-jev, andyrewlee/awesome-system-one, AnotiaWang/awesome-decision-models, Sarim-MBZUAI/awesome-jev-security (raw README fetch)",
+      "purpose": "external-list cross-check",
+      "result": "clean for the second round in a row: awesome-jev still carries only the three pre-window background IDs (2307.12950, 2502.09992, 2503.23303) per the round-14 disposition; awesome-system-one's seven non-ledger IDs are all pre-window background (2311.11829, 2403.12031, 2407.06023, 2407.12883, 2407.14414, 2410.08328, 2503.10657); one extra regex hit (4157.1124) is a Science DOI fragment (Tversky & Kahneman 1974), not an arXiv ID; awesome-decision-models and awesome-jev-security fully covered"
+    },
+    {
+      "round": 19,
+      "query": "https://jevdaily.com/issues/2026-11-16 through /2026-11-19 (direct fetch)",
+      "purpose": "aggregator daily issues",
+      "result": "11-17 and 11-18 published - ecosystem news only (Lightpanda in-binary Jev page triage, Treg $0.03/job API, Microsoft Decision-1.1 on OpenRouter), no arXiv IDs or paper leads; 11-16 skipped (404) and 11-19 not yet out"
     }
   ],
   "arxiv_site_search": {
@@ -2353,10 +2527,10 @@
       "purpose": "Early Jev corpus and four foundational methods"
     }
   ],
-  "unique_candidates": 566,
+  "unique_candidates": 576,
   "outcomes": {
-    "included": 393,
-    "excluded": 171,
+    "included": 400,
+    "excluded": 174,
     "pending": 2
   },
   "limitations": [
@@ -2367,7 +2541,7 @@
     "Broad discovery ends on 2026-10-16. Later targeted additions are logged separately and do not imply a fresh search or re-verification of the entire corpus.",
     "2026-10-27 round: Zhihu and Weibo returned no usable public search results (403 or ignored site filters); WeChat coverage relied on the Sogou public index."
   ],
-  "updated_on": "2026-11-18",
+  "updated_on": "2026-11-19",
   "targeted_additions": [
     {
       "reviewed_on": "2026-10-17",
@@ -2657,6 +2831,20 @@
       ],
       "added_papers": 0,
       "note": "Four-platform round run alongside the round-18 arXiv sweep: 0 new records of its own. The X/Twitter cross-check surfaced only already-catalogued papers (LLM-as-Jev, General Decision Models, Releasing the Inner Jev, the JEV/Laya pen-testing layers, the early audit). The four-list external awesome diff is clean (only pre-window background IDs remain outside the ledger). Jev Daily's 11-16/11-17 issues were still unpublished and 11-18 is not out either. Watch leads unchanged (Prism, 书生·明决, Gemini Decisions all still lack arXiv records)."
+    },
+    {
+      "searched_on": "2026-11-19",
+      "record": "data/social-search-2026-11-19.json",
+      "report": "docs/SOCIAL_SEARCH_2026-11-19.md",
+      "platforms": [
+        "WeChat 公众号",
+        "Zhihu",
+        "Sina Weibo",
+        "X / Twitter (cross-check)",
+        "Jev Daily (aggregator)"
+      ],
+      "added_papers": 0,
+      "note": "Four-platform round run alongside the round-19 arXiv sweep: 0 new records of its own. The X/Twitter cross-check surfaced only already-catalogued papers; ufakzeka-karar aggregator coverage resolved to the already-catalogued 2610.06744. Jev Daily resumed publishing (11-17 and 11-18) with ecosystem items only (Lightpanda, Treg, Microsoft Decision-1.1 on OpenRouter - the last recorded as a new watch lead). The four-list external awesome diff stays clean for the second round in a row."
     }
   ],
   "targeted_rechecks": [
