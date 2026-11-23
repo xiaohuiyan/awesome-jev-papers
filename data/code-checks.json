@@ -1626,5 +1626,104 @@
     "canonical_url": "https://github.com/leowu-ai/SlideJev",
     "description": null,
     "private": false
+  },
+  {
+    "arxiv_id": "2611.25289",
+    "url": "https://github.com/MiniEggz/llm-as-classifier",
+    "source_url": "https://arxiv.org/abs/2611.25289v1",
+    "source_location": "arXiv comment ('Code available at')",
+    "checked_on": "2026-11-23",
+    "status": "verified",
+    "canonical_url": "https://github.com/MiniEggz/llm-as-classifier",
+    "description": "Code for Large Language Models Are Already Confidence-Aware Zero-Shot Classifiers.",
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.23751",
+    "url": "https://github.com/middle-chunjie/AnyS1",
+    "source_url": "https://arxiv.org/abs/2611.23751v1",
+    "source_location": "Project page https://middle-chunjie.github.io/AnyS1/ (arXiv comment and title block) maps to this repository; GitHub API confirms the public repo with its anys1 package",
+    "checked_on": "2026-11-23",
+    "status": "verified",
+    "canonical_url": "https://github.com/middle-chunjie/AnyS1",
+    "description": "AnyS1: Compiling Procedural Agent Skills into Calibrated Dual-System Workflows",
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.23700",
+    "url": "https://github.com/peterhan91/Decision2Care",
+    "source_url": "https://arxiv.org/abs/2611.23700v1",
+    "source_location": "Code availability section",
+    "checked_on": "2026-11-23",
+    "status": "verified",
+    "canonical_url": "https://github.com/peterhan91/Decision2Care",
+    "description": "Auditable clinical support with decision agents: diagnosis, treatment selection, and mortality forecasting.",
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.23683",
+    "url": "https://github.com/mahirmalik030/Jev-vs-LLMs",
+    "source_url": "https://arxiv.org/abs/2611.23683v1",
+    "source_location": "Reference [37] ('Replication Package' by the authors)",
+    "checked_on": "2026-11-23",
+    "status": "verified",
+    "canonical_url": "https://github.com/mahirmalik030/Jev-vs-LLMs",
+    "description": "A comparative study of Jev 1.13 and Large Language Models (LLMs) for phishing email detection, evaluating classification performance, probability calibration, inference latency, token consumption, and API costs.",
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.24636",
+    "url": "https://github.com/DiffuSpace/Clover-35B-A3B-Preview",
+    "source_url": "https://arxiv.org/abs/2611.24636v1",
+    "source_location": "arXiv comment ('Code:')",
+    "checked_on": "2026-11-23",
+    "status": "verified",
+    "canonical_url": "https://github.com/DiffuSpace/Clover-35B-A3B-Preview",
+    "description": "Clover, a 35B diffusion large language model.",
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.25071",
+    "url": "https://github.com/SJSU-CMPE259/AI-Stock-Research-and-Earnings-Assistant",
+    "source_url": "https://arxiv.org/abs/2611.25071v1",
+    "source_location": "arXiv comment ('Code:')",
+    "checked_on": "2026-11-23",
+    "status": "verified",
+    "canonical_url": "https://github.com/SJSU-CMPE259/AI-Stock-Research-and-Earnings-Assistant",
+    "description": null,
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.24651",
+    "url": "https://github.com/agentscope-ai/Piccolo",
+    "source_url": "https://arxiv.org/abs/2611.24651v1",
+    "source_location": "Title-block 'Code' link (HTML href)",
+    "checked_on": "2026-11-23",
+    "status": "verified",
+    "canonical_url": "https://github.com/agentscope-ai/Piccolo",
+    "description": "Piccolo: 4B, 9B and 27B decision models for agent tool review, context retention and data workflows, with an interactive Arena.",
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.24481",
+    "url": "https://github.com/wdqqdw/UEmo-D1",
+    "source_url": "https://arxiv.org/abs/2611.24481v2",
+    "source_location": "Abstract ('Project page:')",
+    "checked_on": "2026-11-23",
+    "status": "verified",
+    "canonical_url": "https://github.com/wdqqdw/UEmo-D1",
+    "description": "Official implementation of UEmo-D1: An Efficient and Calibrated Decision Model for Unified Multimodal Emotion Recognition",
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.23698",
+    "url": "https://github.com/shu-ozawa/vlm-stem-navigation",
+    "source_url": "https://arxiv.org/abs/2611.23698v1",
+    "source_location": "Code availability section",
+    "checked_on": "2026-11-23",
+    "status": "verified",
+    "canonical_url": "https://github.com/shu-ozawa/vlm-stem-navigation",
+    "description": null,
+    "private": false
   }
 ]

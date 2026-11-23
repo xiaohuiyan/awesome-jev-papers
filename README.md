@@ -12,9 +12,9 @@ This reading list asks a concrete question: given context and a set of options, 
 
 | Papers | Direct Jev | Related methods | Foundations | With verified code |
 | ---: | ---: | ---: | ---: | ---: |
-| **400** | 243 | 153 | 4 | 148 |
+| **425** | 258 | 163 | 4 | 157 |
 
-Updated **2026-11-19** · Main window **2025-10-16–2026-11-17** (first submission)
+Updated **2026-11-23** · Main window **2025-10-16–2026-11-19** (first submission)
 
 [Start with ten papers](#recommended-reading) · [Browse by question](#category-index) · [Foundations](#foundations) · [Data and maintenance](#reuse-and-updates)
 
@@ -50,14 +50,14 @@ Suggested path: **assess the evidence → compare capabilities → understand mo
 
 | Your question | Topic | Direct / related | Total |
 | --- | --- | ---: | ---: |
-| How do we train a model specifically to choose? | [Model architectures and training](#architecture) | 19 / 48 | 67 |
-| When are fast decisions good enough? | [Benchmarks and comparative evaluation](#evaluation) | 49 / 13 | 62 |
+| How do we train a model specifically to choose? | [Model architectures and training](#architecture) | 23 / 51 | 74 |
+| When are fast decisions good enough? | [Benchmarks and comparative evaluation](#evaluation) | 50 / 13 | 63 |
 | Can we trust the model's confidence? | [Calibration, reliability and selective decisions](#calibration) | 18 / 14 | 32 |
-| When should an agent search, use a tool, or delegate? | [Search, memory, tools and agent decisions](#agents) | 42 / 20 | 62 |
-| Can phrasing, option order, or attacks change the decision? | [Security, robustness and decision bias](#security) | 48 / 13 | 61 |
-| How do quality and speed trade off in real workflows? | [Domain applications and deployment efficiency](#applications) | 67 / 45 | 112 |
+| When should an agent search, use a tool, or delegate? | [Search, memory, tools and agent decisions](#agents) | 45 / 21 | 66 |
+| Can phrasing, option order, or attacks change the decision? | [Security, robustness and decision bias](#security) | 52 / 14 | 66 |
+| How do quality and speed trade off in real workflows? | [Domain applications and deployment efficiency](#applications) | 70 / 50 | 120 |
 
-Each paper has one primary category; 4 foundations are listed separately. Categories group direct Jev work before related methods, with newest first submissions first within each group. Entries keep published date, authors, affiliations, problem, and contribution; affiliations come from the papers themselves (HTML full text or PDF first page), and 22 papers that state none omit the field. Full author lists, tags, and verification records live in the [evidence ledger](docs/EVIDENCE.md) and [BibTeX](references.bib).
+Each paper has one primary category; 4 foundations are listed separately. Categories group direct Jev work before related methods, with newest first submissions first within each group. Entries keep published date, authors, affiliations, problem, and contribution; affiliations come from the papers themselves (HTML full text or PDF first page), and 24 papers that state none omit the field. Full author lists, tags, and verification records live in the [evidence ledger](docs/EVIDENCE.md) and [BibTeX](references.bib).
 
 <a id="architecture"></a>
 ## Model architectures and training
@@ -66,8 +66,32 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 19
+### Direct Jev · 23
 
+<a id="paper-2611-26509"></a>
+#### [GLiDE: A Fast, Calibrated Decision Model Distilled from Reasoning Teachers](https://arxiv.org/abs/2611.26509v1) · [PDF](https://arxiv.org/pdf/2611.26509v1)
+- **📅 Published**: 2026-11-19 (v1)
+- **👥 Authors**: Sahibzada Allahyar; Julia White; Dhruv Atreja et al. (5 authors)
+- **🏢 Affiliations**: Fastino Labs
+- **🎯 Problem**: Can a decision model keep the benefit of reasoning without paying to generate it?
+- **💡 Contribution**: Asks whether the benefit of reasoning can be kept in a decision model without paying to generate reasoning text. GLiDE is a family of single-pass decision models (0.4B to 27B) built on Qwen hybrid language models: causal masking is removed from the full-attention layers so that context, question and candidate answers interact bidirectionally; soft-target distillation from several teachers, including a reasoning model, plus progressive post-training on diverse decision tasks carry reasoning into one forward pass; and parameter-free recurrent depth adds inference-time compute without generating tokens. GLiDE lies on the performance-parameter Pareto frontier of the Hugging Face Decision Index. GLiDE V1.2 (27B) scores 71.52 with 2.0% expected calibration error and a 92.9 ms median latency on a single GPU, and checkpoint averaging with recurrent depth lift it to 73.37 at 2.1%. Hosted Jev 1.14 (Decision Index reference) and Jev 1.13 (JevBench) are the comparison points, with Jev numbers reported by the leaderboard and benchmark maintainers rather than re-run by the authors.
+---
+<a id="paper-2611-25168"></a>
+#### [What a Calibrated Probability Hides: Belief-Level Post-Training for Decision Models](https://arxiv.org/abs/2611.25168v1) · [PDF](https://arxiv.org/pdf/2611.25168v1)
+- **📅 Published**: 2026-11-18 (v1)
+- **👥 Authors**: Xinye Li; Zirui Song; Huaxing Liu et al. (10 authors)
+- **🏢 Affiliations**: Mohamed bin Zayed University of Artificial Intelligence; Alibaba Group; Northeastern University; University of Southern California
+- **🎯 Problem**: Does a calibrated choice distribution reflect disagreement between groups or uncertainty within one?
+- **💡 Contribution**: A calibrated decision model can predict how often each answer is chosen, but one pooled prediction hides whether the spread reflects confident disagreement between groups of people or uncertainty within a group that shares a belief - and the two call for different responses. Belief-Grouped Policy Optimization (BGPO) has the policy propose a list of beliefs, estimate their prevalence and predict a choice distribution for each. During training, Bayes' rule estimates how likely each belief was to generate an observed choice, and these estimates weight the choice's contribution to each belief's log-score reward; lists proposed after seeing a few observed choices are kept only if they predict held-out choices well, which surfaces rare beliefs. At inference only the question is needed. On benchmarks covering opinions, conversation safety, emotions elicited by artwork and photo aesthetics BGPO achieves the lowest conditional, worst-group and overall Jensen-Shannon divergence across model initializations, and on a synthetic image task with known beliefs it recovers the groups better than baselines trained with belief labels. Hosted Jev, run zero-shot with and without the image, is the external reference.
+---
+<a id="paper-2611-24636"></a>
+#### [Clover-35B-A3B-Preview Technical Report](https://arxiv.org/abs/2611.24636v1) · [PDF](https://arxiv.org/pdf/2611.24636v1) · [Code](https://github.com/DiffuSpace/Clover-35B-A3B-Preview)
+- **📅 Published**: 2026-11-18 (v1)
+- **👥 Authors**: DiffuSpace Technical Team
+- **🏢 Affiliations**: DiffuSpace
+- **🎯 Problem**: Can a block-diffusion language model serve fast, structured decisions by answering related questions jointly?
+- **💡 Contribution**: Technical report for Clover-35B-A3B-Preview, a mixture-of-experts diffusion language model (35B total, 3B active parameters) that adapts Gated Delta Networks to block diffusion; it leads the seven evaluated agent metrics, including 73.6 on SWE-bench Verified, and reports 680 tokens/s on one GB300 GPU. The decision-model part is one section of the report: a Clover decision-model variant answers up to eight related questions about shared material jointly in a single denoising pass, after context prefill. On an internal set of 500 groups joint prediction raises question accuracy from 90.37% to 93.88% and all-correct group accuracy from 65.4% to 77.0% (on partially completed Sudoku boards 78.30% to 95.60% and 22.0% to 76.0%). The variant is scored against Jev v1.13 as a frozen API evaluation reference on JevBench (88.31% against 86.58%) and Decision Index 0.2.1 (58.23 against 57.93), and is planned for a subsequent release.
+---
 <a id="paper-2611-16961"></a>
 #### [The Value of Thinking: Learning When to Reason in Hybrid Decision Models](https://arxiv.org/abs/2611.16961v1) · [PDF](https://arxiv.org/pdf/2611.16961v1)
 - **📅 Published**: 2026-11-12 (v1)
@@ -220,8 +244,39 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: Can local decision readouts balance accuracy with throughput?
 - **💡 Contribution**: Studies local decision readouts from existing models with Jev as an external accuracy-throughput reference.
 ---
-### Related model / method · 48
+<a id="paper-2611-18629"></a>
+#### [Decision 1.0: Towards Open Decision Foundation Models](https://arxiv.org/abs/2611.18629v1) · [PDF](https://arxiv.org/pdf/2611.18629v1)
+- **📅 Published**: 2026-09-22 (v1)
+- **👥 Authors**: Xunzhuo Liu; Haichen Zhang; Andy Luo et al. (6 authors)
+- **🏢 Affiliations**: vLLM Semantic Router Project; AMD; Microsoft; MBZUAI; McGill University
+- **🎯 Problem**: What does an open-weight decision foundation model family need to serve reusable software judgments?
+- **💡 Contribution**: An open-weight family of decision foundation models that turns a textual state and runtime-defined questions into typed probability distributions through a Choice, Noul and Score interface, so applications can specify outcomes at inference time and compose predictions into agents and workflows without autoregressive text generation. Six models cover bidirectional-encoder and causal-decoder architectures, including a workflow specialist; training draws on verifiable tasks, natural-language annotations and workflow adaptation. Against the official Jev 1.13.0 service, English and multilingual Laya, Decider, three Kev sizes and untuned Qwen3.5 references, Lux-9B reaches 84.17% on explicit decisions and 91.25% on inference with a weighted overall score of 77.22%. Jev 1.13.0 still leads overall and on composition, reading and transfer, and is better calibrated (ECE 3.35% against 5.56%); the authors also point to gaps in composition, transfer and probability calibration.
+---
+### Related model / method · 51
 
+<a id="paper-2611-25135"></a>
+#### [Calibrated Decision Rewards: Training Language Models with a Judge That Knows How Sure It Is](https://arxiv.org/abs/2611.25135v1) · [PDF](https://arxiv.org/pdf/2611.25135v1)
+- **📅 Published**: 2026-11-18 (v1)
+- **👥 Authors**: Rudransh Agnihotri; Manasvi Kapoor
+- **🏢 Affiliations**: FuturixAI Research
+- **🎯 Problem**: Can a calibrated, reference-free decision model serve as an RL reward for a language model?
+- **💡 Contribution**: Reinforcement learning can only teach a language model what its reward can recognize: answer checkers are exact but need a reference answer, while reward-model and LLM-judge scores are not probabilities. RLCDR (Reinforcement Learning from Calibrated Decision Rewards) turns an LLM into a decision model that answers a typed question about a response (“is the final answer correct?”, “which step is the first error?”) with a probability distribution read in one forward pass, debiased over option orders and calibrated with about a hundred labels. Training Qwen3-1.7B with GRPO on MATH, this reference-free reward raises MATH500 accuracy from 72.2% to 76.8%, matching training on the answer key (76.9%) while a random reward gains only 0.65 points. The reward stays calibrated on the policy's own changing samples (expected calibration error 0.074 against 0.141 for a softmax judge on the same 27B backbone) and finds the first wrong step better than a dedicated 7B process reward model, but trails the answer key when training only on problems the base model mostly fails. Hosted Jev is cited, not used.
+---
+<a id="paper-2611-24738"></a>
+#### [Jeveration: System One Models Now Generate](https://arxiv.org/abs/2611.24738v1) · [PDF](https://arxiv.org/pdf/2611.24738v1)
+- **📅 Published**: 2026-11-18 (v1)
+- **👥 Authors**: Yuhe Liu; Qi Li; Shihua Zhang; Xinchao Wang
+- **🏢 Affiliations**: National University of Singapore
+- **🎯 Problem**: Can the single-pass decision paradigm behind System One models also generate images?
+- **💡 Contribution**: Asks whether the System One decision paradigm - fast, parallel prediction as in Jev - can do more than judge. Jeveration builds on a frozen vision-language model (Qwen3.5-4B) and repurposes its visual-semantic knowledge for image generation: text-to-image, image-to-image and dense prediction are all treated as typed decisions answered in one forward pass. To keep parallel predictions globally coherent, every position is conditioned on a shared random state, so each draw yields a different but coherent image; because the model tends to ignore that state under direct image supervision, a distribution over discrete image codes is learned first to guide single-pass generation. One checkpoint supports all three tasks, each in one forward pass, generating a 512x512 image in 78 ms - up to 122x faster than existing unified models - while keeping competitive image quality and dense prediction performance. Hosted Jev itself is neither used nor evaluated.
+---
+<a id="paper-2611-24651"></a>
+#### [Piccolo: Co-Evolving Decision Models and Data through Recursive Self-Improvement](https://arxiv.org/abs/2611.24651v1) · [PDF](https://arxiv.org/pdf/2611.24651v1) · [Code](https://github.com/agentscope-ai/Piccolo)
+- **📅 Published**: 2026-11-18 (v1)
+- **👥 Authors**: Zhenqing Ling; Qirui Jiao; Daoyuan Chen et al. (17 authors)
+- **🎯 Problem**: How can decision models and their training data be improved together by automated research loops?
+- **💡 Contribution**: Piccolo is a family of multimodal decision models (0.8B to 27B) implementing the Jev-like interface - Choice, Score and Noul - for text and images through direct candidate-logit readout from a language-model head, covering general text and visual judgments, agent harnesses, data workflows and interactive games. The models and their training data co-evolve through agentic data engineering and recursive self-improvement: research agents analyse model behaviour, construct training data, run experiments and use the results to refine later proposals, with semantic slices and a shared research memory connecting these actions across the family's development. Piccolo-27B tops the Decision Index Vision Full leaderboard with a score of 75.59 (Piccolo-9B 68.35, Piccolo-4B 67.46), and all three rank first on the Private benchmark in their size categories. Three reported lessons: backbone-recipe co-adaptation outweighs raw model recency; targeted data curation lets 4B-9B models rival 27B baselines on specialized workflows; and continuous loss reduction can decouple from, or even degrade, discrete decision accuracy. Hosted Jev is not evaluated.
+---
 <a id="paper-2611-17867"></a>
 #### [UltraBERT-JEV: Encoder models for System One Applications](https://arxiv.org/abs/2611.17867v1) · [PDF](https://arxiv.org/pdf/2611.17867v1)
 - **📅 Published**: 2026-11-13 (v1)
@@ -607,8 +662,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 49
+### Direct Jev · 50
 
+<a id="paper-2611-25289"></a>
+#### [LLMs Are Already Confidence-Aware Zero-Shot Classifiers](https://arxiv.org/abs/2611.25289v1) · [PDF](https://arxiv.org/pdf/2611.25289v1) · [Code](https://github.com/MiniEggz/llm-as-classifier)
+- **📅 Published**: 2026-11-18 (v1)
+- **👥 Authors**: Owen Cook; Xingyi Song
+- **🏢 Affiliations**: Department of Computer Science, University of Sheffield
+- **🎯 Problem**: How can a zero-shot LLM classifier report a confidence that can be trusted?
+- **💡 Contribution**: Compares ways of getting a confidence that can be trusted out of zero-shot LLM classifiers: black-box verbalised confidence and sampling against white-box P(True) and several logit-scoring methods using constrained generation. Eleven open-weight LLMs (1B-32B) are evaluated on five classification datasets with 3 to 151 labels, measuring accuracy, F1-macro, AUROC, ECE and Brier score. The confidence method rarely changes accuracy significantly, but logit-based scoring discriminates much better (AUROC 0.74-0.77 against 0.57-0.66). Single-token label identifiers preserve discrimination at a cost of 3-6 accuracy points, and a decision-only scoring scheme that scores only where labels diverge in the prefix trie cuts decode steps by 88-96% on the three largest label sets. The best configurations (Gemma 4 31B, Qwen 3.5 9B) are competitive with TypeSafe's Jev 1.13.0, which was run as the reference classifier: comparable accuracy and AUROC, but the open-weight combinations are generally worse on raw calibration.
+---
 <a id="paper-2611-22949"></a>
 #### [Can Decision Models Replace LLMs in Real-World Contact Center Classification and Judging Tasks?](https://arxiv.org/abs/2611.22949v1) · [PDF](https://arxiv.org/pdf/2611.22949v1)
 - **📅 Published**: 2026-11-17 (v1)
@@ -1374,8 +1437,32 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 42
+### Direct Jev · 45
 
+<a id="paper-2611-25363"></a>
+#### [Stop Going in Circles:Loop-Triggered Routing for System 1 Decision Agents](https://arxiv.org/abs/2611.25363v1) · [PDF](https://arxiv.org/pdf/2611.25363v1)
+- **📅 Published**: 2026-11-19 (v1)
+- **👥 Authors**: Zeming Yu; Huamin Ma; Yingyu Chen et al. (6 authors)
+- **🏢 Affiliations**: College of Computer Science, Sichuan University; Huawei Technologies
+- **🎯 Problem**: How can an agent escape action loops without paying for LLM reasoning at every step?
+- **💡 Contribution**: System 1 decision models such as Jev select actions fast and cheaply, but agents built on them can loop, repeating the same action without progress. LoopRoute is a training-free router: the decision model (Jev-1.13.0) acts by default, and when recurring state-action pairs signal a stall an LLM takes over for a short, feedback-driven stretch bounded to two actions, then returns control. Across three benchmarks and seven LLMs, LoopRoute improves task success over standalone Jev, with mean gains of 21.0%, 60.1% and 30.1% on ALFWorld, MapReader and TextWorld cooking, while cutting mean cumulative API time and API-call cost per task compared with full LLM control. The same rule also improves the success rates of six frozen decision models.
+---
+<a id="paper-2611-23917"></a>
+#### [Vanguard: Knowing When to Trust the Draft in Speculative Vision-Language Agents](https://arxiv.org/abs/2611.23917v1) · [PDF](https://arxiv.org/pdf/2611.23917v1)
+- **📅 Published**: 2026-11-18 (v1)
+- **👥 Authors**: Hanqi Mao; Jiajun Fan; Ruihan Guo et al. (8 authors)
+- **🏢 Affiliations**: UIUC; CMU; NYU; Northeastern
+- **🎯 Problem**: How can a speculative agent tell whether a small model's drafted step is right before calling the large model?
+- **💡 Contribution**: Step-level speculation for vision-language agents: a small model drafts each step and the large target model is called only on rejected drafts, so the outcome rests on the judge. Vanguard is a training-free judge that leaves the draft and target models unchanged: a general decision model (Jev, release jev-1.13.0), with the screenshot in view, gives each candidate step a probability of being right in one forward pass; the best candidate is kept if it clears a threshold, and otherwise the large model writes the step. On web, mobile and embodied agents a 2B draft judged by Vanguard is at least as accurate as its 8B target and significantly more accurate on Mind2Web and EB-ALFRED, while the target writes only a minority of the steps; it completes far more closed-loop episodes, and with a 27B target from another family it is both faster and more accurate. The calibrated threshold transfers to unseen websites, and the judge also matches trained process reward models on mathematics.
+---
+<a id="paper-2611-23751"></a>
+#### [Thinking Fast, Anywhere: One System-1 for the Decision Points of Any Agent Workflow](https://arxiv.org/abs/2611.23751v1) · [PDF](https://arxiv.org/pdf/2611.23751v1) · [Code](https://github.com/middle-chunjie/AnyS1)
+- **📅 Published**: 2026-11-18 (v1)
+- **👥 Authors**: Rui Li; Liyang He; Zheng Zhang et al. (5 authors)
+- **🏢 Affiliations**: University of Science and Technology of China; Nanyang Technological University
+- **🎯 Problem**: How can one System-1 model serve the decision points of any agent workflow instead of per-environment hooks?
+- **💡 Contribution**: LLM agents pay for a large model (System-2) at every step even when many intermediate actions only choose among a small set of known candidates. Existing dual-system agents offload such choices to a lightweight System-1 model but rely on workflow-specific hooks written per environment. AnyS1 turns human-authored procedural skills, whose instructions already say where choices arise and which options apply, into a shared, domain-general source of decision points. Offline it mines grounded enumerable decisions from over 1,000 public skills, gathers execution-grounded trajectory states inside isolated containers to build Any-DP, and trains a single calibrated 4B pointer System-1 with label smoothing; at run time compiled workflows resolve routine decisions in one forward pass and fall back to System-2 below a calibrated confidence threshold. Across three unseen benchmarks and distinct System-2 families it preserves task reliability while cutting episode cost by 75-91% and model-call time by 63-92% relative to an uncompiled System-2 agent. Commercial Jev (jev-1.14.0) is a System-1 baseline, which the self-hosted 4B model beats on held-out decisions while saving more cost.
+---
 <a id="paper-2611-22991"></a>
 #### [RagHarnessDebugger: Jev-Guided Agentic RAG in Contract Inference Repair Auditing](https://arxiv.org/abs/2611.22991v1) · [PDF](https://arxiv.org/pdf/2611.22991v1)
 - **📅 Published**: 2026-11-17 (v1)
@@ -1711,8 +1798,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: Can a System One layer coordinate an agent's memory operations efficiently?
 - **💡 Contribution**: Introduces a System-One-controlled memory architecture to coordinate efficient agent memory operations.
 ---
-### Related model / method · 20
+### Related model / method · 21
 
+<a id="paper-2611-26007"></a>
+#### [System-One RSI: Building Muscle Memory for Interactive Agents through Guided Practice](https://arxiv.org/abs/2611.26007v1) · [PDF](https://arxiv.org/pdf/2611.26007v1)
+- **📅 Published**: 2026-11-19 (v1)
+- **👥 Authors**: Qingxu Fu; Xuanfa Jin; Ziqian Chen et al. (5 authors)
+- **🏢 Affiliations**: Alibaba Token Foundry - Infra & Model RSI - EconML; Institute of Automation, Chinese Academy of Sciences
+- **🎯 Problem**: How can a fast decision model acquire the fine-grained task experience that sub-second control needs?
+- **💡 Contribution**: Reasoning models understand multimodal tasks well but struggle with sub-second control because deliberation increases decision latency; fast decision models meet the response window, yet prompting and few-shot examples do not readily supply the fine-grained experience a new task needs. Inspired by coached motor learning, System-One Recursive Self-Improvement (System-One RSI) couples two loops. The high-frequency online loop is an Observe, Orient, Decide, Act cycle in which a decision model (a 27B decision model throughout the experiments) maps each visual observation and task question to structured judgments and a decision tree converts them into timed actions without invoking a reasoning model. The offline loop is a recursive improvement cycle run by a team of reasoning agents that revises the decision-model prompt and decision tree, captures interaction records, derives supervision from them, and trains or deploys updated parameters before the improved system returns to the environment. It works from a small number of real episodes without expert demonstrations, environment modification, sandboxing or parallel simulation: in Snake the mean score rises from 1.30 to 7.35, in Zenless Zone Zero the median completion time of an evaluated scenario drops 8.4%, and in Black Myth: Wukong the evasive policy reaches 11 times the survival time of a stationary reference while the offensive win rate goes from 0% to 66.7%. Hosted Jev is cited as related work only.
+---
 <a id="paper-2611-21053"></a>
 #### [System 1 agents: a method for local, reliable and fast agentic AI](https://arxiv.org/abs/2611.21053v1) · [PDF](https://arxiv.org/pdf/2611.21053v1) · [Code](https://github.com/eltzanis/SystemOneAgents)
 - **📅 Published**: 2026-11-16 (v1)
@@ -1877,8 +1972,31 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 48
+### Direct Jev · 52
 
+<a id="paper-2611-26557"></a>
+#### [MM-SystemOneBias: Evaluating Bias in Multimodal Jev-Style System One Decision Models](https://arxiv.org/abs/2611.26557v1) · [PDF](https://arxiv.org/pdf/2611.26557v1)
+- **📅 Published**: 2026-11-19 (v1)
+- **👥 Authors**: Jinzhe Li; Qi Wang; Dandan Guo et al. (6 authors)
+- **🏢 Affiliations**: School of Artificial Intelligence, Jilin University; Engineering Research Center of Knowledge-Driven Human-Machine Intelligence, Jilin University; International Center of Future Science, Jilin University; King Abdullah University of Science and Technology (KAUST); School of Big Data and Software Engineering, Chongqing University
+- **🎯 Problem**: Do multimodal decision models keep their decisions when the presentation of a task changes?
+- **💡 Contribution**: Puts multimodal Jev-style System One decision models and their vision-language backbones through one bias protocol. MM-SystemOneBias evaluates 13 models on 5,323 instances from nine public datasets and 11 task scenarios with six paired interventions: option order, option label, external judgment, image-text description, irrelevant information and rating scale. Across seven matched decision-model/backbone pairs the decision models are more stable under option-label, irrelevant-information and rating-scale changes in all seven pairs, and six show lower option-order flip rates; they lose less accuracy under incorrect external judgments and conflicting descriptions but also gain less from correct ones. Even when the semantic decision is unchanged, mean answer probabilities move by 4.56 to 11.55 percentage points. The closed-source reference is hosted TypeSafe Jev (jev-1.14.0), which has no matched backbone.
+---
+<a id="paper-2611-25435"></a>
+#### [VisualJevBench: A Benchmark and Black-Box Attacks for Visual Typed Decision Models](https://arxiv.org/abs/2611.25435v1) · [PDF](https://arxiv.org/pdf/2611.25435v1)
+- **📅 Published**: 2026-11-19 (v1)
+- **👥 Authors**: Li Zeng; Yeqi Zeng; Hengkai Liang et al. (10 authors)
+- **🎯 Problem**: How robust is Jev's visual decision-making to direct manipulation of the input image?
+- **💡 Contribution**: Red-teams “Visual Jev”, the image-input mode of Jev, with direct manipulations of the image. VisualJevBench has 800 images and 3,200 questions across eight scenarios and four attack surfaces - typographic manipulation, visual evidence spoofing, target selection interference and geometric transformation - spanning NOUL, CHOICE, SCORE and BOX questions. Adaptive Black-Box Parameter Search (ABPS) uses the typed-output feedback to find effective manipulations, both image-specific and universal. On jev-1.14.0, image-specific attacks reach an attack success rate of up to 69.6%, universal attacks average 33.15% on unseen images without further optimization, and geometric transformations average 40.09% in cross-scenario transfer.
+---
+<a id="paper-2611-23683"></a>
+#### [JEV vs. LLMs: A Comparative Analysis for Phishing Email Detection](https://arxiv.org/abs/2611.23683v1) · [PDF](https://arxiv.org/pdf/2611.23683v1) · [Code](https://github.com/mahirmalik030/Jev-vs-LLMs)
+- **📅 Published**: 2026-11-18 (v1)
+- **👥 Authors**: Muhammad Mahir Malik; Muhammad Moiz Khalid; Hussain Ahmad; Faheem Ullah
+- **🏢 Affiliations**: University of Central Punjab; National University of Computer and Emerging Sciences; Adelaide University; Zayed University
+- **🎯 Problem**: Is a typed decision model a better phishing-email triage front end than an LLM?
+- **💡 Contribution**: Compares Jev 1.13, a typed decision model from TypeSafe AI, with three LLMs - Gemini 3.5 Flash-Lite, NVIDIA Nemotron 3 Ultra and Meta Llama 4 Maverick - on a labelled dataset of 1,500 emails, applying the same emails in the same order and recording predicted class, reported confidence, decision latency, token consumption, API cost and probability calibration. Jev achieves the highest accuracy (79.67%), precision (71.43%), recall (97.97%) and F1 (82.62%), the shortest batch time (173.88 s), the lowest token count and cost (USD 0.015 per 1,000 decisions), and the lowest Brier score (0.1698) and ECE (0.1594). The authors read Jev as a promising option for fast, structured, high-volume triage while noting that LLMs keep the advantage of generating explanations, which the study does not evaluate, and that all four systems require further validation before standalone deployment.
+---
 <a id="paper-2611-20955"></a>
 #### [Jev-as-a-Reward: Validating Probabilistic Safety Judges for Reinforcement Learning](https://arxiv.org/abs/2611.20955v1) · [PDF](https://arxiv.org/pdf/2611.20955v1)
 - **📅 Published**: 2026-11-16 (v1)
@@ -2259,8 +2377,24 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: Do typed decision models follow the option name or the definition bound to it?
 - **💡 Contribution**: Changes name-definition mappings to test whether Jev decisions follow labels instead of supplied meanings.
 ---
-### Related model / method · 13
+<a id="paper-2609-17989"></a>
+#### [Whom Do AI Agents Serve? Role-Induced Sponsorship Bias in Decision Models and Generative LLMs](https://arxiv.org/abs/2609.17989v4) · [PDF](https://arxiv.org/pdf/2609.17989v4)
+- **📅 Published**: 2026-09-16 (v4)
+- **👥 Authors**: Davood Wadi; Yu Ma
+- **🏢 Affiliations**: Desautels Faculty of Management, McGill University
+- **🎯 Problem**: Does an AI shopping agent judge sponsored listings differently depending on who delegated the search?
+- **💡 Contribution**: A marketing study of role-induced bias in AI shopping agents: does an agent's evaluation of sponsored listings depend on who delegates the search? In Study 1, across six LLMs and six decision models, consumer-delegated agents penalize sponsored listings, whereas naming a booking platform as the principal significantly attenuates that sponsorship penalty without any instruction to favour advertisers. The 2x2 experiment is then replicated on five more LLMs and five more decision models - commercial API models including hosted Jev 1.14 (queried through OpenRouter's System-One Decisions API), Liquid D1-Ultra, Mercury Decide and Microsoft Decision 1, plus open-weight StartLux 27B - and both hypotheses replicate in all ten. In LLMs the bias works through reduced pre-choice skepticism. Study 2 finds that attributing the paid placement to the platform amplifies the bias and stricter disclosure wording fails to eliminate it. Study 3 shows prompt-level mitigation removes platform leniency but can over-correct the penalty, whereas consumer-aligned fine-tuning eliminates the bias while better preserving baseline preferences.
+---
+### Related model / method · 14
 
+<a id="paper-2611-23947"></a>
+#### [When Do Decision Models Help LLM-Driven Network Discovery?](https://arxiv.org/abs/2611.23947v1) · [PDF](https://arxiv.org/pdf/2611.23947v1)
+- **📅 Published**: 2026-11-18 (v1)
+- **👥 Authors**: Alperen Örsdemir; Rochelle Xenia Mendoza Santos; Wen Shei Ong et al. (5 authors)
+- **🏢 Affiliations**: Koç University; Illinois Advanced Research Center at Singapore; University of Illinois Urbana-Champaign
+- **🎯 Problem**: Does decision-model gating of proposed commands actually improve LLM-driven network discovery?
+- **💡 Contribution**: Network discovery, identifying live hosts and exposed services, is increasingly automated by LLM-driven harnesses, and recent work inserts fast, non-generative decision models to validate actions before execution. This paper quantifies whether that validation improves discovery across three network scales (10, 100 and 1,000 hosts) in a simulation calibrated on a 30-node containerized testbed. Chunked batch dispatch recovers 92% to 100% of open ports in large-scale networks, whereas single-host dispatch collapses to under 6% because of context saturation and scan latency. At the measured proposal quality of the local model, decision gating (with Laya, an open typed-decision model) increases its port recall from 75.5% to 89.0% on small networks and intercepts costly decoy tarpits, but imposes additional latency on frontier models during early host discovery. Hosted Jev is cited only.
+---
 <a id="paper-2611-20699"></a>
 #### [A First Look at System One Decision Models for Malware Detection](https://arxiv.org/abs/2611.20699v1) · [PDF](https://arxiv.org/pdf/2611.20699v1)
 - **📅 Published**: 2026-11-16 (v1)
@@ -2372,8 +2506,32 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 67
+### Direct Jev · 70
 
+<a id="paper-2611-25530"></a>
+#### [Keystone: Judging Previews at Key Steps for Test-Time Search in Diffusion Models](https://arxiv.org/abs/2611.25530v1) · [PDF](https://arxiv.org/pdf/2611.25530v1)
+- **📅 Published**: 2026-11-19 (v1)
+- **👥 Authors**: Jiajun Fan; Chaoran Cheng; Ziwen Wang et al. (7 authors)
+- **🏢 Affiliations**: UIUC; NYU; CMU
+- **🎯 Problem**: When in denoising should test-time search judge a candidate, and with what judge?
+- **💡 Contribution**: A training-free judge for test-time search in text-to-image diffusion and flow models. Keystone compiles the prompt into typed questions about objects, counts, colours and positions and has an off-the-shelf multimodal decision model - Jev 1.14, used as released through its provider's API - answer them about early previews. The authors find that a generation's outcome is largely settled as denoising starts and already shows in the previews, which reward models read near chance. Reading counts and positions this way beats reward models reading finished images. On GenEval with SD3.5-Medium, adaptive search and pruning at these key steps significantly outperform best-of-8 with every other verifier at under half its generator compute, and the Keystone score also improves best-of-N, seed pruning and FK steering without retuning. An open vision-language model answering the same questions is examined as an alternative judge.
+---
+<a id="paper-2611-25361"></a>
+#### [Incorporating argumentation frameworks for LLM decision-making: Task-specific design and evaluation](https://arxiv.org/abs/2611.25361v1) · [PDF](https://arxiv.org/pdf/2611.25361v1)
+- **📅 Published**: 2026-11-19 (v1)
+- **👥 Authors**: Bochen Han; Anshu Xiong; Mingyang Ma
+- **🏢 Affiliations**: State Key Laboratory of Mathematical Sciences, Academy of Mathematics and Systems Science, Chinese Academy of Sciences; School of Mathematical Sciences, University of Chinese Academy of Sciences
+- **🎯 Problem**: How should argumentation frameworks be designed and combined with LLMs for a specific decision task?
+- **💡 Contribution**: Asks how argumentation frameworks should be built into LLM decision-making. Existing argumentation-augmented methods are abstracted into a four-stage workflow and their design choices are investigated on debate-based decision-making and retrieval-based fact verification; with recent LLMs, the existing methods do not consistently improve performance. Two task-specific methods follow. Qnt-Arg organizes arguments around the original speakers in debate material and aggregates model-estimated argument strengths and candidate-answer priors under gradual semantics; Qlt-Arg uses credibility estimates to order conflicting evidence and grounded semantics to select acceptable evidence for later LLM inference. The paper also examines the roles of generative and decision models, with Perplexity Decider in the debate experiments and Jev (via TypeSafe's official API) in the retrieval experiments: Qnt-Arg consistently outperforms other argumentation-augmented methods across matched configurations, and Qlt-Arg improves retrieval-based fact verification.
+---
+<a id="paper-2611-23700"></a>
+#### [Auditable Clinical Support with Decision Agents](https://arxiv.org/abs/2611.23700v1) · [PDF](https://arxiv.org/pdf/2611.23700v1) · [Code](https://github.com/peterhan91/Decision2Care)
+- **📅 Published**: 2026-11-18 (v1)
+- **👥 Authors**: Tiancheng Bao; Riga Wu; Jan Wienhold et al. (16 authors)
+- **🏢 Affiliations**: Perelman School of Medicine, University of Pennsylvania; RWTH Aachen University; TUD Dresden University of Technology; University Hospital Heidelberg and Medical Faculty of Heidelberg University
+- **🎯 Problem**: Can an AI agent run a clinical work-up while leaving an auditable record of every decision?
+- **💡 Contribution**: A clinical decision agent that works up an acutely ill patient without producing any text. In Decision2Care a decision model (hosted Jev 1.13.0) assigns a probability to each permitted EHR action through typed questions, fixed rules carry out the most probable one, and each work-up records which options were considered at every step, with what probabilities and under which execution rules. On the records of 546 emergency admissions across 12 diseases it reaches a diagnostic accuracy of 86.5% (86.1% for the text-based MIRA-v2 agent) with a median 2.2 s per work-up against 92-100 s. In 10 of the 12 diseases the differential diagnosis changes most at the test on which the guideline bases the diagnosis, and all but four of its most-confident single-work-up diagnoses were correct (98.5%), with the four errors traced to single imaging reports. The same kind of decision selects treatments; its prediction of death is comparable to three intensivists, and in five of eight ICU cohorts it exceeds the best of three 24-h severity scores within 2-6 h of records. Two other decision models driving the same controller reached similar accuracy.
+---
 <a id="paper-2611-22926"></a>
 #### [When Do Typed Decision Models Work in Transportation? Evidence from Travel Choice and Traffic Signal Control](https://arxiv.org/abs/2611.22926v1) · [PDF](https://arxiv.org/pdf/2611.22926v1)
 - **📅 Published**: 2026-11-17 (v1)
@@ -2909,8 +3067,48 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: Can a low-latency decision model replace LLMs in edge service orchestration?
 - **💡 Contribution**: Integrates Jev into edge service orchestration and measures verified requests, admission behavior and execution outcomes.
 ---
-### Related model / method · 45
+### Related model / method · 50
 
+<a id="paper-2611-25071"></a>
+#### [FinVeriQA: Financial Research Agents for Question Answering: Routing, Retrieval, MCP Tool Use, and Provenance-Aware Evidence Verification](https://arxiv.org/abs/2611.25071v1) · [PDF](https://arxiv.org/pdf/2611.25071v1) · [Code](https://github.com/SJSU-CMPE259/AI-Stock-Research-and-Earnings-Assistant)
+- **📅 Published**: 2026-11-18 (v1)
+- **👥 Authors**: Meenakshi Rajpurohit; Anna Phan; Ravikumar Komandur Narayanan et al. (5 authors)
+- **🏢 Affiliations**: San José State University
+- **🎯 Problem**: In a financial QA assistant, which decisions belong to a typed-decision model and which to an LLM?
+- **💡 Contribution**: An open-source multi-agent research prototype for financial question answering over SEC filings and live market data that asks which component should do each job. A compact typed-decision model (Laya) routes each question and screens out advice requests, Python computes every number, retrieval and tools fetch evidence, Mistral-7B writes a cited answer, a code validator checks that cited IDs exist and that numbers match computed notes, and a Model Context Protocol server exposes the pipeline. In live experiments Laya routed better than Mistral-7B (0.85 against 0.52; 0.86 against 0.68 overall), a 12B Mistral decided no better, and DeepSeek-R1-8B decided better but about 9.9 times more slowly. Mistral-7B computed 29% of 100 financial calculations correctly against 100% for Python, and a live quote cut price error from 210% to 0.00%. A controlled upper-bound study on FinRank explains why validation must be independent of the evidence the writer saw: when one figure in the shared evidence is corrupted, self-consistency stays confident while accuracy falls from 0.50 to 0.00, a shared-evidence check catches 35% of the errors and a check against the original passage catches 77%. Hosted Jev is not used.
+---
+<a id="paper-2611-24616"></a>
+#### [EgoJev: Finding Evidence in Egocentric Video by Reading VLM Decisions](https://arxiv.org/abs/2611.24616v1) · [PDF](https://arxiv.org/pdf/2611.24616v1)
+- **📅 Published**: 2026-11-18 (v1)
+- **👥 Authors**: Chunggi Lee; Hanspeter Pfister
+- **🏢 Affiliations**: Harvard University
+- **🎯 Problem**: How can a wearable assistant find the few frames that hold the answer to a question about a long video?
+- **💡 Contribution**: Questions about long egocentric video often depend on one brief moment that a vision-language model seeing a few evenly spaced frames usually misses; training-free methods rank frames with a separate image-text model or ask the VLM to write a time. In a controlled test the VLM itself locates the moment better when it chooses among labeled frames, and that choice is read from its output distribution - treating the VLM as a decision model that returns a probability for each option, as in Jev. EgoJev is a training-free frame selector for wearable assistants built on this: it reads where the evidence is from labeled thumbnails, looks again at the windows it points to, and places its few answer frames at the quantiles of the resulting distribution, so one frozen VLM selects, answers and returns the evidence time with no second model. With Qwen3.5-4B and eight answer frames it raises QAEgo4D accuracy from 51.2% with uniform sampling to 62.0% and outperforms recent training-free frame selectors on QAEgo4D and MyEgo; a single-level version runs on a Mac and an iPhone. Hosted Jev is not used.
+---
+<a id="paper-2611-24481"></a>
+#### [UEmo-D1: An Efficient and Calibrated Decision Model for Unified Multimodal Emotion Recognition](https://arxiv.org/abs/2611.24481v2) · [PDF](https://arxiv.org/pdf/2611.24481v2) · [Code](https://github.com/wdqqdw/UEmo-D1)
+- **📅 Published**: 2026-11-18 (v2)
+- **👥 Authors**: Daiqing Wu; Junqiao Wang; Chengyang Fang et al. (6 authors)
+- **🏢 Affiliations**: Tsinghua University; Jiangxi University of Finance and Economics; Shenzhen MSU-BIT University; Guangming Laboratory
+- **🎯 Problem**: Can one decision model replace task-specific recognizers and MLLM prompting across emotion-recognition tasks?
+- **💡 Contribution**: Multimodal emotion recognition has two main lines, task-specific models and MLLM-based approaches, and neither, the authors argue, reconciles cross-task generalization, efficient decision-making and receptiveness to multiple plausible interpretations. Inspired by decision models, UEmo-D1 maps multimodal inputs, guided by natural-language instructions, directly to distributions over candidate options, and is presented as the first decision model for multimodal emotion recognition. To support joint training and systematic evaluation the authors curate UEmo-Data, with 977,270 training samples and 41 evaluation subsets across six tasks. Experiments show a combination of strong recognition performance, low inference latency and well-calibrated confidence estimates, and further analyses trace how training strategies and data composition shape these capabilities. Hosted Jev is not used.
+---
+<a id="paper-2611-23832"></a>
+#### [A System 1 Decision Model for Medical Multiple-Choice Questions Built on Frozen Language Models](https://arxiv.org/abs/2611.23832v1) · [PDF](https://arxiv.org/pdf/2611.23832v1)
+- **📅 Published**: 2026-11-18 (v1)
+- **👥 Authors**: Pavan Kumar Mantha
+- **🏢 Affiliations**: Antz.ai
+- **🎯 Problem**: How far does a frozen-encoder System 1 decision model get on medical multiple-choice questions?
+- **💡 Contribution**: A single-author study of how far a System 1 decision model built on frozen language models goes on medical exam questions, where the right option is often no more similar to the question than the wrong ones. The recipe is rebuilt from scratch for MedMCQA: frozen language models (Qwen3.5-0.8B, Granite-4.2-3B, Qwen3-8B) turn the question and each option into vectors, two small trained projection heads and one temperature place them in a shared space, and the closest option wins; only the heads are trained, with a contrastive loss using in-batch and hard negatives and a mask for repeated answers. With plain last-token vectors both small encoders answer about one question in three correctly (33.1% and 33.0% on 3,842 held-out questions, chance 25.0%); wrapping each text in a one-word-summary prompt and lowering the heads' learning rate raises this to 41.7% and 42.5%, and to 46.0% for Qwen3-8B. Shuffling questions against options returns accuracy to chance, so the heads do use the question. The author states what the evidence cannot show: validation gains were 1.7 to 2 times the test gains, and this is a cheap, fast baseline rather than a competitive system. Hosted Jev is credited as the idea's origin only.
+---
+<a id="paper-2611-23698"></a>
+#### [Fast closed-loop STEM navigation using vision-language models with typed decisions](https://arxiv.org/abs/2611.23698v1) · [PDF](https://arxiv.org/pdf/2611.23698v1) · [Code](https://github.com/shu-ozawa/vlm-stem-navigation)
+- **📅 Published**: 2026-11-18 (v1)
+- **👥 Authors**: Shuichiro Ozawa; Izumi Takahara; Fumihiko Uesugi; Teruyasu Mizoguchi
+- **🏢 Affiliations**: Institute of Industrial Science, The University of Tokyo
+- **🎯 Problem**: Which decision method lets a vision-language model drive closed-loop microscope navigation both quickly and correctly?
+- **💡 Contribution**: Closed-loop scanning transmission electron microscopy, in which each acquired image determines the next field of view and magnification, would automate navigation to defects and grain boundaries; it hinges on a decision step that must be both quick and correct. The paper isolates that step. On simulated atomic-resolution STEM images of a substitutional W dopant and a grain boundary in monolayer MoS2, where the true target position is known and every method starts from identical conditions, four vision-language models are compared under three decision methods. Typed Decision, which directly obtains the probabilities of candidate labels from a pretrained VLM, shows the shortest decision latency for all models (0.13-0.21 s) and generally the highest navigation success rate: best for all models in W-dopant navigation (66-91%) and best for Cosmos-Reason2 32B in grain-boundary navigation (43%). Navigating to the different targets works from natural-language specification alone, without task-specific training. Hosted Jev is cited, not used; code and data are on GitHub.
+---
 <a id="paper-2611-22879"></a>
 #### [SlideJev: Order-Stable and Tissue-Grounded Jev Decisions for Whole-Slide Pathology](https://arxiv.org/abs/2611.22879v1) · [PDF](https://arxiv.org/pdf/2611.22879v1) · [Code](https://github.com/leowu-ai/SlideJev)
 - **📅 Published**: 2026-11-17 (v1)
@@ -3315,7 +3513,7 @@ Earlier work on calibration, rejection, cascades, and generalist classification.
 | --- | --- |
 | Download and cite | [JSON](data/papers.json) · [BibTeX](references.bib) |
 | Check inclusion evidence | [Evidence ledger](docs/EVIDENCE.md) · [Selection rules](docs/METHODOLOGY.md) |
-| Understand search coverage | [Search log](docs/SEARCH_LOG.md) · [X and CN-platform search (11-19)](docs/SOCIAL_SEARCH_2026-11-19.md) · [arXiv search (+7 papers)](docs/ARXIV_SEARCH_2026-11-19.md) |
+| Understand search coverage | [Search log](docs/SEARCH_LOG.md) · [X and CN-platform search (11-23)](docs/SOCIAL_SEARCH_2026-11-23.md) · [arXiv search (+25 papers)](docs/ARXIV_SEARCH_2026-11-23.md) |
 | Inspect screening | [Screening ledger](data/screening.json) · [Pending](docs/PENDING.md) |
 | Contribute | [Contributing](CONTRIBUTING.md) · [Changelog](CHANGELOG.md) |
 
