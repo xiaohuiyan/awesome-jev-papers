@@ -2,7 +2,7 @@
 
 [中文目录](../README.zh-CN.md) · [English catalogue](../README.md) · [查询记录](../data/search-log.json) · [筛选台账](../data/screening.json) · [同日社媒检索](SOCIAL_SEARCH_2026-11-23.md)
 
-周一凌晨执行（01:44 UTC 起，arXiv API 当日频繁返回 429，全部重试成功）：探针显示新窗口已见 **11-19 首发批次**（11-20 及之后尚未入索引）。第 19 轮收尾时标注「11-18 起首发须下轮补扫」，本轮新窗口即取 11-18 至 11-23。按协议双窗口执行：新窗口四条常设查询加五个变体；**常设查询与变体全窗口重扫**（2026-09-15 起），并且**从本轮起常设查询不再设取回上限**（`all:"Jev"` 254 条、`all:"decision model"` 278 条全部取回）。共得 **482 条**去重记录，**29 条台账外**；列表检查与外部清单对照另贡献 3 个候选（EgoJev、2605.19099、2609.14973），合计 **32 个新候选：25 收录（15 直接、10 相关）、7 排除**。目录 400 → **425 篇**（258 直接、163 相关、4 奠基）；台账 576 → **608 条**（425 收录、181 排除、2 待核实）；主窗口右界延伸至 **2026-11-19**。这是自 11-04 全窗口回填以来单轮收录最多的一轮。
+周一凌晨执行（01:44 UTC 起，arXiv API 当日频繁返回 429，全部重试成功）：探针显示新窗口已见 **11-19 首发批次**（11-20 及之后尚未入索引）。第 19 轮收尾时标注「11-18 起首发须下轮补扫」，本轮新窗口即取 11-18 至 11-23。按协议双窗口执行：新窗口四条常设查询加五个变体；**常设查询与变体全窗口重扫**（2026-09-15 起），并且**从本轮起常设查询不再设取回上限**（`all:"Jev"` 254 条、`all:"decision model"` 278 条全部取回）。共得 **482 条**去重记录，**29 条台账外**；列表检查与外部清单对照另贡献 3 个候选（EgoJev、2605.19099、2609.14973），合计 **32 个新候选：25 收录（15 直接、10 相关）、7 排除**。推送后索引仍在继续更新，同日补扫又收录 10 篇（8 直接、2 相关，见文末「同日补扫」）。全天合计 **35 收录（23 直接、12 相关）、7 排除**。目录 400 → **435 篇**（266 直接、165 相关、4 奠基）；台账 576 → **618 条**（435 收录、181 排除、2 待核实）；主窗口右界延伸至 **2026-11-20**。这是自 11-04 全窗口回填以来单轮收录最多的一轮。
 
 **全窗口重扫回收两条截断边缘漏网记录**（均为 9 月首发，此前各轮复数查询 `all:"decision models"` 只取最新 100 条，二者落在取回上限之外）：[Decision 1.0（2611.18629，09-22 首发）](https://arxiv.org/abs/2611.18629v1) 与 [决策模型的委托方偏置研究（2609.17989，09-16 首发，v4）](https://arxiv.org/abs/2609.17989v4)。第 18、19 轮分别回收过两条、一条同类记录，本轮改为不截断后一次回收两条，此后该类漏网在查询层面不再存在（仅余索引滞后）。
 
@@ -53,12 +53,39 @@
 | [When Do Decision Models Help LLM-Driven Network Discovery?](https://arxiv.org/abs/2611.23947v1)（security） | 科奇大学；伊利诺伊高级研究中心（新加坡）；UIUC | Laya 决策门控把小网络端口召回率从 75.5% 提到 89.0% 并拦下蜜罐，但对前沿模型在早期增加时延。 |
 | [System-One RSI](https://arxiv.org/abs/2611.26007v1)（agents） | 阿里巴巴 Token Foundry；中科院自动化所 | 27B 决策模型驱动 OODA 循环、推理智能体团队离线递归改进提示/决策树/参数；Snake 均分 1.30 → 7.35，《黑神话：悟空》进攻胜率 0% → 66.7%。 |
 
+## 同日补扫（索引继续更新后）
+
+首次推送约两个半小时后复核，发现 arXiv 搜索索引在本轮执行期间继续更新：不截断地重跑六条查询（`all:"decision models"` 286 条、`all:"decision model"` 285 条、`all:"Jev"` 260 条、`all:"System One"` 120 条、`all:"typed decision"` 87 条、`all:"System 1"` 67 条，均高于首轮扫描时的 279/278/254/117/85/67），与首轮扫描池及台账比对后得到 **10 条台账外记录**——11-19 晚间与 11-20 首发的公告批次（ID 2611.26716 至 2611.27721）。10 条经 id_list 定版核验（元数据与摘要指纹同扫描结果完全一致）、全文审阅后**全部收录：8 直接、2 相关，0 排除**。
+
+`/recent` 列表页此时尚未刷新（重跑后仍为 4,979 条、最新 ID 2611.26629），无法覆盖该批次；改在 API 侧执行同级补查：对 37 个目录分类取回 11-20 首发的全部 **480 条**记录，在标题与作者名上检索融合式 Jev 复合词与常设 token 变体，命中 6 条，全部已在上述 10 条之内（融合命名仅 JevRisk，其本身已被 API 查询捕获）——**该批次未发现独立盲区**。
+
+直接关系（8 篇）：
+
+| 论文 | 单位 | 一句话 |
+| --- | --- | --- |
+| [Are Calibrated Decision Models Calibrated on Markets?](https://arxiv.org/abs/2611.26716v1)（calibration） | 克拉科夫 AGH 大学 | 每周五问 Jev（jev-1.14）「纳斯达克 100 四周后是否收低」：方向判断不超过历史基准率，且高估下跌概率（均值 0.48 对实际 0.38，ECE 0.10）；不使用测试期结果的基准率先验偏移把 ECE 降到 0.015，半凯利策略年化从 3.1% 升到 14.5%。 |
+| [Reward Integrity in Adversarial RL for LLM Guardrail Red-Teaming](https://arxiv.org/abs/2611.26998v1)（security） | 澳大利亚联邦银行 | 对抗式红队循环的奖励完整性：托管 Jev 校验规定 PII 是否存在，平衡准确率两个集合都最高（97.3/98.3）；策略违反打分上排序很好，但固定阈值使召回率只有 66.5%。 |
+| [JevRisk](https://arxiv.org/abs/2611.26999v1)（applications） | 西南财大；中国农业银行；山西大学；天津大学；港中文；中国科学院大学 | 代码按监管指引算风险指标，Jev（jev-1.14.0）结合客户画像与活动判断高风险概率；反洗钱与信用风险上优于规则与无监督方法，与千级标注训练的有监督模型相当或更好。 |
+| [Same Facts, Different Decision](https://arxiv.org/abs/2611.27016v1)（security） | 中国矿业大学；山西大学 | LEVER 用不添加任何事实的外部评论翻转 Jev（jev-1.13.0）34.7% 的正确决策，为最强已有攻击的 2.8 倍；「来源门」以至多一次额外查询挡下全部攻击。 |
+| [Decision Models Are General-Purpose Process Reward Models](https://arxiv.org/abs/2611.27068v1)（architecture） | UIUC；NYU；耶鲁 | DM-PRM：每步向托管 Jev 1.13 问一个是非题，零样本充当过程奖励模型；GRPO 在 ALFWorld 上提升二十多个点。 |
+| [Bel](https://arxiv.org/abs/2611.27222v1)（agents） | UIUC；NYU；CMU；耶鲁 | 把每个候选动作画在各自的截图副本上，让 Jev（jev-1.14）给出「执行它是正确决策」的概率；冻结的视觉智能体免训练提升，GUI 与机器人指向均有效。 |
+| [Too Fast to Doubt?](https://arxiv.org/abs/2611.27679v1)（security） | 南京大学 | 1,440 组配对浏览器任务上，外部评论投毒对 Jev 1.13、Jev 1.14、Luna Decisions、Microsoft Decision-1 的两步攻击成功率达 81.2%，ECE 从 2.6% 升到约 36%；同底座的低开销推理以约 7 倍时延换来抵抗。 |
+| [Decision Models for Multilingual Emotion Classification](https://arxiv.org/abs/2611.27721v1)（evaluation） | Sirio – Research & Innovation, Sidea Group | Jev、OpenAI Decisions、Strands Decider 2B 对两个 LLM 与微调编码器，5 种语言 10 个数据集；最佳零样本系统比目标数据集上微调的编码器低约 1 个宏 F1 点。 |
+
+相关方法（2 篇）：
+
+| 论文 | 单位 | 一句话 |
+| --- | --- | --- |
+| [WePM](https://arxiv.org/abs/2611.27365v1)（architecture） | 腾讯微信 AI；中国科学院大学；西安交通大学 | 端侧统一多模态「袖珍模型」，表示、生成、决策三类任务共用一个骨干；7 个类型化决策基准平均 61.11，以少 61.9% 的常驻权重内存达到略高的均衡性能；托管 Jev 仅作背景。 |
+| [Efficient Natural Language to Temporal Logic Translation](https://arxiv.org/abs/2611.27489v1)（applications） | 苏黎世联邦理工学院自动控制实验室 | 以开放权重 Laya 为底座构建自然语言到 LTL 的 System-One 翻译器，最多低一个数量级的运行时间与能耗追平或超过本地 LLM，可跑在树莓派 5 上；刻意不用云端 Jev。 |
+
 ## 数据与核实
 
 - 每条新增均经 Atom 元数据 + 摘要 + 定向全文核验；证据引文写入前逐条 assert 于摘要/PDF 原文，PDF 引文的章节位置按 LaTeXML 标题结构逐条定位核对。
-- 代码核验：新增 9 个作者链接仓库（148 → **157**；GitHub API 确认公开）。RLCDR 声明的 rudransh2004/rlcdr 为将来时且核验时 404，不记录；医学选择题论文引用的 VizuaraAI/system-one-from-scratch 是参考文献而非论文发布的代码，不记录；Jeveration、BGPO、MM-SystemOneBias、Keystone、Vanguard、Decision 1.0 等论文内无作者代码链接。
+- 代码核验：首轮新增 9 个作者链接仓库（148 → 157；GitHub API 确认公开），补扫再增 2 个（157 → **159**）：Tencent/WePocketModel（arXiv comment 与标题栏链接），以及论文只印有项目页 kisekis.github.io/jev-ipi/ 的 Kisekis/jev-ipi（按既定先例映射，仓库内的研究工件含冻结数据与离线 Python 分析）。RLCDR 声明的 rudransh2004/rlcdr 为将来时且核验时 404，不记录；医学选择题论文引用的 VizuaraAI/system-one-from-scratch 是参考文献而非论文发布的代码，不记录；Jeveration、BGPO、MM-SystemOneBias、Keystone、Vanguard、Decision 1.0、JevRisk、LEVER、DM-PRM、Bel 等论文内无作者代码链接。
 - AnyS1 论文只印有项目页 middle-chunjie.github.io/AnyS1/，按既定先例映射到 github.com/middle-chunjie/AnyS1（API 确认公开且含代码包）。
 - 未署名单位论文 22 → **24**：VisualJevBench（PDF 与 HTML 作者栏均无单位行）、Piccolo（署名仅「Piccolo Team」，正文只提到算力来自阿里 PPU 设备，项目页亦只写 AgentScope Team，均不构成单位声明，不予推断）。
 - 版本：UEmo-D1 取最新 v2；委托方偏置研究取 v4（11-08 更新）。
 - 待核实（pending）维持 2 条不变（2609.33609、2609.25498）。
-- 11-20 及之后首发须下轮补扫（探针显示 11-20 批次尚未入索引）。
+- 版本漂移：本轮扫描池中重新出现的 410 篇已收录论文里，有 49 篇的 arXiv 版本已高于目录固定的已核验版本（如 JevRSI 已到 v3、Small Heads 已到 v4）；按版本政策暂不改动，条目仍固定在逐篇复核过的版本。
+- 覆盖边界：11-20 首发批次已于同日补扫；周末（11-21 起）提交尚未公告，须下轮补扫，下轮同时应在 `/recent` 列表页刷新后对该批次补做一次列表级盲区检查。

@@ -12,9 +12,9 @@ This reading list asks a concrete question: given context and a set of options, 
 
 | Papers | Direct Jev | Related methods | Foundations | With verified code |
 | ---: | ---: | ---: | ---: | ---: |
-| **425** | 258 | 163 | 4 | 157 |
+| **435** | 266 | 165 | 4 | 159 |
 
-Updated **2026-11-23** · Main window **2025-10-16–2026-11-19** (first submission)
+Updated **2026-11-23** · Main window **2025-10-16–2026-11-20** (first submission)
 
 [Start with ten papers](#recommended-reading) · [Browse by question](#category-index) · [Foundations](#foundations) · [Data and maintenance](#reuse-and-updates)
 
@@ -50,12 +50,12 @@ Suggested path: **assess the evidence → compare capabilities → understand mo
 
 | Your question | Topic | Direct / related | Total |
 | --- | --- | ---: | ---: |
-| How do we train a model specifically to choose? | [Model architectures and training](#architecture) | 23 / 51 | 74 |
-| When are fast decisions good enough? | [Benchmarks and comparative evaluation](#evaluation) | 50 / 13 | 63 |
-| Can we trust the model's confidence? | [Calibration, reliability and selective decisions](#calibration) | 18 / 14 | 32 |
-| When should an agent search, use a tool, or delegate? | [Search, memory, tools and agent decisions](#agents) | 45 / 21 | 66 |
-| Can phrasing, option order, or attacks change the decision? | [Security, robustness and decision bias](#security) | 52 / 14 | 66 |
-| How do quality and speed trade off in real workflows? | [Domain applications and deployment efficiency](#applications) | 70 / 50 | 120 |
+| How do we train a model specifically to choose? | [Model architectures and training](#architecture) | 24 / 52 | 76 |
+| When are fast decisions good enough? | [Benchmarks and comparative evaluation](#evaluation) | 51 / 13 | 64 |
+| Can we trust the model's confidence? | [Calibration, reliability and selective decisions](#calibration) | 19 / 14 | 33 |
+| When should an agent search, use a tool, or delegate? | [Search, memory, tools and agent decisions](#agents) | 46 / 21 | 67 |
+| Can phrasing, option order, or attacks change the decision? | [Security, robustness and decision bias](#security) | 55 / 14 | 69 |
+| How do quality and speed trade off in real workflows? | [Domain applications and deployment efficiency](#applications) | 71 / 51 | 122 |
 
 Each paper has one primary category; 4 foundations are listed separately. Categories group direct Jev work before related methods, with newest first submissions first within each group. Entries keep published date, authors, affiliations, problem, and contribution; affiliations come from the papers themselves (HTML full text or PDF first page), and 24 papers that state none omit the field. Full author lists, tags, and verification records live in the [evidence ledger](docs/EVIDENCE.md) and [BibTeX](references.bib).
 
@@ -66,8 +66,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 23
+### Direct Jev · 24
 
+<a id="paper-2611-27068"></a>
+#### [Decision Models Are General-Purpose Process Reward Models](https://arxiv.org/abs/2611.27068v1) · [PDF](https://arxiv.org/pdf/2611.27068v1)
+- **📅 Published**: 2026-11-20 (v1)
+- **👥 Authors**: Jiajun Fan; Qinglong Zheng; Ziwen Wang et al. (8 authors)
+- **🏢 Affiliations**: UIUC; NYU; Yale
+- **🎯 Problem**: Can step-level credit for RL agents be obtained by asking a decision model instead of training a reward model?
+- **💡 Contribution**: RL from verifiable outcomes gives a language agent one reward per episode, so every step is credited alike and nothing about the task is learned when all rollouts fail; step-level credit usually needs step labels, a learned critic, costly LLM judges or hand-written rules. DM-PRM turns a general-purpose decision model - hosted Jev 1.13, used as provided through its API - into a zero-shot process reward model: it asks one yes/no question per step and adds the standardised answers to the advantage, with no step labels, fine-tuning or critic. It plugs into any policy-gradient method, and one model with one question text per environment serves household tasks, web shopping and multiple RL methods. With Qwen2.5-1.5B it lifts GRPO by over twenty points on ALFWorld and over ten on WebShop, overtakes GiGPO on ALFWorld in far fewer iterations, improves GiGPO and GraphGPO on both benchmarks and reaches the highest success of the comparison, ahead of critic-based PPO and state-of-the-art variants; its scores locate useful steps inside failed rollouts, and trained agents drop idle actions and explore instead of circling.
+---
 <a id="paper-2611-26509"></a>
 #### [GLiDE: A Fast, Calibrated Decision Model Distilled from Reasoning Teachers](https://arxiv.org/abs/2611.26509v1) · [PDF](https://arxiv.org/pdf/2611.26509v1)
 - **📅 Published**: 2026-11-19 (v1)
@@ -252,8 +260,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: What does an open-weight decision foundation model family need to serve reusable software judgments?
 - **💡 Contribution**: An open-weight family of decision foundation models that turns a textual state and runtime-defined questions into typed probability distributions through a Choice, Noul and Score interface, so applications can specify outcomes at inference time and compose predictions into agents and workflows without autoregressive text generation. Six models cover bidirectional-encoder and causal-decoder architectures, including a workflow specialist; training draws on verifiable tasks, natural-language annotations and workflow adaptation. Against the official Jev 1.13.0 service, English and multilingual Laya, Decider, three Kev sizes and untuned Qwen3.5 references, Lux-9B reaches 84.17% on explicit decisions and 91.25% on inference with a weighted overall score of 77.22%. Jev 1.13.0 still leads overall and on composition, reading and transfer, and is better calibrated (ECE 3.35% against 5.56%); the authors also point to gaps in composition, transfer and probability calibration.
 ---
-### Related model / method · 51
+### Related model / method · 52
 
+<a id="paper-2611-27365"></a>
+#### [WePM: Hierarchical Conflict Reconciliation for Unified MLLMs](https://arxiv.org/abs/2611.27365v1) · [PDF](https://arxiv.org/pdf/2611.27365v1) · [Code](https://github.com/Tencent/WePocketModel)
+- **📅 Published**: 2026-11-20 (v1)
+- **👥 Authors**: Zhiqiang Yuan; Qiwei Yan; Liwei Yang et al. (12 authors)
+- **🏢 Affiliations**: WeChat AI, Tencent; University of Chinese Academy of Sciences; Xi'an Jiaotong University
+- **🎯 Problem**: Can one compact on-device model serve representation, generation and typed-decision tasks without a stack of specialists?
+- **💡 Contribution**: Running multimodal intelligence on a device keeps sensitive data local and cuts inference cost, but deploying one specialized model per capability duplicates vision-language capacity under tight memory budgets. The paper formalizes heterogeneous capability density (HCD) - how broadly and effectively a model serves heterogeneous task families per unit of resident inference memory - and presents WePM, a family of pocket models that unifies representation, generation and decision in one Qwen3.5 vision-language backbone. Multi-Granularity Visual Budgeting splits a fixed visual-token budget across global, regional and fine-grained banks; Unified Listwise Knowledge Distillation enriches separately collected data with soft teacher guidance instead of cross-task paired annotation; and Stable and Efficient Multitask Optimization weights each task's loss with exposure schedules and sequential gradient accumulation. In the joint representation-generation setting WePM raises the Joint score from 38.15 to 52.74; in single-task evaluation WePM-4B averages 72.86 over 30 embedding, 62.41 over 39 generation and 61.11 over seven typed-decision benchmarks (S1MB, JevBench, Open-Jev, JevAny, Valen, DecisionBench), and against the separate-model stack with the highest HCD it achieves slightly higher balanced performance with 61.9% less resident weight memory. Decision-oriented tasks - schema-constrained option selection, ordinal scoring, binary judgment - are one of its three capability families; hosted Jev is described as background and not evaluated.
+---
 <a id="paper-2611-25135"></a>
 #### [Calibrated Decision Rewards: Training Language Models with a Judge That Knows How Sure It Is](https://arxiv.org/abs/2611.25135v1) · [PDF](https://arxiv.org/pdf/2611.25135v1)
 - **📅 Published**: 2026-11-18 (v1)
@@ -662,8 +678,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 50
+### Direct Jev · 51
 
+<a id="paper-2611-27721"></a>
+#### [Decision Models for Multilingual Emotion Classification: A Comparative Study Against LLMs and Encoders](https://arxiv.org/abs/2611.27721v1) · [PDF](https://arxiv.org/pdf/2611.27721v1)
+- **📅 Published**: 2026-11-20 (v1)
+- **👥 Authors**: Alessandro Piccolo; Francesco De Nicolò; Francesco Manco; Eufemia Lella
+- **🏢 Affiliations**: Sirio – Research & Innovation, Sidea Group, Bari, Italy
+- **🎯 Problem**: Can zero-shot decision models replace fine-tuned encoders for emotion classification across languages?
+- **💡 Contribution**: Decision models receive a question with a closed list of answers and return a probability for each answer; they promise low latency and robustness to prompt wording, but no study had compared several of them with fine-tuned encoders across languages. This one asks whether zero-shot systems can replace fine-tuning and what the decision format adds over a general-purpose LLM. Given Italian instructions, three decision models (Jev - TypeSafe's closed API, run as jev-latest and confirmed as jev-1.13.0 - OpenAI Decisions, Strands Decider 2B) and two LLMs (GPT-6 Luna, Qwen3.5-2B) are compared with two fine-tuned multilingual encoders (tabularisai, XLM-EMO) on joy, sadness, anger and fear in 10 social-media datasets across five languages, with paired difference and equivalence tests. The three best zero-shot systems - Jev, OpenAI Decisions and GPT-6 Luna, averaging 0.708, 0.707 and 0.706 macro-F1 - score about one point below an encoder fine-tuned on the target dataset (a 4-5 point gap cannot be excluded, and on single datasets either side wins by up to 22 points) and beat by 8-15 points encoders fine-tuned on another dataset. OpenAI's decision endpoint matches GPT-6 Luna at a fifth of its median latency, and the 2B decision model beats a same-size general LLM by 10 points owing to its training rather than the decision format; the best zero-shot systems vary by about one point across prompts.
+---
 <a id="paper-2611-25289"></a>
 #### [LLMs Are Already Confidence-Aware Zero-Shot Classifiers](https://arxiv.org/abs/2611.25289v1) · [PDF](https://arxiv.org/pdf/2611.25289v1) · [Code](https://github.com/MiniEggz/llm-as-classifier)
 - **📅 Published**: 2026-11-18 (v1)
@@ -1173,8 +1197,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 18
+### Direct Jev · 19
 
+<a id="paper-2611-26716"></a>
+#### [Are Calibrated Decision Models Calibrated on Markets? Geolocated News, Markov Switching and a System One Model for Nasdaq-100 Allocation](https://arxiv.org/abs/2611.26716v1) · [PDF](https://arxiv.org/pdf/2611.26716v1)
+- **📅 Published**: 2026-11-19 (v1)
+- **👥 Authors**: Jakub Zając; Michał Dyrek
+- **🏢 Affiliations**: AGH University of Krakow
+- **🎯 Problem**: Is a decision model that is calibrated on benchmarks still calibrated against real market outcomes?
+- **💡 Contribution**: Tests whether Jev's reported calibration holds against real market outcomes. Every Friday from January 2025 the authors ask whether the Nasdaq-100 will close lower four weeks later, and compare three sources: a two-regime Markov-switching model estimated on 1990-2026 data, Jev (version jev-1.14) reading the week's most widely published headlines together with geolocated news features computed with PostGIS spatial queries, and a combination of the two. A knowledge probe places Jev's knowledge cutoff in late 2024, so it is evaluated on 88 weeks. None of the models predicts the direction better than the historical base rate. Raw Jev overestimates the probability of a decline (mean forecast 0.48 against an observed frequency of 0.38; ECE 0.10), and for declines of more than 10% (base rate 4%) it forecasts 16-24% on average. A prior shift to the historical base rate, which uses no outcomes from the test period, lowers the ECE to 0.015 and lifts a half-Kelly Jev strategy from 3.1% to 14.5% a year (buy-and-hold QQQ returns 15.3%), whereas Platt scaling, isotonic regression and the combination with the Markov model all make the forecasts worse; the Markov model is best at flagging large declines (AUC 0.81). The practical lesson is to anchor decision-model probabilities to the base rate of the market event before using them to size positions.
+---
 <a id="paper-2611-11480"></a>
 #### [Beyond Ranking: Are Decision Models Calibrated Relevance Scorers?](https://arxiv.org/abs/2611.11480v1) · [PDF](https://arxiv.org/pdf/2611.11480v1)
 - **📅 Published**: 2026-11-08 (v1)
@@ -1437,8 +1469,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 45
+### Direct Jev · 46
 
+<a id="paper-2611-27222"></a>
+#### [Bel: Step-Level Policy Improvement of Visual Agents Without Training](https://arxiv.org/abs/2611.27222v1) · [PDF](https://arxiv.org/pdf/2611.27222v1)
+- **📅 Published**: 2026-11-20 (v1)
+- **👥 Authors**: Jiajun Fan; Ziwen Wang; Zhaoyu Zhu et al. (7 authors)
+- **🏢 Affiliations**: UIUC; NYU; CMU; Yale
+- **🎯 Problem**: Can a frozen visual agent pick the right step among its own samples without any training?
+- **💡 Contribution**: A visual agent - tapping and typing on a screen, or pointing in a camera image for a robot - can fail its task on one wrong step, even when the right action is among its own samples, passed over by greedy decoding. The authors find that judging an action is itself a visual judgment: given the screenshot and a tap's coordinates, a decision model chooses among GUI-R1-3B's samples significantly worse on average than when the tap is drawn where it lands. Bel turns this into a method that trains nothing and needs only a frozen policy's samples and an image on which each action can be drawn: it marks every candidate on its own copy of that image, asks a decision model (Jev, called through its public API as jev-1.14, with the marked screenshot in the state) for the probability that executing it is the right decision - so every kind of action shares one scale - and acts on another candidate only when greedy scores below a threshold and trails it by a margin. On recorded GUI steps Bel significantly beats greedy decoding for each of three policies on mobile, web and desktop screens and, on the same candidates, gives each a higher mean step success than voting, CATTS, the trained GUI-Critic-R1 and two prompted Qwen3-VL judges; it also significantly improves the much larger Qwen3-VL-235B-A22B, raises live AndroidWorld and MiniWoB++ task success for two other policies, and improves robot pointing for three policies.
+---
 <a id="paper-2611-25363"></a>
 #### [Stop Going in Circles:Loop-Triggered Routing for System 1 Decision Agents](https://arxiv.org/abs/2611.25363v1) · [PDF](https://arxiv.org/pdf/2611.25363v1)
 - **📅 Published**: 2026-11-19 (v1)
@@ -1972,8 +2012,32 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 52
+### Direct Jev · 55
 
+<a id="paper-2611-27679"></a>
+#### [Too Fast to Doubt? Skipping Reasoning Leaves Jev-like Models Vulnerable](https://arxiv.org/abs/2611.27679v1) · [PDF](https://arxiv.org/pdf/2611.27679v1) · [Code](https://github.com/Kisekis/jev-ipi)
+- **📅 Published**: 2026-11-20 (v1)
+- **👥 Authors**: Yue Li; Hao Wu; Zenan Fu et al. (6 authors)
+- **🏢 Affiliations**: State Key Laboratory of Novel Software Technology, Nanjing University
+- **🎯 Problem**: How vulnerable are fast decision models to false conclusions injected into web content?
+- **💡 Contribution**: Fast decision models offer low-latency actions with explicit confidence; this paper asks whether that speed costs robustness to deceptive content. The authors build 1,440 paired synthetic browser tasks (six computation families, eight difficulty levels), each with a clean page and two poisoned variants that inject false conclusions or evidence interpretations through external comments, and evaluate four decision models on the same frozen benchmark: Jev 1.13, Jev 1.14, GPT-6 Luna Decisions and Microsoft Decision-1. Clean accuracy averages 91.0%, yet two-shot attack success reaches 81.2%, and mean expected calibration error rises from 2.6% on clean inputs to 36.7% under conclusion poisoning and 36.1% under evidence poisoning - so clean accuracy and calibration do not ensure reliable decisions under injection. On 48 matched tasks, low-effort GPT-6 Luna with a chain of thought averaging fewer than 30 reasoning tokens per response answers 95.83% of poisoned inputs correctly against 38.54% for Luna Decisions, the decision model sharing its base, while mean latency grows from 0.29 to 1.94 seconds: a sharp latency-robustness trade-off.
+---
+<a id="paper-2611-27016"></a>
+#### [Same Facts, Different Decision: Fact-Invariant Manipulation and Provenance-Based Defense in Typed Decision Models](https://arxiv.org/abs/2611.27016v1) · [PDF](https://arxiv.org/pdf/2611.27016v1)
+- **📅 Published**: 2026-11-20 (v1)
+- **👥 Authors**: Yujie Wang; Haotian Chi; Shunrong Jiang
+- **🏢 Affiliations**: China University of Mining and Technology; Shanxi University
+- **🎯 Problem**: Can outside text flip a typed decision model's answer without adding a single fact, and how can software defend?
+- **💡 Contribution**: Typed decision models such as TypeSafe's Jev answer only with a probability, an option or a score, but their inputs often carry text from outsiders - and prior attacks test that risk poorly: injected instructions rarely work on these models, and added facts can make a changed decision correct. The paper shows that outside comments alone can persuade these models into a wrong decision without adding any fact. LEVER writes such comments with four levers from argumentation theory, uses a separate verifier to discard any comment that adds a fact, and searches for effective comments guided by the model's output probabilities. On three benchmarks (BoolQ, MuSR, SST-5) it flips 34.7% of Jev's correct decisions - the main target is jev-1.13.0, queried through TypeSafe's API - which is 2.8 times as many fact-free successes as the strongest prior attack, and it flips 47-67% on five other models. The Provenance Gate defense accepts a changed decision only if the model reaches it again without the outside comments: it blocks every attack at the cost of at most one extra query and still accepts trusted updates.
+---
+<a id="paper-2611-26998"></a>
+#### [Reward Integrity in Adversarial Reinforcement Learning for LLM Guardrail Red-Teaming](https://arxiv.org/abs/2611.26998v1) · [PDF](https://arxiv.org/pdf/2611.26998v1)
+- **📅 Published**: 2026-11-20 (v1)
+- **👥 Authors**: Chengming Liu; Leon Viti; Hongxu Chen et al. (6 authors)
+- **🏢 Affiliations**: Commonwealth Bank of Australia
+- **🎯 Problem**: Can the reward judge in an adversarial red-teaming loop be trusted to credit only real guardrail breaks?
+- **💡 Contribution**: Studies reward fidelity inside an adversarial RL loop that red-teams guardrails for financial-services language models: an attack can look successful only because it omitted the personally identifiable information (PII) the task prescribed, or because the reward judge credited a reply that never broke the targeted policy. The authors add two reward-integrity checks. For presence verification, on attacker-generated and AdvPIIBench-derived examples, hosted TypeSafe Jev checks whether the prescribed PII is present and gets the highest balanced accuracy on both sets (97.3 and 98.3), ahead of Opus 4.8 and a GLM-OCR matcher. For policy-break scoring against logged Opus 4.8 judgements from a replay corpus, Jev, pretrained and post-trained Laya and pretrained CLM-8B are compared: Jev ranks well but its fixed decision threshold gives only 66.5% break recall, while post-training markedly improves Laya's agreement with the judge. On a separate author-reviewed off-target set that establishes Opus can award false wins, Jev rejects 223 of 274 cases. The findings motivate specialised decision-model judges for this loop.
+---
 <a id="paper-2611-26557"></a>
 #### [MM-SystemOneBias: Evaluating Bias in Multimodal Jev-Style System One Decision Models](https://arxiv.org/abs/2611.26557v1) · [PDF](https://arxiv.org/pdf/2611.26557v1)
 - **📅 Published**: 2026-11-19 (v1)
@@ -2506,8 +2570,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 70
+### Direct Jev · 71
 
+<a id="paper-2611-26999"></a>
+#### [JevRisk: Zero-Shot Financial Risk Assessment with a Language Decision Model](https://arxiv.org/abs/2611.26999v1) · [PDF](https://arxiv.org/pdf/2611.26999v1)
+- **📅 Published**: 2026-11-20 (v1)
+- **👥 Authors**: Yaodong Yang; Li Huang; Junpeng Liang et al. (8 authors)
+- **🏢 Affiliations**: School of Computing and Artificial Intelligence, Southwestern University of Finance and Economics; Agricultural Bank of China; Shanxi University; Tianjin University; The Chinese University of Hong Kong +1 more
+- **🎯 Problem**: Can a bank rate a customer's financial risk without labelled training data?
+- **💡 Contribution**: A zero-shot system for banks' financial-risk assessment, such as anti-money-laundering customer risk rating and credit risk, where every label may need an expert review or months of repayment history. JevRisk works in two steps: code first computes exact risk indicators following regulatory guidelines, then a language decision model - hosted Jev (version jev-1.14.0), one call per customer - reads these indicators together with the customer's profile and an activity summary as structured text, judges the case in context and returns the probability of high risk (the product of its occupation-risk and customer-risk probabilities). It is evaluated on anti-money laundering with public synthetic Scotiabank data and on credit risk with real Home Credit and Lending Club data, where it outperforms rule-based and unsupervised methods and is on par with or better than supervised models (GBDT, TabPFN) trained on about a thousand labelled customers. Swapping in Qwen3.5-9B first-token probabilities, Clef-Flash or Jev-Omni gives lower AUC in the reported comparisons on the same cases and questions.
+---
 <a id="paper-2611-25530"></a>
 #### [Keystone: Judging Previews at Key Steps for Test-Time Search in Diffusion Models](https://arxiv.org/abs/2611.25530v1) · [PDF](https://arxiv.org/pdf/2611.25530v1)
 - **📅 Published**: 2026-11-19 (v1)
@@ -3067,8 +3139,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: Can a low-latency decision model replace LLMs in edge service orchestration?
 - **💡 Contribution**: Integrates Jev into edge service orchestration and measures verified requests, admission behavior and execution outcomes.
 ---
-### Related model / method · 50
+### Related model / method · 51
 
+<a id="paper-2611-27489"></a>
+#### [Efficient Natural Language to Temporal Logic Translation for Real-Time Physical AI](https://arxiv.org/abs/2611.27489v1) · [PDF](https://arxiv.org/pdf/2611.27489v1)
+- **📅 Published**: 2026-11-20 (v1)
+- **👥 Authors**: Oliver Schön; Adrien Banse; John Lygeros; Lars Lindemann
+- **🏢 Affiliations**: Automatic Control Laboratory, ETH Zürich, Switzerland
+- **🎯 Problem**: Does translating natural language into temporal logic on a robot need a generative LLM at all?
+- **💡 Contribution**: Robots can be controlled with guaranteed correctness when task instructions are given in a formal language, and LLMs are usually asked to translate natural language into it - but on a robot, compute and energy are limited and offloading to the cloud may be infeasible. Noting that a formula in a fixed fragment follows a well-defined syntax, the authors ask whether text generation is needed at all: for linear temporal logic (LTL), the translation can be decomposed into a set of questions with predefined answers. They build the first family of NL-to-LTL translators on a System-One model rather than a generative LLM, using the open-weight Laya (421 million parameters, a ModernBERT-large encoder) as the base and fine-tuning it: a one-pass translator that replaces Laya's head with one head per question, and a level-by-level translator for requirements that need nested LTL formulas, with accuracy guarantees established for the pipelines. On three benchmarks the translators match or exceed the best local LLMs at up to an order of magnitude lower runtime and energy, make 3.6 times fewer errors than the most accurate fine-tuned LLM on Mine rover, generalize to unseen atomic propositions and temporal patterns, and run on embedded hardware such as a Raspberry Pi 5. Hosted Jev is mentioned only as the cloud-hosted alternative that is deliberately not used.
+---
 <a id="paper-2611-25071"></a>
 #### [FinVeriQA: Financial Research Agents for Question Answering: Routing, Retrieval, MCP Tool Use, and Provenance-Aware Evidence Verification](https://arxiv.org/abs/2611.25071v1) · [PDF](https://arxiv.org/pdf/2611.25071v1) · [Code](https://github.com/SJSU-CMPE259/AI-Stock-Research-and-Earnings-Assistant)
 - **📅 Published**: 2026-11-18 (v1)
@@ -3513,7 +3593,7 @@ Earlier work on calibration, rejection, cascades, and generalist classification.
 | --- | --- |
 | Download and cite | [JSON](data/papers.json) · [BibTeX](references.bib) |
 | Check inclusion evidence | [Evidence ledger](docs/EVIDENCE.md) · [Selection rules](docs/METHODOLOGY.md) |
-| Understand search coverage | [Search log](docs/SEARCH_LOG.md) · [X and CN-platform search (11-23)](docs/SOCIAL_SEARCH_2026-11-23.md) · [arXiv search (+25 papers)](docs/ARXIV_SEARCH_2026-11-23.md) |
+| Understand search coverage | [Search log](docs/SEARCH_LOG.md) · [X and CN-platform search (11-23)](docs/SOCIAL_SEARCH_2026-11-23.md) · [arXiv search (+35 papers)](docs/ARXIV_SEARCH_2026-11-23.md) |
 | Inspect screening | [Screening ledger](data/screening.json) · [Pending](docs/PENDING.md) |
 | Contribute | [Contributing](CONTRIBUTING.md) · [Changelog](CHANGELOG.md) |
 

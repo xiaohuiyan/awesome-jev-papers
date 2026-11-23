@@ -1743,6 +1743,54 @@
       "round": 20,
       "query": "/recent listings (skip/show=100 paging to each category's end) for the 37 categories carrying catalogue papers - announcements spanning first submissions through 11-19 at run time; grep for fused-name Jev compounds and standing tokens (4,979 entries)",
       "count": 39
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 20,
+      "query": "all:\"decision models\" AND submittedDate:[202609150000 TO 202611232359] (uncapped re-run about 2.5 h after the sweep; index had reached 11-20; 8 records outside pool+ledger)",
+      "count": 286
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 20,
+      "query": "all:\"decision model\" AND submittedDate:[202609150000 TO 202611232359] (uncapped re-run about 2.5 h after the sweep; 8 records outside pool+ledger)",
+      "count": 285
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 20,
+      "query": "all:\"Jev\" AND submittedDate:[202609150000 TO 202611232359] (uncapped re-run about 2.5 h after the sweep; 6 records outside pool+ledger)",
+      "count": 260
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 20,
+      "query": "all:\"System One\" AND submittedDate:[202609150000 TO 202611232359] (uncapped re-run about 2.5 h after the sweep; 2 records outside pool+ledger)",
+      "count": 120
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 20,
+      "query": "all:\"typed decision\" AND submittedDate:[202609150000 TO 202611232359] (uncapped re-run about 2.5 h after the sweep; 2 records outside pool+ledger)",
+      "count": 87
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 20,
+      "query": "all:\"System 1\" AND submittedDate:[202609150000 TO 202611232359] (uncapped re-run about 2.5 h after the sweep; no record outside pool+ledger)",
+      "count": 67
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 20,
+      "query": "(cat:cs.AI OR ... 37 catalogue categories) AND submittedDate:[202611200000 TO 202611232359] API-side listing net for the newly indexed batch - 2 uncapped requests, 480 records all first submitted 11-20 (IDs 2611.26914..2611.27751), title/author grep for fused Jev compounds and standing-token variants (6 hits, all already among the 10 follow-up candidates; fused names: JevRisk)",
+      "count": 480
+    },
+    {
+      "engine": "arxiv-listing-page",
+      "round": 20,
+      "query": "/recent listing re-run after the 11-20 batch reached the API index: pages unchanged (4,979 entries, newest 2611.26629) - the batch was not yet on the listing pages, so the standing fused-name check for it ran on the API side instead",
+      "count": 39
     }
   ],
   "web_discovery_queries": [
@@ -2719,9 +2767,9 @@
       "purpose": "Early Jev corpus and four foundational methods"
     }
   ],
-  "unique_candidates": 608,
+  "unique_candidates": 618,
   "outcomes": {
-    "included": 425,
+    "included": 435,
     "excluded": 181,
     "pending": 2
   },

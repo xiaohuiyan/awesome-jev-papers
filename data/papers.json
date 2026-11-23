@@ -3,7 +3,7 @@
   "updated_on": "2026-11-23",
   "window": {
     "start": "2025-10-16",
-    "end": "2026-11-19",
+    "end": "2026-11-20",
     "basis": "first submission; reviewed version and verification date recorded per paper"
   },
   "categories": {
@@ -49,6 +49,778 @@
     "2610.04345"
   ],
   "papers": [
+    {
+      "arxiv_id": "2611.27721",
+      "title": "Decision Models for Multilingual Emotion Classification: A Comparative Study Against LLMs and Encoders",
+      "authors": [
+        "Alessandro Piccolo",
+        "Francesco De Nicolò",
+        "Francesco Manco",
+        "Eufemia Lella"
+      ],
+      "affiliations": [
+        "Sirio – Research & Innovation, Sidea Group, Bari, Italy"
+      ],
+      "first_submitted": "2026-11-20",
+      "updated": "2026-11-20",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.27721",
+      "reviewed_url": "https://arxiv.org/abs/2611.27721v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.27721v1",
+      "arxiv_categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "evaluation",
+      "relation_level": "direct",
+      "tags": [
+        "evaluation",
+        "multilingual",
+        "benchmark"
+      ],
+      "summary": {
+        "en": "Decision models receive a question with a closed list of answers and return a probability for each answer; they promise low latency and robustness to prompt wording, but no study had compared several of them with fine-tuned encoders across languages. This one asks whether zero-shot systems can replace fine-tuning and what the decision format adds over a general-purpose LLM. Given Italian instructions, three decision models (Jev - TypeSafe's closed API, run as jev-latest and confirmed as jev-1.13.0 - OpenAI Decisions, Strands Decider 2B) and two LLMs (GPT-6 Luna, Qwen3.5-2B) are compared with two fine-tuned multilingual encoders (tabularisai, XLM-EMO) on joy, sadness, anger and fear in 10 social-media datasets across five languages, with paired difference and equivalence tests. The three best zero-shot systems - Jev, OpenAI Decisions and GPT-6 Luna, averaging 0.708, 0.707 and 0.706 macro-F1 - score about one point below an encoder fine-tuned on the target dataset (a 4-5 point gap cannot be excluded, and on single datasets either side wins by up to 22 points) and beat by 8-15 points encoders fine-tuned on another dataset. OpenAI's decision endpoint matches GPT-6 Luna at a fifth of its median latency, and the 2B decision model beats a same-size general LLM by 10 points owing to its training rather than the decision format; the best zero-shot systems vary by about one point across prompts.",
+        "zh": "决策模型接收一个带有封闭答案列表的问题,并为每个答案返回一个概率;它们承诺低时延与对提示措辞的鲁棒性,但此前没有研究把多个决策模型与微调编码器跨语言地比较过。本文追问零样本系统能否取代微调,以及决策格式相对通用 LLM 多带来了什么。在意大利语指令下,把三个决策模型(Jev——TypeSafe 的闭源 API,以 jev-latest 运行并确认为 jev-1.13.0;OpenAI Decisions;Strands Decider 2B)与两个 LLM(GPT-6 Luna、Qwen3.5-2B),同两个微调的多语言编码器(tabularisai、XLM-EMO)在 5 种语言、10 个社交媒体数据集的喜、悲、怒、惧四类情绪上比较,采用配对差异与等价性检验。表现最好的三个零样本系统——Jev、OpenAI Decisions、GPT-6 Luna,宏 F1 平均为 0.708、0.707、0.706——比在目标数据集上微调的编码器低约 1 个点(不能排除 4–5 个点的差距;在单个数据集上任何一方都可能领先最多 22 个点),比在别的数据集上微调的编码器高 8–15 个点。OpenAI 的决策接口以五分之一的中位时延追平其底座 GPT-6 Luna;20 亿参数的决策模型比同尺寸通用 LLM 高 10 个点,这归功于训练而非决策格式;最佳零样本系统在不同提示下约有 1 个点的波动。"
+      },
+      "problem": {
+        "en": "Can zero-shot decision models replace fine-tuned encoders for emotion classification across languages?",
+        "zh": "零样本决策模型能否跨语言取代微调编码器做情绪分类?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "We compare three decision models (Jev, OpenAI Decisions, Strands Decider 2B)",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.27721v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "about one macro-F1 point below an encoder fine-tuned on the target dataset",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.27721v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-23",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.27721v1",
+      "source_abstract_sha256": "8a26caf705fb170c33955bea3136db51240f5aeb24b3bb9f52ba9cda21ca9db3"
+    },
+    {
+      "arxiv_id": "2611.27679",
+      "title": "Too Fast to Doubt? Skipping Reasoning Leaves Jev-like Models Vulnerable",
+      "authors": [
+        "Yue Li",
+        "Hao Wu",
+        "Zenan Fu",
+        "Xiao Li",
+        "Fengyuan Xu",
+        "Sheng Zhong"
+      ],
+      "affiliations": [
+        "State Key Laboratory of Novel Software Technology, Nanjing University"
+      ],
+      "first_submitted": "2026-11-20",
+      "updated": "2026-11-20",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.27679",
+      "reviewed_url": "https://arxiv.org/abs/2611.27679v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.27679v1",
+      "arxiv_categories": [
+        "cs.CR"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "security",
+      "relation_level": "direct",
+      "tags": [
+        "security",
+        "adversarial",
+        "calibration",
+        "robustness"
+      ],
+      "summary": {
+        "en": "Fast decision models offer low-latency actions with explicit confidence; this paper asks whether that speed costs robustness to deceptive content. The authors build 1,440 paired synthetic browser tasks (six computation families, eight difficulty levels), each with a clean page and two poisoned variants that inject false conclusions or evidence interpretations through external comments, and evaluate four decision models on the same frozen benchmark: Jev 1.13, Jev 1.14, GPT-6 Luna Decisions and Microsoft Decision-1. Clean accuracy averages 91.0%, yet two-shot attack success reaches 81.2%, and mean expected calibration error rises from 2.6% on clean inputs to 36.7% under conclusion poisoning and 36.1% under evidence poisoning - so clean accuracy and calibration do not ensure reliable decisions under injection. On 48 matched tasks, low-effort GPT-6 Luna with a chain of thought averaging fewer than 30 reasoning tokens per response answers 95.83% of poisoned inputs correctly against 38.54% for Luna Decisions, the decision model sharing its base, while mean latency grows from 0.29 to 1.94 seconds: a sharp latency-robustness trade-off.",
+        "zh": "快速决策模型以低时延给出动作和明确的置信度;本文追问这种速度是否以对欺骗性内容的鲁棒性为代价。作者构建了 1,440 组成对的合成浏览器任务(六类计算、八个难度级),每组有一张干净页面和两个被投毒的变体——通过外部评论注入错误结论或对证据的曲解——并在同一冻结基准上评测四个决策模型:Jev 1.13、Jev 1.14、GPT-6 Luna Decisions 与 Microsoft Decision-1。干净输入上平均准确率 91.0%,但两步攻击的成功率达 81.2%;平均期望校准误差从干净输入的 2.6% 升到结论投毒下的 36.7%、证据投毒下的 36.1%——可见干净条件下的准确率与校准并不能保证注入下的决策可靠。在 48 个匹配任务上,带平均不到 30 个推理 token 思维链的低开销 GPT-6 Luna 对投毒输入的正确率为 95.83%,而与其同底座的决策模型 Luna Decisions 只有 38.54%,代价是平均时延从 0.29 秒增至 1.94 秒:时延与鲁棒性之间存在尖锐权衡。"
+      },
+      "problem": {
+        "en": "How vulnerable are fast decision models to false conclusions injected into web content?",
+        "zh": "快速决策模型面对网页内容中注入的错误结论有多脆弱?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "Jev 1.13, Jev 1.14, Luna Decisions, and Microsoft Decision-1",
+          "location": "Section 1 (Introduction)",
+          "source_url": "https://arxiv.org/html/2611.27679v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "two-shot attack success reaches 81.2%",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.27679v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-23",
+      "code": [
+        {
+          "url": "https://github.com/Kisekis/jev-ipi",
+          "source_url": "https://arxiv.org/abs/2611.27679v1",
+          "source_location": "Project website https://kisekis.github.io/jev-ipi/ (arXiv comment and abstract footnote) maps to this repository, whose research artifact holds the frozen datasets and offline Python analysis",
+          "verified_on": "2026-11-23",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.27679v1",
+      "source_abstract_sha256": "a64b41cb7f56c6df59e86fd2dc40b76269a2b1dc31f2a2c9e7c2c2385075dfa7"
+    },
+    {
+      "arxiv_id": "2611.27489",
+      "title": "Efficient Natural Language to Temporal Logic Translation for Real-Time Physical AI",
+      "authors": [
+        "Oliver Schön",
+        "Adrien Banse",
+        "John Lygeros",
+        "Lars Lindemann"
+      ],
+      "affiliations": [
+        "Automatic Control Laboratory, ETH Zürich, Switzerland"
+      ],
+      "first_submitted": "2026-11-20",
+      "updated": "2026-11-20",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.27489",
+      "reviewed_url": "https://arxiv.org/abs/2611.27489v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.27489v1",
+      "arxiv_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LO",
+        "cs.RO",
+        "eess.SY"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "related",
+      "tags": [
+        "applications",
+        "robotics",
+        "efficiency"
+      ],
+      "summary": {
+        "en": "Robots can be controlled with guaranteed correctness when task instructions are given in a formal language, and LLMs are usually asked to translate natural language into it - but on a robot, compute and energy are limited and offloading to the cloud may be infeasible. Noting that a formula in a fixed fragment follows a well-defined syntax, the authors ask whether text generation is needed at all: for linear temporal logic (LTL), the translation can be decomposed into a set of questions with predefined answers. They build the first family of NL-to-LTL translators on a System-One model rather than a generative LLM, using the open-weight Laya (421 million parameters, a ModernBERT-large encoder) as the base and fine-tuning it: a one-pass translator that replaces Laya's head with one head per question, and a level-by-level translator for requirements that need nested LTL formulas, with accuracy guarantees established for the pipelines. On three benchmarks the translators match or exceed the best local LLMs at up to an order of magnitude lower runtime and energy, make 3.6 times fewer errors than the most accurate fine-tuned LLM on Mine rover, generalize to unseen atomic propositions and temporal patterns, and run on embedded hardware such as a Raspberry Pi 5. Hosted Jev is mentioned only as the cloud-hosted alternative that is deliberately not used.",
+        "zh": "当任务指令用形式语言给出时,可以保证机器人控制的正确性;通常由 LLM 把自然语言翻译成形式语言,但在机器人上算力与电能有限,把计算卸载到云端又可能不可行。注意到固定片段内的公式遵循明确的语法,作者追问是否根本需要文本生成:对于线性时序逻辑(LTL),翻译可以拆成一组答案预先确定的问题。他们构建了首个基于 System-One 模型而非生成式 LLM 的自然语言到 LTL 翻译器家族,以开放权重的 Laya(4.21 亿参数,ModernBERT-large 编码器)为底座并做微调:单次前向的翻译器用「每个问题一个头」替换 Laya 的输出头;层级式翻译器处理需要嵌套 LTL 公式表达的需求;并为各流程给出了准确性保证。在三个基准上,这些翻译器以最多低一个数量级的运行时间与能耗追平或超过最好的本地 LLM;在 Mine rover 上比最准的微调 LLM 少 3.6 倍错误;能泛化到训练中未见的原子命题与时序模式;可在树莓派 5 等嵌入式硬件上运行。托管 Jev 仅作为刻意不用的云端方案被提及。"
+      },
+      "problem": {
+        "en": "Does translating natural language into temporal logic on a robot need a generative LLM at all?",
+        "zh": "在机器人上把自然语言翻译成时序逻辑,真的需要生成式 LLM 吗?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "We then construct a System-One model, a recent class of NL-based classifier",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.27489v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "at up to one order of magnitude lower runtime and energy consumption",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.27489v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-23",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.27489v1",
+      "source_abstract_sha256": "10fb5a8ed5e5461cb36cb8d9583b6b1b48416f4e926608edba61f039f9ff1602"
+    },
+    {
+      "arxiv_id": "2611.27365",
+      "title": "WePM: Hierarchical Conflict Reconciliation for Unified MLLMs",
+      "authors": [
+        "Zhiqiang Yuan",
+        "Qiwei Yan",
+        "Liwei Yang",
+        "Jinzhe Liu",
+        "Yang Liu",
+        "Zhongyan Hou",
+        "Liyan Xu",
+        "Peixiang Luo",
+        "Jiapei Zhang",
+        "Ying Deng",
+        "Jie Zhou",
+        "Jinchao Zhang"
+      ],
+      "affiliations": [
+        "WeChat AI, Tencent",
+        "University of Chinese Academy of Sciences",
+        "Xi'an Jiaotong University"
+      ],
+      "first_submitted": "2026-11-20",
+      "updated": "2026-11-20",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.27365",
+      "reviewed_url": "https://arxiv.org/abs/2611.27365v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.27365v1",
+      "arxiv_categories": [
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "architecture",
+      "relation_level": "related",
+      "tags": [
+        "architecture",
+        "training",
+        "multimodal",
+        "efficiency"
+      ],
+      "summary": {
+        "en": "Running multimodal intelligence on a device keeps sensitive data local and cuts inference cost, but deploying one specialized model per capability duplicates vision-language capacity under tight memory budgets. The paper formalizes heterogeneous capability density (HCD) - how broadly and effectively a model serves heterogeneous task families per unit of resident inference memory - and presents WePM, a family of pocket models that unifies representation, generation and decision in one Qwen3.5 vision-language backbone. Multi-Granularity Visual Budgeting splits a fixed visual-token budget across global, regional and fine-grained banks; Unified Listwise Knowledge Distillation enriches separately collected data with soft teacher guidance instead of cross-task paired annotation; and Stable and Efficient Multitask Optimization weights each task's loss with exposure schedules and sequential gradient accumulation. In the joint representation-generation setting WePM raises the Joint score from 38.15 to 52.74; in single-task evaluation WePM-4B averages 72.86 over 30 embedding, 62.41 over 39 generation and 61.11 over seven typed-decision benchmarks (S1MB, JevBench, Open-Jev, JevAny, Valen, DecisionBench), and against the separate-model stack with the highest HCD it achieves slightly higher balanced performance with 61.9% less resident weight memory. Decision-oriented tasks - schema-constrained option selection, ordinal scoring, binary judgment - are one of its three capability families; hosted Jev is described as background and not evaluated.",
+        "zh": "把多模态智能放到设备端能让敏感数据留在本地并降低推理成本,但每种能力部署一个专用模型,会在紧张的内存预算下重复占用视觉语言容量。论文形式化了「异构能力密度」(HCD)——模型每单位常驻推理内存能多广、多好地服务异构任务族——并提出 WePM:一族把表示、生成与决策统一进同一个 Qwen3.5 视觉语言骨干的袖珍模型。多粒度视觉预算把固定的视觉 token 预算分给全局、区域与细粒度三组;统一列表知识蒸馏用教师的软标签充实各自采集的数据,免去跨任务配对标注;稳定高效的多任务优化通过曝光调度与顺序梯度累积为各任务损失加权。在表示—生成联合设定下,WePM 把联合分数从 38.15 提到 52.74;单项评测中 WePM-4B 在 30 个嵌入、39 个生成、7 个类型化决策基准(S1MB、JevBench、Open-Jev、JevAny、Valen、DecisionBench)上平均得 72.86、62.41、61.11;与 HCD 最高的分离模型栈相比,它以少 61.9% 的常驻权重内存取得略高的均衡性能。决策类任务(受 schema 约束的选项选择、有序打分、二元判断)是其三大能力族之一;托管 Jev 仅作为背景被介绍,未被评测。"
+      },
+      "problem": {
+        "en": "Can one compact on-device model serve representation, generation and typed-decision tasks without a stack of specialists?",
+        "zh": "一个紧凑的端侧模型能否同时承担表示、生成与类型化决策任务,而不必堆一摞专用模型?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "a family of pocket models unifying representation, generation, and decision",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.27365v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "with 61.9% less resident weight memory, a 2.64-fold higher HCD",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.27365v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-23",
+      "code": [
+        {
+          "url": "https://github.com/Tencent/WePocketModel",
+          "source_url": "https://arxiv.org/abs/2611.27365v1",
+          "source_location": "arXiv comment ('Code and models') and title-block 'GitHub' link",
+          "verified_on": "2026-11-23",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.27365v1",
+      "source_abstract_sha256": "c43000a180f63722116aa5417ad09df502bc0a8a0d93524e4ecdbb1d9240e1fe"
+    },
+    {
+      "arxiv_id": "2611.27222",
+      "title": "Bel: Step-Level Policy Improvement of Visual Agents Without Training",
+      "authors": [
+        "Jiajun Fan",
+        "Ziwen Wang",
+        "Zhaoyu Zhu",
+        "Changyi Yang",
+        "Neil He",
+        "Chaoran Cheng",
+        "Ge Liu"
+      ],
+      "affiliations": [
+        "UIUC",
+        "NYU",
+        "CMU",
+        "Yale"
+      ],
+      "first_submitted": "2026-11-20",
+      "updated": "2026-11-20",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.27222",
+      "reviewed_url": "https://arxiv.org/abs/2611.27222v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.27222v1",
+      "arxiv_categories": [
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "agents",
+      "relation_level": "direct",
+      "tags": [
+        "agents",
+        "judging",
+        "multimodal",
+        "efficiency"
+      ],
+      "summary": {
+        "en": "A visual agent - tapping and typing on a screen, or pointing in a camera image for a robot - can fail its task on one wrong step, even when the right action is among its own samples, passed over by greedy decoding. The authors find that judging an action is itself a visual judgment: given the screenshot and a tap's coordinates, a decision model chooses among GUI-R1-3B's samples significantly worse on average than when the tap is drawn where it lands. Bel turns this into a method that trains nothing and needs only a frozen policy's samples and an image on which each action can be drawn: it marks every candidate on its own copy of that image, asks a decision model (Jev, called through its public API as jev-1.14, with the marked screenshot in the state) for the probability that executing it is the right decision - so every kind of action shares one scale - and acts on another candidate only when greedy scores below a threshold and trails it by a margin. On recorded GUI steps Bel significantly beats greedy decoding for each of three policies on mobile, web and desktop screens and, on the same candidates, gives each a higher mean step success than voting, CATTS, the trained GUI-Critic-R1 and two prompted Qwen3-VL judges; it also significantly improves the much larger Qwen3-VL-235B-A22B, raises live AndroidWorld and MiniWoB++ task success for two other policies, and improves robot pointing for three policies.",
+        "zh": "视觉智能体——在屏幕上点按输入,或在相机图像里为机器人指点位——一步走错就可能任务失败,哪怕正确动作其实就在它自己的采样里,只是被贪心解码错过了。作者发现,评判一个动作本身就是一种视觉判断:只给截图与点按坐标时,决策模型在 GUI-R1-3B 的候选中做选择,平均显著差于把点按画在它落点的图上再判断。Bel 据此提出免训练方法,只需要冻结策略的采样和一张可以画出动作的图像:把每个候选动作标在各自的图像副本上,请决策模型(Jev,经公开 API 以 jev-1.14 调用,状态里带标注后的截图)给出「执行它是正确决策」的概率——于是各类动作共用一个尺度——只有当贪心动作低于阈值且落后某个差距时才改选他人。在录制的 GUI 步骤上,Bel 对三个策略在手机、网页、桌面屏幕上都显著优于贪心解码;在相同候选上,平均步骤成功率高于投票、CATTS、训练过的 GUI-Critic-R1 与两个提示式 Qwen3-VL 裁判;对大得多的 Qwen3-VL-235B-A22B 也有显著提升;在真实 AndroidWorld 与 MiniWoB++ 上提高了另外两个策略的任务成功率,并改进了三个策略的机器人指向。"
+      },
+      "problem": {
+        "en": "Can a frozen visual agent pick the right step among its own samples without any training?",
+        "zh": "冻结的视觉智能体能否不做任何训练,就在自己的采样里选出正确的步骤?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "We call Jev through its public API, train nothing and give it no labels",
+          "location": "Section 2.3 (Ask)",
+          "source_url": "https://arxiv.org/html/2611.27222v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "Bel significantly raises live AndroidWorld and MiniWoB++ task success",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.27222v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-23",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.27222v1",
+      "source_abstract_sha256": "3108c08dab4abb9f6b5dccf7647d89ded6b0a6d399125ea874af01c0e3ff449b"
+    },
+    {
+      "arxiv_id": "2611.27068",
+      "title": "Decision Models Are General-Purpose Process Reward Models",
+      "authors": [
+        "Jiajun Fan",
+        "Qinglong Zheng",
+        "Ziwen Wang",
+        "Bangji Yang",
+        "Neil He",
+        "Ruihan Guo",
+        "Chaoran Cheng",
+        "Ge Liu"
+      ],
+      "affiliations": [
+        "UIUC",
+        "NYU",
+        "Yale"
+      ],
+      "first_submitted": "2026-11-20",
+      "updated": "2026-11-20",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.27068",
+      "reviewed_url": "https://arxiv.org/abs/2611.27068v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.27068v1",
+      "arxiv_categories": [
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "architecture",
+      "relation_level": "direct",
+      "tags": [
+        "training",
+        "judging",
+        "reinforcement-learning",
+        "agents"
+      ],
+      "summary": {
+        "en": "RL from verifiable outcomes gives a language agent one reward per episode, so every step is credited alike and nothing about the task is learned when all rollouts fail; step-level credit usually needs step labels, a learned critic, costly LLM judges or hand-written rules. DM-PRM turns a general-purpose decision model - hosted Jev 1.13, used as provided through its API - into a zero-shot process reward model: it asks one yes/no question per step and adds the standardised answers to the advantage, with no step labels, fine-tuning or critic. It plugs into any policy-gradient method, and one model with one question text per environment serves household tasks, web shopping and multiple RL methods. With Qwen2.5-1.5B it lifts GRPO by over twenty points on ALFWorld and over ten on WebShop, overtakes GiGPO on ALFWorld in far fewer iterations, improves GiGPO and GraphGPO on both benchmarks and reaches the highest success of the comparison, ahead of critic-based PPO and state-of-the-art variants; its scores locate useful steps inside failed rollouts, and trained agents drop idle actions and explore instead of circling.",
+        "zh": "基于可验证结果的强化学习每个回合只给语言智能体一个奖励:每一步被同等记功,而所有 rollout 都失败时什么都学不到;步级信用分配通常需要步骤标签、学习得到的评论家、昂贵的 LLM 裁判或手写规则。DM-PRM 把通用决策模型——按原样经 API 使用的托管 Jev 1.13——变成零样本的过程奖励模型:每一步问一个是非题,把标准化后的答案加到优势里,不需要步骤标签、微调或评论家。它可接入任意策略梯度方法;一个模型、每个环境一段问题文本,就能服务家务任务、网页购物与多种强化学习方法。配合 Qwen2.5-1.5B,它让 GRPO 在 ALFWorld 上提升二十多个点、WebShop 上提升十多个点,在 ALFWorld 上以少得多的迭代超过 GiGPO,在两个基准上都改进了 GiGPO 与 GraphGPO,并取得对比中最高的成功率,领先基于评论家的 PPO 与多个最先进变体;其分数能在失败的 rollout 中定位有用的步骤,训练后的智能体会丢掉无意义的动作而不再原地打转。"
+      },
+      "problem": {
+        "en": "Can step-level credit for RL agents be obtained by asking a decision model instead of training a reward model?",
+        "zh": "强化学习智能体的步级信用分配,能否靠询问决策模型而不是训练奖励模型来获得?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "We use Jev 1.13 [10], a general-purpose decision model served through an API",
+          "location": "Section 2 (Method: the decision model as a zero-shot PRM)",
+          "source_url": "https://arxiv.org/html/2611.27068v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "lifts GRPO by over twenty points on ALFWorld",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.27068v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-23",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.27068v1",
+      "source_abstract_sha256": "4bb8d843d6dd5be48fe83d871e2a01f38bbc024710bcbfe041e9c058bef2f7e5"
+    },
+    {
+      "arxiv_id": "2611.27016",
+      "title": "Same Facts, Different Decision: Fact-Invariant Manipulation and Provenance-Based Defense in Typed Decision Models",
+      "authors": [
+        "Yujie Wang",
+        "Haotian Chi",
+        "Shunrong Jiang"
+      ],
+      "affiliations": [
+        "China University of Mining and Technology",
+        "Shanxi University"
+      ],
+      "first_submitted": "2026-11-20",
+      "updated": "2026-11-20",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.27016",
+      "reviewed_url": "https://arxiv.org/abs/2611.27016v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.27016v1",
+      "arxiv_categories": [
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "security",
+      "relation_level": "direct",
+      "tags": [
+        "security",
+        "adversarial",
+        "robustness"
+      ],
+      "summary": {
+        "en": "Typed decision models such as TypeSafe's Jev answer only with a probability, an option or a score, but their inputs often carry text from outsiders - and prior attacks test that risk poorly: injected instructions rarely work on these models, and added facts can make a changed decision correct. The paper shows that outside comments alone can persuade these models into a wrong decision without adding any fact. LEVER writes such comments with four levers from argumentation theory, uses a separate verifier to discard any comment that adds a fact, and searches for effective comments guided by the model's output probabilities. On three benchmarks (BoolQ, MuSR, SST-5) it flips 34.7% of Jev's correct decisions - the main target is jev-1.13.0, queried through TypeSafe's API - which is 2.8 times as many fact-free successes as the strongest prior attack, and it flips 47-67% on five other models. The Provenance Gate defense accepts a changed decision only if the model reaches it again without the outside comments: it blocks every attack at the cost of at most one extra query and still accepts trusted updates.",
+        "zh": "TypeSafe Jev 这类类型化决策模型只回答概率、选项或分数,但它们的输入常常包含外来文本——而既有攻击对这一风险的检验并不得要领:注入的指令对这些模型基本无效,而添加事实又可能让改变后的决策反而是对的。本文表明,仅凭外部评论就能说服这类模型在不添加任何事实的情况下做出错误决策。LEVER 借论证理论的四种「杠杆」撰写这类评论,用独立的校验器丢弃任何引入新事实的评论,并在模型输出概率的引导下搜索有效评论。在三个基准(BoolQ、MuSR、SST-5)上,它翻转了 Jev 34.7% 的正确决策(主目标是经 TypeSafe API 查询的 jev-1.13.0),不计添事实的成功时是最强已有攻击的 2.8 倍;对另外五个模型翻转率为 47–67%。防御方案「来源门」(Provenance Gate)只有在去掉外部评论后模型仍得出同一决策时才接受该变更:它以至多一次额外查询的代价挡下全部攻击,同时仍接受可信的更新。"
+      },
+      "problem": {
+        "en": "Can outside text flip a typed decision model's answer without adding a single fact, and how can software defend?",
+        "zh": "外部文本能否不添加任何事实就翻转类型化决策模型的判断?程序该如何防御?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "Our main target is Jev, version jev-1.13.0",
+          "location": "Section VI (Target models)",
+          "source_url": "https://arxiv.org/html/2611.27016v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "The gate blocks all of these attacks with at most one extra query",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.27016v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-23",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.27016v1",
+      "source_abstract_sha256": "a27d10e79cc885940bbf05c6172eb1d9cacf09b14368e8a9df274a981194ec52"
+    },
+    {
+      "arxiv_id": "2611.26999",
+      "title": "JevRisk: Zero-Shot Financial Risk Assessment with a Language Decision Model",
+      "authors": [
+        "Yaodong Yang",
+        "Li Huang",
+        "Junpeng Liang",
+        "Yi Ma",
+        "Hongyao Tang",
+        "Xingyu Fan",
+        "Jinpeng Li",
+        "Furui Liu"
+      ],
+      "affiliations": [
+        "School of Computing and Artificial Intelligence, Southwestern University of Finance and Economics",
+        "Agricultural Bank of China",
+        "Shanxi University",
+        "Tianjin University",
+        "The Chinese University of Hong Kong",
+        "University of Chinese Academy of Sciences"
+      ],
+      "first_submitted": "2026-11-20",
+      "updated": "2026-11-20",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.26999",
+      "reviewed_url": "https://arxiv.org/abs/2611.26999v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.26999v1",
+      "arxiv_categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "direct",
+      "tags": [
+        "applications",
+        "evaluation",
+        "efficiency"
+      ],
+      "summary": {
+        "en": "A zero-shot system for banks' financial-risk assessment, such as anti-money-laundering customer risk rating and credit risk, where every label may need an expert review or months of repayment history. JevRisk works in two steps: code first computes exact risk indicators following regulatory guidelines, then a language decision model - hosted Jev (version jev-1.14.0), one call per customer - reads these indicators together with the customer's profile and an activity summary as structured text, judges the case in context and returns the probability of high risk (the product of its occupation-risk and customer-risk probabilities). It is evaluated on anti-money laundering with public synthetic Scotiabank data and on credit risk with real Home Credit and Lending Club data, where it outperforms rule-based and unsupervised methods and is on par with or better than supervised models (GBDT, TabPFN) trained on about a thousand labelled customers. Swapping in Qwen3.5-9B first-token probabilities, Clef-Flash or Jev-Omni gives lower AUC in the reported comparisons on the same cases and questions.",
+        "zh": "面向银行金融风险(如反洗钱客户风险评级、信用风险)的零样本评估系统——这类任务的每个标签都可能需要专家复核或数月的还款记录。JevRisk 分两步:先用代码按监管指引算出精确的风险指标,再由语言决策模型——托管 Jev(版本 jev-1.14.0),每位客户一次调用——把这些指标连同客户画像与活动摘要组成的结构化文本一起读入,结合语境判断,并返回高风险的概率(职业高风险概率与客户高风险概率之积)。评测覆盖反洗钱(Scotiabank 公开合成数据)与信用风险(Home Credit、Lending Club 真实数据):JevRisk 优于基于规则与无监督的方法,与用约一千名已标注客户训练的有监督模型(GBDT、TabPFN)相当或更好。换成 Qwen3.5-9B 的首 token 概率、Clef-Flash 或 Jev-Omni 后,在相同案例与问题的对比中 AUC 更低。"
+      },
+      "problem": {
+        "en": "Can a bank rate a customer's financial risk without labelled training data?",
+        "zh": "银行能否在没有标注数据的情况下评估客户的金融风险?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "We use Jev version jev-1.14.0",
+          "location": "Section 4.1 (Model)",
+          "source_url": "https://arxiv.org/html/2611.26999v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "JevRisk outperforms rule-based and unsupervised methods",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.26999v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-23",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.26999v1",
+      "source_abstract_sha256": "4957b05101d4d9e76ddf37fc96a673230617a06342a4c53ab030820dea6ee452"
+    },
+    {
+      "arxiv_id": "2611.26998",
+      "title": "Reward Integrity in Adversarial Reinforcement Learning for LLM Guardrail Red-Teaming",
+      "authors": [
+        "Chengming Liu",
+        "Leon Viti",
+        "Hongxu Chen",
+        "Erdem Kemik",
+        "Mary-Anne Williams",
+        "Ruth Oliver"
+      ],
+      "affiliations": [
+        "Commonwealth Bank of Australia"
+      ],
+      "first_submitted": "2026-11-20",
+      "updated": "2026-11-20",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.26998",
+      "reviewed_url": "https://arxiv.org/abs/2611.26998v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.26998v1",
+      "arxiv_categories": [
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "security",
+      "relation_level": "direct",
+      "tags": [
+        "security",
+        "red-teaming",
+        "judging",
+        "evaluation"
+      ],
+      "summary": {
+        "en": "Studies reward fidelity inside an adversarial RL loop that red-teams guardrails for financial-services language models: an attack can look successful only because it omitted the personally identifiable information (PII) the task prescribed, or because the reward judge credited a reply that never broke the targeted policy. The authors add two reward-integrity checks. For presence verification, on attacker-generated and AdvPIIBench-derived examples, hosted TypeSafe Jev checks whether the prescribed PII is present and gets the highest balanced accuracy on both sets (97.3 and 98.3), ahead of Opus 4.8 and a GLM-OCR matcher. For policy-break scoring against logged Opus 4.8 judgements from a replay corpus, Jev, pretrained and post-trained Laya and pretrained CLM-8B are compared: Jev ranks well but its fixed decision threshold gives only 66.5% break recall, while post-training markedly improves Laya's agreement with the judge. On a separate author-reviewed off-target set that establishes Opus can award false wins, Jev rejects 223 of 274 cases. The findings motivate specialised decision-model judges for this loop.",
+        "zh": "研究对抗式强化学习红队循环中的奖励保真度,对象是金融服务语言模型的护栏:一次攻击看似成功,可能只是因为它漏掉了任务规定必须包含的个人身份信息(PII),或者因为奖励裁判给一个并未违反目标策略的回复记了功。作者加入两项奖励完整性检查。存在性校验上(攻击器生成与 AdvPIIBench 派生的样本),托管 TypeSafe Jev 判断规定的 PII 是否存在,在两个集合上平衡准确率都最高(97.3 与 98.3),优于 Opus 4.8 与 GLM-OCR 匹配器。策略违反打分上(对照回放语料中记录的 Opus 4.8 判断),比较了 Jev、预训练与后训练的 Laya 以及预训练的 CLM-8B:Jev 排序表现很好,但固定的决策阈值使其违规召回率只有 66.5%;后训练显著提高了 Laya 与裁判的一致性。在一个经作者复核、证明 Opus 会给假胜的离靶集合上,Jev 拒绝了 274 例中的 223 例。结论是为这类循环配备专门的决策模型裁判。"
+      },
+      "problem": {
+        "en": "Can the reward judge in an adversarial red-teaming loop be trusted to credit only real guardrail breaks?",
+        "zh": "对抗式红队循环里的奖励裁判,能保证只给真实的护栏突破记功吗?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "TypeSafe Jev checks whether the prescribed PII is present",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.26998v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "Jev has the highest balanced accuracy on both sets",
+          "location": "Section 5.1 (Presence verification)",
+          "source_url": "https://arxiv.org/html/2611.26998v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-23",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.26998v1",
+      "source_abstract_sha256": "ce2ba73ea2c456ebc2fe7254b2d7a11735104111e68f67b37eeb485edbdad361"
+    },
+    {
+      "arxiv_id": "2611.26716",
+      "title": "Are Calibrated Decision Models Calibrated on Markets? Geolocated News, Markov Switching and a System One Model for Nasdaq-100 Allocation",
+      "authors": [
+        "Jakub Zając",
+        "Michał Dyrek"
+      ],
+      "affiliations": [
+        "AGH University of Krakow"
+      ],
+      "first_submitted": "2026-11-19",
+      "updated": "2026-11-19",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.26716",
+      "reviewed_url": "https://arxiv.org/abs/2611.26716v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.26716v1",
+      "arxiv_categories": [
+        "q-fin.ST",
+        "q-fin.PM"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "calibration",
+      "relation_level": "direct",
+      "tags": [
+        "calibration",
+        "applications",
+        "evaluation"
+      ],
+      "summary": {
+        "en": "Tests whether Jev's reported calibration holds against real market outcomes. Every Friday from January 2025 the authors ask whether the Nasdaq-100 will close lower four weeks later, and compare three sources: a two-regime Markov-switching model estimated on 1990-2026 data, Jev (version jev-1.14) reading the week's most widely published headlines together with geolocated news features computed with PostGIS spatial queries, and a combination of the two. A knowledge probe places Jev's knowledge cutoff in late 2024, so it is evaluated on 88 weeks. None of the models predicts the direction better than the historical base rate. Raw Jev overestimates the probability of a decline (mean forecast 0.48 against an observed frequency of 0.38; ECE 0.10), and for declines of more than 10% (base rate 4%) it forecasts 16-24% on average. A prior shift to the historical base rate, which uses no outcomes from the test period, lowers the ECE to 0.015 and lifts a half-Kelly Jev strategy from 3.1% to 14.5% a year (buy-and-hold QQQ returns 15.3%), whereas Platt scaling, isotonic regression and the combination with the Markov model all make the forecasts worse; the Markov model is best at flagging large declines (AUC 0.81). The practical lesson is to anchor decision-model probabilities to the base rate of the market event before using them to size positions.",
+        "zh": "追问 Jev 公告的校准性在真实市场结果上是否成立。作者自 2025 年 1 月起每周五询问「纳斯达克 100 指数四周后是否会收低」,比较三个来源:用 1990–2026 年数据估计的两区制马尔可夫区制转换模型;读取当周传播最广的标题与 PostGIS 空间查询算出的地理定位新闻特征的 Jev(版本 jev-1.14);以及二者的组合。知识探针显示 Jev 的知识截止在 2024 年末,故在其后的 88 周上评测。没有一个模型在方向判断上超过历史基准率。原始 Jev 高估下跌概率(平均预测 0.48,实际频率 0.38;ECE 0.10);对幅度超过 10% 的下跌(基准率 4%)平均预测 16–24%。向历史基准率做先验偏移(不使用测试期的任何结果)把 ECE 降到 0.015,半凯利仓位下 Jev 策略的年化收益从 3.1% 升到 14.5%(买入持有 QQQ 为 15.3%);而 Platt 缩放、等渗回归以及与马尔可夫模型的组合都让预测更差;马尔可夫模型最擅长识别大幅下跌(AUC 0.81)。实践启示:用决策模型的概率决定仓位之前,必须先把概率锚定到市场事件的基础比率上。"
+      },
+      "problem": {
+        "en": "Is a decision model that is calibrated on benchmarks still calibrated against real market outcomes?",
+        "zh": "在基准上校准良好的决策模型,面对真实市场结果还校准吗?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "raw Jev overestimates the probability of a decline",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.26716v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "A prior shift to the historical base rate",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.26716v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-23",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.26716v1",
+      "source_abstract_sha256": "42f09453683eabbb7cedb9a10ecb32319479b159862cc15dfa2eaf5c07c9586f"
+    },
     {
       "arxiv_id": "2611.26557",
       "title": "MM-SystemOneBias: Evaluating Bias in Multimodal Jev-Style System One Decision Models",

@@ -1725,5 +1725,27 @@
     "canonical_url": "https://github.com/shu-ozawa/vlm-stem-navigation",
     "description": null,
     "private": false
+  },
+  {
+    "arxiv_id": "2611.27679",
+    "url": "https://github.com/Kisekis/jev-ipi",
+    "source_url": "https://arxiv.org/abs/2611.27679v1",
+    "source_location": "Project website https://kisekis.github.io/jev-ipi/ (arXiv comment and abstract footnote) maps to this repository, whose research artifact holds the frozen datasets and offline Python analysis",
+    "checked_on": "2026-11-23",
+    "status": "verified",
+    "canonical_url": "https://github.com/Kisekis/jev-ipi",
+    "description": null,
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.27365",
+    "url": "https://github.com/Tencent/WePocketModel",
+    "source_url": "https://arxiv.org/abs/2611.27365v1",
+    "source_location": "arXiv comment ('Code and models') and title-block 'GitHub' link",
+    "checked_on": "2026-11-23",
+    "status": "verified",
+    "canonical_url": "https://github.com/Tencent/WePocketModel",
+    "description": "A compact, unified multimodal model family with a single shared vision–language backbone, built for on-device and in-app intelligence.",
+    "private": false
   }
 ]

@@ -3,6 +3,146 @@
 
 Short excerpts support relevance decisions, not paper quality or reproducibility. Scores measure topic fit and substantive contribution only. Abstract-level review is the default; targeted full-text checks are marked. 引文用于核实相关性，不是论文质量或模型性能评分。
 
+<a id="evidence-2611-27721"></a>
+## 2611.27721 — Decision Models for Multilingual Emotion Classification: A Comparative Study Against LLMs and Encoders
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-23
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。
+
+- **topic**: “We compare three decision models (Jev, OpenAI Decisions, Strands Decider 2B)” — [Abstract](https://arxiv.org/abs/2611.27721v1)
+- **contribution**: “about one macro-F1 point below an encoder fine-tuned on the target dataset” — [Abstract](https://arxiv.org/abs/2611.27721v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.27721v1); first submitted 2026-11-20; updated 2026-11-20. Full authors: Alessandro Piccolo; Francesco De Nicolò; Francesco Manco; Eufemia Lella.
+
+<a id="evidence-2611-27679"></a>
+## 2611.27679 — Too Fast to Doubt? Skipping Reasoning Leaves Jev-like Models Vulnerable
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-23
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。
+
+- **topic**: “Jev 1.13, Jev 1.14, Luna Decisions, and Microsoft Decision-1” — [Section 1 (Introduction)](https://arxiv.org/html/2611.27679v1)
+- **contribution**: “two-shot attack success reaches 81.2%” — [Abstract](https://arxiv.org/abs/2611.27679v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.27679v1); first submitted 2026-11-20; updated 2026-11-20. Full authors: Yue Li; Hao Wu; Zenan Fu; Xiao Li; Fengyuan Xu; Sheng Zhong.
+
+<a id="evidence-2611-27489"></a>
+## 2611.27489 — Efficient Natural Language to Temporal Logic Translation for Real-Time Physical AI
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-23
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “We then construct a System-One model, a recent class of NL-based classifier” — [Abstract](https://arxiv.org/abs/2611.27489v1)
+- **contribution**: “at up to one order of magnitude lower runtime and energy consumption” — [Abstract](https://arxiv.org/abs/2611.27489v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.27489v1); first submitted 2026-11-20; updated 2026-11-20. Full authors: Oliver Schön; Adrien Banse; John Lygeros; Lars Lindemann.
+
+<a id="evidence-2611-27365"></a>
+## 2611.27365 — WePM: Hierarchical Conflict Reconciliation for Unified MLLMs
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-23
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “a family of pocket models unifying representation, generation, and decision” — [Abstract](https://arxiv.org/abs/2611.27365v1)
+- **contribution**: “with 61.9% less resident weight memory, a 2.64-fold higher HCD” — [Abstract](https://arxiv.org/abs/2611.27365v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.27365v1); first submitted 2026-11-20; updated 2026-11-20. Full authors: Zhiqiang Yuan; Qiwei Yan; Liwei Yang; Jinzhe Liu; Yang Liu; Zhongyan Hou; Liyan Xu; Peixiang Luo; Jiapei Zhang; Ying Deng; Jie Zhou; Jinchao Zhang.
+
+<a id="evidence-2611-27222"></a>
+## 2611.27222 — Bel: Step-Level Policy Improvement of Visual Agents Without Training
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-23
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。
+
+- **topic**: “We call Jev through its public API, train nothing and give it no labels” — [Section 2.3 (Ask)](https://arxiv.org/html/2611.27222v1)
+- **contribution**: “Bel significantly raises live AndroidWorld and MiniWoB++ task success” — [Abstract](https://arxiv.org/abs/2611.27222v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.27222v1); first submitted 2026-11-20; updated 2026-11-20. Full authors: Jiajun Fan; Ziwen Wang; Zhaoyu Zhu; Changyi Yang; Neil He; Chaoran Cheng; Ge Liu.
+
+<a id="evidence-2611-27068"></a>
+## 2611.27068 — Decision Models Are General-Purpose Process Reward Models
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-23
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。
+
+- **topic**: “We use Jev 1.13 [10], a general-purpose decision model served through an API” — [Section 2 (Method: the decision model as a zero-shot PRM)](https://arxiv.org/html/2611.27068v1)
+- **contribution**: “lifts GRPO by over twenty points on ALFWorld” — [Abstract](https://arxiv.org/abs/2611.27068v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.27068v1); first submitted 2026-11-20; updated 2026-11-20. Full authors: Jiajun Fan; Qinglong Zheng; Ziwen Wang; Bangji Yang; Neil He; Ruihan Guo; Chaoran Cheng; Ge Liu.
+
+<a id="evidence-2611-27016"></a>
+## 2611.27016 — Same Facts, Different Decision: Fact-Invariant Manipulation and Provenance-Based Defense in Typed Decision Models
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-23
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。
+
+- **topic**: “Our main target is Jev, version jev-1.13.0” — [Section VI (Target models)](https://arxiv.org/html/2611.27016v1)
+- **contribution**: “The gate blocks all of these attacks with at most one extra query” — [Abstract](https://arxiv.org/abs/2611.27016v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.27016v1); first submitted 2026-11-20; updated 2026-11-20. Full authors: Yujie Wang; Haotian Chi; Shunrong Jiang.
+
+<a id="evidence-2611-26999"></a>
+## 2611.26999 — JevRisk: Zero-Shot Financial Risk Assessment with a Language Decision Model
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-23
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。
+
+- **topic**: “We use Jev version jev-1.14.0” — [Section 4.1 (Model)](https://arxiv.org/html/2611.26999v1)
+- **contribution**: “JevRisk outperforms rule-based and unsupervised methods” — [Abstract](https://arxiv.org/abs/2611.26999v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.26999v1); first submitted 2026-11-20; updated 2026-11-20. Full authors: Yaodong Yang; Li Huang; Junpeng Liang; Yi Ma; Hongyao Tang; Xingyu Fan; Jinpeng Li; Furui Liu.
+
+<a id="evidence-2611-26998"></a>
+## 2611.26998 — Reward Integrity in Adversarial Reinforcement Learning for LLM Guardrail Red-Teaming
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-23
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。
+
+- **topic**: “TypeSafe Jev checks whether the prescribed PII is present” — [Abstract](https://arxiv.org/abs/2611.26998v1)
+- **contribution**: “Jev has the highest balanced accuracy on both sets” — [Section 5.1 (Presence verification)](https://arxiv.org/html/2611.26998v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.26998v1); first submitted 2026-11-20; updated 2026-11-20. Full authors: Chengming Liu; Leon Viti; Hongxu Chen; Erdem Kemik; Mary-Anne Williams; Ruth Oliver.
+
+<a id="evidence-2611-26716"></a>
+## 2611.26716 — Are Calibrated Decision Models Calibrated on Markets? Geolocated News, Markov Switching and a System One Model for Nasdaq-100 Allocation
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-23
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。
+
+- **topic**: “raw Jev overestimates the probability of a decline” — [Abstract](https://arxiv.org/abs/2611.26716v1)
+- **contribution**: “A prior shift to the historical base rate” — [Abstract](https://arxiv.org/abs/2611.26716v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.26716v1); first submitted 2026-11-19; updated 2026-11-19. Full authors: Jakub Zając; Michał Dyrek.
+
 <a id="evidence-2611-26557"></a>
 ## 2611.26557 — MM-SystemOneBias: Evaluating Bias in Multimodal Jev-Style System One Decision Models
 

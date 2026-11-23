@@ -4864,6 +4864,86 @@
       "status": "excluded",
       "reason": "External-list misattribution: awesome-system-one cites arXiv 2609.14973 in prose as the paper of the AutoTrust Decider-Pro line trained on a Jev-distillation corpus, but the record resolves to \"PhysBrain 1.5: From Vision-Language Models to Physical Foundation Models\" (\"We present PhysBrain 1.5, a unified model for understanding physical environments\") - an embodied foundation-model report with no decision-model or Jev content.",
       "screened_on": "2026-11-23"
+    },
+    {
+      "arxiv_id": "2611.26716",
+      "title": "Are Calibrated Decision Models Calibrated on Markets? Geolocated News, Markov Switching and a System One Model for Nasdaq-100 Allocation",
+      "source_url": "https://arxiv.org/abs/2611.26716v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-23"
+    },
+    {
+      "arxiv_id": "2611.26998",
+      "title": "Reward Integrity in Adversarial Reinforcement Learning for LLM Guardrail Red-Teaming",
+      "source_url": "https://arxiv.org/abs/2611.26998v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-23"
+    },
+    {
+      "arxiv_id": "2611.26999",
+      "title": "JevRisk: Zero-Shot Financial Risk Assessment with a Language Decision Model",
+      "source_url": "https://arxiv.org/abs/2611.26999v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-23"
+    },
+    {
+      "arxiv_id": "2611.27016",
+      "title": "Same Facts, Different Decision: Fact-Invariant Manipulation and Provenance-Based Defense in Typed Decision Models",
+      "source_url": "https://arxiv.org/abs/2611.27016v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-23"
+    },
+    {
+      "arxiv_id": "2611.27068",
+      "title": "Decision Models Are General-Purpose Process Reward Models",
+      "source_url": "https://arxiv.org/abs/2611.27068v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-23"
+    },
+    {
+      "arxiv_id": "2611.27222",
+      "title": "Bel: Step-Level Policy Improvement of Visual Agents Without Training",
+      "source_url": "https://arxiv.org/abs/2611.27222v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-23"
+    },
+    {
+      "arxiv_id": "2611.27679",
+      "title": "Too Fast to Doubt? Skipping Reasoning Leaves Jev-like Models Vulnerable",
+      "source_url": "https://arxiv.org/abs/2611.27679v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-23"
+    },
+    {
+      "arxiv_id": "2611.27721",
+      "title": "Decision Models for Multilingual Emotion Classification: A Comparative Study Against LLMs and Encoders",
+      "source_url": "https://arxiv.org/abs/2611.27721v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-23"
+    },
+    {
+      "arxiv_id": "2611.27365",
+      "title": "WePM: Hierarchical Conflict Reconciliation for Unified MLLMs",
+      "source_url": "https://arxiv.org/abs/2611.27365v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-23"
+    },
+    {
+      "arxiv_id": "2611.27489",
+      "title": "Efficient Natural Language to Temporal Logic Translation for Real-Time Physical AI",
+      "source_url": "https://arxiv.org/abs/2611.27489v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-23"
     }
   ]
 }
