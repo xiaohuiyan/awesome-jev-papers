@@ -1,5 +1,5 @@
 {
-  "screened_on": "2026-11-23",
+  "screened_on": "2026-11-24",
   "candidates": [
     {
       "arxiv_id": "2610.22276",
@@ -4944,6 +4944,62 @@
       "status": "included",
       "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
       "screened_on": "2026-11-23"
+    },
+    {
+      "arxiv_id": "2611.27910",
+      "title": "Decision Columns as an Index: Interpretable Embeddings for Explainable Entity Matching and Search",
+      "source_url": "https://arxiv.org/abs/2611.27910v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-24"
+    },
+    {
+      "arxiv_id": "2611.28331",
+      "title": "Decision models for UAVBench and the viability of edge deployment",
+      "source_url": "https://arxiv.org/abs/2611.28331v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-24"
+    },
+    {
+      "arxiv_id": "2611.28535",
+      "title": "Where the Image Sits: Vision-Text Order Bias in Jev",
+      "source_url": "https://arxiv.org/abs/2611.28535v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-24"
+    },
+    {
+      "arxiv_id": "2611.28635",
+      "title": "LoopSeek: Decoupling System One Search from System Two Answering for Long Video Understanding",
+      "source_url": "https://arxiv.org/abs/2611.28635v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-24"
+    },
+    {
+      "arxiv_id": "2611.28667",
+      "title": "When to Test, Repair, or Regenerate: Decision-Guided Efficient RTL Generation",
+      "source_url": "https://arxiv.org/abs/2611.28667v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-24"
+    },
+    {
+      "arxiv_id": "2611.28146",
+      "title": "Close the Loop on the Retrievability Gap",
+      "source_url": "https://arxiv.org/abs/2611.28146v1",
+      "status": "excluded",
+      "reason": "Adjacent-word \"System One\" artefact: the query match is \"picks the less retrievable of two systems one time in three\". A pansharpening/image-restoration retrievability study (LEDGER set-level soft-Jaccard loss around a frozen vision-language encoder) with no typed-decision interface or decision-model content.",
+      "screened_on": "2026-11-24"
+    },
+    {
+      "arxiv_id": "2611.28029",
+      "title": "Safety Systems Watch What the Model Says, Not What the Child Says",
+      "source_url": "https://arxiv.org/abs/2611.28029v1",
+      "status": "excluded",
+      "reason": "Adjacent-word \"System 1\" artefact: the query match is \"10 attribute the relevant condition to the system, 1 to the user\". An audit of 17 child-safety taxonomies for consumer chatbots (NeurIPS 2026 workshop) with no typed-decision content.",
+      "screened_on": "2026-11-24"
     }
   ]
 }

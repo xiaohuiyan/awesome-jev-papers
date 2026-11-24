@@ -1,0 +1,98 @@
+{
+ "schema_version": 1,
+ "searched_on": "2026-11-24",
+ "time_zone": "UTC",
+ "purpose": "Four-platform social discovery round (WeChat, Zhihu, Sina Weibo, X/Twitter cross-check) plus the Jev Daily aggregator and the four-list external awesome diff, run alongside the round-21 arXiv sweep; window 2026-11-21 through 2026-11-24, with older-lead resolution from the X posts of the preceding week.",
+ "recency": "posts and articles dated 2026-11-21 through 2026-11-24 (plus lead resolution for posts dated 11-13..11-20); arXiv first-submission dates kept authoritative and separate",
+ "queries": [
+  {
+   "platform": "WeChat 公众号",
+   "query": "Jev 决策模型 论文 微信公众号 2026年11月",
+   "hits": "no mp.weixin.qq.com results (WeChat indexing limitation); returned items are the known Sept-Oct launch explainers (Tencent Cloud developer post, 36Kr, iTech architecture teardown, 科学网); no new paper leads"
+  },
+  {
+   "platform": "Zhihu",
+   "query": "知乎 Jev System One 决策模型 新论文",
+   "hits": "only the known Sept-Oct columns and Q&A (launch explainer 09-15, 一周13篇论文 10-03, 原理边界 09-16, 软件自动化结构化决策 09-22); Jev-Mem and every other paper named there is catalogued; no new columns, no new paper leads"
+  },
+  {
+   "platform": "Sina Weibo",
+   "query": "微博 Jev 决策模型 开源 论文 11月",
+   "hits": "no weibo.com results; Threads/Zhihu reposts of the ecosystem roundups, StartLux (09-30) and Decision 3.0 (10-12) launch coverage only; no new paper leads"
+  },
+  {
+   "platform": "X / Twitter (cross-check)",
+   "query": "Jev decision model paper arXiv November 2026",
+   "hits": "four arXiv URLs all already catalogued (2610.17205 Releasing the Inner Jev, 2610.03935 General Decision Models, 2610.02076 LLM-as-Jev, 2609.24965 Jev for Scientific Decisions) plus 'Think Once, Act Fast' already in the screening ledger; no new IDs"
+  },
+  {
+   "platform": "X / Twitter (cross-check)",
+   "query": "site:x.com OR twitter.com Jev decision model paper November 2026 (incl. 48h-targeted re-query)",
+   "hits": "svpino's 31B Gemma 4 #1-on-Decision-Index post (11-20) resolves to catalogued 2610.17205; hbouammar's 'Hybrid Decision Models' resolves to the catalogued 'The Value of Thinking: Learning When to Reason in Hybrid Decision Models' (title-matched in papers.json); AnnatarXBT's 14-page company-brain post resolves to catalogued September papers (2609.29429, 2609.28940, 2609.35342, 2610.18773, 2610.33775); rohanpaul_ai's open-source launch post compares against Jev 1.14 (no own paper ID found); firt/kimmonismus cover the Gemini Decision 1 launch (11-11, product release); posthog blog post (not a paper); the 11-22..11-24 targeted window returned nothing new (web index trails the 11-21 arXiv batch, matching the search-index lag)"
+  },
+  {
+   "platform": "web (lead resolution)",
+   "query": "\"Hybrid Decision Models\" Bou Ammar arXiv 4B Jev",
+   "hits": "resolved to the catalogued HDM paper (The Value of Thinking) - HDM-4B 0.857 on JevBench vs Jev 0.851 matches the papers.json summary; no new record"
+  },
+  {
+   "platform": "web (lead resolution)",
+   "query": "\"company brain\" decision layer Jev 14-page paper calibrated probabilities",
+   "hits": "resolves to catalogued September papers (2609.29429 Just Ask Jev, 2609.28940 JEV/Laya decision layers, 2609.35342 I-don't-know analysis, 2610.18773 Jeva, 2610.33775 Hitchhiker's Guide); the company-brain concept itself is a supermemoryai blog/product, not a paper"
+  },
+  {
+   "platform": "web (watch-lead follow-up)",
+   "query": "svpino 31B open decision model Gemma 4 Jev Decision Index paper arXiv",
+   "hits": "no new record: the model is the catalogued Releasing the Inner Jev line (2610.17205); the Jev Decision Index HF Space (multimodalart, 11-12) is a leaderboard, not a paper"
+  },
+  {
+   "platform": "Jev Daily (aggregator)",
+   "query": "direct fetch issues/2026-11-22, /2026-11-23, /2026-11-24",
+   "hits": "11-22 published, ecosystem only (Colgate LLM synthetic-shopper study with no arXiv ID, Raindrop's 11-model blog comparison, Nathan Flurry's reply-gating example code); 11-23 and 11-24 not yet out at run time (404)"
+  }
+ ],
+ "paper_leads": [
+  {
+   "item": "svpino 31B Gemma 4 open decision model (X, 11-20)",
+   "resolution": "resolved to catalogued 2610.17205 (Releasing the Inner Jev); no action"
+  },
+  {
+   "item": "Hybrid Decision Models (X, hbouammar)",
+   "resolution": "resolved to catalogued 'The Value of Thinking: Learning When to Reason in Hybrid Decision Models' (2610.02076 per title match); no action"
+  },
+  {
+   "item": "company-brain 14-page paper (X, AnnatarXBT)",
+   "resolution": "resolved to five catalogued September papers; the concept is a supermemoryai product/blog, not a paper; no action"
+  }
+ ],
+ "non_paper_leads": [
+  {
+   "item": "Gemini Decision 1",
+   "resolution": "product launch (11-11, Gemini Decisions API, $0.10/1M input tokens per X coverage); same line as the standing Gemini Decisions watch lead; no arXiv record found"
+  },
+  {
+   "item": "Rohan Paul open-source decision model launch post",
+   "resolution": "compares against Jev 1.14 (95ms vs 196ms median, ~1/5 cost on JevBench); no own arXiv ID surfaced; no action beyond watch"
+  },
+  {
+   "item": "Jev Daily 11-22 issue",
+   "resolution": "ecosystem items only (Colgate shopper study without ID, Raindrop blog comparison, example code); no paper leads"
+  },
+  {
+   "item": "Jev Daily 11-23/11-24 issues",
+   "resolution": "not yet published at run time (404); next round should re-check"
+  },
+  {
+   "item": "four external awesome-list diffs (awesome-jev, awesome-system-one, awesome-decision-models, awesome-jev-security)",
+   "resolution": "clean of in-window leads: 3 + 7 outside IDs are all pre-window background (2023-2025); the two known loose ID-shaped strings (2609.14973 misattribution, 4157.1124 DOI fragment) were already dispositioned in rounds 19-20"
+  },
+  {
+   "item": "Sarvam Prism / 书生·明决 Intern-Decision / Microsoft-Decision-1.1 / HeyGen Decision 1 / autotrust JEV-27B-VL",
+   "resolution": "standing watch leads unchanged; none has published an arXiv report"
+  }
+ ],
+ "added_papers": 0,
+ "note": "Zero social-owned additions this round. Every resolvable lead (svpino's 31B model, Hybrid Decision Models, the company-brain paper, the November English search results) landed on already-catalogued papers after id_list/title verification. Jev Daily published 11-22 (ecosystem only); 11-23 and 11-24 were not yet out. The four-list external diff was clean of in-window leads for the second round in a row (only pre-window background IDs and the two previously dispositioned string artefacts). Watch leads unchanged.",
+ "social_queries_file": "data/social-search-2026-11-24.json",
+ "social_report_file": "docs/SOCIAL_SEARCH_2026-11-24.md"
+}

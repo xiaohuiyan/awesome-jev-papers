@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "updated_on": "2026-11-23",
+  "updated_on": "2026-11-24",
   "window": {
     "start": "2025-10-16",
-    "end": "2026-11-20",
+    "end": "2026-11-21",
     "basis": "first submission; reviewed version and verification date recorded per paper"
   },
   "categories": {
@@ -49,6 +49,372 @@
     "2610.04345"
   ],
   "papers": [
+    {
+      "arxiv_id": "2611.28667",
+      "title": "When to Test, Repair, or Regenerate: Decision-Guided Efficient RTL Generation",
+      "authors": [
+        "Feiyang Pan",
+        "Shenghe Zheng",
+        "Pengfei Xiao",
+        "Chunyan Yin",
+        "Guangbin Dou"
+      ],
+      "affiliations": [
+        "Southeast University",
+        "The Hong Kong University of Science and Technology",
+        "University of Sheffield"
+      ],
+      "first_submitted": "2026-11-21",
+      "updated": "2026-11-21",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.28667",
+      "reviewed_url": "https://arxiv.org/abs/2611.28667v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.28667v1",
+      "arxiv_categories": [
+        "cs.AR"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "direct",
+      "tags": [
+        "applications",
+        "eda",
+        "rtl-generation",
+        "efficiency"
+      ],
+      "summary": {
+        "en": "LLM agents that refine register-transfer-level designs usually lean on simulation feedback, but without a reference testbench, generating one for every initial implementation costs inference even when the RTL is already correct. This Southeast/HKUST/Sheffield harness gives the orchestrating role to a specialized decision model - hosted Jev in the base configuration, compared against the OpenAI Decisions API and a general-purpose DeepSeek judge for selective early stopping. The controller accepts high-scoring initial implementations as soon as they compile and generates testbenches only for the rest; when further search is needed, the initial decision score allocates budget between repair and independent regeneration, Jev defect-hypothesis scores (one per error category, twelve in the paper's example) rank what to repair alongside simulation feedback, and final selection prioritizes test-passing candidates ranked by decision-model scores. A preliminary Jev-based error-category evaluation on MAEDA (macro-F1 86.01% across five categories, 300 examples) motivated the defect mechanism. With DeepSeek as the generator, the harness improves mean Pass@1 by 5.4-7.1 points across three benchmarks while cutting estimated aggregate inference cost by 11.0-14.3% against a testbench-guided repair baseline under the same candidate cap.",
+        "zh": "用 LLM 生成寄存器传输级(RTL)设计的智能体通常靠仿真反馈做细化,但在没有参考测试平台时,为每个初始实现都生成一套测试平台,即使 RTL 已经正确也要付推理成本。这个东南大学/港科大/谢菲尔德的流程把调度权交给专用决策模型——基础配置用托管 Jev,并与 OpenAI Decisions API 及通用 DeepSeek 裁判在「选择性提前停止」上对比:控制器对编译通过且得分高的初始实现直接接受,只为其余生成测试平台;需要继续搜索时,初始决策分数在「修复 vs 重新生成」之间分配预算,Jev 的缺陷假设打分(每类错误一个,论文示例为 12 个)与仿真反馈一起决定修什么;最终选择优先取通过测试的候选,再用决策模型分数排序。在 MAEDA 上的 Jev 式错误类别初评(五个类别、300 例、macro-F1 86.01%)启发了缺陷机制。以 DeepSeek 为生成器,该流程在三个基准上将平均 Pass@1 提高 5.4–7.1 个点,同时把估计总推理成本较同等候选上限的测试平台引导修复基线降低 11.0–14.3%。"
+      },
+      "problem": {
+        "en": "When an LLM-generated RTL design might already be correct, is generating a testbench for every candidate worth the cost?",
+        "zh": "当 LLM 生成的 RTL 设计可能已经正确时,为每个候选都生成测试平台值得吗?"
+      },
+      "relation": {
+        "en": "Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.",
+        "zh": "使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "The harness uses a specialized evaluator (Jev in our base configuration)",
+          "location": "Sec. III-B",
+          "source_url": "https://arxiv.org/html/2611.28667v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "achieved a macro-F1 of 86.01% across five error categories",
+          "location": "Sec. II",
+          "source_url": "https://arxiv.org/html/2611.28667v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-24",
+      "code": [
+        {
+          "url": "https://github.com/2002-Pan/Decision-Guided-RTL",
+          "source_url": "https://arxiv.org/abs/2611.28667v1",
+          "source_location": "PDF first page project-page URL (Index Terms block)",
+          "verified_on": "2026-11-24",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.28667v1",
+      "source_abstract_sha256": "c833cb453db8c1e8cce0f9b1c53333d0cd1f859c79c4ef7e4dbd6e0071b797c1"
+    },
+    {
+      "arxiv_id": "2611.28635",
+      "title": "LoopSeek: Decoupling System One Search from System Two Answering for Long Video Understanding",
+      "authors": [
+        "Chengzhong Wang",
+        "Lang Lin",
+        "Xinyang Liu",
+        "YueQin Yin",
+        "Mingyuan Zhou",
+        "Shengwei An"
+      ],
+      "affiliations": [
+        "Virginia Tech",
+        "University of Texas at Austin"
+      ],
+      "first_submitted": "2026-11-21",
+      "updated": "2026-11-21",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.28635",
+      "reviewed_url": "https://arxiv.org/abs/2611.28635v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.28635v1",
+      "arxiv_categories": [
+        "cs.CV"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "agents",
+      "relation_level": "related",
+      "tags": [
+        "agents",
+        "long-video",
+        "frame-selection"
+      ],
+      "summary": {
+        "en": "Long-video question answering needs evidence found before it can be reasoned over, but single-pass frame selection can miss critical evidence and adaptive search usually burns budget on repeated text generation. LoopSeek decouples evidence search from answer generation through a System One / System Two division of labor: search is expressed as a sequence of small typed decisions, letting four non-thinking System I role agents (controller, verifier, locator, selector) navigate a tree of video windows and coordinate through probability outputs to select frames, assess evidence and revise the search without generating any text. System I is three LoRA adapters on a frozen OneJev-4B, OmniJev's open multimodal System One decision model; it trains from annotated evidence on questions that System II answers correctly only from that evidence, while the verifier's evidence estimates steer the search. A frozen Qwen3-VL-8B answers once from the selected 32 frames. Across five long-video benchmarks LoopSeek improves average accuracy from 53.5 to 63.9 over the uniform baseline and takes 32-80% less GPU time per question than agentic methods. Hosted Jev is not used; the Jev blog post is cited for the System One paradigm.",
+        "zh": "长视频问答先要找到证据才能推理,但单次前向的选帧可能漏掉关键证据,自适应搜索又依赖反复生成文本来决定看哪里。LoopSeek 用 System One/System Two 分工把证据搜索与答案生成解耦:搜索被表达为一串小型类型化决策,四个非思考的 System I 角色智能体(控制器/校验器/定位器/选择器)在视频窗口树上导航,只靠概率输出协调,完成选帧、评估证据、修正搜索,全程不生成文本。System I 是冻结 OneJev-4B(OmniJev 的开源多模态 System One 决策模型)上的三个 LoRA 适配器;训练数据来自「System II 仅凭该证据才能答对」的问题的标注证据,校验器的证据估计在推理时引导搜索。冻结的 Qwen3-VL-8B 从选出的 32 帧一次性作答。在五个长视频基准上,LoopSeek 相对均匀采样把平均准确率从 53.5 提到 63.9,每题 GPU 时间比智能体式方法少 32–80%。未使用托管 Jev;Jev 博文仅作为 System One 范式的出处被引用。"
+      },
+      "problem": {
+        "en": "How can a long-video agent search for evidence without paying for text generation at every step?",
+        "zh": "长视频智能体如何在每一步不为文本生成买单的情况下搜索证据?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "search can be expressed as a sequence of small, typed decisions",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.28635v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "improves average accuracy from 53.5 to 63.9 over the uniform baseline",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.28635v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-24",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.28635v1",
+      "source_abstract_sha256": "a10767e662525492d463c9ea8cf03de9fe570c82f919c15d1a4eca0dfea32105"
+    },
+    {
+      "arxiv_id": "2611.28535",
+      "title": "Where the Image Sits: Vision-Text Order Bias in Jev",
+      "authors": [
+        "Youzhi Zhang"
+      ],
+      "affiliations": [
+        "Hong Kong Institute of Science & Innovation, Chinese Academy of Sciences"
+      ],
+      "first_submitted": "2026-11-21",
+      "updated": "2026-11-21",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.28535",
+      "reviewed_url": "https://arxiv.org/abs/2611.28535v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.28535v1",
+      "arxiv_categories": [
+        "cs.CV"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "security",
+      "relation_level": "related",
+      "tags": [
+        "security",
+        "order-bias",
+        "vision-language"
+      ],
+      "summary": {
+        "en": "Jev-style system-1 decision models read a choice from a single prefill - the next-token distribution is restricted to the supplied option labels, with no generation and no parsing. Generative vision-language models are known to be sensitive to the relative order of image and text tokens; this single-author study asks whether that sensitivity reaches the Jev-style readout, where the answer is always read at the end of the prompt so moving the image changes the distance from visual evidence to the decision but never the readout position. Using four placements (prefix, pre-question, pre-options, suffix) with the option listing held fixed, across Qwen3-VL-2B/4B/8B, Qwen2.5-VL-7B, Idefics3-8B, LLaVA-OneVision-7B and LLaVA-NeXT-7B run locally, suffix placement flips 41.0% of decisions and lowers accuracy by 18.6 points; the curve is monotone rather than U-shaped, unlike prior results on generative VLMs, and the effect survives token-distance, subset-sampling and readout-choice controls. A prefix-question averaging (P+Q) readout that averages two forward passes is at least as accurate as prefix and outperforms prior baselines. Hosted Jev is not called; Visual Jev and PixelJev are cited as the interface's multimodal relatives. The repository stated in the abstract (Youzhi333/Visual_Tex_Order_Bias_Jev) returned 404 at review time and is not recorded.",
+        "zh": "Jev 式 system-1 决策模型从单次 prefill 中读出选择——把 next-token 分布限制在给定选项标签上,不生成、不解析。生成式视觉语言模型已知对图文 token 的相对顺序敏感;这项单作者研究追问这种敏感性是否同样到达 Jev 式读出:答案永远在提示末尾读取,移动图像改变的是视觉证据到决策的距离,而非读取位置。在四种放置(前缀/问题前/选项前/后缀)、选项列表固定的设置下,对本地运行的 Qwen3-VL-2B/4B/8B、Qwen2.5-VL-7B、Idefics3-8B、LLaVA-OneVision-7B、LLaVA-NeXT-7B 测量:后缀放置翻转 41.0% 的决策、准确率降 18.6 个点;曲线单调而非 U 形,与生成式 VLM 上的已有结论不同;效应经 token 距离、子集采样、读出方式等对照后依然成立。提出的「前缀-问题平均」(P+Q)两次前向读出至少与前缀一样准,并优于既有基线。全文未调用托管 Jev;Visual Jev 与 PixelJev 作为该接口的多模态近亲被引用。摘要中给出的代码仓库(Youzhi333/Visual_Tex_Order_Bias_Jev)审阅时404,未予记录。"
+      },
+      "problem": {
+        "en": "Does the order of image and text tokens change what a Jev-style decision readout decides?",
+        "zh": "图像与文本 token 的顺序会改变 Jev 式决策读出的判断吗?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "Jev-style system-1 decision models read a choice from a single prefill",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.28535v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "Suffix placement flips 41.0% of decisions and lowers accuracy by 18.6 points",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.28535v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-24",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.28535v1",
+      "source_abstract_sha256": "035bb0efa8a0ffe21eaf717a01fa73d93b2e7a45fb4c92f34ed33461804d4468"
+    },
+    {
+      "arxiv_id": "2611.28331",
+      "title": "Decision models for UAVBench and the viability of edge deployment",
+      "authors": [
+        "Matthew Michelson",
+        "Goran Muric",
+        "Adrien Bibal",
+        "Steven Minton"
+      ],
+      "affiliations": [
+        "InferLink Corporation"
+      ],
+      "first_submitted": "2026-11-20",
+      "updated": "2026-11-20",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.28331",
+      "reviewed_url": "https://arxiv.org/abs/2611.28331v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.28331v1",
+      "arxiv_categories": [
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "evaluation",
+      "relation_level": "related",
+      "tags": [
+        "evaluation",
+        "edge-deployment",
+        "uav"
+      ],
+      "summary": {
+        "en": "A benchmark score does not tell us whether a model will actually run on the edge computer a drone carries. On UAVBench's 2,000 validated multiple-choice questions, this InferLink study evaluates 24 model configurations on an ordinary Mac: 20 size-and-precision configurations of 11 generative models plus four open-weight structured decision models (GLiDE 0.4B and 0.8B, Liquid d1 2B, H2O Lightning 4B) that received no UAVBench-specific training. H2O Lightning 4B achieves the highest accuracy observed, 77.65% on the Mac - above the benchmark authors' hosted Gemini 2.5 Flash at 76.75% - showing small decision models suit these tasks. The paper explicitly does not evaluate the commercial Jev model itself, framing GLiDE, Liquid d1 and H2O as releases of the same interface rather than reproductions of Jev's undisclosed implementation. Deploying the decision models to a Qualcomm RB3 Gen 2 board hits conversion and runtime limits described in detail (H2O completed only a 100-question diagnostic; GLiDE and Liquid d1 could not run at all). Matched Mac-RB3 runs of two generative models preserve ranking but not individual answers, so local screening shortlists candidates while final testing stays on the target hardware.",
+        "zh": "基准分数并不能说明模型能否真正跑在无人机携带的边缘计算机上。这项 InferLink 研究在 UAVBench 的 2,000 道经过校验的多选题上,于普通 Mac 上评测 24 种模型配置:11 个生成式模型的20 种规模-精度组合,加上四个未经 UAVBench 定制训练的开放权重结构化决策模型(GLiDE 0.4B/0.8B、Liquid d1 2B、H2O Lightning 4B)。H2O Lightning 4B 拿到全场最高准确率 77.65%,高于基准原作者用托管版测出的 Gemini 2.5 Flash(76.75%),说明小型决策模型很适合这类任务。论文明确不评测商业 Jev 本身,并把 GLiDE、Liquid d1、H2O 定位为同一接口的开放发布而非对 Jev 未公开实现的复现。把决策模型部署到 Qualcomm RB3 Gen 2 开发板则遇到详细记录的转换与运行时限制(H2O 只完成了 100 题诊断;GLiDE 与 Liquid d1 完全跑不起来)。两个生成式模型在 Mac 与 RB3 上的配对评测保排名不保答案,因此本地筛选可列候选名单,最终测试仍须在目标硬件上进行。"
+      },
+      "problem": {
+        "en": "Will a model that scores well on a UAV decision benchmark actually run, and run usefully, on an edge computer?",
+        "zh": "在无人机决策基准上得分好的模型,真的能在边缘计算机上跑起来、且跑得有用吗?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "four open-weight structured decision models",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.28331v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "achieved the highest accuracy we observed, scoring 77.65% on the Mac",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.28331v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-24",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.28331v1",
+      "source_abstract_sha256": "4ecccb5e1302e1b0941a73eadd8c00e870ff60585183176661ee9ad826b7628f"
+    },
+    {
+      "arxiv_id": "2611.27910",
+      "title": "Decision Columns as an Index: Interpretable Embeddings for Explainable Entity Matching and Search",
+      "authors": [
+        "Aadharsh Kannan",
+        "Robert Bruckner",
+        "Philip A. Bernstein"
+      ],
+      "affiliations": [
+        "Microsoft"
+      ],
+      "first_submitted": "2026-11-20",
+      "updated": "2026-11-20",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.27910",
+      "reviewed_url": "https://arxiv.org/abs/2611.27910v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.27910v1",
+      "arxiv_categories": [
+        "cs.IR"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "related",
+      "tags": [
+        "applications",
+        "data-systems",
+        "entity-matching"
+      ],
+      "summary": {
+        "en": "As agents begin to act on business records, entity matching and retrieval need reasons a person can check, but dense embeddings are opaque coordinates that cannot be filtered by meaning and require corpus re-encoding to add a property. This Microsoft paper proposes interpretable embeddings built from decision columns: each column stores a decision model's calibrated answer to a natural-language question over the record, with outcomes yes, no or not stated, so a record's vector is its answers across an ordered question space and every similarity score decomposes exactly into per-question contributions. New questions add coordinates without re-encoding existing ones, and questions derived from retrieval failures triple mean reciprocal rank. The answering model is Microsoft's Decision 1 (MD1) alongside gpt-6-luna as a generative comparison; hosted Jev is not used. On WDC Products and STaRK-Amazon, question-space retrieval statistically matches dense candidate generation in a retrieve-then-verify matcher while explaining every accepted match, and one small MLP predicts the full interpretable vector from an existing dense embedding, backfilling a corpus from a few thousand labeled rows at roughly 1/200 the cost.",
+        "zh": "当智能体开始在业务记录上行动,实体匹配与检索都需要人可核查的理由,而稠密嵌入是不透明的坐标,既不能按语义过滤,新增属性还要重编码整个语料。这篇微软论文提出由「决策列」构成的可解释嵌入:每一列存一个决策模型对某条自然语言问题给出的校准答案(是/否/未提及),记录的向量就是它在一组有序问题空间上的答案,任意相似度分数都能精确分解到每个问题的贡献。新增问题只增加坐标、不改写既有答案;从检索失败反推的问题让 MRR 翻三倍。应答模型是微软的 Decision 1(MD1),并以 gpt-6-luna 作生成式对照;未使用托管 Jev。在 WDC Products 与 STaRK-Amazon 上,问题空间检索在「检索后验证」的实体匹配器中与稠密候选生成统计持平,且对每个接受的匹配给出精确解释;一个小型 MLP 从既有稠密嵌入预测完整可解释向量,用几千行标注就能以约 1/200 的成本回填百万行语料。"
+      },
+      "problem": {
+        "en": "Can record embeddings carry coordinates that a person can read, filter on and extend without re-encoding the corpus?",
+        "zh": "记录嵌入能否带上人可读、可按语义过滤、且无需重编码语料即可扩展的坐标?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "each column stores a decision model's calibrated answer",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.27910v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "predicts the full interpretable vector from an existing dense embedding",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.27910v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-24",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.27910v1",
+      "source_abstract_sha256": "823f68b7f389e2f659f4ea0241b594200949f678c85f8c583cc24c9d1545a89b"
+    },
     {
       "arxiv_id": "2611.27721",
       "title": "Decision Models for Multilingual Emotion Classification: A Comparative Study Against LLMs and Encoders",

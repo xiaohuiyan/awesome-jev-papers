@@ -1791,6 +1791,114 @@
       "round": 20,
       "query": "/recent listing re-run after the 11-20 batch reached the API index: pages unchanged (4,979 entries, newest 2611.26629) - the batch was not yet on the listing pages, so the standing fused-name check for it ran on the API side instead",
       "count": 39
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 21,
+      "query": "all:\"language model\" AND submittedDate:[202611210000 TO 202611242359] (sanity probe; 0 total - the search index had not yet reached 11-21 at 01:43 UTC, while the category-side index already listed the 11-21 batch)",
+      "count": 0
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 21,
+      "query": "fresh window, four standing queries plus five token variants AND submittedDate:[202611210000 TO 202611242359] (all zero for the same reason; fresh coverage of 11-21+ deferred to the closing re-run)",
+      "count": 0
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 21,
+      "query": "all:\"Jev\" AND submittedDate:[202609150000 TO 202611242359] (uncapped whole-window re-run; 259 records - one fewer than round 20 closing: 2609.30186 renamed to ScopeAct in v2, dropping its Jev tokens; 1 record outside pool+ledger)",
+      "count": 259
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 21,
+      "query": "all:\"System One\" AND submittedDate:[202609150000 TO 202611242359] (uncapped whole-window re-run; no record outside pool+ledger)",
+      "count": 120
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 21,
+      "query": "all:\"typed decision\" AND submittedDate:[202609150000 TO 202611242359] (uncapped whole-window re-run; no record outside pool+ledger)",
+      "count": 86
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 21,
+      "query": "all:\"decision model\" AND submittedDate:[202609150000 TO 202611242359] (uncapped whole-window re-run; 1 record outside pool+ledger: 2611.27910, late-announced 11-20 tail)",
+      "count": 286
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 21,
+      "query": "all:\"decision models\" AND submittedDate:[202609150000 TO 202611242359] (uncapped whole-window re-run; no additional record outside pool+ledger)",
+      "count": 287
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 21,
+      "query": "all:\"System 1\" AND submittedDate:[202609150000 TO 202611242359] (uncapped whole-window re-run; no record outside pool+ledger)",
+      "count": 67
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 21,
+      "query": "all:\"System-One\" AND submittedDate:[202609150000 TO 202611242359] (uncapped whole-window re-run; no record outside pool+ledger)",
+      "count": 120
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 21,
+      "query": "all:MedJev AND submittedDate:[202609150000 TO 202611242359] (whole-window re-run; no record outside pool+ledger)",
+      "count": 2
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 21,
+      "query": "all:JevBench AND submittedDate:[202609150000 TO 202611242359] (whole-window re-run; no record outside pool+ledger)",
+      "count": 8
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 21,
+      "query": "(cat:cs.AI OR ... 37 catalogue categories) AND submittedDate:[202611190000 TO 202611242359] API-side listing net - 2 uncapped requests, 1,762 records (11-19: 869, 11-20: 742, 11-21: 151; the 11-21 batch was already on the category index though not on the search index), title/author grep for fused Jev compounds and standing-token variants - 19 hits: 14 catalogued/ledgered + 2 new candidates (2611.28535 Where the Image Sits, 2611.28635 LoopSeek) + the late-announced 11-20 tail record 2611.28331 + 3 recurring author-substring false positives (Gligorijevic x2, Stanojev) verified token-free via id_list and logged, not ledgered",
+      "count": 1762
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 21,
+      "query": "closing re-run ~2 h after the sweep (the search index had started ingesting the 11-21 batch): fresh-window probes all:\"Jev\" (1 total) and all:\"decision model\" (2 total) - 1 record outside pool+catalogue+ledger (2611.28667, first submitted 11-21)",
+      "count": 2
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 21,
+      "query": "all:\"decision models\" AND submittedDate:[202609150000 TO 202611242359] (closing re-run uncapped; total 287->289; 1 record outside pool+catalogue+ledger)",
+      "count": 289
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 21,
+      "query": "all:\"decision model\" AND submittedDate:[202609150000 TO 202611242359] (closing re-run uncapped; total 286->288; 1 record outside pool+catalogue+ledger)",
+      "count": 288
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 21,
+      "query": "all:\"Jev\" AND submittedDate:[202609150000 TO 202611242359] (closing re-run uncapped; total 259->260, the +1 being 2611.28535 now also search-indexed; no record outside pool+catalogue+ledger)",
+      "count": 260
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 21,
+      "query": "all:\"System One\" AND submittedDate:[202609150000 TO 202611242359] (closing re-run uncapped; total 120->122; 1 record outside pool+catalogue+ledger: 2611.28146, adjacent-word artefact, excluded)",
+      "count": 122
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 21,
+      "query": "all:\"System 1\" AND submittedDate:[202609150000 TO 202611242359] (closing re-run uncapped; total 67->69; 1 record outside pool+catalogue+ledger: 2611.28029, first submitted 10-06 and indexed only now; adjacent-word artefact, excluded)",
+      "count": 69
     }
   ],
   "web_discovery_queries": [
@@ -2767,10 +2875,10 @@
       "purpose": "Early Jev corpus and four foundational methods"
     }
   ],
-  "unique_candidates": 618,
+  "unique_candidates": 625,
   "outcomes": {
-    "included": 435,
-    "excluded": 181,
+    "included": 440,
+    "excluded": 183,
     "pending": 2
   },
   "limitations": [
@@ -2781,7 +2889,7 @@
     "Broad discovery ends on 2026-10-16. Later targeted additions are logged separately and do not imply a fresh search or re-verification of the entire corpus.",
     "2026-10-27 round: Zhihu and Weibo returned no usable public search results (403 or ignored site filters); WeChat coverage relied on the Sogou public index."
   ],
-  "updated_on": "2026-11-23",
+  "updated_on": "2026-11-24",
   "targeted_additions": [
     {
       "reviewed_on": "2026-10-17",

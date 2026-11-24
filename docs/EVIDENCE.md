@@ -3,6 +3,76 @@
 
 Short excerpts support relevance decisions, not paper quality or reproducibility. Scores measure topic fit and substantive contribution only. Abstract-level review is the default; targeted full-text checks are marked. 引文用于核实相关性，不是论文质量或模型性能评分。
 
+<a id="evidence-2611-28667"></a>
+## 2611.28667 — When to Test, Repair, or Regenerate: Decision-Guided Efficient RTL Generation
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-24
+
+Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence.
+
+使用、评测或实质综述托管 Jev;具体关系见简评与来源证据。
+
+- **topic**: “The harness uses a specialized evaluator (Jev in our base configuration)” — [Sec. III-B](https://arxiv.org/html/2611.28667v1)
+- **contribution**: “achieved a macro-F1 of 86.01% across five error categories” — [Sec. II](https://arxiv.org/html/2611.28667v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.28667v1); first submitted 2026-11-21; updated 2026-11-21. Full authors: Feiyang Pan; Shenghe Zheng; Pengfei Xiao; Chunyan Yin; Guangbin Dou.
+
+<a id="evidence-2611-28635"></a>
+## 2611.28635 — LoopSeek: Decoupling System One Search from System Two Answering for Long Video Understanding
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-24
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “search can be expressed as a sequence of small, typed decisions” — [Abstract](https://arxiv.org/abs/2611.28635v1)
+- **contribution**: “improves average accuracy from 53.5 to 63.9 over the uniform baseline” — [Abstract](https://arxiv.org/abs/2611.28635v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.28635v1); first submitted 2026-11-21; updated 2026-11-21. Full authors: Chengzhong Wang; Lang Lin; Xinyang Liu; YueQin Yin; Mingyuan Zhou; Shengwei An.
+
+<a id="evidence-2611-28535"></a>
+## 2611.28535 — Where the Image Sits: Vision-Text Order Bias in Jev
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-24
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “Jev-style system-1 decision models read a choice from a single prefill” — [Abstract](https://arxiv.org/abs/2611.28535v1)
+- **contribution**: “Suffix placement flips 41.0% of decisions and lowers accuracy by 18.6 points” — [Abstract](https://arxiv.org/abs/2611.28535v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.28535v1); first submitted 2026-11-21; updated 2026-11-21. Full authors: Youzhi Zhang.
+
+<a id="evidence-2611-28331"></a>
+## 2611.28331 — Decision models for UAVBench and the viability of edge deployment
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-24
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “four open-weight structured decision models” — [Abstract](https://arxiv.org/abs/2611.28331v1)
+- **contribution**: “achieved the highest accuracy we observed, scoring 77.65% on the Mac” — [Abstract](https://arxiv.org/abs/2611.28331v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.28331v1); first submitted 2026-11-20; updated 2026-11-20. Full authors: Matthew Michelson; Goran Muric; Adrien Bibal; Steven Minton.
+
+<a id="evidence-2611-27910"></a>
+## 2611.27910 — Decision Columns as an Index: Interpretable Embeddings for Explainable Entity Matching and Search
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-24
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “each column stores a decision model's calibrated answer” — [Abstract](https://arxiv.org/abs/2611.27910v1)
+- **contribution**: “predicts the full interpretable vector from an existing dense embedding” — [Abstract](https://arxiv.org/abs/2611.27910v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.27910v1); first submitted 2026-11-20; updated 2026-11-20. Full authors: Aadharsh Kannan; Robert Bruckner; Philip A. Bernstein.
+
 <a id="evidence-2611-27721"></a>
 ## 2611.27721 — Decision Models for Multilingual Emotion Classification: A Comparative Study Against LLMs and Encoders
 

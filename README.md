@@ -12,9 +12,9 @@ This reading list asks a concrete question: given context and a set of options, 
 
 | Papers | Direct Jev | Related methods | Foundations | With verified code |
 | ---: | ---: | ---: | ---: | ---: |
-| **435** | 266 | 165 | 4 | 159 |
+| **440** | 267 | 169 | 4 | 160 |
 
-Updated **2026-11-23** · Main window **2025-10-16–2026-11-20** (first submission)
+Updated **2026-11-24** · Main window **2025-10-16–2026-11-21** (first submission)
 
 [Start with ten papers](#recommended-reading) · [Browse by question](#category-index) · [Foundations](#foundations) · [Data and maintenance](#reuse-and-updates)
 
@@ -51,11 +51,11 @@ Suggested path: **assess the evidence → compare capabilities → understand mo
 | Your question | Topic | Direct / related | Total |
 | --- | --- | ---: | ---: |
 | How do we train a model specifically to choose? | [Model architectures and training](#architecture) | 24 / 52 | 76 |
-| When are fast decisions good enough? | [Benchmarks and comparative evaluation](#evaluation) | 51 / 13 | 64 |
+| When are fast decisions good enough? | [Benchmarks and comparative evaluation](#evaluation) | 51 / 14 | 65 |
 | Can we trust the model's confidence? | [Calibration, reliability and selective decisions](#calibration) | 19 / 14 | 33 |
-| When should an agent search, use a tool, or delegate? | [Search, memory, tools and agent decisions](#agents) | 46 / 21 | 67 |
-| Can phrasing, option order, or attacks change the decision? | [Security, robustness and decision bias](#security) | 55 / 14 | 69 |
-| How do quality and speed trade off in real workflows? | [Domain applications and deployment efficiency](#applications) | 71 / 51 | 122 |
+| When should an agent search, use a tool, or delegate? | [Search, memory, tools and agent decisions](#agents) | 46 / 22 | 68 |
+| Can phrasing, option order, or attacks change the decision? | [Security, robustness and decision bias](#security) | 55 / 15 | 70 |
+| How do quality and speed trade off in real workflows? | [Domain applications and deployment efficiency](#applications) | 72 / 52 | 124 |
 
 Each paper has one primary category; 4 foundations are listed separately. Categories group direct Jev work before related methods, with newest first submissions first within each group. Entries keep published date, authors, affiliations, problem, and contribution; affiliations come from the papers themselves (HTML full text or PDF first page), and 24 papers that state none omit the field. Full author lists, tags, and verification records live in the [evidence ledger](docs/EVIDENCE.md) and [BibTeX](references.bib).
 
@@ -1085,8 +1085,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: Which steps in an agent trajectory are redundant, and can they be detected automatically?
 - **💡 Contribution**: Includes Jev in a benchmark for detecting redundant steps in agent trajectories.
 ---
-### Related model / method · 13
+### Related model / method · 14
 
+<a id="paper-2611-28331"></a>
+#### [Decision models for UAVBench and the viability of edge deployment](https://arxiv.org/abs/2611.28331v1) · [PDF](https://arxiv.org/pdf/2611.28331v1)
+- **📅 Published**: 2026-11-20 (v1)
+- **👥 Authors**: Matthew Michelson; Goran Muric; Adrien Bibal; Steven Minton
+- **🏢 Affiliations**: InferLink Corporation
+- **🎯 Problem**: Will a model that scores well on a UAV decision benchmark actually run, and run usefully, on an edge computer?
+- **💡 Contribution**: A benchmark score does not tell us whether a model will actually run on the edge computer a drone carries. On UAVBench's 2,000 validated multiple-choice questions, this InferLink study evaluates 24 model configurations on an ordinary Mac: 20 size-and-precision configurations of 11 generative models plus four open-weight structured decision models (GLiDE 0.4B and 0.8B, Liquid d1 2B, H2O Lightning 4B) that received no UAVBench-specific training. H2O Lightning 4B achieves the highest accuracy observed, 77.65% on the Mac - above the benchmark authors' hosted Gemini 2.5 Flash at 76.75% - showing small decision models suit these tasks. The paper explicitly does not evaluate the commercial Jev model itself, framing GLiDE, Liquid d1 and H2O as releases of the same interface rather than reproductions of Jev's undisclosed implementation. Deploying the decision models to a Qualcomm RB3 Gen 2 board hits conversion and runtime limits described in detail (H2O completed only a 100-question diagnostic; GLiDE and Liquid d1 could not run at all). Matched Mac-RB3 runs of two generative models preserve ranking but not individual answers, so local screening shortlists candidates while final testing stays on the target hardware.
+---
 <a id="paper-2611-21995"></a>
 #### [Deciding Without Pointing: A Case Study of Whether a Decision Model Localizes the Anomalies It Detects](https://arxiv.org/abs/2611.21995v1) · [PDF](https://arxiv.org/pdf/2611.21995v1)
 - **📅 Published**: 2026-11-16 (v1)
@@ -1838,8 +1846,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: Can a System One layer coordinate an agent's memory operations efficiently?
 - **💡 Contribution**: Introduces a System-One-controlled memory architecture to coordinate efficient agent memory operations.
 ---
-### Related model / method · 21
+### Related model / method · 22
 
+<a id="paper-2611-28635"></a>
+#### [LoopSeek: Decoupling System One Search from System Two Answering for Long Video Understanding](https://arxiv.org/abs/2611.28635v1) · [PDF](https://arxiv.org/pdf/2611.28635v1)
+- **📅 Published**: 2026-11-21 (v1)
+- **👥 Authors**: Chengzhong Wang; Lang Lin; Xinyang Liu et al. (6 authors)
+- **🏢 Affiliations**: Virginia Tech; University of Texas at Austin
+- **🎯 Problem**: How can a long-video agent search for evidence without paying for text generation at every step?
+- **💡 Contribution**: Long-video question answering needs evidence found before it can be reasoned over, but single-pass frame selection can miss critical evidence and adaptive search usually burns budget on repeated text generation. LoopSeek decouples evidence search from answer generation through a System One / System Two division of labor: search is expressed as a sequence of small typed decisions, letting four non-thinking System I role agents (controller, verifier, locator, selector) navigate a tree of video windows and coordinate through probability outputs to select frames, assess evidence and revise the search without generating any text. System I is three LoRA adapters on a frozen OneJev-4B, OmniJev's open multimodal System One decision model; it trains from annotated evidence on questions that System II answers correctly only from that evidence, while the verifier's evidence estimates steer the search. A frozen Qwen3-VL-8B answers once from the selected 32 frames. Across five long-video benchmarks LoopSeek improves average accuracy from 53.5 to 63.9 over the uniform baseline and takes 32-80% less GPU time per question than agentic methods. Hosted Jev is not used; the Jev blog post is cited for the System One paradigm.
+---
 <a id="paper-2611-26007"></a>
 #### [System-One RSI: Building Muscle Memory for Interactive Agents through Guided Practice](https://arxiv.org/abs/2611.26007v1) · [PDF](https://arxiv.org/pdf/2611.26007v1)
 - **📅 Published**: 2026-11-19 (v1)
@@ -2449,8 +2465,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: Does an AI shopping agent judge sponsored listings differently depending on who delegated the search?
 - **💡 Contribution**: A marketing study of role-induced bias in AI shopping agents: does an agent's evaluation of sponsored listings depend on who delegates the search? In Study 1, across six LLMs and six decision models, consumer-delegated agents penalize sponsored listings, whereas naming a booking platform as the principal significantly attenuates that sponsorship penalty without any instruction to favour advertisers. The 2x2 experiment is then replicated on five more LLMs and five more decision models - commercial API models including hosted Jev 1.14 (queried through OpenRouter's System-One Decisions API), Liquid D1-Ultra, Mercury Decide and Microsoft Decision 1, plus open-weight StartLux 27B - and both hypotheses replicate in all ten. In LLMs the bias works through reduced pre-choice skepticism. Study 2 finds that attributing the paid placement to the platform amplifies the bias and stricter disclosure wording fails to eliminate it. Study 3 shows prompt-level mitigation removes platform leniency but can over-correct the penalty, whereas consumer-aligned fine-tuning eliminates the bias while better preserving baseline preferences.
 ---
-### Related model / method · 14
+### Related model / method · 15
 
+<a id="paper-2611-28535"></a>
+#### [Where the Image Sits: Vision-Text Order Bias in Jev](https://arxiv.org/abs/2611.28535v1) · [PDF](https://arxiv.org/pdf/2611.28535v1)
+- **📅 Published**: 2026-11-21 (v1)
+- **👥 Authors**: Youzhi Zhang
+- **🏢 Affiliations**: Hong Kong Institute of Science & Innovation, Chinese Academy of Sciences
+- **🎯 Problem**: Does the order of image and text tokens change what a Jev-style decision readout decides?
+- **💡 Contribution**: Jev-style system-1 decision models read a choice from a single prefill - the next-token distribution is restricted to the supplied option labels, with no generation and no parsing. Generative vision-language models are known to be sensitive to the relative order of image and text tokens; this single-author study asks whether that sensitivity reaches the Jev-style readout, where the answer is always read at the end of the prompt so moving the image changes the distance from visual evidence to the decision but never the readout position. Using four placements (prefix, pre-question, pre-options, suffix) with the option listing held fixed, across Qwen3-VL-2B/4B/8B, Qwen2.5-VL-7B, Idefics3-8B, LLaVA-OneVision-7B and LLaVA-NeXT-7B run locally, suffix placement flips 41.0% of decisions and lowers accuracy by 18.6 points; the curve is monotone rather than U-shaped, unlike prior results on generative VLMs, and the effect survives token-distance, subset-sampling and readout-choice controls. A prefix-question averaging (P+Q) readout that averages two forward passes is at least as accurate as prefix and outperforms prior baselines. Hosted Jev is not called; Visual Jev and PixelJev are cited as the interface's multimodal relatives. The repository stated in the abstract (Youzhi333/Visual_Tex_Order_Bias_Jev) returned 404 at review time and is not recorded.
+---
 <a id="paper-2611-23947"></a>
 #### [When Do Decision Models Help LLM-Driven Network Discovery?](https://arxiv.org/abs/2611.23947v1) · [PDF](https://arxiv.org/pdf/2611.23947v1)
 - **📅 Published**: 2026-11-18 (v1)
@@ -2570,8 +2594,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 71
+### Direct Jev · 72
 
+<a id="paper-2611-28667"></a>
+#### [When to Test, Repair, or Regenerate: Decision-Guided Efficient RTL Generation](https://arxiv.org/abs/2611.28667v1) · [PDF](https://arxiv.org/pdf/2611.28667v1) · [Code](https://github.com/2002-Pan/Decision-Guided-RTL)
+- **📅 Published**: 2026-11-21 (v1)
+- **👥 Authors**: Feiyang Pan; Shenghe Zheng; Pengfei Xiao et al. (5 authors)
+- **🏢 Affiliations**: Southeast University; The Hong Kong University of Science and Technology; University of Sheffield
+- **🎯 Problem**: When an LLM-generated RTL design might already be correct, is generating a testbench for every candidate worth the cost?
+- **💡 Contribution**: LLM agents that refine register-transfer-level designs usually lean on simulation feedback, but without a reference testbench, generating one for every initial implementation costs inference even when the RTL is already correct. This Southeast/HKUST/Sheffield harness gives the orchestrating role to a specialized decision model - hosted Jev in the base configuration, compared against the OpenAI Decisions API and a general-purpose DeepSeek judge for selective early stopping. The controller accepts high-scoring initial implementations as soon as they compile and generates testbenches only for the rest; when further search is needed, the initial decision score allocates budget between repair and independent regeneration, Jev defect-hypothesis scores (one per error category, twelve in the paper's example) rank what to repair alongside simulation feedback, and final selection prioritizes test-passing candidates ranked by decision-model scores. A preliminary Jev-based error-category evaluation on MAEDA (macro-F1 86.01% across five categories, 300 examples) motivated the defect mechanism. With DeepSeek as the generator, the harness improves mean Pass@1 by 5.4-7.1 points across three benchmarks while cutting estimated aggregate inference cost by 11.0-14.3% against a testbench-guided repair baseline under the same candidate cap.
+---
 <a id="paper-2611-26999"></a>
 #### [JevRisk: Zero-Shot Financial Risk Assessment with a Language Decision Model](https://arxiv.org/abs/2611.26999v1) · [PDF](https://arxiv.org/pdf/2611.26999v1)
 - **📅 Published**: 2026-11-20 (v1)
@@ -3139,8 +3171,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: Can a low-latency decision model replace LLMs in edge service orchestration?
 - **💡 Contribution**: Integrates Jev into edge service orchestration and measures verified requests, admission behavior and execution outcomes.
 ---
-### Related model / method · 51
+### Related model / method · 52
 
+<a id="paper-2611-27910"></a>
+#### [Decision Columns as an Index: Interpretable Embeddings for Explainable Entity Matching and Search](https://arxiv.org/abs/2611.27910v1) · [PDF](https://arxiv.org/pdf/2611.27910v1)
+- **📅 Published**: 2026-11-20 (v1)
+- **👥 Authors**: Aadharsh Kannan; Robert Bruckner; Philip A. Bernstein
+- **🏢 Affiliations**: Microsoft
+- **🎯 Problem**: Can record embeddings carry coordinates that a person can read, filter on and extend without re-encoding the corpus?
+- **💡 Contribution**: As agents begin to act on business records, entity matching and retrieval need reasons a person can check, but dense embeddings are opaque coordinates that cannot be filtered by meaning and require corpus re-encoding to add a property. This Microsoft paper proposes interpretable embeddings built from decision columns: each column stores a decision model's calibrated answer to a natural-language question over the record, with outcomes yes, no or not stated, so a record's vector is its answers across an ordered question space and every similarity score decomposes exactly into per-question contributions. New questions add coordinates without re-encoding existing ones, and questions derived from retrieval failures triple mean reciprocal rank. The answering model is Microsoft's Decision 1 (MD1) alongside gpt-6-luna as a generative comparison; hosted Jev is not used. On WDC Products and STaRK-Amazon, question-space retrieval statistically matches dense candidate generation in a retrieve-then-verify matcher while explaining every accepted match, and one small MLP predicts the full interpretable vector from an existing dense embedding, backfilling a corpus from a few thousand labeled rows at roughly 1/200 the cost.
+---
 <a id="paper-2611-27489"></a>
 #### [Efficient Natural Language to Temporal Logic Translation for Real-Time Physical AI](https://arxiv.org/abs/2611.27489v1) · [PDF](https://arxiv.org/pdf/2611.27489v1)
 - **📅 Published**: 2026-11-20 (v1)
@@ -3593,7 +3633,7 @@ Earlier work on calibration, rejection, cascades, and generalist classification.
 | --- | --- |
 | Download and cite | [JSON](data/papers.json) · [BibTeX](references.bib) |
 | Check inclusion evidence | [Evidence ledger](docs/EVIDENCE.md) · [Selection rules](docs/METHODOLOGY.md) |
-| Understand search coverage | [Search log](docs/SEARCH_LOG.md) · [X and CN-platform search (11-23)](docs/SOCIAL_SEARCH_2026-11-23.md) · [arXiv search (+35 papers)](docs/ARXIV_SEARCH_2026-11-23.md) |
+| Understand search coverage | [Search log](docs/SEARCH_LOG.md) · [X and CN-platform search (11-24)](docs/SOCIAL_SEARCH_2026-11-24.md) · [arXiv search (+5 papers)](docs/ARXIV_SEARCH_2026-11-24.md) |
 | Inspect screening | [Screening ledger](data/screening.json) · [Pending](docs/PENDING.md) |
 | Contribute | [Contributing](CONTRIBUTING.md) · [Changelog](CHANGELOG.md) |
 

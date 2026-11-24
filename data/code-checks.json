@@ -1747,5 +1747,16 @@
     "canonical_url": "https://github.com/Tencent/WePocketModel",
     "description": "A compact, unified multimodal model family with a single shared vision–language backbone, built for on-device and in-app intelligence.",
     "private": false
+  },
+  {
+    "arxiv_id": "2611.28667",
+    "url": "https://github.com/2002-Pan/Decision-Guided-RTL",
+    "source_url": "https://arxiv.org/abs/2611.28667v1",
+    "source_location": "PDF first page project-page URL (Index Terms block)",
+    "checked_on": "2026-11-24",
+    "status": "verified",
+    "canonical_url": "https://github.com/2002-Pan/Decision-Guided-RTL",
+    "description": "Official project page for \"When to Test, Repair, or Regenerate: Decision-Guided Efficient RTL Generation\".",
+    "private": false
   }
 ]
