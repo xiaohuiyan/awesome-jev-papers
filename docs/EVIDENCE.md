@@ -3,6 +3,468 @@
 
 Short excerpts support relevance decisions, not paper quality or reproducibility. Scores measure topic fit and substantive contribution only. Abstract-level review is the default; targeted full-text checks are marked. 引文用于核实相关性，不是论文质量或模型性能评分。
 
+<a id="evidence-2611-33368"></a>
+## 2611.33368 — Searching Ultra-Long Videos with Decision Models
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-26
+
+Uses or evaluates the hosted Jev API (TypeSafe AI) in its experiments or pipeline.
+
+在实验或流水线中使用或评测了托管 Jev API(TypeSafe AI)。
+
+- **topic**: “leverages pretrained decision models” — [Abstract](https://arxiv.org/abs/2611.33368v1)
+- **contribution**: “directly outputs a relevance score without generating text” — [Abstract](https://arxiv.org/abs/2611.33368v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.33368v1); first submitted 2026-11-24; updated 2026-11-24. Full authors: Ce Zhang; Baiqi Li; Seongsu Ha; Gedas Bertasius.
+
+<a id="evidence-2611-33307"></a>
+## 2611.33307 — Lost in Translation, Not in Confidence: Benchmarking and Calibrating Multilingual Decision Models
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-26
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “return a probability for each option of a typed query” — [Abstract](https://arxiv.org/abs/2611.33307v1)
+- **contribution**: “25 top-ranked open-weight decision models on 17 tasks in 14 languages” — [Abstract](https://arxiv.org/abs/2611.33307v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.33307v1); first submitted 2026-11-24; updated 2026-11-24. Full authors: Mingzhe Du; Thong Thanh Nguyen; Nguyen Tran Cong Duy; See-Kiong Ng; Luu Anh Tuan.
+
+<a id="evidence-2611-32917"></a>
+## 2611.32917 — SOARS: System One Assisted Reranking for Agentic Search
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-26
+
+Uses or evaluates the hosted Jev API (TypeSafe AI) in its experiments or pipeline.
+
+在实验或流水线中使用或评测了托管 Jev API(TypeSafe AI)。
+
+- **topic**: “a training-free framework leveraging a System One model” — [Abstract](https://arxiv.org/abs/2611.32917v1)
+- **contribution**: “fast, calibrated relevance estimation” — [Abstract](https://arxiv.org/abs/2611.32917v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.32917v1); first submitted 2026-11-24; updated 2026-11-24. Full authors: Amin Bigdeli; Liye Fu; Fattane Zarrinkalam; Joel Stremmel; Elizabeth Lingg.
+
+<a id="evidence-2611-32368"></a>
+## 2611.32368 — Decision Models: An Introduction and Capability Evaluation
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-26
+
+Uses or evaluates the hosted Jev API (TypeSafe AI) in its experiments or pipeline.
+
+在实验或流水线中使用或评测了托管 Jev API(TypeSafe AI)。
+
+- **topic**: “need decisions that software can act on” — [Abstract](https://arxiv.org/abs/2611.32368v1)
+- **contribution**: “StartLux Instant achieves 95.3% overall accuracy” — [Abstract](https://arxiv.org/abs/2611.32368v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.32368v1); first submitted 2026-11-24; updated 2026-11-24. Full authors: Rongtao Zhang; Mingjing Qi.
+
+<a id="evidence-2611-32365"></a>
+## 2611.32365 — The Control-Flow Tax: Specialized Decision Routing for LLM Agent Workflows
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-26
+
+Uses or evaluates the hosted Jev API (TypeSafe AI) in its experiments or pipeline.
+
+在实验或流水线中使用或评测了托管 Jev API(TypeSafe AI)。
+
+- **topic**: “control-flow routing accounts for 42.5% of baseline reference cost” — [Abstract](https://arxiv.org/abs/2611.32365v1)
+- **contribution**: “Jev full routing achieves the lowest mean cost and elapsed time on every task” — [Abstract](https://arxiv.org/abs/2611.32365v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.32365v1); first submitted 2026-11-24; updated 2026-11-24. Full authors: Zhikai Cheng; Shuanghu Wang; Li Jiang.
+
+<a id="evidence-2611-32100"></a>
+## 2611.32100 — EEGJev: A System One Decision Model and Benchmark for Multi-Task EEG Question Answering
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-26
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “a fast decision model that scores candidate answers in one pass” — [Abstract](https://arxiv.org/abs/2611.32100v1)
+- **contribution**: “six question types across 19 public EEG sources” — [Abstract](https://arxiv.org/abs/2611.32100v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.32100v1); first submitted 2026-11-24; updated 2026-11-24. Full authors: Dengzhe Hou; Kazunori D. Yamada.
+
+<a id="evidence-2611-32094"></a>
+## 2611.32094 — Clinical3D-Bench: Evaluating and Improving Spatial Intelligence of Multimodal LLMs in Hospital Environments
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-26
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “a simulated benchmark with 3,368 questions of eight types” — [Abstract](https://arxiv.org/abs/2611.32094v1)
+- **contribution**: “ten physicians screened the layouts” — [Abstract](https://arxiv.org/abs/2611.32094v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.32094v1); first submitted 2026-11-24; updated 2026-11-24. Full authors: Yang Bai; Yingzhi Xia; Ling Lin; Jun Cheng; Lin Fu; Huazhu Fu.
+
+<a id="evidence-2611-31875"></a>
+## 2611.31875 — EEG-Jev: A Unified Single-Pass Decision Model for EEG
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-26
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “a unified single-pass decision model for EEG” — [Abstract](https://arxiv.org/abs/2611.31875v1)
+- **contribution**: “one forward pass returns a typed readout” — [Abstract](https://arxiv.org/abs/2611.31875v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.31875v1); first submitted 2026-11-24; updated 2026-11-24. Full authors: Zhifei Zhu; Hongtao Zhang; Yu Ren; Wei Zhou; Zeping Xie; Yi He.
+
+<a id="evidence-2611-31613"></a>
+## 2611.31613 — Training decision models for simulating human respondents
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-26
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “decision models (System One architectures) for silicon sampling” — [Abstract](https://arxiv.org/abs/2611.31613v1)
+- **contribution**: “lowers treatment-effect error by 22% to 89%” — [Abstract](https://arxiv.org/abs/2611.31613v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.31613v1); first submitted 2026-11-23; updated 2026-11-23. Full authors: Davood Wadi; Yu Ma.
+
+<a id="evidence-2611-31533"></a>
+## 2611.31533 — JevBench: Metamorphic Coherence Testing for Typed Probabilistic Decision Models
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-26
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “Typed probabilistic decision models return distributions over specified answers” — [Abstract](https://arxiv.org/abs/2611.31533v1)
+- **contribution**: “50 metamorphic relations each test one law of probability” — [Abstract](https://arxiv.org/abs/2611.31533v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.31533v1); first submitted 2026-11-23; updated 2026-11-23. Full authors: Chen Feng.
+
+<a id="evidence-2611-31457"></a>
+## 2611.31457 — Taxi: Analyzing Agents at (Real) Scale
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-26
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “an experimental integration of Jev-style decision models” — [Abstract](https://arxiv.org/abs/2611.31457v1)
+- **contribution**: “debugging, clustering, and monitoring agents at scale” — [Abstract](https://arxiv.org/abs/2611.31457v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.31457v1); first submitted 2026-11-23; updated 2026-11-23. Full authors: Guy Dar.
+
+<a id="evidence-2611-31421"></a>
+## 2611.31421 — Decision Models for Definition-Driven GitHub Actions Workflow Smell Detection
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-26
+
+Uses or evaluates the hosted Jev API (TypeSafe AI) in its experiments or pipeline.
+
+在实验或流水线中使用或评测了托管 Jev API(TypeSafe AI)。
+
+- **topic**: “models assess workflows against reusable natural-language smell definitions” — [Abstract](https://arxiv.org/abs/2611.31421v1)
+- **contribution**: “three decision-oriented and two generative configurations” — [Abstract](https://arxiv.org/abs/2611.31421v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.31421v1); first submitted 2026-11-23; updated 2026-11-23. Full authors: Rohit Gheyi; Anderson Uchôa; Wesley Assunção; Francisco Sousa; Baldoino Fonseca; Márcio Ribeiro.
+
+<a id="evidence-2611-31347"></a>
+## 2611.31347 — Antares-Smaug: Adversarial Names, Tokens and Attack Rewrites: Sanitisers Miss Unseen Generalisations
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-26
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “Laya is an open decision model” — [Abstract](https://arxiv.org/abs/2611.31347v1)
+- **contribution**: “81 programmatic edits of 566 synthetic items” — [Abstract](https://arxiv.org/abs/2611.31347v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.31347v1); first submitted 2026-11-23; updated 2026-11-23. Full authors: Mohammed Nayeem Khan; Akhil P.
+
+<a id="evidence-2611-31175"></a>
+## 2611.31175 — Needwise: Generation-Free Conversational Recommendation from Need-Level Typed Decisions
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-26
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “named questions over fixed options” — [Abstract](https://arxiv.org/abs/2611.31175v1)
+- **contribution**: “Needwise then ranks candidates must-first” — [Abstract](https://arxiv.org/abs/2611.31175v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.31175v1); first submitted 2026-11-23; updated 2026-11-23. Full authors: Sungchul Kim; Weixiao Huang; Mekala Raja Sekhar Reddy; Amrutha Srinivasan.
+
+<a id="evidence-2611-31174"></a>
+## 2611.31174 — Reducing Order Sensitivity in Decision Models
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-26
+
+Uses or evaluates the hosted Jev API (TypeSafe AI) in its experiments or pipeline.
+
+在实验或流水线中使用或评测了托管 Jev API(TypeSafe AI)。
+
+- **topic**: “process options sequentially, leading to different predictions” — [Abstract](https://arxiv.org/abs/2611.31174v1)
+- **contribution**: “achieves order invariance by processing options as parallel branches” — [Abstract](https://arxiv.org/abs/2611.31174v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.31174v1); first submitted 2026-11-23; updated 2026-11-23. Full authors: Bodong Liu; Dongyoung Go; Sofian Zalouk; Kilian Q. Weinberger.
+
+<a id="evidence-2611-31056"></a>
+## 2611.31056 — DKnown-Jev-2: Article-Level Answer-Evidence Classification and Efficient Inference with a Pre-trained Language Model
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-26
+
+Uses or evaluates the hosted Jev API (TypeSafe AI) in its experiments or pipeline.
+
+在实验或流水线中使用或评测了托管 Jev API(TypeSafe AI)。
+
+- **topic**: “an article-level answer evidence classifier” — [Abstract](https://arxiv.org/abs/2611.31056v1)
+- **contribution**: “outperforming Jev by 2.16 and 2.37 percentage points” — [Abstract](https://arxiv.org/abs/2611.31056v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.31056v1); first submitted 2026-11-23; updated 2026-11-23. Full authors: Qi Li; Jianjun Xu; Jiu Li; Pingtao Wei.
+
+<a id="evidence-2611-31012"></a>
+## 2611.31012 — Triage Accuracy of Jev and Open-Weight System One Decision Models and Their Use for Early Emergency Recognition in Symptom-Assessment Applications
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-26
+
+Uses or evaluates the hosted Jev API (TypeSafe AI) in its experiments or pipeline.
+
+在实验或流水线中使用或评测了托管 Jev API(TypeSafe AI)。
+
+- **topic**: “we evaluated 16 decision models (14 open-weight, 2 proprietary)” — [Abstract](https://arxiv.org/abs/2611.31012v1)
+- **contribution**: “The best models triaged 72.1% of synthetic cases correctly” — [Abstract](https://arxiv.org/abs/2611.31012v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.31012v1); first submitted 2026-11-23; updated 2026-11-23. Full authors: Marvin Kopka; Austen El-Osta; Christoph Kollwitz; Felix Balzer; Florian Bontrup.
+
+<a id="evidence-2611-30564"></a>
+## 2611.30564 — Seeing Is Locating: Spatial Awareness and Geographic Bias in Decision Language Models
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-26
+
+Uses or evaluates the hosted Jev API (TypeSafe AI) in its experiments or pipeline.
+
+在实验或流水线中使用或评测了托管 Jev API(TypeSafe AI)。
+
+- **topic**: “a multimodal benchmark for evaluating the spatial awareness” — [Abstract](https://arxiv.org/abs/2611.30564v1)
+- **contribution**: “spatial awareness requires vision” — [Abstract](https://arxiv.org/abs/2611.30564v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.30564v1); first submitted 2026-11-23; updated 2026-11-23. Full authors: Wilson Wongso; Hada Melino Muhammad; Xiachong Lin; Hao Xue; Flora D. Salim.
+
+<a id="evidence-2611-30410"></a>
+## 2611.30410 — Disclosure Bias in AI Reviewers
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-26
+
+Uses or evaluates the hosted Jev API (TypeSafe AI) in its experiments or pipeline.
+
+在实验或流水线中使用或评测了托管 Jev API(TypeSafe AI)。
+
+- **topic**: “the decision model Jev and the language models” — [Abstract](https://arxiv.org/abs/2611.30410v1)
+- **contribution**: “lowers the rating significantly for Jev, Sonnet and Argon” — [Abstract](https://arxiv.org/abs/2611.30410v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.30410v1); first submitted 2026-11-23; updated 2026-11-23. Full authors: Jens Leysen; Noah Daniëls; Marco Favier; Bart Goethals.
+
+<a id="evidence-2611-30253"></a>
+## 2611.30253 — Voyag: Joint Multi-Intent Detection and Execution-Relation Classification for In-Vehicle Voice Assistants
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-26
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “a single-forward decision model” — [Abstract](https://arxiv.org/abs/2611.30253v1)
+- **contribution**: “a three-way execution relation (parallel, sequential, mutually exclusive)” — [Abstract](https://arxiv.org/abs/2611.30253v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.30253v1); first submitted 2026-11-23; updated 2026-11-23. Full authors: Sen Luo.
+
+<a id="evidence-2611-30235"></a>
+## 2611.30235 — PixelOne: From Options to Pixels in a Single Forward for GUI Grounding
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-26
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “predicts clicks directly from screenshots at native resolution” — [Abstract](https://arxiv.org/abs/2611.30235v2)
+- **contribution**: “transfers spatial knowledge from a search teacher” — [Abstract](https://arxiv.org/abs/2611.30235v2)
+
+Metadata: [reviewed v2](https://arxiv.org/abs/2611.30235v2); first submitted 2026-11-23; updated 2026-11-24. Full authors: Kanghui Tian; Shuai Dong; Yuhan Zhu; Congcong Wang; Ji Zhao; Tianxiang Jiang; Zhixiong Zhang; Shengyuan Ding; Yi Wang; Jiaqi Wang; Yu Qiao.
+
+<a id="evidence-2611-30162"></a>
+## 2611.30162 — AdaptRouter: Adaptive Routing across Evolving Tasks and Models
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-26
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “a compact multimodal decision model reads each question” — [Abstract](https://arxiv.org/abs/2611.30162v1)
+- **contribution**: “an adaptive router trained by policy learning” — [Abstract](https://arxiv.org/abs/2611.30162v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.30162v1); first submitted 2026-11-23; updated 2026-11-23. Full authors: Jingpu Yang; Fengxian Ji; Tianhao Li; Juanfan Wu; Yufeng Wang; Shuxin Zheng; Xiaoqing Zhang.
+
+<a id="evidence-2611-30157"></a>
+## 2611.30157 — UUBench: Understanding the Unspoken toward Full-Duplex Multimodal Interaction
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-26
+
+Uses or evaluates the hosted Jev API (TypeSafe AI) in its experiments or pipeline.
+
+在实验或流水线中使用或评测了托管 Jev API(TypeSafe AI)。
+
+- **topic**: “assessing how well multimodal interactive systems Understand the Unspoken” — [Abstract](https://arxiv.org/abs/2611.30157v1)
+- **contribution**: “grounds the assessment of intent fulfillment” — [Abstract](https://arxiv.org/abs/2611.30157v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.30157v1); first submitted 2026-11-23; updated 2026-11-23. Full authors: Ye Pan; Chenfei Liao; Bin Ren; Hanqian Li; Haocong He; Jialei Chen; Jinlin He; Kunyu Peng; Mengyu Jin; Shijie Li; Wenqian Cui; Yuanqi Yao; Yuqian Fu; Kailong Ruan; Yuan Gao; Wei Wang; Xuming Hu; Irwin King; Nicu Sebe; Xu Zheng.
+
+<a id="evidence-2611-30096"></a>
+## 2611.30096 — When "A or B" Is Less Likely than A: Coherent Probabilities for Vision Decision Models
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-26
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “Vision decision models answer a multiple-choice question about an image” — [Abstract](https://arxiv.org/abs/2611.30096v1)
+- **contribution**: “receives on average 11.5 points less probability” — [Abstract](https://arxiv.org/abs/2611.30096v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.30096v1); first submitted 2026-11-23; updated 2026-11-23. Full authors: Seongrae Noh; SeongEun Hong; HyeongYeop Kang.
+
+<a id="evidence-2611-29773"></a>
+## 2611.29773 — S1Arena-MM: Which Multimodal Decisions Can Be Left to System 1?
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-26
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “Which multimodal decisions can System-1 models handle” — [Abstract](https://arxiv.org/abs/2611.29773v1)
+- **contribution**: “51,060 questions across 94 tasks” — [Abstract](https://arxiv.org/abs/2611.29773v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.29773v1); first submitted 2026-11-22; updated 2026-11-22. Full authors: Lang Lin; Tianyu Chen; Yi Gu; Yang Zhao; Xinran Song; Xinyang Liu; Jianpeng Cheng; Mingyuan Zhou.
+
+<a id="evidence-2611-29519"></a>
+## 2611.29519 — Layer-Level Control of Language Model Execution in Agent Frameworks
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-26
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “exposes intermediate model states and layer-level execution controls” — [Abstract](https://arxiv.org/abs/2611.29519v1)
+- **contribution**: “stitching bridges and state-conditioned execution policies” — [Abstract](https://arxiv.org/abs/2611.29519v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.29519v1); first submitted 2026-11-22; updated 2026-11-22. Full authors: Ran Guan; Yiqi Lin; Xiangxi Tian; Yige Luo; Mi Zhou.
+
+<a id="evidence-2611-29340"></a>
+## 2611.29340 — DeciForm: Incorporating Task Structure into Decision Models
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-26
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “Decision models unify candidate selection” — [Abstract](https://arxiv.org/abs/2611.29340v1)
+- **contribution**: “incorporates these distinctions into computation and supervision” — [Abstract](https://arxiv.org/abs/2611.29340v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.29340v1); first submitted 2026-11-22; updated 2026-11-22. Full authors: Qiuyu Tian; Haojie Yin; Yingce Xia; Youyong Kong; Zequn Liu.
+
+<a id="evidence-2611-28965"></a>
+## 2611.28965 — MolReJev: Decision Models Are In-Context Molecular Predictors
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-26
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “combines Jev-style candidate scoring with in-context learning” — [Abstract](https://arxiv.org/abs/2611.28965v1)
+- **contribution**: “retrieves similar labeled examples from existing task data” — [Abstract](https://arxiv.org/abs/2611.28965v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.28965v1); first submitted 2026-11-21; updated 2026-11-21. Full authors: Kaiyuan Lu; Jiatong Li; Yatao Bian.
+
+<a id="evidence-2611-28947"></a>
+## 2611.28947 — Don't Sleep, Keep Watch: Proactive Perception for Computer-Use Agents
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-26
+
+Uses or evaluates the hosted Jev API (TypeSafe AI) in its experiments or pipeline.
+
+在实验或流水线中使用或评测了托管 Jev API(TypeSafe AI)。
+
+- **topic**: “continuous, temporally grounded perception” — [Abstract](https://arxiv.org/abs/2611.28947v1)
+- **contribution**: “a lightweight System-1 model that performs streaming monitoring” — [Abstract](https://arxiv.org/abs/2611.28947v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.28947v1); first submitted 2026-11-21; updated 2026-11-21. Full authors: Jiaqi Su; Jie-Jing Shao; Yichen Liu; Long-Kai Huang; Haiyan Yin.
+
+<a id="evidence-2611-28924"></a>
+## 2611.28924 — OmniDecisionBench: Evaluating and Benchmarking the Multimodal Jev-Style System One Decision Models
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-26
+
+Uses or evaluates the hosted Jev API (TypeSafe AI) in its experiments or pipeline.
+
+在实验或流水线中使用或评测了托管 Jev API(TypeSafe AI)。
+
+- **topic**: “a holistic benchmark of multimodal System One models” — [Abstract](https://arxiv.org/abs/2611.28924v1)
+- **contribution**: “assigns 45 datasets (192,975 records)” — [Abstract](https://arxiv.org/abs/2611.28924v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.28924v1); first submitted 2026-11-21; updated 2026-11-21. Full authors: Tianxiang Gao; Jinzhe Li; Yue Zhou; Dandan Guo; Qi Wang; Diana Inkpen; Yuan Wu; Yi Chang.
+
+<a id="evidence-2611-28796"></a>
+## 2611.28796 — NavDecision: Parallel Multi-Step Action Prediction with Persistent Self-Referential Learning for Vision-and-Language Navigation
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-26
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “Decision models offer an efficient alternative” — [Abstract](https://arxiv.org/abs/2611.28796v1)
+- **contribution**: “predict multiple action distributions from a shared vision-language state” — [Abstract](https://arxiv.org/abs/2611.28796v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.28796v1); first submitted 2026-11-21; updated 2026-11-21. Full authors: Kai Wu; Yufan Hu; Quan Fang; Boning Zhang; Junyu Gao.
+
+<a id="evidence-2611-28766"></a>
+## 2611.28766 — JevNavAgent: A Single-Forward Visual Navigation Agent with Trajectory-Level RL for Gigapixel Pathology
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-26
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “predicts distributions over predefined decision spaces” — [Abstract](https://arxiv.org/abs/2611.28766v1)
+- **contribution**: “a 2B-parameter agent” — [Abstract](https://arxiv.org/abs/2611.28766v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.28766v1); first submitted 2026-11-21; updated 2026-11-21. Full authors: Yonghuang Wu; Zhenyang Liang; Pengfei Wang; Yize Ma; Guoqing Wu; Jinhua Yu.
+
+<a id="evidence-2611-28713"></a>
+## 2611.28713 — Legal Is Not Good: A Pre-Registered Benchmark of Low-Cost Language and Decision Models on a New Strategy Game
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-26
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “how well do low-cost agents play under a pre-registered protocol” — [Abstract](https://arxiv.org/abs/2611.28713v1)
+- **contribution**: “a referee that never corrects an illegal or late move” — [Abstract](https://arxiv.org/abs/2611.28713v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.28713v1); first submitted 2026-11-21; updated 2026-11-21. Full authors: Federico Lucca.
+
 <a id="evidence-2611-28667"></a>
 ## 2611.28667 — When to Test, Repair, or Regenerate: Decision-Guided Efficient RTL Generation
 
@@ -758,6 +1220,20 @@ A closely related decision model or method; no claim of reproducing proprietary 
 - **contribution**: “Pointwise scoring remains competitive” — [Abstract](https://arxiv.org/abs/2611.20335v1)
 
 Metadata: [reviewed v1](https://arxiv.org/abs/2611.20335v1); first submitted 2026-11-16; updated 2026-11-16. Full authors: Fangzhi Li; Quan Shi; Wenting Yang; Yueqiao Chen; Jiayu Chang; Shuting Zhao; Zhaowei Xu; Yizhao Chen; Guanchu Wu; Han Xu.
+
+<a id="evidence-2611-33190"></a>
+## 2611.33190 — General-Purpose Decision Models for AI Configuration Tuning
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-26
+
+Uses or evaluates the hosted Jev API (TypeSafe AI) in its experiments or pipeline.
+
+在实验或流水线中使用或评测了托管 Jev API(TypeSafe AI)。
+
+- **topic**: “searches for settings that improve the performance” — [Abstract](https://arxiv.org/abs/2611.33190v1)
+- **contribution**: “using Jev as a deployed representative” — [Abstract](https://arxiv.org/abs/2611.33190v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.33190v1); first submitted 2026-11-15; updated 2026-11-15. Full authors: Jingzhi Gong; Jie M. Zhang.
 
 <a id="evidence-2611-20191"></a>
 ## 2611.20191 — Do We Still Need Fine-Tuned Classifiers? Swapping Typed Decision Models into 24 ACL-Venue Papers

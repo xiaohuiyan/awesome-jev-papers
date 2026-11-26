@@ -1758,5 +1758,93 @@
     "canonical_url": "https://github.com/2002-Pan/Decision-Guided-RTL",
     "description": "Official project page for \"When to Test, Repair, or Regenerate: Decision-Guided Efficient RTL Generation\".",
     "private": false
+  },
+  {
+    "arxiv_id": "2611.29340",
+    "url": "https://github.com/roytian1992/DeciForm",
+    "source_url": "https://arxiv.org/abs/2611.29340v1",
+    "source_location": "paper body ('Code is available at')",
+    "checked_on": "2026-11-26",
+    "status": "verified",
+    "canonical_url": "https://github.com/roytian1992/DeciForm",
+    "description": "DeciForm: incorporating task structure into decision models (code for the unified decision-model training).",
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.32100",
+    "url": "https://github.com/dengzhe-hou/EEGJev",
+    "source_url": "https://arxiv.org/abs/2611.32100v1",
+    "source_location": "paper body ('The project repository contains')",
+    "checked_on": "2026-11-26",
+    "status": "verified",
+    "canonical_url": "https://github.com/dengzhe-hou/EEGJev",
+    "description": "System One EEG decision model and EEGJev-Bench for multi-task EEG question answering.",
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.30564",
+    "url": "https://github.com/cruiseresearchgroup/GeoDecisions",
+    "source_url": "https://arxiv.org/abs/2611.30564v1",
+    "source_location": "paper body ('Our code is available at')",
+    "checked_on": "2026-11-26",
+    "status": "verified",
+    "canonical_url": "https://github.com/cruiseresearchgroup/GeoDecisions",
+    "description": "Seeing Is Locating: Spatial Awareness and Geographic Bias in Decision Models.",
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.31875",
+    "url": "https://github.com/NeuroImgLab/EEG-Jev",
+    "source_url": "https://arxiv.org/abs/2611.31875v1",
+    "source_location": "paper body (project page neuroimglab.github.io/EEG-Jev/; GitHub-Pages mapping verified via API)",
+    "checked_on": "2026-11-26",
+    "status": "verified",
+    "canonical_url": "https://github.com/NeuroImgLab/EEG-Jev",
+    "description": "EEG-Jev: A Unified Single-Pass Decision Model for EEG - interactive demonstration and aggregate results.",
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.29773",
+    "url": "https://github.com/zhaoyang02/S1Arena-MM",
+    "source_url": "https://arxiv.org/abs/2611.29773v1",
+    "source_location": "arXiv comment ('Code and data')",
+    "checked_on": "2026-11-26",
+    "status": "verified",
+    "canonical_url": "https://github.com/zhaoyang02/S1Arena-MM",
+    "description": "S1Arena-MM benchmark code and data (51,060 multimodal decision requests, 102 closed-loop games).",
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.28713",
+    "url": "https://github.com/federicolucca/hexfolk",
+    "source_url": "https://arxiv.org/abs/2611.28713v1",
+    "source_location": "arXiv comment ('Engine, benchmark harness, agents and protocol')",
+    "checked_on": "2026-11-26",
+    "status": "verified",
+    "canonical_url": "https://github.com/federicolucca/hexfolk",
+    "description": "Minimal turn-based hex 4X strategy game for the browser; engine, benchmark harness, agents and pre-registered protocol.",
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.28947",
+    "url": "https://github.com/SuJQ0722/NightWatch",
+    "source_url": "https://arxiv.org/abs/2611.28947v1",
+    "source_location": "paper body ('Code: https://github.com/SuJQ0722/NightWatch')",
+    "checked_on": "2026-11-26",
+    "status": "verified",
+    "canonical_url": "https://github.com/SuJQ0722/NightWatch",
+    "description": "NightWatch: proactive perception for computer-use agents.",
+    "private": false
+  },
+  {
+    "arxiv_id": "2611.33368",
+    "url": "https://github.com/CeeZh/DeLoVi",
+    "source_url": "https://arxiv.org/abs/2611.33368v1",
+    "source_location": "arXiv comment ('Our code is available at')",
+    "checked_on": "2026-11-26",
+    "status": "verified",
+    "canonical_url": "https://github.com/CeeZh/DeLoVi",
+    "description": "DeLoVi: Decision Models for Long Video - evidence retrieval from ultra-long videos with pretrained decision models.",
+    "private": false
   }
 ]

@@ -1899,6 +1899,84 @@
       "round": 21,
       "query": "all:\"System 1\" AND submittedDate:[202609150000 TO 202611242359] (closing re-run uncapped; total 67->69; 1 record outside pool+catalogue+ledger: 2611.28029, first submitted 10-06 and indexed only now; adjacent-word artefact, excluded)",
       "count": 69
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 22,
+      "query": "all:\"language model\" AND submittedDate:[202611210000 TO 202611262359] (sanity probe; search index reached 11-24)",
+      "count": 520
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 22,
+      "query": "fresh window, four standing queries plus five token variants AND submittedDate:[202611210000 TO 202611262359] (36 unique records; the 11-22..11-24 batch was already fully indexed)",
+      "count": 36
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 22,
+      "query": "all:\"Jev\" AND submittedDate:[202609150000 TO 202611262359] (uncapped whole-window re-run; 273 records, +13 vs round-21 close)",
+      "count": 273
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 22,
+      "query": "all:\"System One\" AND submittedDate:[202609150000 TO 202611262359] (uncapped whole-window re-run; +8 vs round-21 close)",
+      "count": 130
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 22,
+      "query": "all:\"typed decision\" AND submittedDate:[202609150000 TO 202611262359] (uncapped whole-window re-run; +5 vs round-21 close)",
+      "count": 91
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 22,
+      "query": "all:\"decision model\" AND submittedDate:[202609150000 TO 202611262359] (uncapped whole-window re-run; +23 vs round-21 close)",
+      "count": 311
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 22,
+      "query": "all:\"decision models\" AND submittedDate:[202609150000 TO 202611262359] (uncapped whole-window re-run; +23 vs round-21 close)",
+      "count": 312
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 22,
+      "query": "all:\"System 1\" AND submittedDate:[202609150000 TO 202611262359] (uncapped whole-window re-run; +4 vs round-21 close)",
+      "count": 73
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 22,
+      "query": "all:\"System-One\" AND submittedDate:[202609150000 TO 202611262359] (uncapped whole-window re-run; +8 vs round-21 close)",
+      "count": 130
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 22,
+      "query": "all:MedJev AND submittedDate:[202609150000 TO 202611262359] (whole-window re-run; unchanged)",
+      "count": 2
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 22,
+      "query": "all:JevBench AND submittedDate:[202609150000 TO 202611262359] (whole-window re-run; +2 vs round-21 close)",
+      "count": 10
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 22,
+      "query": "(cat:cs.AI OR ... 37 catalogue categories) AND submittedDate:[202611210000 TO 202611262359] API-side listing net - 2 uncapped requests, 2,546 records (11-21: 405, 11-22: 398, 11-23: 936, 11-24: 807; nothing yet from 11-25/11-26 at 02:00 UTC), title/author grep for fused Jev compounds and standing-token variants - 29 hits: 24 catalogued/ledgered/pool + 2 new candidates (2611.30235 PixelOne via VideoJEV title token, 2611.32094 Clinical3D-Bench via abstract JEV token) + 3 author-substring false positives (2611.28986 CLASP and 2611.32823 FORA, both author Teodora Spasojevic) verified token-free via id_list and logged, not ledgered",
+      "count": 2546
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 22,
+      "query": "closing re-run of the nine standing+variant queries, uncapped, fresh cache (round-20/21 protocol) AND submittedDate:[202609150000 TO 202611262359] - the search index moved during the session (~2h after the sweep): 3 records outside pool+catalogue+ledger, all added before the first push (2611.33190 first submitted 11-15 indexed only now; 2611.33368 and 2611.33307 fresh 11-24 index entries). Counts at close: Jev 274, System One 130, typed decision 91, decision model 314, decision models 315, System 1 73, System-One 130, JevBench 10, MedJev 2",
+      "count": 3
     }
   ],
   "web_discovery_queries": [
@@ -2875,10 +2953,10 @@
       "purpose": "Early Jev corpus and four foundational methods"
     }
   ],
-  "unique_candidates": 625,
+  "unique_candidates": 663,
   "outcomes": {
-    "included": 440,
-    "excluded": 183,
+    "included": 474,
+    "excluded": 187,
     "pending": 2
   },
   "limitations": [
@@ -2889,7 +2967,7 @@
     "Broad discovery ends on 2026-10-16. Later targeted additions are logged separately and do not imply a fresh search or re-verification of the entire corpus.",
     "2026-10-27 round: Zhihu and Weibo returned no usable public search results (403 or ignored site filters); WeChat coverage relied on the Sogou public index."
   ],
-  "updated_on": "2026-11-24",
+  "updated_on": "2026-11-26",
   "targeted_additions": [
     {
       "reviewed_on": "2026-10-17",

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "searched_on": "2026-11-26",
+  "time_zone": "UTC",
+  "purpose": "Four-platform social discovery round (WeChat, Zhihu, Sina Weibo, X/Twitter cross-check) plus the Jev Daily aggregator and the four-list external awesome diff, run alongside the round-22 arXiv sweep; window 2026-11-21 through 2026-11-26, with older-lead resolution from the preceding week's posts.",
+  "recency": "posts and articles dated 2026-11-21 through 2026-11-26 (plus lead resolution for posts dated 11-13..11-25); arXiv first-submission dates kept authoritative and separate",
+  "queries": [
+    {
+      "platform": "WeChat 公众号",
+      "query": "Jev 决策模型 论文 微信公众号 2026年11月",
+      "hits": "no mp.weixin.qq.com results; returned items are the known Sept-Oct launch explainers (Tencent Cloud, 36Kr, oschina RLCD explainer, iTech teardown, 深蓝AI columns); no new paper leads"
+    },
+    {
+      "platform": "Zhihu",
+      "query": "site:zhuanlan.zhihu.com Jev 论文 2026年11月",
+      "hits": "two November columns (SO-Arena 体检 System One 模型 11-15, GPT 到 Jev 架构演进 11-03) - the former resolves to catalogued SO-Arena 2611.15777 via the 11-13 HF Daily Papers post it summarises; older columns known; no new paper leads"
+    },
+    {
+      "platform": "Sina Weibo",
+      "query": "微博 Jev 决策模型 开源 论文 site:weibo.com",
+      "hits": "no weibo.com direct results; aggregator/tophub listings show no Jev-related trending entry; ecosystem recaps are the known Sept-Oct items; no new paper leads"
+    },
+    {
+      "platform": "X / Twitter",
+      "query": "Jev decision model paper November 2026 arxiv new (plus 48h-targeted window and 2611.28xxx/29xxx/30xxx ID-form probes)",
+      "hits": "all resolvable posts point at catalogued papers: dair_ai's 'distilled open 4B decision model from Jev's answers' -> catalogued distillation papers (2610.38090 / 2610.09188 / GLiDE 2611.26509); barrowjoseph's decision-model deep dive and the 2611.x roundup items (2611.25363, 2611.22432, 2611.27679, 2611.28535, 2611.26557, 2611.28331) all catalogued; no new paper leads in the 48h window"
+    },
+    {
+      "platform": "Jev Daily",
+      "query": "jevdaily.com/issues/2026-11-24 and 2026-11-25",
+      "hits": "11-24 published, ecosystem-only (Hex 1.0.4 Parakeet keyboard transcription, Matt Van Horn PR-classifier, Guillermo Rauch personal eval; no arXiv IDs); 11-25 issue 404 at check time; no paper leads"
+    },
+    {
+      "platform": "external awesome-lists",
+      "query": "four-list raw README diff (Promethe-us/awesome-jev, andyrewlee/awesome-system-one, AnotiaWang/awesome-decision-models, Sarim-MBZUAI/awesome-jev-security)",
+      "hits": "clean for the third consecutive round: only pre-window background IDs (RLCD 2023, LLaDA 2025, SalesRLAgent 2025, seven pre-October system-one IDs) plus the two known non-ID strings (2609.14973 PhysBrain misattribution, 4157.1124 Science DOI fragment); no in-window new leads"
+    }
+  ],
+  "paper_leads": [
+    {
+      "item": "SO-Arena 用2919道题体检 System One 模型 (Zhihu column, 11-15, summarising the 11-13 HF Daily Papers top paper)",
+      "resolution": "resolved to catalogued 2611.15777 (SO-Arena); no action"
+    },
+    {
+      "item": "Intern-Decision / 书生·明决 multimodal decision models (ET CIO + Sarvam blog coverage)",
+      "resolution": "resolved to catalogued 2610.22131 (Efficient Multimodal Decision Making with Autoregressive Masked Language Modeling); the InternLM model line itself has its arXiv report and is catalogued; no action"
+    },
+    {
+      "item": "survey on efficient System-One decision models (2611.16321, cited in Intern-Decision coverage)",
+      "resolution": "resolved to catalogued 2611.16321; no action"
+    },
+    {
+      "item": "Decision Models for Multilingual Emotion Classification (Paper Digest listing)",
+      "resolution": "resolved to catalogued 2611.27721; no action"
+    }
+  ],
+  "non_paper_leads": [
+    {
+      "item": "Sarvam Prism",
+      "resolution": "still model-card/blog only (71.8 avg across three decision benchmarks, 44 ms median on B200 per the Sarvam blog and ET CIO); no arXiv report; watch lead unchanged"
+    },
+    {
+      "item": "Microsoft-Decision-1.1",
+      "resolution": "Foundry docs + OpenRouter listing only (6th of 14 in third-party dev.to testing); no arXiv report; watch lead unchanged"
+    },
+    {
+      "item": "HeyGen Decision 1",
+      "resolution": "no new coverage found this round; no arXiv report; watch lead unchanged"
+    },
+    {
+      "item": "Jev Daily 11-25 gap",
+      "resolution": "issue 404 at check time (the 11-16 and 11-23/11-24 gaps are documented precedents); no paper content missed"
+    }
+  ],
+  "added_papers": 0,
+  "note": "Zero social-owned additions this round. Every resolvable lead lands on an already-catalogued paper; watch leads (Sarvam Prism, 书生·明决 Intern-Decision line, Gemini Decisions/Gemini Decision 1, Microsoft-Decision-1.1, HeyGen Decision 1, autotrust JEV-27B-VL) all remain without arXiv reports. The round's 31 additions came from the API sweep and listing net."
+}
