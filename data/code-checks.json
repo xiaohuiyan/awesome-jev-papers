@@ -1846,5 +1846,16 @@
     "canonical_url": "https://github.com/CeeZh/DeLoVi",
     "description": "DeLoVi: Decision Models for Long Video - evidence retrieval from ultra-long videos with pretrained decision models.",
     "private": false
+  },
+  {
+    "arxiv_id": "2611.34627",
+    "url": "https://github.com/Seffi-Robust-AI-Lab/DecisionReplay",
+    "source_url": "https://arxiv.org/abs/2611.34627v1",
+    "source_location": "paper full text (introduction and reproducibility section, 'all of it is released at')",
+    "checked_on": "2026-11-27",
+    "status": "verified",
+    "canonical_url": "https://github.com/Seffi-Robust-AI-Lab/DecisionReplay",
+    "description": "DecisionReplay: recorded outputs of 17 decision models (incl. hosted jev-1.13/jev-1.14) on 35 benchmarks, with an offline deterministic simulator for ensemble/router/cascade policies.",
+    "private": false
   }
 ]

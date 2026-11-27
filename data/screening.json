@@ -5304,6 +5304,22 @@
       "status": "included",
       "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
       "screened_on": "2026-11-26"
+    },
+    {
+      "arxiv_id": "2611.34627",
+      "title": "DecisionReplay: A Corpus and Offline Simulator for Ensembling Decision Models",
+      "source_url": "https://arxiv.org/abs/2611.34627v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-27"
+    },
+    {
+      "arxiv_id": "2611.34576",
+      "title": "Procedure Inference as Memory: Learning Recruiter Decision Procedures from OKF-Structured Episodes in Multi-Session Hiring Assistants",
+      "source_url": "https://arxiv.org/abs/2611.34576v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-27"
     }
   ]
 }

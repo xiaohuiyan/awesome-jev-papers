@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "searched_on": "2026-11-27",
+  "time_zone": "UTC",
+  "purpose": "Four-platform social discovery round (WeChat, Zhihu, Sina Weibo, X/Twitter cross-check) plus the Jev Daily aggregator and the four-list external awesome diff, run alongside the round-23 arXiv sweep; window 2026-11-21 through 2026-11-27, with older-lead resolution from the preceding two weeks' posts.",
+  "recency": "posts and articles dated 2026-11-21 through 2026-11-27 (plus lead resolution for posts dated 11-03..11-26); arXiv first-submission dates kept authoritative and separate",
+  "queries": [
+    {
+      "platform": "WeChat 公众号",
+      "query": "Jev 决策模型 论文 微信公众号 2026年11月",
+      "hits": "no mp.weixin.qq.com November results; returned items are the known Sept-Oct launch explainers (Tencent Cloud, 36Kr, oschina RLCD explainer, iTech teardown, 深蓝AI columns) plus one undated mp article with no abstract reachable; no new paper leads"
+    },
+    {
+      "platform": "Zhihu",
+      "query": "site:zhuanlan.zhihu.com Jev 论文 2026年11月",
+      "hits": "two resolvable November columns: the 机器之心 YN/S²-MAS explainer (11-06) resolves to catalogued 2610.27746; the 【11-17】agentic-data digest column contains exactly one Jev-relevant entry, 'Actor, Judge, or Teacher?' = catalogued 2611.17167 (JEV via API as the frozen process-supervision teacher); the SO-Arena column (11-15) and GPT-到-Jev architecture column (11-03) known from rounds 21/22; no new paper leads"
+    },
+    {
+      "platform": "Sina Weibo",
+      "query": "微博 Jev 决策模型 开源 论文 site:weibo.com 2026年11月",
+      "hits": "no weibo.com November results; only the known Sept ttarticle explainer; no new paper leads"
+    },
+    {
+      "platform": "X / Twitter",
+      "query": "Jev decision model paper November 26 2026 arxiv; 48h-targeted window probes; watch-lead probes (Sarvam Prism / HeyGen Decision 1 / Microsoft-Decision-1.1)",
+      "hits": "all paper leads resolve to catalogued papers (LEVER 2611.27016, Replacing LLMs 2609.22753, GDM 2610.03935, LLM-as-Jev 2610.02076); the @typesafeai ~600x-lower-cost trajectory post and the Mario Martone appliance-plate article are blog/demo items, not papers; the Microsoft-Decision-1.1 coverage surfaced arXiv 2611.34627 (DecisionReplay) which the same-day API sweep independently caught"
+    },
+    {
+      "platform": "Jev Daily",
+      "query": "jevdaily.com/issues/2026-11-26 and 2026-11-27",
+      "hits": "11-26 published, ecosystem-only (Harrison Chase running Jev as a judge over stored agent traces; Hamel Husain calling decision-index benchmarks pervasively overfit - no arXiv IDs); 11-27 issue 404 at check time (consistent with the ~03:00 UTC check preceding publication); no paper leads"
+    },
+    {
+      "platform": "external awesome-lists",
+      "query": "four-list raw README diff (Promethe-us/awesome-jev, andyrewlee/awesome-system-one, AnotiaWang/awesome-decision-models, Sarim-MBZUAI/awesome-jev-security)",
+      "hits": "clean for the fourth consecutive round: only pre-window background IDs (RLCD 2023, LLaDA 2025, SalesRLAgent 2025, seven pre-October system-one IDs) plus the two known non-ID strings (2609.14973 PhysBrain misattribution, 4157.1124 Science DOI fragment); no in-window new leads"
+    }
+  ],
+  "paper_leads": [
+    {
+      "item": "S²-MAS / YN 决策模型家族 (机器之心 Zhihu column, 11-06, HKU Ye Luo team)",
+      "resolution": "resolved to catalogued 2610.27746 (S²-MAS); YN-mini beats Jev 1.13 by 9.30 points in its tables; no action"
+    },
+    {
+      "item": "Actor, Judge, or Teacher? (Zhihu 11-17 agentic-data digest entry)",
+      "resolution": "resolved to catalogued 2611.17167 (JEV via API as frozen GRPO process-supervision teacher); no action"
+    },
+    {
+      "item": "DecisionReplay (Microsoft-Decision-1.1 coverage citing arXiv 2611.34627)",
+      "resolution": "2611.34627 independently caught by the same-day round-23 API sweep (fresh all:\"decision model\") and added by this round; lead closed"
+    },
+    {
+      "item": "Sarvam Prism announcement referencing arXiv 2607.23808 (X post)",
+      "resolution": "id_list resolves 2607.23808 to 'Indic DiarBench: A Multilingual Joint Diarization and ASR Benchmark' (Sarvam-adjacent, 2026-07-26, pre-window) - an unrelated paper, NOT a Prism report; Prism remains model-card/blog only; watch lead unchanged"
+    }
+  ],
+  "non_paper_leads": [
+    {
+      "item": "Paper Radar (Eliot5566/JEV-Paper-Radar)",
+      "resolution": "open-source daily arXiv triage tool built on Jev (+ Claude, and per Google showcase Gemini Decision 1); GitHub project + HF discussion, no arXiv paper of its own; logged as ecosystem item"
+    },
+    {
+      "item": "@typesafeai ~600x-lower-cost trajectory judging post",
+      "resolution": "vendor demo/blog claim, no paper"
+    },
+    {
+      "item": "Sarvam Prism",
+      "resolution": "still model-card/blog only; the X-referenced arXiv ID resolves to an unrelated July paper; no arXiv report; watch lead unchanged"
+    },
+    {
+      "item": "Microsoft-Decision-1.1",
+      "resolution": "Foundry GA coverage (~11-17); no standalone report, but now evaluated inside catalogued-paper pools (DecisionReplay 2611.34627); watch lead unchanged"
+    },
+    {
+      "item": "HeyGen Decision 1",
+      "resolution": "no new coverage with an arXiv report; watch lead unchanged"
+    },
+    {
+      "item": "Jev Daily 11-27 gap",
+      "resolution": "issue 404 at ~03:00 UTC check time (publication typically later in the UTC day); no paper content missed"
+    }
+  ],
+  "added_papers": 0,
+  "note": "Zero social-owned additions this round. Every resolvable paper lead lands on an already-catalogued paper except DecisionReplay, which the same-day API sweep had already independently caught (social round confirms, does not own it). The 2 additions came from the API sweep and listing net. Watch leads unchanged: Sarvam Prism, 书生·明决 Intern-Decision line, Gemini Decisions/Gemini Decision 1, Microsoft-Decision-1.1, HeyGen Decision 1, autotrust JEV-27B-VL."
+}

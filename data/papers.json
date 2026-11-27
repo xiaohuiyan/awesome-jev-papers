@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "updated_on": "2026-11-26",
+  "updated_on": "2026-11-27",
   "window": {
     "start": "2025-10-16",
-    "end": "2026-11-24",
+    "end": "2026-11-25",
     "basis": "first submission; reviewed version and verification date recorded per paper"
   },
   "categories": {
@@ -49,6 +49,157 @@
     "2610.04345"
   ],
   "papers": [
+    {
+      "arxiv_id": "2611.34627",
+      "title": "DecisionReplay: A Corpus and Offline Simulator for Ensembling Decision Models",
+      "authors": [
+        "Dean Ariel",
+        "Seffi Cohen"
+      ],
+      "affiliations": [
+        "Ben-Gurion University of the Negev"
+      ],
+      "first_submitted": "2026-11-25",
+      "updated": "2026-11-25",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.34627",
+      "reviewed_url": "https://arxiv.org/abs/2611.34627v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34627v1",
+      "arxiv_categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.DB"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "evaluation",
+      "relation_level": "direct",
+      "tags": [
+        "evaluation",
+        "ensembles",
+        "routing",
+        "efficiency"
+      ],
+      "summary": {
+        "en": "Comparing ensembles, routers and cascades over decision models needs every model's output on every item, plus its cost - and routing-oriented collections store no per-option probabilities. DecisionReplay (Ben-Gurion University of the Negev) releases the probability vectors of 17 commercial decision models - the pool includes hosted typesafe/jev-1.13 and typesafe/jev-1.14 alongside Microsoft, Liquid, Cloudflare, Perplexity and Nace entries - on 35 benchmarks: 267,716 questions asked in 106,845 requests, with token counts, billed cost and measured latency for every call. A deterministic simulator replays any select/combine/cascade policy offline, free of new API calls. Findings: one well-chosen model per benchmark is hard to beat (pooling all models loses 2.7 accuracy points to it; stacking gains 1.0 at 3.4x its cost), wrong models err together (two wrong models pick the same wrong option in 72% of cases), the best router matches the per-benchmark model at 64% of its cost, and certified early exit cuts stacked-ensemble cost by 43% without changing an answer. Corpus and code are released on GitHub and the Hugging Face Hub.",
+        "zh": "比较决策模型上的集成、路由与级联策略,需要每个模型在每个条目上的输出及其成本——而为路由构建的存储库不保存逐选项概率。DecisionReplay(内盖夫本-古里安大学)发布 17 个商用决策模型的概率向量——模型池包含托管的 typesafe/jev-1.13 与 typesafe/jev-1.14,另有 Microsoft、Liquid、Cloudflare、Perplexity、Nace 等——覆盖 35 个基准:267,716 道问题、106,845 次请求,每次调用的 token 数、计费成本与实测延迟俱全;确定性模拟器离线重放任意「选择/合并/级联」策略,不再调用 API。结论:每个基准上一个选对的单模型很难被超越(全模型池化反而丢 2.7 个准确率点;stacking 以 3.4 倍成本换 1.0 点);模型们「一起错」——两个同时错的模型 72% 的情况选同一个错项;最优路由以 64% 的成本追平该模型;认证早退把 stacked 集成成本砍 43% 而不改任何一答。语料与代码在 GitHub 与 Hugging Face Hub 发布。"
+      },
+      "problem": {
+        "en": "How can ensemble, routing and cascade policies over commercial decision models be compared without paying for every model on every item?",
+        "zh": "不为「每个模型×每个条目」付 API 成本,如何比较商用决策模型上的集成、路由与级联策略?"
+      },
+      "relation": {
+        "en": "Uses or evaluates the hosted Jev API (TypeSafe AI) in its experiments or pipeline.",
+        "zh": "在实验或流水线中使用或评测了托管 Jev API(TypeSafe AI)。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "the probability vectors of 17 commercial decision models",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.34627v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "One well-chosen model per benchmark is hard to beat",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.34627v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 1.0,
+          "contribution": 1.0
+        },
+        "weighted_total": 1.0,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-27",
+      "code": [
+        {
+          "url": "https://github.com/Seffi-Robust-AI-Lab/DecisionReplay",
+          "source_url": "https://arxiv.org/abs/2611.34627v1",
+          "source_location": "paper full text (introduction and reproducibility section, 'all of it is released at')",
+          "verified_on": "2026-11-27",
+          "verification": "Author-linked repository; GitHub API confirmed public and accessible. Code not executed."
+        }
+      ],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.34627v1",
+      "source_abstract_sha256": "ed0dfd889a347b0510e68ae3d60b064d708ad701b5e1045390ce9a79dc4527b4"
+    },
+    {
+      "arxiv_id": "2611.34576",
+      "title": "Procedure Inference as Memory: Learning Recruiter Decision Procedures from OKF-Structured Episodes in Multi-Session Hiring Assistants",
+      "authors": [
+        "Praveen Kumar Bodigutla",
+        "Yizhi Zhang",
+        "Sai Vivek Kanaparthy",
+        "Arup De"
+      ],
+      "affiliations": [],
+      "first_submitted": "2026-11-25",
+      "updated": "2026-11-25",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.34576",
+      "reviewed_url": "https://arxiv.org/abs/2611.34576v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34576v1",
+      "arxiv_categories": [
+        "cs.AI",
+        "cs.HC",
+        "cs.IR"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "applications",
+      "relation_level": "related",
+      "tags": [
+        "applications",
+        "personalization",
+        "memory"
+      ],
+      "summary": {
+        "en": "Multi-session hiring assistants must infer recruiter preferences that shift across projects and time. This paper organizes interaction history as Open Knowledge Format (OKF)-indexed episodic memory - lineage-linked episodes retrievable through their derivation chain - and adds Procedure Memory, which distills reusable recruiter decision procedures from those episodes via prompted reflection or reinforcement learning. For cheap index navigation it evaluates a Jev-class decision model (open-weight H2O-Lightning-4B, cited at 29 ms median per decision on JevBench) in place of a generative LLM selector, with GPT-5.6 Luna as a lower-cost alternative to GPT-5.4. OKF retrieval reaches 0.93-0.95 low-priority preference F1 while using 69% fewer context tokens than full history; Procedure Memory cuts conversational turns by up to 39%; on PersonaMem-v2 it scores 50.2% versus 48.6% for full history and 29.0% for no memory, at 90.5% fewer reader input tokens. Jev-class navigation improves conversational efficiency but more often misses temporally relevant evidence. Hosted Jev itself is not among the evaluated models.",
+        "zh": "多轮招聘助手要推断跨项目、随时间演化的招聘方偏好。本文把交互历史组织成 Open Knowledge Format(OKF)索引的情景记忆——靠 lineage 链接的情节可沿派生关系检索——并提出程序记忆(Procedure Memory):用提示反思或强化学习从这些情节里蒸馏可复用的招聘决策程序。为降低索引导航成本,评测了一个「Jev-class」决策模型(开放权重 H2O-Lightning-4B,文中引其在 JevBench 上中位 29 毫秒)替代生成式 LLM 选择器,并以 GPT-5.6 Luna 作 GPT-5.4 的低价替代。OKF 检索把低优先偏好 F1 做到 0.93–0.95、上下文 token 比全历史省 69%;程序记忆最多减 39% 对话轮次;PersonaMem-v2 上 50.2%(全历史 48.6%、无记忆 29.0%),读取端输入 token 省 90.5%。Jev-class 导航提升对话效率,但更常漏掉时间相关证据。托管 Jev 本体不在受测之列。"
+      },
+      "problem": {
+        "en": "Can multi-session hiring assistants learn reusable recruiter decision procedures instead of carrying full histories?",
+        "zh": "多轮招聘助手能否不背全量历史,而是学出可复用的招聘方决策程序?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "evaluate Jev-class models for index navigation",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.34576v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "Jev-class models improve conversational efficiency",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.34576v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-27",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.34576v1",
+      "source_abstract_sha256": "def961c7601c02434bb6e9e10ca6bea9a246b0c239af4df266bf57123cefe59c"
+    },
     {
       "arxiv_id": "2611.33368",
       "title": "Searching Ultra-Long Videos with Decision Models",

@@ -12,9 +12,9 @@ This reading list asks a concrete question: given context and a set of options, 
 
 | Papers | Direct Jev | Related methods | Foundations | With verified code |
 | ---: | ---: | ---: | ---: | ---: |
-| **474** | 281 | 189 | 4 | 168 |
+| **476** | 282 | 190 | 4 | 169 |
 
-Updated **2026-11-26** · Main window **2025-10-16–2026-11-24** (first submission)
+Updated **2026-11-27** · Main window **2025-10-16–2026-11-25** (first submission)
 
 [Start with ten papers](#recommended-reading) · [Browse by question](#category-index) · [Foundations](#foundations) · [Data and maintenance](#reuse-and-updates)
 
@@ -51,13 +51,13 @@ Suggested path: **assess the evidence → compare capabilities → understand mo
 | Your question | Topic | Direct / related | Total |
 | --- | --- | ---: | ---: |
 | How do we train a model specifically to choose? | [Model architectures and training](#architecture) | 25 / 56 | 81 |
-| When are fast decisions good enough? | [Benchmarks and comparative evaluation](#evaluation) | 57 / 19 | 76 |
+| When are fast decisions good enough? | [Benchmarks and comparative evaluation](#evaluation) | 58 / 19 | 77 |
 | Can we trust the model's confidence? | [Calibration, reliability and selective decisions](#calibration) | 19 / 15 | 34 |
 | When should an agent search, use a tool, or delegate? | [Search, memory, tools and agent decisions](#agents) | 50 / 24 | 74 |
 | Can phrasing, option order, or attacks change the decision? | [Security, robustness and decision bias](#security) | 55 / 16 | 71 |
-| How do quality and speed trade off in real workflows? | [Domain applications and deployment efficiency](#applications) | 75 / 59 | 134 |
+| How do quality and speed trade off in real workflows? | [Domain applications and deployment efficiency](#applications) | 75 / 60 | 135 |
 
-Each paper has one primary category; 4 foundations are listed separately. Categories group direct Jev work before related methods, with newest first submissions first within each group. Entries keep published date, authors, affiliations, problem, and contribution; affiliations come from the papers themselves (HTML full text or PDF first page), and 26 papers that state none omit the field. Full author lists, tags, and verification records live in the [evidence ledger](docs/EVIDENCE.md) and [BibTeX](references.bib).
+Each paper has one primary category; 4 foundations are listed separately. Categories group direct Jev work before related methods, with newest first submissions first within each group. Entries keep published date, authors, affiliations, problem, and contribution; affiliations come from the papers themselves (HTML full text or PDF first page), and 27 papers that state none omit the field. Full author lists, tags, and verification records live in the [evidence ledger](docs/EVIDENCE.md) and [BibTeX](references.bib).
 
 <a id="architecture"></a>
 ## Model architectures and training
@@ -718,8 +718,16 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 
 [Back to category index](#category-index)
 
-### Direct Jev · 57
+### Direct Jev · 58
 
+<a id="paper-2611-34627"></a>
+#### [DecisionReplay: A Corpus and Offline Simulator for Ensembling Decision Models](https://arxiv.org/abs/2611.34627v1) · [PDF](https://arxiv.org/pdf/2611.34627v1) · [Code](https://github.com/Seffi-Robust-AI-Lab/DecisionReplay)
+- **📅 Published**: 2026-11-25 (v1)
+- **👥 Authors**: Dean Ariel; Seffi Cohen
+- **🏢 Affiliations**: Ben-Gurion University of the Negev
+- **🎯 Problem**: How can ensemble, routing and cascade policies over commercial decision models be compared without paying for every model on every item?
+- **💡 Contribution**: Comparing ensembles, routers and cascades over decision models needs every model's output on every item, plus its cost - and routing-oriented collections store no per-option probabilities. DecisionReplay (Ben-Gurion University of the Negev) releases the probability vectors of 17 commercial decision models - the pool includes hosted typesafe/jev-1.13 and typesafe/jev-1.14 alongside Microsoft, Liquid, Cloudflare, Perplexity and Nace entries - on 35 benchmarks: 267,716 questions asked in 106,845 requests, with token counts, billed cost and measured latency for every call. A deterministic simulator replays any select/combine/cascade policy offline, free of new API calls. Findings: one well-chosen model per benchmark is hard to beat (pooling all models loses 2.7 accuracy points to it; stacking gains 1.0 at 3.4x its cost), wrong models err together (two wrong models pick the same wrong option in 72% of cases), the best router matches the per-benchmark model at 64% of its cost, and certified early exit cuts stacked-ensemble cost by 43% without changing an answer. Corpus and code are released on GitHub and the Hugging Face Hub.
+---
 <a id="paper-2611-32368"></a>
 #### [Decision Models: An Introduction and Capability Evaluation](https://arxiv.org/abs/2611.32368v1) · [PDF](https://arxiv.org/pdf/2611.32368v1)
 - **📅 Published**: 2026-11-24 (v1)
@@ -3385,8 +3393,15 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: Can a low-latency decision model replace LLMs in edge service orchestration?
 - **💡 Contribution**: Integrates Jev into edge service orchestration and measures verified requests, admission behavior and execution outcomes.
 ---
-### Related model / method · 59
+### Related model / method · 60
 
+<a id="paper-2611-34576"></a>
+#### [Procedure Inference as Memory: Learning Recruiter Decision Procedures from OKF-Structured Episodes in Multi-Session Hiring Assistants](https://arxiv.org/abs/2611.34576v1) · [PDF](https://arxiv.org/pdf/2611.34576v1)
+- **📅 Published**: 2026-11-25 (v1)
+- **👥 Authors**: Praveen Kumar Bodigutla; Yizhi Zhang; Sai Vivek Kanaparthy; Arup De
+- **🎯 Problem**: Can multi-session hiring assistants learn reusable recruiter decision procedures instead of carrying full histories?
+- **💡 Contribution**: Multi-session hiring assistants must infer recruiter preferences that shift across projects and time. This paper organizes interaction history as Open Knowledge Format (OKF)-indexed episodic memory - lineage-linked episodes retrievable through their derivation chain - and adds Procedure Memory, which distills reusable recruiter decision procedures from those episodes via prompted reflection or reinforcement learning. For cheap index navigation it evaluates a Jev-class decision model (open-weight H2O-Lightning-4B, cited at 29 ms median per decision on JevBench) in place of a generative LLM selector, with GPT-5.6 Luna as a lower-cost alternative to GPT-5.4. OKF retrieval reaches 0.93-0.95 low-priority preference F1 while using 69% fewer context tokens than full history; Procedure Memory cuts conversational turns by up to 39%; on PersonaMem-v2 it scores 50.2% versus 48.6% for full history and 29.0% for no memory, at 90.5% fewer reader input tokens. Jev-class navigation improves conversational efficiency but more often misses temporally relevant evidence. Hosted Jev itself is not among the evaluated models.
+---
 <a id="paper-2611-32100"></a>
 #### [EEGJev: A System One Decision Model and Benchmark for Multi-Task EEG Question Answering](https://arxiv.org/abs/2611.32100v1) · [PDF](https://arxiv.org/pdf/2611.32100v1) · [Code](https://github.com/dengzhe-hou/EEGJev)
 - **📅 Published**: 2026-11-24 (v1)
@@ -3903,7 +3918,7 @@ Earlier work on calibration, rejection, cascades, and generalist classification.
 | --- | --- |
 | Download and cite | [JSON](data/papers.json) · [BibTeX](references.bib) |
 | Check inclusion evidence | [Evidence ledger](docs/EVIDENCE.md) · [Selection rules](docs/METHODOLOGY.md) |
-| Understand search coverage | [Search log](docs/SEARCH_LOG.md) · [X and CN-platform search (11-26)](docs/SOCIAL_SEARCH_2026-11-26.md) · [arXiv search (+34 papers)](docs/ARXIV_SEARCH_2026-11-26.md) |
+| Understand search coverage | [Search log](docs/SEARCH_LOG.md) · [X and CN-platform search (11-26)](docs/SOCIAL_SEARCH_2026-11-27.md) · [arXiv search (+2 papers)](docs/ARXIV_SEARCH_2026-11-27.md) |
 | Inspect screening | [Screening ledger](data/screening.json) · [Pending](docs/PENDING.md) |
 | Contribute | [Contributing](CONTRIBUTING.md) · [Changelog](CHANGELOG.md) |
 

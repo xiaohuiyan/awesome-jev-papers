@@ -1977,6 +1977,78 @@
       "round": 22,
       "query": "closing re-run of the nine standing+variant queries, uncapped, fresh cache (round-20/21 protocol) AND submittedDate:[202609150000 TO 202611262359] - the search index moved during the session (~2h after the sweep): 3 records outside pool+catalogue+ledger, all added before the first push (2611.33190 first submitted 11-15 indexed only now; 2611.33368 and 2611.33307 fresh 11-24 index entries). Counts at close: Jev 274, System One 130, typed decision 91, decision model 314, decision models 315, System 1 73, System-One 130, JevBench 10, MedJev 2",
       "count": 3
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 23,
+      "query": "all:\"language model\" AND submittedDate:[202611210000 TO 202611272359] (sanity probe; search index reached 11-25)",
+      "count": 714
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 23,
+      "query": "fresh window, four standing queries plus five token variants AND submittedDate:[202611210000 TO 202611272359] (40 unique records; the 11-25 batch was fully indexed, 11-26/11-27 still unannounced)",
+      "count": 40
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 23,
+      "query": "all:\"Jev\" AND submittedDate:[202609150000 TO 202611272359] (uncapped whole-window re-run; 275 records, +1 vs round-22 close)",
+      "count": 275
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 23,
+      "query": "all:\"System One\" AND submittedDate:[202609150000 TO 202611272359] (uncapped whole-window re-run; unchanged)",
+      "count": 130
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 23,
+      "query": "all:\"typed decision\" AND submittedDate:[202609150000 TO 202611272359] (uncapped whole-window re-run; unchanged)",
+      "count": 91
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 23,
+      "query": "all:\"decision model\" AND submittedDate:[202609150000 TO 202611272359] (uncapped whole-window re-run; 315 records, +1 vs round-22 close)",
+      "count": 315
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 23,
+      "query": "all:\"decision models\" AND submittedDate:[202609150000 TO 202611272359] (uncapped whole-window re-run; 316 records, +1 vs round-22 close)",
+      "count": 316
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 23,
+      "query": "all:\"System 1\" AND submittedDate:[202609150000 TO 202611272359] (uncapped whole-window re-run; unchanged)",
+      "count": 73
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 23,
+      "query": "all:\"System-One\" AND submittedDate:[202609150000 TO 202611272359] (uncapped whole-window re-run; unchanged)",
+      "count": 130
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 23,
+      "query": "all:MedJev AND submittedDate:[202609150000 TO 202611272359] (whole-window re-run; unchanged)",
+      "count": 2
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 23,
+      "query": "all:JevBench AND submittedDate:[202609150000 TO 202611272359] (whole-window re-run; unchanged)",
+      "count": 10
+    },
+    {
+      "engine": "arxiv-api",
+      "round": 23,
+      "query": "(cat:cs.AI OR ... 37 catalogue categories) AND submittedDate:[202611210000 TO 202611272359] API-side listing net - uncapped (group0 first fetch truncated at 2,500 of 2,774, refetched at 3,500 cap), 3,247 records (11-21: 179, 11-22: 398, 11-23: 937, 11-24: 971, 11-25: 762; nothing from 11-26/11-27 at ~02:00 UTC), title/author grep for fused Jev compounds and standing-token variants - 27 hits: all catalogued/ledgered/pool except one new author-substring false positive (2611.34825 RouteabilityBench, author Ana Gjorgjevikj) verified token-free via the listing-net abstract and logged, not ledgered; the two known Spasojevic false positives (2611.28986, 2611.32823) re-sighted in-window",
+      "count": 3247
     }
   ],
   "web_discovery_queries": [
@@ -2953,9 +3025,9 @@
       "purpose": "Early Jev corpus and four foundational methods"
     }
   ],
-  "unique_candidates": 663,
+  "unique_candidates": 665,
   "outcomes": {
-    "included": 474,
+    "included": 476,
     "excluded": 187,
     "pending": 2
   },
@@ -2967,7 +3039,7 @@
     "Broad discovery ends on 2026-10-16. Later targeted additions are logged separately and do not imply a fresh search or re-verification of the entire corpus.",
     "2026-10-27 round: Zhihu and Weibo returned no usable public search results (403 or ignored site filters); WeChat coverage relied on the Sogou public index."
   ],
-  "updated_on": "2026-11-26",
+  "updated_on": "2026-11-27",
   "targeted_additions": [
     {
       "reviewed_on": "2026-10-17",

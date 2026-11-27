@@ -3,6 +3,34 @@
 
 Short excerpts support relevance decisions, not paper quality or reproducibility. Scores measure topic fit and substantive contribution only. Abstract-level review is the default; targeted full-text checks are marked. 引文用于核实相关性，不是论文质量或模型性能评分。
 
+<a id="evidence-2611-34627"></a>
+## 2611.34627 — DecisionReplay: A Corpus and Offline Simulator for Ensembling Decision Models
+
+**direct** · Relevance 1.00 · abstract + targeted full text · Verified 2026-11-27
+
+Uses or evaluates the hosted Jev API (TypeSafe AI) in its experiments or pipeline.
+
+在实验或流水线中使用或评测了托管 Jev API(TypeSafe AI)。
+
+- **topic**: “the probability vectors of 17 commercial decision models” — [Abstract](https://arxiv.org/abs/2611.34627v1)
+- **contribution**: “One well-chosen model per benchmark is hard to beat” — [Abstract](https://arxiv.org/abs/2611.34627v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.34627v1); first submitted 2026-11-25; updated 2026-11-25. Full authors: Dean Ariel; Seffi Cohen.
+
+<a id="evidence-2611-34576"></a>
+## 2611.34576 — Procedure Inference as Memory: Learning Recruiter Decision Procedures from OKF-Structured Episodes in Multi-Session Hiring Assistants
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-27
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “evaluate Jev-class models for index navigation” — [Abstract](https://arxiv.org/abs/2611.34576v1)
+- **contribution**: “Jev-class models improve conversational efficiency” — [Abstract](https://arxiv.org/abs/2611.34576v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.34576v1); first submitted 2026-11-25; updated 2026-11-25. Full authors: Praveen Kumar Bodigutla; Yizhi Zhang; Sai Vivek Kanaparthy; Arup De.
+
 <a id="evidence-2611-33368"></a>
 ## 2611.33368 — Searching Ultra-Long Videos with Decision Models
 

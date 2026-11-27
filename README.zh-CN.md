@@ -12,9 +12,9 @@
 
 | 收录论文 | Jev 直接相关 | 同类模型与方法 | 基础背景 | 含已核实代码 |
 | ---: | ---: | ---: | ---: | ---: |
-| **474** | 281 | 189 | 4 | 168 |
+| **476** | 282 | 190 | 4 | 169 |
 
-更新于 **2026-11-26** · 主要收录窗口 **2025-10-16—2026-11-24**（首次提交日期）
+更新于 **2026-11-27** · 主要收录窗口 **2025-10-16—2026-11-25**（首次提交日期）
 
 [十篇入门](#recommended-reading) · [按问题选文](#category-index) · [基础背景](#foundations) · [数据与维护](#reuse-and-updates)
 
@@ -51,13 +51,13 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 | 你想了解什么？ | 主题 | 直接 / 相关 | 合计 |
 | --- | --- | ---: | ---: |
 | 怎样训练一个专门做选择的模型？ | [模型架构与训练方法](#architecture) | 25 / 56 | 81 |
-| 快决策在哪些任务上够用？ | [基准测试与比较评估](#evaluation) | 57 / 19 | 76 |
+| 快决策在哪些任务上够用？ | [基准测试与比较评估](#evaluation) | 58 / 19 | 77 |
 | 模型说有把握，真的可靠吗？ | [概率校准、可靠性与选择性决策](#calibration) | 19 / 15 | 34 |
 | 何时搜索、调用工具或交给更强的模型？ | [搜索、记忆、工具与智能体决策](#agents) | 50 / 24 | 74 |
 | 换个问法或选项顺序，会不会改变判断？ | [安全、鲁棒性与决策偏置](#security) | 55 / 16 | 71 |
-| 放进真实工作流，质量与速度如何取舍？ | [领域应用与部署效率](#applications) | 75 / 59 | 134 |
+| 放进真实工作流，质量与速度如何取舍？ | [领域应用与部署效率](#applications) | 75 / 60 | 135 |
 
-每篇只计入一个主分类；另有 4 篇基础背景。每类先列 Jev 直接相关，再列同类方法；组内按首次提交日期倒序排列。条目保留发表时间、作者、单位、解决问题与核心贡献；单位取自论文原文（HTML 全文或 PDF 首页），26 篇未署名单位的论文不展示该项。完整作者名单、标签与核实记录见[证据台账](docs/EVIDENCE.md)与 [BibTeX](references.bib)。
+每篇只计入一个主分类；另有 4 篇基础背景。每类先列 Jev 直接相关，再列同类方法；组内按首次提交日期倒序排列。条目保留发表时间、作者、单位、解决问题与核心贡献；单位取自论文原文（HTML 全文或 PDF 首页），27 篇未署名单位的论文不展示该项。完整作者名单、标签与核实记录见[证据台账](docs/EVIDENCE.md)与 [BibTeX](references.bib)。
 
 <a id="architecture"></a>
 ## 模型架构与训练方法
@@ -718,8 +718,16 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 [返回分类导航](#category-index)
 
-### Jev 直接相关 · 57
+### Jev 直接相关 · 58
 
+<a id="paper-2611-34627"></a>
+#### [DecisionReplay: A Corpus and Offline Simulator for Ensembling Decision Models](https://arxiv.org/abs/2611.34627v1) · [PDF](https://arxiv.org/pdf/2611.34627v1) · [代码](https://github.com/Seffi-Robust-AI-Lab/DecisionReplay)
+- **📅 发表时间**：2026-11-25（v1）
+- **👥 作者**：Dean Ariel；Seffi Cohen
+- **🏢 单位**：Ben-Gurion University of the Negev
+- **🎯 解决问题**：不为「每个模型×每个条目」付 API 成本,如何比较商用决策模型上的集成、路由与级联策略?
+- **💡 核心贡献**：比较决策模型上的集成、路由与级联策略,需要每个模型在每个条目上的输出及其成本——而为路由构建的存储库不保存逐选项概率。DecisionReplay(内盖夫本-古里安大学)发布 17 个商用决策模型的概率向量——模型池包含托管的 typesafe/jev-1.13 与 typesafe/jev-1.14,另有 Microsoft、Liquid、Cloudflare、Perplexity、Nace 等——覆盖 35 个基准:267,716 道问题、106,845 次请求,每次调用的 token 数、计费成本与实测延迟俱全;确定性模拟器离线重放任意「选择/合并/级联」策略,不再调用 API。结论:每个基准上一个选对的单模型很难被超越(全模型池化反而丢 2.7 个准确率点;stacking 以 3.4 倍成本换 1.0 点);模型们「一起错」——两个同时错的模型 72% 的情况选同一个错项;最优路由以 64% 的成本追平该模型;认证早退把 stacked 集成成本砍 43% 而不改任何一答。语料与代码在 GitHub 与 Hugging Face Hub 发布。
+---
 <a id="paper-2611-32368"></a>
 #### [Decision Models: An Introduction and Capability Evaluation](https://arxiv.org/abs/2611.32368v1) · [PDF](https://arxiv.org/pdf/2611.32368v1)
 - **📅 发表时间**：2026-11-24（v1）
@@ -3385,8 +3393,15 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🎯 解决问题**：边缘服务编排能否用低延迟决策模型替代 LLM？
 - **💡 核心贡献**：将 Jev 接入边缘服务编排，测量经核验请求、准入行为和执行结果。
 ---
-### 同类模型与方法 · 59
+### 同类模型与方法 · 60
 
+<a id="paper-2611-34576"></a>
+#### [Procedure Inference as Memory: Learning Recruiter Decision Procedures from OKF-Structured Episodes in Multi-Session Hiring Assistants](https://arxiv.org/abs/2611.34576v1) · [PDF](https://arxiv.org/pdf/2611.34576v1)
+- **📅 发表时间**：2026-11-25（v1）
+- **👥 作者**：Praveen Kumar Bodigutla；Yizhi Zhang；Sai Vivek Kanaparthy；Arup De
+- **🎯 解决问题**：多轮招聘助手能否不背全量历史,而是学出可复用的招聘方决策程序?
+- **💡 核心贡献**：多轮招聘助手要推断跨项目、随时间演化的招聘方偏好。本文把交互历史组织成 Open Knowledge Format(OKF)索引的情景记忆——靠 lineage 链接的情节可沿派生关系检索——并提出程序记忆(Procedure Memory):用提示反思或强化学习从这些情节里蒸馏可复用的招聘决策程序。为降低索引导航成本,评测了一个「Jev-class」决策模型(开放权重 H2O-Lightning-4B,文中引其在 JevBench 上中位 29 毫秒)替代生成式 LLM 选择器,并以 GPT-5.6 Luna 作 GPT-5.4 的低价替代。OKF 检索把低优先偏好 F1 做到 0.93–0.95、上下文 token 比全历史省 69%;程序记忆最多减 39% 对话轮次;PersonaMem-v2 上 50.2%(全历史 48.6%、无记忆 29.0%),读取端输入 token 省 90.5%。Jev-class 导航提升对话效率,但更常漏掉时间相关证据。托管 Jev 本体不在受测之列。
+---
 <a id="paper-2611-32100"></a>
 #### [EEGJev: A System One Decision Model and Benchmark for Multi-Task EEG Question Answering](https://arxiv.org/abs/2611.32100v1) · [PDF](https://arxiv.org/pdf/2611.32100v1) · [代码](https://github.com/dengzhe-hou/EEGJev)
 - **📅 发表时间**：2026-11-24（v1）
@@ -3903,7 +3918,7 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 | --- | --- |
 | 下载与引用 | [结构化 JSON](data/papers.json) · [BibTeX](references.bib) |
 | 核实收录依据 | [证据台账](docs/EVIDENCE.md) · [收录规则](docs/METHODOLOGY.md) |
-| 了解检索覆盖 | [检索记录](docs/SEARCH_LOG.md) · [X 与中文平台检索（11-26）](docs/SOCIAL_SEARCH_2026-11-26.md) · [arXiv 检索（11-26 新增 34 篇）](docs/ARXIV_SEARCH_2026-11-26.md) |
+| 了解检索覆盖 | [检索记录](docs/SEARCH_LOG.md) · [X 与中文平台检索（11-26）](docs/SOCIAL_SEARCH_2026-11-27.md) · [arXiv 检索（11-27 新增 2 篇）](docs/ARXIV_SEARCH_2026-11-27.md) |
 | 查看筛选过程 | [筛选台账](data/screening.json) · [待核实](docs/PENDING.md) |
 | 参与维护 | [贡献指南](CONTRIBUTING.md) · [更新记录](CHANGELOG.md) |
 
