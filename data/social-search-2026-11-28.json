@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "searched_on": "2026-11-28",
+  "time_zone": "UTC",
+  "purpose": "Four-platform social discovery round (WeChat, Zhihu, Sina Weibo, X/Twitter cross-check) plus the Jev Daily aggregator and the four-list external awesome diff, run alongside the round-24 arXiv sweep; window 2026-11-22 through 2026-11-28, with older-lead resolution from the preceding two weeks' posts.",
+  "recency": "posts and articles dated 2026-11-22 through 2026-11-28 (plus lead resolution for posts dated 11-03..11-27); arXiv first-submission dates kept authoritative and separate",
+  "queries": [
+    {
+      "platform": "WeChat 公众号",
+      "query": "Jev 决策模型 论文 微信公众号 2026年11月",
+      "hits": "no new mp.weixin.qq.com November paper leads; returned items are the known Sept-Oct launch explainers plus the ModelScope JEV-27B-VL post (autotrust watch lead, already tracked) and the datawhale jev-cookbook mirror of it; arxivdaily items (Jev-LiteMAS 2610.21411, Jev-DLC 2610.31521) both catalogued"
+    },
+    {
+      "platform": "Zhihu",
+      "query": "site:zhuanlan.zhihu.com Jev 论文 2026年11月",
+      "hits": "no November-specific new columns surfaced; results are the known October explainers (一周13篇论文 10月, 2170个项目生态分析 10-07, TypeSafe System One 发布解读 9月) and known November columns from rounds 21-23; the 11-28 智东西-style piece '一个不说话的AI刷屏' is ecosystem commentary, no arXiv IDs; no new paper leads"
+    },
+    {
+      "platform": "Sina Weibo",
+      "query": "微博 Jev 决策模型 开源 论文 site:weibo.com 2026年11月",
+      "hits": "no weibo.com November results; only the known Sept ttarticle explainer; no new paper leads"
+    },
+    {
+      "platform": "X / Twitter",
+      "query": "Jev decision model paper November 27 2026 arxiv; 48h-targeted window probes; watch-lead probes (Sarvam Prism / HeyGen Decision 1 / Microsoft-Decision-1.1 / Intern-Decision / bi-encoder benchmark titles)",
+      "hits": "all paper leads resolve to catalogued papers (Jev for Scientific Decisions 2609.24965, Replacing LLMs 2609.22753, JevBreak 2611.03759, LLM-as-Jev 2610.02076, TypedBench 2610.11392, MetaEncoder 2610.11316, MM-SystemOneBias 2611.26557, LoopRoute 2611.25363, Thinking Fast Trading Late 2611.03985); the arxivdaily page for 2611.16477 cross-referenced MetaEncoder and was the lead that exposed the decision-encoder phrasing gap - the paper was then caught by the new whole-window all:\"decision encoder\" variant and added by this round; the preprints.org survey 'Jev-Like Models and Decision Systems' (202611.2129) is not on arXiv - logged as a watch item"
+    },
+    {
+      "platform": "Jev Daily",
+      "query": "jevdaily.com/issues/2026-11-27 and 2026-11-28",
+      "hits": "11-27 published since the round-23 check (was 404 then): ecosystem-only - Simeon Griggs's 'Jev is not a decision model, you are' framing post amplified by Diogo Almeida ('logic should be in code not prompts'), no arXiv IDs, no accuracy or latency figures; 11-28 issue 404 at check time (publication typically later in the UTC day); no paper leads"
+    },
+    {
+      "platform": "external awesome-lists",
+      "query": "four-list raw README diff (Promethe-us/awesome-jev, andyrewlee/awesome-system-one, AnotiaWang/awesome-decision-models, Sarim-MBZUAI/awesome-jev-security)",
+      "hits": "clean for the fifth consecutive round: only pre-window background IDs (RLCD 2023, LLaDA 2025, SalesRLAgent 2025, plus seven 2023-2025 system-one/routing IDs on awesome-system-one) and the two known non-ID strings (2609.14973 PhysBrain misattribution, 4157.1124 Science DOI fragment); no in-window new leads"
+    }
+  ],
+  "paper_leads": [
+    {
+      "item": "Where in the Input Does a One-Pass Decision Encoder Look? (arxivdaily cross-link via the MetaEncoder page, 2611.16477)",
+      "resolution": "NOT catalogued, NOT ledgered - genuine miss: the Intel Laya series phrases itself as 'decision encoder', which matches no standing query and no listing-net token; resolved by adopting all:\"decision encoder\" as a standing variant and running it uncapped over the whole window - 8 records, 5 outside catalogue+ledger (2611.16477, 2611.16498, 2611.26332, 2611.26339, 2611.27550), all added this round as related; social round owns the lead, the API variant owns the catch"
+    },
+    {
+      "item": "MM-SystemOneBias (MoTools news hub)",
+      "resolution": "resolved to catalogued 2611.26557 (round 22); no action"
+    },
+    {
+      "item": "LoopRoute (MoTools news hub)",
+      "resolution": "resolved to catalogued 2611.25363 ('Stop Going in Circles', round 22); no action"
+    },
+    {
+      "item": "Jev-Like Models and Decision Systems: A Survey (preprints.org 202611.2129)",
+      "resolution": "preprints.org manuscript, no arXiv ID; out of catalogue scope (arXiv-windowed); logged as watch item - if it lands on arXiv inside the window it becomes a candidate"
+    }
+  ],
+  "non_paper_leads": [
+    {
+      "item": "Jev Daily 11-27 (Simeon Griggs 'Jev is not a decision model, you are' + Diogo Almeida 'logic in code not prompts')",
+      "resolution": "framing argument posts, no paper, no empirical figures; ecosystem item only"
+    },
+    {
+      "item": "一个不说话的AI刷屏,Jev真是新范式吗?(Chinese ecosystem commentary, 11-28)",
+      "resolution": "discussion piece, no arXiv IDs; no action"
+    },
+    {
+      "item": "Sarvam Prism",
+      "resolution": "still model-card/blog only (open weights on 105B base, ~44 ms claim in press); no arXiv report; watch lead unchanged"
+    },
+    {
+      "item": "Microsoft-Decision-1.1",
+      "resolution": "Foundry/OpenRouter/Vercel GA coverage only; no standalone report; already evaluated inside catalogued pools; watch lead unchanged"
+    },
+    {
+      "item": "HeyGen Decision 1",
+      "resolution": "research page + docs only; no arXiv report; watch lead unchanged"
+    },
+    {
+      "item": "Intern-Decision-4B (书生·明决 line)",
+      "resolution": "HF model page only (fine-tuned from Qwen3.5-4B); no arXiv report; watch lead unchanged"
+    },
+    {
+      "item": "JEV-27B-VL (ModelScope/魔搭 post)",
+      "resolution": "open multimodal decision model from AutoTrust AI Lab; tracked watch lead; no standalone arXiv report surfaced this round"
+    },
+    {
+      "item": "Jev Daily 11-28 gap",
+      "resolution": "issue 404 at ~02:30 UTC check time (publication typically later in the UTC day); no paper content missed"
+    }
+  ],
+  "added_papers": 5,
+  "note": "The social round owns the discovery lead this time: the arxivdaily cross-link exposed 2611.16477, which revealed a systematic phrasing gap ('decision encoder') that every standing query and the listing-net token grep had missed since round 21. The catch itself was executed API-side with the new all:\"decision encoder\" variant run uncapped over the whole window: 5 records added (all related, Intel Laya series; hosted Jev not evaluated in any of them). All other resolvable leads land on catalogued papers. Watch leads unchanged plus one new: the preprints.org survey."
+}

@@ -591,6 +591,20 @@ Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence
 
 Metadata: [reviewed v1](https://arxiv.org/abs/2611.27679v1); first submitted 2026-11-20; updated 2026-11-20. Full authors: Yue Li; Hao Wu; Zenan Fu; Xiao Li; Fengyuan Xu; Sheng Zhong.
 
+<a id="evidence-2611-27550"></a>
+## 2611.27550 — Altair-Nidhogg: Which Model-Merging Theories Hold for a One-Pass Decision Encoder? Soups, Task Arithmetic, TIES and DARE Against Joint Training and Prediction Ensembling
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-28
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “Laya is a small model that answers a multiple-choice question in one pass” — [Abstract](https://arxiv.org/abs/2611.27550v1)
+- **contribution**: “TIES, which trims and resolves sign conflicts, keeps 64%” — [Abstract](https://arxiv.org/abs/2611.27550v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.27550v1); first submitted 2026-11-20; updated 2026-11-20. Full authors: Mohammed Nayeem Khan; Navin Kumar R; Akhil P.
+
 <a id="evidence-2611-27489"></a>
 ## 2611.27489 — Efficient Natural Language to Temporal Logic Translation for Real-Time Physical AI
 
@@ -730,6 +744,34 @@ Hosted Jev is used, evaluated, or substantively reviewed; see the cited evidence
 - **contribution**: “a family of decision models spanning 0.4B to 27B parameters” — [Abstract](https://arxiv.org/abs/2611.26509v1)
 
 Metadata: [reviewed v1](https://arxiv.org/abs/2611.26509v1); first submitted 2026-11-19; updated 2026-11-19. Full authors: Sahibzada Allahyar; Julia White; Dhruv Atreja; George Hurn-Maloney; Urchade Zaratiana.
+
+<a id="evidence-2611-26339"></a>
+## 2611.26339 — Sirius-Tiamat: How Small Can a One-Pass Decision Encoder Get Before Its Decisions Change?
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-28
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “Laya, a 421M-parameter encoder of this kind” — [Abstract](https://arxiv.org/abs/2611.26339v1)
+- **contribution**: “One fitted temperature, needing no labels, restores it to 3.6%” — [Abstract](https://arxiv.org/abs/2611.26339v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.26339v1); first submitted 2026-11-19; updated 2026-11-19. Full authors: Mohammed Nayeem Khan; Vrishank Tiwari.
+
+<a id="evidence-2611-26332"></a>
+## 2611.26332 — Rigel-Ladon: An Option-Count Law for a One-Pass Decision Encoder, Tested on Held-Out Option Counts and Held-Out Schemas
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-28
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “returns one probability per option in a single pass” — [Abstract](https://arxiv.org/abs/2611.26332v1)
+- **contribution**: “linear in log(K-1) with slope 0.68 to 0.88” — [Abstract](https://arxiv.org/abs/2611.26332v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.26332v1); first submitted 2026-11-19; updated 2026-11-19. Full authors: Mohammed Nayeem Khan; Vrishank Tiwari; Navin Kumar R.
 
 <a id="evidence-2611-26007"></a>
 ## 2611.26007 — System-One RSI: Building Muscle Memory for Interactive Agents through Guided Practice
@@ -1486,6 +1528,34 @@ A closely related decision model or method; no claim of reproducing proprietary 
 - **contribution**: “the released Laya checkpoint has a pooled ECE of 0.073” — [Abstract](https://arxiv.org/abs/2611.16499v1)
 
 Metadata: [reviewed v1](https://arxiv.org/abs/2611.16499v1); first submitted 2026-11-12; updated 2026-11-12. Full authors: Mohammed Nayeem Khan; Aliyas Ahmad Misri.
+
+<a id="evidence-2611-16498"></a>
+## 2611.16498 — How many LLM-labelled rows does a decision encoder need, and how wrong can the labels be?
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-28
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “A decision encoder such as Laya reads a question with named options” — [Abstract](https://arxiv.org/abs/2611.16498v1)
+- **contribution**: “how many LLM-written training rows such an encoder needs” — [Abstract](https://arxiv.org/abs/2611.16498v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.16498v1); first submitted 2026-11-12; updated 2026-11-12. Full authors: Mohammed Nayeem Khan; Aliyas Ahmad Misri.
+
+<a id="evidence-2611-16477"></a>
+## 2611.16477 — Where in the Input Does a One-Pass Decision Encoder Look?
+
+**related** · Relevance 0.85 · abstract + targeted full text · Verified 2026-11-28
+
+A closely related decision model or method; no claim of reproducing proprietary Jev internals.
+
+紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。
+
+- **topic**: “answers a multiple-choice question about a text in one pass” — [Abstract](https://arxiv.org/abs/2611.16477v1)
+- **contribution**: “Confidence gives no warning” — [Abstract](https://arxiv.org/abs/2611.16477v1)
+
+Metadata: [reviewed v1](https://arxiv.org/abs/2611.16477v1); first submitted 2026-11-12; updated 2026-11-12. Full authors: Mohammed Nayeem Khan; Allan Kevin T.
 
 <a id="evidence-2611-16366"></a>
 ## 2611.16366 — CURATOR: Scalable Fine-grained Evidence Selection for Retrieval-Augmented Generation using Decision Models

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_on": "2026-11-27",
+  "updated_on": "2026-11-28",
   "window": {
     "start": "2025-10-16",
     "end": "2026-11-25",
@@ -3255,6 +3255,76 @@
       "source_abstract_sha256": "a64b41cb7f56c6df59e86fd2dc40b76269a2b1dc31f2a2c9e7c2c2385075dfa7"
     },
     {
+      "arxiv_id": "2611.27550",
+      "title": "Altair-Nidhogg: Which Model-Merging Theories Hold for a One-Pass Decision Encoder? Soups, Task Arithmetic, TIES and DARE Against Joint Training and Prediction Ensembling",
+      "authors": [
+        "Mohammed Nayeem Khan",
+        "Navin Kumar R",
+        "Akhil P"
+      ],
+      "affiliations": [
+        "Intel Corporation"
+      ],
+      "first_submitted": "2026-11-20",
+      "updated": "2026-11-20",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.27550",
+      "reviewed_url": "https://arxiv.org/abs/2611.27550v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.27550v1",
+      "arxiv_categories": [
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "architecture",
+      "relation_level": "related",
+      "tags": [
+        "training",
+        "model-merging",
+        "efficiency"
+      ],
+      "summary": {
+        "en": "Tests published model-merging recipes on the open Laya encoder: 156 models from one released checkpoint (four plain fine-tunes, five single-skill specialists, joint fine-tunes, prediction ensembles), scored on held-out synthetic items by the share of a specialist's gain each merge keeps. Averaging four specialists keeps 52% [38, 64] of the gains with +1.7 points of general accuracy; full task-arithmetic vectors keep 42% at -9.0 general; TIES keeps 64% [50, 76] with +1.5; joint fine-tunes keep 120% and 116% - the honest upper bound; DARE does not repair the full sum (-0.4); prediction ensembles keep 26-54%. Swapping one specialist's seed moves the average by up to 8 points (23 for the full sum). Of ten theory predictions fixed in advance, one held, one partly, seven failed. Out-of-family (benchmark questions, code-mixed tickets) the four-way average, joint models and ensembles stay within 2.6 points of the plain fine-tune while full-vector sums lose up to 7.7. LLM-made labels, synthetic data, one base model; hosted Jev not evaluated.",
+        "zh": "在开源 Laya 编码器上检验已发表的模型合并配方:从同一发布检查点衍生 156 个模型(四次普通微调、五个单技能专家、联合微调、预测集成),在留出合成条目上按「保住」专家增益的比例打分。四专家平均保住 52% [38, 64] 增益、通用准确率 +1.7 点;完整任务算术向量保住 42% 但通用 -9.0;TIES 保住 64% [50, 76]、+1.5;联合微调保住 120% 与 116%——诚实的上界;DARE 修不好完整求和(-0.4);预测集成保住 26–54%。换掉一个专家的种子,平均最多移动 8 点(完整求和 23 点)。预注册的十条理论预测中一条成立、一条部分成立、七条失败。族外(基准题、码混工单)上四路平均、联合模型与集成都在普通微调 2.6 点内,完整向量求和最多丢 7.7。LLM 制造标签、合成数据、单一基座;未评测托管 Jev。"
+      },
+      "problem": {
+        "en": "Can a decision encoder gain new skills by merging fine-tunes instead of training on everything?",
+        "zh": "决策编码器能否靠合并微调权重获得新技能,而不必在全量数据上重训?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "Laya is a small model that answers a multiple-choice question in one pass",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.27550v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "TIES, which trims and resolves sign conflicts, keeps 64%",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.27550v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-28",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.27550v1",
+      "source_abstract_sha256": "b721ddf3060bb65fed98b72d863ad49642fea3ca3f84781869607e8984b9f5a6"
+    },
+    {
       "arxiv_id": "2611.27489",
       "title": "Efficient Natural Language to Temporal Logic Translation for Real-Time Physical AI",
       "authors": [
@@ -4023,6 +4093,145 @@
       "code": [],
       "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.26509v1",
       "source_abstract_sha256": "7277159d920bfb04879845d4ffa06d49e288db06164168d2ce09a878fc5a25b5"
+    },
+    {
+      "arxiv_id": "2611.26339",
+      "title": "Sirius-Tiamat: How Small Can a One-Pass Decision Encoder Get Before Its Decisions Change?",
+      "authors": [
+        "Mohammed Nayeem Khan",
+        "Vrishank Tiwari"
+      ],
+      "affiliations": [
+        "Intel Corporation"
+      ],
+      "first_submitted": "2026-11-19",
+      "updated": "2026-11-19",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.26339",
+      "reviewed_url": "https://arxiv.org/abs/2611.26339v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.26339v1",
+      "arxiv_categories": [
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "calibration",
+      "relation_level": "related",
+      "tags": [
+        "calibration",
+        "efficiency",
+        "compression"
+      ],
+      "summary": {
+        "en": "Compresses the 421M Laya encoder and counts decisions that flip against its own fp32 answers, tracking expected calibration error, on in-family, unseen-schema and out-of-family (ARC/MMLU/HellaSwag) items. bf16 changes 0.2% of in-family decisions but 2.2% out of family; 6-bit grouped rounding 1.3% and 5.9%; deleting 6 layers 0.9% and 9.1%, while ECE rises from 5.9% to 39.2% - one fitted temperature, needing no labels, restores it to 3.6%. One scale per tensor fails below six bits; CPU dynamic int8 changes 30% of decisions, nearly all through one layer; total variation tracks flips for rounding but not deletion; an early exit beats a static cut only after its confidence gate is recalibrated; distilling a 16-layer student cuts its flips from 44% to 9% (45% out of family). At equal stored size, rounding flips fewer decisions than deletion. Synthetic LLM-labelled data, one architecture; hosted Jev not evaluated.",
+        "zh": "对 421M 的 Laya 编码器做压缩,以相对自身 fp32 答案的翻转决策数为指标并跟踪期望校准误差,覆盖族内、未见 schema 与族外(ARC/MMLU/HellaSwag)条目。bf16 改变 0.2% 的族内决策、族外 2.2%;6 比特分组舍入 1.3% 与 5.9%;删 6 层 0.9% 与 9.1%,而 ECE 从 5.9% 升至 39.2%——一个无需标签的拟合温度即可恢复到 3.6%。每张量一个 scale 在低于 6 比特时失效;CPU 动态 int8 改变 30% 的决策,几乎全部经由同一层;总变差在舍入下跟随翻转、在删除下不跟随;早退要在重校准置信门之后才胜过静态裁剪;蒸馏 16 层学生模型把翻转从 44% 降到 9%(族外 45%)。等存储大小下,舍入比删层翻转更少。合成 LLM 标注数据、单一架构;未评测托管 Jev。"
+      },
+      "problem": {
+        "en": "How far can a 421M decision encoder be compressed before its decisions, and their calibration, change?",
+        "zh": "421M 参数的决策编码器能压缩到多小,才会改变其决策与校准?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "Laya, a 421M-parameter encoder of this kind",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.26339v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "One fitted temperature, needing no labels, restores it to 3.6%",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.26339v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-28",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.26339v1",
+      "source_abstract_sha256": "4f3da4dcaf449873b057032c1af978644a877f9413fb5f3f728df2a169d98c58"
+    },
+    {
+      "arxiv_id": "2611.26332",
+      "title": "Rigel-Ladon: An Option-Count Law for a One-Pass Decision Encoder, Tested on Held-Out Option Counts and Held-Out Schemas",
+      "authors": [
+        "Mohammed Nayeem Khan",
+        "Vrishank Tiwari",
+        "Navin Kumar R"
+      ],
+      "affiliations": [
+        "Intel Corporation"
+      ],
+      "first_submitted": "2026-11-19",
+      "updated": "2026-11-19",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.26332",
+      "reviewed_url": "https://arxiv.org/abs/2611.26332v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.26332v1",
+      "arxiv_categories": [
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "evaluation",
+      "relation_level": "related",
+      "tags": [
+        "evaluation",
+        "scaling-law",
+        "option-count"
+      ],
+      "summary": {
+        "en": "Asks how the Laya encoder's accuracy falls as K grows from 2 to 35 and whether that can be predicted. Nested option sets (every K-option question contains the smaller ones) over four question pools, for the released model (Base) and a fine-tune (FT): logit accuracy is linear in log(K-1) with slope 0.68 to 0.88; fitted on K up to 6 it predicts K=7-12 within 0.6 points and K up to 24 within 1.2 (a log-linear rule: 1.6 and 6.7). Taking the slope from an in-family 12-option question and measuring only two-option accuracy on the out-of-family HR routing question predicts its other K within 0.3 (FT) and 0.7 (Base) points; on a 35-label five-schema pool the law fails (5-11 points). Independence of irrelevant alternatives is rejected - the gold-versus-rival log-odds shifts by +0.24 to +2.07 nats per doubling of K - yet pairwise answers reproduce K-way accuracy within 4.7 points. Order averaging, shortlists, a temperature law and calibrated prediction sets did not transfer (FT's 90% sets cover 84% on HR); 2 of 10 predictions made in advance held. One model family, LLM-labelled synthetic text; hosted Jev not evaluated.",
+        "zh": "追问 Laya 编码器的准确率随 K 从 2 增到 35 如何衰减、能否预测。在四个题池上用嵌套选项集(每个 K 选项问题包含更小者),对已发布 Base 与微调 FT:logit 准确率对 log(K-1) 线性,斜率 0.68–0.88;用 K≤6 拟合,预测 K=7–12 误差 0.6 点内、K≤24 在 1.2 点内(对数线性规则为 1.6 与 6.7)。用族内 12 选项问题取斜率、只在族外 HR 路由问题上测两选项准确率,即可预测其余 K,误差 0.3(FT)与 0.7(Base)点;在 35 标签、五 schema 的题池上定律失效(5–11 点)。无关选项独立性被拒绝——金标签对对手的 log-odds 每 K 翻倍移 +0.24 至 +2.07 nats——但成对答案能在 4.7 点内复现 K 路准确率。顺序平均、短名单、温度定律与校准预测集均不迁移(FT 的 90% 集在 HR 上只盖住 84%);预注册的十个预测成立两个。单一模型家族、LLM 标注合成文本;未评测托管 Jev。"
+      },
+      "problem": {
+        "en": "Can a decision encoder's accuracy loss as options multiply be predicted from small option counts?",
+        "zh": "选项数增多时决策编码器的准确率衰减,能否用小选项数预测?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "returns one probability per option in a single pass",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.26332v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "linear in log(K-1) with slope 0.68 to 0.88",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.26332v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-28",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.26332v1",
+      "source_abstract_sha256": "3b8a49ea5cd7bc159d7c310211368b149887ecc86ba3eada2e2c8c6340ba6a7c"
     },
     {
       "arxiv_id": "2611.26007",
@@ -8190,6 +8399,145 @@
       "code": [],
       "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.16499v1",
       "source_abstract_sha256": "ede0a796f7f0683c5d3629184e851dd30cd023306c3c283c5b3c8f03cc226e66"
+    },
+    {
+      "arxiv_id": "2611.16498",
+      "title": "How many LLM-labelled rows does a decision encoder need, and how wrong can the labels be?",
+      "authors": [
+        "Mohammed Nayeem Khan",
+        "Aliyas Ahmad Misri"
+      ],
+      "affiliations": [
+        "Intel Corporation"
+      ],
+      "first_submitted": "2026-11-12",
+      "updated": "2026-11-12",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.16498",
+      "reviewed_url": "https://arxiv.org/abs/2611.16498v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.16498v1",
+      "arxiv_categories": [
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "architecture",
+      "relation_level": "related",
+      "tags": [
+        "training",
+        "label-noise",
+        "data-efficiency"
+      ],
+      "summary": {
+        "en": "Measures learning curves and label-noise tolerance for fine-tuning Laya (ModernBERT-large) as a decision encoder. 19 fine-tunes on nested subsets of a 2,818-row pool, scored on 1,065 held-out in-distribution items: accuracy rises from 69.4% before fine-tuning to 74.3% with 5% of the rows, 84.8% with 50% and 86.9% with all rows; the curve flattens and a saturating fit with bootstrap intervals cannot pin down its plateau; seed spread at 20% of the rows (s.d. 1.6 points) exceeds some of the steps between sizes. Giving small subsets as many updates as the full pool gains 1.9 points at 5% and at 20% (below the 2.3-point difference between two ordinary seeds). Label noise: 10% symmetric is undetectable (-0.2 points), 20% costs 3.4, 40% costs 8.7; confusable-pair noise at 20% costs 7.4 and moves the model from over-confident to under-confident. Laya is +21.1 points ahead of a TF-IDF classifier at 5% of the rows (+0.9, interval includes zero, at full size). Everything is synthetic, LLM-labelled, one backbone; hosted Jev not evaluated.",
+        "zh": "为 Laya(ModernBERT-large)决策编码器的微调测学习曲线与标签噪声容忍度。在 2,818 条池的嵌套子集上做 19 次微调、1,065 条同分布留出项评测:准确率从微调前 69.4% 升到用 5% 数据 74.3%、50% 数据 84.8%、全量 86.9%;曲线趋平,饱和拟合配 bootstrap 区间也钉不住平台期;20% 数据处的种子波动(s.d. 1.6 点)超过某些规模间隔。给小子集与全量相同的更新数,在 5% 与 20% 处各得 1.9 点(低于两个普通种子间 2.3 点的差)。标签噪声:10% 对称噪声测不出(-0.2 点),20% 损失 3.4,40% 损失 8.7;20% 易混对噪声损失 7.4,并让模型从过度自信转为自信不足。5% 数据时 Laya 领先 TF-IDF 分类器 21.1 点(全量仅 +0.9,区间含零)。全部合成、LLM 标注、单一骨干;未评测托管 Jev。"
+      },
+      "problem": {
+        "en": "How many LLM-labelled rows does fine-tuning a decision encoder need, and how wrong can the labels be?",
+        "zh": "微调一个决策编码器需要多少条 LLM 标注数据,标签又能错多离谱?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "A decision encoder such as Laya reads a question with named options",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.16498v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "how many LLM-written training rows such an encoder needs",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.16498v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-28",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.16498v1",
+      "source_abstract_sha256": "48dca5475e930aeb1f58651263541d156c90e3e66761ff94ed56ccacb92566b2"
+    },
+    {
+      "arxiv_id": "2611.16477",
+      "title": "Where in the Input Does a One-Pass Decision Encoder Look?",
+      "authors": [
+        "Mohammed Nayeem Khan",
+        "Allan Kevin T"
+      ],
+      "affiliations": [
+        "Intel Corporation"
+      ],
+      "first_submitted": "2026-11-12",
+      "updated": "2026-11-12",
+      "version": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.16477",
+      "reviewed_url": "https://arxiv.org/abs/2611.16477v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.16477v1",
+      "arxiv_categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "publication_status": "arXiv manuscript",
+      "journal_reference": null,
+      "doi": null,
+      "primary_category": "calibration",
+      "relation_level": "related",
+      "tags": [
+        "calibration",
+        "reliability",
+        "context-window"
+      ],
+      "summary": {
+        "en": "Measures what the Laya encoder's 512-token window silently costs. Test documents place a held-out row's evidence at a chosen token offset among distractor text; 177 items, five tasks, three checkpoints (released, short-row fine-tune, long-document fine-tune), four window sizes, 93,275 scored requests. When the evidence lies beyond the silently truncated window, accuracy falls to 26.4% for the released checkpoint (27.2% for both fine-tunes) - near the 27.0% of guessing and below the 35.6% of always giving the commonest label - and confidence gives no warning (AUROC 0.50-0.55 for telling cut from read requests), while the runtime's truncation flag also fires on requests whose evidence was visible. The released checkpoint reads visible evidence badly once text precedes it (38.5% pooled against 60% evidence-first), so a larger window alone gains +6.2 points; long-document fine-tuning adds +27.6 on visible evidence (in-family; +13.2 with unseen encyclopedic filler, nothing on cut evidence); among training-free rearrangements a 312-token window scan helps most (+11.9) at six to eleven forward passes. Documents are synthetic, labels LLM-made, one backbone; hosted Jev not evaluated.",
+        "zh": "度量 Laya 编码器 512 token 窗口的隐性代价。测试文档把留出行的证据放在干扰文本中的指定 token 偏移处;177 项、五任务、三检查点(已发布、短行微调、长文档微调)、四种窗口、93,275 次打分请求。证据落在被静默截断的窗口之外时,已发布检查点的准确率跌至 26.4%(两个微调均 27.2%)——接近乱猜的 27.0%、低于永远给最常见标签的 35.6%——而置信度毫无预警(区分截断/未截断请求的 AUROC 仅 0.50–0.55),运行时截断标志还会在证据可见时误触发。已发布检查点在前置文本之后读不好可见证据(池化 38.5%,证据在前为 60%),故单纯加大窗口只得 +6.2 点;长文档微调在可见证据上 +27.6(族内;换成训练未见的百科填充为 +13.2,对被截证据无效);免训练重排中以 312-token 窗口扫描最有效(+11.9),代价 6–11 次前向。文档合成、标签 LLM 制作、单一骨干;未评测托管 Jev。"
+      },
+      "problem": {
+        "en": "What does a one-pass decision encoder silently lose when the input is longer than its window?",
+        "zh": "输入超过窗口时,一遍前向的决策编码器会悄悄损失什么?"
+      },
+      "relation": {
+        "en": "A closely related decision model or method; no claim of reproducing proprietary Jev internals.",
+        "zh": "紧密相关的决策模型或方法;不据此声称复现了 Jev 的专有内部实现。"
+      },
+      "evidence": [
+        {
+          "criterion": "topic",
+          "quote": "answers a multiple-choice question about a text in one pass",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.16477v1"
+        },
+        {
+          "criterion": "contribution",
+          "quote": "Confidence gives no warning",
+          "location": "Abstract",
+          "source_url": "https://arxiv.org/abs/2611.16477v1"
+        }
+      ],
+      "relevance": {
+        "scores": {
+          "topic": 0.75,
+          "contribution": 1.0
+        },
+        "weighted_total": 0.85,
+        "citation_count": null
+      },
+      "review_level": "abstract + targeted full text",
+      "verified_on": "2026-11-28",
+      "code": [],
+      "metadata_source": "https://export.arxiv.org/api/query?id_list=2611.16477v1",
+      "source_abstract_sha256": "1c0cb185b396a67570dbcd274eba13ba8c083a1010cdf989cc0330f44cb3e142"
     },
     {
       "arxiv_id": "2611.16366",

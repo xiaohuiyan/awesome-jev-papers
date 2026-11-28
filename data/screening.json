@@ -5320,6 +5320,46 @@
       "status": "included",
       "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
       "screened_on": "2026-11-27"
+    },
+    {
+      "arxiv_id": "2611.27550",
+      "title": "Altair-Nidhogg: Which Model-Merging Theories Hold for a One-Pass Decision Encoder? Soups, Task Arithmetic, TIES and DARE Against Joint Training and Prediction Ensembling",
+      "source_url": "https://arxiv.org/abs/2611.27550v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-28"
+    },
+    {
+      "arxiv_id": "2611.26339",
+      "title": "Sirius-Tiamat: How Small Can a One-Pass Decision Encoder Get Before Its Decisions Change?",
+      "source_url": "https://arxiv.org/abs/2611.26339v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-28"
+    },
+    {
+      "arxiv_id": "2611.26332",
+      "title": "Rigel-Ladon: An Option-Count Law for a One-Pass Decision Encoder, Tested on Held-Out Option Counts and Held-Out Schemas",
+      "source_url": "https://arxiv.org/abs/2611.26332v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-28"
+    },
+    {
+      "arxiv_id": "2611.16498",
+      "title": "How many LLM-labelled rows does a decision encoder need, and how wrong can the labels be?",
+      "source_url": "https://arxiv.org/abs/2611.16498v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-28"
+    },
+    {
+      "arxiv_id": "2611.16477",
+      "title": "Where in the Input Does a One-Pass Decision Encoder Look?",
+      "source_url": "https://arxiv.org/abs/2611.16477v1",
+      "status": "included",
+      "reason": "Meets the documented topic and substantive-contribution criteria; see papers.json.",
+      "screened_on": "2026-11-28"
     }
   ]
 }

@@ -12,9 +12,9 @@
 
 | 收录论文 | Jev 直接相关 | 同类模型与方法 | 基础背景 | 含已核实代码 |
 | ---: | ---: | ---: | ---: | ---: |
-| **476** | 282 | 190 | 4 | 169 |
+| **481** | 282 | 195 | 4 | 169 |
 
-更新于 **2026-11-27** · 主要收录窗口 **2025-10-16—2026-11-25**（首次提交日期）
+更新于 **2026-11-28** · 主要收录窗口 **2025-10-16—2026-11-25**（首次提交日期）
 
 [十篇入门](#recommended-reading) · [按问题选文](#category-index) · [基础背景](#foundations) · [数据与维护](#reuse-and-updates)
 
@@ -50,9 +50,9 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 
 | 你想了解什么？ | 主题 | 直接 / 相关 | 合计 |
 | --- | --- | ---: | ---: |
-| 怎样训练一个专门做选择的模型？ | [模型架构与训练方法](#architecture) | 25 / 56 | 81 |
-| 快决策在哪些任务上够用？ | [基准测试与比较评估](#evaluation) | 58 / 19 | 77 |
-| 模型说有把握，真的可靠吗？ | [概率校准、可靠性与选择性决策](#calibration) | 19 / 15 | 34 |
+| 怎样训练一个专门做选择的模型？ | [模型架构与训练方法](#architecture) | 25 / 58 | 83 |
+| 快决策在哪些任务上够用？ | [基准测试与比较评估](#evaluation) | 58 / 20 | 78 |
+| 模型说有把握，真的可靠吗？ | [概率校准、可靠性与选择性决策](#calibration) | 19 / 17 | 36 |
 | 何时搜索、调用工具或交给更强的模型？ | [搜索、记忆、工具与智能体决策](#agents) | 50 / 24 | 74 |
 | 换个问法或选项顺序，会不会改变判断？ | [安全、鲁棒性与决策偏置](#security) | 55 / 16 | 71 |
 | 放进真实工作流，质量与速度如何取舍？ | [领域应用与部署效率](#applications) | 75 / 60 | 135 |
@@ -268,7 +268,7 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🎯 解决问题**：开放权重的决策基础模型家族需要具备什么,才能承担软件中可复用的判断?
 - **💡 核心贡献**：一族开放权重的决策基础模型:把文本状态与运行时定义的问题,经 Choice、Noul、Score 接口变成类型化概率分布,应用可在推理时指定结果,并把预测组合进智能体与工作流,无需自回归文本生成。六个模型覆盖双向编码器与因果解码器架构,含一个工作流专用模型;训练取材于可验证任务、自然语言标注与工作流适配。对比官方 Jev 1.13.0 服务、英文与多语言 Laya、Decider、三个尺寸的 Kev 以及未微调的 Qwen3.5 参照,Lux-9B 在显式决策上达 84.17%、推理上 91.25%,加权总分 77.22%。Jev 1.13.0 在总分以及组合、阅读、迁移上仍然领先,校准也更好(ECE 3.35% 对 5.56%);作者同时指出组合、迁移与概率校准上的缺口。
 ---
-### 同类模型与方法 · 56
+### 同类模型与方法 · 58
 
 <a id="paper-2611-30235"></a>
 #### [PixelOne: From Options to Pixels in a Single Forward for GUI Grounding](https://arxiv.org/abs/2611.30235v2) · [PDF](https://arxiv.org/pdf/2611.30235v2)
@@ -301,6 +301,14 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🏢 单位**：Southeast University；Beijing Zhongguancun Academy；Duke Kunshan University
 - **🎯 解决问题**：一个决策模型能否同时尊重选择、判断与打分各自不同的答案空间结构?
 - **💡 核心贡献**：决策模型把候选选择、布尔判断与数值打分统一在一个接口后面,但答案空间的结构并不相同:分类候选是无序集合,分数却有内在的顺序与距离。DeciForm 把这些差别做进计算与监督——无候选查询与隔离的候选分支让分类在重排下保持一致,log-spherical 目标函数训练候选概率,十进制前缀读出把逐值监督与区间加权累积监督结合起来做打分;共享适配器、任务私有残差与输出通道增益支撑联合适配。在共享的 15,000 条请求测试集上,DeciForm 在 Qwen 与 ModernBERT 两个底座上同时改善三类决策指标。代码见 github.com/roytian1992/DeciForm。托管 Jev 仅作接口引文;模型均为作者自训。
+---
+<a id="paper-2611-27550"></a>
+#### [Altair-Nidhogg: Which Model-Merging Theories Hold for a One-Pass Decision Encoder? Soups, Task Arithmetic, TIES and DARE Against Joint Training and Prediction Ensembling](https://arxiv.org/abs/2611.27550v1) · [PDF](https://arxiv.org/pdf/2611.27550v1)
+- **📅 发表时间**：2026-11-20（v1）
+- **👥 作者**：Mohammed Nayeem Khan；Navin Kumar R；Akhil P
+- **🏢 单位**：Intel Corporation
+- **🎯 解决问题**：决策编码器能否靠合并微调权重获得新技能,而不必在全量数据上重训?
+- **💡 核心贡献**：在开源 Laya 编码器上检验已发表的模型合并配方:从同一发布检查点衍生 156 个模型(四次普通微调、五个单技能专家、联合微调、预测集成),在留出合成条目上按「保住」专家增益的比例打分。四专家平均保住 52% [38, 64] 增益、通用准确率 +1.7 点;完整任务算术向量保住 42% 但通用 -9.0;TIES 保住 64% [50, 76]、+1.5;联合微调保住 120% 与 116%——诚实的上界;DARE 修不好完整求和(-0.4);预测集成保住 26–54%。换掉一个专家的种子,平均最多移动 8 点(完整求和 23 点)。预注册的十条理论预测中一条成立、一条部分成立、七条失败。族外(基准题、码混工单)上四路平均、联合模型与集成都在普通微调 2.6 点内,完整向量求和最多丢 7.7。LLM 制造标签、合成数据、单一基座;未评测托管 Jev。
 ---
 <a id="paper-2611-27365"></a>
 #### [WePM: Hierarchical Conflict Reconciliation for Unified MLLMs](https://arxiv.org/abs/2611.27365v1) · [PDF](https://arxiv.org/pdf/2611.27365v1) · [代码](https://github.com/Tencent/WePocketModel)
@@ -340,6 +348,14 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🏢 单位**：Independent Researcher
 - **🎯 解决问题**：编码器骨干做 System One 决策模型,会比解码器更好吗?
 - **💡 核心贡献**：技术报告:比较 UltraBERT-380M 每选项一个掩码的四种微调配方,差别在选项打分方式与概率化方式(其一沿用 DeepSeek-V3 专家门)。与 LLM-as-Jev 配方的 Qwen3-0.6B 同数据训练(67.6%),编码器达 69.7-72.1%;"yes 减 no"打分胜过单用 yes(测试 69.7 升至 71.3,外部 57.8 升至 59.6),sigmoid 归一化加 0.8 点,平方根 softplus 无增益。A100 上每决策 29 毫秒对 68 毫秒,代价是峰值显存更高(2.8 对 2.2 GiB);辅助头以 SelfCite 改造的奖励训练,同次前向预测支持句。
+---
+<a id="paper-2611-16498"></a>
+#### [How many LLM-labelled rows does a decision encoder need, and how wrong can the labels be?](https://arxiv.org/abs/2611.16498v1) · [PDF](https://arxiv.org/pdf/2611.16498v1)
+- **📅 发表时间**：2026-11-12（v1）
+- **👥 作者**：Mohammed Nayeem Khan；Aliyas Ahmad Misri
+- **🏢 单位**：Intel Corporation
+- **🎯 解决问题**：微调一个决策编码器需要多少条 LLM 标注数据,标签又能错多离谱?
+- **💡 核心贡献**：为 Laya(ModernBERT-large)决策编码器的微调测学习曲线与标签噪声容忍度。在 2,818 条池的嵌套子集上做 19 次微调、1,065 条同分布留出项评测:准确率从微调前 69.4% 升到用 5% 数据 74.3%、50% 数据 84.8%、全量 86.9%;曲线趋平,饱和拟合配 bootstrap 区间也钉不住平台期;20% 数据处的种子波动(s.d. 1.6 点)超过某些规模间隔。给小子集与全量相同的更新数,在 5% 与 20% 处各得 1.9 点(低于两个普通种子间 2.3 点的差)。标签噪声:10% 对称噪声测不出(-0.2 点),20% 损失 3.4,40% 损失 8.7;20% 易混对噪声损失 7.4,并让模型从过度自信转为自信不足。5% 数据时 Laya 领先 TF-IDF 分类器 21.1 点(全量仅 +0.9,区间含零)。全部合成、LLM 标注、单一骨干;未评测托管 Jev。
 ---
 <a id="paper-2611-16321"></a>
 #### [From Large Language Models to Efficient System One Models via Adaptive Computation](https://arxiv.org/abs/2611.16321v1) · [PDF](https://arxiv.org/pdf/2611.16321v1)
@@ -1180,7 +1196,7 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🎯 解决问题**：智能体轨迹中哪些步骤是冗余的，能否自动识别？
 - **💡 核心贡献**：在检测智能体轨迹冗余步骤的基准中纳入 Jev。
 ---
-### 同类模型与方法 · 19
+### 同类模型与方法 · 20
 
 <a id="paper-2611-33307"></a>
 #### [Lost in Translation, Not in Confidence: Benchmarking and Calibrating Multilingual Decision Models](https://arxiv.org/abs/2611.33307v1) · [PDF](https://arxiv.org/pdf/2611.33307v1)
@@ -1228,6 +1244,14 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🏢 单位**：InferLink Corporation
 - **🎯 解决问题**：在无人机决策基准上得分好的模型,真的能在边缘计算机上跑起来、且跑得有用吗?
 - **💡 核心贡献**：基准分数并不能说明模型能否真正跑在无人机携带的边缘计算机上。这项 InferLink 研究在 UAVBench 的 2,000 道经过校验的多选题上,于普通 Mac 上评测 24 种模型配置:11 个生成式模型的20 种规模-精度组合,加上四个未经 UAVBench 定制训练的开放权重结构化决策模型(GLiDE 0.4B/0.8B、Liquid d1 2B、H2O Lightning 4B)。H2O Lightning 4B 拿到全场最高准确率 77.65%,高于基准原作者用托管版测出的 Gemini 2.5 Flash(76.75%),说明小型决策模型很适合这类任务。论文明确不评测商业 Jev 本身,并把 GLiDE、Liquid d1、H2O 定位为同一接口的开放发布而非对 Jev 未公开实现的复现。把决策模型部署到 Qualcomm RB3 Gen 2 开发板则遇到详细记录的转换与运行时限制(H2O 只完成了 100 题诊断;GLiDE 与 Liquid d1 完全跑不起来)。两个生成式模型在 Mac 与 RB3 上的配对评测保排名不保答案,因此本地筛选可列候选名单,最终测试仍须在目标硬件上进行。
+---
+<a id="paper-2611-26332"></a>
+#### [Rigel-Ladon: An Option-Count Law for a One-Pass Decision Encoder, Tested on Held-Out Option Counts and Held-Out Schemas](https://arxiv.org/abs/2611.26332v1) · [PDF](https://arxiv.org/pdf/2611.26332v1)
+- **📅 发表时间**：2026-11-19（v1）
+- **👥 作者**：Mohammed Nayeem Khan；Vrishank Tiwari；Navin Kumar R
+- **🏢 单位**：Intel Corporation
+- **🎯 解决问题**：选项数增多时决策编码器的准确率衰减,能否用小选项数预测?
+- **💡 核心贡献**：追问 Laya 编码器的准确率随 K 从 2 增到 35 如何衰减、能否预测。在四个题池上用嵌套选项集(每个 K 选项问题包含更小者),对已发布 Base 与微调 FT:logit 准确率对 log(K-1) 线性,斜率 0.68–0.88;用 K≤6 拟合,预测 K=7–12 误差 0.6 点内、K≤24 在 1.2 点内(对数线性规则为 1.6 与 6.7)。用族内 12 选项问题取斜率、只在族外 HR 路由问题上测两选项准确率,即可预测其余 K,误差 0.3(FT)与 0.7(Base)点;在 35 标签、五 schema 的题池上定律失效(5–11 点)。无关选项独立性被拒绝——金标签对对手的 log-odds 每 K 翻倍移 +0.24 至 +2.07 nats——但成对答案能在 4.7 点内复现 K 路准确率。顺序平均、短名单、温度定律与校准预测集均不迁移(FT 的 90% 集在 HR 上只盖住 84%);预注册的十个预测成立两个。单一模型家族、LLM 标注合成文本;未评测托管 Jev。
 ---
 <a id="paper-2611-21995"></a>
 #### [Deciding Without Pointing: A Case Study of Whether a Decision Model Localizes the Anomalies It Detects](https://arxiv.org/abs/2611.21995v1) · [PDF](https://arxiv.org/pdf/2611.21995v1)
@@ -1493,7 +1517,7 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🎯 解决问题**：接受高置信判断、转交不确定案例的策略，实际收益如何？
 - **💡 核心贡献**：测试接受高置信 Jev 判断并转交不确定案例的策略，对阈值进行留出验证。
 ---
-### 同类模型与方法 · 15
+### 同类模型与方法 · 17
 
 <a id="paper-2611-30096"></a>
 #### [When "A or B" Is Less Likely than A: Coherent Probabilities for Vision Decision Models](https://arxiv.org/abs/2611.30096v1) · [PDF](https://arxiv.org/pdf/2611.30096v1)
@@ -1503,6 +1527,14 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🎯 解决问题**：为什么「A 或 B」的概率低于 A 加 B,训练能否修复?
 - **💡 核心贡献**：视觉决策模型对图像选择题给每个选项一个概率,软件直接使用这些数字——但概率竟取决于选项的分组方式。这项韩国大学的研究表明,合并选项「A 或 B」平均比 A 与 B 之和少拿 11.5 个百分点的概率,这种次可加性在 0.85B 到 26B 的所有模型规模上都出现,且在标签微调后依然存在。CORE(一致重分组)让每道训练题以重新分组的选项形式提问,并把答案训练到原始选项上的同一目标分布;在七个基准的 1,050 道题上,0.85B 模型的重分组答案与原始答案按同组求和之间的总变差距离从 14.8 降到 5.8 个点,而用同样数据训练的最佳基线为 9.4。受测模型为开放的 d3 家族与作者的 LLM-as-Jev 改造;托管 Jev 仅被引用,未被调用。
 ---
+<a id="paper-2611-26339"></a>
+#### [Sirius-Tiamat: How Small Can a One-Pass Decision Encoder Get Before Its Decisions Change?](https://arxiv.org/abs/2611.26339v1) · [PDF](https://arxiv.org/pdf/2611.26339v1)
+- **📅 发表时间**：2026-11-19（v1）
+- **👥 作者**：Mohammed Nayeem Khan；Vrishank Tiwari
+- **🏢 单位**：Intel Corporation
+- **🎯 解决问题**：421M 参数的决策编码器能压缩到多小,才会改变其决策与校准?
+- **💡 核心贡献**：对 421M 的 Laya 编码器做压缩,以相对自身 fp32 答案的翻转决策数为指标并跟踪期望校准误差,覆盖族内、未见 schema 与族外(ARC/MMLU/HellaSwag)条目。bf16 改变 0.2% 的族内决策、族外 2.2%;6 比特分组舍入 1.3% 与 5.9%;删 6 层 0.9% 与 9.1%,而 ECE 从 5.9% 升至 39.2%——一个无需标签的拟合温度即可恢复到 3.6%。每张量一个 scale 在低于 6 比特时失效;CPU 动态 int8 改变 30% 的决策,几乎全部经由同一层;总变差在舍入下跟随翻转、在删除下不跟随;早退要在重校准置信门之后才胜过静态裁剪;蒸馏 16 层学生模型把翻转从 44% 降到 9%(族外 45%)。等存储大小下,舍入比删层翻转更少。合成 LLM 标注数据、单一架构;未评测托管 Jev。
+---
 <a id="paper-2611-16499"></a>
 #### [Recalibrating a Typed-Decision Model in an Afternoon: A Hands-On Recipe for Laya's Confidence Scores](https://arxiv.org/abs/2611.16499v1) · [PDF](https://arxiv.org/pdf/2611.16499v1)
 - **📅 发表时间**：2026-11-12（v1）
@@ -1510,6 +1542,14 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 - **🏢 单位**：Intel Corporation
 - **🎯 解决问题**：部署后的高速打字决策模型置信度应如何再校准?
 - **💡 核心贡献**：一篇动手教程:用五步法(度量、诊断、拟合、验证、部署)和 130 行 numpy 标准方法,对已发布的 Laya 检查点做置信度再校准。在 1,065 条合成 LLM 标注数据上,池化 ECE 0.073 掩盖了桶宏平均 ECE 0.143:12 选项桶过度自信 +0.22,3-5 选项桶自信不足 0.05,且单一全局温度反而让池化 ECE 变差——建议按桶设温度。示例刻意小巧、方法刻意传统,贡献在于可复现的完整工作流。
+---
+<a id="paper-2611-16477"></a>
+#### [Where in the Input Does a One-Pass Decision Encoder Look?](https://arxiv.org/abs/2611.16477v1) · [PDF](https://arxiv.org/pdf/2611.16477v1)
+- **📅 发表时间**：2026-11-12（v1）
+- **👥 作者**：Mohammed Nayeem Khan；Allan Kevin T
+- **🏢 单位**：Intel Corporation
+- **🎯 解决问题**：输入超过窗口时,一遍前向的决策编码器会悄悄损失什么?
+- **💡 核心贡献**：度量 Laya 编码器 512 token 窗口的隐性代价。测试文档把留出行的证据放在干扰文本中的指定 token 偏移处;177 项、五任务、三检查点(已发布、短行微调、长文档微调)、四种窗口、93,275 次打分请求。证据落在被静默截断的窗口之外时,已发布检查点的准确率跌至 26.4%(两个微调均 27.2%)——接近乱猜的 27.0%、低于永远给最常见标签的 35.6%——而置信度毫无预警(区分截断/未截断请求的 AUROC 仅 0.50–0.55),运行时截断标志还会在证据可见时误触发。已发布检查点在前置文本之后读不好可见证据(池化 38.5%,证据在前为 60%),故单纯加大窗口只得 +6.2 点;长文档微调在可见证据上 +27.6(族内;换成训练未见的百科填充为 +13.2,对被截证据无效);免训练重排中以 312-token 窗口扫描最有效(+11.9),代价 6–11 次前向。文档合成、标签 LLM 制作、单一骨干;未评测托管 Jev。
 ---
 <a id="paper-2611-15572"></a>
 #### [Learning a calibrated decision head from logged bandit feedback](https://arxiv.org/abs/2611.15572v1) · [PDF](https://arxiv.org/pdf/2611.15572v1) · [代码](https://github.com/yuan-phd/jevmark)
@@ -3918,7 +3958,7 @@ Jev 指 TypeSafe 的托管模型。同类模型采用相近接口，不代表复
 | --- | --- |
 | 下载与引用 | [结构化 JSON](data/papers.json) · [BibTeX](references.bib) |
 | 核实收录依据 | [证据台账](docs/EVIDENCE.md) · [收录规则](docs/METHODOLOGY.md) |
-| 了解检索覆盖 | [检索记录](docs/SEARCH_LOG.md) · [X 与中文平台检索（11-26）](docs/SOCIAL_SEARCH_2026-11-27.md) · [arXiv 检索（11-27 新增 2 篇）](docs/ARXIV_SEARCH_2026-11-27.md) |
+| 了解检索覆盖 | [检索记录](docs/SEARCH_LOG.md) · [X 与中文平台检索（11-26）](docs/SOCIAL_SEARCH_2026-11-28.md) · [arXiv 检索（11-28 新增 5 篇）](docs/ARXIV_SEARCH_2026-11-28.md) |
 | 查看筛选过程 | [筛选台账](data/screening.json) · [待核实](docs/PENDING.md) |
 | 参与维护 | [贡献指南](CONTRIBUTING.md) · [更新记录](CHANGELOG.md) |
 

@@ -12,9 +12,9 @@ This reading list asks a concrete question: given context and a set of options, 
 
 | Papers | Direct Jev | Related methods | Foundations | With verified code |
 | ---: | ---: | ---: | ---: | ---: |
-| **476** | 282 | 190 | 4 | 169 |
+| **481** | 282 | 195 | 4 | 169 |
 
-Updated **2026-11-27** · Main window **2025-10-16–2026-11-25** (first submission)
+Updated **2026-11-28** · Main window **2025-10-16–2026-11-25** (first submission)
 
 [Start with ten papers](#recommended-reading) · [Browse by question](#category-index) · [Foundations](#foundations) · [Data and maintenance](#reuse-and-updates)
 
@@ -50,9 +50,9 @@ Suggested path: **assess the evidence → compare capabilities → understand mo
 
 | Your question | Topic | Direct / related | Total |
 | --- | --- | ---: | ---: |
-| How do we train a model specifically to choose? | [Model architectures and training](#architecture) | 25 / 56 | 81 |
-| When are fast decisions good enough? | [Benchmarks and comparative evaluation](#evaluation) | 58 / 19 | 77 |
-| Can we trust the model's confidence? | [Calibration, reliability and selective decisions](#calibration) | 19 / 15 | 34 |
+| How do we train a model specifically to choose? | [Model architectures and training](#architecture) | 25 / 58 | 83 |
+| When are fast decisions good enough? | [Benchmarks and comparative evaluation](#evaluation) | 58 / 20 | 78 |
+| Can we trust the model's confidence? | [Calibration, reliability and selective decisions](#calibration) | 19 / 17 | 36 |
 | When should an agent search, use a tool, or delegate? | [Search, memory, tools and agent decisions](#agents) | 50 / 24 | 74 |
 | Can phrasing, option order, or attacks change the decision? | [Security, robustness and decision bias](#security) | 55 / 16 | 71 |
 | How do quality and speed trade off in real workflows? | [Domain applications and deployment efficiency](#applications) | 75 / 60 | 135 |
@@ -268,7 +268,7 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: What does an open-weight decision foundation model family need to serve reusable software judgments?
 - **💡 Contribution**: An open-weight family of decision foundation models that turns a textual state and runtime-defined questions into typed probability distributions through a Choice, Noul and Score interface, so applications can specify outcomes at inference time and compose predictions into agents and workflows without autoregressive text generation. Six models cover bidirectional-encoder and causal-decoder architectures, including a workflow specialist; training draws on verifiable tasks, natural-language annotations and workflow adaptation. Against the official Jev 1.13.0 service, English and multilingual Laya, Decider, three Kev sizes and untuned Qwen3.5 references, Lux-9B reaches 84.17% on explicit decisions and 91.25% on inference with a weighted overall score of 77.22%. Jev 1.13.0 still leads overall and on composition, reading and transfer, and is better calibrated (ECE 3.35% against 5.56%); the authors also point to gaps in composition, transfer and probability calibration.
 ---
-### Related model / method · 56
+### Related model / method · 58
 
 <a id="paper-2611-30235"></a>
 #### [PixelOne: From Options to Pixels in a Single Forward for GUI Grounding](https://arxiv.org/abs/2611.30235v2) · [PDF](https://arxiv.org/pdf/2611.30235v2)
@@ -301,6 +301,14 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🏢 Affiliations**: Southeast University; Beijing Zhongguancun Academy; Duke Kunshan University
 - **🎯 Problem**: Can one decision model respect the different structures of choices, judgments and scores at the same time?
 - **💡 Contribution**: Decision models unify candidate selection, Boolean judgment and numerical scoring behind one interface, yet their answer spaces carry different structure: classification candidates form an unordered set while scores have intrinsic order and distance. DeciForm builds those distinctions into computation and supervision - candidate-free queries and isolated candidate branches keep classification consistent under reordering, a log-spherical objective trains candidate probabilities, and a decimal-prefix readout combines individual-value and interval-weighted cumulative supervision for scoring. Shared adapters, task-private residuals and output-channel gains support joint adaptation; on a shared 15,000-request test set DeciForm improves all three decision metrics on Qwen and ModernBERT backbones. Code is available at github.com/roytian1992/DeciForm. Hosted Jev is cited for the interface; the models are the authors' own.
+---
+<a id="paper-2611-27550"></a>
+#### [Altair-Nidhogg: Which Model-Merging Theories Hold for a One-Pass Decision Encoder? Soups, Task Arithmetic, TIES and DARE Against Joint Training and Prediction Ensembling](https://arxiv.org/abs/2611.27550v1) · [PDF](https://arxiv.org/pdf/2611.27550v1)
+- **📅 Published**: 2026-11-20 (v1)
+- **👥 Authors**: Mohammed Nayeem Khan; Navin Kumar R; Akhil P
+- **🏢 Affiliations**: Intel Corporation
+- **🎯 Problem**: Can a decision encoder gain new skills by merging fine-tunes instead of training on everything?
+- **💡 Contribution**: Tests published model-merging recipes on the open Laya encoder: 156 models from one released checkpoint (four plain fine-tunes, five single-skill specialists, joint fine-tunes, prediction ensembles), scored on held-out synthetic items by the share of a specialist's gain each merge keeps. Averaging four specialists keeps 52% [38, 64] of the gains with +1.7 points of general accuracy; full task-arithmetic vectors keep 42% at -9.0 general; TIES keeps 64% [50, 76] with +1.5; joint fine-tunes keep 120% and 116% - the honest upper bound; DARE does not repair the full sum (-0.4); prediction ensembles keep 26-54%. Swapping one specialist's seed moves the average by up to 8 points (23 for the full sum). Of ten theory predictions fixed in advance, one held, one partly, seven failed. Out-of-family (benchmark questions, code-mixed tickets) the four-way average, joint models and ensembles stay within 2.6 points of the plain fine-tune while full-vector sums lose up to 7.7. LLM-made labels, synthetic data, one base model; hosted Jev not evaluated.
 ---
 <a id="paper-2611-27365"></a>
 #### [WePM: Hierarchical Conflict Reconciliation for Unified MLLMs](https://arxiv.org/abs/2611.27365v1) · [PDF](https://arxiv.org/pdf/2611.27365v1) · [Code](https://github.com/Tencent/WePocketModel)
@@ -340,6 +348,14 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🏢 Affiliations**: Independent Researcher
 - **🎯 Problem**: Do encoder backbones make better System One decision models than decoders?
 - **💡 Contribution**: A technical report comparing four fine-tuning recipes for UltraBERT-380M with one mask per option, differing in how options are scored and turned into probabilities (one follows DeepSeek-V3's expert gate). Trained on the same data as Qwen3-0.6B under the LLM-as-Jev recipe (67.6%), the encoder reaches 69.7-72.1%; scoring 'yes' minus 'no' beats 'yes' alone (69.7 to 71.3 on test, 57.8 to 59.6 external), sigmoid normalisation adds 0.8 points, and a square-root softplus adds none. Latency is 29 ms per decision versus 68 ms on an A100 at the cost of more peak memory (2.8 vs 2.2 GiB); an auxiliary head trained with a SelfCite-adapted reward predicts evidence sentences in the same pass.
+---
+<a id="paper-2611-16498"></a>
+#### [How many LLM-labelled rows does a decision encoder need, and how wrong can the labels be?](https://arxiv.org/abs/2611.16498v1) · [PDF](https://arxiv.org/pdf/2611.16498v1)
+- **📅 Published**: 2026-11-12 (v1)
+- **👥 Authors**: Mohammed Nayeem Khan; Aliyas Ahmad Misri
+- **🏢 Affiliations**: Intel Corporation
+- **🎯 Problem**: How many LLM-labelled rows does fine-tuning a decision encoder need, and how wrong can the labels be?
+- **💡 Contribution**: Measures learning curves and label-noise tolerance for fine-tuning Laya (ModernBERT-large) as a decision encoder. 19 fine-tunes on nested subsets of a 2,818-row pool, scored on 1,065 held-out in-distribution items: accuracy rises from 69.4% before fine-tuning to 74.3% with 5% of the rows, 84.8% with 50% and 86.9% with all rows; the curve flattens and a saturating fit with bootstrap intervals cannot pin down its plateau; seed spread at 20% of the rows (s.d. 1.6 points) exceeds some of the steps between sizes. Giving small subsets as many updates as the full pool gains 1.9 points at 5% and at 20% (below the 2.3-point difference between two ordinary seeds). Label noise: 10% symmetric is undetectable (-0.2 points), 20% costs 3.4, 40% costs 8.7; confusable-pair noise at 20% costs 7.4 and moves the model from over-confident to under-confident. Laya is +21.1 points ahead of a TF-IDF classifier at 5% of the rows (+0.9, interval includes zero, at full size). Everything is synthetic, LLM-labelled, one backbone; hosted Jev not evaluated.
 ---
 <a id="paper-2611-16321"></a>
 #### [From Large Language Models to Efficient System One Models via Adaptive Computation](https://arxiv.org/abs/2611.16321v1) · [PDF](https://arxiv.org/pdf/2611.16321v1)
@@ -1180,7 +1196,7 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: Which steps in an agent trajectory are redundant, and can they be detected automatically?
 - **💡 Contribution**: Includes Jev in a benchmark for detecting redundant steps in agent trajectories.
 ---
-### Related model / method · 19
+### Related model / method · 20
 
 <a id="paper-2611-33307"></a>
 #### [Lost in Translation, Not in Confidence: Benchmarking and Calibrating Multilingual Decision Models](https://arxiv.org/abs/2611.33307v1) · [PDF](https://arxiv.org/pdf/2611.33307v1)
@@ -1228,6 +1244,14 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🏢 Affiliations**: InferLink Corporation
 - **🎯 Problem**: Will a model that scores well on a UAV decision benchmark actually run, and run usefully, on an edge computer?
 - **💡 Contribution**: A benchmark score does not tell us whether a model will actually run on the edge computer a drone carries. On UAVBench's 2,000 validated multiple-choice questions, this InferLink study evaluates 24 model configurations on an ordinary Mac: 20 size-and-precision configurations of 11 generative models plus four open-weight structured decision models (GLiDE 0.4B and 0.8B, Liquid d1 2B, H2O Lightning 4B) that received no UAVBench-specific training. H2O Lightning 4B achieves the highest accuracy observed, 77.65% on the Mac - above the benchmark authors' hosted Gemini 2.5 Flash at 76.75% - showing small decision models suit these tasks. The paper explicitly does not evaluate the commercial Jev model itself, framing GLiDE, Liquid d1 and H2O as releases of the same interface rather than reproductions of Jev's undisclosed implementation. Deploying the decision models to a Qualcomm RB3 Gen 2 board hits conversion and runtime limits described in detail (H2O completed only a 100-question diagnostic; GLiDE and Liquid d1 could not run at all). Matched Mac-RB3 runs of two generative models preserve ranking but not individual answers, so local screening shortlists candidates while final testing stays on the target hardware.
+---
+<a id="paper-2611-26332"></a>
+#### [Rigel-Ladon: An Option-Count Law for a One-Pass Decision Encoder, Tested on Held-Out Option Counts and Held-Out Schemas](https://arxiv.org/abs/2611.26332v1) · [PDF](https://arxiv.org/pdf/2611.26332v1)
+- **📅 Published**: 2026-11-19 (v1)
+- **👥 Authors**: Mohammed Nayeem Khan; Vrishank Tiwari; Navin Kumar R
+- **🏢 Affiliations**: Intel Corporation
+- **🎯 Problem**: Can a decision encoder's accuracy loss as options multiply be predicted from small option counts?
+- **💡 Contribution**: Asks how the Laya encoder's accuracy falls as K grows from 2 to 35 and whether that can be predicted. Nested option sets (every K-option question contains the smaller ones) over four question pools, for the released model (Base) and a fine-tune (FT): logit accuracy is linear in log(K-1) with slope 0.68 to 0.88; fitted on K up to 6 it predicts K=7-12 within 0.6 points and K up to 24 within 1.2 (a log-linear rule: 1.6 and 6.7). Taking the slope from an in-family 12-option question and measuring only two-option accuracy on the out-of-family HR routing question predicts its other K within 0.3 (FT) and 0.7 (Base) points; on a 35-label five-schema pool the law fails (5-11 points). Independence of irrelevant alternatives is rejected - the gold-versus-rival log-odds shifts by +0.24 to +2.07 nats per doubling of K - yet pairwise answers reproduce K-way accuracy within 4.7 points. Order averaging, shortlists, a temperature law and calibrated prediction sets did not transfer (FT's 90% sets cover 84% on HR); 2 of 10 predictions made in advance held. One model family, LLM-labelled synthetic text; hosted Jev not evaluated.
 ---
 <a id="paper-2611-21995"></a>
 #### [Deciding Without Pointing: A Case Study of Whether a Decision Model Localizes the Anomalies It Detects](https://arxiv.org/abs/2611.21995v1) · [PDF](https://arxiv.org/pdf/2611.21995v1)
@@ -1493,7 +1517,7 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: Does accepting confident judgments and escalating the rest actually pay off?
 - **💡 Contribution**: Tests accepting confident Jev judgments and escalating uncertain cases, with held-out validation of thresholds.
 ---
-### Related model / method · 15
+### Related model / method · 17
 
 <a id="paper-2611-30096"></a>
 #### [When "A or B" Is Less Likely than A: Coherent Probabilities for Vision Decision Models](https://arxiv.org/abs/2611.30096v1) · [PDF](https://arxiv.org/pdf/2611.30096v1)
@@ -1503,6 +1527,14 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🎯 Problem**: Why is "A or B" less likely than A plus B, and can training fix it?
 - **💡 Contribution**: Vision decision models answer a multiple-choice question with one probability per option, and software uses those numbers directly - but the probabilities depend on how options are grouped. This Korea University study shows a merged option "A or B" receives on average 11.5 points less probability than the sum of A and B, an under-additivity that appears at every model size from 0.85B to 26B and survives fine-tuning on labels. CORE (Coherent Regrouping) asks each training question with its options regrouped and trains the answers toward one target distribution over the original options; on 1,050 items from seven benchmarks it cuts the total-variation distance between a regrouped answer and the original answer summed into the same groups from 14.8 to 5.8 points on the 0.85B model, against 9.4 for the best baseline trained on the same data. Evaluated models are the open d3 family and the authors' LLM-as-Jev adaptations; hosted Jev is cited, not called.
 ---
+<a id="paper-2611-26339"></a>
+#### [Sirius-Tiamat: How Small Can a One-Pass Decision Encoder Get Before Its Decisions Change?](https://arxiv.org/abs/2611.26339v1) · [PDF](https://arxiv.org/pdf/2611.26339v1)
+- **📅 Published**: 2026-11-19 (v1)
+- **👥 Authors**: Mohammed Nayeem Khan; Vrishank Tiwari
+- **🏢 Affiliations**: Intel Corporation
+- **🎯 Problem**: How far can a 421M decision encoder be compressed before its decisions, and their calibration, change?
+- **💡 Contribution**: Compresses the 421M Laya encoder and counts decisions that flip against its own fp32 answers, tracking expected calibration error, on in-family, unseen-schema and out-of-family (ARC/MMLU/HellaSwag) items. bf16 changes 0.2% of in-family decisions but 2.2% out of family; 6-bit grouped rounding 1.3% and 5.9%; deleting 6 layers 0.9% and 9.1%, while ECE rises from 5.9% to 39.2% - one fitted temperature, needing no labels, restores it to 3.6%. One scale per tensor fails below six bits; CPU dynamic int8 changes 30% of decisions, nearly all through one layer; total variation tracks flips for rounding but not deletion; an early exit beats a static cut only after its confidence gate is recalibrated; distilling a 16-layer student cuts its flips from 44% to 9% (45% out of family). At equal stored size, rounding flips fewer decisions than deletion. Synthetic LLM-labelled data, one architecture; hosted Jev not evaluated.
+---
 <a id="paper-2611-16499"></a>
 #### [Recalibrating a Typed-Decision Model in an Afternoon: A Hands-On Recipe for Laya's Confidence Scores](https://arxiv.org/abs/2611.16499v1) · [PDF](https://arxiv.org/pdf/2611.16499v1)
 - **📅 Published**: 2026-11-12 (v1)
@@ -1510,6 +1542,14 @@ Each paper has one primary category; 4 foundations are listed separately. Catego
 - **🏢 Affiliations**: Intel Corporation
 - **🎯 Problem**: How should a deployed typed-decision model's confidence be recalibrated?
 - **💡 Contribution**: A hands-on tutorial recalibrating the released Laya checkpoint's confidence scores with a five-step recipe (measure, diagnose, fit, validate, deploy) in 130 lines of numpy using only standard methods. On 1,065 synthetic LLM-labelled items the pooled ECE of 0.073 hides a bucket-macro ECE of 0.143: the 12-option bucket is over-confident by +0.22 while the three-to-five-option bucket is under-confident by 0.05, and one global temperature makes pooled ECE worse - per-bucket temperatures are the recommendation. The example is deliberately small and the methods deliberately old; the contribution is the worked, reproducible workflow.
+---
+<a id="paper-2611-16477"></a>
+#### [Where in the Input Does a One-Pass Decision Encoder Look?](https://arxiv.org/abs/2611.16477v1) · [PDF](https://arxiv.org/pdf/2611.16477v1)
+- **📅 Published**: 2026-11-12 (v1)
+- **👥 Authors**: Mohammed Nayeem Khan; Allan Kevin T
+- **🏢 Affiliations**: Intel Corporation
+- **🎯 Problem**: What does a one-pass decision encoder silently lose when the input is longer than its window?
+- **💡 Contribution**: Measures what the Laya encoder's 512-token window silently costs. Test documents place a held-out row's evidence at a chosen token offset among distractor text; 177 items, five tasks, three checkpoints (released, short-row fine-tune, long-document fine-tune), four window sizes, 93,275 scored requests. When the evidence lies beyond the silently truncated window, accuracy falls to 26.4% for the released checkpoint (27.2% for both fine-tunes) - near the 27.0% of guessing and below the 35.6% of always giving the commonest label - and confidence gives no warning (AUROC 0.50-0.55 for telling cut from read requests), while the runtime's truncation flag also fires on requests whose evidence was visible. The released checkpoint reads visible evidence badly once text precedes it (38.5% pooled against 60% evidence-first), so a larger window alone gains +6.2 points; long-document fine-tuning adds +27.6 on visible evidence (in-family; +13.2 with unseen encyclopedic filler, nothing on cut evidence); among training-free rearrangements a 312-token window scan helps most (+11.9) at six to eleven forward passes. Documents are synthetic, labels LLM-made, one backbone; hosted Jev not evaluated.
 ---
 <a id="paper-2611-15572"></a>
 #### [Learning a calibrated decision head from logged bandit feedback](https://arxiv.org/abs/2611.15572v1) · [PDF](https://arxiv.org/pdf/2611.15572v1) · [Code](https://github.com/yuan-phd/jevmark)
@@ -3918,7 +3958,7 @@ Earlier work on calibration, rejection, cascades, and generalist classification.
 | --- | --- |
 | Download and cite | [JSON](data/papers.json) · [BibTeX](references.bib) |
 | Check inclusion evidence | [Evidence ledger](docs/EVIDENCE.md) · [Selection rules](docs/METHODOLOGY.md) |
-| Understand search coverage | [Search log](docs/SEARCH_LOG.md) · [X and CN-platform search (11-26)](docs/SOCIAL_SEARCH_2026-11-27.md) · [arXiv search (+2 papers)](docs/ARXIV_SEARCH_2026-11-27.md) |
+| Understand search coverage | [Search log](docs/SEARCH_LOG.md) · [X and CN-platform search (11-26)](docs/SOCIAL_SEARCH_2026-11-28.md) · [arXiv search (+5 papers)](docs/ARXIV_SEARCH_2026-11-28.md) |
 | Inspect screening | [Screening ledger](data/screening.json) · [Pending](docs/PENDING.md) |
 | Contribute | [Contributing](CONTRIBUTING.md) · [Changelog](CHANGELOG.md) |
 
